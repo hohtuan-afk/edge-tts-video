@@ -1,0 +1,361 @@
+[
+ {
+  "orig": 6,
+  "dur": 7.56,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 5.573,
+    "text": ""
+   }
+  ]
+ },
+ {
+  "orig": 12,
+  "dur": 37.0,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 6.312,
+    "text": "Suy hô hấp: hệ hô hấp không duy trì được trao đổi khí đủ cho nhu cầu chuyển hoá."
+   },
+   {
+    "start": 7.562,
+    "dur": 9.372,
+    "text": "Type I – giảm oxy máu: PaO₂ < 60 mmHg khi thở khí trời, PaCO₂ bình thường hoặc thấp."
+   },
+   {
+    "start": 17.483,
+    "dur": 9.073,
+    "text": "Type II – tăng CO₂ máu: PaCO₂ > 45–50 mmHg, kèm pH < 7,35."
+   },
+   {
+    "start": 27.107,
+    "dur": 8.583,
+    "text": "Cấp: pH giảm rõ. Mạn: thận giữ HCO₃⁻ bù trừ, pH gần bình thường."
+   }
+  ]
+ },
+ {
+  "orig": 15,
+  "dur": 40.92,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 11.173,
+    "text": "Bộ phận thứ nhất – bơm thông khí: trung tâm hô hấp, tuỷ sống, dây thần kinh hoành, cơ hô hấp, thành ngực."
+   },
+   {
+    "start": 12.423,
+    "dur": 7.291,
+    "text": "Bộ phận thứ hai – bộ trao đổi khí: màng phế nang – mao mạch, ~300 triệu phế nang, ~70 m²."
+   },
+   {
+    "start": 20.264,
+    "dur": 10.922,
+    "text": "Bơm hỏng → không thải được CO₂ → Type II.  Bộ trao đổi khí hỏng → O₂ không vào máu → Type I."
+   },
+   {
+    "start": 31.736,
+    "dur": 7.883,
+    "text": "Hai cơ chế thường chồng lấp: suy type I kéo dài làm mỏi cơ → chuyển thành type II."
+   }
+  ]
+ },
+ {
+  "orig": 11,
+  "dur": 34.68,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 9.38,
+    "text": "O₂ khuếch tán từ phế nang vào mao mạch, CO₂ đi chiều ngược lại — thụ động, theo chênh áp."
+   },
+   {
+    "start": 10.63,
+    "dur": 11.995,
+    "text": "Máu tĩnh mạch: PO₂ 40, PCO₂ 46 → máu động mạch: PO₂ ~95, PCO₂ 40 (mmHg)."
+   },
+   {
+    "start": 23.175,
+    "dur": 10.221,
+    "text": "Màng < 0,5 µm; máu chỉ cần ~0,25 s trong tổng ~0,75 s để cân bằng — dự trữ rất lớn."
+   }
+  ]
+ },
+ {
+  "orig": 12,
+  "dur": 41.28,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 4.018,
+    "text": "Mọi trường hợp giảm oxy máu đều quy về một hoặc vài trong 5 cơ chế."
+   },
+   {
+    "start": 5.268,
+    "dur": 11.625,
+    "text": "1. Giảm áp lực O₂ khí hít vào · 2. Giảm thông khí phế nang → chênh áp A–a bình thường."
+   },
+   {
+    "start": 17.443,
+    "dur": 14.334,
+    "text": "3. Bất xứng V/Q · 4. Shunt · 5. Rối loạn khuếch tán → chênh áp A–a tăng."
+   },
+   {
+    "start": 32.328,
+    "dur": 7.66,
+    "text": "Hai câu hỏi phân định: chênh áp A–a có tăng? PaO₂ có cải thiện khi thở O₂ 100%?"
+   }
+  ]
+ },
+ {
+  "orig": 14,
+  "dur": 30.32,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 4.926,
+    "text": "Giảm thông khí phế nang: CO₂ ứ lại trong phế nang và chiếm chỗ của O₂."
+   },
+   {
+    "start": 6.176,
+    "dur": 8.184,
+    "text": "PAO₂ = PIO₂ − PaCO₂/R: PaCO₂ 40 → 80 thì PAO₂ 100 → 50 mmHg."
+   },
+   {
+    "start": 14.91,
+    "dur": 8.384,
+    "text": "Luôn kèm tăng PaCO₂, chênh áp A–a bình thường, đáp ứng tốt với O₂."
+   },
+   {
+    "start": 23.845,
+    "dur": 5.156,
+    "text": "Ví dụ: quá liều opioid, thuốc an thần, bệnh thần kinh – cơ."
+   }
+  ]
+ },
+ {
+  "orig": 18,
+  "dur": 46.32,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 7.211,
+    "text": "Mỗi phế nang cần thông khí (V) và tưới máu (Q) tương xứng — tỉ số V/Q."
+   },
+   {
+    "start": 8.461,
+    "dur": 10.555,
+    "text": "V/Q = ∞: khoảng chết, như thuyên tắc phổi.  Bình thường V/Q ≈ 1."
+   },
+   {
+    "start": 19.566,
+    "dur": 15.945,
+    "text": "V/Q thấp: hen, COPD, viêm phổi.  V/Q = 0 (shunt): ARDS, xẹp phổi, phù phổi."
+   },
+   {
+    "start": 36.061,
+    "dur": 8.944,
+    "text": "V/Q thấp là nguyên nhân giảm oxy máu thường gặp nhất; vùng thông khí tốt không bù được vì Hb đã gần bão hoà."
+   }
+  ]
+ },
+ {
+  "orig": 16,
+  "dur": 39.52,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 6.719,
+    "text": "Shunt: máu đi qua vùng phổi không được thông khí rồi trộn vào máu động mạch."
+   },
+   {
+    "start": 7.969,
+    "dur": 10.584,
+    "text": "Tăng FiO₂ chỉ làm giàu O₂ ở phế nang đã thông khí — máu ở đó vốn đã bão hoà."
+   },
+   {
+    "start": 19.102,
+    "dur": 8.602,
+    "text": "V/Q thấp đáp ứng tốt với O₂; shunt càng lớn, đường cong càng phẳng."
+   },
+   {
+    "start": 28.255,
+    "dur": 9.949,
+    "text": "Shunt > 30% gần như kháng trị với O₂ → mở phế nang: PEEP, nằm sấp, điều trị nguyên nhân."
+   }
+  ]
+ },
+ {
+  "orig": 15,
+  "dur": 31.0,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 6.327,
+    "text": "Định luật Fick: khuếch tán tỉ lệ với diện tích và chênh áp, tỉ lệ nghịch với độ dày màng."
+   },
+   {
+    "start": 7.577,
+    "dur": 6.139,
+    "text": "Màng dày (xơ phổi, bệnh mô kẽ) → PO₂ mao mạch tăng chậm hơn."
+   },
+   {
+    "start": 14.265,
+    "dur": 10.476,
+    "text": "Gắng sức: máu chỉ còn ~0,25 s trong mao mạch → không kịp cân bằng → giảm oxy máu."
+   },
+   {
+    "start": 25.292,
+    "dur": 4.421,
+    "text": "Rối loạn khuếch tán hiếm khi đơn độc gây giảm oxy máu nặng lúc nghỉ."
+   }
+  ]
+ },
+ {
+  "orig": 14,
+  "dur": 45.4,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 6.082,
+    "text": "Chênh áp A–a: O₂ ‘đáng lẽ có’ trong phế nang so với O₂ thực có trong máu động mạch."
+   },
+   {
+    "start": 7.332,
+    "dur": 4.963,
+    "text": "Thở khí trời ở mực nước biển: PAO₂ ≈ 0,21 × 713 − 40/0,8 ≈ 100 mmHg."
+   },
+   {
+    "start": 12.845,
+    "dur": 7.736,
+    "text": "PaO₂ 55 → A–a = 45 mmHg: tăng (bình thường ≈ tuổi/4 + 4)."
+   },
+   {
+    "start": 21.131,
+    "dur": 16.101,
+    "text": "A–a bình thường → giảm thông khí / giảm PIO₂.  A–a tăng → thử O₂ 100%: tốt → V/Q, khuếch tán; kém → shunt."
+   },
+   {
+    "start": 37.782,
+    "dur": 6.317,
+    "text": "Lưu ý: A–a tăng theo tuổi và theo FiO₂ — đáng tin nhất khi thở khí trời."
+   }
+  ]
+ },
+ {
+  "orig": 14,
+  "dur": 47.64,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 5.874,
+    "text": "PaCO₂ phản ánh cân bằng giữa lượng CO₂ sinh ra và thông khí phế nang."
+   },
+   {
+    "start": 7.124,
+    "dur": 4.639,
+    "text": "↑ Sinh CO₂: sốt, nhiễm khuẩn, co giật."
+   },
+   {
+    "start": 12.313,
+    "dur": 7.329,
+    "text": "↓ Thông khí phút: ức chế trung tâm hô hấp, bệnh thần kinh – cơ, bệnh thành ngực."
+   },
+   {
+    "start": 20.192,
+    "dur": 5.904,
+    "text": "↑ Khoảng chết VD/VT: COPD, thuyên tắc phổi, thở nhanh và nông."
+   },
+   {
+    "start": 26.646,
+    "dur": 13.869,
+    "text": "Cùng 6 L/phút: 12 × 500 mL → VA 4,2 L;  30 × 200 mL → VA chỉ 1,5 L."
+   },
+   {
+    "start": 41.065,
+    "dur": 5.27,
+    "text": "Thở nhanh nông ≠ thông khí tốt: khoảng chết chiếm phần lớn mỗi nhịp thở."
+   }
+  ]
+ },
+ {
+  "orig": 15,
+  "dur": 36.24,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 3.213,
+    "text": "Suy hô hấp không đứng yên — nó tự nuôi dưỡng chính nó."
+   },
+   {
+    "start": 4.463,
+    "dur": 14.692,
+    "text": "Tăng tải → ↑ công thở → mỏi cơ → thở nhanh và nông → ↑PaCO₂, ↓PaO₂ → toan máu → cơ co kém hơn."
+   },
+   {
+    "start": 19.705,
+    "dur": 8.217,
+    "text": "Khi tải vượt sức chịu: thở nhanh, co kéo → thở chậm, nông — dấu hiệu sắp ngừng thở."
+   },
+   {
+    "start": 28.472,
+    "dur": 6.472,
+    "text": "Thở máy không xâm lấn / xâm lấn cho cơ nghỉ, phá vỡ vòng xoắn trong lúc điều trị nguyên nhân."
+   }
+  ]
+ },
+ {
+  "orig": 12,
+  "dur": 44.0,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 11.951,
+    "text": "Đường cong phân ly HbO₂: PaO₂ 60 mmHg ≈ SaO₂ 90% — dưới ngưỡng này SaO₂ rơi rất nhanh."
+   },
+   {
+    "start": 13.201,
+    "dur": 9.656,
+    "text": "Thiếu oxy mô → yếm khí → lactate ↑.  Co mạch phổi do thiếu oxy → quá tải thất phải."
+   },
+   {
+    "start": 23.407,
+    "dur": 11.661,
+    "text": "Tăng CO₂ → toan hô hấp, giãn mạch não → lơ mơ, hôn mê.  Giao cảm: nhịp nhanh, tăng huyết áp."
+   },
+   {
+    "start": 35.618,
+    "dur": 7.086,
+    "text": "Não, tim, thận chịu thiếu oxy kém nhất; rối loạn ý thức là dấu hiệu nặng."
+   }
+  ]
+ },
+ {
+  "orig": 12,
+  "dur": 29.2,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 8.305,
+    "text": "Bộ trao đổi khí hỏng → Type I;  bơm thông khí hỏng → Type II."
+   },
+   {
+    "start": 9.555,
+    "dur": 6.447,
+    "text": "5 cơ chế giảm oxy máu, phân định bằng chênh áp A–a và đáp ứng với O₂ 100%."
+   },
+   {
+    "start": 16.552,
+    "dur": 3.932,
+    "text": "PaCO₂ tăng khi sinh CO₂ nhiều, thông khí giảm, hoặc khoảng chết tăng."
+   },
+   {
+    "start": 21.034,
+    "dur": 6.867,
+    "text": "Nhận diện sớm vòng xoắn mỏi cơ và hỗ trợ thông khí kịp thời."
+   }
+  ]
+ }
+]

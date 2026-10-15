@@ -1,0 +1,4 @@
+projects/*/narration.wav
+projects/*/still_*.png
+projects/*/*.mp4
+__pycache__/
