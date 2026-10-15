@@ -1,0 +1,227 @@
+{
+ "voice": "vi-VN-HoaiMyNeural",
+ "rate": "-5%",
+ "pitch": "+0Hz",
+ "lines": [
+  {
+   "id": "00-0",
+   "text": "Cơ chế sinh lý bệnh của suy hô hấp. Từ bộ trao đổi khí, đến bơm thông khí."
+  },
+  {
+   "id": "01-0",
+   "text": "Suy hô hấp là tình trạng hệ hô hấp không duy trì được sự trao đổi khí, đủ đáp ứng nhu cầu chuyển hoá của cơ thể."
+  },
+  {
+   "id": "01-1",
+   "text": "Suy hô hấp típ một là suy hô hấp giảm ô xy máu, với áp lực ô xy máu động mạch dưới sáu mươi mi li mét thuỷ ngân khi thở khí trời, còn áp lực cê ô hai bình thường hoặc thấp."
+  },
+  {
+   "id": "01-2",
+   "text": "Suy hô hấp típ hai là suy hô hấp tăng cê ô hai máu, với áp lực cê ô hai động mạch trên bốn mươi lăm đến năm mươi mi li mét thuỷ ngân, kèm pê hát dưới bảy phẩy ba lăm."
+  },
+  {
+   "id": "01-3",
+   "text": "Trong suy hô hấp cấp, pê hát giảm rõ. Còn khi mạn tính, thận giữ lại bi các bô nát để bù trừ, nên pê hát gần bình thường."
+  },
+  {
+   "id": "02-0",
+   "text": "Hệ hô hấp gồm hai bộ phận nối tiếp nhau. Bộ phận thứ nhất là bơm thông khí, gồm trung tâm hô hấp ở hành não, tuỷ sống và dây thần kinh hoành, các cơ hô hấp, và thành ngực."
+  },
+  {
+   "id": "02-1",
+   "text": "Bộ phận thứ hai là bộ trao đổi khí, tức màng phế nang mao mạch, với khoảng ba trăm triệu phế nang, diện tích chừng bảy mươi mét vuông."
+  },
+  {
+   "id": "02-2",
+   "text": "Khi bơm bị tổn thương, cơ thể không thải được cê ô hai, gây suy hô hấp típ hai. Khi bộ trao đổi khí bị tổn thương, ô xy không vào được máu, gây suy hô hấp típ một."
+  },
+  {
+   "id": "02-3",
+   "text": "Trên lâm sàng, hai cơ chế này thường chồng lấp. Suy hô hấp típ một kéo dài làm cơ hô hấp mỏi, rồi chuyển thành típ hai."
+  },
+  {
+   "id": "03-0",
+   "text": "Bình thường, ô xy khuếch tán từ phế nang vào máu mao mạch, còn cê ô hai đi theo chiều ngược lại. Quá trình này hoàn toàn thụ động, nhờ chênh lệch áp lực."
+  },
+  {
+   "id": "03-1",
+   "text": "Máu tĩnh mạch đến phổi có áp lực ô xy bốn mươi, áp lực cê ô hai bốn mươi sáu mi li mét thuỷ ngân. Sau khi qua phổi, áp lực ô xy tăng lên khoảng chín mươi lăm, và cê ô hai giảm còn bốn mươi."
+  },
+  {
+   "id": "03-2",
+   "text": "Màng trao đổi mỏng chưa đến nửa mi crô mét. Hồng cầu chỉ cần khoảng một phần tư giây để cân bằng khí, trong tổng số ba phần tư giây đi qua mao mạch, nên dự trữ rất lớn."
+  },
+  {
+   "id": "04-0",
+   "text": "Mọi trường hợp giảm ô xy máu đều quy về một hoặc vài trong năm cơ chế sau."
+  },
+  {
+   "id": "04-1",
+   "text": "Một, giảm áp lực ô xy trong khí hít vào, như khi lên vùng núi cao. Hai, giảm thông khí phế nang. Ở hai cơ chế này, chênh áp phế nang động mạch vẫn bình thường."
+  },
+  {
+   "id": "04-2",
+   "text": "Ba, bất xứng thông khí tưới máu, là cơ chế thường gặp nhất. Bốn, luồng thông phải trái, còn gọi là sân. Và năm, rối loạn khuếch tán. Ba cơ chế này đều làm tăng chênh áp phế nang động mạch."
+  },
+  {
+   "id": "04-3",
+   "text": "Hai câu hỏi giúp phân định: chênh áp phế nang động mạch có tăng không, và áp lực ô xy máu có cải thiện khi cho thở ô xy một trăm phần trăm không."
+  },
+  {
+   "id": "05-0",
+   "text": "Khi thông khí phế nang giảm, cê ô hai ứ lại trong phế nang và chiếm chỗ của ô xy."
+  },
+  {
+   "id": "05-1",
+   "text": "Theo phương trình khí phế nang, khi áp lực cê ô hai tăng từ bốn mươi lên tám mươi, áp lực ô xy phế nang giảm từ một trăm xuống còn năm mươi mi li mét thuỷ ngân."
+  },
+  {
+   "id": "05-2",
+   "text": "Vì vậy, giảm ô xy máu do giảm thông khí luôn đi kèm tăng cê ô hai, chênh áp phế nang động mạch bình thường, và đáp ứng tốt khi cho thở ô xy."
+  },
+  {
+   "id": "05-3",
+   "text": "Ví dụ thường gặp là quá liều thuốc giảm đau gây nghiện, thuốc an thần, hoặc bệnh thần kinh cơ."
+  },
+  {
+   "id": "06-0",
+   "text": "Mỗi phế nang cần được thông khí và tưới máu tương xứng với nhau. Tỉ số này gọi là tỉ số thông khí trên tưới máu."
+  },
+  {
+   "id": "06-1",
+   "text": "Ở một đầu, phế nang được thông khí nhưng không có máu tới, tỉ số bằng vô cùng, gọi là khoảng chết, như trong thuyên tắc phổi. Bình thường, tỉ số này xấp xỉ một."
+  },
+  {
+   "id": "06-2",
+   "text": "Khi thông khí kém hơn tưới máu, tỉ số thấp, gặp trong hen, bệnh phổi tắc nghẽn mạn tính, viêm phổi. Ở đầu kia, phế nang hoàn toàn không được thông khí, tỉ số bằng không, chính là sân, như trong hội chứng suy hô hấp cấp tiến triển, xẹp phổi, phù phổi."
+  },
+  {
+   "id": "06-3",
+   "text": "Tỉ số thấp là nguyên nhân giảm ô xy máu thường gặp nhất. Máu từ vùng thông khí tốt không thể bù lại, vì hê mô glô bin ở đó đã gần bão hoà."
+  },
+  {
+   "id": "07-0",
+   "text": "Trong sân, máu đi qua vùng phổi hoàn toàn không được thông khí, rồi trộn vào máu động mạch, kéo độ bão hoà ô xy chung xuống thấp."
+  },
+  {
+   "id": "07-1",
+   "text": "Khi tăng nồng độ ô xy khí thở vào, ô xy chỉ đến được những phế nang đã thông khí, mà máu ở đó vốn đã bão hoà. Máu đi qua vùng sân không hề tiếp xúc với ô xy."
+  },
+  {
+   "id": "07-2",
+   "text": "Vì thế, trên biểu đồ, giảm ô xy máu do tỉ số thông khí trên tưới máu thấp đáp ứng rất tốt với ô xy, còn sân càng lớn thì đường cong càng phẳng."
+  },
+  {
+   "id": "07-3",
+   "text": "Sân lớn hơn ba mươi phần trăm gần như kháng trị với ô xy. Cần mở lại phế nang bằng áp lực dương cuối thì thở ra, tư thế nằm sấp, và điều trị nguyên nhân."
+  },
+  {
+   "id": "08-0",
+   "text": "Theo định luật Fích, lượng khí khuếch tán tỉ lệ thuận với diện tích màng và chênh lệch áp lực, tỉ lệ nghịch với độ dày màng."
+  },
+  {
+   "id": "08-1",
+   "text": "Khi màng dày lên, như trong xơ phổi hay bệnh phổi mô kẽ, áp lực ô xy trong mao mạch tăng chậm hơn bình thường."
+  },
+  {
+   "id": "08-2",
+   "text": "Lúc nghỉ, vẫn còn đủ thời gian để cân bằng. Nhưng khi gắng sức, máu chảy nhanh, chỉ còn khoảng một phần tư giây, nên không kịp cân bằng, và gây giảm ô xy máu."
+  },
+  {
+   "id": "08-3",
+   "text": "Vì vậy, rối loạn khuếch tán hiếm khi đơn độc gây giảm ô xy máu nặng lúc nghỉ."
+  },
+  {
+   "id": "09-0",
+   "text": "Chênh áp phế nang động mạch so sánh lượng ô xy đáng lẽ có trong phế nang, với lượng ô xy thực có trong máu động mạch."
+  },
+  {
+   "id": "09-1",
+   "text": "Khi thở khí trời ở mực nước biển, áp lực ô xy phế nang khoảng một trăm mi li mét thuỷ ngân."
+  },
+  {
+   "id": "09-2",
+   "text": "Nếu khí máu cho áp lực ô xy năm mươi lăm, thì chênh áp là bốn mươi lăm, tăng rõ so với mức bình thường, xấp xỉ tuổi chia bốn cộng bốn."
+  },
+  {
+   "id": "09-3",
+   "text": "Nếu chênh áp bình thường, nghĩ đến giảm thông khí hoặc giảm áp lực ô xy hít vào. Nếu chênh áp tăng, cho thở ô xy một trăm phần trăm. Cải thiện tốt gợi ý bất xứng thông khí tưới máu hoặc rối loạn khuếch tán. Cải thiện kém gợi ý sân."
+  },
+  {
+   "id": "09-4",
+   "text": "Lưu ý, chênh áp tăng theo tuổi và theo nồng độ ô xy khí thở, nên đáng tin nhất khi bệnh nhân thở khí trời."
+  },
+  {
+   "id": "10-0",
+   "text": "Áp lực cê ô hai máu phản ánh cân bằng giữa lượng cê ô hai cơ thể sinh ra, và thông khí phế nang thải đi."
+  },
+  {
+   "id": "10-1",
+   "text": "Cê ô hai tăng khi cơ thể sinh ra nhiều hơn, như sốt, nhiễm khuẩn, co giật."
+  },
+  {
+   "id": "10-2",
+   "text": "Hoặc khi thông khí phút giảm, do ức chế trung tâm hô hấp, bệnh thần kinh cơ như Ghi lanh Ba rê, nhược cơ, hoặc bệnh thành ngực."
+  },
+  {
+   "id": "10-3",
+   "text": "Hoặc khi khoảng chết tăng, như trong bệnh phổi tắc nghẽn mạn tính, thuyên tắc phổi, và kiểu thở nhanh và nông."
+  },
+  {
+   "id": "10-4",
+   "text": "Ví dụ, cùng thông khí phút sáu lít. Thở mười hai lần, mỗi lần năm trăm mi li lít, thì thông khí phế nang là bốn phẩy hai lít. Nhưng thở ba mươi lần, mỗi lần hai trăm mi li lít, thì chỉ còn một phẩy năm lít."
+  },
+  {
+   "id": "10-5",
+   "text": "Thở nhanh và nông không có nghĩa là thông khí tốt, vì khoảng chết đã chiếm mất phần lớn mỗi nhịp thở."
+  },
+  {
+   "id": "11-0",
+   "text": "Suy hô hấp không đứng yên, mà tự nuôi dưỡng chính nó."
+  },
+  {
+   "id": "11-1",
+   "text": "Tải hô hấp tăng làm tăng công thở và tiêu thụ ô xy của cơ hô hấp. Cơ mỏi dần, bệnh nhân thở nhanh và nông, làm tăng khoảng chết. Cê ô hai tăng, ô xy giảm, gây toan máu, và cơ lại co kém hơn nữa."
+  },
+  {
+   "id": "11-2",
+   "text": "Khi tải vượt quá sức chịu, bệnh nhân chuyển từ thở nhanh, co kéo, sang thở chậm và nông. Đó là dấu hiệu sắp ngừng thở."
+  },
+  {
+   "id": "11-3",
+   "text": "Thở máy không xâm lấn hoặc thở máy xâm lấn giúp cơ hô hấp nghỉ ngơi, phá vỡ vòng xoắn, trong lúc điều trị nguyên nhân."
+  },
+  {
+   "id": "12-0",
+   "text": "Đường cong phân ly của hê mô glô bin với ô xy giải thích vì sao sáu mươi mi li mét thuỷ ngân là ngưỡng định nghĩa. Tại đây độ bão hoà khoảng chín mươi phần trăm, và dưới ngưỡng này, độ bão hoà rơi rất nhanh."
+  },
+  {
+   "id": "12-1",
+   "text": "Thiếu ô xy mô gây chuyển hoá yếm khí, tăng lắc tát và toan chuyển hoá. Co mạch phổi do thiếu ô xy làm tăng áp động mạch phổi, gây quá tải thất phải."
+  },
+  {
+   "id": "12-2",
+   "text": "Tăng cê ô hai gây toan hô hấp và giãn mạch não, dẫn đến tăng áp lực nội sọ, lơ mơ, hôn mê. Hệ giao cảm bị kích hoạt, gây nhịp nhanh, tăng huyết áp, vã mồ hôi."
+  },
+  {
+   "id": "12-3",
+   "text": "Não, tim và thận chịu thiếu ô xy kém nhất. Rối loạn ý thức là dấu hiệu nặng ở cả hai típ suy hô hấp."
+  },
+  {
+   "id": "13-0",
+   "text": "Tóm lại, khi bộ trao đổi khí bị tổn thương, ta có suy hô hấp típ một. Khi bơm thông khí bị tổn thương, ta có típ hai."
+  },
+  {
+   "id": "13-1",
+   "text": "Có năm cơ chế giảm ô xy máu, phân định bằng chênh áp phế nang động mạch, và đáp ứng với ô xy một trăm phần trăm."
+  },
+  {
+   "id": "13-2",
+   "text": "Cê ô hai tăng khi sinh nhiều, thông khí giảm, hoặc khoảng chết tăng."
+  },
+  {
+   "id": "13-3",
+   "text": "Và hãy nhận diện sớm vòng xoắn mỏi cơ, để hỗ trợ thông khí kịp thời. Cảm ơn các bạn đã theo dõi."
+  }
+ ]
+}
