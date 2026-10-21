@@ -1,0 +1,10 @@
+{
+  "name": "remotion-video-y-khoa",
+  "private": true,
+  "type": "module",
+  "description": "Video y khoa dựng bằng Remotion, render trên GitHub Actions",
+  "scripts": {
+    "stills": "node render.mjs stills",
+    "video": "node render.mjs video"
+  }
+}

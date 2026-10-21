@@ -1,0 +1,36 @@
+name: Remotion render
+
+on:
+  push:
+    branches: [main]
+    paths: ["remotion/**", ".github/workflows/remotion.yml"]
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    defaults:
+      run:
+        working-directory: remotion
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install Remotion
+        run: |
+          V=$(npm view remotion version)
+          echo "Remotion $V"
+          npm install --no-audit --no-fund remotion@$V @remotion/bundler@$V @remotion/renderer@$V \
+            @remotion/google-fonts@$V react@18.3.1 react-dom@18.3.1
+      - name: Render (mode in render-mode.txt)
+        run: |
+          MODE=$(cat render-mode.txt 2>/dev/null || echo stills)
+          echo "mode=$MODE"
+          node render.mjs "$MODE"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: remotion-out
+          path: remotion/out
+          retention-days: 7
