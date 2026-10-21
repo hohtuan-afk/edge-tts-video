@@ -236,7 +236,7 @@ const S2: React.FC<P> = ({S}) => {
         <g opacity={a3}>
           {[{cx: 600, r: br(18, 52), l: 'Không PEEP', c: C.red}, {cx: 880, r: br(48, 24), l: 'Có PEEP', c: C.oxy}].map((o, i) => (
             <g key={i}>
-              <line x1={o.cx} y1={600} x2={o.cx} y2={680 - o.r} stroke="#C9D6EA" strokeWidth={10} strokeLinecap="round" />
+              <line x1={o.cx} y1={600} x2={o.cx} y2={720 - o.r} stroke="#C9D6EA" strokeWidth={10} strokeLinecap="round" />
               <circle cx={o.cx} cy={720} r={o.r} fill="url(#lung)" stroke="#FFD1DC" strokeWidth={2} />
               <Label x={o.cx} y={850} c={o.c} s={26}>{o.l}</Label>
             </g>
@@ -386,8 +386,8 @@ const S5: React.FC<P> = ({S}) => {
             <div style={{position: 'absolute', left: 100, top: -14, width: 1720, height: 88, borderRadius: 16, background: i % 2 ? 'rgba(255,255,255,0.03)' : 'rgba(96,165,250,0.07)'}} />
             <div style={{position: 'absolute', left: cols[0], top: 8, fontSize: 30, fontWeight: 700, whiteSpace: 'nowrap'}}>{r[0]}</div>
             <div style={{position: 'absolute', left: cols[1], top: 0, fontSize: 42, fontWeight: 800, color: C.blue}}>{r[1]}</div>
-            <div style={{position: 'absolute', left: cols[2], top: 8, fontSize: 30, fontWeight: 600}}>{r[2]}</div>
-            <div style={{position: 'absolute', left: cols[3], top: 0, fontSize: 40, fontWeight: 800, color: C.insp}}>{r[3]}</div>
+            <div style={{position: 'absolute', left: cols[2], top: 8, fontSize: 30, fontWeight: 600, whiteSpace: 'nowrap'}}>{r[2]}</div>
+            <div style={{position: 'absolute', left: cols[3], top: 0, fontSize: 40, fontWeight: 800, color: C.insp, whiteSpace: 'nowrap'}}>{r[3]}</div>
             <div style={{position: 'absolute', left: 1100, top: 14, width: W, height: 34, borderRadius: 10, overflow: 'hidden', display: 'flex'}}>
               <div style={{width: '33.3%', background: C.insp}} />
               <div style={{flex: 1, background: C.exp, opacity: 0.8}} />
@@ -729,10 +729,10 @@ const S13: React.FC<P> = ({S}) => {
         </g>
         <g opacity={ap(t, st(S, 1))}>
           <line x1={120} x2={1120} y1={Yf(0.25)} y2={Yf(0.25)} stroke={C.red} strokeWidth={3} strokeDasharray="10 8" />
-          <Label x={1110} y={Yf(0.25) - 12} c={C.red} s={23} anchor="end">25% lưu lượng đỉnh → chuyển thở ra</Label>
+          <Label x={1120} y={684} c={C.red} s={23} anchor="end">25% lưu lượng đỉnh → chuyển thở ra</Label>
         </g>
       </Svg>
-      <Chip x={1200} y={160} w={640} h={120} c={C.insp} a={ap(t, st(S, 0))} s={28} bold>CHỈ bệnh nhân kích hoạt · KHÔNG cài tần số</Chip>
+      <Chip x={1200} y={160} w={640} h={120} c={C.insp} a={ap(t, st(S, 0))} s={27} bold>CHỈ BN kích hoạt · KHÔNG cài tần số</Chip>
       <Card x={1200} y={305} w={640} h={150} a={ap(t, st(S, 2))} c={C.amber} title="VT tự thở phụ thuộc" size={26}>mức PS · lực thở BN · R · C</Card>
       <Card x={1200} y={480} w={640} h={210} a={ap(t, st(S, 3))} c={C.red} title="Rò khí → Ti kéo dài" size={26}>
         <div>Tăng ngưỡng chuyển thở ra</div>
@@ -771,7 +771,7 @@ const S14: React.FC<P> = ({S}) => {
           {t > st(S, 0) + 4.7 / 1.2 && (
             <g opacity={ap(t, st(S, 0) + 4.7 / 1.2)}>
               <path d={`M${X(4.9)},420 L${X(4.9)},432 L${X(9.7)},432 L${X(9.7)},420`} fill="none" stroke={C.amber} strokeWidth={3} />
-              <Label x={X(7.3)} y={400} c={C.amber} s={26}>NGƯNG THỞ 10–30 giây</Label>
+              <Label x={X(7.3)} y={392} c={C.amber} s={26}>NGƯNG THỞ 10–30 giây</Label>
             </g>
           )}
           {t > st(S, 0) + 10 / 1.2 && <Label x={X(13)} y={260} c={C.red} s={26}>DỰ PHÒNG (PC)</Label>}
@@ -822,7 +822,7 @@ const S15: React.FC<P> = ({S}) => {
         <g opacity={ap(t, st(S, 0))}>
           <Wave x={120} y={280} w={1680} h={220} f={simv} lo={0} hi={28} span={12} color={C.txt} t={t} t0={st(S, 0)} speed={1.2} base={0} fill />
         </g>
-        <Label x={X(0.8)} y={530} c={C.amber} s={22} a={a1}>BN kích hoạt → nhịp máy đồng bộ</Label>
+        <Label x={140} y={530} c={C.amber} s={22} a={a1} anchor="start">BN kích hoạt → nhịp máy đồng bộ</Label>
       </Svg>
       <Card x={80} y={570} w={1760} h={320} a={ap(t, st(S, 3))} c={C.blue} title="Chuyển A/C → SIMV" />
       {['Tần số: 15 → 12', 'Trigger: 3 → 2 L/phút', 'Thêm PS 12 · Esens 25%', 'Giữ nguyên thông số khác'].map((x, i) => (
