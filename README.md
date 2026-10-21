@@ -11,6 +11,12 @@ Bộ công cụ làm **video hoạt hình y khoa có thuyết minh tiếng Việ
 - `kit/asr_check.sh` — nghe lại bằng nhận dạng giọng nói tiếng Việt offline để soát phát âm.
 - `kit/mux.sh` — ghép video + lời đọc + nhạc nền tự nhỏ khi có lời.
 
+## Remotion (đồ hoạ 2D đẹp, render trên GitHub Actions)
+- `remotion/src/lib.tsx` — bộ thành phần dùng chung: Glass, Chip, Memo, Header, Roadmap; SVG Tube, Flow, Lungs, Machine, Circuit, Humid, Trap, TempTag, Badge, XMark, Fan, Bact.
+- `remotion/src/scenes.tsx` — các cảnh của bài đang dựng (bản lưu của từng bài: `projects/<ten>/remotion/`).
+- `kit/remotion_prep.py projects/<ten>` — sinh `remotion/src/data.json`, `remotion/public/narration.m4a`, `remotion/stills.txt`.
+- `remotion/render-mode.txt` = `stills` | `video`; push `remotion/**` là workflow **Remotion render** chạy, kết quả nằm ở nhánh `renders`.
+
 ## Quy trình
 ```bash
 python3 kit/make_lines.py projects/<ten> vi-VN-HoaiMyNeural -5%
