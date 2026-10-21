@@ -1,0 +1,459 @@
+[
+ {
+  "orig": 6.0,
+  "dur": 7.92,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 5.923,
+    "text": ""
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 30.92,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 2.914,
+    "text": "Hệ thống máy thở gồm 6 thành phần nối tiếp nhau."
+   },
+   {
+    "start": 4.164,
+    "dur": 3.504,
+    "text": "① Khí nén  ② Nguồn điện  ③ Máy thở"
+   },
+   {
+    "start": 8.218,
+    "dur": 8.122,
+    "text": "④ Bộ dây máy thở  ⑤ Đường thở  ⑥ Phổi"
+   },
+   {
+    "start": 16.891,
+    "dur": 12.735,
+    "text": "Mẹo nhớ — 7 trạm: ĐIỆN → KHÍ → DÂY → ẨM → LỌC → ĐO → PHUN"
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 33.48,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 5.045,
+    "text": "Trạm 1 — ĐIỆN: điện xoay chiều 220 V."
+   },
+   {
+    "start": 6.295,
+    "dur": 7.668,
+    "text": "Pin sạc tự sạc khi cắm điện, chỉ nuôi phần điện tử: màn hình + điều khiển nhịp thở."
+   },
+   {
+    "start": 14.513,
+    "dur": 7.2,
+    "text": "Pin KHÔNG cấp điện cho máy nén khí và máy làm ẩm."
+   },
+   {
+    "start": 22.263,
+    "dur": 6.276,
+    "text": "Pin chạy 30 phút – 1 giờ · Không dùng máy: sạc 8 giờ / tuần."
+   },
+   {
+    "start": 29.089,
+    "dur": 3.107,
+    "text": "Ghi nhớ: Pin nuôi bộ não, không nuôi cơ bắp."
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 35.8,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 8.96,
+    "text": "Trạm 2 — KHÍ: khí nén (21% O₂) và oxy (100%)."
+   },
+   {
+    "start": 10.21,
+    "dur": 8.915,
+    "text": "Khí nén: máy nén khí theo máy / khí nén trung tâm.  Oxy: oxy bình / oxy lỏng trung tâm."
+   },
+   {
+    "start": 19.675,
+    "dur": 5.339,
+    "text": "Cả 2 hệ thống phải có bộ điều áp (regulator): 50 psi ≈ 3,5 bar."
+   },
+   {
+    "start": 25.564,
+    "dur": 8.917,
+    "text": "Ổ cắm đầu giường: Oxy – Oxy – Air – Hút (thêm 1 ổ hút ở hồi sức ngoại)."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 37.88,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 9.435,
+    "text": "Máy có tua-bin bên trong chỉ cần nguồn oxy — hợp với BV huyện, khoa thiếu khí nén trung tâm."
+   },
+   {
+    "start": 10.685,
+    "dur": 4.481,
+    "text": "Máy thở ICU cần cả 2 nguồn khí: oxy + khí nén."
+   },
+   {
+    "start": 15.716,
+    "dur": 8.664,
+    "text": "Bộ trộn khí: oxy 100% + khí nén 21% → hỗn hợp theo FiO₂ cài đặt, ví dụ 40%."
+   },
+   {
+    "start": 24.93,
+    "dur": 5.203,
+    "text": "Cảm biến O₂ (O₂ cell) đo nồng độ oxy SAU khi trộn → báo động nếu lệch."
+   },
+   {
+    "start": 30.683,
+    "dur": 5.88,
+    "text": "Cảm biến thường: thay mỗi 3–6 tháng · Cảm biến siêu âm: không cần thay."
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 37.68,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 8.274,
+    "text": "Trạm 3 — DÂY: bộ dây đầy đủ gồm 2 nhánh: hít vào và thở ra."
+   },
+   {
+    "start": 9.524,
+    "dur": 7.532,
+    "text": "Bộ làm ẩm & ấm nằm trên NHÁNH HÍT VÀO; bẫy nước gom nước đọng; nhiệt kế ở chữ Y."
+   },
+   {
+    "start": 17.606,
+    "dur": 15.242,
+    "text": "Cỡ dây: Sơ sinh < 7 kg → 8 mm · Trẻ em 7–25 kg → 15 mm · Người lớn > 25 kg → 22 mm."
+   },
+   {
+    "start": 33.398,
+    "dur": 2.967,
+    "text": "Mẹo nhớ: 8 – 15 – 22."
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 30.36,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 7.156,
+    "text": "PVC: rẻ, đàn hồi nhiều, dùng 1 lần, không hấp được."
+   },
+   {
+    "start": 8.406,
+    "dur": 4.712,
+    "text": "Hytrel: đắt, cứng giòn, ít đàn hồi, hấp được nhưng mau hư."
+   },
+   {
+    "start": 13.667,
+    "dur": 5.228,
+    "text": "Silicone: đắt, ít đàn hồi, hấp được, bền — dùng nhiều lần."
+   },
+   {
+    "start": 19.445,
+    "dur": 9.623,
+    "text": "Độ đàn hồi: PVC > Hytrel > Silicone."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 45.72,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 8.884,
+    "text": "Thể tích nén: dây giãn ra + khí bị nén ở thì hít vào → mất thể tích đến bệnh nhân."
+   },
+   {
+    "start": 10.134,
+    "dur": 7.654,
+    "text": "Phụ thuộc: tổng thể tích dây + bình làm ẩm (NL > TE > SS) và độ giãn nở (PVC > Hytrel > Silicone)."
+   },
+   {
+    "start": 18.338,
+    "dur": 6.879,
+    "text": "VT thật sự = VT cài − VT nén:  450 mL = 500 mL − 50 mL"
+   },
+   {
+    "start": 25.767,
+    "dur": 6.305,
+    "text": "Khi test máy, máy đo độ giãn nở bộ dây: C dây = ΔV / ΔP (mL/cmH₂O)."
+   },
+   {
+    "start": 32.622,
+    "dur": 11.787,
+    "text": "VT nén = C dây × (P đỉnh − PEEP) → máy bơm thêm: 500 + 50 = 550 mL."
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 38.76,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 9.336,
+    "text": "Trạm 4 — ẨM: chủ động (máy làm ẩm bằng nhiệt) hoặc thụ động (HME)."
+   },
+   {
+    "start": 10.586,
+    "dur": 11.962,
+    "text": "Không dây nhiệt: bình đẩy khí ~45 °C → chữ Y còn 37 °C → về máy ~30 °C, đọng nước nhiều."
+   },
+   {
+    "start": 23.098,
+    "dur": 8.389,
+    "text": "Có dây nhiệt nhánh hít vào: bình 37 °C, dây 39 °C, chữ Y 37 °C — cảm biến nhiệt kép."
+   },
+   {
+    "start": 32.037,
+    "dur": 5.426,
+    "text": "Dây nhiệt 2 nhánh: nung cả nhánh thở ra → hạn chế đọng nước."
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 30.68,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 10.784,
+    "text": "Không dây nhiệt: nhiệt độ dao động — thấp: đàm đặc, mất nhiệt; cao: quá tải, bỏng hô hấp."
+   },
+   {
+    "start": 12.034,
+    "dur": 4.945,
+    "text": "Không dây nhiệt: cần điều dưỡng theo dõi, dễ nhiễm trùng bệnh viện, rẻ, lâu hư."
+   },
+   {
+    "start": 17.529,
+    "dur": 6.803,
+    "text": "Có dây nhiệt: ổn định, ít cần theo dõi, ít nhiễm trùng bệnh viện, đắt, dễ đứt dây điện trở."
+   },
+   {
+    "start": 24.882,
+    "dur": 4.512,
+    "text": "Bình chứa nước có 2 cỡ: trẻ em và người lớn."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 33.4,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 6.079,
+    "text": "HME (Heat & Moisture Exchanger) — 'mũi nhân tạo', gắn ở chữ Y."
+   },
+   {
+    "start": 7.329,
+    "dur": 4.531,
+    "text": "Thở ra: HME giữ lại nhiệt và hơi ẩm của khí thở ra."
+   },
+   {
+    "start": 12.41,
+    "dur": 4.654,
+    "text": "Hít vào: HME trả lại nhiệt và độ ẩm cho khí hít vào."
+   },
+   {
+    "start": 17.613,
+    "dur": 8.995,
+    "text": "Chỉ định: giúp thở ngắn hạn < 24 giờ (hậu phẫu, ngộ độc). Khoảng chết HME < 2 mL/kg."
+   },
+   {
+    "start": 27.159,
+    "dur": 4.943,
+    "text": "Phân biệt: HME · phin lọc vi khuẩn – virus · HME-filter '2 trong 1'."
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 31.76,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 6.673,
+    "text": "Chống chỉ định HME — mẹo nhớ 5 chữ: ĐÀM · RÒ · LẠNH · THỞ MẠNH · KHÍ DUNG"
+   },
+   {
+    "start": 7.923,
+    "dur": 11.16,
+    "text": "ĐÀM: đàm đặc hoặc lẫn máu.   RÒ: VTE < 70% VTI (rò phế quản – màng phổi, NKQ không bóng chèn)."
+   },
+   {
+    "start": 19.633,
+    "dur": 6.677,
+    "text": "LẠNH: thân nhiệt < 32 °C.   THỞ MẠNH: thông khí phút tự thở > 10 L/phút."
+   },
+   {
+    "start": 26.86,
+    "dur": 3.616,
+    "text": "KHÍ DUNG: bệnh nhân đang phun khí dung trực tuyến."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 31.24,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 7.017,
+    "text": "Trạm 5 — LỌC: filter ở cổng hít vào, cổng thở ra của máy và tại chữ Y."
+   },
+   {
+    "start": 8.267,
+    "dur": 3.69,
+    "text": "Filter hít vào: tránh lây vi khuẩn từ máy → dây thở và bệnh nhân."
+   },
+   {
+    "start": 12.507,
+    "dur": 3.829,
+    "text": "Filter thở ra: tránh lây vi khuẩn từ bệnh nhân → máy và môi trường."
+   },
+   {
+    "start": 16.887,
+    "dur": 4.772,
+    "text": "Filter thở ra còn giữ hơi ẩm và thuốc khí dung → bảo vệ cảm biến lưu lượng thở ra."
+   },
+   {
+    "start": 22.209,
+    "dur": 7.713,
+    "text": "Hấp / xử lý filter sau mỗi bệnh nhân.  Ghi nhớ: lọc vào bảo vệ bệnh nhân, lọc ra bảo vệ máy."
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 29.32,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 5.13,
+    "text": "Khoảng chết cơ học = thể tích gắn thêm SAU chữ Y."
+   },
+   {
+    "start": 6.38,
+    "dur": 8.28,
+    "text": "Gồm: HME · filter vi khuẩn · cuvette đo CO₂ · cảm biến lưu lượng gần · ống nối mềm."
+   },
+   {
+    "start": 15.21,
+    "dur": 4.841,
+    "text": "Hậu quả: ứ CO₂ nếu khoảng chết > 2 mL/kg."
+   },
+   {
+    "start": 20.601,
+    "dur": 7.424,
+    "text": "Ví dụ: trẻ 3 kg → ngưỡng chỉ 6 mL!"
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 38.92,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 8.94,
+    "text": "Trạm 6 — ĐO: cảm biến lưu lượng trong máy (hít vào, thở ra) hoặc gần bệnh nhân ở chữ Y."
+   },
+   {
+    "start": 10.19,
+    "dur": 5.538,
+    "text": "Cảm biến tại Y dùng để: kích hoạt theo lưu lượng · đo lưu lượng → thể tích."
+   },
+   {
+    "start": 16.278,
+    "dur": 6.286,
+    "text": "… và bù trừ thể tích, điều chỉnh áp lực trong mode PRVC, VS."
+   },
+   {
+    "start": 23.115,
+    "dur": 4.624,
+    "text": "Trong máy: thường dùng, bền, nhưng bị ảnh hưởng bởi thể tích nén."
+   },
+   {
+    "start": 28.289,
+    "dur": 9.334,
+    "text": "Gần bệnh nhân (proximal): cho sơ sinh, chính xác, nhạy, không cần tính thể tích nén — nhưng dễ tắc đàm, dơ."
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 27.48,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 5.487,
+    "text": "Trạm 7 — PHUN: bình phun khí dung gắn trên nhánh hít vào, gần chữ Y."
+   },
+   {
+    "start": 6.737,
+    "dur": 6.949,
+    "text": "Các loại: phun phản lực (jet, cần nguồn khí đẩy) · siêu âm / lưới rung · bình xịt định liều (MDI) + buồng đệm."
+   },
+   {
+    "start": 14.236,
+    "dur": 5.23,
+    "text": "Hạt khí dung lan khắp nhánh thở ra, tới tận van thở ra."
+   },
+   {
+    "start": 20.016,
+    "dur": 6.167,
+    "text": "Quy tắc 1: THÁO HME khi phun khí dung.   Quy tắc 2: GẮN filter thở ra suốt thời gian phun."
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 42.6,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 10.498,
+    "text": "ĐIỆN: pin nuôi bộ não 30–60 phút.  KHÍ: điều áp 50 psi, cảm biến O₂ thay 3–6 tháng."
+   },
+   {
+    "start": 11.748,
+    "dur": 5.479,
+    "text": "DÂY: 8 – 15 – 22 mm; dây càng đàn hồi, thể tích nén càng lớn."
+   },
+   {
+    "start": 17.777,
+    "dur": 10.068,
+    "text": "ẨM: chữ Y 37 °C; HME < 24 giờ — tránh ĐÀM · RÒ · LẠNH · THỞ MẠNH · KHÍ DUNG."
+   },
+   {
+    "start": 28.395,
+    "dur": 12.917,
+    "text": "LỌC: khoảng chết < 2 mL/kg.  ĐO: cảm biến gần BN cho sơ sinh.  PHUN: tháo HME, gắn filter thở ra."
+   }
+  ]
+ }
+]
