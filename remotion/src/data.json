@@ -1,461 +1,534 @@
 {
  "fps": 30,
- "total": 16918,
+ "total": 20450,
  "scenes": [
   {
    "from": 0,
-   "dur": 238,
+   "dur": 180,
    "sents": [
     {
      "start": 0.7,
-     "dur": 5.923,
+     "dur": 3.699,
      "text": ""
     }
    ]
   },
   {
-   "from": 238,
-   "dur": 927,
+   "from": 180,
+   "dur": 1126,
    "sents": [
     {
      "start": 0.7,
-     "dur": 2.914,
-     "text": "Hệ thống máy thở gồm 6 thành phần nối tiếp nhau."
+     "dur": 3.268,
+     "text": "Mẹo nhớ: Bế – Dắt – Tự đi."
     },
     {
-     "start": 4.164,
-     "dur": 3.504,
-     "text": "① Khí nén  ② Nguồn điện  ③ Máy thở"
+     "start": 4.518,
+     "dur": 12.055,
+     "text": "A/C = máy BẾ bệnh nhân (tự thở 0%) · SIMV, PS = máy DẮT · CPAP = bệnh nhân TỰ ĐI."
     },
     {
-     "start": 8.218,
-     "dur": 8.122,
-     "text": "④ Bộ dây máy thở  ⑤ Đường thở  ⑥ Phổi"
+     "start": 17.122,
+     "dur": 8.314,
+     "text": "Thang tự thở: A/C 0% → SIMV 20% → PSV 80% → rút NKQ 100%."
     },
     {
-     "start": 16.891,
-     "dur": 12.735,
-     "text": "Mẹo nhớ — 7 trạm: ĐIỆN → KHÍ → DÂY → ẨM → LỌC → ĐO → PHUN"
+     "start": 25.987,
+     "dur": 10.224,
+     "text": "Hành trình 7 trạm: CƠ BẢN → VC → PC → PRVC → PS → SIMV → BIVENT"
     }
    ]
   },
   {
-   "from": 1165,
-   "dur": 1005,
+   "from": 1306,
+   "dur": 1392,
    "sents": [
     {
      "start": 0.7,
-     "dur": 5.045,
-     "text": "Trạm 1 — ĐIỆN: điện xoay chiều 220 V."
+     "dur": 9.948,
+     "text": "Trạm 1 — CƠ BẢN: 5 thông số chung — FiO₂, PEEP, Trigger, Tần số, I:E."
     },
     {
-     "start": 6.295,
-     "dur": 7.668,
-     "text": "Pin sạc tự sạc khi cắm điện, chỉ nuôi phần điện tử: màn hình + điều khiển nhịp thở."
+     "start": 11.198,
+     "dur": 12.73,
+     "text": "FiO₂: bệnh nặng bắt đầu 100%, bệnh ổn 30–40%; chỉnh để SpO₂ quanh 95%, thử khí máu sau 15–30 phút."
     },
     {
-     "start": 14.513,
-     "dur": 7.2,
-     "text": "Pin KHÔNG cấp điện cho máy nén khí và máy làm ẩm."
+     "start": 24.478,
+     "dur": 8.449,
+     "text": "Mục tiêu PaO₂: phổi bình thường 80–100 mmHg · ARDS 60–90 mmHg."
     },
     {
-     "start": 22.263,
-     "dur": 6.276,
-     "text": "Pin chạy 30 phút – 1 giờ · Không dùng máy: sạc 8 giờ / tuần."
-    },
-    {
-     "start": 29.089,
-     "dur": 3.107,
-     "text": "Ghi nhớ: Pin nuôi bộ não, không nuôi cơ bắp."
+     "start": 33.477,
+     "dur": 11.617,
+     "text": "PEEP: phổi bình thường 5 cmH₂O · viêm phổi, phù phổi, ARDS bắt đầu 8–10 cmH₂O."
     }
    ]
   },
   {
-   "from": 2170,
-   "dur": 1074,
+   "from": 2698,
+   "dur": 1191,
    "sents": [
     {
      "start": 0.7,
-     "dur": 8.96,
-     "text": "Trạm 2 — KHÍ: khí nén (21% O₂) và oxy (100%)."
+     "dur": 6.454,
+     "text": "Trigger áp lực: BN hít → áp lực hệ thống tụt dưới PEEP → máy kích hoạt."
     },
     {
-     "start": 10.21,
-     "dur": 8.915,
-     "text": "Khí nén: máy nén khí theo máy / khí nén trung tâm.  Oxy: oxy bình / oxy lỏng trung tâm."
+     "start": 7.704,
+     "dur": 5.723,
+     "text": "VD: PEEP +5, độ nhạy −2 → ngưỡng thật là +3 cmH₂O."
     },
     {
-     "start": 19.675,
-     "dur": 5.339,
-     "text": "Cả 2 hệ thống phải có bộ điều áp (regulator): 50 psi ≈ 3,5 bar."
+     "start": 13.978,
+     "dur": 10.633,
+     "text": "Trigger lưu lượng: flow A (hít vào) – flow B (thở ra); BN hít → flow B giảm so với A."
     },
     {
-     "start": 25.564,
-     "dur": 8.917,
-     "text": "Ổ cắm đầu giường: Oxy – Oxy – Air – Hút (thêm 1 ổ hút ở hồi sức ngoại)."
+     "start": 25.161,
+     "dur": 9.777,
+     "text": "Cài: áp lực −2 cmH₂O (trẻ em, người lớn) · lưu lượng 0,5–1 / 1–2 / 2–3 L/phút (SS / TE / NL)."
+    },
+    {
+     "start": 35.488,
+     "dur": 2.942,
+     "text": "Ghi nhớ: trẻ nhỏ nên cài trigger LƯU LƯỢNG."
     }
    ]
   },
   {
-   "from": 3244,
-   "dur": 1136,
+   "from": 3889,
+   "dur": 852,
    "sents": [
     {
      "start": 0.7,
-     "dur": 9.435,
-     "text": "Máy có tua-bin bên trong chỉ cần nguồn oxy — hợp với BV huyện, khoa thiếu khí nén trung tâm."
+     "dur": 7.538,
+     "text": "Không tự thở: máy kích hoạt theo thời gian (nhịp CONTROL) — tần số cài là CỐ ĐỊNH."
     },
     {
-     "start": 10.685,
-     "dur": 4.481,
-     "text": "Máy thở ICU cần cả 2 nguồn khí: oxy + khí nén."
+     "start": 8.788,
+     "dur": 8.859,
+     "text": "Có tự thở: BN trigger sớm hơn chu kỳ & mạnh hơn ngưỡng → nhịp ASSIST — tần số cài là TỐI THIỂU."
     },
     {
-     "start": 15.716,
-     "dur": 8.664,
-     "text": "Bộ trộn khí: oxy 100% + khí nén 21% → hỗn hợp theo FiO₂ cài đặt, ví dụ 40%."
-    },
-    {
-     "start": 24.93,
-     "dur": 5.203,
-     "text": "Cảm biến O₂ (O₂ cell) đo nồng độ oxy SAU khi trộn → báo động nếu lệch."
-    },
-    {
-     "start": 30.683,
-     "dur": 5.88,
-     "text": "Cảm biến thường: thay mỗi 3–6 tháng · Cảm biến siêu âm: không cần thay."
+     "start": 18.197,
+     "dur": 8.888,
+     "text": "Thời gian 1 chu kỳ thở TCT = 60 / tần số: 15 → 4 s · 20 → 3 s · 30 → 2 s · 60 → 1 s."
     }
    ]
   },
   {
-   "from": 4380,
-   "dur": 1130,
+   "from": 4741,
+   "dur": 972,
    "sents": [
     {
      "start": 0.7,
-     "dur": 8.274,
-     "text": "Trạm 3 — DÂY: bộ dây đầy đủ gồm 2 nhánh: hít vào và thở ra."
+     "dur": 8.519,
+     "text": "Tần số & Ti theo tuổi (I:E 1:2): Sơ sinh 40 l/ph · Ti 0,5 s"
     },
     {
-     "start": 9.524,
-     "dur": 7.532,
-     "text": "Bộ làm ẩm & ấm nằm trên NHÁNH HÍT VÀO; bẫy nước gom nước đọng; nhiệt kế ở chữ Y."
+     "start": 9.769,
+     "dur": 7.615,
+     "text": "Nhũ nhi 30 · Ti 0,67 s   |   Trẻ nhỏ 25 · Ti 0,8 s"
     },
     {
-     "start": 17.606,
-     "dur": 15.242,
-     "text": "Cỡ dây: Sơ sinh < 7 kg → 8 mm · Trẻ em 7–25 kg → 15 mm · Người lớn > 25 kg → 22 mm."
+     "start": 17.934,
+     "dur": 7.183,
+     "text": "Trẻ em 20 · Ti 1 s   |   Trẻ lớn, người lớn 15 · Ti 1,33 s"
     },
     {
-     "start": 33.398,
-     "dur": 2.967,
-     "text": "Mẹo nhớ: 8 – 15 – 22."
+     "start": 25.667,
+     "dur": 5.431,
+     "text": "Mẹo: Ti = (60 / tần số) ÷ 3 khi I:E = 1:2."
     }
    ]
   },
   {
-   "from": 5510,
-   "dur": 911,
+   "from": 5713,
+   "dur": 1210,
    "sents": [
     {
      "start": 0.7,
-     "dur": 7.156,
-     "text": "PVC: rẻ, đàn hồi nhiều, dùng 1 lần, không hấp được."
+     "dur": 2.731,
+     "text": "Hằng số thời gian τ = R × C."
     },
     {
-     "start": 8.406,
-     "dur": 4.712,
-     "text": "Hytrel: đắt, cứng giòn, ít đàn hồi, hấp được nhưng mau hư."
+     "start": 3.981,
+     "dur": 10.264,
+     "text": "Tắc nghẽn (hen, COPD): R↑ → τ dài → tần số ↓, I:E 1:3 – 1:4 (kéo dài thở ra, tránh bẫy khí)."
     },
     {
-     "start": 13.667,
-     "dur": 5.228,
-     "text": "Silicone: đắt, ít đàn hồi, hấp được, bền — dùng nhiều lần."
+     "start": 14.795,
+     "dur": 12.748,
+     "text": "Tổn thương phế nang (viêm phổi, ARDS): C↓ → τ ngắn → tần số ↑, I:E 1:1,5 – 1:1, PEEP chống xẹp."
     },
     {
-     "start": 19.445,
-     "dur": 9.623,
-     "text": "Độ đàn hồi: PVC > Hytrel > Silicone."
+     "start": 28.093,
+     "dur": 6.322,
+     "text": "Phổi bình thường (TKTW, TK cơ, ngộ độc, hậu phẫu): I:E 1:2."
+    },
+    {
+     "start": 34.965,
+     "dur": 4.067,
+     "text": "Ghi nhớ: HEN thở ra dài · ARDS hít vào dài."
     }
    ]
   },
   {
-   "from": 6421,
-   "dur": 1372,
+   "from": 6923,
+   "dur": 1023,
    "sents": [
     {
      "start": 0.7,
-     "dur": 8.884,
-     "text": "Thể tích nén: dây giãn ra + khí bị nén ở thì hít vào → mất thể tích đến bệnh nhân."
+     "dur": 6.09,
+     "text": "Trạm 2 — VC (A/C kiểm soát thể tích): máy giữ VT cố định, BN không thay đổi được."
     },
     {
-     "start": 10.134,
-     "dur": 7.654,
-     "text": "Phụ thuộc: tổng thể tích dây + bình làm ẩm (NL > TE > SS) và độ giãn nở (PVC > Hytrel > Silicone)."
+     "start": 7.34,
+     "dur": 8.247,
+     "text": "VT = 8 mL/kg khi phổi bình thường · 6 mL/kg khi R↑ hoặc C↓ — tính theo cân nặng dự đoán (PBW)."
     },
     {
-     "start": 18.338,
-     "dur": 6.879,
-     "text": "VT thật sự = VT cài − VT nén:  450 mL = 500 mL − 50 mL"
+     "start": 16.138,
+     "dur": 10.129,
+     "text": "Thông khí phút MV = tần số × VT: 15 × 0,4 L = 6 L/phút (trẻ > 30 kg ≈ 0,1 L/kg/phút)."
     },
     {
-     "start": 25.767,
-     "dur": 6.305,
-     "text": "Khi test máy, máy đo độ giãn nở bộ dây: C dây = ΔV / ΔP (mL/cmH₂O)."
-    },
-    {
-     "start": 32.622,
-     "dur": 11.787,
-     "text": "VT nén = C dây × (P đỉnh − PEEP) → máy bơm thêm: 500 + 50 = 550 mL."
+     "start": 26.817,
+     "dur": 5.986,
+     "text": "Tuỳ chọn VC: dạng lưu lượng (vuông / giảm dần) và thời gian nghỉ (pause)."
     }
    ]
   },
   {
-   "from": 7793,
-   "dur": 1163,
+   "from": 7946,
+   "dur": 867,
    "sents": [
     {
      "start": 0.7,
-     "dur": 9.336,
-     "text": "Trạm 4 — ẨM: chủ động (máy làm ẩm bằng nhiệt) hoặc thụ động (HME)."
+     "dur": 6.399,
+     "text": "Pause thường cài 10% chu kỳ → đo được áp lực bình nguyên (Pplat)."
     },
     {
-     "start": 10.586,
-     "dur": 11.962,
-     "text": "Không dây nhiệt: bình đẩy khí ~45 °C → chữ Y còn 37 °C → về máy ~30 °C, đọng nước nhiều."
+     "start": 7.649,
+     "dur": 4.236,
+     "text": "R↑ (sức cản): Ppeak tăng MỘT MÌNH, Pplat không đổi."
     },
     {
-     "start": 23.098,
-     "dur": 8.389,
-     "text": "Có dây nhiệt nhánh hít vào: bình 37 °C, dây 39 °C, chữ Y 37 °C — cảm biến nhiệt kép."
+     "start": 12.435,
+     "dur": 3.754,
+     "text": "C↓ (độ giãn nở): Ppeak và Pplat CÙNG TĂNG."
     },
     {
-     "start": 32.037,
-     "dur": 5.426,
-     "text": "Dây nhiệt 2 nhánh: nung cả nhánh thở ra → hạn chế đọng nước."
-    }
-   ]
-  },
-  {
-   "from": 8956,
-   "dur": 920,
-   "sents": [
-    {
-     "start": 0.7,
-     "dur": 10.784,
-     "text": "Không dây nhiệt: nhiệt độ dao động — thấp: đàm đặc, mất nhiệt; cao: quá tải, bỏng hô hấp."
+     "start": 16.739,
+     "dur": 5.757,
+     "text": "Không nên cài pause khi: tụt huyết áp, tăng áp lực nội sọ, tràn khí màng phổi."
     },
     {
-     "start": 12.034,
-     "dur": 4.945,
-     "text": "Không dây nhiệt: cần điều dưỡng theo dõi, dễ nhiễm trùng bệnh viện, rẻ, lâu hư."
-    },
-    {
-     "start": 17.529,
-     "dur": 6.803,
-     "text": "Có dây nhiệt: ổn định, ít cần theo dõi, ít nhiễm trùng bệnh viện, đắt, dễ đứt dây điện trở."
-    },
-    {
-     "start": 24.882,
-     "dur": 4.512,
-     "text": "Bình chứa nước có 2 cỡ: trẻ em và người lớn."
-    }
-   ]
-  },
-  {
-   "from": 9876,
-   "dur": 1002,
-   "sents": [
-    {
-     "start": 0.7,
-     "dur": 6.079,
-     "text": "HME (Heat & Moisture Exchanger) — 'mũi nhân tạo', gắn ở chữ Y."
-    },
-    {
-     "start": 7.329,
+     "start": 23.046,
      "dur": 4.531,
-     "text": "Thở ra: HME giữ lại nhiệt và hơi ẩm của khí thở ra."
-    },
-    {
-     "start": 12.41,
-     "dur": 4.654,
-     "text": "Hít vào: HME trả lại nhiệt và độ ẩm cho khí hít vào."
-    },
-    {
-     "start": 17.613,
-     "dur": 8.995,
-     "text": "Chỉ định: giúp thở ngắn hạn < 24 giờ (hậu phẫu, ngộ độc). Khoảng chết HME < 2 mL/kg."
-    },
-    {
-     "start": 27.159,
-     "dur": 4.943,
-     "text": "Phân biệt: HME · phin lọc vi khuẩn – virus · HME-filter '2 trong 1'."
+     "text": "Ghi nhớ: đỉnh đi MỘT MÌNH → sức cản · cả hai CÙNG ĐI → độ giãn nở."
     }
    ]
   },
   {
-   "from": 10878,
-   "dur": 953,
+   "from": 8813,
+   "dur": 1194,
    "sents": [
     {
      "start": 0.7,
-     "dur": 6.673,
-     "text": "Chống chỉ định HME — mẹo nhớ 5 chữ: ĐÀM · RÒ · LẠNH · THỞ MẠNH · KHÍ DUNG"
+     "dur": 7.699,
+     "text": "Lưu lượng giảm dần: ½ Ti đầu đã vào > 75% VT (vuông chỉ 50%)."
     },
     {
-     "start": 7.923,
-     "dur": 11.16,
-     "text": "ĐÀM: đàm đặc hoặc lẫn máu.   RÒ: VTE < 70% VTI (rò phế quản – màng phổi, NKQ không bóng chèn)."
+     "start": 8.949,
+     "dur": 8.713,
+     "text": "→ áp lực trung bình cao hơn, phân bố khí đồng nhất: hợp COPD (cần lưu lượng đỉnh cao) và ARDS."
     },
     {
-     "start": 19.633,
-     "dur": 6.677,
-     "text": "LẠNH: thân nhiệt < 32 °C.   THỞ MẠNH: thông khí phút tự thở > 10 L/phút."
+     "start": 18.212,
+     "dur": 11.862,
+     "text": "VC ưu: quen, dễ dùng, đảm bảo VT & MV, kiểm soát PaCO₂ · khuyết: dễ mất đồng bộ, tăng công thở, chấn thương áp lực."
     },
     {
-     "start": 26.86,
-     "dur": 3.616,
-     "text": "KHÍ DUNG: bệnh nhân đang phun khí dung trực tuyến."
+     "start": 30.624,
+     "dur": 7.888,
+     "text": "Ở trẻ em dùng VC khi: trẻ lớn bệnh TKTW, TK cơ · tăng áp lực nội sọ · hen."
     }
    ]
   },
   {
-   "from": 11831,
-   "dur": 937,
+   "from": 10007,
+   "dur": 1088,
    "sents": [
     {
      "start": 0.7,
-     "dur": 7.017,
-     "text": "Trạm 5 — LỌC: filter ở cổng hít vào, cổng thở ra của máy và tại chữ Y."
+     "dur": 5.592,
+     "text": "Trạm 3 — PC (kiểm soát áp lực): áp lực hít vào hằng định, lưu lượng giảm dần."
     },
     {
-     "start": 8.267,
-     "dur": 3.69,
-     "text": "Filter hít vào: tránh lây vi khuẩn từ máy → dây thở và bệnh nhân."
+     "start": 6.842,
+     "dur": 6.344,
+     "text": "4 nút của PC: PEEP · Pi (PC) · Ti · rise time."
     },
     {
-     "start": 12.507,
-     "dur": 3.829,
-     "text": "Filter thở ra: tránh lây vi khuẩn từ bệnh nhân → máy và môi trường."
+     "start": 13.736,
+     "dur": 10.417,
+     "text": "VT thay đổi theo: ΔP, Ti, sức cản R, độ giãn nở C và lực tự thở của BN — R↑ hoặc C↓ → VT↓."
     },
     {
-     "start": 16.887,
-     "dur": 4.772,
-     "text": "Filter thở ra còn giữ hơi ẩm và thuốc khí dung → bảo vệ cảm biến lưu lượng thở ra."
-    },
-    {
-     "start": 22.209,
-     "dur": 7.713,
-     "text": "Hấp / xử lý filter sau mỗi bệnh nhân.  Ghi nhớ: lọc vào bảo vệ bệnh nhân, lọc ra bảo vệ máy."
+     "start": 24.703,
+     "dur": 10.276,
+     "text": "Tìm PC ban đầu: mò theo VTE · từ VC: PC = Pplat − PEEP · từ PRVC: PC = Ppeak − PEEP."
     }
    ]
   },
   {
-   "from": 12768,
-   "dur": 880,
+   "from": 11095,
+   "dur": 971,
    "sents": [
     {
      "start": 0.7,
-     "dur": 5.13,
-     "text": "Khoảng chết cơ học = thể tích gắn thêm SAU chữ Y."
+     "dur": 5.971,
+     "text": "VC giữ THỂ TÍCH → theo dõi ÁP LỰC đường thở."
     },
     {
-     "start": 6.38,
-     "dur": 8.28,
-     "text": "Gồm: HME · filter vi khuẩn · cuvette đo CO₂ · cảm biến lưu lượng gần · ống nối mềm."
+     "start": 7.221,
+     "dur": 5.478,
+     "text": "PC giữ ÁP LỰC → theo dõi THỂ TÍCH; cài báo động MV cao/thấp."
     },
     {
-     "start": 15.21,
-     "dur": 4.841,
-     "text": "Hậu quả: ứ CO₂ nếu khoảng chết > 2 mL/kg."
+     "start": 13.249,
+     "dur": 12.878,
+     "text": "PC ưu: áp lực trung bình ↑ oxy hoá, phân phối khí tốt, giảm công thở · khuyết: VT dao động → quá căng hoặc ứ CO₂."
     },
     {
-     "start": 20.601,
-     "dur": 7.424,
-     "text": "Ví dụ: trẻ 3 kg → ngưỡng chỉ 6 mL!"
+     "start": 26.677,
+     "dur": 4.382,
+     "text": "Ghi nhớ: VC giữ thể tích, nhìn áp lực · PC giữ áp lực, nhìn thể tích."
     }
    ]
   },
   {
-   "from": 13648,
-   "dur": 1167,
+   "from": 12066,
+   "dur": 965,
    "sents": [
     {
      "start": 0.7,
-     "dur": 8.94,
-     "text": "Trạm 6 — ĐO: cảm biến lưu lượng trong máy (hít vào, thở ra) hoặc gần bệnh nhân ở chữ Y."
+     "dur": 7.063,
+     "text": "Trạm 4 — PRVC: thở kiểu áp lực, nhưng ĐẢM BẢO thể tích mục tiêu."
     },
     {
-     "start": 10.19,
-     "dur": 5.538,
-     "text": "Cảm biến tại Y dùng để: kích hoạt theo lưu lượng · đo lưu lượng → thể tích."
+     "start": 8.313,
+     "dur": 9.833,
+     "text": "Nhịp đầu là NHỊP THỬ để đo cơ học phổi; từ nhịp 2, PC tự chỉnh tối đa ±3 cmH₂O mỗi nhịp."
     },
     {
-     "start": 16.278,
-     "dur": 6.286,
-     "text": "… và bù trừ thể tích, điều chỉnh áp lực trong mode PRVC, VS."
+     "start": 18.696,
+     "dur": 5.631,
+     "text": "Giới hạn trên: PIP ≤ P giới hạn − 5 cmH₂O · Tên khác: VC+ (PB), Autoflow (Dräger), APV (Hamilton)."
     },
     {
-     "start": 23.115,
-     "dur": 4.624,
-     "text": "Trong máy: thường dùng, bền, nhưng bị ảnh hưởng bởi thể tích nén."
-    },
-    {
-     "start": 28.289,
-     "dur": 9.334,
-     "text": "Gần bệnh nhân (proximal): cho sơ sinh, chính xác, nhạy, không cần tính thể tích nén — nhưng dễ tắc đàm, dơ."
+     "start": 24.877,
+     "dur": 5.989,
+     "text": "Ghi nhớ: áp lực THÔNG MINH — dùng áp lực thấp nhất để đạt VT, tự giảm khi phổi cải thiện."
     }
    ]
   },
   {
-   "from": 14815,
-   "dur": 825,
+   "from": 13031,
+   "dur": 1116,
    "sents": [
     {
      "start": 0.7,
-     "dur": 5.487,
-     "text": "Trạm 7 — PHUN: bình phun khí dung gắn trên nhánh hít vào, gần chữ Y."
+     "dur": 7.672,
+     "text": "Trạm 5 — PS (hỗ trợ áp lực): CHỈ bệnh nhân kích hoạt, máy không cài tần số."
     },
     {
-     "start": 6.737,
-     "dur": 6.949,
-     "text": "Các loại: phun phản lực (jet, cần nguồn khí đẩy) · siêu âm / lưới rung · bình xịt định liều (MDI) + buồng đệm."
+     "start": 8.922,
+     "dur": 6.661,
+     "text": "Máy đẩy tới mức PS cài; chuyển sang thở ra khi lưu lượng còn 20–30% lưu lượng đỉnh (Esens 25%)."
     },
     {
-     "start": 14.236,
-     "dur": 5.23,
-     "text": "Hạt khí dung lan khắp nhánh thở ra, tới tận van thở ra."
+     "start": 16.133,
+     "dur": 8.888,
+     "text": "VT tự thở tuỳ: mức PS, lực thở BN, R và C → chỉnh PS theo VT tự thở."
     },
     {
-     "start": 20.016,
-     "dur": 6.167,
-     "text": "Quy tắc 1: THÁO HME khi phun khí dung.   Quy tắc 2: GẮN filter thở ra suốt thời gian phun."
+     "start": 25.57,
+     "dur": 6.227,
+     "text": "Ti quá dài do rò khí → tăng ngưỡng chuyển thở ra (VD 30% → 50%)."
+    },
+    {
+     "start": 32.348,
+     "dur": 3.566,
+     "text": "Theo dõi: lâm sàng (nhịp thở, co kéo, tim, HA, tri giác, SpO₂) · máy (tần số, VT, MV) · khí máu."
     }
    ]
   },
   {
-   "from": 15640,
-   "dur": 1278,
+   "from": 14147,
+   "dur": 819,
    "sents": [
     {
      "start": 0.7,
-     "dur": 10.498,
-     "text": "ĐIỆN: pin nuôi bộ não 30–60 phút.  KHÍ: điều áp 50 psi, cảm biến O₂ thay 3–6 tháng."
+     "dur": 8.176,
+     "text": "Thông khí dự phòng khi NGƯNG THỞ: thời gian ngưng 10–30 giây."
     },
     {
-     "start": 11.748,
-     "dur": 5.479,
-     "text": "DÂY: 8 – 15 – 22 mm; dây càng đàn hồi, thể tích nén càng lớn."
+     "start": 9.426,
+     "dur": 7.4,
+     "text": "Chế độ dự phòng: PC · FiO₂ thường 100% · tần số như A/C · I:E 1:2."
     },
     {
-     "start": 17.777,
-     "dur": 10.068,
-     "text": "ẨM: chữ Y 37 °C; HME < 24 giờ — tránh ĐÀM · RÒ · LẠNH · THỞ MẠNH · KHÍ DUNG."
+     "start": 17.376,
+     "dur": 3.508,
+     "text": "Mức PC dự phòng cao hơn PS khoảng 2 cmH₂O."
     },
     {
-     "start": 28.395,
-     "dur": 12.917,
-     "text": "LỌC: khoảng chết < 2 mL/kg.  ĐO: cảm biến gần BN cho sơ sinh.  PHUN: tháo HME, gắn filter thở ra."
+     "start": 21.434,
+     "dur": 4.574,
+     "text": "Ghi nhớ: PS không có tần số → LUÔN cài dự phòng."
+    }
+   ]
+  },
+  {
+   "from": 14966,
+   "dur": 930,
+   "sents": [
+    {
+     "start": 0.7,
+     "dur": 7.45,
+     "text": "Trạm 6 — SIMV: chu kỳ chia 2 giai đoạn — giai đoạn bắt buộc + giai đoạn tự thở."
+    },
+    {
+     "start": 8.7,
+     "dur": 5.82,
+     "text": "Giai đoạn bắt buộc: chắc chắn có 1 nhịp máy (VC/PC/PRVC), đồng bộ nếu BN trigger trong cửa sổ."
+    },
+    {
+     "start": 15.07,
+     "dur": 5.238,
+     "text": "Giai đoạn tự thở: BN tự quyết tần số và VT, có thể kèm PS."
+    },
+    {
+     "start": 20.858,
+     "dur": 8.85,
+     "text": "Chuyển A/C → SIMV: tần số 15 → 12 · trigger 3 → 2 L/phút · thêm PS 12, Esens 25%; giữ nguyên thông số khác."
+    }
+   ]
+  },
+  {
+   "from": 15896,
+   "dur": 1277,
+   "sents": [
+    {
+     "start": 0.7,
+     "dur": 11.385,
+     "text": "Ca: SIMV VT 400 mL, tần số 10, PS 8 → máy đo tần số tổng 16, MV tổng 5,8 L/phút."
+    },
+    {
+     "start": 12.635,
+     "dur": 6.697,
+     "text": "MV bắt buộc = 10 × 0,4 = 4 L → MV tự thở = 5,8 − 4 = 1,8 L/phút."
+    },
+    {
+     "start": 19.882,
+     "dur": 8.507,
+     "text": "Tần số tự thở = 16 − 10 = 6 → VT tự thở TB = 1800 / 6 = 300 mL."
+    },
+    {
+     "start": 28.939,
+     "dur": 12.336,
+     "text": "Điều chỉnh: PaCO₂ → tần số SIMV & PS · PaO₂ → FiO₂, PEEP · giảm dần → PS/CPAP → rút NKQ."
+    }
+   ]
+  },
+  {
+   "from": 17173,
+   "dur": 1045,
+   "sents": [
+    {
+     "start": 0.7,
+     "dur": 7.603,
+     "text": "Trạm 7 — BIVENT: 2 mức áp lực (P cao / PEEP), BN tự thở ở BẤT KỲ thời điểm nào."
+    },
+    {
+     "start": 8.853,
+     "dur": 2.111,
+     "text": "Tên khác: BIPAP (Dräger) · Bilevel (PB 840) · DuoPAP (Hamilton) · Bivent (Servo)."
+    },
+    {
+     "start": 11.514,
+     "dur": 7.562,
+     "text": "Khác PCV: cho tự thở. Khác SIMV-PC: cho tự thở cả ở mức áp lực cao."
+    },
+    {
+     "start": 19.625,
+     "dur": 7.137,
+     "text": "Lợi ích: đồng bộ, BN dễ chịu, ít an thần, giảm bất xứng V/Q, ít ảnh hưởng huyết động."
+    },
+    {
+     "start": 27.313,
+     "dur": 6.216,
+     "text": "Chọn Bivent khi BN mất đồng bộ với SIMV-PC hoặc PCV, tự thở nhiều, cần tránh an thần kéo dài."
+    }
+   ]
+  },
+  {
+   "from": 18218,
+   "dur": 1066,
+   "sents": [
+    {
+     "start": 0.7,
+     "dur": 10.216,
+     "text": "Cài P insp: bắt đầu 10 cmH₂O, tăng dần tới VT 6–8 mL/kg PBW · hoặc Pinsp = Pplat − PEEP (từ VCV)."
+    },
+    {
+     "start": 11.466,
+     "dur": 5.158,
+     "text": "VT khó kiểm soát → theo dõi VT bắt buộc & tự thở, cài báo động MV và VT."
+    },
+    {
+     "start": 17.173,
+     "dur": 5.102,
+     "text": "PaCO₂ ↑: tăng Pinsp và/hoặc giảm PEEP, hoặc tăng tần số."
+    },
+    {
+     "start": 22.825,
+     "dur": 5.504,
+     "text": "PaO₂ ↓: ngoài FiO₂ → tăng PEEP (kèm Pinsp) hoặc kéo dài Ti."
+    },
+    {
+     "start": 28.879,
+     "dur": 5.331,
+     "text": "Ghi nhớ: CO₂ cao → nới khoảng cách 2 mức áp lực · O₂ thấp → nâng mức nền."
+    }
+   ]
+  },
+  {
+   "from": 19284,
+   "dur": 1166,
+   "sents": [
+    {
+     "start": 0.7,
+     "dur": 10.241,
+     "text": "CƠ BẢN: FiO₂ để SpO₂ ~95% · PEEP 5 (8–10 ARDS) · trẻ nhỏ trigger lưu lượng · hen thở ra dài, ARDS hít vào dài."
+    },
+    {
+     "start": 11.491,
+     "dur": 5.989,
+     "text": "VC: VT 6–8 mL/kg, nhìn áp lực; đỉnh đi một mình → sức cản · PC: giữ áp lực, nhìn thể tích."
+    },
+    {
+     "start": 18.031,
+     "dur": 6.317,
+     "text": "PRVC: áp lực thông minh ±3 · PS: chỉ BN kích hoạt, luôn cài dự phòng."
+    },
+    {
+     "start": 24.898,
+     "dur": 12.681,
+     "text": "SIMV: MV tự thở = MV tổng − MV bắt buộc · BIVENT: 2 mức áp lực, tự thở mọi lúc."
     }
    ]
   }
