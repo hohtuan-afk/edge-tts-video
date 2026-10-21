@@ -12,7 +12,7 @@ permissions:
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 340
     defaults:
       run:
         working-directory: remotion
@@ -26,7 +26,8 @@ jobs:
           V=$(npm view remotion version)
           echo "Remotion $V"
           npm install --no-audit --no-fund remotion@$V @remotion/bundler@$V @remotion/renderer@$V \
-            @remotion/google-fonts@$V react@18.3.1 react-dom@18.3.1
+            @remotion/google-fonts@$V @remotion/three@$V three@0.169.0 @react-three/fiber@8.17.10 \
+            react@18.3.1 react-dom@18.3.1
       - name: Render (mode in render-mode.txt)
         run: |
           MODE=$(cat render-mode.txt 2>/dev/null || echo stills)

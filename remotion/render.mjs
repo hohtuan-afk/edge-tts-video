@@ -6,9 +6,29 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const mode = process.argv[2] || 'stills';
+const is3d = mode.startsWith('test3d');
+const id = is3d ? 'Test3D' : 'Main';
+const chromiumOptions = {gl: 'swangle'};
 const serveUrl = await bundle({entryPoint: path.resolve('src/index.ts')});
-const composition = await selectComposition({serveUrl, id: 'Main'});
+const composition = await selectComposition({serveUrl, id, chromiumOptions});
 fs.mkdirSync('out', {recursive: true});
+
+if (is3d) {
+  for (const frame of [45, 180, 330]) {
+    await renderStill({composition, serveUrl, output: `out/t3d_${frame}.png`, frame, chromiumOptions});
+    console.log('still', frame);
+  }
+  if (mode === 'test3d') {
+    const t0 = Date.now();
+    await renderMedia({
+      composition, serveUrl, codec: 'h264', crf: 20, pixelFormat: 'yuv420p', outputLocation: 'out/test3d.mp4',
+      concurrency: 4, chromiumOptions,
+      onProgress: ({progress, renderedFrames}) => { if (renderedFrames % 30 === 0) console.log(`3d ${Math.round(progress * 100)}% ${renderedFrames}f ${((Date.now() - t0) / 1000).toFixed(0)}s`); },
+    });
+  }
+  console.log('done');
+  process.exit(0);
+}
 
 if (mode === 'video') {
   let last = -1;
