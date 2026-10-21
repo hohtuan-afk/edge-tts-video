@@ -160,7 +160,7 @@ const S2: React.FC<P> = ({S}) => {
         <XMark x={1405} y={235} r={16} a={off} />
         <XMark x={1405} y={465} r={16} a={off} />
       </Svg>
-      <Chip x={600} y={690} w={320} h={52} c={C.oxy} a={a1} s={22}>Pin nuôi: màn hình + điều khiển</Chip>
+      <Chip x={560} y={690} w={400} h={52} c={C.oxy} a={a1} s={22}>Pin nuôi: màn hình + điều khiển</Chip>
       <Chip x={1080} y={620} w={330} h={52} c={C.red} a={ap(t, st(S, 2) + 0.3)} s={22}>Pin KHÔNG cấp điện</Chip>
       <div style={{position: 'absolute', left: 300, top: 300, fontFamily: FONT, fontWeight: 800, fontSize: 28, color: C.red, opacity: off, transform: `scale(${0.8 + 0.2 * off})`}}>MẤT ĐIỆN!</div>
       <Glass x={1480} y={190} w={360} h={440} a={a3} border={C.amber}>
@@ -314,8 +314,8 @@ const S4: React.FC<P> = ({S}) => {
       <div style={{position: 'absolute', left: 1290, top: 500, width: 520, fontFamily: FONT, fontWeight: 600, fontSize: 25, color: C.txt, opacity: a3, lineHeight: 1.3}}>
         đo SAU khi trộn → báo động nếu lệch
       </div>
-      <Chip x={960} y={780} w={400} h={64} c={C.amber} a={a4} s={24}>Loại thường: thay 3–6 tháng</Chip>
-      <Chip x={1400} y={780} w={400} h={64} c={C.oxy} a={ap(t, st(S, 4) + 0.4)} s={24}>Loại siêu âm: không cần thay</Chip>
+      <Chip x={900} y={780} w={440} h={64} c={C.amber} a={a4} s={23}>Loại thường: thay 3–6 tháng</Chip>
+      <Chip x={1360} y={780} w={460} h={64} c={C.oxy} a={ap(t, st(S, 4) + 0.4)} s={23}>Loại siêu âm: không cần thay</Chip>
     </AbsoluteFill>
   );
 };
@@ -359,7 +359,7 @@ const S5: React.FC<P> = ({S}) => {
         })}
       </Svg>
       {a2 > 0 && null}
-      <Memo x={1360} y={630} w={460} h={210} t={t} s0={st(S, 3)} size={72}>8 – 15 – 22</Memo>
+      <Memo x={1330} y={640} w={500} h={190} t={t} s0={st(S, 3)} size={60}>8 – 15 – 22</Memo>
     </AbsoluteFill>
   );
 };
@@ -805,7 +805,8 @@ const S13: React.FC<P> = ({S}) => {
           const x = 300 + k * 205;
           return (
             <g key={nm} opacity={Math.min(1, kk * 1.4)} transform={`translate(${x + 95},${y}) scale(${0.5 + 0.5 * Math.min(1, kk)}) translate(${-x - 95},${-y})`}>
-              <rect x={x} y={y - 54} width={190} height={108} rx={20} fill={`${c}33`} stroke={c} strokeWidth={3} />
+              <rect x={x} y={y - 54} width={190} height={108} rx={20} fill="#101B30" />
+              <rect x={x} y={y - 54} width={190} height={108} rx={20} fill={`${c}30`} stroke={c} strokeWidth={3} />
               <text x={x + 95} y={y + 8} textAnchor="middle" fill={C.txt} fontFamily={FONT} fontWeight={800} fontSize={22}>{nm}</text>
             </g>
           );
