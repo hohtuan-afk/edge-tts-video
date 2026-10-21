@@ -5,223 +5,287 @@
  "lines": [
   {
    "id": "00-0",
-   "text": "Cơ chế sinh lý bệnh của suy hô hấp. Từ bộ trao đổi khí, đến bơm thông khí."
+   "text": "Cấu tạo máy thở tổng quát. Hành trình của một nhịp thở, từ ổ cắm điện đến lá phổi."
   },
   {
    "id": "01-0",
-   "text": "Suy hô hấp là tình trạng hệ hô hấp không duy trì được sự trao đổi khí, đủ đáp ứng nhu cầu chuyển hoá của cơ thể."
+   "text": "Một hệ thống máy thở gồm sáu thành phần nối tiếp nhau."
   },
   {
    "id": "01-1",
-   "text": "Suy hô hấp típ một là suy hô hấp giảm ô xy máu, với áp lực ô xy máu động mạch dưới sáu mươi mi li mét thuỷ ngân khi thở khí trời, còn áp lực cê ô hai bình thường hoặc thấp."
+   "text": "Đầu tiên là nguồn khí và nguồn điện, cùng đi vào máy thở."
   },
   {
    "id": "01-2",
-   "text": "Suy hô hấp típ hai là suy hô hấp tăng cê ô hai máu, với áp lực cê ô hai động mạch trên bốn mươi lăm đến năm mươi mi li mét thuỷ ngân, kèm pê hát dưới bảy phẩy ba lăm."
+   "text": "Từ máy thở, khí đi theo bộ dây, qua đường thở, rồi vào phổi bệnh nhân. Khí thở ra quay về máy theo nhánh còn lại."
   },
   {
    "id": "01-3",
-   "text": "Trong suy hô hấp cấp, pê hát giảm rõ. Còn khi mạn tính, thận giữ lại bi các bô nát để bù trừ, nên pê hát gần bình thường."
+   "text": "Để dễ nhớ, ta đi theo bảy trạm: điện, khí, dây, ẩm, lọc, đo, phun. Hãy đọc thầm vài lần: điện, khí, dây, ẩm, lọc, đo, phun."
   },
   {
    "id": "02-0",
-   "text": "Hệ hô hấp gồm hai bộ phận nối tiếp nhau. Bộ phận thứ nhất là bơm thông khí, gồm trung tâm hô hấp ở hành não, tuỷ sống và dây thần kinh hoành, các cơ hô hấp, và thành ngực."
+   "text": "Trạm thứ nhất là điện. Máy thở chạy bằng điện xoay chiều hai trăm hai mươi vôn."
   },
   {
    "id": "02-1",
-   "text": "Bộ phận thứ hai là bộ trao đổi khí, tức màng phế nang mao mạch, với khoảng ba trăm triệu phế nang, diện tích chừng bảy mươi mét vuông."
+   "text": "Máy có pin sạc, tự sạc khi cắm điện. Nhưng pin chỉ nuôi phần điện tử, gồm màn hình và bộ điều khiển nhịp thở."
   },
   {
    "id": "02-2",
-   "text": "Khi bơm bị tổn thương, cơ thể không thải được cê ô hai, gây suy hô hấp típ hai. Khi bộ trao đổi khí bị tổn thương, ô xy không vào được máu, gây suy hô hấp típ một."
+   "text": "Pin không cấp điện cho máy nén khí và máy làm ẩm. Vì vậy khi mất điện, hai bộ phận này sẽ ngừng hoạt động."
   },
   {
    "id": "02-3",
-   "text": "Trên lâm sàng, hai cơ chế này thường chồng lấp. Suy hô hấp típ một kéo dài làm cơ hô hấp mỏi, rồi chuyển thành típ hai."
+   "text": "Pin chỉ chạy được khoảng ba mươi phút đến một giờ. Nếu máy để không, cần sạc tám giờ mỗi tuần."
+  },
+  {
+   "id": "02-4",
+   "text": "Câu ghi nhớ: pin nuôi bộ não, không nuôi cơ bắp."
   },
   {
    "id": "03-0",
-   "text": "Bình thường, ô xy khuếch tán từ phế nang vào máu mao mạch, còn cê ô hai đi theo chiều ngược lại. Quá trình này hoàn toàn thụ động, nhờ chênh lệch áp lực."
+   "text": "Trạm thứ hai là khí. Máy thở dùng hai nguồn khí: khí nén, tức không khí có hai mươi mốt phần trăm ô xy, và ô xy một trăm phần trăm."
   },
   {
    "id": "03-1",
-   "text": "Máu tĩnh mạch đến phổi có áp lực ô xy bốn mươi, áp lực cê ô hai bốn mươi sáu mi li mét thuỷ ngân. Sau khi qua phổi, áp lực ô xy tăng lên khoảng chín mươi lăm, và cê ô hai giảm còn bốn mươi."
+   "text": "Khí nén lấy từ máy nén khí đi kèm máy thở, hoặc từ hệ thống khí nén trung tâm. Ô xy lấy từ bình, hoặc từ bồn ô xy lỏng trung tâm."
   },
   {
    "id": "03-2",
-   "text": "Màng trao đổi mỏng chưa đến nửa mi crô mét. Hồng cầu chỉ cần khoảng một phần tư giây để cân bằng khí, trong tổng số ba phần tư giây đi qua mao mạch, nên dự trữ rất lớn."
+   "text": "Cả hai đường khí đều phải qua bộ điều áp, đưa áp lực về khoảng ba phẩy năm lần áp suất khí quyển."
+  },
+  {
+   "id": "03-3",
+   "text": "Tại đầu giường, khí ra qua dãy ổ cắm: ô xy, ô xy, khí nén, và hút. Khoa hồi sức ngoại có thêm một ổ hút nữa."
   },
   {
    "id": "04-0",
-   "text": "Mọi trường hợp giảm ô xy máu đều quy về một hoặc vài trong năm cơ chế sau."
+   "text": "Có loại máy thở có tua bin bên trong, tự tạo khí nén, nên chỉ cần nguồn ô xy. Loại này hợp với bệnh viện huyện, nơi thiếu khí nén trung tâm."
   },
   {
    "id": "04-1",
-   "text": "Một, giảm áp lực ô xy trong khí hít vào, như khi lên vùng núi cao. Hai, giảm thông khí phế nang. Ở hai cơ chế này, chênh áp phế nang động mạch vẫn bình thường."
+   "text": "Còn máy thở hồi sức tích cực thường cần cả hai nguồn khí, ô xy và khí nén."
   },
   {
    "id": "04-2",
-   "text": "Ba, bất xứng thông khí tưới máu, là cơ chế thường gặp nhất. Bốn, luồng thông phải trái, còn gọi là sân. Và năm, rối loạn khuếch tán. Ba cơ chế này đều làm tăng chênh áp phế nang động mạch."
+   "text": "Bên trong máy, bộ trộn khí pha ô xy một trăm phần trăm với khí nén hai mươi mốt phần trăm, thành hỗn hợp đúng nồng độ ô xy đã cài, ví dụ bốn mươi phần trăm."
   },
   {
    "id": "04-3",
-   "text": "Hai câu hỏi giúp phân định: chênh áp phế nang động mạch có tăng không, và áp lực ô xy máu có cải thiện khi cho thở ô xy một trăm phần trăm không."
+   "text": "Ngay sau bộ trộn có cảm biến ô xy, đo lại nồng độ thực tế, và báo động nếu bị lệch."
+  },
+  {
+   "id": "04-4",
+   "text": "Cảm biến loại thường phải thay mỗi ba đến sáu tháng. Loại cảm biến siêu âm thì không cần thay."
   },
   {
    "id": "05-0",
-   "text": "Khi thông khí phế nang giảm, cê ô hai ứ lại trong phế nang và chiếm chỗ của ô xy."
+   "text": "Trạm thứ ba là dây. Bộ dây máy thở đầy đủ gồm hai nhánh: nhánh hít vào và nhánh thở ra, gặp nhau ở đầu nối chữ Y."
   },
   {
    "id": "05-1",
-   "text": "Theo phương trình khí phế nang, khi áp lực cê ô hai tăng từ bốn mươi lên tám mươi, áp lực ô xy phế nang giảm từ một trăm xuống còn năm mươi mi li mét thuỷ ngân."
+   "text": "Bộ làm ẩm và làm ấm nằm trên nhánh hít vào. Trên dây có bẫy nước để gom nước đọng, và nhiệt kế đặt gần chữ Y."
   },
   {
    "id": "05-2",
-   "text": "Vì vậy, giảm ô xy máu do giảm thông khí luôn đi kèm tăng cê ô hai, chênh áp phế nang động mạch bình thường, và đáp ứng tốt khi cho thở ô xy."
+   "text": "Chọn cỡ dây theo cân nặng. Dưới bảy ký dùng dây sơ sinh, đường kính tám mi li mét. Từ bảy đến hai mươi lăm ký dùng dây trẻ em, mười lăm mi li mét. Trên hai mươi lăm ký dùng dây người lớn, hai mươi hai mi li mét."
   },
   {
    "id": "05-3",
-   "text": "Ví dụ thường gặp là quá liều thuốc giảm đau gây nghiện, thuốc an thần, hoặc bệnh thần kinh cơ."
+   "text": "Mẹo nhớ: tám, mười lăm, hai mươi hai."
   },
   {
    "id": "06-0",
-   "text": "Mỗi phế nang cần được thông khí và tưới máu tương xứng với nhau. Tỉ số này gọi là tỉ số thông khí trên tưới máu."
+   "text": "Bộ dây có ba chất liệu. Dây nhựa pê vê xê rẻ, đàn hồi nhiều, chỉ dùng một lần, không hấp được."
   },
   {
    "id": "06-1",
-   "text": "Ở một đầu, phế nang được thông khí nhưng không có máu tới, tỉ số bằng vô cùng, gọi là khoảng chết, như trong thuyên tắc phổi. Bình thường, tỉ số này xấp xỉ một."
+   "text": "Dây Hai-tren đắt hơn, cứng và giòn, ít đàn hồi, hấp được nhưng mau hư."
   },
   {
    "id": "06-2",
-   "text": "Khi thông khí kém hơn tưới máu, tỉ số thấp, gặp trong hen, bệnh phổi tắc nghẽn mạn tính, viêm phổi. Ở đầu kia, phế nang hoàn toàn không được thông khí, tỉ số bằng không, chính là sân, như trong hội chứng suy hô hấp cấp tiến triển, xẹp phổi, phù phổi."
+   "text": "Dây si li côn cũng đắt, ít đàn hồi, hấp được, và rất bền, dùng được nhiều lần."
   },
   {
    "id": "06-3",
-   "text": "Tỉ số thấp là nguyên nhân giảm ô xy máu thường gặp nhất. Máu từ vùng thông khí tốt không thể bù lại, vì hê mô glô bin ở đó đã gần bão hoà."
+   "text": "Hãy nhớ thứ tự độ đàn hồi: pê vê xê lớn nhất, rồi đến Hai-tren, và si li côn ít nhất. Thứ tự này quyết định trạm kế tiếp: thể tích nén."
   },
   {
    "id": "07-0",
-   "text": "Trong sân, máu đi qua vùng phổi hoàn toàn không được thông khí, rồi trộn vào máu động mạch, kéo độ bão hoà ô xy chung xuống thấp."
+   "text": "Ở thì hít vào, bộ dây giãn ra, và khí trong dây bị nén lại. Một phần thể tích vì thế ở lại trong dây, không đến được bệnh nhân."
   },
   {
    "id": "07-1",
-   "text": "Khi tăng nồng độ ô xy khí thở vào, ô xy chỉ đến được những phế nang đã thông khí, mà máu ở đó vốn đã bão hoà. Máu đi qua vùng sân không hề tiếp xúc với ô xy."
+   "text": "Thể tích nén càng lớn khi bộ dây và bình làm ẩm càng to, người lớn hơn trẻ em, trẻ em hơn sơ sinh, và khi dây càng đàn hồi."
   },
   {
    "id": "07-2",
-   "text": "Vì thế, trên biểu đồ, giảm ô xy máu do tỉ số thông khí trên tưới máu thấp đáp ứng rất tốt với ô xy, còn sân càng lớn thì đường cong càng phẳng."
+   "text": "Ví dụ, cài thể tích khí lưu thông năm trăm mi li lít, mất năm mươi mi li lít trong dây, bệnh nhân chỉ nhận bốn trăm năm mươi."
   },
   {
    "id": "07-3",
-   "text": "Sân lớn hơn ba mươi phần trăm gần như kháng trị với ô xy. Cần mở lại phế nang bằng áp lực dương cuối thì thở ra, tư thế nằm sấp, và điều trị nguyên nhân."
+   "text": "Vì vậy, khi tự kiểm tra, máy đo độ giãn nở của bộ dây, tính bằng mi li lít trên mỗi xăng ti mét nước."
+  },
+  {
+   "id": "07-4",
+   "text": "Mỗi nhịp, máy nhân độ giãn nở đó với chênh lệch giữa áp lực đỉnh và áp lực dương cuối thì thở ra, rồi tự bơm bù phần bị nén. Máy đẩy ra năm trăm năm mươi, để bệnh nhân nhận đủ năm trăm."
   },
   {
    "id": "08-0",
-   "text": "Theo định luật Fích, lượng khí khuếch tán tỉ lệ thuận với diện tích màng và chênh lệch áp lực, tỉ lệ nghịch với độ dày màng."
+   "text": "Trạm thứ tư là ẩm. Khí từ máy rất khô và lạnh, nên phải làm ẩm và làm ấm, bằng máy làm ẩm có gia nhiệt, hoặc bằng bộ trao đổi nhiệt ẩm."
   },
   {
    "id": "08-1",
-   "text": "Khi màng dày lên, như trong xơ phổi hay bệnh phổi mô kẽ, áp lực ô xy trong mao mạch tăng chậm hơn bình thường."
+   "text": "Với máy làm ẩm không có dây nhiệt, bình phải đẩy khí lên khoảng bốn mươi lăm độ, vì khí nguội dần trên đường đi. Đến chữ Y còn ba mươi bảy độ, và hơi nước đọng lại trong dây, nên cần bẫy nước."
   },
   {
    "id": "08-2",
-   "text": "Lúc nghỉ, vẫn còn đủ thời gian để cân bằng. Nhưng khi gắng sức, máu chảy nhanh, chỉ còn khoảng một phần tư giây, nên không kịp cân bằng, và gây giảm ô xy máu."
+   "text": "Với máy có dây nhiệt ở nhánh hít vào, bình chỉ cần ba mươi bảy độ, dây giữ khoảng ba mươi chín độ, nhờ cảm biến nhiệt kép đặt ở bình và ở chữ Y."
   },
   {
    "id": "08-3",
-   "text": "Vì vậy, rối loạn khuếch tán hiếm khi đơn độc gây giảm ô xy máu nặng lúc nghỉ."
+   "text": "Loại có dây nhiệt hai nhánh còn nung nóng cả nhánh thở ra, để hơi nước không đọng lại trên đường về máy."
   },
   {
    "id": "09-0",
-   "text": "Chênh áp phế nang động mạch so sánh lượng ô xy đáng lẽ có trong phế nang, với lượng ô xy thực có trong máu động mạch."
+   "text": "So sánh hai loại. Máy không có dây nhiệt cho nhiệt độ dao động. Nhiệt thấp thì đàm đặc, mất nhiệt. Nhiệt cao thì quá tải nước và bỏng đường hô hấp."
   },
   {
    "id": "09-1",
-   "text": "Khi thở khí trời ở mực nước biển, áp lực ô xy phế nang khoảng một trăm mi li mét thuỷ ngân."
+   "text": "Loại này cần điều dưỡng theo dõi sát, dễ nhiễm trùng bệnh viện, nhưng rẻ và lâu hư."
   },
   {
    "id": "09-2",
-   "text": "Nếu khí máu cho áp lực ô xy năm mươi lăm, thì chênh áp là bốn mươi lăm, tăng rõ so với mức bình thường, xấp xỉ tuổi chia bốn cộng bốn."
+   "text": "Máy có dây nhiệt thì nhiệt độ ổn định, ít cần theo dõi, ít nhiễm trùng bệnh viện, nhưng đắt và dễ đứt dây điện trở."
   },
   {
    "id": "09-3",
-   "text": "Nếu chênh áp bình thường, nghĩ đến giảm thông khí hoặc giảm áp lực ô xy hít vào. Nếu chênh áp tăng, cho thở ô xy một trăm phần trăm. Cải thiện tốt gợi ý bất xứng thông khí tưới máu hoặc rối loạn khuếch tán. Cải thiện kém gợi ý sân."
-  },
-  {
-   "id": "09-4",
-   "text": "Lưu ý, chênh áp tăng theo tuổi và theo nồng độ ô xy khí thở, nên đáng tin nhất khi bệnh nhân thở khí trời."
+   "text": "Bình chứa nước của máy làm ẩm cũng có hai cỡ, cho trẻ em và cho người lớn."
   },
   {
    "id": "10-0",
-   "text": "Áp lực cê ô hai máu phản ánh cân bằng giữa lượng cê ô hai cơ thể sinh ra, và thông khí phế nang thải đi."
+   "text": "Cách làm ẩm thụ động là bộ trao đổi nhiệt ẩm, gắn ngay ở chữ Y. Hãy hình dung nó như một chiếc mũi nhân tạo."
   },
   {
    "id": "10-1",
-   "text": "Cê ô hai tăng khi cơ thể sinh ra nhiều hơn, như sốt, nhiễm khuẩn, co giật."
+   "text": "Khi thở ra, khí ấm và ẩm đi qua, bộ lọc giữ lại nhiệt và hơi nước."
   },
   {
    "id": "10-2",
-   "text": "Hoặc khi thông khí phút giảm, do ức chế trung tâm hô hấp, bệnh thần kinh cơ như Ghi lanh Ba rê, nhược cơ, hoặc bệnh thành ngực."
+   "text": "Khi hít vào, khí khô và lạnh đi qua, nhận lại nhiệt và hơi ẩm đã giữ."
   },
   {
    "id": "10-3",
-   "text": "Hoặc khi khoảng chết tăng, như trong bệnh phổi tắc nghẽn mạn tính, thuyên tắc phổi, và kiểu thở nhanh và nông."
+   "text": "Chỉ định là thở máy ngắn hạn, dưới hai mươi bốn giờ, như hậu phẫu hay ngộ độc. Chú ý chọn loại có khoảng chết nhỏ hơn hai mi li lít trên ký."
   },
   {
    "id": "10-4",
-   "text": "Ví dụ, cùng thông khí phút sáu lít. Thở mười hai lần, mỗi lần năm trăm mi li lít, thì thông khí phế nang là bốn phẩy hai lít. Nhưng thở ba mươi lần, mỗi lần hai trăm mi li lít, thì chỉ còn một phẩy năm lít."
-  },
-  {
-   "id": "10-5",
-   "text": "Thở nhanh và nông không có nghĩa là thông khí tốt, vì khoảng chết đã chiếm mất phần lớn mỗi nhịp thở."
+   "text": "Cần phân biệt bộ trao đổi nhiệt ẩm, phin lọc vi khuẩn và vi rút, và loại hai trong một."
   },
   {
    "id": "11-0",
-   "text": "Suy hô hấp không đứng yên, mà tự nuôi dưỡng chính nó."
+   "text": "Chống chỉ định của bộ trao đổi nhiệt ẩm, nhớ năm chữ: đàm, rò, lạnh, thở mạnh, khí dung."
   },
   {
    "id": "11-1",
-   "text": "Tải hô hấp tăng làm tăng công thở và tiêu thụ ô xy của cơ hô hấp. Cơ mỏi dần, bệnh nhân thở nhanh và nông, làm tăng khoảng chết. Cê ô hai tăng, ô xy giảm, gây toan máu, và cơ lại co kém hơn nữa."
+   "text": "Đàm, là đàm đặc hoặc lẫn máu. Rò, là khi thể tích thở ra nhỏ hơn bảy mươi phần trăm thể tích hít vào, như rò phế quản màng phổi, hay ống nội khí quản không có bóng chèn."
   },
   {
    "id": "11-2",
-   "text": "Khi tải vượt quá sức chịu, bệnh nhân chuyển từ thở nhanh, co kéo, sang thở chậm và nông. Đó là dấu hiệu sắp ngừng thở."
+   "text": "Lạnh, là thân nhiệt dưới ba mươi hai độ. Thở mạnh, là thông khí phút tự thở trên mười lít mỗi phút."
   },
   {
    "id": "11-3",
-   "text": "Thở máy không xâm lấn hoặc thở máy xâm lấn giúp cơ hô hấp nghỉ ngơi, phá vỡ vòng xoắn, trong lúc điều trị nguyên nhân."
+   "text": "Và khí dung, là bệnh nhân đang phun khí dung trên dây máy thở."
   },
   {
    "id": "12-0",
-   "text": "Đường cong phân ly của hê mô glô bin với ô xy giải thích vì sao sáu mươi mi li mét thuỷ ngân là ngưỡng định nghĩa. Tại đây độ bão hoà khoảng chín mươi phần trăm, và dưới ngưỡng này, độ bão hoà rơi rất nhanh."
+   "text": "Trạm thứ năm là lọc. Phin lọc được đặt ở cổng hít vào, cổng thở ra của máy, và có thể ở chữ Y."
   },
   {
    "id": "12-1",
-   "text": "Thiếu ô xy mô gây chuyển hoá yếm khí, tăng lắc tát và toan chuyển hoá. Co mạch phổi do thiếu ô xy làm tăng áp động mạch phổi, gây quá tải thất phải."
+   "text": "Phin lọc hít vào ngăn vi khuẩn từ máy đi vào dây thở và bệnh nhân."
   },
   {
    "id": "12-2",
-   "text": "Tăng cê ô hai gây toan hô hấp và giãn mạch não, dẫn đến tăng áp lực nội sọ, lơ mơ, hôn mê. Hệ giao cảm bị kích hoạt, gây nhịp nhanh, tăng huyết áp, vã mồ hôi."
+   "text": "Phin lọc thở ra ngăn vi khuẩn từ bệnh nhân đi vào máy và ra môi trường."
   },
   {
    "id": "12-3",
-   "text": "Não, tim và thận chịu thiếu ô xy kém nhất. Rối loạn ý thức là dấu hiệu nặng ở cả hai típ suy hô hấp."
+   "text": "Nó còn giữ hơi ẩm và thuốc khí dung, giúp bảo vệ cảm biến đo lưu lượng thở ra."
+  },
+  {
+   "id": "12-4",
+   "text": "Phải xử lý phin lọc sau mỗi bệnh nhân. Ghi nhớ: lọc vào bảo vệ bệnh nhân, lọc ra bảo vệ máy và mọi người."
   },
   {
    "id": "13-0",
-   "text": "Tóm lại, khi bộ trao đổi khí bị tổn thương, ta có suy hô hấp típ một. Khi bơm thông khí bị tổn thương, ta có típ hai."
+   "text": "Mọi thứ gắn thêm sau chữ Y đều tạo ra khoảng chết cơ học, tức khí bệnh nhân hít đi hít lại."
   },
   {
    "id": "13-1",
-   "text": "Có năm cơ chế giảm ô xy máu, phân định bằng chênh áp phế nang động mạch, và đáp ứng với ô xy một trăm phần trăm."
+   "text": "Đó có thể là bộ trao đổi nhiệt ẩm, phin lọc, khoang đo cê ô hai, cảm biến lưu lượng gần, hay ống nối mềm giữa chữ Y và nội khí quản."
   },
   {
    "id": "13-2",
-   "text": "Cê ô hai tăng khi sinh nhiều, thông khí giảm, hoặc khoảng chết tăng."
+   "text": "Nếu tổng khoảng chết vượt quá hai mi li lít trên ký, bệnh nhân sẽ bị ứ cê ô hai."
   },
   {
    "id": "13-3",
-   "text": "Và hãy nhận diện sớm vòng xoắn mỏi cơ, để hỗ trợ thông khí kịp thời. Cảm ơn các bạn đã theo dõi."
+   "text": "Ví dụ, một bé sơ sinh ba ký, ngưỡng chỉ là sáu mi li lít. Gắn thêm một món nhỏ cũng có thể vượt ngưỡng."
+  },
+  {
+   "id": "14-0",
+   "text": "Trạm thứ sáu là đo. Cảm biến lưu lượng có thể nằm trong máy, ở nhánh hít vào và thở ra, hoặc nằm gần bệnh nhân, ngay tại chữ Y."
+  },
+  {
+   "id": "14-1",
+   "text": "Cảm biến tại chữ Y giúp máy nhận biết nhịp tự thở theo lưu lượng, và đo lưu lượng để tính ra thể tích."
+  },
+  {
+   "id": "14-2",
+   "text": "Nó cũng giúp bù trừ thể tích và điều chỉnh áp lực trong các chế độ kiểm soát áp lực điều chỉnh thể tích, và hỗ trợ thể tích."
+  },
+  {
+   "id": "14-3",
+   "text": "Cảm biến trong máy thường dùng và bền, nhưng bị ảnh hưởng bởi thể tích nén của bộ dây."
+  },
+  {
+   "id": "14-4",
+   "text": "Cảm biến gần bệnh nhân hợp cho sơ sinh, chính xác và nhạy, không cần tính thể tích nén. Nhược điểm là dễ tắc đàm, và dễ dơ vì không hấp được."
+  },
+  {
+   "id": "15-0",
+   "text": "Trạm cuối cùng là phun. Bình phun khí dung gắn trên nhánh hít vào, gần chữ Y."
+  },
+  {
+   "id": "15-1",
+   "text": "Có ba kiểu: bình phun phản lực cần nguồn khí đẩy, máy phun siêu âm hoặc lưới rung, và bình xịt định liều gắn qua buồng đệm."
+  },
+  {
+   "id": "15-2",
+   "text": "Hạt thuốc không chỉ vào phổi, mà còn lan khắp nhánh thở ra, tới tận van thở ra của máy."
+  },
+  {
+   "id": "15-3",
+   "text": "Vì vậy nhớ hai quy tắc: tháo bộ trao đổi nhiệt ẩm khi phun khí dung, và gắn phin lọc thở ra suốt thời gian phun."
+  },
+  {
+   "id": "16-0",
+   "text": "Cùng ôn lại bảy trạm. Điện: pin nuôi bộ não, ba mươi đến sáu mươi phút. Khí: qua bộ điều áp, cảm biến ô xy thay mỗi ba đến sáu tháng."
+  },
+  {
+   "id": "16-1",
+   "text": "Dây: tám, mười lăm, hai mươi hai, và dây càng đàn hồi thì thể tích nén càng lớn."
+  },
+  {
+   "id": "16-2",
+   "text": "Ẩm: khí đến chữ Y khoảng ba mươi bảy độ. Bộ trao đổi nhiệt ẩm dùng dưới hai mươi bốn giờ, tránh khi đàm, rò, lạnh, thở mạnh, khí dung."
+  },
+  {
+   "id": "16-3",
+   "text": "Lọc: giữ khoảng chết dưới hai mi li lít trên ký. Đo: cảm biến gần bệnh nhân cho sơ sinh. Phun: tháo bộ trao đổi nhiệt ẩm, gắn phin lọc thở ra. Chúc các bạn học tốt."
   }
  ]
 }
