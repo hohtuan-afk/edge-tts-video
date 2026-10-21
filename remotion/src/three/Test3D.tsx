@@ -82,7 +82,11 @@ const Ventilator: React.FC<{t: number}> = ({t}) => {
       <mesh geometry={screen} position={[0, 0.62, 0.62]}>
         <meshPhysicalMaterial color="#061322" roughness={0.15} clearcoat={1} />
       </mesh>
-      <mesh geometry={wave} position={[0, 0.62, 0.66]}>
+      <mesh position={[0, 0.62, 0.705]}>
+        <planeGeometry args={[1.22, 0.76]} />
+        <meshBasicMaterial color="#04101E" toneMapped={false} />
+      </mesh>
+      <mesh geometry={wave} position={[0, 0.62, 0.72]}>
         <meshBasicMaterial color="#5EEAD4" toneMapped={false} />
       </mesh>
       {[-0.45, 0, 0.45].map((x) => (
@@ -94,6 +98,26 @@ const Ventilator: React.FC<{t: number}> = ({t}) => {
       <mesh position={[0, -0.75, 0.6]}>
         <boxGeometry args={[1.2, 0.08, 0.04]} />
         <meshBasicMaterial color={C.amber} toneMapped={false} />
+      </mesh>
+      <mesh position={[0, -1.75, 0]}>
+        <cylinderGeometry args={[0.07, 0.07, 0.9, 20]} />
+        <meshPhysicalMaterial color="#9AA8BA" roughness={0.25} metalness={0.85} />
+      </mesh>
+      {[0, 1, 2, 3, 4].map((k) => (
+        <group key={k} rotation={[0, (k * 2 * Math.PI) / 5, 0]}>
+          <mesh position={[0.35, -2.18, 0]} rotation={[0, 0, Math.PI / 2]}>
+            <cylinderGeometry args={[0.04, 0.04, 0.7, 12]} />
+            <meshPhysicalMaterial color="#9AA8BA" roughness={0.25} metalness={0.85} />
+          </mesh>
+          <mesh position={[0.68, -2.24, 0]}>
+            <sphereGeometry args={[0.08, 16, 12]} />
+            <meshPhysicalMaterial color="#2B3647" roughness={0.4} />
+          </mesh>
+        </group>
+      ))}
+      <mesh position={[0, 1.42, 0]}>
+        <torusGeometry args={[0.35, 0.05, 12, 32, Math.PI]} />
+        <meshPhysicalMaterial color="#C9D3DF" roughness={0.3} metalness={0.5} />
       </mesh>
       {[0.45, -0.45].map((y) => (
         <mesh key={y} position={[0.9, y, 0.15]} rotation={[0, 0, Math.PI / 2]}>
@@ -189,10 +213,10 @@ const Bronchi: React.FC = () => {
       if (depth === 0) return;
       for (const s of [-1, 1]) {
         const d = dir.clone().applyAxisAngle(V(0, 0, 1), s * (0.45 + 0.1 * depth)).applyAxisAngle(V(0, 1, 0), s * 0.5).normalize();
-        grow(b, d, len * 0.72, r * 0.68, depth - 1);
+        grow(b, d, len * 0.66, r * 0.66, depth - 1);
       }
     };
-    for (const s of [-1, 1]) grow(V(0, 0.55, 0), V(s * 0.75, -0.55, 0).normalize(), 0.55, 0.075, 4);
+    for (const s of [-1, 1]) grow(V(0, 0.55, 0), V(s * 0.7, -0.6, 0).normalize(), 0.42, 0.07, 3);
     return out;
   }, []);
   return (
@@ -243,7 +267,13 @@ const Lungs3D: React.FC<{t: number; pos: [number, number, number]}> = ({t, pos})
 
 // ---------- bình làm ẩm ----------
 const Humidifier: React.FC<{p: THREE.Vector3; t: number}> = ({p, t}) => (
-  <group position={[p.x, p.y - 0.55, p.z]}>
+  <group position={[p.x, p.y - 0.62, p.z]}>
+    {[-0.12, 0.12].map((dx) => (
+      <mesh key={dx} position={[dx, 0.46, 0]}>
+        <cylinderGeometry args={[0.06, 0.06, 0.36, 16]} />
+        <meshPhysicalMaterial color="#9ED8F5" roughness={0.2} transparent opacity={0.8} />
+      </mesh>
+    ))}
     <mesh>
       <cylinderGeometry args={[0.34, 0.34, 0.6, 40]} />
       <meshPhysicalMaterial color="#CFEFFF" roughness={0.05} transparent opacity={0.28} clearcoat={1} depthWrite={false} />
@@ -289,7 +319,7 @@ const Scene: React.FC<{t: number}> = ({t}) => {
     const Y = V(1.45, 0.05, 0.35);
     const insp = new THREE.CatmullRomCurve3([V(-2.45, -0.45, 0.15), V(-1.7, -0.75, 0.45), V(-0.3, -0.95, 0.75), V(0.8, -0.55, 0.6), Y]);
     const exp = new THREE.CatmullRomCurve3([Y, V(0.8, 0.65, 0.5), V(-0.4, 0.95, 0.4), V(-1.7, 0.75, 0.25), V(-2.45, 0.45, 0.15)]);
-    const pat = new THREE.CatmullRomCurve3([Y, V(2.0, 0.25, 0.25), V(2.55, 1.1, 0.08), V(2.9, 1.75, 0)]);
+    const pat = new THREE.CatmullRomCurve3([Y, V(1.95, 0.45, 0.25), V(2.3, 1.6, 0.12), V(2.75, 2.1, 0.02), V(2.9, 1.75, 0), V(2.9, 1.45, 0)]);
     const inspFlow = new THREE.CatmullRomCurve3([...insp.points, ...pat.points.slice(1)]);
     const expFlow = new THREE.CatmullRomCurve3([...[...pat.points].reverse(), ...exp.points.slice(1)]);
     return {Y, insp, exp, pat, inspFlow, expFlow};
