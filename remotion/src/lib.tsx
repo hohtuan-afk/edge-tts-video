@@ -145,11 +145,11 @@ export const Header: React.FC<{num: string; title: string; t: number}> = ({num, 
   );
 };
 
-export const Roadmap: React.FC<{cur: number | 'all'; t: number}> = ({cur, t}) => {
+export const Roadmap: React.FC<{cur: number | 'all'; t: number; labels?: string[]}> = ({cur, t, labels = STN}) => {
   const a = ap(t, 0.1, 0.8);
   return (
     <div style={{position: 'absolute', right: 80, top: 58, display: 'flex', gap: 8, opacity: a}}>
-      {STN.map((s, i) => {
+      {labels.map((s, i) => {
         const on = cur === 'all' || i === cur;
         const past = cur !== 'all' && i < cur;
         return (

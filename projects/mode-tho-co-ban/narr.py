@@ -2,7 +2,7 @@
 # Nguồn: "Cài đặt các mode thở cơ bản – máy thở Servo-c cho bệnh nhân nhi" — BS. Đặng Thanh Tuấn, BV Nhi Đồng 1 (03/2026)
 NARR = [
     # 0 Tiêu đề
-    [("", "Cài đặt các chế độ thở cơ bản, trên máy thở Servo cho bệnh nhân nhi.")],
+    [("", "Cài đặt các chế độ thở cơ bản, trên máy thở cho bệnh nhân nhi.")],
     # 1 Bức tranh tổng
     [("Mẹo nhớ: Bế – Dắt – Tự đi.",
       "Hãy nhớ ba chữ: bế, dắt, và tự đi."),
