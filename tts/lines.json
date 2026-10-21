@@ -5,287 +5,331 @@
  "lines": [
   {
    "id": "00-0",
-   "text": "Cấu tạo máy thở tổng quát. Hành trình của một nhịp thở, từ ổ cắm điện đến lá phổi."
+   "text": "Cài đặt các chế độ thở cơ bản, trên máy thở Servo cho bệnh nhân nhi."
   },
   {
    "id": "01-0",
-   "text": "Một hệ thống máy thở gồm sáu thành phần nối tiếp nhau."
+   "text": "Hãy nhớ ba chữ: bế, dắt, và tự đi."
   },
   {
    "id": "01-1",
-   "text": "Đầu tiên là nguồn khí và nguồn điện, cùng đi vào máy thở."
+   "text": "Ở chế độ hỗ trợ kiểm soát, máy bế bệnh nhân, làm gần như toàn bộ. Thông khí ngắt quãng đồng bộ và hỗ trợ áp lực là máy dắt. Còn áp lực dương liên tục là bệnh nhân tự đi."
   },
   {
    "id": "01-2",
-   "text": "Từ máy thở, khí đi theo bộ dây, qua đường thở, rồi vào phổi bệnh nhân. Khí thở ra quay về máy theo nhánh còn lại."
+   "text": "Khi lực tự thở tăng dần, ta đi từ hỗ trợ kiểm soát, sang thông khí ngắt quãng đồng bộ, rồi hỗ trợ áp lực, và cuối cùng là rút nội khí quản."
   },
   {
    "id": "01-3",
-   "text": "Để dễ nhớ, ta đi theo bảy trạm: điện, khí, dây, ẩm, lọc, đo, phun. Hãy đọc thầm vài lần: điện, khí, dây, ẩm, lọc, đo, phun."
+   "text": "Bài học đi qua bảy trạm: thông số cơ bản, kiểm soát thể tích, kiểm soát áp lực, kiểm soát áp lực điều chỉnh thể tích, hỗ trợ áp lực, thông khí ngắt quãng đồng bộ, và Bai-vent."
   },
   {
    "id": "02-0",
-   "text": "Trạm thứ nhất là điện. Máy thở chạy bằng điện xoay chiều hai trăm hai mươi vôn."
+   "text": "Trạm một là năm thông số chung cho mọi chế độ: nồng độ ô xy khí thở vào, áp lực dương cuối thì thở ra, ngưỡng kích hoạt, tần số, và tỉ lệ hít vào trên thở ra."
   },
   {
    "id": "02-1",
-   "text": "Máy có pin sạc, tự sạc khi cắm điện. Nhưng pin chỉ nuôi phần điện tử, gồm màn hình và bộ điều khiển nhịp thở."
+   "text": "Nồng độ ô xy: bệnh nặng bắt đầu một trăm phần trăm, bệnh ổn chỉ cần ba mươi đến bốn mươi phần trăm. Chỉnh tại giường để độ bão hoà ô xy quanh chín mươi lăm phần trăm, rồi thử lại khí máu sau mười lăm đến ba mươi phút."
   },
   {
    "id": "02-2",
-   "text": "Pin không cấp điện cho máy nén khí và máy làm ẩm. Vì vậy khi mất điện, hai bộ phận này sẽ ngừng hoạt động."
+   "text": "Mục tiêu áp lực ô xy máu động mạch: phổi bình thường tám mươi đến một trăm, còn hội chứng suy hô hấp cấp tiến triển chỉ cần sáu mươi đến chín mươi mi li mét thuỷ ngân."
   },
   {
    "id": "02-3",
-   "text": "Pin chỉ chạy được khoảng ba mươi phút đến một giờ. Nếu máy để không, cần sạc tám giờ mỗi tuần."
-  },
-  {
-   "id": "02-4",
-   "text": "Câu ghi nhớ: pin nuôi bộ não, không nuôi cơ bắp."
+   "text": "Áp lực dương cuối thì thở ra: phổi bình thường cài năm xăng ti mét nước. Bệnh làm phổi kém giãn nở như viêm phổi, phù phổi, hội chứng suy hô hấp cấp tiến triển thì bắt đầu từ tám đến mười."
   },
   {
    "id": "03-0",
-   "text": "Trạm thứ hai là khí. Máy thở dùng hai nguồn khí: khí nén, tức không khí có hai mươi mốt phần trăm ô xy, và ô xy một trăm phần trăm."
+   "text": "Kích hoạt theo áp lực: khi bệnh nhân hít vào, áp lực trong hệ thống tụt xuống dưới mức nền, và máy bắt đầu nhịp thở."
   },
   {
    "id": "03-1",
-   "text": "Khí nén lấy từ máy nén khí đi kèm máy thở, hoặc từ hệ thống khí nén trung tâm. Ô xy lấy từ bình, hoặc từ bồn ô xy lỏng trung tâm."
+   "text": "Ví dụ, áp lực nền năm, độ nhạy trừ hai, thì ngưỡng thực sự là cộng ba xăng ti mét nước."
   },
   {
    "id": "03-2",
-   "text": "Cả hai đường khí đều phải qua bộ điều áp, đưa áp lực về khoảng ba phẩy năm lần áp suất khí quyển."
+   "text": "Kích hoạt theo lưu lượng: máy đo lưu lượng nền ở nhánh hít vào và nhánh thở ra. Khi bệnh nhân hít, một phần lưu lượng đi vào phổi, nên lưu lượng thở ra giảm so với hít vào."
   },
   {
    "id": "03-3",
-   "text": "Tại đầu giường, khí ra qua dãy ổ cắm: ô xy, ô xy, khí nén, và hút. Khoa hồi sức ngoại có thêm một ổ hút nữa."
+   "text": "Mức cài: áp lực trừ hai cho trẻ em và người lớn. Lưu lượng nửa đến một lít mỗi phút cho sơ sinh, một đến hai cho trẻ em, hai đến ba cho người lớn."
+  },
+  {
+   "id": "03-4",
+   "text": "Ghi nhớ: trẻ nhỏ nên cài kích hoạt theo lưu lượng."
   },
   {
    "id": "04-0",
-   "text": "Có loại máy thở có tua bin bên trong, tự tạo khí nén, nên chỉ cần nguồn ô xy. Loại này hợp với bệnh viện huyện, nơi thiếu khí nén trung tâm."
+   "text": "Khi bệnh nhân không tự thở, máy kích hoạt theo thời gian, gọi là nhịp kiểm soát. Tần số cài là tần số cố định."
   },
   {
    "id": "04-1",
-   "text": "Còn máy thở hồi sức tích cực thường cần cả hai nguồn khí, ô xy và khí nén."
+   "text": "Khi bệnh nhân tự thở sớm hơn chu kỳ máy, và mạnh hơn ngưỡng kích hoạt, máy cho nhịp hỗ trợ. Lúc này tần số cài là tần số tối thiểu."
   },
   {
    "id": "04-2",
-   "text": "Bên trong máy, bộ trộn khí pha ô xy một trăm phần trăm với khí nén hai mươi mốt phần trăm, thành hỗn hợp đúng nồng độ ô xy đã cài, ví dụ bốn mươi phần trăm."
-  },
-  {
-   "id": "04-3",
-   "text": "Ngay sau bộ trộn có cảm biến ô xy, đo lại nồng độ thực tế, và báo động nếu bị lệch."
-  },
-  {
-   "id": "04-4",
-   "text": "Cảm biến loại thường phải thay mỗi ba đến sáu tháng. Loại cảm biến siêu âm thì không cần thay."
+   "text": "Thời gian một chu kỳ thở bằng sáu mươi chia tần số. Tần số mười lăm thì mỗi chu kỳ bốn giây, hai mươi thì ba giây, ba mươi thì hai giây."
   },
   {
    "id": "05-0",
-   "text": "Trạm thứ ba là dây. Bộ dây máy thở đầy đủ gồm hai nhánh: nhánh hít vào và nhánh thở ra, gặp nhau ở đầu nối chữ Y."
+   "text": "Tần số và thời gian hít vào theo tuổi, với tỉ lệ một trên hai. Sơ sinh đủ tháng: bốn mươi lần mỗi phút, hít vào nửa giây."
   },
   {
    "id": "05-1",
-   "text": "Bộ làm ẩm và làm ấm nằm trên nhánh hít vào. Trên dây có bẫy nước để gom nước đọng, và nhiệt kế đặt gần chữ Y."
+   "text": "Nhũ nhi: ba mươi lần, hít vào không phẩy sáu bảy giây. Trẻ nhỏ: hai mươi lăm lần, không phẩy tám giây."
   },
   {
    "id": "05-2",
-   "text": "Chọn cỡ dây theo cân nặng. Dưới bảy ký dùng dây sơ sinh, đường kính tám mi li mét. Từ bảy đến hai mươi lăm ký dùng dây trẻ em, mười lăm mi li mét. Trên hai mươi lăm ký dùng dây người lớn, hai mươi hai mi li mét."
+   "text": "Trẻ em: hai mươi lần, một giây. Trẻ lớn và người lớn: mười lăm lần, một phẩy ba ba giây."
   },
   {
    "id": "05-3",
-   "text": "Mẹo nhớ: tám, mười lăm, hai mươi hai."
+   "text": "Mẹo tính nhanh: với tỉ lệ một trên hai, thời gian hít vào bằng một phần ba thời gian chu kỳ."
   },
   {
    "id": "06-0",
-   "text": "Bộ dây có ba chất liệu. Dây nhựa pê vê xê rẻ, đàn hồi nhiều, chỉ dùng một lần, không hấp được."
+   "text": "Hằng số thời gian bằng sức cản nhân độ giãn nở."
   },
   {
    "id": "06-1",
-   "text": "Dây Hai-tren đắt hơn, cứng và giòn, ít đàn hồi, hấp được nhưng mau hư."
+   "text": "Bệnh tắc nghẽn như hen, sức cản tăng, hằng số thời gian dài. Giảm tần số, tỉ lệ một trên ba đến một trên bốn, để thở ra đủ lâu, tránh bẫy khí."
   },
   {
    "id": "06-2",
-   "text": "Dây si li côn cũng đắt, ít đàn hồi, hấp được, và rất bền, dùng được nhiều lần."
+   "text": "Bệnh tổn thương phế nang như viêm phổi, hội chứng suy hô hấp cấp tiến triển, độ giãn nở giảm, hằng số thời gian ngắn. Tăng tần số, tỉ lệ một trên một rưỡi đến một trên một, kèm áp lực nền chống xẹp phổi."
   },
   {
    "id": "06-3",
-   "text": "Hãy nhớ thứ tự độ đàn hồi: pê vê xê lớn nhất, rồi đến Hai-tren, và si li côn ít nhất. Thứ tự này quyết định trạm kế tiếp: thể tích nén."
+   "text": "Phổi bình thường như bệnh thần kinh trung ương, thần kinh cơ, ngộ độc, hậu phẫu: giữ tỉ lệ một trên hai."
+  },
+  {
+   "id": "06-4",
+   "text": "Ghi nhớ: hen thì thở ra dài, phổi tổn thương thì hít vào dài."
   },
   {
    "id": "07-0",
-   "text": "Ở thì hít vào, bộ dây giãn ra, và khí trong dây bị nén lại. Một phần thể tích vì thế ở lại trong dây, không đến được bệnh nhân."
+   "text": "Trạm hai, kiểm soát thể tích. Thể tích mỗi nhịp được giữ hằng định, bệnh nhân không thay đổi được."
   },
   {
    "id": "07-1",
-   "text": "Thể tích nén càng lớn khi bộ dây và bình làm ẩm càng to, người lớn hơn trẻ em, trẻ em hơn sơ sinh, và khi dây càng đàn hồi."
+   "text": "Thể tích khí lưu thông tám mi li lít trên ký khi phổi bình thường, sáu mi li lít trên ký khi sức cản tăng hoặc độ giãn nở giảm, tính theo cân nặng dự đoán."
   },
   {
    "id": "07-2",
-   "text": "Ví dụ, cài thể tích khí lưu thông năm trăm mi li lít, mất năm mươi mi li lít trong dây, bệnh nhân chỉ nhận bốn trăm năm mươi."
+   "text": "Thông khí phút bằng tần số nhân thể tích. Mười lăm nhân không phẩy bốn lít là sáu lít mỗi phút. Trẻ trên ba mươi ký, khoảng không phẩy một lít trên ký mỗi phút."
   },
   {
    "id": "07-3",
-   "text": "Vì vậy, khi tự kiểm tra, máy đo độ giãn nở của bộ dây, tính bằng mi li lít trên mỗi xăng ti mét nước."
-  },
-  {
-   "id": "07-4",
-   "text": "Mỗi nhịp, máy nhân độ giãn nở đó với chênh lệch giữa áp lực đỉnh và áp lực dương cuối thì thở ra, rồi tự bơm bù phần bị nén. Máy đẩy ra năm trăm năm mươi, để bệnh nhân nhận đủ năm trăm."
+   "text": "Với kiểm soát thể tích, ta chọn thêm dạng lưu lượng, vuông hay giảm dần, và có cài thời gian nghỉ hay không."
   },
   {
    "id": "08-0",
-   "text": "Trạm thứ tư là ẩm. Khí từ máy rất khô và lạnh, nên phải làm ẩm và làm ấm, bằng máy làm ẩm có gia nhiệt, hoặc bằng bộ trao đổi nhiệt ẩm."
+   "text": "Thời gian nghỉ cuối thì hít vào thường cài mười phần trăm chu kỳ. Nhờ đó máy đo được áp lực bình nguyên."
   },
   {
    "id": "08-1",
-   "text": "Với máy làm ẩm không có dây nhiệt, bình phải đẩy khí lên khoảng bốn mươi lăm độ, vì khí nguội dần trên đường đi. Đến chữ Y còn ba mươi bảy độ, và hơi nước đọng lại trong dây, nên cần bẫy nước."
+   "text": "Khi sức cản tăng, áp lực đỉnh tăng một mình, áp lực bình nguyên không đổi."
   },
   {
    "id": "08-2",
-   "text": "Với máy có dây nhiệt ở nhánh hít vào, bình chỉ cần ba mươi bảy độ, dây giữ khoảng ba mươi chín độ, nhờ cảm biến nhiệt kép đặt ở bình và ở chữ Y."
+   "text": "Khi độ giãn nở giảm, áp lực đỉnh và áp lực bình nguyên cùng tăng."
   },
   {
    "id": "08-3",
-   "text": "Loại có dây nhiệt hai nhánh còn nung nóng cả nhánh thở ra, để hơi nước không đọng lại trên đường về máy."
+   "text": "Không nên cài thời gian nghỉ khi bệnh nhân tụt huyết áp, tăng áp lực nội sọ, hoặc bị tràn khí màng phổi."
+  },
+  {
+   "id": "08-4",
+   "text": "Ghi nhớ: đỉnh đi một mình là sức cản, cả hai cùng đi là độ giãn nở."
   },
   {
    "id": "09-0",
-   "text": "So sánh hai loại. Máy không có dây nhiệt cho nhiệt độ dao động. Nhiệt thấp thì đàm đặc, mất nhiệt. Nhiệt cao thì quá tải nước và bỏng đường hô hấp."
+   "text": "Với lưu lượng giảm dần, nửa đầu thời gian hít vào đã đưa vào hơn bảy mươi lăm phần trăm thể tích. Lưu lượng vuông chỉ được một nửa."
   },
   {
    "id": "09-1",
-   "text": "Loại này cần điều dưỡng theo dõi sát, dễ nhiễm trùng bệnh viện, nhưng rẻ và lâu hư."
+   "text": "Nhờ vậy áp lực trung bình đường thở cao hơn, khí phân bố đồng đều hơn, phù hợp bệnh phổi tắc nghẽn cần lưu lượng đỉnh cao, và hội chứng suy hô hấp cấp tiến triển."
   },
   {
    "id": "09-2",
-   "text": "Máy có dây nhiệt thì nhiệt độ ổn định, ít cần theo dõi, ít nhiễm trùng bệnh viện, nhưng đắt và dễ đứt dây điện trở."
+   "text": "Ưu điểm của kiểm soát thể tích: quen, dễ dùng, đảm bảo thể tích và thông khí phút, giữ được cê ô hai. Nhược điểm: dễ mất đồng bộ, tăng công thở, và dễ chấn thương áp lực."
   },
   {
    "id": "09-3",
-   "text": "Bình chứa nước của máy làm ẩm cũng có hai cỡ, cho trẻ em và cho người lớn."
+   "text": "Ở trẻ em, kiểm soát thể tích hợp với trẻ lớn bệnh thần kinh, tăng áp lực nội sọ cần giữ cê ô hai, và hen khi sức cản thay đổi nhanh."
   },
   {
    "id": "10-0",
-   "text": "Cách làm ẩm thụ động là bộ trao đổi nhiệt ẩm, gắn ngay ở chữ Y. Hãy hình dung nó như một chiếc mũi nhân tạo."
+   "text": "Trạm ba, kiểm soát áp lực. Áp lực hít vào giữ hằng định, lưu lượng giảm dần."
   },
   {
    "id": "10-1",
-   "text": "Khi thở ra, khí ấm và ẩm đi qua, bộ lọc giữ lại nhiệt và hơi nước."
+   "text": "Bốn nút quyết định sóng áp lực: áp lực nền, mức áp lực hít vào, thời gian hít vào, và thời gian tăng áp."
   },
   {
    "id": "10-2",
-   "text": "Khi hít vào, khí khô và lạnh đi qua, nhận lại nhiệt và hơi ẩm đã giữ."
+   "text": "Thể tích lúc này thay đổi theo mức áp lực, thời gian hít vào, sức cản, độ giãn nở, và lực tự thở. Sức cản tăng hoặc độ giãn nở giảm thì thể tích giảm."
   },
   {
    "id": "10-3",
-   "text": "Chỉ định là thở máy ngắn hạn, dưới hai mươi bốn giờ, như hậu phẫu hay ngộ độc. Chú ý chọn loại có khoảng chết nhỏ hơn hai mi li lít trên ký."
-  },
-  {
-   "id": "10-4",
-   "text": "Cần phân biệt bộ trao đổi nhiệt ẩm, phin lọc vi khuẩn và vi rút, và loại hai trong một."
+   "text": "Tìm mức áp lực ban đầu theo ba cách: mò dần theo thể tích thở ra; từ kiểm soát thể tích lấy áp lực bình nguyên trừ áp lực nền; hoặc từ chế độ điều chỉnh thể tích lấy áp lực đỉnh trừ áp lực nền."
   },
   {
    "id": "11-0",
-   "text": "Chống chỉ định của bộ trao đổi nhiệt ẩm, nhớ năm chữ: đàm, rò, lạnh, thở mạnh, khí dung."
+   "text": "So sánh hai chế độ. Kiểm soát thể tích giữ thể tích, nên phải theo dõi áp lực đường thở."
   },
   {
    "id": "11-1",
-   "text": "Đàm, là đàm đặc hoặc lẫn máu. Rò, là khi thể tích thở ra nhỏ hơn bảy mươi phần trăm thể tích hít vào, như rò phế quản màng phổi, hay ống nội khí quản không có bóng chèn."
+   "text": "Kiểm soát áp lực giữ áp lực, nên phải theo dõi thể tích, và cài báo động thông khí phút cao và thấp."
   },
   {
    "id": "11-2",
-   "text": "Lạnh, là thân nhiệt dưới ba mươi hai độ. Thở mạnh, là thông khí phút tự thở trên mười lít mỗi phút."
+   "text": "Ưu điểm của kiểm soát áp lực: tăng áp lực trung bình nên tăng ô xy hoá, phân phối khí tốt, giảm công thở. Nhược điểm: thể tích dao động, quá lớn gây quá căng phế nang, quá nhỏ gây ứ cê ô hai."
   },
   {
    "id": "11-3",
-   "text": "Và khí dung, là bệnh nhân đang phun khí dung trên dây máy thở."
+   "text": "Ghi nhớ: kiểm soát thể tích thì nhìn áp lực, kiểm soát áp lực thì nhìn thể tích."
   },
   {
    "id": "12-0",
-   "text": "Trạm thứ năm là lọc. Phin lọc được đặt ở cổng hít vào, cổng thở ra của máy, và có thể ở chữ Y."
+   "text": "Trạm bốn, kiểm soát áp lực điều chỉnh thể tích. Máy thở theo kiểu áp lực, nhưng vẫn đảm bảo thể tích mục tiêu."
   },
   {
    "id": "12-1",
-   "text": "Phin lọc hít vào ngăn vi khuẩn từ máy đi vào dây thở và bệnh nhân."
+   "text": "Nhịp đầu tiên là nhịp thử để đo cơ học phổi. Từ nhịp thứ hai, máy tự tăng hoặc giảm áp lực, mỗi nhịp tối đa ba xăng ti mét nước, để đạt thể tích cài."
   },
   {
    "id": "12-2",
-   "text": "Phin lọc thở ra ngăn vi khuẩn từ bệnh nhân đi vào máy và ra môi trường."
+   "text": "Áp lực đỉnh không vượt quá mức giới hạn trừ năm. Mỗi hãng gọi chế độ này một tên khác."
   },
   {
    "id": "12-3",
-   "text": "Nó còn giữ hơi ẩm và thuốc khí dung, giúp bảo vệ cảm biến đo lưu lượng thở ra."
-  },
-  {
-   "id": "12-4",
-   "text": "Phải xử lý phin lọc sau mỗi bệnh nhân. Ghi nhớ: lọc vào bảo vệ bệnh nhân, lọc ra bảo vệ máy và mọi người."
+   "text": "Ghi nhớ: đây là áp lực thông minh, dùng mức thấp nhất đủ đạt thể tích, và tự giảm khi phổi cải thiện."
   },
   {
    "id": "13-0",
-   "text": "Mọi thứ gắn thêm sau chữ Y đều tạo ra khoảng chết cơ học, tức khí bệnh nhân hít đi hít lại."
+   "text": "Trạm năm, hỗ trợ áp lực. Chỉ bệnh nhân kích hoạt nhịp thở, máy không cài tần số, nên ngưỡng kích hoạt cần nhạy hơn."
   },
   {
    "id": "13-1",
-   "text": "Đó có thể là bộ trao đổi nhiệt ẩm, phin lọc, khoang đo cê ô hai, cảm biến lưu lượng gần, hay ống nối mềm giữa chữ Y và nội khí quản."
+   "text": "Máy đẩy áp lực lên mức hỗ trợ đã cài, và chuyển sang thở ra khi lưu lượng giảm còn hai mươi đến ba mươi phần trăm lưu lượng đỉnh."
   },
   {
    "id": "13-2",
-   "text": "Nếu tổng khoảng chết vượt quá hai mi li lít trên ký, bệnh nhân sẽ bị ứ cê ô hai."
+   "text": "Thể tích tự thở tuỳ vào mức hỗ trợ, lực thở của bệnh nhân, sức cản và độ giãn nở. Ta chỉnh mức hỗ trợ dựa trên thể tích tự thở."
   },
   {
    "id": "13-3",
-   "text": "Ví dụ, một bé sơ sinh ba ký, ngưỡng chỉ là sáu mi li lít. Gắn thêm một món nhỏ cũng có thể vượt ngưỡng."
+   "text": "Nếu thời gian hít vào quá dài do rò khí, tăng ngưỡng chuyển thì thở ra, ví dụ từ ba mươi lên năm mươi phần trăm."
+  },
+  {
+   "id": "13-4",
+   "text": "Theo dõi lâm sàng, các thông số trên máy, và khí máu."
   },
   {
    "id": "14-0",
-   "text": "Trạm thứ sáu là đo. Cảm biến lưu lượng có thể nằm trong máy, ở nhánh hít vào và thở ra, hoặc nằm gần bệnh nhân, ngay tại chữ Y."
+   "text": "Vì hỗ trợ áp lực phụ thuộc hoàn toàn vào bệnh nhân, phải cài thông khí dự phòng. Thời gian ngưng thở để kích hoạt là mười đến ba mươi giây."
   },
   {
    "id": "14-1",
-   "text": "Cảm biến tại chữ Y giúp máy nhận biết nhịp tự thở theo lưu lượng, và đo lưu lượng để tính ra thể tích."
+   "text": "Chế độ dự phòng là kiểm soát áp lực, nồng độ ô xy thường một trăm phần trăm, tần số như hỗ trợ kiểm soát, tỉ lệ một trên hai."
   },
   {
    "id": "14-2",
-   "text": "Nó cũng giúp bù trừ thể tích và điều chỉnh áp lực trong các chế độ kiểm soát áp lực điều chỉnh thể tích, và hỗ trợ thể tích."
+   "text": "Mức áp lực dự phòng cao hơn mức hỗ trợ khoảng hai xăng ti mét nước."
   },
   {
    "id": "14-3",
-   "text": "Cảm biến trong máy thường dùng và bền, nhưng bị ảnh hưởng bởi thể tích nén của bộ dây."
-  },
-  {
-   "id": "14-4",
-   "text": "Cảm biến gần bệnh nhân hợp cho sơ sinh, chính xác và nhạy, không cần tính thể tích nén. Nhược điểm là dễ tắc đàm, và dễ dơ vì không hấp được."
+   "text": "Ghi nhớ: hỗ trợ áp lực không có tần số, nên luôn cài thông khí dự phòng."
   },
   {
    "id": "15-0",
-   "text": "Trạm cuối cùng là phun. Bình phun khí dung gắn trên nhánh hít vào, gần chữ Y."
+   "text": "Trạm sáu, thông khí ngắt quãng đồng bộ. Mỗi chu kỳ chia hai giai đoạn: giai đoạn bắt buộc và giai đoạn tự thở."
   },
   {
    "id": "15-1",
-   "text": "Có ba kiểu: bình phun phản lực cần nguồn khí đẩy, máy phun siêu âm hoặc lưới rung, và bình xịt định liều gắn qua buồng đệm."
+   "text": "Trong giai đoạn bắt buộc, máy chắc chắn cho một nhịp, đồng bộ với bệnh nhân nếu bệnh nhân kích hoạt trong cửa sổ."
   },
   {
    "id": "15-2",
-   "text": "Hạt thuốc không chỉ vào phổi, mà còn lan khắp nhánh thở ra, tới tận van thở ra của máy."
+   "text": "Trong giai đoạn tự thở, bệnh nhân tự quyết tần số và thể tích, có thể kèm hỗ trợ áp lực."
   },
   {
    "id": "15-3",
-   "text": "Vì vậy nhớ hai quy tắc: tháo bộ trao đổi nhiệt ẩm khi phun khí dung, và gắn phin lọc thở ra suốt thời gian phun."
+   "text": "Khi chuyển sang, giảm tần số từ mười lăm xuống mười hai, kích hoạt nhạy hơn từ ba xuống hai lít mỗi phút, thêm hỗ trợ áp lực mười hai, giữ nguyên các thông số khác."
   },
   {
    "id": "16-0",
-   "text": "Cùng ôn lại bảy trạm. Điện: pin nuôi bộ não, ba mươi đến sáu mươi phút. Khí: qua bộ điều áp, cảm biến ô xy thay mỗi ba đến sáu tháng."
+   "text": "Tính thử một ca: bệnh nhân thở thông khí ngắt quãng đồng bộ, thể tích bốn trăm, tần số mười, hỗ trợ tám. Máy đo tần số tổng mười sáu, thông khí phút tổng năm phẩy tám lít."
   },
   {
    "id": "16-1",
-   "text": "Dây: tám, mười lăm, hai mươi hai, và dây càng đàn hồi thì thể tích nén càng lớn."
+   "text": "Thông khí bắt buộc là mười nhân không phẩy bốn, bằng bốn lít. Vậy thông khí tự thở là một phẩy tám lít."
   },
   {
    "id": "16-2",
-   "text": "Ẩm: khí đến chữ Y khoảng ba mươi bảy độ. Bộ trao đổi nhiệt ẩm dùng dưới hai mươi bốn giờ, tránh khi đàm, rò, lạnh, thở mạnh, khí dung."
+   "text": "Tần số tự thở là mười sáu trừ mười, bằng sáu. Thể tích tự thở trung bình là một nghìn tám trăm chia sáu, bằng ba trăm mi li lít."
   },
   {
    "id": "16-3",
-   "text": "Lọc: giữ khoảng chết dưới hai mi li lít trên ký. Đo: cảm biến gần bệnh nhân cho sơ sinh. Phun: tháo bộ trao đổi nhiệt ẩm, gắn phin lọc thở ra. Chúc các bạn học tốt."
+   "text": "Cê ô hai cao thì chỉnh tần số và mức hỗ trợ. Ô xy thấp thì chỉnh nồng độ ô xy và áp lực nền. Giảm dần, rồi chuyển sang hỗ trợ áp lực hoặc áp lực dương liên tục, và rút ống."
+  },
+  {
+   "id": "17-0",
+   "text": "Trạm bảy, Bai-vent. Máy tạo hai mức áp lực, cao và thấp, và bệnh nhân được tự thở ở bất kỳ thời điểm nào."
+  },
+  {
+   "id": "17-1",
+   "text": "Mỗi hãng gọi chế độ này một tên khác."
+  },
+  {
+   "id": "17-2",
+   "text": "Khác kiểm soát áp lực ở chỗ cho phép tự thở. Khác thông khí ngắt quãng đồng bộ ở chỗ cho tự thở cả trên mức áp lực cao."
+  },
+  {
+   "id": "17-3",
+   "text": "Nhờ đó bệnh nhân đồng bộ, dễ chịu, cần ít thuốc an thần, giảm bất xứng thông khí tưới máu, và ít ảnh hưởng huyết động."
+  },
+  {
+   "id": "17-4",
+   "text": "Chọn chế độ này khi bệnh nhân mất đồng bộ với kiểm soát áp lực, tự thở nhiều, hoặc cần tránh an thần kéo dài."
+  },
+  {
+   "id": "18-0",
+   "text": "Cài áp lực hít vào: bắt đầu từ mười, tăng dần đến khi đạt sáu đến tám mi li lít trên ký. Hoặc thở thể tích trước, rồi lấy áp lực bình nguyên trừ áp lực nền."
+  },
+  {
+   "id": "18-1",
+   "text": "Thể tích khó kiểm soát, nên theo dõi cả thể tích bắt buộc lẫn tự thở, và cài báo động."
+  },
+  {
+   "id": "18-2",
+   "text": "Khi cê ô hai tăng: tăng áp lực hít vào, giảm áp lực nền, hoặc tăng tần số."
+  },
+  {
+   "id": "18-3",
+   "text": "Khi ô xy giảm: ngoài nồng độ ô xy, tăng áp lực nền, hoặc kéo dài thời gian hít vào."
+  },
+  {
+   "id": "18-4",
+   "text": "Ghi nhớ: cê ô hai cao thì nới rộng khoảng cách hai mức áp lực, ô xy thấp thì nâng mức nền."
+  },
+  {
+   "id": "19-0",
+   "text": "Cùng ôn bảy trạm. Cơ bản: ô xy để bão hoà quanh chín lăm, áp lực nền năm, trẻ nhỏ kích hoạt lưu lượng, hen thở ra dài, phổi tổn thương hít vào dài."
+  },
+  {
+   "id": "19-1",
+   "text": "Kiểm soát thể tích nhìn áp lực, đỉnh đi một mình là sức cản. Kiểm soát áp lực nhìn thể tích."
+  },
+  {
+   "id": "19-2",
+   "text": "Điều chỉnh thể tích là áp lực thông minh. Hỗ trợ áp lực chỉ bệnh nhân kích hoạt, luôn cài dự phòng."
+  },
+  {
+   "id": "19-3",
+   "text": "Thông khí ngắt quãng đồng bộ thì thông khí tự thở bằng tổng trừ bắt buộc. Bai-vent có hai mức áp lực, tự thở mọi lúc. Nhớ: bế, dắt, tự đi. Chúc các bạn học tốt."
   }
  ]
 }
