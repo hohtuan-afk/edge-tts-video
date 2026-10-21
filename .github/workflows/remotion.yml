@@ -6,6 +6,9 @@ on:
     paths: ["remotion/**", ".github/workflows/remotion.yml"]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   render:
     runs-on: ubuntu-latest
@@ -29,8 +32,13 @@ jobs:
           MODE=$(cat render-mode.txt 2>/dev/null || echo stills)
           echo "mode=$MODE"
           node render.mjs "$MODE"
-      - uses: actions/upload-artifact@v4
-        with:
-          name: remotion-out
-          path: remotion/out
-          retention-days: 7
+      - name: Publish output to branch 'renders'
+        run: |
+          cd out
+          git init -q
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git checkout -q -b renders
+          git add -A
+          git commit -q -m "Remotion output (${{ github.sha }})"
+          git push -f -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" renders
