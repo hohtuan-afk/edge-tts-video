@@ -5,331 +5,359 @@
  "lines": [
   {
    "id": "00-0",
-   "text": "Cài đặt các chế độ thở cơ bản, trên máy thở cho bệnh nhân nhi."
+   "text": "Cài đặt máy thở ban đầu, và xử trí, theo từng bệnh lý."
   },
   {
    "id": "01-0",
-   "text": "Hãy nhớ ba chữ: bế, dắt, và tự đi."
+   "text": "Trước khi cài máy, hãy xếp bệnh nhân vào một trong ba nhóm cơ chế."
   },
   {
    "id": "01-1",
-   "text": "Ở chế độ hỗ trợ kiểm soát, máy bế bệnh nhân, làm gần như toàn bộ. Thông khí ngắt quãng đồng bộ và hỗ trợ áp lực là máy dắt. Còn áp lực dương liên tục là bệnh nhân tự đi."
+   "text": "Nhóm phổi bình thường: chấn thương đầu, chấn thương cột sống cổ, viêm não màng não, xuất huyết não màng não, ngộ độc thuốc, và Ghi-lanh Ba-rê."
   },
   {
    "id": "01-2",
-   "text": "Khi lực tự thở tăng dần, ta đi từ hỗ trợ kiểm soát, sang thông khí ngắt quãng đồng bộ, rồi hỗ trợ áp lực, và cuối cùng là rút nội khí quản."
+   "text": "Nhóm phổi cứng, độ giãn nở giảm: viêm phổi, phù phổi cấp, hội chứng suy hô hấp cấp tiến triển, ngạt nước, chấn thương ngực."
   },
   {
    "id": "01-3",
-   "text": "Bài học đi qua bảy trạm: thông số cơ bản, kiểm soát thể tích, kiểm soát áp lực, kiểm soát áp lực điều chỉnh thể tích, hỗ trợ áp lực, thông khí ngắt quãng đồng bộ, và Bai-vent."
+   "text": "Nhóm phổi tắc, sức cản tăng: bệnh phổi tắc nghẽn mạn tính và hen."
+  },
+  {
+   "id": "01-4",
+   "text": "Bài học đi qua sáu trạm: phân nhóm, hậu phẫu, suy tim, tăng áp lực nội sọ, bệnh tắc nghẽn và hen, và cuối cùng là suy hô hấp cấp tiến triển."
   },
   {
    "id": "02-0",
-   "text": "Trạm một là năm thông số chung cho mọi chế độ: nồng độ ô xy khí thở vào, áp lực dương cuối thì thở ra, ngưỡng kích hoạt, tần số, và tỉ lệ hít vào trên thở ra."
+   "text": "Thể tích khí lưu thông luôn tính theo cân nặng dự đoán. Người lớn tính từ chiều cao, nam khởi điểm năm mươi, nữ bốn lăm phẩy năm."
   },
   {
    "id": "02-1",
-   "text": "Nồng độ ô xy: bệnh nặng bắt đầu một trăm phần trăm, bệnh ổn chỉ cần ba mươi đến bốn mươi phần trăm. Chỉnh tại giường để độ bão hoà ô xy quanh chín mươi lăm phần trăm, rồi thử lại khí máu sau mười lăm đến ba mươi phút."
+   "text": "Ở trẻ em, dùng cân nặng theo tuổi, hoặc cân nặng theo chiều cao."
   },
   {
    "id": "02-2",
-   "text": "Mục tiêu áp lực ô xy máu động mạch: phổi bình thường tám mươi đến một trăm, còn hội chứng suy hô hấp cấp tiến triển chỉ cần sáu mươi đến chín mươi mi li mét thuỷ ngân."
+   "text": "Phổi bình thường, sáu đến tám mi li lít trên ký, tần số mười lăm đến hai mươi. Phổi tổn thương cấp, bốn đến tám, tần số hai mươi đến ba mươi. Phổi tắc nghẽn, bốn đến tám, tần số chỉ tám đến mười lăm."
   },
   {
    "id": "02-3",
-   "text": "Áp lực dương cuối thì thở ra: phổi bình thường cài năm xăng ti mét nước. Bệnh làm phổi kém giãn nở như viêm phổi, phù phổi, hội chứng suy hô hấp cấp tiến triển thì bắt đầu từ tám đến mười."
+   "text": "Và luôn giữ áp lực bình nguyên dưới hai mươi tám xăng ti mét nước."
+  },
+  {
+   "id": "02-4",
+   "text": "Ghi nhớ: phổi cứng thì thở nhanh, phổi tắc thì thở chậm."
   },
   {
    "id": "03-0",
-   "text": "Kích hoạt theo áp lực: khi bệnh nhân hít vào, áp lực trong hệ thống tụt xuống dưới mức nền, và máy bắt đầu nhịp thở."
+   "text": "Trạm hai, thở máy sau mổ. Chỉ định khi ngưng thở do thuốc mê, cần giảm gánh nặng tim phổi, hoặc có bệnh phổi sẵn."
   },
   {
    "id": "03-1",
-   "text": "Ví dụ, áp lực nền năm, độ nhạy trừ hai, thì ngưỡng thực sự là cộng ba xăng ti mét nước."
+   "text": "Không có bệnh phổi: hỗ trợ kiểm soát, tần số mười hai đến mười tám, sáu đến tám mi li lít trên ký, hít vào một giây, áp lực nền không quá năm, ô xy máu trên tám mươi."
   },
   {
    "id": "03-2",
-   "text": "Kích hoạt theo lưu lượng: máy đo lưu lượng nền ở nhánh hít vào và nhánh thở ra. Khi bệnh nhân hít, một phần lưu lượng đi vào phổi, nên lưu lượng thở ra giảm so với hít vào."
+   "text": "Nếu có bệnh phổi tắc nghẽn: tần số như cũ, hít vào ngắn hơn, áp lực nền năm để đối trọng áp lực dương nội sinh, độ bão hoà ô xy tám tám đến chín lăm."
   },
   {
    "id": "03-3",
-   "text": "Mức cài: áp lực trừ hai cho trẻ em và người lớn. Lưu lượng nửa đến một lít mỗi phút cho sơ sinh, một đến hai cho trẻ em, hai đến ba cho người lớn."
+   "text": "Nếu có bệnh phổi hạn chế: tần số hai mươi đến ba mươi, thể tích chỉ bốn đến sáu, hít vào nửa giây đến không phẩy tám giây."
   },
   {
    "id": "03-4",
-   "text": "Ghi nhớ: trẻ nhỏ nên cài kích hoạt theo lưu lượng."
+   "text": "Với mọi nhóm, áp lực bình nguyên không quá hai mươi tám, áp lực đẩy dưới mười lăm."
   },
   {
    "id": "04-0",
-   "text": "Khi bệnh nhân không tự thở, máy kích hoạt theo thời gian, gọi là nhịp kiểm soát. Tần số cài là tần số cố định."
+   "text": "Điều chỉnh ô xy hoá: khi phần trăm ô xy dưới sáu mươi, chủ yếu chỉnh ô xy. Khi từ sáu mươi trở lên, tăng áp lực nền."
   },
   {
    "id": "04-1",
-   "text": "Khi bệnh nhân tự thở sớm hơn chu kỳ máy, và mạnh hơn ngưỡng kích hoạt, máy cho nhịp hỗ trợ. Lúc này tần số cài là tần số tối thiểu."
+   "text": "Điều chỉnh thông khí bằng tần số và thể tích, thể tích không quá tám mi li lít trên ký."
   },
   {
    "id": "04-2",
-   "text": "Thời gian một chu kỳ thở bằng sáu mươi chia tần số. Tần số mười lăm thì mỗi chu kỳ bốn giây, hai mươi thì ba giây, ba mươi thì hai giây."
+   "text": "Cai máy sau mổ thường đơn giản. Khi phần trăm ô xy từ bốn mươi trở xuống, áp lực nền không quá năm, và bệnh nhân tự kích hoạt tốt."
+  },
+  {
+   "id": "04-3",
+   "text": "Làm nghiệm pháp tự thở ba mươi phút, hoặc giảm hỗ trợ áp lực xuống năm đến mười, rồi rút nội khí quản."
+  },
+  {
+   "id": "04-4",
+   "text": "Ghi nhớ mốc sáu mươi: dưới sáu mươi chỉnh ô xy, từ sáu mươi trở lên tăng áp lực nền."
   },
   {
    "id": "05-0",
-   "text": "Tần số và thời gian hít vào theo tuổi, với tỉ lệ một trên hai. Sơ sinh đủ tháng: bốn mươi lần mỗi phút, hít vào nửa giây."
+   "text": "Trạm ba, suy tim. Thở máy áp lực dương làm tăng áp lực lồng ngực, nên giảm tiền tải và hậu tải của thất trái."
   },
   {
    "id": "05-1",
-   "text": "Nhũ nhi: ba mươi lần, hít vào không phẩy sáu bảy giây. Trẻ nhỏ: hai mươi lăm lần, không phẩy tám giây."
+   "text": "Với tim trái đang suy, điều này giúp cơ tim bơm tốt hơn."
   },
   {
    "id": "05-2",
-   "text": "Trẻ em: hai mươi lần, một giây. Trẻ lớn và người lớn: mười lăm lần, một phẩy ba ba giây."
+   "text": "Nhưng nếu bệnh nhân thiếu dịch, áp lực dương có thể làm giảm cung lượng tim thêm."
   },
   {
    "id": "05-3",
-   "text": "Mẹo tính nhanh: với tỉ lệ một trên hai, thời gian hít vào bằng một phần ba thời gian chu kỳ."
+   "text": "Thở máy được chỉ định khi thiếu ô xy máu, tăng công cơ tim và tăng công thở, nhằm phục hồi ô xy, giảm công thở và giảm công cơ tim."
+  },
+  {
+   "id": "05-4",
+   "text": "Ban đầu có thể dùng áp lực dương liên tục qua mặt nạ, mười xăng ti mét nước. Tránh thở máy không xâm lấn khi nhồi máu cơ tim, rối loạn huyết động, loạn nhịp nặng, hoặc giảm ý thức."
   },
   {
    "id": "06-0",
-   "text": "Hằng số thời gian bằng sức cản nhân độ giãn nở."
+   "text": "Nên cài hỗ trợ kiểm soát, vì tự thở làm tăng lưu lượng máu đến cơ hô hấp. Thể tích hay áp lực đều được."
   },
   {
    "id": "06-1",
-   "text": "Bệnh tắc nghẽn như hen, sức cản tăng, hằng số thời gian dài. Giảm tần số, tỉ lệ một trên ba đến một trên bốn, để thở ra đủ lâu, tránh bẫy khí."
+   "text": "Thể tích sáu đến tám mi li lít trên ký, tần số trên mười lăm, thời gian hít vào không quá một giây, áp lực bình nguyên dưới hai mươi tám."
   },
   {
    "id": "06-2",
-   "text": "Bệnh tổn thương phế nang như viêm phổi, hội chứng suy hô hấp cấp tiến triển, độ giãn nở giảm, hằng số thời gian ngắn. Tăng tần số, tỉ lệ một trên một rưỡi đến một trên một, kèm áp lực nền chống xẹp phổi."
+   "text": "Áp lực nền năm đến mười. Ô xy một trăm phần trăm lúc đầu, rồi giảm dần để độ bão hoà tám tám đến chín lăm."
   },
   {
    "id": "06-3",
-   "text": "Phổi bình thường như bệnh thần kinh trung ương, thần kinh cơ, ngộ độc, hậu phẫu: giữ tỉ lệ một trên hai."
+   "text": "Nếu độ bão hoà dưới tám tám kèm phù phổi, tăng áp lực nền. Pê hát trên bảy phẩy bốn lăm thì giảm tần số, dưới bảy phẩy ba lăm thì tăng tần số."
   },
   {
    "id": "06-4",
-   "text": "Ghi nhớ: hen thì thở ra dài, phổi tổn thương thì hít vào dài."
+   "text": "Ghi nhớ: áp lực nền là bạn của tim trái suy."
   },
   {
    "id": "07-0",
-   "text": "Trạm hai, kiểm soát thể tích. Thể tích mỗi nhịp được giữ hằng định, bệnh nhân không thay đổi được."
+   "text": "Trạm bốn, tăng áp lực nội sọ. Áp lực nội sọ tăng làm giảm tưới máu não, gây thiếu ô xy não, và có thể gây thoát vị não."
   },
   {
    "id": "07-1",
-   "text": "Thể tích khí lưu thông tám mi li lít trên ký khi phổi bình thường, sáu mi li lít trên ký khi sức cản tăng hoặc độ giãn nở giảm, tính theo cân nặng dự đoán."
+   "text": "Cê ô hai máu tăng và ô xy máu giảm đều làm tăng áp lực nội sọ, nên tuyệt đối không để xảy ra."
   },
   {
    "id": "07-2",
-   "text": "Thông khí phút bằng tần số nhân thể tích. Mười lăm nhân không phẩy bốn lít là sáu lít mỗi phút. Trẻ trên ba mươi ký, khoảng không phẩy một lít trên ký mỗi phút."
+   "text": "Ngược lại, tăng thông khí làm giảm cê ô hai, co mạch não, và giảm tưới máu não."
   },
   {
    "id": "07-3",
-   "text": "Với kiểm soát thể tích, ta chọn thêm dạng lưu lượng, vuông hay giảm dần, và có cài thời gian nghỉ hay không."
+   "text": "Cách này không giảm tử vong, lại tăng di chứng, nên không khuyến cáo. Chỉ tăng thông khí tạm thời khi áp lực nội sọ tăng cấp, chờ phẫu thuật."
+  },
+  {
+   "id": "07-4",
+   "text": "Áp lực nền làm cản máu tĩnh mạch não trở về, nhưng chỉ có ý nghĩa khi trên mười lăm, hoặc khi bệnh nhân thiếu dịch."
   },
   {
    "id": "08-0",
-   "text": "Thời gian nghỉ cuối thì hít vào thường cài mười phần trăm chu kỳ. Nhờ đó máy đo được áp lực bình nguyên."
+   "text": "Chỉ định thở máy: ức chế hô hấp do tổn thương thần kinh, chấn thương phối hợp, phù phổi do thần kinh, và khi dùng thuốc ức chế hô hấp."
   },
   {
    "id": "08-1",
-   "text": "Khi sức cản tăng, áp lực đỉnh tăng một mình, áp lực bình nguyên không đổi."
+   "text": "Hỗ trợ kiểm soát, ưu tiên thể tích, sáu đến tám mi li lít trên ký, tần số mười lăm đến hai lăm, hít vào một giây."
   },
   {
    "id": "08-2",
-   "text": "Khi độ giãn nở giảm, áp lực đỉnh và áp lực bình nguyên cùng tăng."
+   "text": "Mục tiêu cê ô hai ba lăm đến bốn lăm, pê hát bình thường, ô xy máu bảy mươi đến một trăm, khoảng tám mươi."
   },
   {
    "id": "08-3",
-   "text": "Không nên cài thời gian nghỉ khi bệnh nhân tụt huyết áp, tăng áp lực nội sọ, hoặc bị tràn khí màng phổi."
+   "text": "Áp lực nền năm, không quá mười thường không ảnh hưởng áp lực nội sọ. Cho nằm đầu cao, và chỉ chỉnh thông khí bằng tần số."
   },
   {
    "id": "08-4",
-   "text": "Ghi nhớ: đỉnh đi một mình là sức cản, cả hai cùng đi là độ giãn nở."
+   "text": "Khi ô xy thấp dù đã sáu mươi phần trăm: nếu áp lực nội sọ không tăng thì tăng áp lực nền đến mười, nếu đang tăng thì tiếp tục tăng ô xy."
+  },
+  {
+   "id": "08-5",
+   "text": "Ghi nhớ: não cần cê ô hai ba lăm đến bốn lăm, ô xy trên bảy mươi, và đầu cao."
   },
   {
    "id": "09-0",
-   "text": "Với lưu lượng giảm dần, nửa đầu thời gian hít vào đã đưa vào hơn bảy mươi lăm phần trăm thể tích. Lưu lượng vuông chỉ được một nửa."
+   "text": "Trạm năm, bệnh phổi tắc nghẽn mạn tính. Nên tránh thở máy xâm lấn nếu có thể. Thở máy không xâm lấn là chuẩn cho đợt cấp, và có hiệu quả cứu sống."
   },
   {
    "id": "09-1",
-   "text": "Nhờ vậy áp lực trung bình đường thở cao hơn, khí phân bố đồng đều hơn, phù hợp bệnh phổi tắc nghẽn cần lưu lượng đỉnh cao, và hội chứng suy hô hấp cấp tiến triển."
+   "text": "Cài hai mức áp lực: áp lực hít vào tám đến mười hai để chỉnh thể tích, áp lực thở ra bốn để cải thiện ô xy."
   },
   {
    "id": "09-2",
-   "text": "Ưu điểm của kiểm soát thể tích: quen, dễ dùng, đảm bảo thể tích và thông khí phút, giữ được cê ô hai. Nhược điểm: dễ mất đồng bộ, tăng công thở, và dễ chấn thương áp lực."
+   "text": "Ví dụ, mười hai trừ bốn, mức hỗ trợ thực sự là tám."
   },
   {
    "id": "09-3",
-   "text": "Ở trẻ em, kiểm soát thể tích hợp với trẻ lớn bệnh thần kinh, tăng áp lực nội sọ cần giữ cê ô hai, và hen khi sức cản thay đổi nhanh."
+   "text": "Thất bại khi sau hai giờ pê hát và cê ô hai không cải thiện hoặc xấu đi, tri giác giảm, rối loạn huyết động, hoặc ô xy hoá xấu hơn. Lúc đó phải đặt nội khí quản."
   },
   {
    "id": "10-0",
-   "text": "Trạm ba, kiểm soát áp lực. Áp lực hít vào giữ hằng định, lưu lượng giảm dần."
+   "text": "Thở máy xâm lấn khi tăng cê ô hai, giảm ô xy, kiệt sức, nhằm cho cơ hô hấp nghỉ, đưa cê ô hai về mức nền của bệnh nhân, và điều trị thiếu ô xy."
   },
   {
    "id": "10-1",
-   "text": "Bốn nút quyết định sóng áp lực: áp lực nền, mức áp lực hít vào, thời gian hít vào, và thời gian tăng áp."
+   "text": "Hỗ trợ kiểm soát, tần số tám đến mười lăm, sáu đến tám mi li lít trên ký, hít vào không phẩy sáu đến một giây."
   },
   {
    "id": "10-2",
-   "text": "Thể tích lúc này thay đổi theo mức áp lực, thời gian hít vào, sức cản, độ giãn nở, và lực tự thở. Sức cản tăng hoặc độ giãn nở giảm thì thể tích giảm."
+   "text": "Lưu lượng hít vào phải đủ cao, trên sáu mươi lít mỗi phút, dạng giảm dần, để dành nhiều thời gian cho thở ra."
   },
   {
    "id": "10-3",
-   "text": "Tìm mức áp lực ban đầu theo ba cách: mò dần theo thể tích thở ra; từ kiểm soát thể tích lấy áp lực bình nguyên trừ áp lực nền; hoặc từ chế độ điều chỉnh thể tích lấy áp lực đỉnh trừ áp lực nền."
+   "text": "Áp lực nền năm để đối trọng áp lực dương nội sinh. Ô xy thường không quá năm mươi phần trăm, độ bão hoà tám tám đến chín lăm."
+  },
+  {
+   "id": "10-4",
+   "text": "Cê ô hai chỉ cần về mức nền, thường năm mươi đến sáu mươi, hoặc pê hát trên bảy phẩy ba. Áp lực đỉnh cao thường không đáng lo."
+  },
+  {
+   "id": "10-5",
+   "text": "Ghi nhớ: tắc nghẽn thì thở chậm, thở ra dài, và cê ô hai chỉ về mức nền."
   },
   {
    "id": "11-0",
-   "text": "So sánh hai chế độ. Kiểm soát thể tích giữ thể tích, nên phải theo dõi áp lực đường thở."
+   "text": "Áp lực dương nội sinh xảy ra khi chưa thở ra hết đã hít vào nhịp mới. Khí bị bẫy lại, và lưu lượng thở ra không về đến số không."
   },
   {
    "id": "11-1",
-   "text": "Kiểm soát áp lực giữ áp lực, nên phải theo dõi thể tích, và cài báo động thông khí phút cao và thấp."
+   "text": "Hậu quả là tăng công thở, bệnh nhân khó chịu và chống máy, khó cai, và mất nhạy kích hoạt."
   },
   {
    "id": "11-2",
-   "text": "Ưu điểm của kiểm soát áp lực: tăng áp lực trung bình nên tăng ô xy hoá, phân phối khí tốt, giảm công thở. Nhược điểm: thể tích dao động, quá lớn gây quá căng phế nang, quá nhỏ gây ứ cê ô hai."
+   "text": "Dấu hiệu: bệnh nhân gắng sức mà máy không nhận, tần số bệnh nhân nhiều hơn tần số máy, thở ra kéo dài đến tận nhịp sau."
   },
   {
    "id": "11-3",
-   "text": "Ghi nhớ: kiểm soát thể tích thì nhìn áp lực, kiểm soát áp lực thì nhìn thể tích."
+   "text": "Muốn đo, giữ cuối thì thở ra, và đọc áp lực dương nội sinh trên máy."
+  },
+  {
+   "id": "11-4",
+   "text": "Xử trí: kéo dài thời gian thở ra, giảm tần số, giảm thể tích, giảm nhu cầu thông khí, giảm sức cản bằng ống to, hút đàm, thuốc giãn phế quản, và cài áp lực nền ngoài."
   },
   {
    "id": "12-0",
-   "text": "Trạm bốn, kiểm soát áp lực điều chỉnh thể tích. Máy thở theo kiểu áp lực, nhưng vẫn đảm bảo thể tích mục tiêu."
+   "text": "Ví dụ, áp lực dương nội sinh mười, độ nhạy trừ một. Bệnh nhân phải tạo lực mười một mới kích hoạt được máy."
   },
   {
    "id": "12-1",
-   "text": "Nhịp đầu tiên là nhịp thử để đo cơ học phổi. Từ nhịp thứ hai, máy tự tăng hoặc giảm áp lực, mỗi nhịp tối đa ba xăng ti mét nước, để đạt thể tích cài."
+   "text": "Cài áp lực nền ngoài bảy, lực kích hoạt chỉ còn bốn, đồng thời nong đường thở, nên giảm công thở."
   },
   {
    "id": "12-2",
-   "text": "Áp lực đỉnh không vượt quá mức giới hạn trừ năm. Mỗi hãng gọi chế độ này một tên khác."
+   "text": "Áp lực nền ngoài cài thấp hơn áp lực nội sinh, ví dụ bảy so với mười."
   },
   {
    "id": "12-3",
-   "text": "Ghi nhớ: đây là áp lực thông minh, dùng mức thấp nhất đủ đạt thể tích, và tự giảm khi phổi cải thiện."
+   "text": "Ghi nhớ: áp lực nền ngoài gánh bớt áp lực nội sinh, giúp bệnh nhân kích hoạt nhẹ nhàng."
   },
   {
    "id": "13-0",
-   "text": "Trạm năm, hỗ trợ áp lực. Chỉ bệnh nhân kích hoạt nhịp thở, máy không cài tần số, nên ngưỡng kích hoạt cần nhạy hơn."
+   "text": "Hen nặng: hỗ trợ kiểm soát, tần số tám đến hai mươi, thể tích chỉ bốn đến sáu mi li lít trên ký."
   },
   {
    "id": "13-1",
-   "text": "Máy đẩy áp lực lên mức hỗ trợ đã cài, và chuyển sang thở ra khi lưu lượng giảm còn hai mươi đến ba mươi phần trăm lưu lượng đỉnh."
+   "text": "Thời gian hít vào một đến một rưỡi giây, tránh bẫy khí, và chấp nhận cê ô hai máu tăng."
   },
   {
    "id": "13-2",
-   "text": "Thể tích tự thở tuỳ vào mức hỗ trợ, lực thở của bệnh nhân, sức cản và độ giãn nở. Ta chỉnh mức hỗ trợ dựa trên thể tích tự thở."
+   "text": "Dùng áp lực nền còn tranh cãi. Ô xy đủ để độ bão hoà tám tám đến chín lăm."
   },
   {
    "id": "13-3",
-   "text": "Nếu thời gian hít vào quá dài do rò khí, tăng ngưỡng chuyển thì thở ra, ví dụ từ ba mươi lên năm mươi phần trăm."
-  },
-  {
-   "id": "13-4",
-   "text": "Theo dõi lâm sàng, các thông số trên máy, và khí máu."
+   "text": "Ghi nhớ: hen thì thể tích nhỏ, tần số chậm, chấp nhận cê ô hai cao."
   },
   {
    "id": "14-0",
-   "text": "Vì hỗ trợ áp lực phụ thuộc hoàn toàn vào bệnh nhân, phải cài thông khí dự phòng. Thời gian ngưng thở để kích hoạt là mười đến ba mươi giây."
+   "text": "Trạm sáu, hội chứng suy hô hấp cấp tiến triển. Theo định nghĩa Berlin, với áp lực nền từ năm: tỉ số ô xy trên phần trăm ô xy từ hai trăm đến ba trăm là nhẹ, một trăm đến hai trăm là trung bình, dưới một trăm là nặng."
   },
   {
    "id": "14-1",
-   "text": "Chế độ dự phòng là kiểm soát áp lực, nồng độ ô xy thường một trăm phần trăm, tần số như hỗ trợ kiểm soát, tỉ lệ một trên hai."
+   "text": "Phổi bệnh chia ba vùng: vùng thông khí tốt, vùng đóng mở theo chu kỳ, và vùng không thông khí."
   },
   {
    "id": "14-2",
-   "text": "Mức áp lực dự phòng cao hơn mức hỗ trợ khoảng hai xăng ti mét nước."
+   "text": "Thể tích lớn mười đến mười hai mi li lít trên ký làm phế nang lành bị quá căng."
   },
   {
    "id": "14-3",
-   "text": "Ghi nhớ: hỗ trợ áp lực không có tần số, nên luôn cài thông khí dự phòng."
+   "text": "Áp lực nền thấp làm phế nang đóng mở liên tục, tạo lực xé ở ranh giới vùng xẹp."
+  },
+  {
+   "id": "14-4",
+   "text": "Vì vậy chiến lược là thể tích thấp, áp lực bình nguyên dưới ba mươi, áp lực nền đủ giữ phổi mở, và tránh ô xy cao kéo dài."
   },
   {
    "id": "15-0",
-   "text": "Trạm sáu, thông khí ngắt quãng đồng bộ. Mỗi chu kỳ chia hai giai đoạn: giai đoạn bắt buộc và giai đoạn tự thở."
+   "text": "Thử nghiệm lớn năm hai nghìn so sánh sáu với mười hai mi li lít trên ký: tử vong giảm từ gần bốn mươi xuống ba mươi mốt phần trăm."
   },
   {
    "id": "15-1",
-   "text": "Trong giai đoạn bắt buộc, máy chắc chắn cho một nhịp, đồng bộ với bệnh nhân nếu bệnh nhân kích hoạt trong cửa sổ."
+   "text": "Giữ áp lực bình nguyên dưới hai mươi tám đến ba mươi, đo bằng cách giữ cuối thì hít vào."
   },
   {
    "id": "15-2",
-   "text": "Trong giai đoạn tự thở, bệnh nhân tự quyết tần số và thể tích, có thể kèm hỗ trợ áp lực."
+   "text": "Muốn giữ thông khí phút sáu lít ở người năm mươi ký: thể tích sáu thì tần số hai mươi, thể tích năm thì hai mươi bốn, thể tích bốn thì ba mươi."
   },
   {
    "id": "15-3",
-   "text": "Khi chuyển sang, giảm tần số từ mười lăm xuống mười hai, kích hoạt nhạy hơn từ ba xuống hai lít mỗi phút, thêm hỗ trợ áp lực mười hai, giữ nguyên các thông số khác."
+   "text": "Khi tăng tần số, giữ nguyên hít vào một giây, không đảo tỉ lệ quá một trên một, và nhìn sóng lưu lượng xem thời gian thở ra còn dư hay đã bẫy khí."
+  },
+  {
+   "id": "15-4",
+   "text": "Lấy bỏ khoảng chết cơ học: ống nối thừa, bộ trao đổi nhiệt ẩm, phin lọc."
   },
   {
    "id": "16-0",
-   "text": "Tính thử một ca: bệnh nhân thở thông khí ngắt quãng đồng bộ, thể tích bốn trăm, tần số mười, hỗ trợ tám. Máy đo tần số tổng mười sáu, thông khí phút tổng năm phẩy tám lít."
+   "text": "Áp lực nền tối ưu là điểm cân bằng giữa xẹp phổi và quá căng phổi."
   },
   {
    "id": "16-1",
-   "text": "Thông khí bắt buộc là mười nhân không phẩy bốn, bằng bốn lít. Vậy thông khí tự thở là một phẩy tám lít."
+   "text": "Cách một: dùng bảng phối hợp ô xy và áp lực nền. Thể nhẹ bắt đầu từ năm, thể trung bình nặng bắt đầu từ mười hai."
   },
   {
    "id": "16-2",
-   "text": "Tần số tự thở là mười sáu trừ mười, bằng sáu. Thể tích tự thở trung bình là một nghìn tám trăm chia sáu, bằng ba trăm mi li lít."
+   "text": "Khí máu dưới mục tiêu thì lên một bước, vượt mục tiêu thì lùi một bước."
   },
   {
    "id": "16-3",
-   "text": "Cê ô hai cao thì chỉnh tần số và mức hỗ trợ. Ô xy thấp thì chỉnh nồng độ ô xy và áp lực nền. Giảm dần, rồi chuyển sang hỗ trợ áp lực hoặc áp lực dương liên tục, và rút ống."
+   "text": "Cách hai, tăng dần: thể tích sáu, mỗi ba đến năm phút tăng áp lực nền hai đến ba, đo áp lực bình nguyên, độ giãn nở, độ bão hoà, và huyết áp."
+  },
+  {
+   "id": "16-4",
+   "text": "Chọn mức có độ giãn nở tốt nhất mà áp lực bình nguyên không quá ba mươi. Ví dụ ở đây là mười bốn."
   },
   {
    "id": "17-0",
-   "text": "Trạm bảy, Bai-vent. Máy tạo hai mức áp lực, cao và thấp, và bệnh nhân được tự thở ở bất kỳ thời điểm nào."
+   "text": "Mục tiêu ô xy: độ bão hoà tám tám đến chín lăm, hoặc ô xy máu năm lăm đến tám mươi."
   },
   {
    "id": "17-1",
-   "text": "Mỗi hãng gọi chế độ này một tên khác."
+   "text": "Ô xy từ sáu mươi phần trăm kéo dài trên hai mươi bốn giờ có nguy cơ ngộ độc."
   },
   {
    "id": "17-2",
-   "text": "Khác kiểm soát áp lực ở chỗ cho phép tự thở. Khác thông khí ngắt quãng đồng bộ ở chỗ cho tự thở cả trên mức áp lực cao."
+   "text": "Tăng cê ô hai cho phép: chấp nhận cê ô hai cao, pê hát từ bảy phẩy hai đến bảy phẩy hai lăm, để bảo vệ phổi."
   },
   {
    "id": "17-3",
-   "text": "Nhờ đó bệnh nhân đồng bộ, dễ chịu, cần ít thuốc an thần, giảm bất xứng thông khí tưới máu, và ít ảnh hưởng huyết động."
+   "text": "Cê ô hai cao làm bệnh nhân thở nhiều, cần an thần hoặc giãn cơ. Nếu pê hát dưới bảy phẩy hai, tăng tần số, hoặc bù bi các bô nát."
   },
   {
    "id": "17-4",
-   "text": "Chọn chế độ này khi bệnh nhân mất đồng bộ với kiểm soát áp lực, tự thở nhiều, hoặc cần tránh an thần kéo dài."
+   "text": "Ghi nhớ ba con số: sáu, ba mươi, tám tám. Thể tích sáu, bình nguyên dưới ba mươi, độ bão hoà từ tám tám."
   },
   {
    "id": "18-0",
-   "text": "Cài áp lực hít vào: bắt đầu từ mười, tăng dần đến khi đạt sáu đến tám mi li lít trên ký. Hoặc thở thể tích trước, rồi lấy áp lực bình nguyên trừ áp lực nền."
+   "text": "Cùng ôn sáu trạm. Phân nhóm: phổi cứng thở nhanh, phổi tắc thở chậm. Hậu phẫu: mốc sáu mươi, dưới chỉnh ô xy, trên tăng áp lực nền."
   },
   {
    "id": "18-1",
-   "text": "Thể tích khó kiểm soát, nên theo dõi cả thể tích bắt buộc lẫn tự thở, và cài báo động."
+   "text": "Suy tim: áp lực nền là bạn của tim trái. Não: cê ô hai ba lăm đến bốn lăm, ô xy trên bảy mươi, đầu cao."
   },
   {
    "id": "18-2",
-   "text": "Khi cê ô hai tăng: tăng áp lực hít vào, giảm áp lực nền, hoặc tăng tần số."
+   "text": "Tắc nghẽn và hen: ưu tiên không xâm lấn, thở chậm, thở ra dài, áp lực nền ngoài thấp hơn nội sinh."
   },
   {
    "id": "18-3",
-   "text": "Khi ô xy giảm: ngoài nồng độ ô xy, tăng áp lực nền, hoặc kéo dài thời gian hít vào."
-  },
-  {
-   "id": "18-4",
-   "text": "Ghi nhớ: cê ô hai cao thì nới rộng khoảng cách hai mức áp lực, ô xy thấp thì nâng mức nền."
-  },
-  {
-   "id": "19-0",
-   "text": "Cùng ôn bảy trạm. Cơ bản: ô xy để bão hoà quanh chín lăm, áp lực nền năm, trẻ nhỏ kích hoạt lưu lượng, hen thở ra dài, phổi tổn thương hít vào dài."
-  },
-  {
-   "id": "19-1",
-   "text": "Kiểm soát thể tích nhìn áp lực, đỉnh đi một mình là sức cản. Kiểm soát áp lực nhìn thể tích."
-  },
-  {
-   "id": "19-2",
-   "text": "Điều chỉnh thể tích là áp lực thông minh. Hỗ trợ áp lực chỉ bệnh nhân kích hoạt, luôn cài dự phòng."
-  },
-  {
-   "id": "19-3",
-   "text": "Thông khí ngắt quãng đồng bộ thì thông khí tự thở bằng tổng trừ bắt buộc. Bai-vent có hai mức áp lực, tự thở mọi lúc. Nhớ: bế, dắt, tự đi. Chúc các bạn học tốt."
+   "text": "Suy hô hấp cấp tiến triển: sáu, ba mươi, tám tám. Chúc các bạn học tốt."
   }
  ]
 }
