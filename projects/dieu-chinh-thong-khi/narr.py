@@ -124,7 +124,7 @@ NARR = [
     [("k = 0,863 khi nuôi ăn cân đối (đạm, đường, béo): 1 O₂ vào → 0,863 CO₂ sinh ra.",
       "Trạm năm, hệ số hô hấp. Khi nuôi ăn cân đối đạm đường béo, mỗi phân tử ô xy vào cơ thể sinh ra không phẩy tám sáu ba phân tử cê ô hai."),
      ("k = 1 nếu chỉ nuôi bằng carbohydrate (truyền glucose 5%, 10%).",
-      "Nếu chỉ nuôi bằng đường, như truyền glu cô za năm hay mười phần trăm, hệ số tăng lên một."),
+      "Nếu chỉ nuôi bằng đường, như chỉ truyền dịch đường năm hay mười phần trăm, hệ số tăng lên một."),
      ("→ sinh CO₂ nhiều hơn ≈ 16% với cùng lượng O₂ tiêu thụ.",
       "Nghĩa là sinh cê ô hai nhiều hơn khoảng mười sáu phần trăm với cùng lượng ô xy tiêu thụ."),
      ("Ghi nhớ: chỉ truyền ĐƯỜNG → k = 1 → CO₂ tăng.",
