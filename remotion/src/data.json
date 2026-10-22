@@ -1,6 +1,6 @@
 {
  "fps": 30,
- "total": 20458,
+ "total": 19560,
  "scenes": [
   {
    "from": 0,
@@ -8,556 +8,541 @@
    "sents": [
     {
      "start": 0.7,
-     "dur": 3.719,
+     "dur": 2.977,
      "text": ""
     }
    ]
   },
   {
    "from": 180,
-   "dur": 1120,
+   "dur": 1278,
    "sents": [
     {
      "start": 0.7,
-     "dur": 3.665,
-     "text": "Mọi BN thở máy đều xếp vào 1 trong 3 nhóm cơ chế."
+     "dur": 9.9,
+     "text": "Thở máy có 2 mục tiêu: THÔNG KHÍ (PaCO₂) và OXY HOÁ (PaO₂). Bài này nói về thông khí."
     },
     {
-     "start": 4.915,
-     "dur": 8.652,
-     "text": "Phổi BÌNH THƯỜNG: chấn thương đầu, CT cột sống cổ, viêm não – màng não, XHNMN, ngộ độc, Guillain-Barré."
+     "start": 11.15,
+     "dur": 6.891,
+     "text": "Mục tiêu thường: PaCO₂ 35–45 mmHg — thần kinh cơ, ngộ độc, hậu phẫu."
     },
     {
-     "start": 14.117,
-     "dur": 7.563,
-     "text": "Phổi CỨNG (C↓): viêm phổi, phù phổi cấp, ARDS, ngạt nước, chấn thương ngực."
+     "start": 18.591,
+     "dur": 5.91,
+     "text": "Cho phép CAO hơn (permissive hypercapnia): COPD, hen, ARDS."
     },
     {
-     "start": 22.23,
-     "dur": 3.96,
-     "text": "Phổi TẮC (R↑): COPD, hen."
+     "start": 25.05,
+     "dur": 6.086,
+     "text": "Giữ THẤP hơn: tăng áp nội sọ (“nhẹ và ngắn”), cao áp phổi, thoát vị hoành."
     },
     {
-     "start": 26.739,
-     "dur": 9.284,
-     "text": "Hành trình 6 trạm: NHÓM → MỔ → TIM → NÃO → COPD/HEN → ARDS."
+     "start": 31.686,
+     "dur": 9.633,
+     "text": "Ghi nhớ: 35–45 là vùng XANH · COPD, hen, ARDS cho phép cao · não, cao áp phổi giữ thấp."
     }
    ]
   },
   {
-   "from": 1300,
-   "dur": 1130,
+   "from": 1458,
+   "dur": 1127,
    "sents": [
     {
      "start": 0.7,
-     "dur": 8.131,
-     "text": "Tính VT theo cân nặng dự đoán (PBW): Nam = 50 + 0,91 × (cao − 152,4) · Nữ = 45,5 + 0,91 × (cao − 152,4)."
+     "dur": 9.288,
+     "text": "Phương trình thông khí phế nang: PaCO₂ = k / VA = k / [f × (VT − VD)]."
     },
     {
-     "start": 9.381,
-     "dur": 4.059,
-     "text": "Trẻ em: dùng cân nặng theo tuổi hoặc theo chiều cao."
+     "start": 10.538,
+     "dur": 8.203,
+     "text": "VD khoảng chết ≈ 1 mL/lb (người lớn ~150 mL) · k hệ số hô hấp = 0,863."
     },
     {
-     "start": 13.991,
-     "dur": 14.431,
-     "text": "Phổi bình thường: VT 6–8 mL/kg, f 15–20 · Tổn thương cấp: VT 4–8, f 20–30 · Tắc nghẽn: VT 4–8, f 8–15."
+     "start": 19.292,
+     "dur": 3.917,
+     "text": "Toan hô hấp: PaCO₂ > 45 mmHg và pH < 7,35."
     },
     {
-     "start": 28.972,
-     "dur": 3.287,
-     "text": "Giữ Pplat < 28 cmH₂O (trừ khi thành ngực cứng)."
+     "start": 23.759,
+     "dur": 6.216,
+     "text": "4 nguyên nhân: f thấp · VT thấp · VD tăng · k tăng."
     },
     {
-     "start": 32.809,
-     "dur": 3.563,
-     "text": "Ghi nhớ: phổi CỨNG → thở NHANH · phổi TẮC → thở CHẬM."
+     "start": 30.525,
+     "dur": 5.732,
+     "text": "Ghi nhớ: 4 bánh xe của CO₂ — f · VT · VD · k."
     }
    ]
   },
   {
-   "from": 2430,
-   "dur": 1294,
+   "from": 2585,
+   "dur": 1134,
    "sents": [
     {
      "start": 0.7,
-     "dur": 7.867,
-     "text": "Trạm 2 — HẬU PHẪU. Chỉ định: ngưng thở do thuốc mê · giảm stress tim phổi · bệnh phổi có sẵn."
+     "dur": 13.263,
+     "text": "A/C: tần số cài là TỐI THIỂU · SIMV: thường thấp hơn A/C · PS/CPAP: KHÔNG cài tần số."
     },
     {
-     "start": 9.117,
-     "dur": 10.27,
-     "text": "Không bệnh phổi: A/C · f 12–18 · VT 6–8 mL/kg · Ti 1 s · PEEP ≤ 5 · PaO₂ > 80 mmHg."
+     "start": 14.513,
+     "dur": 6.82,
+     "text": "Tần số thấp hay gặp ở mode hỗ trợ (SIMV, nhất là PS) → liên quan đến TRIGGER của BN."
     },
     {
-     "start": 19.937,
-     "dur": 9.032,
-     "text": "Có bệnh phổi TẮC NGHẼN: f 12–18 · Ti 0,8–1 s · PEEP 5 đối trọng auto-PEEP · SpO₂ 88–95%."
+     "start": 21.883,
+     "dur": 3.456,
+     "text": "Do BN trigger quá yếu, hoặc cài độ nhạy quá cao (khó kích hoạt)."
     },
     {
-     "start": 29.519,
-     "dur": 7.095,
-     "text": "Có bệnh phổi HẠN CHẾ: f 20–30 · VT 4–6 mL/kg · Ti 0,5–0,8 s · PEEP 5."
+     "start": 25.889,
+     "dur": 7.738,
+     "text": "Do máy: bộ dây và bình làm ẩm quá lớn · loại trigger (lưu lượng/áp lực) · vị trí cảm biến (trong máy/gần BN)."
     },
     {
-     "start": 37.164,
-     "dur": 4.651,
-     "text": "Mọi nhóm: Pplat ≤ 28 cmH₂O, áp lực đẩy < 15 cmH₂O."
+     "start": 34.176,
+     "dur": 2.341,
+     "text": "Và mất trigger do auto-PEEP."
     }
    ]
   },
   {
-   "from": 3724,
-   "dur": 1098,
+   "from": 3719,
+   "dur": 842,
    "sents": [
     {
      "start": 0.7,
-     "dur": 8.509,
-     "text": "Oxy hoá: FiO₂ < 60% → chỉnh FiO₂ · FiO₂ ≥ 60% → tăng PEEP."
+     "dur": 7.535,
+     "text": "VTI: thể tích MÁY CUNG CẤP · VTE: thể tích BN THỰC NHẬN."
     },
     {
-     "start": 9.759,
-     "dur": 4.694,
-     "text": "Thông khí: VE = VT × tần số · chỉnh tần số và VT (VT ≤ 8 mL/kg PBW)."
+     "start": 8.785,
+     "dur": 7.535,
+     "text": "VT thấp có 7 nguyên nhân: thể tích nén · thất thoát · báo động áp lực cao · thay đổi R/C trong PC …"
     },
     {
-     "start": 15.003,
-     "dur": 8.261,
-     "text": "Cai máy khi: FiO₂ ≤ 40%, PEEP ≤ 5, BN trigger hiệu quả."
+     "start": 16.87,
+     "dur": 6.599,
+     "text": "… Ti không đủ · Te không đủ (auto-PEEP) · VE đủ nhưng VA thiếu."
     },
     {
-     "start": 23.814,
-     "dur": 5.758,
-     "text": "Nghiệm pháp tự thở 30 phút, hoặc giảm PS xuống 5–10 cmH₂O rồi rút NKQ."
-    },
-    {
-     "start": 30.122,
-     "dur": 5.166,
-     "text": "Ghi nhớ: mốc 60 — dưới 60 chỉnh FiO₂, từ 60 trở lên tăng PEEP."
+     "start": 24.019,
+     "dur": 2.78,
+     "text": "Ghi nhớ: máy ĐƯA (VTI) ≠ BN NHẬN (VTE)."
     }
    ]
   },
   {
-   "from": 4822,
-   "dur": 1140,
+   "from": 4561,
+   "dur": 1236,
    "sents": [
     {
      "start": 0.7,
-     "dur": 7.44,
-     "text": "Trạm 3 — SUY TIM. Thở máy áp lực dương làm GIẢM tiền tải và hậu tải thất trái."
+     "dur": 4.508,
+     "text": "Thể tích nén = khí bị nén và làm phồng bộ dây, KHÔNG vào phổi."
     },
     {
-     "start": 8.69,
-     "dur": 3.405,
-     "text": "BN rối loạn chức năng thất trái: thở máy có thể ↑ công năng cơ tim."
+     "start": 5.758,
+     "dur": 8.105,
+     "text": "Phụ thuộc thể tích bộ dây: tiết diện (sơ sinh < trẻ em < người lớn), chiều dài, bình làm ẩm."
     },
     {
-     "start": 12.645,
-     "dur": 4.028,
-     "text": "Nhưng BN giảm thể tích: có thể ↓ cung lượng tim thêm."
+     "start": 14.413,
+     "dur": 5.682,
+     "text": "Và độ giãn nở của dây: PVC > Hytrel > silicone."
     },
     {
-     "start": 17.223,
-     "dur": 7.935,
-     "text": "Chỉ định: thiếu oxy máu, ↑ công cơ tim, ↑ công thở → mục tiêu phục hồi oxy, giảm công thở và công cơ tim."
+     "start": 20.644,
+     "dur": 14.136,
+     "text": "Test máy đo compliance dây, VD 1,65 mL/cmH₂O → ΔP 20 mất ≈ 33 mL (minh hoạ) · đa số máy hiện đại tự BÙ."
     },
     {
-     "start": 25.708,
-     "dur": 11.0,
-     "text": "NIV/CPAP 10 cmH₂O, FiO₂ 100% để tránh đặt NKQ · TRÁNH NIV khi NMCT, RL huyết động, loạn nhịp, giảm ý thức."
+     "start": 35.33,
+     "dur": 4.554,
+     "text": "Ghi nhớ: dây càng TO, càng DÀI, càng MỀM → nén càng NHIỀU."
     }
    ]
   },
   {
-   "from": 5962,
-   "dur": 1147,
+   "from": 5797,
+   "dur": 947,
    "sents": [
     {
      "start": 0.7,
-     "dur": 6.933,
-     "text": "Mode A/C (tự thở làm tăng máu đến cơ hô hấp) · thể tích hay áp lực đều được."
+     "dur": 7.451,
+     "text": "Thất thoát: chỗ hở bộ dây (kiểm tra circuit leak) · qua NKQ: sai cỡ, không bóng chèn, chưa bơm bóng chèn."
     },
     {
-     "start": 8.183,
-     "dur": 7.475,
-     "text": "VT 6–8 mL/kg · f > 15 · Ti ≤ 1 s · Pplat < 28 · áp lực đẩy < 15."
+     "start": 8.701,
+     "dur": 3.499,
+     "text": "Phát hiện 1: đặt ống nghe ở hõm trên xương ức."
     },
     {
-     "start": 16.208,
-     "dur": 7.136,
-     "text": "PEEP 5–10 cmH₂O · FiO₂ 100% lúc đầu, sau đó giảm để SpO₂ 88–95%."
+     "start": 12.75,
+     "dur": 5.053,
+     "text": "Phát hiện 2: so sánh VTI và VTE (VD 504 so với 383 mL)."
     },
     {
-     "start": 23.894,
-     "dur": 9.573,
-     "text": "SpO₂ < 88% + phù phổi → ↑ PEEP · pH > 7,45 → ↓ tần số · pH < 7,35 → ↑ tần số."
+     "start": 18.352,
+     "dur": 7.353,
+     "text": "Phát hiện 3: đồ thị thể tích – thời gian không về 0 · bật bù rò (leak compensation) nếu máy có."
     },
     {
-     "start": 34.017,
-     "dur": 2.933,
-     "text": "Ghi nhớ: PEEP là BẠN của tim trái suy."
+     "start": 26.255,
+     "dur": 4.018,
+     "text": "Ghi nhớ: VTE < VTI → nghĩ ngay đến RÒ."
     }
    ]
   },
   {
-   "from": 7109,
-   "dur": 1165,
+   "from": 6744,
+   "dur": 944,
    "sents": [
     {
      "start": 0.7,
-     "dur": 8.735,
-     "text": "Trạm 4 — TĂNG ÁP NỘI SỌ. Mục tiêu: kiểm soát ICP; ICP ↑ → ↓ tưới máu não, có thể thoát vị não."
+     "dur": 8.075,
+     "text": "Ppeak vượt giới hạn Pmax → máy NGƯNG thì hít vào → Ti bị cắt ngắn → VT giảm."
     },
     {
-     "start": 9.985,
-     "dur": 5.687,
-     "text": "PaCO₂ ↑ và PaO₂ ↓ đều làm ↑ ICP → không để xảy ra."
+     "start": 9.325,
+     "dur": 4.487,
+     "text": "VD: cài VTI 400 mL nhưng VTE chỉ 130 mL."
     },
     {
-     "start": 16.222,
-     "dur": 5.189,
-     "text": "Tăng thông khí → ↓ PaCO₂ → co mạch não → ↓ tưới máu não."
+     "start": 14.362,
+     "dur": 2.998,
+     "text": "Ppeak 51 chạm giới hạn 50 cmH₂O."
     },
     {
-     "start": 21.96,
-     "dur": 8.856,
-     "text": "Không giảm tử vong, ↑ di chứng → KHÔNG khuyến cáo; chỉ tăng thông khí TẠM THỜI khi ICP ↑ cấp, chờ phẫu thuật."
+     "start": 17.91,
+     "dur": 7.561,
+     "text": "Nâng giới hạn lên 60 → VTE 408 mL · đồng thời tìm nguyên nhân Ppeak cao."
     },
     {
-     "start": 31.367,
-     "dur": 6.181,
-     "text": "PEEP ↑ áp lực lồng ngực → ↓ máu TM não về → ↑ ICP, có ý nghĩa khi PEEP > 15 hoặc giảm thể tích."
+     "start": 26.021,
+     "dur": 4.17,
+     "text": "Ghi nhớ: báo động áp lực cao CẮT NGẮN nhịp → VT tụt."
     }
    ]
   },
   {
-   "from": 8274,
-   "dur": 1410,
+   "from": 7688,
+   "dur": 1179,
    "sents": [
     {
      "start": 0.7,
-     "dur": 7.682,
-     "text": "Chỉ định: ức chế hô hấp do tổn thương TK · chấn thương kèm theo · phù phổi do TK · thuốc ức chế hô hấp."
+     "dur": 6.583,
+     "text": "Trong PC: R↑ hoặc C↓ → VT↓ → ứ CO₂."
     },
     {
-     "start": 8.932,
-     "dur": 7.074,
-     "text": "A/C thể tích · VT 6–8 mL/kg · Pplat < 28 · f 15–25 · Ti 1 s."
+     "start": 7.833,
+     "dur": 6.313,
+     "text": "R↑ bệnh lý: COPD, hen, viêm tiểu phế quản, hít phân su."
     },
     {
-     "start": 16.556,
-     "dur": 6.365,
-     "text": "Mục tiêu: PaCO₂ 35–45 mmHg · pH 7,35–7,45 · PaO₂ 70–100 (≈ 80) mmHg."
+     "start": 14.696,
+     "dur": 5.736,
+     "text": "R↑ cơ học: nghẹt đàm, nước đọng trong dây, BN cắn ống, ống NKQ bị gập."
     },
     {
-     "start": 23.471,
-     "dur": 7.959,
-     "text": "PEEP 5 (≤ 10 thường không ảnh hưởng ICP) · nằm đầu cao · chỉnh thông khí bằng TẦN SỐ."
+     "start": 20.982,
+     "dur": 7.879,
+     "text": "C↓ thành ngực: tràn dịch, tràn khí màng phổi, phù nề, gù vẹo, chướng bụng, lọc màng bụng, béo phì."
     },
     {
-     "start": 31.979,
-     "dur": 7.586,
-     "text": "PaO₂ thấp + FiO₂ 60%: ICP không tăng → ↑ PEEP (đến 10) · ICP tăng → tiếp tục ↑ FiO₂."
-    },
-    {
-     "start": 40.115,
-     "dur": 5.592,
-     "text": "Ghi nhớ: NÃO — CO₂ 35–45 · O₂ ≥ 70 · ĐẦU CAO."
+     "start": 29.41,
+     "dur": 8.558,
+     "text": "C↓ phổi: viêm phổi, phù phổi cấp, ARDS, ngạt nước, bệnh màng trong, xẹp phổi, xơ hoá phổi."
     }
    ]
   },
   {
-   "from": 9684,
-   "dur": 1039,
+   "from": 8867,
+   "dur": 1019,
    "sents": [
     {
      "start": 0.7,
-     "dur": 10.397,
-     "text": "Trạm 5 — COPD. Thở máy xâm lấn nên TRÁNH nếu có thể; NIV là chăm sóc chuẩn cho đợt cấp."
+     "dur": 7.011,
+     "text": "Ti không đủ (PC): hết thì hít vào mà lưu lượng CHƯA VỀ 0 → còn thể tích chưa vào."
     },
     {
-     "start": 11.647,
-     "dur": 6.24,
-     "text": "NIV hai mức áp lực: IPAP 8–12 cmH₂O (chỉnh VT) · EPAP 4 cmH₂O (tăng để cải thiện PaO₂)."
+     "start": 8.261,
+     "dur": 5.018,
+     "text": "Tăng Ti cho flow về 0 → tăng thêm VT mà KHÔNG tăng Pi."
     },
     {
-     "start": 18.438,
-     "dur": 3.728,
-     "text": "VD: IPAP 12 − EPAP 4 → PS = 8 cmH₂O."
+     "start": 13.829,
+     "dur": 6.854,
+     "text": "Te không đủ (COPD) → bẫy khí, auto-PEEP · VTE < VTI."
     },
     {
-     "start": 22.715,
-     "dur": 10.622,
-     "text": "Thất bại sau 2 giờ: pH, PaCO₂ không cải thiện/xấu đi · tri giác ↓ · RL huyết động · oxy hoá xấu → đặt NKQ."
+     "start": 21.233,
+     "dur": 4.756,
+     "text": "Xử trí bẫy khí: tăng Te · giảm tần số · giảm VT."
+    },
+    {
+     "start": 26.539,
+     "dur": 6.116,
+     "text": "Ghi nhớ: flow chưa về 0 cuối hít vào → kéo dài Ti · cuối thở ra → kéo dài Te."
     }
    ]
   },
   {
-   "from": 10723,
-   "dur": 1450,
+   "from": 9886,
+   "dur": 1003,
    "sents": [
     {
      "start": 0.7,
-     "dur": 9.387,
-     "text": "Chỉ định xâm lấn: ↑ CO₂, ↓ O₂, kiệt sức → cho cơ hô hấp nghỉ, đưa PaCO₂ về mức nền, điều trị giảm O₂."
+     "dur": 8.605,
+     "text": "Tần số quá nhanh: VE đủ nhưng VA thấp. VD: PC, VD = 60 mL."
     },
     {
-     "start": 10.637,
-     "dur": 6.618,
-     "text": "A/C · f 8–15 · VT 6–8 mL/kg · Ti 0,6–1 s · Pplat ≤ 28."
+     "start": 9.855,
+     "dur": 5.473,
+     "text": "f 20 × VT 200 = VE 4 L → VA = 20 × (200 − 60) = 2,8 L/phút."
     },
     {
-     "start": 17.805,
-     "dur": 6.236,
-     "text": "Lưu lượng hít vào đủ cao (> 60 L/phút), dạng giảm dần → còn nhiều thời gian thở ra."
+     "start": 15.877,
+     "dur": 5.546,
+     "text": "f 30 × VT 133 = VE 4 L → VA = 30 × (133 − 60) = 2,1 L/phút."
     },
     {
-     "start": 24.591,
-     "dur": 7.955,
-     "text": "PEEP 5 đối trọng auto-PEEP · FiO₂ thường ≤ 50%, SpO₂ 88–95%, PaO₂ 55–80."
+     "start": 21.973,
+     "dur": 5.029,
+     "text": "f 40 × VT 100 = VE 4 L → VA = 40 × (100 − 60) = 1,6 L/phút."
     },
     {
-     "start": 33.097,
-     "dur": 8.187,
-     "text": "PaCO₂ chỉ cần về mức NỀN (thường 50–60 mmHg) hoặc pH > 7,30 · Ppeak cao thường không là vấn đề."
-    },
-    {
-     "start": 41.834,
-     "dur": 5.181,
-     "text": "Ghi nhớ: COPD — CHẬM · THỞ RA DÀI · CO₂ về mức NỀN."
+     "start": 27.553,
+     "dur": 4.581,
+     "text": "Ghi nhớ: cùng VE — tần số càng NHANH, VA càng THẤP."
     }
    ]
   },
   {
-   "from": 12173,
-   "dur": 1220,
+   "from": 10889,
+   "dur": 948,
    "sents": [
     {
      "start": 0.7,
-     "dur": 8.405,
-     "text": "Auto-PEEP: thở ra chưa hết đã hít vào → khí bị bẫy, lưu lượng thở ra không về 0."
+     "dur": 8.157,
+     "text": "Khoảng chết = khoảng chết giải phẫu (đường dẫn khí) + sinh lý (phế nang không được tưới máu)."
     },
     {
-     "start": 9.655,
-     "dur": 5.835,
-     "text": "Hậu quả: ↑ công thở, chống máy, khó cai · MẤT NHẠY trigger."
+     "start": 9.407,
+     "dur": 5.531,
+     "text": "VD tăng do bệnh: giãn phế quản, thuyên tắc phổi · do PEEP cao, auto-PEEP."
     },
     {
-     "start": 16.041,
-     "dur": 6.908,
-     "text": "Dấu hiệu: BN gắng sức mà không trigger được · tần số BN > tần số máy · thở ra kéo dài tới nhịp sau."
+     "start": 15.488,
+     "dur": 9.372,
+     "text": "Khoảng chết CƠ HỌC (giữa chữ Y và NKQ): HME, phin lọc, đo CO₂ dòng chính, ống nhún, hút đàm kín."
     },
     {
-     "start": 23.499,
-     "dur": 4.363,
-     "text": "Đo: giữ cuối thì thở ra (expiratory hold) → đọc auto-PEEP."
-    },
-    {
-     "start": 28.412,
-     "dur": 10.961,
-     "text": "Xử trí: ↑ Te, ↓ tần số, ↓ VT · giảm nhu cầu (sốt, đau, lo âu) · ↓ sức cản (ống to, hút đàm, giãn PQ) · PEEP ngoài."
+     "start": 25.41,
+     "dur": 4.901,
+     "text": "Ghi nhớ: trẻ nhỏ VT nhỏ → THÁO BỎ khoảng chết cơ học không cần thiết."
     }
    ]
   },
   {
-   "from": 13393,
-   "dur": 772,
+   "from": 11837,
+   "dur": 791,
    "sents": [
     {
      "start": 0.7,
-     "dur": 7.257,
-     "text": "Auto-PEEP 10, độ nhạy −1 → BN phải tạo lực 11 cmH₂O mới trigger được."
+     "dur": 9.125,
+     "text": "k = 0,863 khi nuôi ăn cân đối (đạm, đường, béo): 1 O₂ vào → 0,863 CO₂ sinh ra."
     },
     {
-     "start": 8.507,
-     "dur": 5.764,
-     "text": "Cài PEEP ngoài 7 → lực trigger chỉ còn 4 cmH₂O, đồng thời nong đường thở → ↓ công thở."
+     "start": 10.375,
+     "dur": 5.076,
+     "text": "k = 1 nếu chỉ nuôi bằng carbohydrate (truyền glucose 5%, 10%)."
     },
     {
-     "start": 14.821,
-     "dur": 4.185,
-     "text": "PEEP ngoài cài THẤP HƠN auto-PEEP (VD 7 so với 10)."
+     "start": 16.001,
+     "dur": 4.493,
+     "text": "→ sinh CO₂ nhiều hơn ≈ 16% với cùng lượng O₂ tiêu thụ."
     },
     {
-     "start": 19.556,
-     "dur": 4.871,
-     "text": "Ghi nhớ: PEEP ngoài gánh bớt auto-PEEP → BN trigger nhẹ nhàng."
+     "start": 21.044,
+     "dur": 4.012,
+     "text": "Ghi nhớ: chỉ truyền ĐƯỜNG → k = 1 → CO₂ tăng."
     }
    ]
   },
   {
-   "from": 14165,
-   "dur": 758,
+   "from": 12628,
+   "dur": 954,
    "sents": [
     {
      "start": 0.7,
-     "dur": 6.015,
-     "text": "HEN nặng: A/C · f 8–20 · VT 4–6 mL/kg PBW · Pplat ≤ 28, áp lực đẩy < 15."
+     "dur": 8.484,
+     "text": "Giữ VT, chỉnh tần số: PaCO₂ cũ × f cũ = PaCO₂ mới × f mới."
     },
     {
-     "start": 7.265,
-     "dur": 5.098,
-     "text": "Ti 1–1,5 s, tránh auto-PEEP · chấp nhận ↑ CO₂ máu (permissive hypercapnia)."
+     "start": 9.734,
+     "dur": 6.221,
+     "text": "Giữ f, chỉnh VT: PaCO₂ cũ × VT cũ ≈ PaCO₂ mới × VT mới."
     },
     {
-     "start": 12.913,
-     "dur": 5.695,
-     "text": "PEEP còn tranh cãi · FiO₂ để PaO₂ 55–80, SpO₂ 88–95%."
+     "start": 16.506,
+     "dur": 9.161,
+     "text": "Chọn nút nào? VT < 8 mL/kg, phổi bình thường → tăng VT · VT ≈ 8 mL/kg → tăng tần số."
     },
     {
-     "start": 19.158,
-     "dur": 4.827,
-     "text": "Ghi nhớ: HEN — thể tích NHỎ, tần số CHẬM, chấp nhận CO₂ CAO."
+     "start": 26.217,
+     "dur": 4.271,
+     "text": "Ghi nhớ: VT còn THẤP → tăng VT · VT đã 8 → tăng TẦN SỐ."
     }
    ]
   },
   {
-   "from": 14923,
-   "dur": 1173,
+   "from": 13582,
+   "dur": 1158,
    "sents": [
     {
      "start": 0.7,
-     "dur": 13.541,
-     "text": "Trạm 6 — ARDS (Berlin 2012): PEEP ≥ 5 · nhẹ P/F 200–300 · trung bình 100–200 · nặng ≤ 100."
+     "dur": 9.775,
+     "text": "Ca 1: nam 81 kg IBW, VC, VTE 400 mL (5 mL/kg), f 16, PaCO₂ 55, phổi bình thường → muốn 40."
     },
     {
-     "start": 14.791,
-     "dur": 5.6,
-     "text": "Phổi ARDS có 3 vùng: thông khí tốt · đóng/mở theo chu kỳ · không thông khí."
+     "start": 11.025,
+     "dur": 7.501,
+     "text": "VT còn < 8 mL/kg → chỉnh VT: 55 × 400 / 40 = 550 mL (≈ 7 mL/kg)."
     },
     {
-     "start": 20.941,
-     "dur": 4.18,
-     "text": "VT lớn (10–12 mL/kg) → phế nang QUÁ CĂNG (volutrauma)."
+     "start": 19.076,
+     "dur": 8.439,
+     "text": "Ca 2: nữ IBW 52 kg, VT 425 (≈ 8 mL/kg), f 15, PaCO₂ 58 → muốn 40."
     },
     {
-     "start": 25.671,
-     "dur": 4.371,
-     "text": "PEEP thấp → phế nang ĐÓNG – MỞ, lực xé (atelectrauma)."
-    },
-    {
-     "start": 30.592,
-     "dur": 7.19,
-     "text": "Chiến lược: VT thấp + Pplat < 30 · PEEP đủ giữ phổi mở · mở phổi · tránh FiO₂ > 60% kéo dài."
+     "start": 28.065,
+     "dur": 9.242,
+     "text": "VT đã ≈ 8 → chỉnh tần số: 15 × 58 / 40 ≈ 22 lần/phút · coi chừng bẫy khí."
     }
    ]
   },
   {
-   "from": 16096,
-   "dur": 1094,
+   "from": 14740,
+   "dur": 1046,
    "sents": [
     {
      "start": 0.7,
-     "dur": 6.67,
-     "text": "VT 6 mL/kg so với 12 mL/kg (ARDSNet 2000): tử vong 31% so với 39,8%."
+     "dur": 7.131,
+     "text": "Ca 3: PC, Pi 10 → VTE 400 mL (5,3 mL/kg), f 16, PaCO₂ 59 → muốn 40."
     },
     {
-     "start": 7.92,
-     "dur": 4.814,
-     "text": "Pplat < 28–30 cmH₂O, đo khi giữ cuối thì hít vào (insp. pause)."
+     "start": 8.381,
+     "dur": 3.9,
+     "text": "VT mong muốn = 59 × 400 / 40 ≈ 600 mL."
     },
     {
-     "start": 13.284,
-     "dur": 7.875,
-     "text": "Giữ VE = 6 L/phút (50 kg): VT 6 → f = 6/0,3 = 20 · VT 5 → 24 · VT 4 → 30."
+     "start": 12.832,
+     "dur": 5.202,
+     "text": "Compliance không đổi → Pi mới = 10 × 600 / 400 = 15 cmH₂O."
     },
     {
-     "start": 21.709,
-     "dur": 8.282,
-     "text": "Tăng tần số: giữ Ti 1 s · không đảo I:E quá 1:1 · nhìn Te còn dư hay bẫy khí."
+     "start": 18.584,
+     "dur": 9.0,
+     "text": "Ca 4: PC, f 10, P 25, VT 425, Ti 0,7 s, PaCO₂ 50, pH 7,30 — flow chưa về 0 cuối hít vào."
     },
     {
-     "start": 30.541,
-     "dur": 4.637,
-     "text": "Giảm khoảng chết cơ học: bỏ ống nối NKQ, HME, filter thừa."
+     "start": 28.134,
+     "dur": 5.447,
+     "text": "→ Tăng Ti cho flow về 0: VT tăng mà không cần tăng áp lực."
     }
    ]
   },
   {
-   "from": 17190,
-   "dur": 1073,
+   "from": 15786,
+   "dur": 1518,
    "sents": [
     {
      "start": 0.7,
-     "dur": 3.875,
-     "text": "PEEP tối ưu = cân bằng giữa XẸP PHỔI và QUÁ CĂNG PHỔI."
+     "dur": 4.968,
+     "text": "Kiềm hô hấp: PaCO₂ < 35 mmHg và pH > 7,45."
     },
     {
-     "start": 5.125,
-     "dur": 7.923,
-     "text": "Bảng FiO₂/PEEP: ARDS nhẹ 0,3 → 5 … 1,0 → 18–24 · trung bình/nặng 0,3 → 12 … 1,0 → 22–24."
+     "start": 6.218,
+     "dur": 8.746,
+     "text": "Nguyên nhân: R/C cải thiện ở PC (VTE ↑) · BN tự thở tốt · stress · bệnh lý não · auto-trigger."
     },
     {
-     "start": 13.598,
-     "dur": 3.801,
-     "text": "Dưới mục tiêu: lên 1 bước · vượt mục tiêu: lùi 1 bước."
+     "start": 15.514,
+     "dur": 7.502,
+     "text": "f và VE tăng: TỰ THỞ TỐT = tỉnh, hồng hào, sinh hiệu ổn, không co lõm ngực."
     },
     {
-     "start": 17.949,
-     "dur": 9.583,
-     "text": "PEEP tăng dần: VT 6, tăng 2–3 cmH₂O mỗi 3–5 phút · đo Pplat, compliance, SpO₂, HA."
+     "start": 23.566,
+     "dur": 5.604,
+     "text": "STRESS / bệnh lý não = bứt rứt, tím tái, rối loạn sinh hiệu, co lõm ngực."
     },
     {
-     "start": 28.083,
-     "dur": 6.391,
-     "text": "Best PEEP = compliance tốt nhất và Pplat ≤ 30 (VD: PEEP 14 → Cdyn 30, Pplat 28)."
+     "start": 29.72,
+     "dur": 14.353,
+     "text": "Xử trí: đau, sợ, sốt → an thần, giảm đau · toan chuyển hoá → bicarbonate · não → chống co giật, phù não · đàm → hút, thay NKQ."
+    },
+    {
+     "start": 44.623,
+     "dur": 4.682,
+     "text": "Ghi nhớ: thở nhiều mà HỒNG → tốt · thở nhiều mà TÍM, BỨT RỨT → stress."
     }
    ]
   },
   {
-   "from": 18263,
-   "dur": 1148,
+   "from": 17304,
+   "dur": 1153,
    "sents": [
     {
      "start": 0.7,
-     "dur": 5.413,
-     "text": "Mục tiêu oxy: SpO₂ 88–95% hoặc PaO₂ 55–80 mmHg."
+     "dur": 4.86,
+     "text": "Auto-trigger: máy tự kích hoạt khi BN không hít vào → thở nhanh giả."
     },
     {
-     "start": 6.663,
-     "dur": 4.043,
-     "text": "FiO₂ ≥ 60% kéo dài > 24 giờ → nguy cơ ngộ độc oxy."
+     "start": 6.11,
+     "dur": 9.352,
+     "text": "Nguyên nhân: rò bộ dây, rò NKQ, dẫn lưu ngực, nước đọng, dao động tim, PEEP cao, trigger quá nhạy."
     },
     {
-     "start": 11.256,
-     "dur": 6.855,
-     "text": "Tăng CO₂ cho phép: chấp nhận PaCO₂ cao, pH ≥ 7,20–7,25 để tránh quá căng phổi."
+     "start": 16.012,
+     "dur": 5.328,
+     "text": "Nhận biết: đường nền tụt dần đến ngưỡng trigger → trigger GIẢ."
     },
     {
-     "start": 18.662,
-     "dur": 9.208,
-     "text": "CO₂ ↑ kích thích BN trigger nhiều → an thần/giãn cơ · pH < 7,2: ↑ tần số (tránh bẫy khí), bù bicarbonate."
+     "start": 21.889,
+     "dur": 11.357,
+     "text": "Xử trí: giảm rò (NKQ lớn hơn 0,5–1 số, bơm bóng chèn) · đổ nước đọng · tăng ngưỡng: áp lực −2 → −3, −4; lưu lượng 1 → 1,5–2 L/ph."
     },
     {
-     "start": 28.42,
-     "dur": 8.568,
-     "text": "Ghi nhớ: ARDS — 6 · 30 · 88 (VT 6 mL/kg · Pplat < 30 · SpO₂ ≥ 88%)."
+     "start": 33.796,
+     "dur": 3.354,
+     "text": "Ghi nhớ: đường nền TỤT DẦN chạm ngưỡng → trigger GIẢ."
     }
    ]
   },
   {
-   "from": 19411,
-   "dur": 1047,
+   "from": 18457,
+   "dur": 1103,
    "sents": [
     {
      "start": 0.7,
-     "dur": 10.587,
-     "text": "NHÓM: bình thường · cứng → nhanh · tắc → chậm · MỔ: mốc 60 — dưới chỉnh FiO₂, trên tăng PEEP."
+     "dur": 9.037,
+     "text": "PaCO₂ tỉ lệ NGHỊCH với thông khí phế nang: PaCO₂ = k / [f × (VT − VD)]."
     },
     {
-     "start": 11.837,
-     "dur": 8.498,
-     "text": "TIM: A/C, PEEP 5–10 là bạn của tim trái · NÃO: CO₂ 35–45, O₂ ≥ 70, đầu cao."
+     "start": 10.287,
+     "dur": 7.999,
+     "text": "Trước khi chỉnh: kiểm tra NÉN · RÒ · KHOẢNG CHẾT cơ học (và báo động áp lực, Ti, Te)."
     },
     {
-     "start": 20.886,
-     "dur": 6.196,
-     "text": "COPD/HEN: NIV trước · chậm, thở ra dài · PEEP ngoài < auto-PEEP · chấp nhận CO₂."
+     "start": 18.836,
+     "dur": 4.236,
+     "text": "Chỉnh bằng 2 nút: VT (khi còn < 8 mL/kg) và tần số (khi VT đã đủ)."
     },
     {
-     "start": 27.631,
-     "dur": 5.934,
-     "text": "ARDS: 6 · 30 · 88 · PEEP theo bảng hoặc compliance tốt nhất."
+     "start": 23.622,
+     "dur": 11.819,
+     "text": "CO₂ cũ × f cũ = CO₂ mới × f mới · kiềm hô hấp: phân biệt tự thở tốt với stress, auto-trigger."
     }
    ]
   }

@@ -1,10 +1,10 @@
 import React from 'react';
 import {AbsoluteFill} from 'remotion';
-import {ap, sp, useT, lerp, C, FONT, STN_COL, Glass, Chip, Memo, Header, Roadmap, Defs, Badge, Label, geo, Circuit} from './lib';
+import {ap, sp, useT, lerp, C, FONT, STN_COL, Glass, Chip, Memo, Header, Roadmap, Defs, Badge, Label, geo, Circuit, XMark, pathD, Flow} from './lib';
 
-// ================= Bài: Cài đặt máy thở theo bệnh lý =================
+// ================= Bài: Nguyên tắc điều chỉnh thông khí =================
 type P = {S: number[]};
-const ST = ['NHÓM', 'MỔ', 'TIM', 'NÃO', 'COPD·HEN', 'ARDS'];
+const ST = ['MỤC TIÊU', 'f', 'VT', 'VD', 'k', 'CÔNG THỨC', 'KIỀM'];
 const RM: React.FC<{cur: number | 'all'; t: number}> = ({cur, t}) => <Roadmap cur={cur} t={t} labels={ST} />;
 const Svg: React.FC<{children: React.ReactNode}> = ({children}) => (
   <svg viewBox="0 0 1920 1080" width={1920} height={1080} style={{position: 'absolute', left: 0, top: 0}}>
@@ -152,711 +152,726 @@ const Balloon: React.FC<{cx: number; cy: number; r: number; neck?: number; strok
 );
 const osc = (t: number, T = 3) => 0.5 - 0.5 * Math.cos((2 * Math.PI * t) / T);
 
+// ---------- bánh xe CO₂ ----------
+const SAT = [
+  {k: 'VT', ang: -90, c: STN_COL[2]},
+  {k: 'VD', ang: 0, c: STN_COL[3]},
+  {k: 'k', ang: 90, c: STN_COL[4]},
+  {k: 'f', ang: 180, c: STN_COL[1]},
+];
+const Wheel: React.FC<{cx: number; cy: number; R: number; t: number; a: number; arrows?: string[]; as?: number[]}> = ({cx, cy, R, t, a, arrows, as}) => {
+  const pulse = 1 + 0.03 * Math.sin(t * 2.4);
+  return (
+    <g opacity={a}>
+      {SAT.map((s, i) => {
+        const x = cx + Math.cos((s.ang * Math.PI) / 180) * R, y = cy + Math.sin((s.ang * Math.PI) / 180) * R;
+        return <line key={'l' + i} x1={cx} y1={cy} x2={x} y2={y} stroke={s.c} strokeWidth={4} opacity={0.6} />;
+      })}
+      <circle cx={cx} cy={cy} r={R * 0.52 * pulse} fill="#2A1F55" stroke={C.violet} strokeWidth={5} filter="url(#glow)" />
+      <text x={cx} y={cy + R * 0.12} textAnchor="middle" fill={C.txt} fontFamily={FONT} fontWeight={800} fontSize={R * 0.3}>PaCO₂</text>
+      {SAT.map((s, i) => {
+        const x = cx + Math.cos((s.ang * Math.PI) / 180) * R, y = cy + Math.sin((s.ang * Math.PI) / 180) * R;
+        const aa = as ? as[i] : 1;
+        return (
+          <g key={i} opacity={aa}>
+            <circle cx={x} cy={y} r={R * 0.3} fill="#0E1A2E" stroke={s.c} strokeWidth={5} />
+            <text x={x} y={y + R * 0.11} textAnchor="middle" fill={s.c} fontFamily={FONT} fontWeight={800} fontSize={R * 0.3}>{s.k}</text>
+            {arrows && <text x={x + R * 0.38} y={y - R * 0.18} fill={C.red} fontFamily={FONT} fontWeight={800} fontSize={R * 0.34}>{arrows[i]}</text>}
+          </g>
+        );
+      })}
+    </g>
+  );
+};
+const Big2: React.FC<{c?: string; children: React.ReactNode; s?: number}> = ({c = C.txt, children, s = 44}) => <div style={{fontSize: s, fontWeight: 800, color: c, lineHeight: 1.25}}>{children}</div>;
+
 // ===================== 0. Tiêu đề =====================
 const S0: React.FC<P> = () => {
   const t = useT();
-  const k = sp(t, 0.5, 12);
+  const k = sp(t, 0.6, 12);
   return (
     <AbsoluteFill>
       <Svg>
-        <Wave x={160} y={170} w={1600} h={280} f={(s) => pVC(s, {T: 3, ti: 1, pause: 0.3, pk: 24, pl: 18})} lo={0} hi={27} span={9} color={C.insp} t={t} t0={0} speed={1.6} fill base={0} />
+        <Wheel cx={960} cy={300} R={150} t={t} a={ap(t, 0.1, 1)} />
       </Svg>
       <div style={{position: 'absolute', top: 540, width: '100%', textAlign: 'center', opacity: Math.min(1, k * 1.3), transform: `scale(${0.9 + 0.1 * k})`}}>
-        <div style={{fontFamily: FONT, fontWeight: 800, fontSize: 100, letterSpacing: -2, lineHeight: 1.05, background: 'linear-gradient(180deg, #FFFFFF, #B9CBE6)', WebkitBackgroundClip: 'text', color: 'transparent'}}>
-          CÀI ĐẶT MÁY THỞ THEO BỆNH LÝ
+        <div style={{fontFamily: FONT, fontWeight: 800, fontSize: 104, letterSpacing: -2, lineHeight: 1.05, background: 'linear-gradient(180deg, #FFFFFF, #B9CBE6)', WebkitBackgroundClip: 'text', color: 'transparent'}}>
+          ĐIỀU CHỈNH THÔNG KHÍ
         </div>
       </div>
       <div style={{position: 'absolute', top: 690, width: '100%', textAlign: 'center', fontFamily: FONT, fontWeight: 600, fontSize: 40, color: C.amber, opacity: ap(t, 1.2)}}>
-        Cài đặt ban đầu & xử trí · hành trình 6 trạm
+        trên bệnh nhân thở máy · 4 bánh xe của CO₂
       </div>
       <div style={{position: 'absolute', top: 770, width: '100%', textAlign: 'center', fontFamily: FONT, fontWeight: 400, fontSize: 24, color: C.muted, opacity: ap(t, 1.8)}}>
-        Nguồn: Tài liệu tập huấn thở máy – Bộ Y tế · ARDS Network 2000 · Berlin 2012
+        Nguồn: Tài liệu tập huấn thở máy – Bộ Y tế
       </div>
     </AbsoluteFill>
   );
 };
 
-// ===================== 1. Ba nhóm phổi =====================
+// ===================== 1. Mục tiêu =====================
 const S1: React.FC<P> = ({S}) => {
   const t = useT();
-  const k = osc(t, 3);
-  const cards = [
-    {h: 'BÌNH THƯỜNG', c: C.oxy, l: 'Chấn thương đầu · CT cột sống cổ · viêm não – màng não · XHNMN · ngộ độc · Guillain-Barré'},
-    {h: 'CỨNG · C↓', c: C.blue, l: 'Viêm phổi · phù phổi cấp · ARDS · ngạt nước · chấn thương ngực'},
-    {h: 'TẮC · R↑', c: C.red, l: 'COPD · hen'},
+  const zones = [
+    {y: 160, h: 200, c: C.red, j: 2, title: 'CHO PHÉP CAO (> 45)', l: 'COPD · hen phế quản · ARDS'},
+    {y: 365, h: 190, c: C.oxy, j: 1, title: 'VÙNG XANH 35–45', l: 'Thần kinh cơ · ngộ độc · hậu phẫu'},
+    {y: 560, h: 200, c: C.blue, j: 3, title: 'GIỮ THẤP (< 35 – 40)', l: 'Tăng áp nội sọ (“nhẹ và ngắn”) · cao áp phổi · thoát vị hoành'},
   ];
   return (
     <AbsoluteFill>
-      <Header num="01" title="Ba nhóm phổi" t={t} />
-      <div style={{opacity: ap(t, st(S, 4))}}><RM cur="all" t={t} /></div>
-      {cards.map((x, i) => (
-        <Glass key={i} x={80 + i * 600} y={150} w={560} h={520} a={ap(t, st(S, 0) + 0.5 * i)} border={x.c}>
-          <div style={{fontSize: 40, fontWeight: 800, color: x.c, textAlign: 'center'}}>{x.h}</div>
-          <div style={{height: 196}} />
-          <div style={{fontSize: 22, color: C.muted, textAlign: 'center', marginBottom: 12}}>{['nở bình thường', 'khó nở', 'khí khó ra'][i]}</div>
-          <div style={{fontSize: 27, lineHeight: 1.45, fontWeight: 500, opacity: ap(t, st(S, i + 1))}}>{x.l}</div>
-        </Glass>
-      ))}
+      <Header num="01" title="Trạm 1 · Mục tiêu" t={t} />
+      <RM cur={0} t={t} />
+      <Card x={80} y={160} w={700} h={200} a={ap(t, st(S, 0))} c={C.oxy} title="THÔNG KHÍ" size={34}><Big2 c={C.oxy}>PaCO₂</Big2></Card>
+      <Card x={80} y={380} w={700} h={200} a={ap(t, st(S, 0) + 1.5) * 0.55} c={C.pink} title="OXY HOÁ" size={34}><Big2 c={C.pink}>PaO₂</Big2></Card>
+      <div style={{position: 'absolute', left: 100, top: 610, width: 660, fontFamily: FONT, fontSize: 26, color: C.muted, opacity: ap(t, st(S, 0) + 3)}}>Bài này: điều chỉnh THÔNG KHÍ</div>
       <Svg>
-        <g opacity={ap(t, st(S, 0))}>
-          <Balloon cx={360} cy={325} r={52 + 22 * k} />
-          <Balloon cx={960} cy={325} r={46 + 6 * k} stroke={8} c={C.blue} />
-          <Balloon cx={1560} cy={325} r={66 + 12 * (1 - Math.exp(-3 * k))} neck={6} />
+        {zones.map((z, i) => (
+          <g key={i} opacity={ap(t, st(S, z.j))}>
+            <rect x={850} y={z.y} width={110} height={z.h - 6} rx={14} fill={z.c} opacity={0.85} />
+          </g>
+        ))}
+        <g opacity={ap(t, st(S, 1))}>
+          <Label x={835} y={372} c={C.txt} s={30} anchor="end">45</Label>
+          <Label x={835} y={570} c={C.txt} s={30} anchor="end">35</Label>
         </g>
       </Svg>
-      {ST.map((s, i) => (
-        <Chip key={i} x={80 + i * 297} y={720} w={280} h={70} c={STN_COL[i]} a={ap(t, st(S, 4) + 0.4 * i)} s={27} bold>{i + 1}. {s}</Chip>
+      {zones.map((z, i) => (
+        <Card key={i} x={1000} y={z.y} w={840} h={z.h - 10} a={ap(t, st(S, z.j) + 0.4)} c={z.c} title={z.title} size={28}>{z.l}</Card>
       ))}
+      <Memo x={160} y={790} w={1600} h={110} t={t} s0={st(S, 4)} size={34}>35–45 là vùng XANH · COPD, hen, ARDS cho phép cao · não, cao áp phổi giữ thấp</Memo>
     </AbsoluteFill>
   );
 };
 
-// ===================== 2. PBW & VT ban đầu =====================
+// ===================== 2. Phương trình =====================
 const S2: React.FC<P> = ({S}) => {
   const t = useT();
-  const rows = [
-    {n: 'Phổi bình thường', vt: '6–8', f: '15–20', T: 3.4, c: C.oxy},
-    {n: 'Tổn thương cấp', vt: '4–8', f: '20–30', T: 2.2, c: C.blue},
-    {n: 'Tắc nghẽn', vt: '4–8', f: '8–15', T: 5.5, c: C.red},
-  ];
+  const c = STN_COL;
   return (
     <AbsoluteFill>
-      <Header num="02" title="Trạm 1 · VT ban đầu" t={t} />
+      <Header num="02" title="Phương trình thông khí" t={t} />
       <RM cur={0} t={t} />
-      <Card x={80} y={150} w={820} h={300} a={ap(t, st(S, 0))} c={C.amber} title="Cân nặng dự đoán (PBW, kg)" size={30}>
-        <div><B c={C.blue}>Nam</B> = 50 + 0,91 × (cao − 152,4)</div>
-        <div><B c={C.pink}>Nữ</B> = 45,5 + 0,91 × (cao − 152,4)</div>
-        <div style={{fontSize: 22, color: C.muted, marginTop: 8}}>chiều cao tính bằng cm</div>
-      </Card>
-      <Chip x={80} y={475} w={820} h={84} c={C.insp} a={ap(t, st(S, 1))} s={27}>Trẻ em: cân nặng theo tuổi / theo chiều cao</Chip>
-      <Chip x={80} y={585} w={820} h={84} c={C.red} a={ap(t, st(S, 3))} s={30} bold>Pplat &lt; 28 cmH₂O</Chip>
-      <Glass x={940} y={150} w={900} h={530} a={ap(t, st(S, 2))} border={C.blue}>
-        <div style={{display: 'flex', fontSize: 24, color: C.muted, fontWeight: 700}}>
-          <div style={{width: 280}}>Nhóm</div><div style={{width: 150}}>VT mL/kg</div><div>Tần số</div>
+      <Glass x={80} y={150} w={1760} h={160} a={ap(t, st(S, 0))} border={C.violet}>
+        <div style={{textAlign: 'center', fontSize: 64, fontWeight: 800, lineHeight: '100px'}}>
+          PaCO₂ = <span style={{color: c[4]}}>k</span> / V<sub>A</sub> = <span style={{color: c[4]}}>k</span> / [ <span style={{color: c[1]}}>f</span> × ( <span style={{color: c[2]}}>VT</span> − <span style={{color: c[3]}}>VD</span> ) ]
         </div>
       </Glass>
-      {rows.map((r, i) => (
-        <div key={i} style={{position: 'absolute', left: 970, top: 230 + i * 150, opacity: ap(t, st(S, 2) + 1.3 * i), fontFamily: FONT, color: C.txt}}>
-          <div style={{position: 'absolute', left: 0, top: 0, width: 280, fontSize: 28, fontWeight: 800, color: r.c}}>{r.n}</div>
-          <div style={{position: 'absolute', left: 280, top: -6, fontSize: 40, fontWeight: 800, whiteSpace: 'nowrap'}}>{r.vt}</div>
-          <div style={{position: 'absolute', left: 430, top: -6, fontSize: 40, fontWeight: 800, color: r.c, whiteSpace: 'nowrap'}}>{r.f}</div>
-        </div>
-      ))}
+      <Chip x={80} y={335} w={860} h={84} c={c[3]} a={ap(t, st(S, 1))} s={28}>VD ≈ 1 mL/lb · người lớn ≈ 150 mL</Chip>
+      <Chip x={980} y={335} w={860} h={84} c={c[4]} a={ap(t, st(S, 1) + 3)} s={28}>k = hệ số hô hấp = 0,863</Chip>
+      <Glass x={80} y={450} w={760} h={300} a={ap(t, st(S, 2))} border={C.red}>
+        <div style={{fontSize: 30, fontWeight: 800, color: C.red}}>TOAN HÔ HẤP</div>
+        <div style={{fontSize: 56, fontWeight: 800, marginTop: 20}}>PaCO₂ &gt; 45</div>
+        <div style={{fontSize: 56, fontWeight: 800}}>pH &lt; 7,35</div>
+      </Glass>
+      <Glass x={880} y={450} w={960} h={300} a={ap(t, st(S, 3))} border={C.violet}>
+        <div style={{fontSize: 28, fontWeight: 800, color: C.violet}}>4 nguyên nhân</div>
+      </Glass>
       <Svg>
-        {rows.map((r, i) => (
-          <g key={i} opacity={ap(t, st(S, 2) + 1.3 * i)}>
-            <Wave x={970} y={282 + i * 150} w={840} h={70} f={(s) => pPC(s, {T: r.T, ti: Math.min(1, r.T / 3), pi: 14})} lo={0} hi={21} span={11} color={r.c} t={t} t0={st(S, 2)} sw={3} base={0} />
-          </g>
-        ))}
+        <Wheel cx={1360} cy={615} R={105} t={t} a={ap(t, st(S, 3))} arrows={['↓', '↑', '↑', '↓']} as={[0, 1, 2, 3].map((i) => ap(t, st(S, 3) + 0.8 + i * 0.9))} />
       </Svg>
-      <Memo x={260} y={750} w={1400} h={140} t={t} s0={st(S, 4)} size={46}>Phổi CỨNG → thở NHANH · phổi TẮC → thở CHẬM</Memo>
+      <Memo x={260} y={780} w={1400} h={115} t={t} s0={st(S, 4)} size={42}>4 bánh xe của CO₂: f · VT · VD · k</Memo>
     </AbsoluteFill>
   );
 };
 
-// ===================== 3. Hậu phẫu =====================
+// ===================== 3. Tần số =====================
 const S3: React.FC<P> = ({S}) => {
   const t = useT();
-  const cols = [
-    {h: 'Không bệnh phổi', c: C.oxy, l: ['A/C (CMV)', 'f 12–18', 'VT 6–8 mL/kg', 'Ti 1 s', 'PEEP ≤ 5', 'PaO₂ > 80']},
-    {h: 'Bệnh phổi TẮC NGHẼN', c: C.red, l: ['A/C (CMV)', 'f 12–18', 'VT 6–8 mL/kg', 'Ti 0,8–1 s', 'PEEP 5 (đối trọng auto-PEEP)', 'SpO₂ 88–95%']},
-    {h: 'Bệnh phổi HẠN CHẾ', c: C.blue, l: ['A/C (CMV)', 'f 20–30', 'VT 4–6 mL/kg', 'Ti 0,5–0,8 s', 'PEEP 5', 'SpO₂ 88–95%']},
-  ];
+  const Y = (v: number) => yv(330, 300, 0, 14, v);
+  const dips = [{s: 1.2, d: 1.2}, {s: 3.2, d: 1.0}, {s: 5.6, d: 3.4}];
+  const wave = (s: number) => {
+    for (const d of dips) {
+      if (s >= d.s && s < d.s + 0.5) return 6 - d.d * Math.sin((Math.PI * (s - d.s)) / 0.5);
+      if (d.d > 2 && s >= d.s + 0.25 && s < d.s + 2.2) return pPC(s - d.s - 0.25, {T: 99, ti: 1, pi: 7, peep: 6});
+    }
+    return 6;
+  };
   return (
     <AbsoluteFill>
-      <Header num="03" title="Trạm 2 · Thở máy sau mổ" t={t} />
+      <Header num="03" title="Trạm 2 · Tần số" t={t} />
       <RM cur={1} t={t} />
-      {['Ngưng thở do thuốc mê', 'Giảm stress tim phổi', 'Bệnh phổi có sẵn'].map((x, i) => (
-        <Chip key={i} x={80 + i * 595} y={150} w={570} h={76} c={C.amber} a={ap(t, st(S, 0) + 1.2 + i * 0.9)} s={27}>{x}</Chip>
+      {[['A/C: f cài là TỐI THIỂU', C.blue], ['SIMV: thấp hơn A/C', C.violet], ['PS / CPAP: KHÔNG cài f', C.red]].map(([x, c], i) => (
+        <Chip key={i} x={80 + i * 595} y={150} w={570} h={84} c={c} a={ap(t, st(S, 0) + 1.2 + i * 1.6)} s={28} bold>{x}</Chip>
       ))}
-      {cols.map((x, i) => (
-        <Glass key={i} x={80 + i * 595} y={255} w={570} h={470} a={ap(t, st(S, i + 1))} border={x.c} pad={26}>
-          <div style={{fontSize: 30, fontWeight: 800, color: x.c, marginBottom: 12}}>{x.h}</div>
-          {x.l.map((y, j) => (
-            <div key={j} style={{fontSize: 29, fontWeight: j === 1 || j === 2 ? 800 : 500, lineHeight: 1.5, opacity: ap(t, st(S, i + 1) + 0.6 + j * 0.45), color: (i === 1 && j === 3) || (i === 2 && (j === 1 || j === 2 || j === 3)) ? x.c : C.txt}}>• {y}</div>
+      <Card x={80} y={265} w={1000} h={440} a={ap(t, st(S, 1))} c={C.amber} title="Mode hỗ trợ: tần số phụ thuộc BN TRIGGER" />
+      <Svg>
+        <g opacity={ap(t, st(S, 1))}>
+          <line x1={120} x2={1040} y1={Y(4)} y2={Y(4)} stroke={C.amber} strokeWidth={3} strokeDasharray="10 8" />
+          <Label x={1040} y={Y(4) + 34} c={C.amber} s={22} anchor="end">ngưỡng trigger</Label>
+          <Wave x={120} y={330} w={920} h={300} f={wave} lo={0} hi={14} span={8} color={C.insp} t={t} t0={st(S, 1)} base={0} fill />
+          {dips.slice(0, 2).map((d, i) => (
+            <g key={i} opacity={ap(t, st(S, 1) + d.s + 0.4)}>
+              <XMark x={120 + ((d.s + 0.25) / 8) * 920} y={Y(2.4)} r={16} />
+            </g>
           ))}
-        </Glass>
-      ))}
-      <Chip x={80} y={755} w={1760} h={90} c={C.red} a={ap(t, st(S, 4))} s={32} bold>Mọi nhóm: Pplat ≤ 28 cmH₂O · áp lực đẩy &lt; 15 cmH₂O</Chip>
+          <Label x={120 + (1.45 / 8) * 920} y={680} c={C.red} s={22} a={ap(t, st(S, 1) + 2)}>gắng sức yếu → không nhịp</Label>
+        </g>
+      </Svg>
+      <Card x={1120} y={265} w={720} h={140} a={ap(t, st(S, 2))} c={C.red} title="Do BN" size={26}>Trigger quá yếu · cài độ nhạy quá khó</Card>
+      <Card x={1120} y={420} w={720} h={160} a={ap(t, st(S, 3))} c={C.blue} title="Do máy" size={24}>Dây & bình làm ẩm quá lớn · loại trigger (lưu lượng / áp lực) · vị trí cảm biến</Card>
+      <Card x={1120} y={595} w={720} h={110} a={ap(t, st(S, 4))} c={C.violet} size={28}><B c={C.violet}>Mất trigger do auto-PEEP</B></Card>
     </AbsoluteFill>
   );
 };
 
-// ===================== 4. Hậu phẫu: điều chỉnh & cai =====================
+// ===================== 4. VT: VTI vs VTE =====================
 const S4: React.FC<P> = ({S}) => {
   const t = useT();
-  const W = 900;
-  const X = (v: number) => ((v - 21) / 79) * W;
-  const ptr = 21 + 79 * osc(t - st(S, 0), 6);
-  const hi = ptr >= 60;
+  const g = geo(260, 150, 1400, 330);
+  const causes = ['Thể tích nén', 'Thất thoát', 'Báo động áp lực cao', 'Thay đổi R/C trong PC', 'Ti không đủ', 'Te không đủ (auto-PEEP)', 'VE đủ nhưng VA thiếu'];
   return (
     <AbsoluteFill>
-      <Header num="04" title="Trạm 2 · Chỉnh máy & cai" t={t} />
-      <RM cur={1} t={t} />
-      <Glass x={80} y={150} w={1000} h={300} a={ap(t, st(S, 0))} border={C.oxy}>
-        <div style={{fontSize: 28, fontWeight: 800, color: C.oxy}}>Oxy hoá: nhìn FiO₂</div>
-        <div style={{position: 'relative', height: 200, marginTop: 10}}>
-          <div style={{position: 'absolute', left: 0, top: 70, width: X(60), height: 34, borderRadius: '17px 0 0 17px', background: `${C.oxy}55`}} />
-          <div style={{position: 'absolute', left: X(60), top: 70, width: W - X(60), height: 34, borderRadius: '0 17px 17px 0', background: `${C.violet}66`}} />
-          <div style={{position: 'absolute', left: X(60) - 3, top: 50, width: 6, height: 74, background: C.amber, boxShadow: `0 0 14px ${C.amber}`}} />
-          <div style={{position: 'absolute', left: X(60) - 40, top: 8, width: 80, textAlign: 'center', fontSize: 32, fontWeight: 800, color: C.amber}}>60%</div>
-          <div style={{position: 'absolute', left: X(ptr) - 10, top: 62, width: 20, height: 50, borderRadius: 10, background: '#fff', boxShadow: '0 0 16px #fff'}} />
-          <div style={{position: 'absolute', left: 20, top: 128, fontSize: 28, fontWeight: 800, color: hi ? C.muted : C.oxy}}>&lt; 60% → chỉnh FiO₂</div>
-          <div style={{position: 'absolute', right: 20, top: 128, fontSize: 28, fontWeight: 800, color: hi ? C.violet : C.muted}}>≥ 60% → tăng PEEP</div>
-        </div>
-      </Glass>
-      <Card x={1120} y={150} w={720} h={300} a={ap(t, st(S, 1))} c={C.blue} title="Thông khí" size={30}>
-        <div style={{fontSize: 44, fontWeight: 800}}>VE = VT × f</div>
-        <div>Chỉnh tần số và VT</div>
-        <div><B c={C.red}>VT ≤ 8 mL/kg PBW</B></div>
-      </Card>
-      <Glass x={80} y={480} w={1760} h={250} a={ap(t, st(S, 2))} border={C.insp}>
-        <div style={{fontSize: 28, fontWeight: 800, color: C.insp}}>Cai máy khi đủ 3 điều kiện</div>
-      </Glass>
-      {['FiO₂ ≤ 40%', 'PEEP ≤ 5 cmH₂O', 'Trigger hiệu quả'].map((x, i) => (
-        <Chip key={i} x={120 + i * 380} y={545} w={350} h={76} c={C.insp} a={ap(t, st(S, 2) + 1 + i * 1.2)} s={28} bold>✓ {x}</Chip>
-      ))}
-      {['Nghiệm pháp tự thở 30 phút', 'hoặc PS ↓ còn 5–10', 'Rút NKQ'].map((x, i) => (
-        <React.Fragment key={i}>
-          <Chip x={120 + i * 560} y={640} w={i === 2 ? 340 : 480} h={70} c={i === 2 ? C.oxy : C.blue} a={ap(t, st(S, 3) + i * 1.3)} s={27}>{x}</Chip>
-          {i < 2 && <Arrow x={612 + i * 560} y={644} a={ap(t, st(S, 3) + i * 1.3 + 0.6)} />}
-        </React.Fragment>
-      ))}
-      <Memo x={260} y={765} w={1400} h={125} t={t} s0={st(S, 4)} size={42}>Mốc 60: dưới → chỉnh FiO₂ · từ 60 → tăng PEEP</Memo>
+      <Header num="04" title="Trạm 3 · Thể tích VT" t={t} />
+      <RM cur={2} t={t} />
+      <Svg>
+        <g opacity={ap(t, st(S, 0))}>
+          <Circuit g={g} t={t} tw={16} />
+          <Label x={g.ci[0] - 120} y={g.ci[1] + 52} c={C.insp} s={30}>VTI · máy CUNG CẤP</Label>
+          <Label x={g.ce[0] - 120} y={g.ce[1] - 30} c={C.exp} s={30}>VTE · BN THỰC NHẬN</Label>
+        </g>
+      </Svg>
+      {causes.map((x, i) => {
+        const row = i < 4 ? 0 : 1;
+        const w = row === 0 ? 425 : 573;
+        const xx = row === 0 ? 80 + i * 445 : 80 + (i - 4) * 593;
+        const s0 = i < 4 ? st(S, 1) + 1.6 + i * 1.3 : st(S, 2) + (i - 4) * 1.5;
+        return <Chip key={i} x={xx} y={520 + row * 115} w={w} h={90} c={STN_COL[(i % 6) + 1] ?? C.amber} a={ap(t, s0)} s={27} bold>{i + 1}. {x}</Chip>;
+      })}
+      <Memo x={360} y={775} w={1200} h={120} t={t} s0={st(S, 3)} size={44}>Máy ĐƯA (VTI) ≠ BN NHẬN (VTE)</Memo>
     </AbsoluteFill>
   );
 };
 
-// ===================== 5. Suy tim: tương tác tim – phổi =====================
-const Heart: React.FC<{cx: number; cy: number; s: number; t: number}> = ({cx, cy, s, t}) => {
-  const k = 1 + 0.06 * Math.max(0, Math.sin(2 * Math.PI * t * 1.2)) ** 3;
-  return (
-    <g transform={`translate(${cx},${cy}) scale(${s * k})`}>
-      <path d="M0,-20 C-10,-55 -70,-50 -70,-5 C-70,35 -20,60 0,85 C20,60 70,35 70,-5 C70,-50 10,-55 0,-20 Z" fill="#E2546F" stroke="#FFC2D0" strokeWidth={3} filter="url(#glow)" />
-      <path d="M-30,-5 C-30,20 -10,40 0,55" fill="none" stroke="#FFC2D0" strokeWidth={3} opacity={0.6} />
-    </g>
-  );
-};
+// ===================== 5. Thể tích nén =====================
 const S5: React.FC<P> = ({S}) => {
   const t = useT();
-  const push = 12 * osc(t, 3);
-  const a0 = ap(t, st(S, 0));
+  const k = osc(t, 2.5);
+  const pts: [number, number][] = [[140, 320], [880, 320]];
   return (
     <AbsoluteFill>
-      <Header num="05" title="Trạm 3 · Suy tim" t={t} />
+      <Header num="05" title="Trạm 3 · Thể tích nén" t={t} />
       <RM cur={2} t={t} />
-      <Card x={80} y={150} w={860} h={520} a={a0} c={C.red} title="Áp lực dương ↑ áp lực lồng ngực" />
+      <Card x={80} y={150} w={860} h={300} a={ap(t, st(S, 0))} c={C.amber} title="Khí làm PHỒNG DÂY, không vào phổi" />
+      <Card x={980} y={150} w={860} h={300} a={ap(t, st(S, 1))} c={C.blue} title="Tiết diện · chiều dài · bình làm ẩm" />
       <Svg>
-        <g opacity={a0}>
-          <path d="M210,640 C210,330 330,250 510,250 C690,250 810,330 810,640" fill="none" stroke="#5B7398" strokeWidth={6} />
-          <Heart cx={510} cy={430} s={1.5} t={t} />
-          {[-1, 1].map((d) => (
-            <g key={d}>
-              <path d={`M${510 + d * (300 - push)},430 l${-d * 60},0`} stroke={C.amber} strokeWidth={10} strokeLinecap="round" />
-              <path d={`M${510 + d * (240 - push)},430 l${d * 22},-18 l0,36 z`} fill={C.amber} />
+        <g opacity={ap(t, st(S, 0))}>
+          <path d={pathD(pts)} stroke="#4B6488" strokeWidth={34 + 22 * k} strokeLinecap="round" opacity={0.9} />
+          <path d={pathD(pts)} stroke="rgba(255,255,255,0.18)" strokeWidth={26 + 22 * k} strokeDasharray="3 10" />
+          <Flow pts={pts} color={C.insp} t={t} />
+          {[0, 1, 2, 3, 4].map((i) => (
+            <path key={i} d={`M${220 + i * 150},${320 - 20 - 11 * k} l0,${-18 * k} M${220 + i * 150},${320 + 20 + 11 * k} l0,${18 * k}`} stroke={C.amber} strokeWidth={4} strokeLinecap="round" opacity={k} />
+          ))}
+          <Label x={510} y={420} c={C.muted} s={24}>một phần khí bị nén lại trong dây</Label>
+        </g>
+        <g opacity={ap(t, st(S, 1))}>
+          {[['Sơ sinh', 26], ['Trẻ em', 40], ['Người lớn', 56]].map(([n, r], i) => (
+            <g key={i} opacity={ap(t, st(S, 1) + 1 + i * 0.8)}>
+              <circle cx={1150 + i * 250} cy={320} r={r as number} fill="#152138" stroke={C.blue} strokeWidth={6} />
+              <Label x={1150 + i * 250} y={420} s={26}>{n as string}</Label>
             </g>
           ))}
-          <Label x={510} y={600} c={C.amber} s={28}>↓ tiền tải · ↓ hậu tải thất trái</Label>
+          <Label x={1275} y={330} c={C.muted} s={30}>&lt;</Label>
+          <Label x={1525} y={330} c={C.muted} s={30}>&lt;</Label>
         </g>
       </Svg>
-      <Card x={980} y={150} w={860} h={160} a={ap(t, st(S, 1))} c={C.oxy} title="Tim trái đang suy" size={28}>→ co bóp tốt hơn ↑</Card>
-      <Card x={980} y={330} w={860} h={160} a={ap(t, st(S, 2))} c={C.red} title="BN thiếu dịch" size={28}>→ cung lượng tim ↓ thêm</Card>
-      <Card x={980} y={510} w={860} h={160} a={ap(t, st(S, 3))} c={C.blue} title="Chỉ định thở máy" size={26}>↓ O₂ máu · ↑ công cơ tim · ↑ công thở</Card>
-      <Chip x={80} y={710} w={700} h={110} c={C.oxy} a={ap(t, st(S, 4))} s={28} bold>CPAP mặt nạ 10 cmH₂O · FiO₂ 100%</Chip>
-      <Chip x={810} y={710} w={1030} h={110} c={C.red} a={ap(t, st(S, 4) + 3)} s={27}>TRÁNH NIV: NMCT · RL huyết động · loạn nhịp · giảm ý thức</Chip>
+      <Glass x={80} y={475} w={860} h={265} a={ap(t, st(S, 2))} border={C.pink}>
+        <div style={{fontSize: 28, fontWeight: 800, color: C.pink}}>Độ giãn nở của dây</div>
+        {[['PVC', 1], ['Hytrel', 0.65], ['Silicone', 0.35]].map(([n, v], i) => (
+          <div key={i} style={{display: 'flex', alignItems: 'center', marginTop: 14, opacity: ap(t, st(S, 2) + 1 + i * 0.9)}}>
+            <div style={{width: 160, fontSize: 28, fontWeight: 700}}>{n}</div>
+            <div style={{width: 560 * (v as number) * ap(t, st(S, 2) + 1.2 + i * 0.9, 1), height: 26, borderRadius: 13, background: C.pink}} />
+          </div>
+        ))}
+      </Glass>
+      <Glass x={980} y={475} w={860} h={265} a={ap(t, st(S, 3))} border={C.oxy}>
+        <div style={{fontSize: 28, fontWeight: 800, color: C.oxy}}>Test máy đo compliance dây (minh hoạ)</div>
+        <div style={{fontSize: 40, fontWeight: 800, marginTop: 16}}>1,65 mL/cmH₂O × 20 ≈ <span style={{color: C.amber}}>33 mL</span></div>
+        <div style={{fontSize: 27, marginTop: 14}}>Đa số máy hiện đại tự <B c={C.oxy}>BÙ thể tích nén</B></div>
+      </Glass>
+      <Memo x={210} y={770} w={1500} h={125} t={t} s0={st(S, 4)} size={42}>Dây càng TO, DÀI, MỀM → nén càng NHIỀU</Memo>
     </AbsoluteFill>
   );
 };
 
-// ===================== 6. Suy tim: cài đặt =====================
+// ===================== 6. Thất thoát =====================
 const S6: React.FC<P> = ({S}) => {
   const t = useT();
-  const rows: [string, number][] = [
-    ['Mode A/C · thể tích hoặc áp lực', 0], ['VT 6–8 mL/kg PBW', 1], ['Tần số > 15 lần/phút', 1], ['Ti ≤ 1 giây', 1], ['Pplat < 28 · áp lực đẩy < 15', 1],
-    ['PEEP 5–10 cmH₂O', 2], ['FiO₂ 100% → giảm để SpO₂ 88–95%', 2],
-  ];
-  const ph7 = 7.4 + 0.12 * Math.sin((2 * Math.PI * (t - st(S, 3))) / 6);
+  const g = geo(120, 220, 820, 400);
+  const leak = (s: number) => {
+    const q = ph(s, 4);
+    if (q < 1.3) return q / 1.3;
+    return 0.28 + 0.72 * ex(-(q - 1.3) / 0.45);
+  };
+  const puffs = [0, 1, 2, 3, 4, 5].map((i) => {
+    const p = ph(t * 0.8 + i / 6, 1);
+    return {x: g.Y[0] + 20 + p * 90 * Math.cos(i), y: g.Y[1] - 20 - p * 90 * Math.abs(Math.sin(i + 1)), o: 1 - p};
+  });
   return (
     <AbsoluteFill>
-      <Header num="06" title="Trạm 3 · Cài máy suy tim" t={t} />
+      <Header num="06" title="Trạm 3 · Thất thoát" t={t} />
       <RM cur={2} t={t} />
-      <Glass x={80} y={150} w={900} h={590} a={ap(t, st(S, 0))} border={C.red}>
-        {rows.map(([x, j], i) => (
-          <div key={i} style={{fontSize: 31, fontWeight: 700, lineHeight: 1.85, opacity: ap(t, st(S, j) + (i % 4) * 0.7), color: j === 2 ? C.violet : C.txt}}>• {x}</div>
-        ))}
-      </Glass>
-      <Card x={1020} y={150} w={820} h={150} a={ap(t, st(S, 3))} c={C.violet} size={28}>
-        <div><B c={C.violet}>SpO₂ &lt; 88% + phù phổi</B></div>
-        <div>→ tăng PEEP</div>
+      <Card x={80} y={150} w={900} h={570} a={ap(t, st(S, 0))} c={C.red} title="Rò bộ dây · rò quanh NKQ" size={25}>
+        <div style={{color: C.muted}}>NKQ sai cỡ · không bóng chèn · chưa bơm bóng chèn</div>
       </Card>
-      <Glass x={1020} y={325} w={820} h={250} a={ap(t, st(S, 3) + 2)} border={C.blue}>
-        <div style={{fontSize: 28, fontWeight: 800, color: C.blue}}>pH → chỉnh tần số</div>
+      <Svg>
+        <g opacity={ap(t, st(S, 0))}>
+          <Circuit g={g} t={t} tw={14} screen={false} />
+          {puffs.map((p, i) => <circle key={i} cx={p.x} cy={p.y} r={7} fill={C.red} opacity={p.o} filter="url(#glow)" />)}
+          <Label x={g.Y[0] + 40} y={g.Y[1] + 80} c={C.red} s={26}>RÒ</Label>
+        </g>
+      </Svg>
+      <Card x={1020} y={150} w={820} h={110} a={ap(t, st(S, 1))} c={C.amber} size={28}><B>①</B> Ống nghe ở hõm trên xương ức</Card>
+      <Glass x={1020} y={275} w={820} h={185} a={ap(t, st(S, 2))} border={C.blue}>
+        <div style={{fontSize: 26, fontWeight: 800, color: C.blue}}>② So sánh VTI và VTE</div>
+        <div style={{display: 'flex', gap: 40, marginTop: 10, fontSize: 52, fontWeight: 800}}>
+          <span style={{color: C.insp}}>VTI 504</span><span style={{color: C.red}}>VTE 383</span>
+        </div>
       </Glass>
-      {(() => {
-        const W = 740, X = (v: number) => ((v - 7.25) / 0.3) * W, a = ap(t, st(S, 3) + 2);
-        return (
-          <div style={{position: 'absolute', left: 1060, top: 400, width: W, height: 150, opacity: a, fontFamily: FONT}}>
-            <div style={{position: 'absolute', left: 0, top: 40, width: W, height: 16, borderRadius: 8, background: 'linear-gradient(90deg,#F87171,#4ADE80 40%,#4ADE80 60%,#60A5FA)'}} />
-            <div style={{position: 'absolute', left: X(ph7) - 9, top: 26, width: 18, height: 44, borderRadius: 9, background: '#fff', boxShadow: '0 0 14px #fff'}} />
-            {[7.25, 7.35, 7.45, 7.55].map((v) => <div key={v} style={{position: 'absolute', left: X(v) - 30, width: 60, textAlign: 'center', top: 74, fontSize: 22, color: C.muted}}>{String(v).replace('.', ',')}</div>)}
-            <div style={{position: 'absolute', left: 0, top: -4, fontSize: 26, fontWeight: 800, color: C.red}}>&lt; 7,35 → ↑ f</div>
-            <div style={{position: 'absolute', right: 0, top: -4, fontSize: 26, fontWeight: 800, color: C.blue}}>&gt; 7,45 → ↓ f</div>
-          </div>
-        );
-      })()}
-      <Memo x={1020} y={605} w={820} h={135} t={t} s0={st(S, 4)} size={38}>PEEP là BẠN của tim trái suy</Memo>
+      <Card x={1020} y={475} w={820} h={245} a={ap(t, st(S, 3))} c={C.violet} title="③ Đồ thị thể tích không về 0" size={24} />
+      <Svg>
+        <g opacity={ap(t, st(S, 3))}>
+          <line x1={1060} x2={1800} y1={700} y2={700} stroke="rgba(148,170,205,0.4)" strokeWidth={2} />
+          <Wave x={1060} y={545} w={740} h={155} f={leak} lo={0} hi={1} span={8} color={C.violet} t={t} t0={st(S, 3)} sw={3} fill />
+        </g>
+      </Svg>
+      <Memo x={360} y={755} w={1200} h={130} t={t} s0={st(S, 4)} size={44}>VTE &lt; VTI → nghĩ ngay đến RÒ</Memo>
     </AbsoluteFill>
   );
 };
 
-// ===================== 7. Não: sinh lý =====================
+// ===================== 7. Báo động áp lực cao =====================
 const S7: React.FC<P> = ({S}) => {
   const t = useT();
-  const chain = (y: number, items: string[], c: string[], s0: number, w: number[]) => {
-    let x = 80;
-    return items.map((it, i) => {
-      const el = (
-        <React.Fragment key={i}>
-          <Chip x={x} y={y} w={w[i]} h={84} c={c[i]} a={ap(t, s0 + i * 1.1)} s={28} bold>{it}</Chip>
-          {i < items.length - 1 && <Arrow x={x + w[i] + 10} y={y + 8} a={ap(t, s0 + i * 1.1 + 0.6)} />}
-        </React.Fragment>
-      );
-      x += w[i] + 66;
-      return el;
-    });
+  const lim = t > st(S, 3) + 1 ? 60 : 50;
+  const cut = lim === 50 ? 0.3 : 1;
+  const peak = lim === 50 ? 51 : 48;
+  const pr = (s: number) => {
+    const q = ph(s, 3);
+    if (q < cut) return 10 + Math.min(1, q / 0.05) * 3 + (peak - 13) * (q / cut);
+    return 10 + (peak - 10) * ex(-(q - cut) / 0.15);
   };
-  const r1 = 34 + 12 * ap(t, st(S, 1) + 2.5, 1.5), r2 = 34 - 16 * ap(t, st(S, 2) + 2.5, 1.5);
+  const vol = (s: number) => {
+    const q = ph(s, 3);
+    const top = lim === 50 ? 130 : 408;
+    if (q < cut) return (q / cut) * top;
+    return top * ex(-(q - cut) / 0.35);
+  };
+  const Yp = (v: number) => yv(220, 200, 0, 66, v);
+  const Yv = (v: number) => yv(480, 200, 0, 450, v);
   return (
     <AbsoluteFill>
-      <Header num="07" title="Trạm 4 · Tăng áp nội sọ" t={t} />
-      <RM cur={3} t={t} />
-      <Chip x={80} y={150} w={1760} h={84} c={C.violet} a={ap(t, st(S, 0))} s={29}>ICP ↑ → ↓ tưới máu não → thiếu O₂ não → có thể thoát vị não</Chip>
-      {chain(285, ['PaCO₂ ↑ / PaO₂ ↓', 'Giãn mạch não', 'ICP ↑'], [C.red, C.red, C.red], st(S, 1), [420, 360, 220])}
-      {chain(415, ['Tăng thông khí', 'PaCO₂ ↓', 'Co mạch não', '↓ Tưới máu não'], [C.blue, C.blue, C.blue, C.blue], st(S, 2), [330, 230, 300, 360])}
+      <Header num="07" title="Trạm 3 · Báo động áp lực" t={t} />
+      <RM cur={2} t={t} />
+      <Card x={80} y={150} w={1100} h={570} a={ap(t, st(S, 0))} c={C.red} title="Ppeak chạm giới hạn → NGƯNG hít vào" />
       <Svg>
-        <g opacity={ap(t, st(S, 1) + 2.2)}>
-          <circle cx={1580} cy={327} r={r1} fill="none" stroke={C.red} strokeWidth={10} filter="url(#glow)" />
-          <Label x={1690} y={336} c={C.red} s={24} anchor="start">mạch giãn</Label>
-        </g>
-        <g opacity={ap(t, st(S, 2) + 3.3)}>
-          <circle cx={1740} cy={457} r={Math.max(12, r2)} fill="none" stroke={C.blue} strokeWidth={10} filter="url(#glow)" />
+        <g opacity={ap(t, st(S, 0))}>
+          <line x1={120} x2={1140} y1={Yp(lim)} y2={Yp(lim)} stroke={C.red} strokeWidth={3} strokeDasharray="10 8" />
+          <Label x={1140} y={Yp(lim) - 10} c={C.red} s={24} anchor="end">giới hạn {lim}</Label>
+          <Wave x={120} y={220} w={1020} h={200} f={pr} lo={0} hi={66} span={9} color={C.amber} t={t} t0={st(S, 0)} base={0} fill />
+          <line x1={120} x2={1140} y1={Yv(400)} y2={Yv(400)} stroke={C.oxy} strokeWidth={3} strokeDasharray="10 8" />
+          <Label x={1140} y={Yv(400) - 10} c={C.oxy} s={24} anchor="end">VT cài 400</Label>
+          <Wave x={120} y={480} w={1020} h={200} f={vol} lo={0} hi={450} span={9} color={C.oxy} t={t} t0={st(S, 0)} base={0} fill />
+          <Label x={130} y={470} c={C.amber} s={22} anchor="start">Áp lực</Label>
+          <Label x={130} y={710} c={C.oxy} s={22} anchor="start">Thể tích</Label>
         </g>
       </Svg>
-      <Card x={80} y={545} w={1760} h={130} a={ap(t, st(S, 3))} c={C.amber} size={28}>
-        <div><B c={C.red}>KHÔNG khuyến cáo</B> tăng thông khí kéo dài (không giảm tử vong, ↑ di chứng)</div>
-        <div>Chỉ <B>TẠM THỜI</B> khi ICP tăng cấp, chờ phẫu thuật → rồi đưa PaCO₂ về bình thường</div>
+      <Card x={1220} y={150} w={620} h={170} a={ap(t, st(S, 1))} c={C.oxy} size={30}>Cài VTI <B c={C.oxy}>400</B> → VTE chỉ <B c={C.red}>130</B> mL</Card>
+      <Card x={1220} y={340} w={620} h={150} a={ap(t, st(S, 2))} c={C.red} size={30}>Ppeak <B c={C.red}>51</B> ≥ giới hạn <B>50</B></Card>
+      <Card x={1220} y={510} w={620} h={210} a={ap(t, st(S, 3))} c={C.blue} size={28}>
+        <div>Nâng giới hạn <B c={C.blue}>60</B> → VTE <B c={C.oxy}>408</B> mL</div>
+        <div style={{color: C.amber, fontWeight: 700, marginTop: 6}}>+ tìm nguyên nhân Ppeak cao</div>
       </Card>
-      <Card x={80} y={700} w={1760} h={180} a={ap(t, st(S, 4))} c={C.violet} title="PEEP và ICP" size={28}>
-        PEEP ↑ áp lực lồng ngực → ↓ máu TM não về → ↑ ICP — chỉ có ý nghĩa khi <B c={C.red}>PEEP &gt; 15</B> hoặc <B c={C.red}>giảm thể tích</B>
-      </Card>
+      <Memo x={210} y={755} w={1500} h={130} t={t} s0={st(S, 4)} size={40}>Báo động áp lực cao CẮT NGẮN nhịp → VT tụt</Memo>
     </AbsoluteFill>
   );
 };
 
-// ===================== 8. Não: cài đặt =====================
+// ===================== 8. R/C trong PC =====================
 const S8: React.FC<P> = ({S}) => {
   const t = useT();
+  const vtA = [1, 0.8, 0.62, 0.48];
+  const pcV = (s: number) => {
+    const q = ph(s, 3), A = vtA[Math.floor(s / 3) % 4];
+    return q < 1 ? A * (1 - ex(-q / 0.3)) : A * (1 - ex(-1 / 0.3)) * ex(-(q - 1) / 0.25);
+  };
+  const cards = [
+    {h: 'R↑ bệnh lý', c: C.red, l: 'COPD · hen · viêm tiểu phế quản · hít phân su'},
+    {h: 'R↑ cơ học', c: C.amber, l: 'Nghẹt đàm · nước đọng trong dây · cắn ống · gập NKQ'},
+    {h: 'C↓ thành ngực', c: C.blue, l: 'Tràn dịch, tràn khí MP · phù nề · gù vẹo · chướng bụng · lọc màng bụng · béo phì'},
+    {h: 'C↓ phổi', c: C.violet, l: 'Viêm phổi · phù phổi cấp · ARDS · ngạt nước · màng trong · xẹp phổi · xơ hoá'},
+  ];
   return (
     <AbsoluteFill>
-      <Header num="08" title="Trạm 4 · Cài máy cho não" t={t} />
-      <RM cur={3} t={t} />
-      <Card x={80} y={150} w={860} h={230} a={ap(t, st(S, 0))} c={C.violet} title="Chỉ định" size={25}>
-        <div>• Ức chế hô hấp do tổn thương thần kinh</div>
-        <div>• Chấn thương cột sống, ngực, bụng kèm theo</div>
-        <div>• Phù phổi do thần kinh · thuốc ức chế hô hấp</div>
-      </Card>
-      <Card x={80} y={400} w={860} h={165} a={ap(t, st(S, 1))} c={C.blue} title="Cài đặt" size={28}>
-        A/C thể tích · VT 6–8 mL/kg · Pplat &lt; 28 · <B c={C.blue}>f 15–25</B> · Ti 1 s
-      </Card>
-      <Glass x={980} y={150} w={860} h={415} a={ap(t, st(S, 2))} border={C.oxy}>
-        <div style={{fontSize: 28, fontWeight: 800, color: C.oxy}}>Mục tiêu khí máu</div>
-      </Glass>
-      <Range x={1020} y={228} w={780} lo={20} hi={60} a0={35} a1={45} c={C.amber} a={ap(t, st(S, 2) + 0.6)} ticks={[20, 35, 45, 60]} label="PaCO₂ 35–45 mmHg" />
-      <Range x={1020} y={340} w={780} lo={7.2} hi={7.6} a0={7.35} a1={7.45} c={C.blue} a={ap(t, st(S, 2) + 2)} ticks={[7.2, 7.35, 7.45, 7.6]} label="pH 7,35–7,45" />
-      <Range x={1020} y={452} w={780} lo={40} hi={140} a0={70} a1={100} c={C.oxy} a={ap(t, st(S, 2) + 3.4)} ticks={[40, 70, 80, 100, 140]} label="PaO₂ 70–100 (≈ 80) mmHg" />
-      {['PEEP 5 (≤ 10 thường an toàn)', 'Nằm đầu cao', 'Chỉnh thông khí bằng TẦN SỐ'].map((x, i) => (
-        <Chip key={i} x={[80, 700, 1080][i]} y={590} w={[590, 350, 760][i]} h={80} c={C.violet} a={ap(t, st(S, 3) + i * 1.5)} s={27} bold>{x}</Chip>
+      <Header num="08" title="Trạm 3 · R và C trong PC" t={t} />
+      <RM cur={2} t={t} />
+      <Card x={80} y={150} w={860} h={560} a={ap(t, st(S, 0))} c={C.insp} title="PC: áp lực giữ nguyên, VT giảm dần" />
+      <Svg>
+        <g opacity={ap(t, st(S, 0))}>
+          <Label x={120} y={250} c={C.amber} s={22} anchor="start">Áp lực</Label>
+          <Wave x={120} y={260} w={780} h={160} f={(s) => pPC(s, {T: 3, ti: 1, pi: 15})} lo={0} hi={22} span={12} color={C.amber} t={t} t0={st(S, 0)} speed={1.5} base={0} fill />
+          <Label x={120} y={470} c={C.oxy} s={22} anchor="start">Thể tích</Label>
+          <Wave x={120} y={480} w={780} h={190} f={pcV} lo={0} hi={1.05} span={12} color={C.oxy} t={t} t0={st(S, 0)} speed={1.5} base={0} fill />
+        </g>
+      </Svg>
+      {cards.map((x, i) => (
+        <Card key={i} x={980} y={150 + i * 140} w={860} h={128} a={ap(t, st(S, i + 1))} c={x.c} title={x.h} size={24} pad={20}>{x.l}</Card>
       ))}
-      <Chip x={80} y={695} w={500} h={80} c={C.amber} a={ap(t, st(S, 4))} s={26}>PaO₂ thấp + FiO₂ 60%</Chip>
-      <Arrow x={592} y={700} a={ap(t, st(S, 4) + 0.5)} />
-      <Chip x={650} y={695} w={580} h={80} c={C.oxy} a={ap(t, st(S, 4) + 1.5)} s={26}>ICP không ↑ → ↑ PEEP (≤ 10)</Chip>
-      <Chip x={1260} y={695} w={580} h={80} c={C.red} a={ap(t, st(S, 4) + 3.5)} s={26}>ICP ↑ → tiếp tục ↑ FiO₂</Chip>
-      <Memo x={260} y={800} w={1400} h={100} t={t} s0={st(S, 5)} size={40}>NÃO: CO₂ 35–45 · O₂ ≥ 70 · ĐẦU CAO</Memo>
+      <Chip x={80} y={740} w={1760} h={100} c={C.red} a={ap(t, st(S, 0) + 3)} s={40} bold>R↑ hoặc C↓ → VT↓ → ứ CO₂</Chip>
     </AbsoluteFill>
   );
 };
 
-// ===================== 9. COPD: NIV =====================
-const bilevel = (s: number, ip = 12, ep = 4, T = 4, ti = 1.4) => {
-  const q = ph(s, T);
-  if (q < ti) return ep + (ip - ep) * (1 - ex(-q / 0.18));
-  return ep + (ip - ep) * ex(-(q - ti) / 0.15);
-};
+// ===================== 9. Ti / Te =====================
 const S9: React.FC<P> = ({S}) => {
   const t = useT();
-  const Y = (v: number) => yv(320, 330, 0, 16, v);
-  const a1 = ap(t, st(S, 1)), a2 = ap(t, st(S, 2));
-  return (
-    <AbsoluteFill>
-      <Header num="09" title="Trạm 5 · COPD: thở không xâm lấn" t={t} />
-      <RM cur={4} t={t} />
-      <Chip x={80} y={150} w={1760} h={84} c={C.oxy} a={ap(t, st(S, 0))} s={29}>Tránh thở máy xâm lấn nếu có thể · NIV là chuẩn cho đợt cấp COPD · cứu sống</Chip>
-      <Card x={80} y={260} w={1100} h={440} a={a1} c={C.insp} title="NIV hai mức áp lực (BiPAP)" />
-      <Svg>
-        <g opacity={a1}>
-          <Wave x={120} y={320} w={940} h={330} f={(s) => bilevel(s)} lo={0} hi={16} span={8} color={C.insp} t={t} t0={st(S, 1)} base={0} fill />
-          <line x1={120} x2={1060} y1={Y(12)} y2={Y(12)} stroke={C.amber} strokeWidth={2} strokeDasharray="8 8" />
-          <line x1={120} x2={1060} y1={Y(4)} y2={Y(4)} stroke={C.violet} strokeWidth={2} strokeDasharray="8 8" />
-          <Label x={1050} y={Y(12) - 12} c={C.amber} s={24} anchor="end">IPAP</Label>
-          <Label x={1050} y={Y(4) + 34} c={C.violet} s={24} anchor="end">EPAP</Label>
-        </g>
-        <g opacity={a2}>
-          <path d={`M1070,${Y(12)} l14,0 l0,${Y(4) - Y(12)} l-14,0`} fill="none" stroke={C.oxy} strokeWidth={4} />
-          <Label x={1094} y={(Y(12) + Y(4)) / 2 + 9} c={C.oxy} s={26} anchor="start">PS 8</Label>
-        </g>
-      </Svg>
-      <Card x={1220} y={260} w={620} h={440} a={a1} c={C.amber} title="Cài ban đầu" size={29}>
-        <div><B>IPAP 8–12</B> cmH₂O</div>
-        <div style={{fontSize: 24, color: C.muted}}>chỉnh để thay đổi VT</div>
-        <div style={{marginTop: 14}}><B c={C.violet}>EPAP 4</B> cmH₂O</div>
-        <div style={{fontSize: 24, color: C.muted}}>tăng để cải thiện PaO₂</div>
-        <div style={{marginTop: 18, fontSize: 36, fontWeight: 800, opacity: a2}}>12 − 4 = <span style={{color: C.oxy}}>PS 8</span></div>
-      </Card>
-      <Glass x={80} y={725} w={1760} h={165} a={ap(t, st(S, 3))} border={C.red}>
-        <div style={{display: 'flex', alignItems: 'center', gap: 34, height: '100%'}}>
-          <div style={{fontSize: 46, fontWeight: 800, color: C.red, whiteSpace: 'nowrap'}}>Sau 2 GIỜ</div>
-          <div style={{fontSize: 27, lineHeight: 1.4, fontWeight: 500}}>pH, PaCO₂ không cải thiện / xấu đi · tri giác ↓ · RL huyết động · oxy hoá xấu → <B c={C.red}>đặt NKQ</B></div>
-        </div>
-      </Glass>
-    </AbsoluteFill>
-  );
-};
-
-// ===================== 10. COPD: thở máy xâm lấn =====================
-const S10: React.FC<P> = ({S}) => {
-  const t = useT();
-  const o = {T: 5, ti: 0.8, tau: 0.45};
-  const fl = (s: number) => fVC(s, {...o, dec: true}) * 1.15;
-  return (
-    <AbsoluteFill>
-      <Header num="10" title="Trạm 5 · COPD: thở xâm lấn" t={t} />
-      <RM cur={4} t={t} />
-      <Card x={80} y={150} w={860} h={210} a={ap(t, st(S, 0))} c={C.red} title="Mục đích" size={27}>
-        <div>• Cho cơ hô hấp nghỉ</div>
-        <div>• Đưa PaCO₂ về mức NỀN · điều trị ↓ O₂</div>
-      </Card>
-      <Card x={80} y={380} w={860} h={290} a={ap(t, st(S, 1))} c={C.blue} title="Cài đặt" size={30}>
-        <div>A/C · <B c={C.red}>f 8–15</B> · VT 6–8 mL/kg</div>
-        <div>Ti 0,6–1 s · Pplat ≤ 28</div>
-        <div style={{opacity: ap(t, st(S, 2))}}>Lưu lượng <B c={C.insp}>&gt; 60 L/ph</B>, dạng giảm dần</div>
-      </Card>
-      <Card x={980} y={150} w={860} h={360} a={ap(t, st(S, 1))} c={C.insp} title="Hít vào nhanh · thở ra DÀI" />
-      <Svg>
-        <g opacity={ap(t, st(S, 1))}>
-          <Wave x={1020} y={220} w={780} h={260} f={fl} lo={-1} hi={1.2} span={10} color={C.insp} t={t} t0={st(S, 1)} base={0} fill />
-        </g>
-      </Svg>
-      <Card x={980} y={530} w={860} h={140} a={ap(t, st(S, 3))} c={C.violet} size={27}>
-        <div>PEEP 5 đối trọng auto-PEEP</div>
-        <div>FiO₂ thường ≤ 50% · SpO₂ 88–95% · PaO₂ 55–80</div>
-      </Card>
-      <Chip x={80} y={695} w={1760} h={80} c={C.amber} a={ap(t, st(S, 4))} s={28}>PaCO₂ chỉ về mức NỀN (50–60 mmHg) hoặc pH &gt; 7,30 · Ppeak cao thường không là vấn đề</Chip>
-      <Memo x={260} y={795} w={1400} h={105} t={t} s0={st(S, 5)} size={38}>COPD: CHẬM · THỞ RA DÀI · CO₂ về mức NỀN</Memo>
-    </AbsoluteFill>
-  );
-};
-
-// ===================== 11. Auto-PEEP =====================
-const S11: React.FC<P> = ({S}) => {
-  const t = useT();
-  const T = 2.2, ti = 0.8;
+  const ti = lerp(0.45, 1.1, ap(t, st(S, 1) + 0.8, 2.5));
+  const tau = 0.28;
+  const T = 3;
   const fl = (s: number) => {
     const q = ph(s, T);
-    if (q < ti) return 0.75 * Math.min(1, q / 0.04);
-    return -0.85 * ex(-(q - ti) / 0.7);
+    if (q < ti) return ex(-q / tau);
+    return -ex(-ti / tau) * 0 - (1 - ex(-ti / tau)) * ex(-(q - ti) / 0.25);
   };
-  const X = (s: number) => 120 + (s / 8.8) * 1020;
-  const Y = (v: number) => yv(230, 300, -1, 1, v);
+  const vo = (s: number) => {
+    const q = ph(s, T);
+    const top = 1 - ex(-ti / tau);
+    if (q < ti) return 1 - ex(-q / tau);
+    return top * ex(-(q - ti) / 0.3);
+  };
+  const vt = Math.round(300 * (1 - ex(-ti / tau)) / (1 - ex(-0.45 / tau)));
+  const X = (s: number) => 120 + (s / 6) * 1020;
+  const Yf = (v: number) => yv(420, 200, -1, 1.05, v);
+  const trap = (s: number) => {
+    const q = ph(s, 2);
+    if (q < 0.6) return 0.8;
+    return -0.85 * ex(-(q - 0.6) / 0.6);
+  };
   return (
     <AbsoluteFill>
-      <Header num="11" title="Trạm 5 · Auto-PEEP" t={t} />
-      <RM cur={4} t={t} />
-      <Card x={80} y={150} w={1100} h={420} a={ap(t, st(S, 0))} c={C.red} title="Lưu lượng thở ra KHÔNG về 0 → khí bị bẫy" />
+      <Header num="09" title="Trạm 3 · Ti và Te" t={t} />
+      <RM cur={2} t={t} />
+      <Card x={80} y={150} w={1100} h={500} a={ap(t, st(S, 0))} c={C.insp} title={<>Ti = <span style={{color: C.amber}}>{ti.toFixed(2).replace('.', ',')} s</span> · VT ≈ <span style={{color: C.oxy}}>{vt} mL</span> (minh hoạ)</>} />
       <Svg>
         <g opacity={ap(t, st(S, 0))}>
-          <Wave x={120} y={230} w={1020} h={300} f={fl} lo={-1} hi={1} span={8.8} color={C.insp} t={t} t0={st(S, 0)} base={0} fill />
-          {[1, 2, 3].map((k) => (
-            <g key={k} opacity={ap(t, st(S, 0) + 2 + k * 0.6)}>
-              <circle cx={X(k * T - 0.02)} cy={Y(fl(k * T - 0.02))} r={18} fill="none" stroke={C.red} strokeWidth={4} filter="url(#glow)" />
-            </g>
+          <Label x={120} y={225} c={C.oxy} s={22} anchor="start">Thể tích</Label>
+          <Wave x={120} y={230} w={1020} h={160} f={vo} lo={0} hi={1.05} span={6} color={C.oxy} t={t} t0={st(S, 0)} base={0} fill />
+          <Label x={120} y={445} c={C.insp} s={22} anchor="start">Lưu lượng</Label>
+          <Wave x={120} y={420} w={1020} h={200} f={fl} lo={-1} hi={1.05} span={6} color={C.insp} t={t} t0={st(S, 0)} base={0} fill />
+          {[0, 1].map((k) => (
+            <circle key={k} cx={X(k * 3 + ti)} cy={Yf(ex(-ti / tau))} r={16} fill="none" stroke={ti < 0.8 ? C.red : C.oxy} strokeWidth={4} filter="url(#glow)" />
           ))}
-          <Label x={X(4.4)} y={556} c={C.red} s={24}>○ chưa về 0 đã hít vào</Label>
         </g>
       </Svg>
-      <Card x={1220} y={150} w={620} h={205} a={ap(t, st(S, 1))} c={C.amber} title="Hậu quả" size={26}>
-        <div>↑ công thở · chống máy · khó cai</div>
-        <div><B c={C.red}>MẤT NHẠY trigger</B></div>
-      </Card>
-      <Card x={1220} y={370} w={620} h={200} a={ap(t, st(S, 2))} c={C.violet} title="Dấu hiệu" size={24}>
-        <div>BN gắng sức mà máy không nhận</div>
-        <div>f BN &gt; f máy · thở ra kéo tới nhịp sau</div>
-      </Card>
-      <Chip x={80} y={595} w={1760} h={80} c={C.blue} a={ap(t, st(S, 3))} s={28}>Đo: giữ cuối thì thở ra (expiratory hold) → đọc auto-PEEP</Chip>
-      {['↑ Te · ↓ f · ↓ VT', 'Giảm nhu cầu: sốt, đau, lo âu', '↓ sức cản: ống to, hút đàm, giãn PQ', 'PEEP ngoài'].map((x, i) => (
-        <Chip key={i} x={[80, 500, 960, 1500][i]} y={705} w={[400, 440, 520, 340][i]} h={100} c={C.oxy} a={ap(t, st(S, 4) + i * 1.4)} s={26} bold={i === 3}>{x}</Chip>
+      <Card x={1220} y={150} w={620} h={280} a={ap(t, st(S, 2))} c={C.red} title="Te không đủ → bẫy khí" size={24}>VTE &lt; VTI · auto-PEEP</Card>
+      <Svg>
+        <g opacity={ap(t, st(S, 2))}>
+          <Wave x={1250} y={270} w={560} h={140} f={trap} lo={-1} hi={1} span={6} color={C.red} t={t} t0={st(S, 2)} sw={3} base={0} />
+        </g>
+      </Svg>
+      {['↑ Te', '↓ tần số', '↓ VT'].map((x, i) => (
+        <Chip key={i} x={1220 + i * 212} y={450} w={196} h={80} c={C.oxy} a={ap(t, st(S, 3) + i * 0.9)} s={30} bold>{x}</Chip>
       ))}
+      <Card x={1220} y={550} w={620} h={100} a={ap(t, st(S, 1))} c={C.oxy} size={25}>Tăng Ti → VT tăng, KHÔNG tăng Pi</Card>
+      <Memo x={160} y={690} w={1600} h={150} t={t} s0={st(S, 4)} size={38}>Flow chưa về 0 cuối HÍT VÀO → kéo dài Ti · cuối THỞ RA → kéo dài Te</Memo>
     </AbsoluteFill>
   );
 };
 
-// ===================== 12. PEEP ngoài =====================
+// ===================== 10. VE đủ, VA thấp =====================
+const S10: React.FC<P> = ({S}) => {
+  const t = useT();
+  const rows = [[20, 200, '2,8'], [30, 133, '2,1'], [40, 100, '1,6']] as const;
+  const PX = 3.2;
+  return (
+    <AbsoluteFill>
+      <Header num="10" title="Trạm 3 · VE đủ, VA thấp" t={t} />
+      <RM cur={2} t={t} />
+      <Chip x={80} y={150} w={1760} h={84} c={C.amber} a={ap(t, st(S, 0))} s={30} bold>VD = 60 mL · cả 3 cách đều cho VE = 4 L/phút</Chip>
+      {rows.map(([f, vt, va], i) => {
+        const a = ap(t, st(S, i + 1));
+        const k = ap(t, st(S, i + 1) + 0.5, 1.2);
+        return (
+          <Glass key={i} x={80} y={265 + i * 160} w={1760} h={140} a={a} border={[C.oxy, C.amber, C.red][i]} pad={22}>
+            <div style={{display: 'flex', alignItems: 'center', height: '100%'}}>
+              <div style={{width: 360, fontSize: 34, fontWeight: 800}}>f {f} × VT {vt}</div>
+              <div style={{display: 'flex', height: 46, borderRadius: 12, overflow: 'hidden', width: vt * PX * k}}>
+                <div style={{width: 60 * PX, background: '#5B6B86', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 22, fontWeight: 800, color: C.txt, whiteSpace: 'nowrap'}}>VD 60</div>
+                <div style={{flex: 1, background: C.oxy, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 22, fontWeight: 800, color: C.bg0, whiteSpace: 'nowrap'}}>{vt - 60}</div>
+              </div>
+              <div style={{position: 'absolute', right: 40, fontSize: 46, fontWeight: 800, color: [C.oxy, C.amber, C.red][i]}}>VA {va} L/ph</div>
+            </div>
+          </Glass>
+        );
+      })}
+      <Memo x={210} y={765} w={1500} h={125} t={t} s0={st(S, 4)} size={42}>Cùng VE: tần số càng NHANH → VA càng THẤP</Memo>
+    </AbsoluteFill>
+  );
+};
+
+// ===================== 11. Khoảng chết =====================
+const S11: React.FC<P> = ({S}) => {
+  const t = useT();
+  const k = osc(t, 3);
+  return (
+    <AbsoluteFill>
+      <Header num="11" title="Trạm 4 · Khoảng chết" t={t} />
+      <RM cur={3} t={t} />
+      <Card x={80} y={150} w={860} h={470} a={ap(t, st(S, 0))} c={STN_COL[3]} title="Giải phẫu + sinh lý" />
+      <Svg>
+        <g opacity={ap(t, st(S, 0))}>
+          <path d="M510,230 L510,360 M510,360 L360,470 M510,360 L660,470" stroke="#F4A27A" strokeWidth={44} strokeLinecap="round" fill="none" />
+          <Label x={600} y={300} c="#F4A27A" s={24} anchor="start">VD giải phẫu</Label>
+          <circle cx={340} cy={500} r={62 + 6 * k} fill="#7DB8F0" stroke="#fff" strokeWidth={2} />
+          <circle cx={680} cy={500} r={62 + 6 * k} fill="#7DB8F0" stroke="#fff" strokeWidth={2} />
+          <path d="M260,470 A85,85 0 0,0 420,560" stroke={C.red} strokeWidth={12} fill="none" strokeLinecap="round" />
+          <path d="M760,470 A85,85 0 0,1 600,560" stroke="#5B6B86" strokeWidth={12} fill="none" strokeLinecap="round" />
+          <text x={340} y={510} textAnchor="middle" fill="#0B1322" fontFamily={FONT} fontWeight={800} fontSize={30}>VA</text>
+          <text x={680} y={510} textAnchor="middle" fill="#0B1322" fontFamily={FONT} fontWeight={800} fontSize={30}>VD</text>
+          <Label x={340} y={600} c={C.red} s={22}>có tưới máu</Label>
+          <Label x={680} y={600} c={C.muted} s={22}>không tưới máu = VD sinh lý</Label>
+        </g>
+      </Svg>
+      <Card x={980} y={150} w={860} h={200} a={ap(t, st(S, 1))} c={C.red} title="VD tăng do" size={26}>
+        <div>Giãn phế quản · thuyên tắc phổi</div>
+        <div>PEEP cao · auto-PEEP</div>
+      </Card>
+      <Card x={980} y={370} w={860} h={250} a={ap(t, st(S, 2))} c={C.violet} title="Khoảng chết CƠ HỌC" />
+      <Svg>
+        <g opacity={ap(t, st(S, 2))}>
+          <path d="M1020,500 l60,0 l30,-30 l60,0 l0,-30 l-80,0 l-30,30 l-40,0 z M1020,500 l60,0 l30,30 l60,0 l0,30 l-80,0 l-30,-30 l-40,0 z" fill="#FACC15" />
+          <rect x={1190} y={460} width={150} height={80} rx={10} fill="#6D28D9" stroke={C.violet} strokeWidth={3} />
+          <text x={1265} y={512} textAnchor="middle" fill="#fff" fontFamily={FONT} fontWeight={800} fontSize={30}>VD</text>
+          <path d="M1340,500 L1500,500 Q1580,500 1600,580" stroke="#C9D6EA" strokeWidth={14} fill="none" strokeLinecap="round" />
+          <Label x={1100} y={590} c="#FACC15" s={22}>chữ Y</Label>
+          <Label x={1640} y={600} c={C.muted} s={22}>NKQ</Label>
+        </g>
+      </Svg>
+      {['HME', 'Phin lọc', 'Đo CO₂ dòng chính', 'Ống nhún', 'Hút đàm kín'].map((x, i) => (
+        <Chip key={i} x={[80, 300, 560, 1000, 1310][i]} y={650} w={[200, 240, 420, 290, 330][i]} h={80} c={C.violet} a={ap(t, st(S, 2) + 2 + i * 0.7)} s={27} bold>{x}</Chip>
+      ))}
+      <Memo x={160} y={765} w={1600} h={125} t={t} s0={st(S, 3)} size={38}>Trẻ nhỏ VT nhỏ → THÁO BỎ khoảng chết cơ học không cần thiết</Memo>
+    </AbsoluteFill>
+  );
+};
+
+// ===================== 12. Hệ số hô hấp =====================
 const S12: React.FC<P> = ({S}) => {
   const t = useT();
-  const panel = (cx: number, peep: number, effort: number, c: string, a: number, w: number) => (
-    <g opacity={a}>
-      <rect x={cx - 26 - w} y={230} width={52 + 2 * w} height={170} rx={20} fill="#C9D6EA" opacity={0.85} />
-      <circle cx={cx} cy={500} r={110} fill="url(#lung)" stroke="#FFD1DC" strokeWidth={3} />
-      <text x={cx} y={492} textAnchor="middle" fill="#3B0A1A" fontFamily={FONT} fontWeight={800} fontSize={28}>auto-PEEP</text>
-      <text x={cx} y={532} textAnchor="middle" fill="#3B0A1A" fontFamily={FONT} fontWeight={800} fontSize={34}>10</text>
-      <rect x={cx + 200} y={640 - effort * 30} width={70} height={effort * 30} rx={10} fill={c} filter="url(#glow)" />
-      <Label x={cx + 235} y={630 - effort * 30} c={c} s={36}>{effort}</Label>
-      <Label x={cx + 235} y={668} c={C.muted} s={22}>lực trigger</Label>
-    </g>
-  );
+  const panel = (x0: number, k: number, a: number, c: string) => {
+    const g = ap(t, 0, 0) * 0 + a;
+    return (
+      <g opacity={g}>
+        {[['O₂ vào', 1, C.blue], ['CO₂ ra', k, c]].map(([n, v, cc], i) => (
+          <g key={i}>
+            <rect x={x0 + 120 + i * 300} y={560 - 280 * (v as number) * a} width={150} height={280 * (v as number) * a} rx={12} fill={cc as string} />
+            <Label x={x0 + 195 + i * 300} y={545 - 280 * (v as number) * a} s={34}>{i ? String(k).replace('.', ',') : '1'}</Label>
+            <Label x={x0 + 195 + i * 300} y={600} c={C.muted} s={24}>{n as string}</Label>
+          </g>
+        ))}
+      </g>
+    );
+  };
   return (
     <AbsoluteFill>
-      <Header num="12" title="Trạm 5 · Cài PEEP ngoài" t={t} />
+      <Header num="12" title="Trạm 5 · Hệ số hô hấp k" t={t} />
       <RM cur={4} t={t} />
-      <Card x={80} y={150} w={860} h={540} a={ap(t, st(S, 0))} c={C.red} title="Không PEEP ngoài · độ nhạy −1" />
-      <Card x={980} y={150} w={860} h={540} a={ap(t, st(S, 1))} c={C.oxy} title="PEEP ngoài 7 · độ nhạy −1" />
+      <Card x={80} y={150} w={860} h={480} a={ap(t, st(S, 0))} c={C.oxy} title="Nuôi ăn cân đối (đạm · đường · béo)"><Big2 c={C.oxy}>k = 0,863</Big2></Card>
+      <Card x={980} y={150} w={860} h={480} a={ap(t, st(S, 1))} c={C.red} title="Chỉ glucose 5%, 10%"><Big2 c={C.red}>k = 1</Big2></Card>
       <Svg>
-        {panel(400, 0, 11, C.red, ap(t, st(S, 0)), 0)}
-        {panel(1300, 7, 4, C.oxy, ap(t, st(S, 1)), 10 * ap(t, st(S, 1) + 2))}
-        <g opacity={ap(t, st(S, 1) + 2)}>
-          <Label x={1250} y={330} c={C.oxy} s={24} anchor="end">nong đường thở</Label>
-        </g>
+        {panel(80, 0.863, ap(t, st(S, 0) + 1), C.oxy)}
+        {panel(980, 1, ap(t, st(S, 1) + 1), C.red)}
       </Svg>
-      <Chip x={80} y={715} w={1760} h={80} c={C.violet} a={ap(t, st(S, 2))} s={30} bold>PEEP ngoài cài THẤP HƠN auto-PEEP (VD 7 so với 10)</Chip>
-      <Memo x={260} y={815} w={1400} h={85} t={t} s0={st(S, 3)} size={34}>PEEP ngoài gánh bớt auto-PEEP → BN trigger nhẹ nhàng</Memo>
+      <Chip x={80} y={655} w={1760} h={90} c={C.red} a={ap(t, st(S, 2))} s={34} bold>Cùng lượng O₂ → CO₂ sinh ra nhiều hơn ≈ 16%</Chip>
+      <Memo x={360} y={770} w={1200} h={120} t={t} s0={st(S, 3)} size={42}>Chỉ truyền ĐƯỜNG → k = 1 → CO₂ ↑</Memo>
     </AbsoluteFill>
   );
 };
 
-// ===================== 13. Hen =====================
+// ===================== 13. Công thức =====================
 const S13: React.FC<P> = ({S}) => {
   const t = useT();
-  const o = {T: 5, ti: 1.1, tau: 0.5};
+  const W = 1560, X = (v: number) => ((v - 4) / 6) * W;
+  const mk = 4 + 6 * osc(t - st(S, 2), 6) * 0.95;
   return (
     <AbsoluteFill>
-      <Header num="13" title="Trạm 5 · Hen nặng" t={t} />
-      <RM cur={4} t={t} />
-      <Glass x={80} y={150} w={900} h={590} a={ap(t, st(S, 0))} border={C.red}>
-        <div style={{fontSize: 30, fontWeight: 800, color: C.red, marginBottom: 10}}>Cài đặt</div>
-        {([['A/C (CMV)', 0], ['f 8–20 lần/phút', 0], ['VT 4–6 mL/kg PBW', 0], ['Pplat ≤ 28 · áp lực đẩy < 15', 0], ['Ti 1–1,5 s · tránh auto-PEEP', 1], ['PEEP: còn tranh cãi', 2], ['FiO₂: PaO₂ 55–80, SpO₂ 88–95%', 2]] as [string, number][]).map(([x, j], i) => (
-          <div key={i} style={{fontSize: 30, fontWeight: i === 2 ? 800 : 600, lineHeight: 1.75, color: i === 2 ? C.red : C.txt, opacity: ap(t, st(S, j) + (j === 0 ? i * 0.9 : 0))}}>• {x}</div>
-        ))}
+      <Header num="13" title="Trạm 6 · Công thức" t={t} />
+      <RM cur={5} t={t} />
+      <Card x={80} y={150} w={860} h={270} a={ap(t, st(S, 0))} c={STN_COL[1]} title="Giữ VT → chỉnh TẦN SỐ">
+        <Big2 s={46}>CO₂<sub>cũ</sub> × f<sub>cũ</sub> = CO₂<sub>mới</sub> × f<sub>mới</sub></Big2>
+      </Card>
+      <Card x={980} y={150} w={860} h={270} a={ap(t, st(S, 1))} c={STN_COL[2]} title="Giữ f → chỉnh VT">
+        <Big2 s={46}>CO₂<sub>cũ</sub> × VT<sub>cũ</sub> ≈ CO₂<sub>mới</sub> × VT<sub>mới</sub></Big2>
+      </Card>
+      <Glass x={80} y={450} w={1760} h={290} a={ap(t, st(S, 2))} border={C.amber}>
+        <div style={{fontSize: 28, fontWeight: 800, color: C.amber}}>Chọn nút nào? Nhìn VT hiện tại (mL/kg)</div>
+        <div style={{position: 'relative', height: 200, marginTop: 10}}>
+          <div style={{position: 'absolute', left: 0, top: 70, width: X(8), height: 34, borderRadius: '17px 0 0 17px', background: `${STN_COL[2]}66`}} />
+          <div style={{position: 'absolute', left: X(8), top: 70, width: W - X(8), height: 34, borderRadius: '0 17px 17px 0', background: `${STN_COL[1]}66`}} />
+          <div style={{position: 'absolute', left: X(8) - 3, top: 50, width: 6, height: 74, background: C.amber}} />
+          <div style={{position: 'absolute', left: X(8) - 40, top: 6, width: 80, textAlign: 'center', fontSize: 32, fontWeight: 800, color: C.amber}}>8</div>
+          <div style={{position: 'absolute', left: X(mk) - 10, top: 62, width: 20, height: 50, borderRadius: 10, background: '#fff', boxShadow: '0 0 16px #fff'}} />
+          <div style={{position: 'absolute', left: 20, top: 128, fontSize: 30, fontWeight: 800, color: mk < 8 ? STN_COL[2] : C.muted}}>&lt; 8 + phổi bình thường → tăng VT</div>
+          <div style={{position: 'absolute', right: 20, top: 128, fontSize: 30, fontWeight: 800, color: mk >= 8 ? STN_COL[1] : C.muted}}>≈ 8 → tăng TẦN SỐ</div>
+        </div>
       </Glass>
-      <Card x={1020} y={150} w={820} h={330} a={ap(t, st(S, 0))} c={C.insp} title="VT nhỏ · thở ra dài" />
-      <Svg>
-        <g opacity={ap(t, st(S, 0))}>
-          <Wave x={1060} y={230} w={740} h={220} f={(s) => pVC(s, {...o, pk: 22, pl: 18, R: 9})} lo={0} hi={28} span={10} color={C.amber} t={t} t0={st(S, 0)} base={0} fill />
-        </g>
-      </Svg>
-      <Glass x={1020} y={505} w={820} h={235} a={ap(t, st(S, 1))} border={C.amber}>
-        <div style={{fontSize: 28, fontWeight: 800, color: C.amber}}>Tăng CO₂ cho phép</div>
-        <div style={{fontSize: 44, fontWeight: 800, marginTop: 14}}>PaCO₂ ↑ · pH ≥ 7,20</div>
-        <div style={{fontSize: 24, color: C.muted, marginTop: 6}}>đổi lại: phổi không quá căng</div>
-      </Glass>
-      <Memo x={260} y={770} w={1400} h={125} t={t} s0={st(S, 3)} size={38}>HEN: thể tích NHỎ · tần số CHẬM · chấp nhận CO₂ CAO</Memo>
+      <Memo x={260} y={770} w={1400} h={120} t={t} s0={st(S, 3)} size={42}>VT còn THẤP → tăng VT · VT đã 8 → tăng TẦN SỐ</Memo>
     </AbsoluteFill>
   );
 };
 
-// ===================== 14. ARDS: Berlin & tổn thương do thở máy =====================
+// ===================== 14. Ca 1 & 2 =====================
 const S14: React.FC<P> = ({S}) => {
   const t = useT();
-  const W = 1640, X = (v: number) => (v / 400) * W;
-  const seg = [[0, 100, C.red, 'NẶNG ≤ 100'], [100, 200, C.amber, 'TRUNG BÌNH 100–200'], [200, 300, '#FACC15', 'NHẸ 200–300']] as const;
-  const k = osc(t, 2.6);
   return (
     <AbsoluteFill>
-      <Header num="14" title="Trạm 6 · ARDS" t={t} />
+      <Header num="14" title="Trạm 6 · Ca 1 và ca 2" t={t} />
       <RM cur={5} t={t} />
-      <Glass x={80} y={150} w={1760} h={200} a={ap(t, st(S, 0))} border={C.red}>
-        <div style={{fontSize: 28, fontWeight: 800, color: C.red}}>Berlin 2012 · PaO₂/FiO₂ với PEEP ≥ 5</div>
-      </Glass>
-      {seg.map(([a, b, c, l], i) => (
-        <div key={i} style={{position: 'absolute', left: 140 + X(a), top: 225, width: X(b) - X(a) - 6, height: 60, borderRadius: 14, background: `${c}`, opacity: ap(t, st(S, 0) + 1.5 + i * 1.6), display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT, fontWeight: 800, fontSize: 24, color: C.bg0}}>{l}</div>
-      ))}
-      <div style={{position: 'absolute', left: 140 + X(300) + 20, top: 236, fontFamily: FONT, fontSize: 24, color: C.muted, opacity: ap(t, st(S, 0) + 6)}}>&gt; 300: không phải ARDS</div>
-      <Card x={80} y={380} w={560} h={330} a={ap(t, st(S, 1))} c={C.amber} title="3 vùng phổi" />
-      <Card x={680} y={380} w={560} h={330} a={ap(t, st(S, 2))} c={C.red} title="VT lớn → QUÁ CĂNG" />
-      <Card x={1280} y={380} w={560} h={330} a={ap(t, st(S, 3))} c={C.violet} title="PEEP thấp → ĐÓNG – MỞ" />
-      <Svg>
-        <g opacity={ap(t, st(S, 1))}>
-          {[0, 1, 2].map((r) => (
-            <g key={r}>
-              {[0, 1, 2, 3].map((j) => {
-                const cx = 140 + j * 70, cy = 480 + r * 75;
-                const ry = r === 0 ? 26 : r === 1 ? 6 + 20 * k : 6;
-                return <ellipse key={j} cx={cx} cy={cy} rx={26} ry={ry} fill="url(#lung)" stroke={['#4ADE80', C.amber, C.red][r]} strokeWidth={3} />;
-              })}
-              <Label x={420} y={488 + r * 75} c={['#4ADE80', C.amber, C.red][r]} s={23} anchor="start">{['thông khí tốt', 'đóng / mở', 'không thông khí'][r]}</Label>
-            </g>
-          ))}
-        </g>
-        <g opacity={ap(t, st(S, 2))}>
-          <circle cx={960} cy={580} r={60 + 45 * k} fill="url(#lung)" stroke={C.red} strokeWidth={4} />
-          {[0, 1, 2, 3, 4, 5].map((i) => {
-            const an = (i * Math.PI) / 3, r0 = 70 + 45 * k;
-            return <path key={i} d={`M${960 + Math.cos(an) * r0},${580 + Math.sin(an) * r0} l${Math.cos(an) * 22},${Math.sin(an) * 22}`} stroke={C.red} strokeWidth={7} strokeLinecap="round" opacity={k} />;
-          })}
-          <Label x={960} y={700} c={C.muted} s={22}>VT 10–12 mL/kg</Label>
-        </g>
-        <g opacity={ap(t, st(S, 3))}>
-          <ellipse cx={1560} cy={580} rx={70 - 25 * (1 - k)} ry={8 + 60 * k} fill="url(#lung)" stroke={C.violet} strokeWidth={4} />
-          {k < 0.25 && <Label x={1560} y={500} c={C.red} s={26}>lực xé!</Label>}
-          <Label x={1560} y={700} c={C.muted} s={22}>xẹp – mở mỗi nhịp</Label>
-        </g>
-      </Svg>
-      {['VT thấp', 'Pplat < 30', 'PEEP đủ giữ phổi mở', 'Tránh FiO₂ > 60% kéo dài'].map((x, i) => (
-        <Chip key={i} x={[80, 420, 820, 1330][i]} y={740} w={[310, 370, 480, 510][i]} h={84} c={C.oxy} a={ap(t, st(S, 4) + i * 1.2)} s={28} bold>{x}</Chip>
-      ))}
+      <Card x={80} y={150} w={860} h={330} a={ap(t, st(S, 0))} c={STN_COL[2]} title="CA 1 · VC · phổi bình thường" size={30}>
+        <div>Nam, IBW 81 kg</div>
+        <div>VTE 400 mL (<B c={C.red}>5 mL/kg</B>) · f 16</div>
+        <div>PaCO₂ <B c={C.red}>55</B> → muốn <B c={C.oxy}>40</B></div>
+      </Card>
+      <Card x={80} y={505} w={860} h={240} a={ap(t, st(S, 1))} c={STN_COL[2]} title="VT còn thấp → chỉnh VT" size={30}>
+        <Big2 s={48}>55 × 400 / 40 = <span style={{color: C.oxy}}>550 mL</span></Big2>
+        <div style={{color: C.muted}}>≈ 7 mL/kg</div>
+      </Card>
+      <Card x={980} y={150} w={860} h={330} a={ap(t, st(S, 2))} c={STN_COL[1]} title="CA 2 · VC · không tự thở" size={30}>
+        <div>Nữ, IBW 52 kg</div>
+        <div>VT 425 mL (<B c={C.amber}>≈ 8 mL/kg</B>) · f 15</div>
+        <div>PaCO₂ <B c={C.red}>58</B> → muốn <B c={C.oxy}>40</B></div>
+      </Card>
+      <Card x={980} y={505} w={860} h={240} a={ap(t, st(S, 3))} c={STN_COL[1]} title="VT đã đủ → chỉnh TẦN SỐ" size={30}>
+        <Big2 s={48}>15 × 58 / 40 ≈ <span style={{color: C.oxy}}>22 /phút</span></Big2>
+        <div style={{color: C.red, fontWeight: 700}}>coi chừng bẫy khí</div>
+      </Card>
     </AbsoluteFill>
   );
 };
 
-// ===================== 15. ARDS: VT thấp, tần số =====================
+// ===================== 15. Ca 3 & 4 =====================
 const S15: React.FC<P> = ({S}) => {
   const t = useT();
-  const k = sp(t, st(S, 0) + 1);
-  const Y = (v: number) => yv(230, 230, 0, 36, v);
+  const curve = (ti: number) => (s: number) => {
+    const q = ph(s, 3);
+    if (q < ti) return ex(-q / 0.35);
+    return -(1 - ex(-ti / 0.35)) * ex(-(q - ti) / 0.3);
+  };
   return (
     <AbsoluteFill>
-      <Header num="15" title="Trạm 6 · VT thấp" t={t} />
+      <Header num="15" title="Trạm 6 · Ca 3 và ca 4" t={t} />
       <RM cur={5} t={t} />
-      <Card x={80} y={150} w={700} h={360} a={ap(t, st(S, 0))} c={C.oxy} title="ARDSNet 2000 · tử vong" />
+      <Card x={80} y={150} w={860} h={270} a={ap(t, st(S, 0))} c={C.insp} title="CA 3 · PC · không tự thở" size={29}>
+        <div>Pi 10 → VTE 400 mL (5,3 mL/kg) · f 16</div>
+        <div>PaCO₂ <B c={C.red}>59</B> → muốn <B c={C.oxy}>40</B></div>
+      </Card>
+      <Card x={80} y={440} w={860} h={145} a={ap(t, st(S, 1))} c={C.insp} size={30}>
+        <div>VT mới = 59 × 400 / 40 ≈ <B c={C.oxy}>600 mL</B></div>
+      </Card>
+      <Card x={80} y={605} w={860} h={180} a={ap(t, st(S, 2))} c={C.amber} title="C không đổi → áp lực tỉ lệ VT" size={30}>
+        <div>Pi = 10 × 600 / 400 = <B c={C.amber}>15 cmH₂O</B></div>
+      </Card>
+      <Card x={980} y={150} w={860} h={270} a={ap(t, st(S, 3))} c={C.violet} title="CA 4 · PC · Ti 0,7 s" size={27}>
+        <div>f 10 · P 25 · VT 425 mL</div>
+        <div>PaCO₂ 50 · pH 7,30</div>
+      </Card>
+      <Card x={980} y={440} w={860} h={345} a={ap(t, st(S, 3) + 2)} c={C.violet} title="Lưu lượng: Ti ngắn → Ti đủ" />
       <Svg>
-        <g opacity={ap(t, st(S, 0))}>
-          {[[31, '6 mL/kg', C.oxy], [39.8, '12 mL/kg', C.red]].map(([v, l, c], i) => (
-            <g key={i}>
-              <rect x={200 + i * 260} y={470 - (v as number) * 5.5 * k} width={150} height={(v as number) * 5.5 * k} rx={12} fill={c as string} />
-              <Label x={275 + i * 260} y={460 - (v as number) * 5.5 * k} s={36}>{String(v).replace('.', ',')}%</Label>
-              <Label x={275 + i * 260} y={500} c={C.muted} s={24}>{l}</Label>
-            </g>
-          ))}
+        <g opacity={ap(t, st(S, 3) + 2)}>
+          <Wave x={1020} y={520} w={380} h={220} f={curve(0.45)} lo={-1} hi={1.05} span={3} color={C.red} t={t} t0={st(S, 3) + 2} sw={3} base={0} />
+          <Label x={1210} y={770} c={C.red} s={22}>chưa về 0</Label>
+        </g>
+        <g opacity={ap(t, st(S, 4))}>
+          <Wave x={1430} y={520} w={380} h={220} f={curve(1.4)} lo={-1} hi={1.05} span={3} color={C.oxy} t={t} t0={st(S, 4)} sw={3} base={0} />
+          <Label x={1620} y={770} c={C.oxy} s={22}>↑ Ti → về 0</Label>
         </g>
       </Svg>
-      <Card x={820} y={150} w={1020} h={360} a={ap(t, st(S, 1))} c={C.amber} title="Giữ cuối thì hít vào → đọc Pplat" />
-      <Svg>
-        <g opacity={ap(t, st(S, 1))}>
-          <line x1={860} x2={1800} y1={Y(30)} y2={Y(30)} stroke={C.red} strokeWidth={3} strokeDasharray="10 8" />
-          <Label x={1800} y={Y(30) - 10} c={C.red} s={24} anchor="end">Pplat &lt; 28–30</Label>
-          <Wave x={860} y={230} w={940} h={230} f={(s) => pVC(s, {T: 3, ti: 1, pause: 0.4, pk: 30, pl: 25})} lo={0} hi={36} span={6} color={C.amber} t={t} t0={st(S, 1)} base={0} fill />
-        </g>
-      </Svg>
-      <Glass x={80} y={535} w={1760} h={190} a={ap(t, st(S, 2))} border={C.blue}>
-        <div style={{fontSize: 28, fontWeight: 800, color: C.blue}}>Giữ VE = 6 L/phút (50 kg) → f = VE ÷ VT</div>
-      </Glass>
-      {[['VT 6 → 0,3 L', '20'], ['VT 5 → 0,25 L', '24'], ['VT 4 → 0,2 L', '30']].map(([a, b], i) => (
-        <Chip key={i} x={120 + i * 575} y={605} w={540} h={90} c={C.blue} a={ap(t, st(S, 2) + 1.5 + i * 1.6)} s={30} bold>{a} → f {b}</Chip>
-      ))}
-      <Chip x={80} y={745} w={1760} h={68} c={C.amber} a={ap(t, st(S, 3))} s={26}>Tăng f: giữ Ti 1 s · không đảo I:E quá 1:1 · nhìn Te: còn dư / hết dư / bẫy khí</Chip>
-      <Chip x={80} y={828} w={1760} h={68} c={C.violet} a={ap(t, st(S, 4))} s={26}>Bỏ khoảng chết cơ học: ống nối NKQ · HME · filter thừa</Chip>
+      <Chip x={80} y={810} w={1760} h={80} c={C.oxy} a={ap(t, st(S, 4) + 1.5)} s={30} bold>Kéo dài Ti cho flow về 0 → VT tăng, không cần tăng áp lực</Chip>
     </AbsoluteFill>
   );
 };
 
-// ===================== 16. ARDS: PEEP =====================
+// ===================== 16. Kiềm hô hấp =====================
 const S16: React.FC<P> = ({S}) => {
   const t = useT();
-  const tilt = 6 * Math.sin((2 * Math.PI * t) / 5) * (1 - ap(t, st(S, 0) + 4, 2));
-  const mild = [['0,3', '5'], ['0,4', '5–8'], ['0,5', '8–10'], ['0,6', '10'], ['0,7', '10–14'], ['0,8', '14'], ['0,9', '14–18'], ['1,0', '18–24']];
-  const sev = [['0,3', '12–14'], ['0,4', '14–16'], ['0,5', '16–18'], ['0,5–0,8', '20'], ['0,8', '22'], ['0,9', '22'], ['1,0', '22–24']];
-  const P = [8, 10, 12, 14, 16, 18, 20], Cd = [20, 23, 26, 30, 27, 25, 21], Pp = [25, 26, 27, 28, 30, 33, 37];
-  const cx = (i: number) => 260 + i * 240;
-  const yC = (v: number) => yv(650, 200, 15, 40, v);
-  const nshow = Math.floor(ap(t, st(S, 3) + 1, 4) * 7 + 0.001);
+  const causes = ['R/C cải thiện ở PC', 'BN tự thở tốt', 'Stress', 'Bệnh lý não', 'Auto-trigger'];
   return (
     <AbsoluteFill>
-      <Header num="16" title="Trạm 6 · Chọn PEEP" t={t} />
-      <RM cur={5} t={t} />
-      <Card x={80} y={150} w={700} h={420} a={ap(t, st(S, 0))} c={C.amber} title="PEEP tối ưu = cân bằng" />
-      <Svg>
-        <g opacity={ap(t, st(S, 0))}>
-          <path d="M430,520 L430,300 M370,530 L490,530" stroke="#C9D6EA" strokeWidth={10} strokeLinecap="round" />
-          <g transform={`rotate(${tilt} 430 300)`}>
-            <line x1={210} x2={650} y1={300} y2={300} stroke="#C9D6EA" strokeWidth={8} strokeLinecap="round" />
-            {[210, 650].map((x, i) => (
-              <g key={i}>
-                <path d={`M${x},300 L${x - 60},390 M${x},300 L${x + 60},390`} stroke="#93A4BC" strokeWidth={3} />
-                <path d={`M${x - 80},390 Q${x},440 ${x + 80},390 Z`} fill={i ? C.red : C.violet} opacity={0.85} />
-                <Label x={x} y={470} c={i ? C.red : C.violet} s={28}>{i ? 'QUÁ CĂNG' : 'XẸP PHỔI'}</Label>
-              </g>
-            ))}
-          </g>
-          <circle cx={430} cy={300} r={14} fill={C.amber} filter="url(#glow)" />
-        </g>
-      </Svg>
-      <Glass x={820} y={150} w={1020} h={330} a={ap(t, st(S, 1))} border={C.blue}>
-        <div style={{fontSize: 26, fontWeight: 800, color: C.blue}}>Bảng FiO₂ / PEEP</div>
-      </Glass>
-      {[['Nhẹ', mild, '#FACC15'], ['TB/nặng', sev, C.red]].map(([n, arr, c], r) => (
-        <div key={r} style={{position: 'absolute', left: 850, top: 222 + r * 126, display: 'flex', gap: 6, fontFamily: FONT, opacity: ap(t, st(S, 1) + 1 + r * 2)}}>
-          <div style={{width: 110, fontSize: 24, fontWeight: 800, color: c as string, paddingTop: 22}}>{n as string}</div>
-          {(arr as string[][]).map(([f, p], i) => (
-            <div key={i} style={{width: 102, height: 110, borderRadius: 12, background: 'rgba(14,26,46,0.9)', border: `1.5px solid ${c}66`, textAlign: 'center', paddingTop: 10, boxSizing: 'border-box'}}>
-              <div style={{fontSize: 21, color: C.muted}}>{f}</div>
-              <div style={{fontSize: 29, fontWeight: 800, color: C.txt}}>{p}</div>
-            </div>
-          ))}
-        </div>
+      <Header num="16" title="Trạm 7 · Kiềm hô hấp" t={t} />
+      <RM cur={6} t={t} />
+      <Chip x={80} y={150} w={1760} h={80} c={C.blue} a={ap(t, st(S, 0))} s={34} bold>PaCO₂ &lt; 35 mmHg · pH &gt; 7,45</Chip>
+      {causes.map((x, i) => (
+        <Chip key={i} x={80 + i * 356} y={255} w={336} h={76} c={C.amber} a={ap(t, st(S, 1) + 1 + i * 1.3)} s={26}>{x}</Chip>
       ))}
-      <Chip x={820} y={500} w={1020} h={70} c={C.blue} a={ap(t, st(S, 2))} s={26}>Dưới mục tiêu: lên 1 bước · vượt mục tiêu: lùi 1 bước</Chip>
-      <Card x={80} y={595} w={1760} h={300} a={ap(t, st(S, 3))} c={C.oxy} title="PEEP tăng dần: VT 6 · +2–3 cmH₂O mỗi 3–5 phút" />
-      <Svg>
-        <g opacity={ap(t, st(S, 3))}>
-          {P.slice(0, nshow).map((p, i) => (
-            <g key={i}>
-              {i > 0 && <line x1={cx(i - 1)} y1={yC(Cd[i - 1])} x2={cx(i)} y2={yC(Cd[i])} stroke={C.oxy} strokeWidth={4} />}
-              <circle cx={cx(i)} cy={yC(Cd[i])} r={9} fill={C.oxy} />
-              <Label x={cx(i)} y={yC(Cd[i]) - 16} c={C.oxy} s={22}>C {Cd[i]}</Label>
-              <Label x={cx(i)} y={885} c={Pp[i] > 30 ? C.red : C.muted} s={22}>PEEP {p} · Pplat {Pp[i]}</Label>
-            </g>
-          ))}
-          {t > st(S, 4) && (
-            <g opacity={ap(t, st(S, 4))}>
-              <rect x={cx(3) - 115} y={660} width={230} height={240} rx={16} fill="none" stroke={C.amber} strokeWidth={4} filter="url(#glow)" />
-              <Label x={cx(3) + 130} y={700} c={C.amber} s={26} anchor="start">Best PEEP 14</Label>
-            </g>
-          )}
-        </g>
-      </Svg>
+      <Glass x={80} y={360} w={330} h={250} a={ap(t, st(S, 2))} border={C.violet}>
+        <div style={{fontSize: 50, fontWeight: 800, textAlign: 'center', marginTop: 40}}>f ↑</div>
+        <div style={{fontSize: 50, fontWeight: 800, textAlign: 'center'}}>VE ↑</div>
+      </Glass>
+      <Card x={440} y={360} w={700} h={118} a={ap(t, st(S, 2))} c={C.oxy} title="TỰ THỞ TỐT" size={25} pad={18}>Tỉnh · hồng hào · sinh hiệu ổn · không co lõm</Card>
+      <Card x={440} y={492} w={700} h={118} a={ap(t, st(S, 3))} c={C.red} title="STRESS / BỆNH LÝ NÃO" size={25} pad={18}>Bứt rứt · tím tái · RL sinh hiệu · co lõm ngực</Card>
+      <Card x={1170} y={360} w={670} h={250} a={ap(t, st(S, 4))} c={C.amber} title="Xử trí theo nguyên nhân" size={23} pad={20}>
+        <div>Đau, sợ, sốt → an thần, giảm đau</div>
+        <div>Toan chuyển hoá → bicarbonate</div>
+        <div>Não → chống co giật, phù não</div>
+        <div>Nghẹt đàm → hút đàm, thay NKQ</div>
+      </Card>
+      <Memo x={160} y={650} w={1600} h={130} t={t} s0={st(S, 5)} size={38}>Thở nhiều mà HỒNG → tốt · thở nhiều mà TÍM, BỨT RỨT → stress</Memo>
     </AbsoluteFill>
   );
 };
 
-// ===================== 17. ARDS: oxy & CO2 =====================
+// ===================== 17. Auto-trigger =====================
 const S17: React.FC<P> = ({S}) => {
   const t = useT();
+  const peep = 10, trg = 8;
+  const starts = [0.6, 4.5, 7.6];
+  const wave = (s: number) => {
+    if (s < 0.6) return s > 0.35 ? peep - (peep - trg + 0.3) * ((s - 0.35) / 0.25) : peep;
+    for (let i = 0; i < starts.length; i++) {
+      const s0 = starts[i], nx = starts[i + 1] ?? 99;
+      if (s >= s0 && s < nx) {
+        const q = s - s0;
+        if (q < 1) return trg + (25 - trg) * (1 - ex(-q / 0.06));
+        if (q < 1.3) return peep + 15 * ex(-(q - 1) / 0.08);
+        const L = nx - s0 - 1.3;
+        return peep - (peep - trg) * Math.min(1, (q - 1.3) / L);
+      }
+    }
+    return peep;
+  };
+  const Y = (v: number) => yv(240, 300, 0, 28, v);
+  const X = (s: number) => 120 + (s / 10) * 1020;
   return (
     <AbsoluteFill>
-      <Header num="17" title="Trạm 6 · Oxy và CO₂" t={t} />
-      <RM cur={5} t={t} />
-      <Glass x={80} y={150} w={860} h={230} a={ap(t, st(S, 0))} border={C.oxy} />
-      <Range x={120} y={175} w={780} lo={80} hi={100} a0={88} a1={95} c={C.oxy} a={ap(t, st(S, 0) + 0.5)} ticks={[80, 88, 95, 100]} label="SpO₂ 88–95%" />
-      <div style={{position: 'absolute', left: 120, top: 300, fontFamily: FONT, fontSize: 28, fontWeight: 600, color: C.txt, opacity: ap(t, st(S, 0) + 2)}}>hoặc PaO₂ 55–80 mmHg</div>
-      <Glass x={980} y={150} w={860} h={230} a={ap(t, st(S, 1))} border={C.red}>
-        <div style={{fontSize: 28, fontWeight: 800, color: C.red}}>Ngộ độc oxy</div>
-        <div style={{fontSize: 46, fontWeight: 800, marginTop: 18}}>FiO₂ ≥ 60% × &gt; 24 giờ</div>
-      </Glass>
-      <Glass x={80} y={405} w={1760} h={200} a={ap(t, st(S, 2))} border={C.amber}>
-        <div style={{fontSize: 28, fontWeight: 800, color: C.amber}}>Tăng CO₂ cho phép · bảo vệ phổi</div>
-      </Glass>
-      <Range x={120} y={478} w={1680} lo={7.1} hi={7.45} a0={7.2} a1={7.45} c={C.amber} a={ap(t, st(S, 2) + 1)} ticks={[7.1, 7.2, 7.25, 7.35, 7.45]} label="chấp nhận pH ≥ 7,20–7,25" />
-      <Chip x={80} y={630} w={860} h={100} c={C.violet} a={ap(t, st(S, 3))} s={26}>CO₂ ↑ → BN trigger nhiều → an thần / giãn cơ</Chip>
-      <Chip x={980} y={630} w={860} h={100} c={C.red} a={ap(t, st(S, 3) + 3)} s={26}>pH &lt; 7,2: ↑ tần số (tránh bẫy khí) · bù bicarbonate</Chip>
-      <Memo x={360} y={760} w={1200} h={135} t={t} s0={st(S, 4)} size={60}>ARDS: 6 · 30 · 88</Memo>
+      <Header num="17" title="Trạm 7 · Auto-trigger" t={t} />
+      <RM cur={6} t={t} />
+      <Card x={80} y={150} w={1100} h={430} a={ap(t, st(S, 0))} c={C.red} title="Máy tự kích hoạt dù BN không hít vào" />
+      <Svg>
+        <g opacity={ap(t, st(S, 0))}>
+          <line x1={120} x2={1140} y1={Y(peep)} y2={Y(peep)} stroke={C.violet} strokeWidth={2} strokeDasharray="8 8" />
+          <line x1={120} x2={1140} y1={Y(trg)} y2={Y(trg)} stroke={C.red} strokeWidth={3} strokeDasharray="10 8" />
+          <Label x={1140} y={Y(peep) - 10} c={C.violet} s={22} anchor="end">PEEP</Label>
+          <Label x={1140} y={Y(trg) + 30} c={C.red} s={22} anchor="end">ngưỡng trigger</Label>
+          <Wave x={120} y={240} w={1020} h={300} f={wave} lo={0} hi={28} span={10} color={C.amber} t={t} t0={st(S, 0)} base={0} fill />
+        </g>
+        <g opacity={ap(t, st(S, 2))}>
+          <Label x={X(0.5)} y={Y(trg) + 64} c={C.oxy} s={22}>BN kích hoạt</Label>
+          {[4.5, 7.6].map((s, i) => (
+            <g key={i}>
+              <circle cx={X(s)} cy={Y(trg)} r={18} fill="none" stroke={C.red} strokeWidth={4} filter="url(#glow)" />
+              <Label x={X(s)} y={Y(trg) + 64} c={C.red} s={22}>trigger GIẢ</Label>
+            </g>
+          ))}
+        </g>
+      </Svg>
+      <Card x={1220} y={150} w={620} h={430} a={ap(t, st(S, 1))} c={C.amber} title="Nguyên nhân" size={25}>
+        {['Rò bộ dây', 'Rò quanh NKQ', 'Ống dẫn lưu ngực', 'Nước đọng trong dây', 'Dao động tim', 'PEEP cao', 'Trigger quá nhạy'].map((x, i) => (
+          <div key={i} style={{opacity: ap(t, st(S, 1) + 1 + i * 0.8), lineHeight: 1.45}}>• {x}</div>
+        ))}
+      </Card>
+      {['Giảm rò: NKQ lớn hơn 0,5–1 số · bơm bóng chèn', 'Đổ nước đọng', 'Tăng ngưỡng: −2 → −3, −4 · 1 → 1,5–2 L/ph'].map((x, i) => (
+        <Chip key={i} x={[80, 790, 1130][i]} y={605} w={[680, 310, 710][i]} h={100} c={C.oxy} a={ap(t, st(S, 3) + i * 2.5)} s={25}>{x}</Chip>
+      ))}
+      <Memo x={210} y={740} w={1500} h={140} t={t} s0={st(S, 4)} size={42}>Đường nền TỤT DẦN chạm ngưỡng → trigger GIẢ</Memo>
     </AbsoluteFill>
   );
 };
@@ -864,28 +879,23 @@ const S17: React.FC<P> = ({S}) => {
 // ===================== 18. Ôn tập =====================
 const S18: React.FC<P> = ({S}) => {
   const t = useT();
-  const items: [string, string, number][] = [
-    ['NHÓM', 'Bình thường · CỨNG → nhanh · TẮC → chậm', 0],
-    ['MỔ', 'Mốc 60: dưới chỉnh FiO₂, trên tăng PEEP · cai khi FiO₂ ≤ 40%, PEEP ≤ 5', 0],
-    ['TIM', 'A/C · f > 15 · PEEP 5–10 là bạn của tim trái', 1],
-    ['NÃO', 'CO₂ 35–45 · O₂ ≥ 70 · đầu cao · chỉnh bằng tần số', 1],
-    ['COPD·HEN', 'NIV trước · chậm, thở ra dài · PEEP ngoài < auto-PEEP', 2],
-    ['ARDS', '6 · 30 · 88 · PEEP theo bảng / compliance tốt nhất', 3],
-  ];
   return (
     <AbsoluteFill>
-      <Header num="18" title="Ôn tập 6 trạm" t={t} />
+      <Header num="18" title="Ôn tập" t={t} />
       <RM cur="all" t={t} />
-      {items.map(([h, d, j], i) => (
-        <Glass key={i} x={80 + (i % 3) * 595} y={150 + Math.floor(i / 3) * 280} w={570} h={260} a={ap(t, st(S, j) + (i % 2) * 1.5)} border={STN_COL[i]} pad={24}>
-          <div style={{fontSize: 36, fontWeight: 800, color: STN_COL[i]}}>{i + 1}. {h}</div>
-          <div style={{fontSize: 27, fontWeight: 500, lineHeight: 1.4, marginTop: 10}}>{d}</div>
-        </Glass>
-      ))}
-      <Memo x={260} y={735} w={1400} h={150} t={t} s0={st(S, 3) + 3} size={46}>CỨNG → NHANH · TẮC → CHẬM · ARDS 6–30–88</Memo>
+      <Glass x={80} y={150} w={760} h={590} a={ap(t, st(S, 0))} border={C.violet}>
+        <div style={{fontSize: 28, fontWeight: 800, color: C.violet}}>CO₂ tỉ lệ NGHỊCH với VA</div>
+      </Glass>
+      <Svg>
+        <Wheel cx={460} cy={470} R={175} t={t} a={ap(t, st(S, 0))} />
+      </Svg>
+      <Card x={880} y={150} w={960} h={180} a={ap(t, st(S, 1))} c={C.red} title="① Trước khi chỉnh: loại trừ sai sót kỹ thuật" size={28}>NÉN · RÒ · KHOẢNG CHẾT cơ học · báo động áp lực · Ti, Te</Card>
+      <Card x={880} y={350} w={960} h={180} a={ap(t, st(S, 2))} c={C.oxy} title="② Chỉnh bằng 2 nút" size={28}>VT (khi còn &lt; 8 mL/kg) · tần số (khi VT đã đủ)</Card>
+      <Card x={880} y={550} w={960} h={190} a={ap(t, st(S, 3))} c={C.amber} title="③ Công thức & kiềm hô hấp" size={27}>CO₂ cũ × f cũ = CO₂ mới × f mới · kiềm: tự thở tốt / stress / auto-trigger</Card>
+      <Memo x={260} y={770} w={1400} h={120} t={t} s0={st(S, 3) + 4} size={44}>NÉN · RÒ · CHẾT → rồi mới chỉnh VT, f</Memo>
     </AbsoluteFill>
   );
 };
 
 export const SCENES = [S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13, S14, S15, S16, S17, S18];
-void lerp; void fPC; void psBreath; void Badge; void geo; void Circuit; void Big;
+void lerp; void fPC; void psBreath; void Badge; void Big; void Range; void Balloon; void Arrow; void fVC; void pVC;
