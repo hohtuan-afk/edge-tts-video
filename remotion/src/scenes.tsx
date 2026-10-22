@@ -658,7 +658,7 @@ const S11: React.FC<P> = ({S}) => {
 const S12: React.FC<P> = ({S}) => {
   const t = useT();
   const panel = (x0: number, k: number, a: number, c: string) => {
-    const g = ap(t, 0, 0) * 0 + a;
+    const g = a;
     return (
       <g opacity={g}>
         {[['O₂ vào', 1, C.blue], ['CO₂ ra', k, c]].map(([n, v, cc], i) => (
