@@ -1,0 +1,550 @@
+{
+ "fps": 30,
+ "total": 19560,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 180,
+   "sents": [
+    {
+     "start": 0.7,
+     "dur": 2.977,
+     "text": ""
+    }
+   ]
+  },
+  {
+   "from": 180,
+   "dur": 1278,
+   "sents": [
+    {
+     "start": 0.7,
+     "dur": 9.9,
+     "text": "Thở máy có 2 mục tiêu: THÔNG KHÍ (PaCO₂) và OXY HOÁ (PaO₂). Bài này nói về thông khí."
+    },
+    {
+     "start": 11.15,
+     "dur": 6.891,
+     "text": "Mục tiêu thường: PaCO₂ 35–45 mmHg — thần kinh cơ, ngộ độc, hậu phẫu."
+    },
+    {
+     "start": 18.591,
+     "dur": 5.91,
+     "text": "Cho phép CAO hơn (permissive hypercapnia): COPD, hen, ARDS."
+    },
+    {
+     "start": 25.05,
+     "dur": 6.086,
+     "text": "Giữ THẤP hơn: tăng áp nội sọ (“nhẹ và ngắn”), cao áp phổi, thoát vị hoành."
+    },
+    {
+     "start": 31.686,
+     "dur": 9.633,
+     "text": "Ghi nhớ: 35–45 là vùng XANH · COPD, hen, ARDS cho phép cao · não, cao áp phổi giữ thấp."
+    }
+   ]
+  },
+  {
+   "from": 1458,
+   "dur": 1127,
+   "sents": [
+    {
+     "start": 0.7,
+     "dur": 9.288,
+     "text": "Phương trình thông khí phế nang: PaCO₂ = k / VA = k / [f × (VT − VD)]."
+    },
+    {
+     "start": 10.538,
+     "dur": 8.203,
+     "text": "VD khoảng chết ≈ 1 mL/lb (người lớn ~150 mL) · k hệ số hô hấp = 0,863."
+    },
+    {
+     "start": 19.292,
+     "dur": 3.917,
+     "text": "Toan hô hấp: PaCO₂ > 45 mmHg và pH < 7,35."
+    },
+    {
+     "start": 23.759,
+     "dur": 6.216,
+     "text": "4 nguyên nhân: f thấp · VT thấp · VD tăng · k tăng."
+    },
+    {
+     "start": 30.525,
+     "dur": 5.732,
+     "text": "Ghi nhớ: 4 bánh xe của CO₂ — f · VT · VD · k."
+    }
+   ]
+  },
+  {
+   "from": 2585,
+   "dur": 1134,
+   "sents": [
+    {
+     "start": 0.7,
+     "dur": 13.263,
+     "text": "A/C: tần số cài là TỐI THIỂU · SIMV: thường thấp hơn A/C · PS/CPAP: KHÔNG cài tần số."
+    },
+    {
+     "start": 14.513,
+     "dur": 6.82,
+     "text": "Tần số thấp hay gặp ở mode hỗ trợ (SIMV, nhất là PS) → liên quan đến TRIGGER của BN."
+    },
+    {
+     "start": 21.883,
+     "dur": 3.456,
+     "text": "Do BN trigger quá yếu, hoặc cài độ nhạy quá cao (khó kích hoạt)."
+    },
+    {
+     "start": 25.889,
+     "dur": 7.738,
+     "text": "Do máy: bộ dây và bình làm ẩm quá lớn · loại trigger (lưu lượng/áp lực) · vị trí cảm biến (trong máy/gần BN)."
+    },
+    {
+     "start": 34.176,
+     "dur": 2.341,
+     "text": "Và mất trigger do auto-PEEP."
+    }
+   ]
+  },
+  {
+   "from": 3719,
+   "dur": 842,
+   "sents": [
+    {
+     "start": 0.7,
+     "dur": 7.535,
+     "text": "VTI: thể tích MÁY CUNG CẤP · VTE: thể tích BN THỰC NHẬN."
+    },
+    {
+     "start": 8.785,
+     "dur": 7.535,
+     "text": "VT thấp có 7 nguyên nhân: thể tích nén · thất thoát · báo động áp lực cao · thay đổi R/C trong PC …"
+    },
+    {
+     "start": 16.87,
+     "dur": 6.599,
+     "text": "… Ti không đủ · Te không đủ (auto-PEEP) · VE đủ nhưng VA thiếu."
+    },
+    {
+     "start": 24.019,
+     "dur": 2.78,
+     "text": "Ghi nhớ: máy ĐƯA (VTI) ≠ BN NHẬN (VTE)."
+    }
+   ]
+  },
+  {
+   "from": 4561,
+   "dur": 1236,
+   "sents": [
+    {
+     "start": 0.7,
+     "dur": 4.508,
+     "text": "Thể tích nén = khí bị nén và làm phồng bộ dây, KHÔNG vào phổi."
+    },
+    {
+     "start": 5.758,
+     "dur": 8.105,
+     "text": "Phụ thuộc thể tích bộ dây: tiết diện (sơ sinh < trẻ em < người lớn), chiều dài, bình làm ẩm."
+    },
+    {
+     "start": 14.413,
+     "dur": 5.682,
+     "text": "Và độ giãn nở của dây: PVC > Hytrel > silicone."
+    },
+    {
+     "start": 20.644,
+     "dur": 14.136,
+     "text": "Test máy đo compliance dây, VD 1,65 mL/cmH₂O → ΔP 20 mất ≈ 33 mL (minh hoạ) · đa số máy hiện đại tự BÙ."
+    },
+    {
+     "start": 35.33,
+     "dur": 4.554,
+     "text": "Ghi nhớ: dây càng TO, càng DÀI, càng MỀM → nén càng NHIỀU."
+    }
+   ]
+  },
+  {
+   "from": 5797,
+   "dur": 947,
+   "sents": [
+    {
+     "start": 0.7,
+     "dur": 7.451,
+     "text": "Thất thoát: chỗ hở bộ dây (kiểm tra circuit leak) · qua NKQ: sai cỡ, không bóng chèn, chưa bơm bóng chèn."
+    },
+    {
+     "start": 8.701,
+     "dur": 3.499,
+     "text": "Phát hiện 1: đặt ống nghe ở hõm trên xương ức."
+    },
+    {
+     "start": 12.75,
+     "dur": 5.053,
+     "text": "Phát hiện 2: so sánh VTI và VTE (VD 504 so với 383 mL)."
+    },
+    {
+     "start": 18.352,
+     "dur": 7.353,
+     "text": "Phát hiện 3: đồ thị thể tích – thời gian không về 0 · bật bù rò (leak compensation) nếu máy có."
+    },
+    {
+     "start": 26.255,
+     "dur": 4.018,
+     "text": "Ghi nhớ: VTE < VTI → nghĩ ngay đến RÒ."
+    }
+   ]
+  },
+  {
+   "from": 6744,
+   "dur": 944,
+   "sents": [
+    {
+     "start": 0.7,
+     "dur": 8.075,
+     "text": "Ppeak vượt giới hạn Pmax → máy NGƯNG thì hít vào → Ti bị cắt ngắn → VT giảm."
+    },
+    {
+     "start": 9.325,
+     "dur": 4.487,
+     "text": "VD: cài VTI 400 mL nhưng VTE chỉ 130 mL."
+    },
+    {
+     "start": 14.362,
+     "dur": 2.998,
+     "text": "Ppeak 51 chạm giới hạn 50 cmH₂O."
+    },
+    {
+     "start": 17.91,
+     "dur": 7.561,
+     "text": "Nâng giới hạn lên 60 → VTE 408 mL · đồng thời tìm nguyên nhân Ppeak cao."
+    },
+    {
+     "start": 26.021,
+     "dur": 4.17,
+     "text": "Ghi nhớ: báo động áp lực cao CẮT NGẮN nhịp → VT tụt."
+    }
+   ]
+  },
+  {
+   "from": 7688,
+   "dur": 1179,
+   "sents": [
+    {
+     "start": 0.7,
+     "dur": 6.583,
+     "text": "Trong PC: R↑ hoặc C↓ → VT↓ → ứ CO₂."
+    },
+    {
+     "start": 7.833,
+     "dur": 6.313,
+     "text": "R↑ bệnh lý: COPD, hen, viêm tiểu phế quản, hít phân su."
+    },
+    {
+     "start": 14.696,
+     "dur": 5.736,
+     "text": "R↑ cơ học: nghẹt đàm, nước đọng trong dây, BN cắn ống, ống NKQ bị gập."
+    },
+    {
+     "start": 20.982,
+     "dur": 7.879,
+     "text": "C↓ thành ngực: tràn dịch, tràn khí màng phổi, phù nề, gù vẹo, chướng bụng, lọc màng bụng, béo phì."
+    },
+    {
+     "start": 29.41,
+     "dur": 8.558,
+     "text": "C↓ phổi: viêm phổi, phù phổi cấp, ARDS, ngạt nước, bệnh màng trong, xẹp phổi, xơ hoá phổi."
+    }
+   ]
+  },
+  {
+   "from": 8867,
+   "dur": 1019,
+   "sents": [
+    {
+     "start": 0.7,
+     "dur": 7.011,
+     "text": "Ti không đủ (PC): hết thì hít vào mà lưu lượng CHƯA VỀ 0 → còn thể tích chưa vào."
+    },
+    {
+     "start": 8.261,
+     "dur": 5.018,
+     "text": "Tăng Ti cho flow về 0 → tăng thêm VT mà KHÔNG tăng Pi."
+    },
+    {
+     "start": 13.829,
+     "dur": 6.854,
+     "text": "Te không đủ (COPD) → bẫy khí, auto-PEEP · VTE < VTI."
+    },
+    {
+     "start": 21.233,
+     "dur": 4.756,
+     "text": "Xử trí bẫy khí: tăng Te · giảm tần số · giảm VT."
+    },
+    {
+     "start": 26.539,
+     "dur": 6.116,
+     "text": "Ghi nhớ: flow chưa về 0 cuối hít vào → kéo dài Ti · cuối thở ra → kéo dài Te."
+    }
+   ]
+  },
+  {
+   "from": 9886,
+   "dur": 1003,
+   "sents": [
+    {
+     "start": 0.7,
+     "dur": 8.605,
+     "text": "Tần số quá nhanh: VE đủ nhưng VA thấp. VD: PC, VD = 60 mL."
+    },
+    {
+     "start": 9.855,
+     "dur": 5.473,
+     "text": "f 20 × VT 200 = VE 4 L → VA = 20 × (200 − 60) = 2,8 L/phút."
+    },
+    {
+     "start": 15.877,
+     "dur": 5.546,
+     "text": "f 30 × VT 133 = VE 4 L → VA = 30 × (133 − 60) = 2,1 L/phút."
+    },
+    {
+     "start": 21.973,
+     "dur": 5.029,
+     "text": "f 40 × VT 100 = VE 4 L → VA = 40 × (100 − 60) = 1,6 L/phút."
+    },
+    {
+     "start": 27.553,
+     "dur": 4.581,
+     "text": "Ghi nhớ: cùng VE — tần số càng NHANH, VA càng THẤP."
+    }
+   ]
+  },
+  {
+   "from": 10889,
+   "dur": 948,
+   "sents": [
+    {
+     "start": 0.7,
+     "dur": 8.157,
+     "text": "Khoảng chết = khoảng chết giải phẫu (đường dẫn khí) + sinh lý (phế nang không được tưới máu)."
+    },
+    {
+     "start": 9.407,
+     "dur": 5.531,
+     "text": "VD tăng do bệnh: giãn phế quản, thuyên tắc phổi · do PEEP cao, auto-PEEP."
+    },
+    {
+     "start": 15.488,
+     "dur": 9.372,
+     "text": "Khoảng chết CƠ HỌC (giữa chữ Y và NKQ): HME, phin lọc, đo CO₂ dòng chính, ống nhún, hút đàm kín."
+    },
+    {
+     "start": 25.41,
+     "dur": 4.901,
+     "text": "Ghi nhớ: trẻ nhỏ VT nhỏ → THÁO BỎ khoảng chết cơ học không cần thiết."
+    }
+   ]
+  },
+  {
+   "from": 11837,
+   "dur": 791,
+   "sents": [
+    {
+     "start": 0.7,
+     "dur": 9.125,
+     "text": "k = 0,863 khi nuôi ăn cân đối (đạm, đường, béo): 1 O₂ vào → 0,863 CO₂ sinh ra."
+    },
+    {
+     "start": 10.375,
+     "dur": 5.076,
+     "text": "k = 1 nếu chỉ nuôi bằng carbohydrate (truyền glucose 5%, 10%)."
+    },
+    {
+     "start": 16.001,
+     "dur": 4.493,
+     "text": "→ sinh CO₂ nhiều hơn ≈ 16% với cùng lượng O₂ tiêu thụ."
+    },
+    {
+     "start": 21.044,
+     "dur": 4.012,
+     "text": "Ghi nhớ: chỉ truyền ĐƯỜNG → k = 1 → CO₂ tăng."
+    }
+   ]
+  },
+  {
+   "from": 12628,
+   "dur": 954,
+   "sents": [
+    {
+     "start": 0.7,
+     "dur": 8.484,
+     "text": "Giữ VT, chỉnh tần số: PaCO₂ cũ × f cũ = PaCO₂ mới × f mới."
+    },
+    {
+     "start": 9.734,
+     "dur": 6.221,
+     "text": "Giữ f, chỉnh VT: PaCO₂ cũ × VT cũ ≈ PaCO₂ mới × VT mới."
+    },
+    {
+     "start": 16.506,
+     "dur": 9.161,
+     "text": "Chọn nút nào? VT < 8 mL/kg, phổi bình thường → tăng VT · VT ≈ 8 mL/kg → tăng tần số."
+    },
+    {
+     "start": 26.217,
+     "dur": 4.271,
+     "text": "Ghi nhớ: VT còn THẤP → tăng VT · VT đã 8 → tăng TẦN SỐ."
+    }
+   ]
+  },
+  {
+   "from": 13582,
+   "dur": 1158,
+   "sents": [
+    {
+     "start": 0.7,
+     "dur": 9.775,
+     "text": "Ca 1: nam 81 kg IBW, VC, VTE 400 mL (5 mL/kg), f 16, PaCO₂ 55, phổi bình thường → muốn 40."
+    },
+    {
+     "start": 11.025,
+     "dur": 7.501,
+     "text": "VT còn < 8 mL/kg → chỉnh VT: 55 × 400 / 40 = 550 mL (≈ 7 mL/kg)."
+    },
+    {
+     "start": 19.076,
+     "dur": 8.439,
+     "text": "Ca 2: nữ IBW 52 kg, VT 425 (≈ 8 mL/kg), f 15, PaCO₂ 58 → muốn 40."
+    },
+    {
+     "start": 28.065,
+     "dur": 9.242,
+     "text": "VT đã ≈ 8 → chỉnh tần số: 15 × 58 / 40 ≈ 22 lần/phút · coi chừng bẫy khí."
+    }
+   ]
+  },
+  {
+   "from": 14740,
+   "dur": 1046,
+   "sents": [
+    {
+     "start": 0.7,
+     "dur": 7.131,
+     "text": "Ca 3: PC, Pi 10 → VTE 400 mL (5,3 mL/kg), f 16, PaCO₂ 59 → muốn 40."
+    },
+    {
+     "start": 8.381,
+     "dur": 3.9,
+     "text": "VT mong muốn = 59 × 400 / 40 ≈ 600 mL."
+    },
+    {
+     "start": 12.832,
+     "dur": 5.202,
+     "text": "Compliance không đổi → Pi mới = 10 × 600 / 400 = 15 cmH₂O."
+    },
+    {
+     "start": 18.584,
+     "dur": 9.0,
+     "text": "Ca 4: PC, f 10, P 25, VT 425, Ti 0,7 s, PaCO₂ 50, pH 7,30 — flow chưa về 0 cuối hít vào."
+    },
+    {
+     "start": 28.134,
+     "dur": 5.447,
+     "text": "→ Tăng Ti cho flow về 0: VT tăng mà không cần tăng áp lực."
+    }
+   ]
+  },
+  {
+   "from": 15786,
+   "dur": 1518,
+   "sents": [
+    {
+     "start": 0.7,
+     "dur": 4.968,
+     "text": "Kiềm hô hấp: PaCO₂ < 35 mmHg và pH > 7,45."
+    },
+    {
+     "start": 6.218,
+     "dur": 8.746,
+     "text": "Nguyên nhân: R/C cải thiện ở PC (VTE ↑) · BN tự thở tốt · stress · bệnh lý não · auto-trigger."
+    },
+    {
+     "start": 15.514,
+     "dur": 7.502,
+     "text": "f và VE tăng: TỰ THỞ TỐT = tỉnh, hồng hào, sinh hiệu ổn, không co lõm ngực."
+    },
+    {
+     "start": 23.566,
+     "dur": 5.604,
+     "text": "STRESS / bệnh lý não = bứt rứt, tím tái, rối loạn sinh hiệu, co lõm ngực."
+    },
+    {
+     "start": 29.72,
+     "dur": 14.353,
+     "text": "Xử trí: đau, sợ, sốt → an thần, giảm đau · toan chuyển hoá → bicarbonate · não → chống co giật, phù não · đàm → hút, thay NKQ."
+    },
+    {
+     "start": 44.623,
+     "dur": 4.682,
+     "text": "Ghi nhớ: thở nhiều mà HỒNG → tốt · thở nhiều mà TÍM, BỨT RỨT → stress."
+    }
+   ]
+  },
+  {
+   "from": 17304,
+   "dur": 1153,
+   "sents": [
+    {
+     "start": 0.7,
+     "dur": 4.86,
+     "text": "Auto-trigger: máy tự kích hoạt khi BN không hít vào → thở nhanh giả."
+    },
+    {
+     "start": 6.11,
+     "dur": 9.352,
+     "text": "Nguyên nhân: rò bộ dây, rò NKQ, dẫn lưu ngực, nước đọng, dao động tim, PEEP cao, trigger quá nhạy."
+    },
+    {
+     "start": 16.012,
+     "dur": 5.328,
+     "text": "Nhận biết: đường nền tụt dần đến ngưỡng trigger → trigger GIẢ."
+    },
+    {
+     "start": 21.889,
+     "dur": 11.357,
+     "text": "Xử trí: giảm rò (NKQ lớn hơn 0,5–1 số, bơm bóng chèn) · đổ nước đọng · tăng ngưỡng: áp lực −2 → −3, −4; lưu lượng 1 → 1,5–2 L/ph."
+    },
+    {
+     "start": 33.796,
+     "dur": 3.354,
+     "text": "Ghi nhớ: đường nền TỤT DẦN chạm ngưỡng → trigger GIẢ."
+    }
+   ]
+  },
+  {
+   "from": 18457,
+   "dur": 1103,
+   "sents": [
+    {
+     "start": 0.7,
+     "dur": 9.037,
+     "text": "PaCO₂ tỉ lệ NGHỊCH với thông khí phế nang: PaCO₂ = k / [f × (VT − VD)]."
+    },
+    {
+     "start": 10.287,
+     "dur": 7.999,
+     "text": "Trước khi chỉnh: kiểm tra NÉN · RÒ · KHOẢNG CHẾT cơ học (và báo động áp lực, Ti, Te)."
+    },
+    {
+     "start": 18.836,
+     "dur": 4.236,
+     "text": "Chỉnh bằng 2 nút: VT (khi còn < 8 mL/kg) và tần số (khi VT đã đủ)."
+    },
+    {
+     "start": 23.622,
+     "dur": 11.819,
+     "text": "CO₂ cũ × f cũ = CO₂ mới × f mới · kiềm hô hấp: phân biệt tự thở tốt với stress, auto-trigger."
+    }
+   ]
+  }
+ ]
+}
