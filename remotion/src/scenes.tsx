@@ -146,7 +146,7 @@ const Range: React.FC<{x: number; y: number; w: number; lo: number; hi: number; 
 };
 const Balloon: React.FC<{cx: number; cy: number; r: number; neck?: number; stroke?: number; c?: string}> = ({cx, cy, r, neck = 16, stroke = 2, c = '#FFD1DC'}) => (
   <g>
-    <rect x={cx - neck / 2} y={cy - r - 90} width={neck} height={92} rx={neck / 2} fill="#C9D6EA" />
+    <rect x={cx - neck / 2} y={cy - r - 40} width={neck} height={42} rx={neck / 2} fill="#C9D6EA" />
     <circle cx={cx} cy={cy} r={r} fill="url(#lung)" stroke={c} strokeWidth={stroke} />
   </g>
 );
@@ -192,18 +192,16 @@ const S1: React.FC<P> = ({S}) => {
       {cards.map((x, i) => (
         <Glass key={i} x={80 + i * 600} y={150} w={560} h={520} a={ap(t, st(S, 0) + 0.5 * i)} border={x.c}>
           <div style={{fontSize: 40, fontWeight: 800, color: x.c, textAlign: 'center'}}>{x.h}</div>
-          <div style={{height: 200}} />
+          <div style={{height: 196}} />
+          <div style={{fontSize: 22, color: C.muted, textAlign: 'center', marginBottom: 12}}>{['nở bình thường', 'khó nở', 'khí khó ra'][i]}</div>
           <div style={{fontSize: 27, lineHeight: 1.45, fontWeight: 500, opacity: ap(t, st(S, i + 1))}}>{x.l}</div>
         </Glass>
       ))}
       <Svg>
         <g opacity={ap(t, st(S, 0))}>
-          <Balloon cx={360} cy={330} r={52 + 22 * k} />
-          <Balloon cx={960} cy={330} r={46 + 6 * k} stroke={8} c={C.blue} />
-          <Balloon cx={1560} cy={330} r={66 + 12 * (1 - Math.exp(-3 * k))} neck={6} />
-          <Label x={360} y={448} c={C.muted} s={22}>nở bình thường</Label>
-          <Label x={960} y={448} c={C.muted} s={22}>khó nở</Label>
-          <Label x={1560} y={448} c={C.muted} s={22}>khí khó ra</Label>
+          <Balloon cx={360} cy={325} r={52 + 22 * k} />
+          <Balloon cx={960} cy={325} r={46 + 6 * k} stroke={8} c={C.blue} />
+          <Balloon cx={1560} cy={325} r={66 + 12 * (1 - Math.exp(-3 * k))} neck={6} />
         </g>
       </Svg>
       {ST.map((s, i) => (
@@ -240,8 +238,8 @@ const S2: React.FC<P> = ({S}) => {
       {rows.map((r, i) => (
         <div key={i} style={{position: 'absolute', left: 970, top: 230 + i * 150, opacity: ap(t, st(S, 2) + 1.3 * i), fontFamily: FONT, color: C.txt}}>
           <div style={{position: 'absolute', left: 0, top: 0, width: 280, fontSize: 28, fontWeight: 800, color: r.c}}>{r.n}</div>
-          <div style={{position: 'absolute', left: 280, top: -6, fontSize: 40, fontWeight: 800}}>{r.vt}</div>
-          <div style={{position: 'absolute', left: 430, top: -6, fontSize: 40, fontWeight: 800, color: r.c}}>{r.f}</div>
+          <div style={{position: 'absolute', left: 280, top: -6, fontSize: 40, fontWeight: 800, whiteSpace: 'nowrap'}}>{r.vt}</div>
+          <div style={{position: 'absolute', left: 430, top: -6, fontSize: 40, fontWeight: 800, color: r.c, whiteSpace: 'nowrap'}}>{r.f}</div>
         </div>
       ))}
       <Svg>
@@ -473,9 +471,9 @@ const S8: React.FC<P> = ({S}) => {
       <Glass x={980} y={150} w={860} h={415} a={ap(t, st(S, 2))} border={C.oxy}>
         <div style={{fontSize: 28, fontWeight: 800, color: C.oxy}}>Mục tiêu khí máu</div>
       </Glass>
-      <Range x={1020} y={210} w={780} lo={20} hi={60} a0={35} a1={45} c={C.amber} a={ap(t, st(S, 2) + 0.6)} ticks={[20, 35, 45, 60]} label="PaCO₂ 35–45 mmHg" />
-      <Range x={1020} y={325} w={780} lo={7.2} hi={7.6} a0={7.35} a1={7.45} c={C.blue} a={ap(t, st(S, 2) + 2)} ticks={[7.2, 7.35, 7.45, 7.6]} label="pH 7,35–7,45" />
-      <Range x={1020} y={440} w={780} lo={40} hi={140} a0={70} a1={100} c={C.oxy} a={ap(t, st(S, 2) + 3.4)} ticks={[40, 70, 80, 100, 140]} label="PaO₂ 70–100 (≈ 80) mmHg" />
+      <Range x={1020} y={228} w={780} lo={20} hi={60} a0={35} a1={45} c={C.amber} a={ap(t, st(S, 2) + 0.6)} ticks={[20, 35, 45, 60]} label="PaCO₂ 35–45 mmHg" />
+      <Range x={1020} y={340} w={780} lo={7.2} hi={7.6} a0={7.35} a1={7.45} c={C.blue} a={ap(t, st(S, 2) + 2)} ticks={[7.2, 7.35, 7.45, 7.6]} label="pH 7,35–7,45" />
+      <Range x={1020} y={452} w={780} lo={40} hi={140} a0={70} a1={100} c={C.oxy} a={ap(t, st(S, 2) + 3.4)} ticks={[40, 70, 80, 100, 140]} label="PaO₂ 70–100 (≈ 80) mmHg" />
       {['PEEP 5 (≤ 10 thường an toàn)', 'Nằm đầu cao', 'Chỉnh thông khí bằng TẦN SỐ'].map((x, i) => (
         <Chip key={i} x={[80, 700, 1080][i]} y={590} w={[590, 350, 760][i]} h={80} c={C.violet} a={ap(t, st(S, 3) + i * 1.5)} s={27} bold>{x}</Chip>
       ))}
@@ -509,12 +507,12 @@ const S9: React.FC<P> = ({S}) => {
           <Wave x={120} y={320} w={940} h={330} f={(s) => bilevel(s)} lo={0} hi={16} span={8} color={C.insp} t={t} t0={st(S, 1)} base={0} fill />
           <line x1={120} x2={1060} y1={Y(12)} y2={Y(12)} stroke={C.amber} strokeWidth={2} strokeDasharray="8 8" />
           <line x1={120} x2={1060} y1={Y(4)} y2={Y(4)} stroke={C.violet} strokeWidth={2} strokeDasharray="8 8" />
-          <Label x={1068} y={Y(12) + 8} c={C.amber} s={24} anchor="start">IPAP</Label>
-          <Label x={1068} y={Y(4) + 8} c={C.violet} s={24} anchor="start">EPAP</Label>
+          <Label x={1050} y={Y(12) - 12} c={C.amber} s={24} anchor="end">IPAP</Label>
+          <Label x={1050} y={Y(4) + 34} c={C.violet} s={24} anchor="end">EPAP</Label>
         </g>
         <g opacity={a2}>
-          <path d={`M1110,${Y(12)} l14,0 l0,${Y(4) - Y(12)} l-14,0`} fill="none" stroke={C.oxy} strokeWidth={4} />
-          <Label x={1150} y={(Y(12) + Y(4)) / 2 + 30} c={C.oxy} s={26} anchor="end">PS 8</Label>
+          <path d={`M1070,${Y(12)} l14,0 l0,${Y(4) - Y(12)} l-14,0`} fill="none" stroke={C.oxy} strokeWidth={4} />
+          <Label x={1094} y={(Y(12) + Y(4)) / 2 + 9} c={C.oxy} s={26} anchor="start">PS 8</Label>
         </g>
       </Svg>
       <Card x={1220} y={260} w={620} h={440} a={a1} c={C.amber} title="Cài ban đầu" size={29}>
@@ -592,7 +590,7 @@ const S11: React.FC<P> = ({S}) => {
               <circle cx={X(k * T - 0.02)} cy={Y(fl(k * T - 0.02))} r={18} fill="none" stroke={C.red} strokeWidth={4} filter="url(#glow)" />
             </g>
           ))}
-          <Label x={X(2.2)} y={Y(-0.55)} c={C.red} s={24}>chưa về 0 đã hít vào</Label>
+          <Label x={X(4.4)} y={556} c={C.red} s={24}>○ chưa về 0 đã hít vào</Label>
         </g>
       </Svg>
       <Card x={1220} y={150} w={620} h={205} a={ap(t, st(S, 1))} c={C.amber} title="Hậu quả" size={26}>
@@ -618,9 +616,8 @@ const S12: React.FC<P> = ({S}) => {
     <g opacity={a}>
       <rect x={cx - 26 - w} y={230} width={52 + 2 * w} height={170} rx={20} fill="#C9D6EA" opacity={0.85} />
       <circle cx={cx} cy={500} r={110} fill="url(#lung)" stroke="#FFD1DC" strokeWidth={3} />
-      <Label x={cx} y={490} c="#3B0A1A" s={28}>auto-PEEP</Label>
-      <Label x={cx} y={528} c="#3B0A1A" s={32}>10</Label>
-      <Label x={cx} y={222} c={C.violet} s={26}>PEEP ngoài {peep}</Label>
+      <text x={cx} y={492} textAnchor="middle" fill="#3B0A1A" fontFamily={FONT} fontWeight={800} fontSize={28}>auto-PEEP</text>
+      <text x={cx} y={532} textAnchor="middle" fill="#3B0A1A" fontFamily={FONT} fontWeight={800} fontSize={34}>10</text>
       <rect x={cx + 200} y={640 - effort * 30} width={70} height={effort * 30} rx={10} fill={c} filter="url(#glow)" />
       <Label x={cx + 235} y={630 - effort * 30} c={c} s={36}>{effort}</Label>
       <Label x={cx + 235} y={668} c={C.muted} s={22}>lực trigger</Label>
@@ -636,7 +633,7 @@ const S12: React.FC<P> = ({S}) => {
         {panel(400, 0, 11, C.red, ap(t, st(S, 0)), 0)}
         {panel(1300, 7, 4, C.oxy, ap(t, st(S, 1)), 10 * ap(t, st(S, 1) + 2))}
         <g opacity={ap(t, st(S, 1) + 2)}>
-          <Label x={1300} y={420} c={C.oxy} s={22}>nong đường thở</Label>
+          <Label x={1250} y={330} c={C.oxy} s={24} anchor="end">nong đường thở</Label>
         </g>
       </Svg>
       <Chip x={80} y={715} w={1760} h={80} c={C.violet} a={ap(t, st(S, 2))} s={30} bold>PEEP ngoài cài THẤP HƠN auto-PEEP (VD 7 so với 10)</Chip>
@@ -805,7 +802,7 @@ const S16: React.FC<P> = ({S}) => {
         <div style={{fontSize: 26, fontWeight: 800, color: C.blue}}>Bảng FiO₂ / PEEP</div>
       </Glass>
       {[['Nhẹ', mild, '#FACC15'], ['TB/nặng', sev, C.red]].map(([n, arr, c], r) => (
-        <div key={r} style={{position: 'absolute', left: 850, top: 205 + r * 135, display: 'flex', gap: 6, fontFamily: FONT, opacity: ap(t, st(S, 1) + 1 + r * 2)}}>
+        <div key={r} style={{position: 'absolute', left: 850, top: 222 + r * 126, display: 'flex', gap: 6, fontFamily: FONT, opacity: ap(t, st(S, 1) + 1 + r * 2)}}>
           <div style={{width: 110, fontSize: 24, fontWeight: 800, color: c as string, paddingTop: 22}}>{n as string}</div>
           {(arr as string[][]).map(([f, p], i) => (
             <div key={i} style={{width: 102, height: 110, borderRadius: 12, background: 'rgba(14,26,46,0.9)', border: `1.5px solid ${c}66`, textAlign: 'center', paddingTop: 10, boxSizing: 'border-box'}}>
@@ -856,7 +853,7 @@ const S17: React.FC<P> = ({S}) => {
       <Glass x={80} y={405} w={1760} h={200} a={ap(t, st(S, 2))} border={C.amber}>
         <div style={{fontSize: 28, fontWeight: 800, color: C.amber}}>Tăng CO₂ cho phép · bảo vệ phổi</div>
       </Glass>
-      <Range x={120} y={460} w={1680} lo={7.1} hi={7.45} a0={7.2} a1={7.45} c={C.amber} a={ap(t, st(S, 2) + 1)} ticks={[7.1, 7.2, 7.25, 7.35, 7.45]} label="chấp nhận pH ≥ 7,20–7,25" />
+      <Range x={120} y={478} w={1680} lo={7.1} hi={7.45} a0={7.2} a1={7.45} c={C.amber} a={ap(t, st(S, 2) + 1)} ticks={[7.1, 7.2, 7.25, 7.35, 7.45]} label="chấp nhận pH ≥ 7,20–7,25" />
       <Chip x={80} y={630} w={860} h={100} c={C.violet} a={ap(t, st(S, 3))} s={26}>CO₂ ↑ → BN trigger nhiều → an thần / giãn cơ</Chip>
       <Chip x={980} y={630} w={860} h={100} c={C.red} a={ap(t, st(S, 3) + 3)} s={26}>pH &lt; 7,2: ↑ tần số (tránh bẫy khí) · bù bicarbonate</Chip>
       <Memo x={360} y={760} w={1200} h={135} t={t} s0={st(S, 4)} size={60}>ARDS: 6 · 30 · 88</Memo>
