@@ -168,7 +168,7 @@ const Wheel: React.FC<{cx: number; cy: number; R: number; t: number; a: number; 
         return <line key={'l' + i} x1={cx} y1={cy} x2={x} y2={y} stroke={s.c} strokeWidth={4} opacity={0.6} />;
       })}
       <circle cx={cx} cy={cy} r={R * 0.52 * pulse} fill="#2A1F55" stroke={C.violet} strokeWidth={5} filter="url(#glow)" />
-      <text x={cx} y={cy + R * 0.12} textAnchor="middle" fill={C.txt} fontFamily={FONT} fontWeight={800} fontSize={R * 0.3}>PaCO₂</text>
+      <text x={cx} y={cy + R * 0.12} textAnchor="middle" fill={C.txt} fontFamily={FONT} fontWeight={800} fontSize={R * 0.24}>PaCO₂</text>
       {SAT.map((s, i) => {
         const x = cx + Math.cos((s.ang * Math.PI) / 180) * R, y = cy + Math.sin((s.ang * Math.PI) / 180) * R;
         const aa = as ? as[i] : 1;
@@ -396,7 +396,7 @@ const S5: React.FC<P> = ({S}) => {
 // ===================== 6. Thất thoát =====================
 const S6: React.FC<P> = ({S}) => {
   const t = useT();
-  const g = geo(120, 220, 820, 400);
+  const g = geo(120, 285, 820, 370);
   const leak = (s: number) => {
     const q = ph(s, 4);
     if (q < 1.3) return q / 1.3;
@@ -553,8 +553,8 @@ const S9: React.FC<P> = ({S}) => {
       <Card x={80} y={150} w={1100} h={500} a={ap(t, st(S, 0))} c={C.insp} title={<>Ti = <span style={{color: C.amber}}>{ti.toFixed(2).replace('.', ',')} s</span> · VT ≈ <span style={{color: C.oxy}}>{vt} mL</span> (minh hoạ)</>} />
       <Svg>
         <g opacity={ap(t, st(S, 0))}>
-          <Label x={120} y={225} c={C.oxy} s={22} anchor="start">Thể tích</Label>
-          <Wave x={120} y={230} w={1020} h={160} f={vo} lo={0} hi={1.05} span={6} color={C.oxy} t={t} t0={st(S, 0)} base={0} fill />
+          <Label x={120} y={244} c={C.oxy} s={22} anchor="start">Thể tích</Label>
+          <Wave x={120} y={250} w={1020} h={140} f={vo} lo={0} hi={1.05} span={6} color={C.oxy} t={t} t0={st(S, 0)} base={0} fill />
           <Label x={120} y={445} c={C.insp} s={22} anchor="start">Lưu lượng</Label>
           <Wave x={120} y={420} w={1020} h={200} f={fl} lo={-1} hi={1.05} span={6} color={C.insp} t={t} t0={st(S, 0)} base={0} fill />
           {[0, 1].map((k) => (
@@ -663,8 +663,8 @@ const S12: React.FC<P> = ({S}) => {
       <g opacity={g}>
         {[['O₂ vào', 1, C.blue], ['CO₂ ra', k, c]].map(([n, v, cc], i) => (
           <g key={i}>
-            <rect x={x0 + 120 + i * 300} y={560 - 280 * (v as number) * a} width={150} height={280 * (v as number) * a} rx={12} fill={cc as string} />
-            <Label x={x0 + 195 + i * 300} y={545 - 280 * (v as number) * a} s={34}>{i ? String(k).replace('.', ',') : '1'}</Label>
+            <rect x={x0 + 120 + i * 300} y={560 - 210 * (v as number) * a} width={150} height={210 * (v as number) * a} rx={12} fill={cc as string} />
+            <Label x={x0 + 195 + i * 300} y={545 - 210 * (v as number) * a} s={34}>{i ? String(k).replace('.', ',') : '1'}</Label>
             <Label x={x0 + 195 + i * 300} y={600} c={C.muted} s={24}>{n as string}</Label>
           </g>
         ))}
