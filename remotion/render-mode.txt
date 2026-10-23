@@ -1,1 +1,1 @@
-wbsample-video
+labsample
