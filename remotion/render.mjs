@@ -10,7 +10,8 @@ const is3d = mode.startsWith('test3d');
 const isWB = mode.startsWith('wbsample');
 const isLab = mode.startsWith('labsample');
 const isVec = mode.startsWith('vecsample');
-const id = is3d ? 'Test3D' : isWB ? 'WBSample' : isLab ? 'LabSample' : isVec ? 'VectorSample' : 'Main';
+const isPaper = mode.startsWith('papersample');
+const id = is3d ? 'Test3D' : isWB ? 'WBSample' : isLab ? 'LabSample' : isVec ? 'VectorSample' : isPaper ? 'PaperSample' : 'Main';
 const chromiumOptions = {gl: 'swangle'};
 const serveUrl = await bundle({entryPoint: path.resolve('src/index.ts')});
 const composition = await selectComposition({serveUrl, id, chromiumOptions});
@@ -29,6 +30,16 @@ if (is3d) {
       onProgress: ({progress, renderedFrames}) => { if (renderedFrames % 30 === 0) console.log(`3d ${Math.round(progress * 100)}% ${renderedFrames}f ${((Date.now() - t0) / 1000).toFixed(0)}s`); },
     });
   }
+  console.log('done');
+  process.exit(0);
+}
+
+if (isPaper) {
+  for (const frame of [60, 270, 400, 530, 640, 700, 790]) {
+    await renderStill({composition, serveUrl, output: `out/pap_${String(frame).padStart(4, '0')}.png`, frame, chromiumOptions});
+    console.log('still', frame);
+  }
+  await renderMedia({composition, serveUrl, codec: 'h264', crf: 22, pixelFormat: 'yuv420p', outputLocation: 'out/paper_sample.mp4', concurrency: 4, chromiumOptions});
   console.log('done');
   process.exit(0);
 }
