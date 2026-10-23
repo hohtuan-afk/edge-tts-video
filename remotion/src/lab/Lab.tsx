@@ -6,7 +6,7 @@ import {fade} from '@remotion/transitions/fade';
 import {slide} from '@remotion/transitions/slide';
 import {noise2D} from '@remotion/noise';
 import {loadFont} from '@remotion/google-fonts/JetBrainsMono';
-import {FONT, useT} from '../lib';
+import {FONT, useT, CapCtx} from '../lib';
 import {ecgAt, beatV, tracePts, STAGE, INFERIOR, LAYOUT, Lead} from './ecg';
 
 const {fontFamily: MONO} = loadFont('normal', {weights: ['400', '700'], subsets: ['latin']});
@@ -22,7 +22,7 @@ const Svg: React.FC<{children: React.ReactNode; vb?: string; style?: React.CSSPr
     {children}
   </svg>
 );
-const Cap: React.FC<{text: string; light?: boolean}> = ({text, light}) => (
+const Cap: React.FC<{text: string; light?: boolean}> = ({text, light}) => !React.useContext(CapCtx) ? null : (
   <div style={{position: 'absolute', left: 0, right: 0, bottom: 30, display: 'flex', justifyContent: 'center'}}>
     <div style={{maxWidth: 1500, padding: '12px 32px', borderRadius: 16, background: light ? 'rgba(20,24,30,0.86)' : 'rgba(0,0,0,0.75)', border: '1px solid rgba(255,255,255,0.15)', fontFamily: FONT, fontSize: 32, fontWeight: 500, color: '#F1F5F9', textAlign: 'center'}}>{text}</div>
   </div>

@@ -1,0 +1,127 @@
+[
+ {
+  "orig": 9.0,
+  "dur": 12.2,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 4.324,
+    "text": "Nam 58 tuổi · đau ngực trái 30 phút · vã mồ hôi."
+   },
+   {
+    "start": 5.574,
+    "dur": 5.314,
+    "text": "Trên monitor, ST ở chuyển đạo II chênh lên dần — máy báo động."
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 18.32,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 4.547,
+    "text": "Dòng tổn thương = một vector, chỉ về phía vùng cơ tim thiếu máu."
+   },
+   {
+    "start": 5.797,
+    "dur": 7.25,
+    "text": "Vector xoay về thành dưới: II, III, aVF chênh lên · aVL, I chênh xuống."
+   },
+   {
+    "start": 13.597,
+    "dur": 3.442,
+    "text": "III chênh cao nhất → gợi ý tắc động mạch vành phải (RCA)."
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 18.04,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 5.513,
+    "text": "Chiếu lên III: cùng hướng → hình chiếu dương → ST chênh LÊN."
+   },
+   {
+    "start": 6.763,
+    "dur": 4.982,
+    "text": "Chiếu lên aVL: ngược hướng → hình chiếu âm → ST chênh XUỐNG."
+   },
+   {
+    "start": 12.295,
+    "dur": 4.462,
+    "text": "Soi gương = cùng một vector, nhìn từ phía đối diện."
+   }
+  ]
+ },
+ {
+  "orig": 21.0,
+  "dur": 24.0,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 4.714,
+    "text": "Có khi KHÔNG có ST chênh lên — nhưng vẫn là tắc mạch cấp."
+   },
+   {
+    "start": 5.964,
+    "dur": 1.537,
+    "text": "Phóng to V3:"
+   },
+   {
+    "start": 8.051,
+    "dur": 2.816,
+    "text": "① J chênh xuống, ST đi lên dốc"
+   },
+   {
+    "start": 11.417,
+    "dur": 2.246,
+    "text": "② T cao, nhọn, đối xứng"
+   },
+   {
+    "start": 14.213,
+    "dur": 1.582,
+    "text": "③ aVR chênh lên nhẹ"
+   },
+   {
+    "start": 16.345,
+    "dur": 6.358,
+    "text": "de Winter = tương đương STEMI → tắc LAD đoạn gần."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 24.96,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 5.494,
+    "text": "V1–V3: ST chênh xuống nằm ngang · R cao · T dương."
+   },
+   {
+    "start": 6.744,
+    "dur": 2.268,
+    "text": "Đừng vội nghĩ “thiếu máu dưới nội mạc”!"
+   },
+   {
+    "start": 9.562,
+    "dur": 3.34,
+    "text": "Lật ngược dải ECG — như nhìn từ phía sau lưng."
+   },
+   {
+    "start": 13.452,
+    "dur": 4.687,
+    "text": "Hình soi gương: ST chênh lên + sóng Q → NMCT thành sau."
+   },
+   {
+    "start": 18.689,
+    "dur": 4.977,
+    "text": "Gắn V7–V9: ST chênh lên ≥ 0,5 mm để xác nhận."
+   }
+  ]
+ }
+]

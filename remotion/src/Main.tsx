@@ -36,7 +36,7 @@ const SceneWrap: React.FC<{dur: number; children: React.ReactNode; last: boolean
   return <AbsoluteFill style={{opacity: Math.min(fin, fout), transform: `scale(${1.015 - 0.015 * fin})`}}>{children}</AbsoluteFill>;
 };
 
-const Caption: React.FC = () => {
+export const Caption: React.FC = () => {
   const f = useCurrentFrame();
   const sc = data.scenes.find((s) => f >= s.from && f < s.from + s.dur);
   if (!sc) return null;
@@ -65,7 +65,7 @@ const Caption: React.FC = () => {
   );
 };
 
-const Progress: React.FC = () => {
+export const Progress: React.FC = () => {
   const f = useCurrentFrame();
   return (
     <div

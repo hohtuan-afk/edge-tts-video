@@ -1,7 +1,7 @@
 // "Phòng vector" kiểu hình hoá khái niệm (3Blue1Brown): dòng tổn thương chiếu lên trục chuyển đạo
 import React from 'react';
 import {AbsoluteFill, Sequence, interpolate, Easing, useCurrentFrame} from 'remotion';
-import {FONT, useT} from '../lib';
+import {FONT, useT, CapCtx} from '../lib';
 import {ecgAt, Lead} from './ecg';
 import {MonitorScene, MONO} from './Lab';
 
@@ -29,7 +29,7 @@ const Room: React.FC<{children: React.ReactNode; html?: React.ReactNode}> = ({ch
     {html}
   </AbsoluteFill>
 );
-const Cap: React.FC<{text: string; a?: number}> = ({text, a = 1}) => (
+const Cap: React.FC<{text: string; a?: number}> = ({text, a = 1}) => !React.useContext(CapCtx) ? null : (
   <div style={{position: 'absolute', left: 0, right: 0, bottom: 30, display: 'flex', justifyContent: 'center', opacity: a}}>
     <div style={{maxWidth: 1500, padding: '12px 32px', borderRadius: 14, background: 'rgba(0,0,0,0.72)', border: '1px solid rgba(255,255,255,0.12)', fontFamily: FONT, fontSize: 32, fontWeight: 500, color: V.txt, textAlign: 'center'}}>{text}</div>
   </div>
@@ -207,3 +207,5 @@ export const VectorSample: React.FC = () => (
   </AbsoluteFill>
 );
 export const VEC_DUR = 885;
+
+export {V2 as VecRotate, V3 as VecProject};

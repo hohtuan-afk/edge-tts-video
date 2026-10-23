@@ -2,7 +2,7 @@
 import React from 'react';
 import {AbsoluteFill, Sequence, interpolate, Easing, useCurrentFrame} from 'remotion';
 import {noise2D} from '@remotion/noise';
-import {FONT, useT} from '../lib';
+import {FONT, useT, CapCtx} from '../lib';
 import {beatV, tracePts, LAYOUT, Lead} from './ecg';
 import {MONO} from './Lab';
 
@@ -77,7 +77,7 @@ const Desk: React.FC<{children: React.ReactNode}> = ({children}) => (
     {children}
   </AbsoluteFill>
 );
-const Cap: React.FC<{text: string}> = ({text}) => (
+const Cap: React.FC<{text: string}> = ({text}) => !React.useContext(CapCtx) ? null : (
   <div style={{position: 'absolute', left: 0, right: 0, bottom: 30, display: 'flex', justifyContent: 'center'}}>
     <div style={{maxWidth: 1500, padding: '12px 32px', borderRadius: 16, background: 'rgba(20,24,30,0.88)', border: '1px solid rgba(255,255,255,0.15)', fontFamily: FONT, fontSize: 32, fontWeight: 500, color: '#F1F5F9', textAlign: 'center'}}>{text}</div>
   </div>
@@ -229,3 +229,5 @@ export const PaperSample: React.FC = () => (
   </AbsoluteFill>
 );
 export const PAPER_DUR = 810;
+
+export {A1 as PaperAnterior, A2 as PaperDeWinter, A3 as PaperPosterior};

@@ -11,7 +11,8 @@ const isWB = mode.startsWith('wbsample');
 const isLab = mode.startsWith('labsample');
 const isVec = mode.startsWith('vecsample');
 const isPaper = mode.startsWith('papersample');
-const id = is3d ? 'Test3D' : isWB ? 'WBSample' : isLab ? 'LabSample' : isVec ? 'VectorSample' : isPaper ? 'PaperSample' : 'Main';
+const isDemo = mode.startsWith('demo');
+const id = isDemo ? 'Demo' : is3d ? 'Test3D' : isWB ? 'WBSample' : isLab ? 'LabSample' : isVec ? 'VectorSample' : isPaper ? 'PaperSample' : 'Main';
 const chromiumOptions = {gl: 'swangle'};
 const serveUrl = await bundle({entryPoint: path.resolve('src/index.ts')});
 const composition = await selectComposition({serveUrl, id, chromiumOptions});
@@ -30,6 +31,12 @@ if (is3d) {
       onProgress: ({progress, renderedFrames}) => { if (renderedFrames % 30 === 0) console.log(`3d ${Math.round(progress * 100)}% ${renderedFrames}f ${((Date.now() - t0) / 1000).toFixed(0)}s`); },
     });
   }
+  console.log('done');
+  process.exit(0);
+}
+
+if (isDemo) {
+  await renderMedia({composition, serveUrl, codec: 'h264', audioCodec: 'aac', crf: 22, pixelFormat: 'yuv420p', outputLocation: 'out/demo.mp4', concurrency: 4, chromiumOptions});
   console.log('done');
   process.exit(0);
 }

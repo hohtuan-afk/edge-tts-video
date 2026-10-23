@@ -31,10 +31,24 @@ export const STN = ['ĐIỆN', 'KHÍ', 'DÂY', 'ẨM', 'LỌC', 'ĐO', 'PHUN'];
 export const STN_COL = [C.amber, C.oxy, C.blue, '#38BDF8', C.red, C.violet, '#FB923C'];
 
 // ---------- thời gian ----------
+// Bản đồ thời gian: [giây thật, giây hoạt hình] — kéo giãn hoạt hình cho khớp lời đọc
+export const TimeMap = React.createContext<[number, number][] | null>(null);
+export const CapCtx = React.createContext(true);
 export const useT = () => {
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
-  return f / fps;
+  const m = React.useContext(TimeMap);
+  const r = f / fps;
+  if (!m || m.length === 0) return r;
+  if (r <= m[0][0]) return m[0][1] - (m[0][0] - r);
+  for (let i = 1; i < m.length; i++) {
+    if (r <= m[i][0]) {
+      const [r0, a0] = m[i - 1], [r1, a1] = m[i];
+      return a0 + ((r - r0) / Math.max(1e-6, r1 - r0)) * (a1 - a0);
+    }
+  }
+  const [rl, al] = m[m.length - 1];
+  return al + (r - rl);
 };
 export const ap = (t: number, s: number, d = 0.7) =>
   interpolate(t, [s, s + d], [0, 1], {
