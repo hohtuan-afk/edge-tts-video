@@ -67,7 +67,7 @@ export const TableHand: React.FC = () => {
           {ROWS.map((_, i) => {
             const k = dp(t, rowStart(i) + 2.2, 0.35);
             if (k <= 0) return null;
-            const x = 14, y = rowY(i) + RH / 2;
+            const x = 8, y = rowY(i) + RH / 2 + 4;
             return <RPath key={'ck' + i} d={`M${x},${y} L${x + 9},${y + 12} L${x + 26},${y - 16}`} stroke={P.pen} sw={4} rough={0.9} seed={40 + i} prog={k} />;
           })}
           {/* khoanh soi gương thành sau */}
@@ -91,7 +91,7 @@ export const TableHand: React.FC = () => {
           return cells.map((txt, j) => {
             const a = ap(t, s0 + 0.2 + j * 0.25, 0.45);
             return (
-              <div key={i + '-' + j} style={{position: 'absolute', left: colX[j], top: rowY(i) + 32, width: COLS[j].w - 18, fontFamily: j === 1 ? MONO : FONT, fontSize: j === 0 ? 34 : j === 1 ? 27 : 26, fontWeight: j === 0 || j === 1 ? 800 : 600, color: j === 0 ? r.c : P.ink, opacity: a, transform: `translateY(${(1 - a) * 8}px)`, whiteSpace: 'nowrap'}}>{txt}</div>
+              <div key={i + '-' + j} style={{position: 'absolute', left: colX[j] + (j === 0 ? 16 : 0), top: rowY(i) + 32, width: COLS[j].w - 18, fontFamily: j === 1 ? MONO : FONT, fontSize: j === 0 ? 34 : j === 1 ? 27 : 26, fontWeight: j === 0 || j === 1 ? 800 : 600, color: j === 0 ? r.c : P.ink, opacity: a, transform: `translateY(${(1 - a) * 8}px)`, whiteSpace: 'nowrap'}}>{txt}</div>
             );
           });
         })}

@@ -38,7 +38,7 @@ if (is3d) {
 }
 
 if (isTH) {
-  for (const frame of [80, 150, 250, 330, 410, 490, 600]) {
+  for (const frame of [80, 150, 250, 330, 410, 490]) {
     await renderStill({composition, serveUrl, output: `out/th_${String(frame).padStart(4, '0')}.png`, frame, chromiumOptions});
     console.log('still', frame);
   }
