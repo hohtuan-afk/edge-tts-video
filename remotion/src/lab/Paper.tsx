@@ -181,7 +181,7 @@ const A3: React.FC = () => {
   const t = useT();
   const flip = interpolate(t, [3.4, 4.8], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: sm});
   const sy = Math.cos(flip * Math.PI);
-  const W0 = 1500, H0 = 420, mm = 10, pxs = 25 * mm, pxmv = 10 * mm, y0 = 230;
+  const W0 = 1500, H0 = 440, mm = 10, pxs = 25 * mm, pxmv = 16 * mm, y0 = 270;
   const g: React.ReactNode[] = [];
   for (let i = 0; i <= W0 / mm; i++) g.push(<line key={'v' + i} x1={i * mm} x2={i * mm} y1={0} y2={H0} stroke={i % 5 ? P.minor : P.major} strokeWidth={i % 5 ? 0.8 : 1.6} />);
   for (let j = 0; j <= H0 / mm; j++) g.push(<line key={'h' + j} x1={0} x2={W0} y1={j * mm} y2={j * mm} stroke={j % 5 ? P.minor : P.major} strokeWidth={j % 5 ? 0.8 : 1.6} />);
