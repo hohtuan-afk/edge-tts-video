@@ -1,7 +1,7 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "-5%",
- "pitch": "+0Hz",
+ "rate": "+8%",
+ "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
@@ -9,7 +9,7 @@
   },
   {
    "id": "00-1",
-   "text": "Trên màn hình theo dõi, đoạn ST ở chuyển đạo hai chênh lên dần, và máy bắt đầu báo động."
+   "text": "Trên màn hình theo dõi, đoạn ét tê ở chuyển đạo hai chênh lên dần, và máy bắt đầu báo động."
   },
   {
    "id": "01-0",
@@ -25,11 +25,11 @@
   },
   {
    "id": "02-0",
-   "text": "Chiếu mũi tên lên trục chuyển đạo ba: cùng hướng, hình chiếu dương, nên ST chênh lên."
+   "text": "Chiếu mũi tên lên trục chuyển đạo ba: cùng hướng, hình chiếu dương, nên ét tê chênh lên."
   },
   {
    "id": "02-1",
-   "text": "Chiếu lên trục a-vê-lờ: ngược hướng, hình chiếu âm, nên ST chênh xuống."
+   "text": "Chiếu lên trục a-vê-lờ: ngược hướng, hình chiếu âm, nên ét tê chênh xuống."
   },
   {
    "id": "02-2",
@@ -37,7 +37,7 @@
   },
   {
    "id": "03-0",
-   "text": "Có khi điện tâm đồ không hề có ST chênh lên, nhưng bệnh nhân vẫn đang tắc mạch cấp."
+   "text": "Có khi điện tâm đồ không hề có ét tê chênh lên, nhưng bệnh nhân vẫn đang tắc mạch cấp."
   },
   {
    "id": "03-1",
@@ -45,7 +45,7 @@
   },
   {
    "id": "03-2",
-   "text": "Điểm J chênh xuống, đoạn ST đi lên dốc,"
+   "text": "Điểm J chênh xuống, đoạn ét tê đi lên dốc,"
   },
   {
    "id": "03-3",
@@ -57,11 +57,11 @@
   },
   {
    "id": "03-5",
-   "text": "Đây là sóng đơ Uyn-tơ, tương đương nhồi máu cơ tim ST chênh lên, do tắc động mạch liên thất trước đoạn gần."
+   "text": "Đây là sóng đơ Uyn-tơ, tương đương nhồi máu cơ tim ét tê chênh lên, do tắc động mạch liên thất trước đoạn gần."
   },
   {
    "id": "04-0",
-   "text": "Ở vê một đến vê ba, ST chênh xuống nằm ngang, sóng R cao, sóng T dương."
+   "text": "Ở vê một đến vê ba, ét tê chênh xuống nằm ngang, sóng R cao, sóng T dương."
   },
   {
    "id": "04-1",
@@ -73,11 +73,11 @@
   },
   {
    "id": "04-3",
-   "text": "Hình soi gương hiện ra: ST chênh lên kèm sóng Q. Đó là nhồi máu thành sau."
+   "text": "Hình soi gương hiện ra: ét tê chênh lên kèm sóng Q. Đó là nhồi máu thành sau."
   },
   {
    "id": "04-4",
-   "text": "Gắn thêm vê bảy đến vê chín để xác nhận: ST chênh lên từ không phẩy năm mi li mét."
+   "text": "Gắn thêm vê bảy đến vê chín để xác nhận: ét tê chênh lên từ không phẩy năm mi li mét."
   }
  ]
 }

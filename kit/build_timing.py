@@ -10,7 +10,10 @@ import numpy as np
 
 proj = sys.argv[1]
 audio = sys.argv[2] if len(sys.argv) > 2 else "audio"
-SR, LEAD, GAP, TAIL, FPS = 22050, 0.7, 0.55, 1.3, 25
+SR, FPS = 22050, 25
+LEAD = float(os.environ.get("LEAD", 0.7))
+GAP = float(os.environ.get("GAP", 0.55))
+TAIL = float(os.environ.get("TAIL", 1.3))
 
 spec = importlib.util.spec_from_file_location("narr", os.path.join(proj, "narr.py"))
 narr = importlib.util.module_from_spec(spec)
