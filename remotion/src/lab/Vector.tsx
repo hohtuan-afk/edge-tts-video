@@ -16,7 +16,7 @@ const LEADS: {n: string; a: number}[] = [
 const rad = (d: number) => (d * Math.PI) / 180;
 const pt = (a: number, r: number): [number, number] => [CX + Math.cos(rad(a)) * r, CY + Math.sin(rad(a)) * r];
 
-const Room: React.FC<{children: React.ReactNode}> = ({children}) => (
+const Room: React.FC<{children: React.ReactNode; html?: React.ReactNode}> = ({children, html}) => (
   <AbsoluteFill style={{background: V.bg}}>
     <AbsoluteFill style={{backgroundImage: 'linear-gradient(rgba(88,196,221,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(88,196,221,0.05) 1px, transparent 1px)', backgroundSize: '60px 60px'}} />
     <svg viewBox="0 0 1920 1080" width={1920} height={1080} style={{position: 'absolute', inset: 0}}>
@@ -26,6 +26,7 @@ const Room: React.FC<{children: React.ReactNode}> = ({children}) => (
       </defs>
       {children}
     </svg>
+    {html}
   </AbsoluteFill>
 );
 const Cap: React.FC<{text: string; a?: number}> = ({text, a = 1}) => (
@@ -95,7 +96,7 @@ const Panel: React.FC<{t: number; ang: number; mag: number; a: number}> = ({t, a
       );
     })}
     <text x={1300 + 420 + 112} y={170} textAnchor="end" fill={V.dim} fontFamily={MONO} fontSize={22}>ST (mm)</text>
-    <text x={1210} y={170} fill={V.dim} fontFamily={FONT} fontSize={24} fontWeight={600}>Mỗi chuyển đạo "nhìn" vector theo hướng của nó</text>
+    <text x={1210} y={170} fill={V.dim} fontFamily={FONT} fontSize={24} fontWeight={600}>ST tại từng chuyển đạo</text>
   </g>
 );
 
@@ -111,13 +112,12 @@ const V1: React.FC = () => {
   const shrink = ap(t, 1.6, 0.9, sm);
   const x0 = interpolate(shrink, [0, 1], [0, CX - R]), x1 = interpolate(shrink, [0, 1], [1920, CX + R]);
   return (
-    <Room>
+    <Room html={<Cap text="Đường sóng duỗi thẳng thành trục chuyển đạo I — rồi các góc nhìn khác lần lượt xuất hiện." a={ap(t, 0.3)} />}>
       {shrink < 1 && <polyline points={pts.filter((p) => {const x = +p.split(',')[0]; return x >= x0 && x <= x1;}).join(' ')} fill="none" stroke="#39FF8A" strokeWidth={4} filter="url(#gl)" opacity={1 - ap(t, 2.3, 0.3)} />}
       <Heart a={ap(t, 2.4, 0.8)} />
       <Axes t={t} s0={2.2} />
       <text x={90} y={110} fill={V.txt} fontFamily={FONT} fontSize={46} fontWeight={800} opacity={ap(t, 3.6)}>6 chuyển đạo chi = 6 "góc nhìn" quanh tim</text>
       <text x={90} y={160} fill={V.dim} fontFamily={FONT} fontSize={30} opacity={ap(t, 4.2)}>mỗi trục là hướng mà chuyển đạo đó "đứng nhìn"</text>
-      <Cap text="Đường sóng duỗi thẳng thành trục chuyển đạo I — rồi các góc nhìn khác lần lượt xuất hiện." a={ap(t, 0.3)} />
     </Room>
   );
 };
@@ -129,15 +129,14 @@ const V2: React.FC = () => {
   const mag = ap(t, 0.4, 0.8);
   const inj = ap(t, 4.6, 1);
   return (
-    <Room>
+    <Room html={<Cap text="Vector xoay về thành dưới: II, III, aVF chênh lên — aVL và I chênh xuống. III cao nhất → nghĩ RCA." a={ap(t, 5.4)} />}>
       <Heart a={1} inj={inj} />
       <Axes t={t + 10} s0={0} />
       <Arrow a={ang} len={250 * mag} />
       <text x={90} y={110} fill={V.yel} fontFamily={FONT} fontSize={46} fontWeight={800} opacity={ap(t, 0.3)}>Vector tổn thương: chỉ VỀ PHÍA vùng thiếu máu</text>
-      <text x={CX} y={CY + 230} textAnchor="middle" fill={V.red} fontFamily={FONT} fontSize={30} fontWeight={700} opacity={inj}>thành dưới bị tổn thương</text>
+      <text x={90} y={CY + 300} fill={V.red} fontFamily={FONT} fontSize={30} fontWeight={700} opacity={inj}>● vùng thành dưới thiếu máu</text>
       <text x={90} y={1000 - 120} fill={V.dim} fontFamily={MONO} fontSize={28} opacity={ap(t, 0.8)}>góc vector = {Math.round(ang)}°</text>
       <Panel t={t} ang={ang} mag={mag} a={ap(t, 0.6)} />
-      <Cap text="Vector xoay về thành dưới: II, III, aVF chênh lên — aVL và I chênh xuống. III cao nhất → nghĩ RCA." a={ap(t, 5.4)} />
     </Room>
   );
 };
@@ -152,7 +151,20 @@ const V3: React.FC = () => {
   const k3 = ap(t, 0.8, 0.9, sm), kL = ap(t, 3.6, 0.9, sm);
   const [a3x, a3y] = pt(120, p3), [aLx, aLy] = pt(-30, pL);
   return (
-    <Room>
+    <Room html={<>
+      <div style={{position: 'absolute', left: 1180, top: 210, width: 650, opacity: ap(t, 1.6), transform: `translateY(${(1 - ap(t, 1.6)) * 20}px)`}}>
+        <div style={{fontFamily: FONT, fontSize: 30, fontWeight: 700, color: V.red}}>III — cùng hướng vector</div>
+        <div style={{fontFamily: FONT, fontSize: 56, fontWeight: 800, color: V.txt, lineHeight: 1.15}}>hình chiếu DƯƠNG<br />→ ST chênh LÊN</div>
+      </div>
+      <div style={{position: 'absolute', left: 1180, top: 470, width: 650, opacity: ap(t, 4.4), transform: `translateY(${(1 - ap(t, 4.4)) * 20}px)`}}>
+        <div style={{fontFamily: FONT, fontSize: 30, fontWeight: 700, color: V.blue}}>aVL — ngược hướng vector</div>
+        <div style={{fontFamily: FONT, fontSize: 56, fontWeight: 800, color: V.txt, lineHeight: 1.15}}>hình chiếu ÂM<br />→ ST chênh XUỐNG</div>
+      </div>
+      <div style={{position: 'absolute', left: 1180, top: 740, width: 650, padding: '18px 26px', borderRadius: 16, border: `2px solid ${V.yel}`, background: 'rgba(255,224,102,0.08)', fontFamily: FONT, fontSize: 34, fontWeight: 800, color: V.yel, opacity: ap(t, 6), transform: `scale(${0.92 + 0.08 * ap(t, 6)})`}}>
+        SOI GƯƠNG = cùng một vector,<br />nhìn từ phía đối diện
+      </div>
+      <Cap text="Chiếu vector lên từng trục: cùng hướng thì chênh lên, ngược hướng thì chênh xuống — đó là soi gương." a={ap(t, 0.4)} />
+    </>}>
       <Heart a={1} inj={1} />
       <Axes t={t + 10} s0={0} hl={['III', 'aVL']} dimOthers={ap(t, 0.3)} />
       <Arrow a={ang} len={L} />
@@ -166,18 +178,6 @@ const V3: React.FC = () => {
         <line x1={tx} y1={ty} x2={tx + (aLx - tx) * kL} y2={ty + (aLy - ty) * kL} stroke={V.txt} strokeWidth={2.5} strokeDasharray="8 7" />
         <line x1={CX} y1={CY} x2={CX + (aLx - CX) * kL} y2={CY + (aLy - CY) * kL} stroke={V.blue} strokeWidth={14} strokeLinecap="round" filter="url(#gl)" opacity={0.95} />
       </g>
-      <div style={{position: 'absolute', left: 1180, top: 210, width: 650, opacity: ap(t, 1.6), transform: `translateY(${(1 - ap(t, 1.6)) * 20}px)`}}>
-        <div style={{fontFamily: FONT, fontSize: 30, fontWeight: 700, color: V.red}}>III — cùng hướng vector</div>
-        <div style={{fontFamily: FONT, fontSize: 56, fontWeight: 800, color: V.txt, lineHeight: 1.15}}>hình chiếu DƯƠNG<br />→ ST chênh LÊN</div>
-      </div>
-      <div style={{position: 'absolute', left: 1180, top: 470, width: 650, opacity: ap(t, 4.4), transform: `translateY(${(1 - ap(t, 4.4)) * 20}px)`}}>
-        <div style={{fontFamily: FONT, fontSize: 30, fontWeight: 700, color: V.blue}}>aVL — ngược hướng vector</div>
-        <div style={{fontFamily: FONT, fontSize: 56, fontWeight: 800, color: V.txt, lineHeight: 1.15}}>hình chiếu ÂM<br />→ ST chênh XUỐNG</div>
-      </div>
-      <div style={{position: 'absolute', left: 1180, top: 740, width: 650, padding: '18px 26px', borderRadius: 16, border: `2px solid ${V.yel}`, background: 'rgba(255,224,102,0.08)', fontFamily: FONT, fontSize: 34, fontWeight: 800, color: V.yel, opacity: ap(t, 6), transform: `scale(${0.92 + 0.08 * ap(t, 6)})`}}>
-        SOI GƯƠNG = cùng một vector,<br />nhìn từ phía đối diện
-      </div>
-      <Cap text="Chiếu vector lên từng trục: cùng hướng thì chênh lên, ngược hướng thì chênh xuống — đó là soi gương." a={ap(t, 0.4)} />
     </Room>
   );
 };
