@@ -37,7 +37,7 @@ if (mode === 'video') {
     serveUrl,
     codec: 'h264',
     audioCodec: 'aac',
-    crf: 18,
+    crf: 22,
     pixelFormat: 'yuv420p',
     outputLocation: 'out/video.mp4',
     concurrency: 4,
