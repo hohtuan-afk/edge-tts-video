@@ -285,3 +285,4 @@ export const LabSample: React.FC = () => (
   </AbsoluteFill>
 );
 export const LAB_DUR = 210 + 180 + 240 + 200 - 18 - 24 - 20;
+export {S1 as MonitorScene, M as MCOL, MONO};
