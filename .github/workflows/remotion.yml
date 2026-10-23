@@ -32,8 +32,11 @@ jobs:
         run: |
           MODE=$(cat render-mode.txt 2>/dev/null || echo stills)
           echo "mode=$MODE"
-          node render.mjs "$MODE"
+          mkdir -p out
+          set -o pipefail
+          node render.mjs "$MODE" 2>&1 | tee out/render-log.txt
       - name: Publish output to branch 'renders'
+        if: always()
         run: |
           cd out
           git init -q
