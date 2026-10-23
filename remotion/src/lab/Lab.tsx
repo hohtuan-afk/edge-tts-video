@@ -29,17 +29,18 @@ const Cap: React.FC<{text: string; light?: boolean}> = ({text, light}) => (
 );
 
 // ---------- MONITOR ----------
-const Bezel: React.FC<{t: number; alarm?: number; children: React.ReactNode}> = ({t, alarm = 0, children}) => {
+const Bezel: React.FC<{t: number; alarm?: number; cap?: string; children: React.ReactNode}> = ({t, alarm = 0, cap, children}) => {
   const flick = 0.035 + 0.02 * noise2D('f', t * 3, 0);
   const pulse = alarm * (0.5 + 0.5 * Math.sin(t * 9));
   return (
     <AbsoluteFill style={{background: 'radial-gradient(circle at 50% 40%, #121a22, #05080c 70%)'}}>
-      <div style={{position: 'absolute', left: 90, top: 70, width: 1740, height: 820, borderRadius: 34, background: `linear-gradient(160deg, #2a323c, ${M.bez})`, boxShadow: '0 30px 80px rgba(0,0,0,0.7), inset 0 2px 0 rgba(255,255,255,0.08)'}} />
-      <div style={{position: 'absolute', left: 120, top: 100, width: 1680, height: 760, borderRadius: 14, background: M.scr, overflow: 'hidden', boxShadow: `inset 0 0 0 3px ${pulse > 0.01 ? `rgba(255,77,77,${0.4 + 0.6 * pulse})` : '#0c1410'}, inset 0 0 80px rgba(0,0,0,0.9)`}}>
+      <div style={{position: 'absolute', left: 90, top: 40, width: 1740, height: 840, borderRadius: 34, background: `linear-gradient(160deg, #2a323c, ${M.bez})`, boxShadow: '0 30px 80px rgba(0,0,0,0.7), inset 0 2px 0 rgba(255,255,255,0.08)'}} />
+      <div style={{position: 'absolute', left: 120, top: 66, width: 1680, height: 780, borderRadius: 14, background: M.scr, overflow: 'hidden', boxShadow: `inset 0 0 0 3px ${pulse > 0.01 ? `rgba(255,77,77,${0.4 + 0.6 * pulse})` : '#0c1410'}, inset 0 0 80px rgba(0,0,0,0.9)`}}>
         {children}
         <div style={{position: 'absolute', inset: 0, background: 'repeating-linear-gradient(0deg, rgba(255,255,255,0.025) 0px, rgba(255,255,255,0.025) 1px, transparent 1px, transparent 4px)', pointerEvents: 'none'}} />
         <div style={{position: 'absolute', inset: 0, background: `rgba(120,255,170,${flick})`, mixBlendMode: 'screen', pointerEvents: 'none'}} />
       </div>
+      {cap && <Cap text={cap} />}
     </AbsoluteFill>
   );
 };
@@ -83,7 +84,7 @@ const S1: React.FC = () => {
   const stNow = stAt(t) * 10;
   const alarm = stNow >= 1 ? 1 : 0;
   return (
-    <Bezel t={t} alarm={alarm}>
+    <Bezel t={t} alarm={alarm} cap="Trên monitor, đoạn ST ở chuyển đạo hai chênh lên dần — máy báo động. Đã đến lúc làm ECG 12 chuyển đạo.">
       <div style={{position: 'absolute', left: 30, top: 18, right: 30, display: 'flex', justifyContent: 'space-between', fontFamily: MONO, fontSize: 24, color: M.dim}}>
         <span>GIƯỜNG 4 · HỒI SỨC · ADULT</span><span>21:14</span>
       </div>
@@ -106,11 +107,10 @@ const S1: React.FC = () => {
         <div style={{fontSize: 56, fontWeight: 700}}>128/76</div>
       </div>
       {alarm > 0 && (
-        <div style={{position: 'absolute', left: 430, top: 92, padding: '8px 26px', borderRadius: 8, background: Math.sin(t * 9) > 0 ? M.r : '#7a1d1d', color: '#fff', fontFamily: MONO, fontSize: 30, fontWeight: 700, letterSpacing: 1}}>
+        <div style={{position: 'absolute', left: 760, top: 12, padding: '6px 24px', borderRadius: 8, background: Math.sin(t * 9) > 0 ? M.r : '#7a1d1d', color: '#fff', fontFamily: MONO, fontSize: 30, fontWeight: 700, letterSpacing: 1}}>
           ⚠ ST ↑ II  {(stNow >= 0 ? '+' : '') + stNow.toFixed(1)} mm
         </div>
       )}
-      <Cap text="Trên monitor, đoạn ST ở chuyển đạo hai chênh lên dần — máy báo động. Đã đến lúc làm ECG 12 chuyển đạo." />
     </Bezel>
   );
 };
@@ -126,7 +126,7 @@ const S2: React.FC = () => {
   ];
   const press = ap(t, 4.6, 0.25) * (1 - ap(t, 4.9, 0.3));
   return (
-    <Bezel t={t}>
+    <Bezel t={t} cap="Nhớ thứ tự: T tối cấp → ST chênh lên → sóng Q → T đảo.">
       <div style={{position: 'absolute', left: 30, top: 18, fontFamily: MONO, fontSize: 24, color: M.dim}}>TIẾN TRIỂN ECG TRONG NHỒI MÁU CƠ TIM CẤP</div>
       <Svg vb="0 0 1680 760">
         {rows.map(([, , c, L], i) => (
@@ -143,7 +143,6 @@ const S2: React.FC = () => {
         </div>
       ))}
       <div style={{position: 'absolute', right: 40, bottom: 26, padding: '12px 26px', borderRadius: 10, border: `2px solid ${M.g}`, color: M.g, fontFamily: MONO, fontSize: 26, fontWeight: 700, opacity: ap(t, 3.8), transform: `scale(${1 - 0.08 * press})`, background: press > 0.1 ? 'rgba(57,255,138,0.25)' : 'transparent'}}>▶ IN ECG 12 CHUYỂN ĐẠO</div>
-      <Cap text="Nhớ thứ tự: T tối cấp → ST chênh lên → sóng Q → T đảo." />
     </Bezel>
   );
 };
@@ -202,9 +201,9 @@ const Sticky: React.FC<{x: number; y: number; a: number; c: string; rot?: number
 const S3: React.FC = () => {
   const t = useT();
   const z = ap(t, 1.6, 1.4);
-  const scale = interpolate(z, [0, 1], [1.05, 1.9]);
-  const tx = interpolate(z, [0, 1], [0, 520]);
-  const ty = interpolate(z, [0, 1], [0, -230]);
+  const scale = interpolate(z, [0, 1], [1.05, 1.6]);
+  const tx = interpolate(z, [0, 1], [0, -90]);
+  const ty = interpolate(z, [0, 1], [0, -300]);
   return (
     <Desk>
       <div style={{position: 'absolute', left: 210, top: 150, width: 1500, height: 760, transform: `translate(${tx}px, ${ty}px) scale(${scale}) rotate(-1.2deg)`, transformOrigin: '0 0', boxShadow: '0 30px 60px rgba(0,0,0,0.45)'}}>
