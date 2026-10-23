@@ -253,11 +253,11 @@ const S2: React.FC<P> = ({S}) => {
           {leaves.map((_, i) => <path key={i} d={`M800,655 C850,655 850,${505 + i * 82} 900,${505 + i * 82}`} stroke={STN_COL[2]} strokeWidth={3} fill="none" opacity={0.7} />)}
         </g>
         <g opacity={ap(t, st(S, 1))}>
-          <circle cx={1080} cy={270} r={95} fill="#3B82F6" opacity={0.85} stroke="#93C5FD" strokeWidth={3} />
-          <text x={1080} y={282} textAnchor="middle" fill="#fff" fontFamily={FONT} fontWeight={800} fontSize={32}>PAO₂</text>
-          <path d="M930,400 Q1080,470 1230,400" stroke={C.red} strokeWidth={22} fill="none" strokeLinecap="round" />
-          <Label x={1080} y={455} c={C.red} s={24}>PaO₂</Label>
-          {dots.map((p, i) => <circle key={i} cx={1040 + i * 20} cy={350 + p * 60} r={7} fill={C.insp} opacity={1 - p} filter="url(#glow)" />)}
+          <circle cx={1080} cy={235} r={90} fill="#3B82F6" opacity={0.85} stroke="#93C5FD" strokeWidth={3} />
+          <text x={1080} y={247} textAnchor="middle" fill="#fff" fontFamily={FONT} fontWeight={800} fontSize={32}>PAO₂</text>
+          <path d="M930,360 Q1080,420 1230,360" stroke={C.red} strokeWidth={22} fill="none" strokeLinecap="round" />
+          <Label x={1250} y={400} c={C.red} s={24} anchor="start">PaO₂</Label>
+          {dots.map((p, i) => <circle key={i} cx={1040 + i * 20} cy={325 + p * 50} r={7} fill={C.insp} opacity={1 - p} filter="url(#glow)" />)}
         </g>
         <g opacity={ap(t, st(S, 2))}>
           <ellipse cx={1560} cy={290} rx={95} ry={20 + 75 * open} fill="url(#lung)" stroke="#FFD1DC" strokeWidth={3} />
@@ -272,7 +272,7 @@ const S2: React.FC<P> = ({S}) => {
       {leaves.map((x, i) => (
         <Chip key={i} x={900} y={470 + i * 82} w={420} h={70} c={STN_COL[2]} a={ap(t, st(S, 3) + 1 + i * 1.1)} s={25}>{x}</Chip>
       ))}
-      <Memo x={1380} y={600} w={460} h={200} t={t} s0={st(S, 4)} size={44}>OXY = FiO₂ + MAP</Memo>
+      <Memo x={1360} y={600} w={480} h={200} t={t} s0={st(S, 4)} size={34}>OXY = FiO₂ + MAP</Memo>
     </AbsoluteFill>
   );
 };
@@ -636,7 +636,7 @@ const S12: React.FC<P> = ({S}) => {
             return (
               <g key={i} opacity={a}>
                 <rect x={X(pf)} y={y} width={(X(50) - X(pf)) * a} height={50} rx={10} fill="#0E1A2E" stroke={[C.oxy, '#FACC15', C.amber, C.red, C.pink][i]} strokeWidth={3} />
-                <Label x={X(pf) + 14} y={y + 34} s={23} anchor="start">{n}</Label>
+                <Label x={i >= 3 ? X(pf) - 12 : X(pf) + 14} y={y + 34} s={23} anchor={i >= 3 ? 'end' : 'start'}>{n}</Label>
               </g>
             );
           })}
@@ -660,16 +660,24 @@ const S13: React.FC<P> = ({S}) => {
       <Card x={80} y={150} w={860} h={300} a={ap(t, st(S, 0))} c={C.amber} title="Vùng phổi phía lưng được MỞ ra" />
       <Svg>
         <defs>
+          <linearGradient id="supine" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#F07A98" />
+            <stop offset="0.5" stopColor="#F07A98" />
+            <stop offset="0.56" stopColor="#5B2333" />
+            <stop offset="1" stopColor="#5B2333" />
+          </linearGradient>
           <linearGradient id="dorsal" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0" stopColor="#F07A98" />
-            <stop offset={0.55 + 0.4 * k} stopColor="#F07A98" />
-            <stop offset={0.6 + 0.4 * k} stopColor="#5B2333" />
+            <stop offset={0.5 + 0.44 * k} stopColor="#F07A98" />
+            <stop offset={0.56 + 0.44 * k} stopColor="#5B2333" />
             <stop offset="1" stopColor="#5B2333" />
           </linearGradient>
         </defs>
         <g opacity={ap(t, st(S, 0))}>
-          {[300, 720].map((cx, i) => <ellipse key={i} cx={cx} cy={330} rx={150} ry={95} fill="url(#dorsal)" stroke="#FFD1DC" strokeWidth={3} />)}
-          <Label x={510} y={430} c={C.muted} s={22}>vùng lưng xẹp → mở dần khi nằm sấp</Label>
+          <ellipse cx={300} cy={310} rx={150} ry={80} fill="url(#supine)" stroke="#FFD1DC" strokeWidth={3} />
+          <ellipse cx={720} cy={310} rx={150} ry={80} fill="url(#dorsal)" stroke="#FFD1DC" strokeWidth={3} />
+          <Label x={300} y={425} c={C.muted} s={22}>nằm ngửa: vùng lưng xẹp</Label>
+          <Label x={720} y={425} c={C.oxy} s={22}>nằm sấp: vùng lưng mở dần</Label>
         </g>
       </Svg>
       <Card x={980} y={150} w={860} h={300} a={ap(t, st(S, 0))} c={C.oxy} title="Tác dụng" size={25}>
@@ -905,8 +913,8 @@ const S18: React.FC<P> = ({S}) => {
         <g opacity={ap(t, st(S, 2))}>
           {[[37, 'ECMO', C.oxy], [53, 'Thường quy', C.red]].map(([v, n, c], i) => (
             <g key={i}>
-              <rect x={1200 + i * 300} y={570 - (v as number) * 4 * k} width={170} height={(v as number) * 4 * k} rx={10} fill={c as string} />
-              <Label x={1285 + i * 300} y={560 - (v as number) * 4 * k} s={30}>{v}%</Label>
+              <rect x={1200 + i * 300} y={570 - (v as number) * 3.1 * k} width={170} height={(v as number) * 3.1 * k} rx={10} fill={c as string} />
+              <Label x={1285 + i * 300} y={560 - (v as number) * 3.1 * k} s={30}>{v}%</Label>
               <Label x={1285 + i * 300} y={606} c={C.muted} s={20}>{n}</Label>
             </g>
           ))}
