@@ -1,128 +1,128 @@
 {
  "fps": 30,
- "total": 2926,
+ "total": 2398,
  "scenes": [
   {
    "from": 0,
-   "dur": 366,
+   "dur": 300,
    "sents": [
     {
-     "start": 0.7,
-     "dur": 4.324,
+     "start": 0.5,
+     "dur": 3.797,
      "text": "Nam 58 tuổi · đau ngực trái 30 phút · vã mồ hôi."
     },
     {
-     "start": 5.574,
-     "dur": 5.314,
+     "start": 4.597,
+     "dur": 4.514,
      "text": "Trên monitor, ST ở chuyển đạo II chênh lên dần — máy báo động."
     }
    ]
   },
   {
-   "from": 366,
-   "dur": 550,
+   "from": 300,
+   "dur": 462,
    "sents": [
     {
-     "start": 0.7,
-     "dur": 4.547,
+     "start": 0.5,
+     "dur": 4.001,
      "text": "Dòng tổn thương = một vector, chỉ về phía vùng cơ tim thiếu máu."
     },
     {
-     "start": 5.797,
-     "dur": 7.25,
+     "start": 4.801,
+     "dur": 6.376,
      "text": "Vector xoay về thành dưới: II, III, aVF chênh lên · aVL, I chênh xuống."
     },
     {
-     "start": 13.597,
-     "dur": 3.442,
+     "start": 11.477,
+     "dur": 3.03,
      "text": "III chênh cao nhất → gợi ý tắc động mạch vành phải (RCA)."
     }
    ]
   },
   {
-   "from": 916,
-   "dur": 541,
+   "from": 762,
+   "dur": 444,
    "sents": [
     {
-     "start": 0.7,
-     "dur": 5.513,
+     "start": 0.5,
+     "dur": 4.656,
      "text": "Chiếu lên III: cùng hướng → hình chiếu dương → ST chênh LÊN."
     },
     {
-     "start": 6.763,
-     "dur": 4.982,
+     "start": 5.456,
+     "dur": 4.212,
      "text": "Chiếu lên aVL: ngược hướng → hình chiếu âm → ST chênh XUỐNG."
     },
     {
-     "start": 12.295,
-     "dur": 4.462,
+     "start": 9.968,
+     "dur": 3.916,
      "text": "Soi gương = cùng một vector, nhìn từ phía đối diện."
     }
    ]
   },
   {
-   "from": 1457,
-   "dur": 720,
+   "from": 1206,
+   "dur": 582,
    "sents": [
     {
-     "start": 0.7,
-     "dur": 4.714,
+     "start": 0.5,
+     "dur": 4.009,
      "text": "Có khi KHÔNG có ST chênh lên — nhưng vẫn là tắc mạch cấp."
     },
     {
-     "start": 5.964,
-     "dur": 1.537,
+     "start": 4.809,
+     "dur": 1.347,
      "text": "Phóng to V3:"
     },
     {
-     "start": 8.051,
-     "dur": 2.816,
+     "start": 6.456,
+     "dur": 2.273,
      "text": "① J chênh xuống, ST đi lên dốc"
     },
     {
-     "start": 11.417,
-     "dur": 2.246,
+     "start": 9.029,
+     "dur": 1.969,
      "text": "② T cao, nhọn, đối xứng"
     },
     {
-     "start": 14.213,
-     "dur": 1.582,
+     "start": 11.298,
+     "dur": 1.377,
      "text": "③ aVR chênh lên nhẹ"
     },
     {
-     "start": 16.345,
-     "dur": 6.358,
+     "start": 12.975,
+     "dur": 5.53,
      "text": "de Winter = tương đương STEMI → tắc LAD đoạn gần."
     }
    ]
   },
   {
-   "from": 2177,
-   "dur": 749,
+   "from": 1788,
+   "dur": 610,
    "sents": [
     {
-     "start": 0.7,
-     "dur": 5.494,
+     "start": 0.5,
+     "dur": 4.675,
      "text": "V1–V3: ST chênh xuống nằm ngang · R cao · T dương."
     },
     {
-     "start": 6.744,
-     "dur": 2.268,
+     "start": 5.475,
+     "dur": 1.988,
      "text": "Đừng vội nghĩ “thiếu máu dưới nội mạc”!"
     },
     {
-     "start": 9.562,
-     "dur": 3.34,
+     "start": 7.762,
+     "dur": 2.933,
      "text": "Lật ngược dải ECG — như nhìn từ phía sau lưng."
     },
     {
-     "start": 13.452,
-     "dur": 4.687,
+     "start": 10.995,
+     "dur": 3.917,
      "text": "Hình soi gương: ST chênh lên + sóng Q → NMCT thành sau."
     },
     {
-     "start": 18.689,
-     "dur": 4.977,
+     "start": 15.212,
+     "dur": 4.196,
      "text": "Gắn V7–V9: ST chênh lên ≥ 0,5 mm để xác nhận."
     }
    ]
