@@ -1,0 +1,52 @@
+# Bản nghe thử giọng NamMinh — ECG nhồi máu cơ tim cấp (5 cảnh mẫu)
+# Nguồn: Fourth Universal Definition of MI; LITFL ECG Library; WikEM STEMI equivalents
+# KEYS[cảnh][câu] = mốc trên hoạt hình gốc (giây) ứng với lúc câu bắt đầu
+NARR = [
+    [("Nam 58 tuổi · đau ngực trái 30 phút · vã mồ hôi.",
+      "Bệnh nhân nam năm mươi tám tuổi, đau ngực trái ba mươi phút, vã mồ hôi."),
+     ("Trên monitor, ST ở chuyển đạo II chênh lên dần — máy báo động.",
+      "Trên màn hình theo dõi, đoạn ST ở chuyển đạo hai chênh lên dần, và máy bắt đầu báo động.")],
+    [("Dòng tổn thương = một vector, chỉ về phía vùng cơ tim thiếu máu.",
+      "Hãy hình dung dòng tổn thương như một mũi tên, chỉ về phía vùng cơ tim đang thiếu máu."),
+     ("Vector xoay về thành dưới: II, III, aVF chênh lên · aVL, I chênh xuống.",
+      "Khi mũi tên xoay về thành dưới, các chuyển đạo hai, ba, a-vê-ép chênh lên, còn a-vê-lờ và chuyển đạo một chênh xuống."),
+     ("III chênh cao nhất → gợi ý tắc động mạch vành phải (RCA).",
+      "Chuyển đạo ba chênh cao nhất, gợi ý tắc động mạch vành phải.")],
+    [("Chiếu lên III: cùng hướng → hình chiếu dương → ST chênh LÊN.",
+      "Chiếu mũi tên lên trục chuyển đạo ba: cùng hướng, hình chiếu dương, nên ST chênh lên."),
+     ("Chiếu lên aVL: ngược hướng → hình chiếu âm → ST chênh XUỐNG.",
+      "Chiếu lên trục a-vê-lờ: ngược hướng, hình chiếu âm, nên ST chênh xuống."),
+     ("Soi gương = cùng một vector, nhìn từ phía đối diện.",
+      "Đó chính là hình ảnh soi gương: cùng một mũi tên, nhưng nhìn từ phía đối diện.")],
+    [("Có khi KHÔNG có ST chênh lên — nhưng vẫn là tắc mạch cấp.",
+      "Có khi điện tâm đồ không hề có ST chênh lên, nhưng bệnh nhân vẫn đang tắc mạch cấp."),
+     ("Phóng to V3:",
+      "Hãy phóng to chuyển đạo vê ba."),
+     ("① J chênh xuống, ST đi lên dốc",
+      "Điểm J chênh xuống, đoạn ST đi lên dốc,"),
+     ("② T cao, nhọn, đối xứng",
+      "sóng T cao, nhọn và đối xứng,"),
+     ("③ aVR chênh lên nhẹ",
+      "kèm a-vê-rờ chênh lên nhẹ."),
+     ("de Winter = tương đương STEMI → tắc LAD đoạn gần.",
+      "Đây là sóng đơ Uyn-tơ, tương đương nhồi máu cơ tim ST chênh lên, do tắc động mạch liên thất trước đoạn gần.")],
+    [("V1–V3: ST chênh xuống nằm ngang · R cao · T dương.",
+      "Ở vê một đến vê ba, ST chênh xuống nằm ngang, sóng R cao, sóng T dương."),
+     ("Đừng vội nghĩ “thiếu máu dưới nội mạc”!",
+      "Đừng vội nghĩ đây là thiếu máu dưới nội mạc."),
+     ("Lật ngược dải ECG — như nhìn từ phía sau lưng.",
+      "Hãy lật ngược dải điện tâm đồ, như nhìn từ phía sau lưng."),
+     ("Hình soi gương: ST chênh lên + sóng Q → NMCT thành sau.",
+      "Hình soi gương hiện ra: ST chênh lên kèm sóng Q. Đó là nhồi máu thành sau."),
+     ("Gắn V7–V9: ST chênh lên ≥ 0,5 mm để xác nhận.",
+      "Gắn thêm vê bảy đến vê chín để xác nhận: ST chênh lên từ không phẩy năm mi li mét.")],
+]
+KEYS = [
+    [0.0, 1.2],
+    [0.0, 1.2, 5.4],
+    [0.8, 3.6, 6.0],
+    [0.8, 2.4, 3.8, 4.8, 6.0, 6.8],
+    [1.0, 2.0, 3.4, 5.2, 6.4],
+]
+STEP = 3.0
+SCENE_DUR = [STEP * len(sc) + 3 for sc in NARR]

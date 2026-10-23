@@ -1,411 +1,83 @@
 {
- "voice": "vi-VN-HoaiMyNeural",
+ "voice": "vi-VN-NamMinhNeural",
  "rate": "-5%",
  "pitch": "+0Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Các nguyên tắc cải thiện ô xy hoá, ở bệnh nhân thở máy."
+   "text": "Bệnh nhân nam năm mươi tám tuổi, đau ngực trái ba mươi phút, vã mồ hôi."
+  },
+  {
+   "id": "00-1",
+   "text": "Trên màn hình theo dõi, đoạn ST ở chuyển đạo hai chênh lên dần, và máy bắt đầu báo động."
   },
   {
    "id": "01-0",
-   "text": "Thở máy có hai mục tiêu, thông khí và ô xy hoá. Bài này nói về ô xy hoá."
+   "text": "Hãy hình dung dòng tổn thương như một mũi tên, chỉ về phía vùng cơ tim đang thiếu máu."
   },
   {
    "id": "01-1",
-   "text": "Ta đánh giá bằng ô xy máu động mạch qua khí máu, và độ bão hoà ô xy theo dõi liên tục bằng máy đo qua da."
+   "text": "Khi mũi tên xoay về thành dưới, các chuyển đạo hai, ba, a-vê-ép chênh lên, còn a-vê-lờ và chuyển đạo một chênh xuống."
   },
   {
    "id": "01-2",
-   "text": "Mục tiêu tám mươi đến một trăm mi li mét thuỷ ngân cho bệnh thần kinh trung ương, ngộ độc, hậu phẫu."
-  },
-  {
-   "id": "01-3",
-   "text": "Chấp nhận thấp hơn ở hội chứng suy hô hấp cấp tiến triển, năm lăm đến tám mươi, độ bão hoà tám tám đến chín lăm, và ở trẻ sơ sinh, năm mươi đến tám mươi."
-  },
-  {
-   "id": "01-4",
-   "text": "Ghi nhớ: phổi lành tám mươi đến một trăm, suy hô hấp cấp tiến triển năm lăm đến tám mươi, sơ sinh năm mươi đến tám mươi."
+   "text": "Chuyển đạo ba chênh cao nhất, gợi ý tắc động mạch vành phải."
   },
   {
    "id": "02-0",
-   "text": "Ô xy hoá phụ thuộc hai nút chính: phần trăm ô xy khí thở vào, và áp lực trung bình đường thở."
+   "text": "Chiếu mũi tên lên trục chuyển đạo ba: cùng hướng, hình chiếu dương, nên ST chênh lên."
   },
   {
    "id": "02-1",
-   "text": "Tăng ô xy khí thở vào làm tăng ô xy trong phế nang, từ đó tăng ô xy máu."
+   "text": "Chiếu lên trục a-vê-lờ: ngược hướng, hình chiếu âm, nên ST chênh xuống."
   },
   {
    "id": "02-2",
-   "text": "Tăng áp lực trung bình đường thở giúp mở các phế nang xẹp, tăng diện tích trao đổi khí."
-  },
-  {
-   "id": "02-3",
-   "text": "Áp lực trung bình lại do năm yếu tố tạo nên: thời gian tăng áp, áp lực hít vào, thời gian hít vào, áp lực dương cuối thì thở ra, và tần số."
-  },
-  {
-   "id": "02-4",
-   "text": "Ghi nhớ: ô xy bằng phần trăm ô xy cộng áp lực trung bình đường thở."
+   "text": "Đó chính là hình ảnh soi gương: cùng một mũi tên, nhưng nhìn từ phía đối diện."
   },
   {
    "id": "03-0",
-   "text": "Trạm hai. Chỉnh bằng phần trăm ô xy khi phổi không tổn thương, như bệnh thần kinh trung ương, ngộ độc, hậu phẫu, và chỉ trong phạm vi dưới sáu mươi phần trăm."
+   "text": "Có khi điện tâm đồ không hề có ST chênh lên, nhưng bệnh nhân vẫn đang tắc mạch cấp."
   },
   {
    "id": "03-1",
-   "text": "Ngay sau cài máy, nhắm độ bão hoà chín lăm phần trăm. Mỗi lần chỉnh, thử khí máu sau mười lăm đến ba mươi phút."
+   "text": "Hãy phóng to chuyển đạo vê ba."
   },
   {
    "id": "03-2",
-   "text": "Để tránh ngộ độc ô xy, giữ dưới sáu mươi phần trăm, ô xy máu sáu mươi đến chín mươi."
+   "text": "Điểm J chênh xuống, đoạn ST đi lên dốc,"
   },
   {
    "id": "03-3",
-   "text": "Ô xy một trăm phần trăm còn gây xẹp phổi do hấp thu, làm tăng luồng thông phải trái, và ô xy máu lại càng giảm."
+   "text": "sóng T cao, nhọn và đối xứng,"
   },
   {
    "id": "03-4",
-   "text": "Nếu ô xy máu vẫn thấp dù ô xy khí thở vào cao, đó là luồng thông hoặc bất xứng thông khí tưới máu, và phải dùng áp lực trung bình."
+   "text": "kèm a-vê-rờ chênh lên nhẹ."
   },
   {
    "id": "03-5",
-   "text": "Ghi nhớ: dưới sáu mươi chỉnh ô xy, cần trên sáu mươi thì chỉnh áp lực trung bình."
+   "text": "Đây là sóng đơ Uyn-tơ, tương đương nhồi máu cơ tim ST chênh lên, do tắc động mạch liên thất trước đoạn gần."
   },
   {
    "id": "04-0",
-   "text": "Chuyển sang chỉnh áp lực trung bình khi cần ô xy trên sáu mươi phần trăm, hoặc tổn thương phổi nặng, với tỉ số ô xy máu trên phần trăm ô xy dưới ba trăm."
+   "text": "Ở vê một đến vê ba, ST chênh xuống nằm ngang, sóng R cao, sóng T dương."
   },
   {
    "id": "04-1",
-   "text": "Ví dụ, cùng ô xy máu tám mươi: thở khí trời, tỉ số là ba trăm tám mốt. Nhưng thở năm mươi phần trăm, tỉ số chỉ còn một trăm sáu mươi."
+   "text": "Đừng vội nghĩ đây là thiếu máu dưới nội mạc."
   },
   {
    "id": "04-2",
-   "text": "Từ bốn trăm trở lên là bình thường, ba trăm đến bốn trăm là bất thường, hai trăm đến ba trăm là suy hô hấp cấp tiến triển nhẹ, dưới hai trăm là trung bình đến nặng."
+   "text": "Hãy lật ngược dải điện tâm đồ, như nhìn từ phía sau lưng."
   },
   {
    "id": "04-3",
-   "text": "Ghi nhớ: cùng một ô xy máu, phải thở ô xy càng cao thì tỉ số càng thấp, phổi càng nặng."
+   "text": "Hình soi gương hiện ra: ST chênh lên kèm sóng Q. Đó là nhồi máu thành sau."
   },
   {
-   "id": "05-0",
-   "text": "Trạm ba, áp lực trung bình đường thở. Hãy hình dung nó là diện tích dưới đường áp lực, chia cho thời gian một chu kỳ."
-  },
-  {
-   "id": "05-1",
-   "text": "Với sóng áp lực vuông, áp lực trung bình xấp xỉ bằng chênh áp nhân tỉ lệ thời gian hít vào, cộng áp lực nền."
-  },
-  {
-   "id": "05-2",
-   "text": "Với kiểm soát thể tích, sóng hình tam giác, nhân thêm một nửa. Máy thở hiện đại đều tự tính con số này."
-  },
-  {
-   "id": "05-3",
-   "text": "Tăng áp lực nền thì nâng cả nền. Tăng áp lực hít vào thì nâng đỉnh. Kéo dài thời gian hít vào thì khối áp lực rộng ra."
-  },
-  {
-   "id": "05-4",
-   "text": "Ghi nhớ: áp lực trung bình chính là diện tích dưới đường áp lực."
-  },
-  {
-   "id": "06-0",
-   "text": "Quy tắc thực hành: tăng áp lực nền một, áp lực trung bình tăng một."
-  },
-  {
-   "id": "06-1",
-   "text": "Tăng áp lực hít vào ba, áp lực trung bình chỉ tăng một, khi tỉ lệ một trên hai. Đổi tỉ lệ từ một trên hai sang một trên một, áp lực trung bình tăng một phần sáu áp lực hít vào."
-  },
-  {
-   "id": "06-2",
-   "text": "Tăng tần số mà giữ nguyên tỉ lệ thì áp lực trung bình không đổi. Tăng thời gian tăng áp chỉ cải thiện rất ít."
-  },
-  {
-   "id": "06-3",
-   "text": "Ví dụ, tần số hai mươi, hít vào một giây, áp lực nền năm, áp lực hít vào mười hai: áp lực trung bình khoảng chín. Tăng áp lực hít vào lên mười lăm được mười. Kéo dài hít vào một rưỡi giây được mười một. Tăng áp lực nền lên tám được mười hai."
-  },
-  {
-   "id": "06-4",
-   "text": "Ghi nhớ: áp lực nền một đổi một, áp lực hít vào ba đổi một."
-  },
-  {
-   "id": "07-0",
-   "text": "Đánh giá từng nút. Thời gian tăng áp giúp đồng bộ, nhưng ít hiệu quả tăng áp lực trung bình."
-  },
-  {
-   "id": "07-1",
-   "text": "Áp lực hít vào dễ gây chấn thương áp lực, và tăng thể tích gây kiềm hô hấp."
-  },
-  {
-   "id": "07-2",
-   "text": "Thời gian hít vào có hiệu quả, nhưng làm giảm máu tĩnh mạch về tim."
-  },
-  {
-   "id": "07-3",
-   "text": "Áp lực nền là hiệu quả nhất và an toàn nhất. Tần số thì ít hiệu quả, lại dễ gây bẫy khí."
-  },
-  {
-   "id": "07-4",
-   "text": "Ghi nhớ: muốn tăng áp lực trung bình, hãy nghĩ đến áp lực nền trước tiên."
-  },
-  {
-   "id": "08-0",
-   "text": "Ở kiểm soát thể tích, tăng áp lực trung bình bằng cách tăng áp lực nền, kéo dài hít vào hoặc cài thời gian nghỉ, tăng tần số, hoặc tăng thể tích nhưng không quá sáu mi li lít trên ký trong suy hô hấp cấp tiến triển."
-  },
-  {
-   "id": "08-1",
-   "text": "Đổi lưu lượng vuông sang giảm dần, hoặc chuyển sang kiểm soát áp lực: áp lực đỉnh thấp hơn mà áp lực trung bình lại cao hơn."
-  },
-  {
-   "id": "08-2",
-   "text": "Thông khí đảo ngược tỉ lệ làm tăng áp lực nội sinh và áp lực trung bình, cải thiện ô xy hoá."
-  },
-  {
-   "id": "08-3",
-   "text": "Nhưng ảnh hưởng tim mạch, tăng áp lực nội sọ, và cần an thần sâu, có khi giãn cơ. Thực tế chỉ nên kéo dài tỉ lệ đến một trên một."
-  },
-  {
-   "id": "08-4",
-   "text": "Ghi nhớ: tỉ lệ hít vào thở ra tối đa một trên một."
-  },
-  {
-   "id": "09-0",
-   "text": "Trạm bốn, áp lực dương cuối thì thở ra. Trong suy hô hấp cấp tiến triển, áp lực nền hiện vẫn hay bị cài thấp hơn mức cần."
-  },
-  {
-   "id": "09-1",
-   "text": "Theo thói quen, phổi bình thường cài năm, phổi giảm giãn nở cài mười đến mười lăm."
-  },
-  {
-   "id": "09-2",
-   "text": "Bảng phối hợp: áp lực nền thấp, ô xy cao cho thể nhẹ. Áp lực nền cao, ô xy thấp cho thể trung bình và nặng."
-  },
-  {
-   "id": "09-3",
-   "text": "Mục tiêu độ bão hoà tám tám đến chín lăm. Dưới mục tiêu thì tiến một bước, quá mục tiêu thì lùi một bước."
-  },
-  {
-   "id": "09-4",
-   "text": "Bảng tiện lợi, giảm bất đồng giữa nhân viên, nhưng không cá nhân hoá cho từng bệnh nhân."
-  },
-  {
-   "id": "10-0",
-   "text": "Dò áp lực nền tối ưu bằng cách tăng dần, hoặc giảm dần sau huy động phế nang. Đánh giá bằng cơ học phổi tốt hơn là chỉ nhìn ô xy."
-  },
-  {
-   "id": "10-1",
-   "text": "Độ giãn nở tĩnh bằng thể tích chia cho áp lực bình nguyên trừ áp lực nền tổng. Độ giãn nở động bằng thể tích chia cho áp lực đỉnh trừ áp lực nền."
-  },
-  {
-   "id": "10-2",
-   "text": "Cách tăng dần: thể tích sáu mi li lít trên ký, mỗi ba đến năm phút tăng áp lực nền hai đến ba, đo áp lực bình nguyên, độ giãn nở, độ bão hoà và huyết áp."
-  },
-  {
-   "id": "10-3",
-   "text": "Ví dụ, ở mức mười bốn, độ giãn nở cao nhất là bốn mươi, bình nguyên hai mươi tám, độ bão hoà chín lăm, nên chọn mười bốn."
-  },
-  {
-   "id": "10-4",
-   "text": "Ghi nhớ: áp lực nền tốt nhất là nơi độ giãn nở cao nhất, mà bình nguyên không quá ba mươi."
-  },
-  {
-   "id": "11-0",
-   "text": "Áp lực nền cao cũng có hại. Nó cản trở máu tĩnh mạch về tim, làm giảm cung lượng tim và tăng áp lực nội sọ."
-  },
-  {
-   "id": "11-1",
-   "text": "Tăng nguy cơ chấn thương áp lực."
-  },
-  {
-   "id": "11-2",
-   "text": "Làm căng phế nang quá mức, đẩy máu phổi sang vùng kém thông khí."
-  },
-  {
-   "id": "11-3",
-   "text": "Và giảm tưới máu các cơ quan khác: thận giảm nước tiểu, dạ dày dễ loét do stress."
-  },
-  {
-   "id": "11-4",
-   "text": "Ghi nhớ năm nơi chịu hại: tim, não, phổi, thận, dạ dày."
-  },
-  {
-   "id": "12-0",
-   "text": "Trạm năm. Xử trí giảm ô xy máu đi theo ba tầng: thở máy cổ điển, thở máy nâng cao, và các biện pháp khác."
-  },
-  {
-   "id": "12-1",
-   "text": "Tầng cổ điển gồm ô xy, áp lực nền, thời gian hít vào, áp lực hít vào và tần số."
-  },
-  {
-   "id": "12-2",
-   "text": "Tầng nâng cao gồm mở phổi, nằm sấp, thông khí giải phóng áp lực đường thở, thở máy rung tần số cao, và khí ni-tric ô-xít hít. Tầng cuối có trao đổi ô xy qua màng ngoài cơ thể, và sa-phác-tan."
-  },
-  {
-   "id": "12-3",
-   "text": "Tỉ số càng thấp, biện pháp càng mạnh: dưới hai trăm dùng áp lực nền cao, dưới một trăm năm mươi nằm sấp, dưới một trăm mở phổi và khí ni-tric, quanh năm mươi đến sáu mươi thì trao đổi ô xy ngoài cơ thể."
-  },
-  {
-   "id": "12-4",
-   "text": "Ghi nhớ: dù ở tầng nào, nền tảng vẫn là thở máy bảo vệ phổi."
-  },
-  {
-   "id": "13-0",
-   "text": "Nằm sấp giúp mở vùng phổi phía lưng, cải thiện tỉ số thông khí trên tưới máu, giảm căng phế nang, giảm viêm, dẫn lưu đàm, và giảm tổn thương phổi do thở máy."
-  },
-  {
-   "id": "13-1",
-   "text": "Thử nghiệm lớn năm hai nghìn mười ba cho thấy tỉ lệ sống của nhóm nằm sấp cao hơn rõ rệt."
-  },
-  {
-   "id": "13-2",
-   "text": "Tổng quan hệ thống năm hai nghìn mười lăm: giảm tử vong khi nằm sấp sớm trong bốn mươi tám giờ, khi nằm trên mười sáu giờ mỗi ngày, và ở nhóm thiếu ô xy nặng."
-  },
-  {
-   "id": "13-3",
-   "text": "Để thành công: suy hô hấp nặng với tỉ số từ một trăm năm mươi trở xuống, làm sớm trong bốn mươi tám giờ, và nằm đủ dài từ mười sáu giờ mỗi ngày."
-  },
-  {
-   "id": "13-4",
-   "text": "Ghi nhớ ba con số của nằm sấp: một trăm năm mươi, bốn mươi tám, mười sáu."
-  },
-  {
-   "id": "14-0",
-   "text": "Trạm sáu, mở phổi. Ý tưởng là mở các phế nang đang xẹp, rồi giữ cho chúng luôn mở."
-  },
-  {
-   "id": "14-1",
-   "text": "Ba bước: vượt qua áp lực mở tới hạn trong thì hít vào, duy trì áp lực đó đủ lâu, rồi dùng áp lực nền đủ cao trong thì thở ra."
-  },
-  {
-   "id": "14-2",
-   "text": "Mở phổi hiệu quả hơn ở giai đoạn sớm còn viêm hơn là muộn đã xơ hoá, và ở bệnh nguyên ngoài phổi gây xẹp hơn là tại phổi gây đông đặc."
-  },
-  {
-   "id": "14-3",
-   "text": "Thâm nhiễm lan toả đáp ứng tốt hơn khu trú, thành ngực đàn hồi tốt hơn thành ngực cứng do tràn dịch hay chướng bụng."
-  },
-  {
-   "id": "14-4",
-   "text": "Bệnh nhân có đáp ứng thì ô xy và độ giãn nở tăng. Không đáp ứng thì phổi bị quá căng, cung lượng tim giảm, và hại nhiều hơn lợi."
-  },
-  {
-   "id": "14-5",
-   "text": "Ghi nhớ: mở phổi là vượt, giữ, và giữ mở."
-  },
-  {
-   "id": "15-0",
-   "text": "Thực tế lâm sàng dùng phương pháp năm trên hai, và hai trên năm."
-  },
-  {
-   "id": "15-1",
-   "text": "Đi lên: bắt đầu áp lực nền mười, mỗi hai phút tăng năm, tối đa hai lăm. Lần hai có thể đến ba mươi, lần ba đến ba lăm."
-  },
-  {
-   "id": "15-2",
-   "text": "Đi xuống: từ hai lăm hoặc hai mươi, mỗi năm phút giảm hai, theo dõi độ giãn nở để tìm áp lực mà phổi bắt đầu đóng lại."
-  },
-  {
-   "id": "15-3",
-   "text": "Đáp ứng tốt khi khí máu cải thiện và độ giãn nở hệ hô hấp tăng."
-  },
-  {
-   "id": "15-4",
-   "text": "Tác dụng phụ: tụt huyết áp thoáng qua mười hai phần trăm, giảm độ bão hoà thoáng qua tám phần trăm, loạn nhịp và chấn thương áp lực khoảng một phần trăm."
-  },
-  {
-   "id": "15-5",
-   "text": "Ghi nhớ: lên năm mỗi hai phút, xuống hai mỗi năm phút."
-  },
-  {
-   "id": "16-0",
-   "text": "Trạm bảy, các biện pháp cứu mạng. Khí ni-tric ô-xít hít giãn mạch phổi chọn lọc ở vùng có thông khí, nên cải thiện tỉ số thông khí tưới máu, giảm luồng thông, và giảm áp lực động mạch phổi."
-  },
-  {
-   "id": "16-1",
-   "text": "Phân tích gộp năm hai nghìn lẻ bảy: cải thiện ô xy ở hai mươi bốn giờ, nhưng không giảm tử vong. Vì vậy chỉ dùng tạm thời, trong lúc chờ biện pháp cứu mạng khác hay chờ điều trị nguyên nhân."
-  },
-  {
-   "id": "16-2",
-   "text": "Thở máy rung tần số cao: một thử nghiệm không thấy khác biệt, một thử nghiệm khác thấy tử vong còn cao hơn."
-  },
-  {
-   "id": "16-3",
-   "text": "Hiện chỉ còn dùng cho dập phổi, tràn khí màng phổi, chấn thương áp lực, hoặc khi các biện pháp khác đã thất bại."
-  },
-  {
-   "id": "16-4",
-   "text": "Ghi nhớ: khí ni-tric cải thiện ô xy, nhưng không cải thiện sống còn."
-  },
-  {
-   "id": "17-0",
-   "text": "Duy trì nhịp tự thở giúp cơ hoành phía lưng hoạt động, trao đổi khí tốt hơn, và áp lực lồng ngực thấp hơn nên ít ảnh hưởng huyết động."
-  },
-  {
-   "id": "17-1",
-   "text": "Chế độ hai mức áp lực cho phép bệnh nhân tự thở trên cả hai mức, cao và thấp."
-  },
-  {
-   "id": "17-2",
-   "text": "Thông khí giải phóng áp lực đường thở giống vậy, nhưng thời gian xả áp rất ngắn, tỉ lệ hít vào thở ra bị đảo ngược."
-  },
-  {
-   "id": "17-3",
-   "text": "Chỉ định khi phổi giảm giãn nở, ô xy chưa đủ dù sáu mươi phần trăm, áp lực đỉnh từ ba lăm hoặc áp lực nền từ mười."
-  },
-  {
-   "id": "17-4",
-   "text": "Nên xem xét trước khi dùng thuốc giãn cơ, và có thể phối hợp với nằm sấp, khí ni-tric."
-  },
-  {
-   "id": "18-0",
-   "text": "Trao đổi ô xy qua màng ngoài cơ thể, kiểu tĩnh mạch tĩnh mạch, cung cấp ô xy và thải cê ô hai bên ngoài phổi, thay phổi trong thời gian phổi bị tổn thương nặng."
-  },
-  {
-   "id": "18-1",
-   "text": "Phương pháp này đã dùng hơn bốn mươi bốn năm, và đạt thành công cao ở Úc và Niu Di-lân trong đại dịch cúm A."
-  },
-  {
-   "id": "18-2",
-   "text": "Thử nghiệm năm hai nghìn lẻ chín: tử vong hoặc tàn tật nặng ba mươi bảy phần trăm so với năm mươi ba phần trăm."
-  },
-  {
-   "id": "18-3",
-   "text": "Riêng tử vong thì có giảm, nhưng chưa đạt ý nghĩa thống kê."
-  },
-  {
-   "id": "18-4",
-   "text": "Ghi nhớ: đây là lá phổi thay thế tạm thời."
-  },
-  {
-   "id": "19-0",
-   "text": "Hướng dẫn năm hai nghìn mười bảy của các hội hồi sức Mỹ và châu Âu. Khuyến cáo mạnh nên: thể tích bốn đến tám mi li lít trên ký, áp lực bình nguyên dưới ba mươi."
-  },
-  {
-   "id": "19-1",
-   "text": "Khuyến cáo mạnh nên: nằm sấp trên mười hai giờ mỗi ngày ở thể nặng."
-  },
-  {
-   "id": "19-2",
-   "text": "Khuyến cáo mạnh không nên: dùng thở máy rung tần số cao thường quy."
-  },
-  {
-   "id": "19-3",
-   "text": "Khuyến cáo có điều kiện: áp lực nền cao và thủ thuật mở phổi. Trao đổi ô xy ngoài cơ thể: chưa đủ bằng chứng để khuyến cáo."
-  },
-  {
-   "id": "20-0",
-   "text": "Cùng ôn lại. Ô xy bằng phần trăm ô xy cộng áp lực trung bình. Dưới sáu mươi chỉnh ô xy, trên sáu mươi chỉnh áp lực trung bình."
-  },
-  {
-   "id": "20-1",
-   "text": "Áp lực trung bình là diện tích. Áp lực nền một đổi một, áp lực hít vào ba đổi một. Áp lực nền hiệu quả và an toàn nhất."
-  },
-  {
-   "id": "20-2",
-   "text": "Áp lực nền tốt nhất theo độ giãn nở. Nằm sấp một trăm năm mươi, bốn mươi tám, mười sáu. Mở phổi lên năm mỗi hai phút, xuống hai mỗi năm phút."
-  },
-  {
-   "id": "20-3",
-   "text": "Và các biện pháp cứu mạng khi cần. Chúc các bạn học tốt."
+   "id": "04-4",
+   "text": "Gắn thêm vê bảy đến vê chín để xác nhận: ST chênh lên từ không phẩy năm mi li mét."
   }
  ]
 }
