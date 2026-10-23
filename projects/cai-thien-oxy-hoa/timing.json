@@ -1,0 +1,633 @@
+[
+ {
+  "orig": 6.0,
+  "dur": 6.0,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 3.339,
+    "text": ""
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 37.72,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 6.134,
+    "text": "Thở máy có 2 mục tiêu: thông khí và OXY HOÁ — bài này nói về oxy hoá."
+   },
+   {
+    "start": 7.384,
+    "dur": 6.212,
+    "text": "Đánh giá: PaO₂ đo bằng khí máu · SpO₂ theo dõi liên tục bằng máy đo bão hoà oxy."
+   },
+   {
+    "start": 14.146,
+    "dur": 5.212,
+    "text": "PaO₂ 80–100 mmHg: bệnh lý TKTW, ngộ độc, hậu phẫu."
+   },
+   {
+    "start": 19.908,
+    "dur": 9.133,
+    "text": "PaO₂ thấp hơn được chấp nhận: ARDS 55–80 (SpO₂ 88–95%) · sơ sinh 50–80 mmHg."
+   },
+   {
+    "start": 29.591,
+    "dur": 6.831,
+    "text": "Ghi nhớ: phổi lành 80–100 · ARDS 55–80 · sơ sinh 50–80."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 31.64,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 5.613,
+    "text": "Oxy hoá phụ thuộc 2 nút chính: FiO₂ và áp lực trung bình đường thở (MAP)."
+   },
+   {
+    "start": 6.863,
+    "dur": 4.577,
+    "text": "FiO₂ ↑ → PAO₂ phế nang ↑ → PaO₂ ↑."
+   },
+   {
+    "start": 11.99,
+    "dur": 4.619,
+    "text": "MAP ↑ → mở phế nang xẹp, tăng diện trao đổi khí."
+   },
+   {
+    "start": 17.159,
+    "dur": 8.732,
+    "text": "MAP do 5 yếu tố: rise time · Pinsp · Ti · PEEP · tần số."
+   },
+   {
+    "start": 26.442,
+    "dur": 3.912,
+    "text": "Ghi nhớ: OXY = FiO₂ + MAP."
+   }
+  ]
+ },
+ {
+  "orig": 21.0,
+  "dur": 45.6,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 9.46,
+    "text": "Chỉnh bằng FiO₂ khi: bệnh lý TKTW, ngộ độc, hậu phẫu — KHÔNG tổn thương phổi · phạm vi FiO₂ < 60%."
+   },
+   {
+    "start": 10.71,
+    "dur": 7.559,
+    "text": "Ngay sau cài máy: SpO₂ mục tiêu 95% · thử khí máu sau 15–30 phút mỗi lần chỉnh."
+   },
+   {
+    "start": 18.818,
+    "dur": 5.209,
+    "text": "Tránh ngộ độc oxy: FiO₂ < 60%, giữ PaO₂ 60–90 mmHg."
+   },
+   {
+    "start": 24.577,
+    "dur": 6.461,
+    "text": "FiO₂ 100% → xẹp phổi do hấp thu → tăng shunt → oxy máu càng giảm."
+   },
+   {
+    "start": 31.588,
+    "dur": 7.425,
+    "text": "PaO₂ vẫn thấp dù FiO₂ cao = shunt, bất xứng V/Q → phải dùng MAP."
+   },
+   {
+    "start": 39.563,
+    "dur": 4.743,
+    "text": "Ghi nhớ: dưới 60 → chỉnh FiO₂ · cần trên 60 → chỉnh MAP."
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 35.68,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 8.137,
+    "text": "Chuyển sang chỉnh MAP khi: cần FiO₂ > 60% hoặc tổn thương phổi nặng P/F < 300."
+   },
+   {
+    "start": 9.387,
+    "dur": 9.581,
+    "text": "VD: PaO₂ 80, FiO₂ 21% → P/F 381 · PaO₂ 80, FiO₂ 50% → P/F 160."
+   },
+   {
+    "start": 19.518,
+    "dur": 8.812,
+    "text": "P/F ≥ 400 bình thường · 300–400 bất thường · 200–300 ARDS nhẹ · ≤ 200 ARDS trung bình – nặng."
+   },
+   {
+    "start": 28.88,
+    "dur": 5.492,
+    "text": "Ghi nhớ: cùng PaO₂ 80, FiO₂ càng cao → P/F càng thấp → phổi càng nặng."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 36.88,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 7.35,
+    "text": "Trạm 3 — MAP = diện tích dưới đường áp lực chia cho thời gian một chu kỳ."
+   },
+   {
+    "start": 8.6,
+    "dur": 6.021,
+    "text": "Sóng vuông (PC): MAP ≈ (PIP − PEEP) × Ti/Ttot + PEEP."
+   },
+   {
+    "start": 15.171,
+    "dur": 7.126,
+    "text": "VC (sóng tam giác): MAP ≈ ½ (PIP − PEEP) × Ti/Ttot + PEEP — máy hiện đại tự tính."
+   },
+   {
+    "start": 22.847,
+    "dur": 8.804,
+    "text": "Tăng PEEP → nâng cả nền · tăng Pinsp → nâng đỉnh · kéo dài Ti → khối áp lực rộng ra."
+   },
+   {
+    "start": 32.202,
+    "dur": 3.395,
+    "text": "Ghi nhớ: MAP = DIỆN TÍCH dưới đường áp lực."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 46.16,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 3.764,
+    "text": "PEEP +1 → MAP +1 cmH₂O."
+   },
+   {
+    "start": 5.014,
+    "dur": 10.74,
+    "text": "Pi +3 → MAP +1 (khi I:E 1:2) · I:E 1:2 → 1:1 → MAP tăng 1/6 Pi."
+   },
+   {
+    "start": 16.304,
+    "dur": 6.696,
+    "text": "Tăng tần số mà giữ I:E → MAP không đổi · tăng rise time → MAP tăng rất ít."
+   },
+   {
+    "start": 23.55,
+    "dur": 16.816,
+    "text": "VD PCV: f 20, Ti 1, PEEP 5, Pinsp 12 → MAP ≈ 9 · Pinsp 15 → 10 · Ti 1,5 → 11 · PEEP 8 → 12 (ước tính)."
+   },
+   {
+    "start": 40.916,
+    "dur": 3.932,
+    "text": "Ghi nhớ: PEEP 1 → MAP 1 · Pi 3 → MAP 1."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 29.2,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 5.949,
+    "text": "Rise time: giúp đồng bộ BN – máy, ít hiệu quả tăng MAP."
+   },
+   {
+    "start": 7.199,
+    "dur": 4.202,
+    "text": "Pinsp: dễ chấn thương áp lực, tăng VT gây kiềm hô hấp."
+   },
+   {
+    "start": 11.95,
+    "dur": 3.96,
+    "text": "Ti: có hiệu quả, nhưng giảm máu tĩnh mạch về tim."
+   },
+   {
+    "start": 16.46,
+    "dur": 6.589,
+    "text": "PEEP: hiệu quả NHẤT và an toàn NHẤT · tần số: ít hiệu quả, dễ bẫy khí."
+   },
+   {
+    "start": 23.599,
+    "dur": 4.285,
+    "text": "Ghi nhớ: muốn tăng MAP → nghĩ đến PEEP TRƯỚC."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 39.28,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 11.125,
+    "text": "Tăng MAP trong VCV: ↑ PEEP · ↑ Ti (giảm flow) hoặc pause · ↑ tần số · ↑ VT (≤ 6 mL/kg trong ARDS)."
+   },
+   {
+    "start": 12.375,
+    "dur": 6.473,
+    "text": "Đổi lưu lượng vuông → giảm dần (hoặc sang PCV): áp lực đỉnh THẤP hơn, MAP CAO hơn."
+   },
+   {
+    "start": 19.398,
+    "dur": 5.187,
+    "text": "Thông khí đảo ngược I:E: ↑ PEEP nội sinh, ↑ MAP, cải thiện oxy hoá."
+   },
+   {
+    "start": 25.134,
+    "dur": 9.047,
+    "text": "Bất lợi: ảnh hưởng tim mạch, tăng áp nội sọ, cần an thần sâu ± giãn cơ → thực tế chỉ kéo I:E đến 1:1."
+   },
+   {
+    "start": 34.732,
+    "dur": 3.23,
+    "text": "Ghi nhớ: I:E tối đa 1:1."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 36.36,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 8.011,
+    "text": "Trạm 4 — PEEP trong ARDS: hiện vẫn còn điều trị DƯỚI mức."
+   },
+   {
+    "start": 9.261,
+    "dur": 4.507,
+    "text": "Theo thói quen: phổi bình thường PEEP 5 · phổi giảm compliance PEEP 10–15."
+   },
+   {
+    "start": 14.318,
+    "dur": 7.778,
+    "text": "Bảng PEEP/FiO₂: thấp/cao cho ARDS nhẹ · PEEP cao/FiO₂ thấp cho ARDS trung bình – nặng."
+   },
+   {
+    "start": 22.646,
+    "dur": 6.873,
+    "text": "Mục tiêu SpO₂ 88–95% hoặc PaO₂ 55–80 · dưới mục tiêu: tiến 1 bước · quá mục tiêu: lùi 1 bước."
+   },
+   {
+    "start": 30.07,
+    "dur": 4.978,
+    "text": "Bảng tiện lợi, giảm bất đồng giữa nhân viên — nhưng KHÔNG cá nhân hoá."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 44.08,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 8.471,
+    "text": "Dò PEEP tối ưu: tăng dần, hoặc giảm dần sau huy động phế nang · đánh giá bằng CƠ HỌC phổi hơn là oxy."
+   },
+   {
+    "start": 9.721,
+    "dur": 8.673,
+    "text": "Cstat = VT / (Pplat − PEEP tổng) · Cdyn = VT / (Ppeak − PEEP)."
+   },
+   {
+    "start": 18.944,
+    "dur": 9.568,
+    "text": "Tăng dần: VT 6 mL/kg, PEEP +2–3 cmH₂O mỗi 3–5 phút · đo Pplat, compliance, SpO₂, HA."
+   },
+   {
+    "start": 29.062,
+    "dur": 7.834,
+    "text": "VD: PEEP 14 → Cdyn cao nhất 40, Pplat 28, SpO₂ 95% → chọn PEEP 14."
+   },
+   {
+    "start": 37.446,
+    "dur": 5.329,
+    "text": "Ghi nhớ: best PEEP = compliance TỐT NHẤT + Pplat ≤ 30."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 26.48,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 7.401,
+    "text": "PEEP cao cản trở máu tĩnh mạch về tim → giảm cung lượng tim, tăng áp nội sọ."
+   },
+   {
+    "start": 8.651,
+    "dur": 1.603,
+    "text": "Tăng nguy cơ chấn thương áp lực."
+   },
+   {
+    "start": 10.804,
+    "dur": 3.655,
+    "text": "Căng phế nang quá mức → tái phân bố máu phổi sang vùng kém thông khí."
+   },
+   {
+    "start": 15.009,
+    "dur": 4.78,
+    "text": "Giảm tưới máu cơ quan khác: thận (giảm nước tiểu), dạ dày (loét do stress)."
+   },
+   {
+    "start": 20.339,
+    "dur": 4.832,
+    "text": "Ghi nhớ: PEEP cao — TIM · NÃO · PHỔI · THẬN · DẠ DÀY."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 46.08,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 7.581,
+    "text": "Xử trí giảm oxy máu theo 3 tầng: thở máy cổ điển → thở máy nâng cao → biện pháp khác."
+   },
+   {
+    "start": 8.831,
+    "dur": 5.626,
+    "text": "Cổ điển: FiO₂ · PEEP · Ti · Pi · tần số."
+   },
+   {
+    "start": 15.007,
+    "dur": 12.902,
+    "text": "Nâng cao: mở phổi · nằm sấp · APRV · HFOV · NO hít · khác: ECMO, surfactant…"
+   },
+   {
+    "start": 28.459,
+    "dur": 11.318,
+    "text": "P/F càng thấp, biện pháp càng mạnh: < 200 PEEP cao · < 150 nằm sấp · < 100 mở phổi, NO · ≈ 50–60 ECMO."
+   },
+   {
+    "start": 40.326,
+    "dur": 4.451,
+    "text": "Ghi nhớ: luôn nền tảng là THỞ MÁY BẢO VỆ PHỔI."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 40.0,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 9.401,
+    "text": "Nằm sấp: mở phổi vùng lưng, cải thiện V/Q, giảm căng phế nang, giảm viêm, dẫn lưu đàm, giảm VILI."
+   },
+   {
+    "start": 10.651,
+    "dur": 4.612,
+    "text": "PROSEVA (NEJM 2013): sống còn nhóm nằm sấp cao hơn rõ, p < 0,001."
+   },
+   {
+    "start": 15.812,
+    "dur": 8.628,
+    "text": "Cochrane 2015: giảm tử vong khi nằm sấp trong 48 giờ (RR 0,75) · > 16 giờ/ngày (RR 0,77) · thiếu oxy nặng (RR 0,77)."
+   },
+   {
+    "start": 24.99,
+    "dur": 8.37,
+    "text": "Để thành công: ARDS nặng P/F ≤ 150 · sớm ≤ 48 giờ · đủ dài ≥ 16 giờ/ngày."
+   },
+   {
+    "start": 33.911,
+    "dur": 4.773,
+    "text": "Ghi nhớ: NẰM SẤP 150 – 48 – 16."
+   }
+  ]
+ },
+ {
+  "orig": 21.0,
+  "dur": 43.92,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 6.246,
+    "text": "Trạm 6 — MỞ PHỔI: mở phế nang xẹp, rồi GIỮ cho chúng mở."
+   },
+   {
+    "start": 7.496,
+    "dur": 7.669,
+    "text": "3 bước: (1) vượt áp lực mở tới hạn thì hít vào · (2) giữ áp lực mở đủ lâu · (3) PEEP đủ cao thì thở ra."
+   },
+   {
+    "start": 15.716,
+    "dur": 7.273,
+    "text": "Đáp ứng tốt hơn khi: ARDS SỚM (viêm) > muộn (xơ hoá) · NGOÀI phổi (xẹp) > tại phổi (đông đặc)."
+   },
+   {
+    "start": 23.539,
+    "dur": 5.734,
+    "text": "… thâm nhiễm LAN TOẢ > khu trú · thành ngực ĐÀN HỒI > cứng (tràn dịch, chướng bụng)."
+   },
+   {
+    "start": 29.822,
+    "dur": 8.683,
+    "text": "Có đáp ứng: PaO₂ ↑, compliance ↑ · không đáp ứng: quá căng, ↓ cung lượng tim → hại > lợi."
+   },
+   {
+    "start": 39.055,
+    "dur": 3.583,
+    "text": "Ghi nhớ: MỞ PHỔI = VƯỢT · GIỮ · GIỮ MỞ."
+   }
+  ]
+ },
+ {
+  "orig": 21.0,
+  "dur": 39.76,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 3.585,
+    "text": "Thực tế: phương pháp “5/2 và 2/5”."
+   },
+   {
+    "start": 4.835,
+    "dur": 9.081,
+    "text": "Lên: bắt đầu PEEP 10, mỗi bước +5 cmH₂O mỗi 2 phút, tối đa 25 (lần 2: 30, lần 3: 35)."
+   },
+   {
+    "start": 14.466,
+    "dur": 7.097,
+    "text": "Xuống: từ 25 (hoặc 20), mỗi bước −2 cmH₂O mỗi 5 phút → tìm áp lực đóng theo Cstat/Cdyn."
+   },
+   {
+    "start": 22.112,
+    "dur": 3.752,
+    "text": "Đáp ứng (+): PaO₂/SpO₂, P/F, PaCO₂ cải thiện · compliance tăng."
+   },
+   {
+    "start": 26.415,
+    "dur": 8.035,
+    "text": "Tác dụng phụ: tụt HA thoáng qua 12% · giảm SpO₂ thoáng qua 8% · loạn nhịp, chấn thương áp lực 1%."
+   },
+   {
+    "start": 35.0,
+    "dur": 3.441,
+    "text": "Ghi nhớ: LÊN 5 mỗi 2 phút · XUỐNG 2 mỗi 5 phút."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 43.76,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 11.537,
+    "text": "Trạm 7 — CỨU MẠNG. NO hít: giãn mạch phổi CHỌN LỌC → cải thiện V/Q, giảm shunt, giảm áp lực ĐM phổi."
+   },
+   {
+    "start": 12.787,
+    "dur": 11.404,
+    "text": "Phân tích gộp 2007: cải thiện P/F ở 24 giờ, nhưng KHÔNG giảm tử vong → dùng tạm thời, chờ ECMO, HFOV, chờ điều trị khác, phối hợp nằm sấp."
+   },
+   {
+    "start": 24.741,
+    "dur": 5.965,
+    "text": "HFOV: OSCAR — sống còn không khác · OSCILLATE — tử vong nhóm HFOV CAO hơn."
+   },
+   {
+    "start": 31.256,
+    "dur": 6.402,
+    "text": "HFOV còn dùng: dập phổi, tràn khí màng phổi, chấn thương áp lực · khi các biện pháp khác thất bại."
+   },
+   {
+    "start": 38.207,
+    "dur": 4.247,
+    "text": "Ghi nhớ: NO cải thiện OXY, không cải thiện SỐNG CÒN."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 33.4,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 6.951,
+    "text": "Duy trì nhịp tự thở: cơ hoành vùng lưng hoạt động → trao đổi khí tốt hơn, áp lực lồng ngực thấp → ít ảnh hưởng huyết động."
+   },
+   {
+    "start": 8.201,
+    "dur": 4.38,
+    "text": "BiLevel: BN tự thở trên 2 mức PEEP (P cao / P thấp), cả thì hít vào lẫn thở ra."
+   },
+   {
+    "start": 13.131,
+    "dur": 6.338,
+    "text": "APRV: giống BiLevel nhưng thời gian “xả áp” rất ngắn — I:E đảo ngược."
+   },
+   {
+    "start": 20.019,
+    "dur": 6.621,
+    "text": "Chỉ định APRV: compliance thấp (ARDS, dập phổi, phù phổi) · FiO₂ ≥ 60% chưa đủ · PIP ≥ 35 và/hoặc PEEP ≥ 10."
+   },
+   {
+    "start": 27.19,
+    "dur": 4.922,
+    "text": "Xem xét APRV TRƯỚC khi dùng giãn cơ · có thể phối hợp nằm sấp, NO."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 30.52,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 8.643,
+    "text": "ECMO tĩnh mạch – tĩnh mạch: cung cấp O₂ và thải CO₂ NGOÀI phổi, thay phổi trong lúc tổn thương nặng."
+   },
+   {
+    "start": 9.893,
+    "dur": 5.836,
+    "text": "Dùng > 44 năm cho ARDS · Úc – New Zealand: thành công cao trong ARDS do cúm A H1N1."
+   },
+   {
+    "start": 16.278,
+    "dur": 5.578,
+    "text": "CESAR (Lancet 2009): tử vong hoặc tàn tật nặng 37% so với 53% (RR 0,69)."
+   },
+   {
+    "start": 22.406,
+    "dur": 3.447,
+    "text": "Tỉ lệ tử vong đơn thuần có giảm, nhưng chưa có ý nghĩa thống kê."
+   },
+   {
+    "start": 26.403,
+    "dur": 2.811,
+    "text": "Ghi nhớ: ECMO = PHỔI THAY THẾ tạm thời."
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 29.56,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 9.985,
+    "text": "ATS/ESICM/SCCM 2017 — khuyến cáo MẠNH nên: VT 4–8 mL/kg PBW, Pplat < 30 cmH₂O."
+   },
+   {
+    "start": 11.235,
+    "dur": 3.797,
+    "text": "MẠNH nên: nằm sấp > 12 giờ/ngày trong ARDS nặng."
+   },
+   {
+    "start": 15.581,
+    "dur": 3.771,
+    "text": "MẠNH KHÔNG nên: HFOV thường quy trong ARDS trung bình – nặng."
+   },
+   {
+    "start": 19.902,
+    "dur": 8.345,
+    "text": "CÓ ĐIỀU KIỆN: PEEP cao và thủ thuật mở phổi (ARDS trung bình – nặng) · ECMO: chưa đủ bằng chứng."
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 35.84,
+  "sents": [
+   {
+    "start": 0.7,
+    "dur": 8.95,
+    "text": "OXY = FiO₂ + MAP · dưới 60 chỉnh FiO₂, trên 60 chỉnh MAP · P/F < 300 → MAP."
+   },
+   {
+    "start": 10.2,
+    "dur": 8.8,
+    "text": "MAP = diện tích · PEEP 1 → MAP 1, Pi 3 → MAP 1 · PEEP hiệu quả & an toàn nhất · I:E tối đa 1:1."
+   },
+   {
+    "start": 19.55,
+    "dur": 10.361,
+    "text": "PEEP tốt nhất = compliance cao nhất, Pplat ≤ 30 · nằm sấp 150 – 48 – 16 · mở phổi: lên 5/2, xuống 2/5."
+   },
+   {
+    "start": 30.46,
+    "dur": 4.061,
+    "text": "Cứu mạng: NO (oxy, không sống còn) · HFOV (không thường quy) · APRV · ECMO."
+   }
+  ]
+ }
+]
