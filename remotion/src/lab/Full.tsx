@@ -344,8 +344,26 @@ const SummaryScene: React.FC = () => {
   );
 };
 
+// màn mở đầu trạm 2 (tránh monitor trống khi câu đầu đang đọc)
+const StagesIntro: React.FC = () => {
+  const t = useT();
+  const a = 1 - ap(t, 0.22, 0.12);
+  return (
+    <AbsoluteFill>
+      <StagesScene />
+      {a > 0 && (
+        <div style={{position: 'absolute', left: 120, top: 66, width: 1680, height: 780, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', opacity: a * ap(t, -2.5, 0.8), fontFamily: MONO, color: '#39FF8A', textShadow: '0 0 18px #39FF8A88'}}>
+          <div style={{fontSize: 30, letterSpacing: 6, color: '#5E7466'}}>TRẠM 2</div>
+          <div style={{fontSize: 76, fontWeight: 700, marginTop: 10}}>ECG thay đổi theo</div>
+          <div style={{fontSize: 76, fontWeight: 700}}>THỜI GIAN ⏱</div>
+        </div>
+      )}
+    </AbsoluteFill>
+  );
+};
+
 const SC: React.FC[] = [
-  Cover, MonitorScene, CoronaryScene, PaperZoomScene, CaliperScene, StagesScene,
+  Cover, MonitorScene, CoronaryScene, PaperZoomScene, CaliperScene, StagesIntro,
   InferiorScene, PaperAnterior, LateralScene, VecRotate, VecProject, RVScene, PaperPosterior,
   PaperDeWinter, WellensScene, AvrScene, MimicScene, TableHand, SummaryScene,
 ];
