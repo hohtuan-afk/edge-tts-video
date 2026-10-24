@@ -20,7 +20,7 @@ export const HeartBig: React.FC = () => {
   return (
     <AbsoluteFill style={{background: 'radial-gradient(circle at 45% 40%, #FFFFFF, #EEF2F6 70%)'}}>
       <svg viewBox="0 0 1920 1080" width={1920} height={1080} style={{position: 'absolute', inset: 0}}>
-        <Heart4 id="big" x={620} y={20} s={1.85} prog={interpolate(t, [0, 1.6], [0, 1], {extrapolateRight: 'clamp'})} art={interpolate(t, [0.8, 2.4], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})}
+        <Heart4 id="big" x={720} y={20} s={1.85} prog={interpolate(t, [0, 1.6], [0, 1], {extrapolateRight: 'clamp'})} art={interpolate(t, [0.8, 2.4], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})}
           zone={zone} zoneC={c} zoneA={zone ? interpolate(lt, [0.3, 0.9], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}) : 0}
           hot={hot} occl={hot ? interpolate(lt, [0.1, 0.6], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}) : 0} beat={beat} />
       </svg>
