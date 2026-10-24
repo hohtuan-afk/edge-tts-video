@@ -1,75 +1,387 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+0%",
- "pitch": "+0Hz",
+ "rate": "+8%",
+ "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Thứ Bảy này, mình không đi chơi. Mình đi học!"
+   "text": "Xin chào, hôm nay chúng ta cùng tìm hiểu điện tâm đồ trong nhồi máu cơ tim cấp."
+  },
+  {
+   "id": "00-1",
+   "text": "Bài học đi qua bảy trạm: nhận diện, tiến triển, định khu, soi gương, thất phải và thành sau, các dạng tương đương, và cuối cùng là ôn tập."
+  },
+  {
+   "id": "00-2",
+   "text": "Mục tiêu là nhìn một điện tâm đồ mười hai chuyển đạo, nói ngay được vùng nào đang thiếu máu, và động mạch nào bị tắc."
   },
   {
    "id": "01-0",
-   "text": "Hôm nay, mình có mặt tại thành phố Cần Thơ, dự Hội nghị khoa học Hồi sức cấp cứu và Chống độc, Đồng bằng sông Cửu Long lần thứ hai."
+   "text": "Trạm một, nhận diện. Bệnh nhân nam năm mươi tám tuổi, đau ngực trái ba mươi phút, vã mồ hôi."
   },
   {
    "id": "01-1",
-   "text": "Mở màn là tiết mục văn nghệ rực rỡ, đưa cả hội trường đi qua những miền đất của Tổ quốc."
+   "text": "Trên màn hình theo dõi, đoạn ét tê ở chuyển đạo hai chênh lên dần, và máy báo động."
+  },
+  {
+   "id": "01-2",
+   "text": "Màn hình theo dõi chỉ là gợi ý. Cần làm ngay điện tâm đồ mười hai chuyển đạo, trong vòng mười phút kể từ khi bệnh nhân đến."
   },
   {
    "id": "02-0",
-   "text": "Cờ đỏ sao vàng tung bay, tà áo dài thướt tha, một khởi đầu thật tự hào."
+   "text": "Trước hết, tim được nuôi bởi ba động mạch vành chính."
+  },
+  {
+   "id": "02-1",
+   "text": "Động mạch vành phải nuôi thành dưới và thất phải."
+  },
+  {
+   "id": "02-2",
+   "text": "Động mạch liên thất trước nuôi thành trước và vách liên thất."
+  },
+  {
+   "id": "02-3",
+   "text": "Động mạch mũ nuôi thành bên."
+  },
+  {
+   "id": "02-4",
+   "text": "Tắc nhánh nào, vùng đó thiếu máu, và các chuyển đạo nhìn vùng đó sẽ có ét tê chênh lên."
   },
   {
    "id": "03-0",
-   "text": "Giáo sư, Tiến sĩ, Bác sĩ Nguyễn Gia Bình phát biểu khai mạc hội nghị."
+   "text": "Đây là điện tâm đồ mười hai chuyển đạo của bệnh nhân."
   },
   {
    "id": "03-1",
-   "text": "Và ban tổ chức tri ân các đơn vị đã đồng hành cùng hội nghị."
+   "text": "Hãy coi mỗi chuyển đạo như một chiếc camera, nhìn quả tim từ một góc riêng."
+  },
+  {
+   "id": "03-2",
+   "text": "Ba chuyển đạo hai, ba và a-vê-ép có ét tê chênh lên, cả ba cùng nhìn thành dưới."
+  },
+  {
+   "id": "03-3",
+   "text": "Còn a-vê-lờ thì ét tê chênh xuống, đó là hình soi gương, sẽ nói kỹ ở trạm bốn."
   },
   {
    "id": "04-0",
-   "text": "Phiên toàn thể đầu tiên cập nhật hướng dẫn Chiến dịch Sống còn Nhiễm khuẩn huyết, năm hai nghìn không trăm hai mươi sáu."
+   "text": "Đo ét tê ở đâu? Tại điểm J, là nơi phức bộ QRS vừa kết thúc."
   },
   {
    "id": "04-1",
-   "text": "Một trăm hai mươi chín khuyến cáo, được chắt lọc để áp dụng ngay tại giường bệnh."
+   "text": "Đặt compa từ đường đẳng điện của đoạn PR, đến điểm J."
+  },
+  {
+   "id": "04-2",
+   "text": "Ở chuyển đạo ba, ét tê chênh lên khoảng ba mi li mét."
+  },
+  {
+   "id": "04-3",
+   "text": "Tiêu chuẩn chẩn đoán: ét tê chênh lên từ một mi li mét, ở ít nhất hai chuyển đạo liên tiếp."
+  },
+  {
+   "id": "04-4",
+   "text": "Riêng vê hai và vê ba, ngưỡng cao hơn: nam từ bốn mươi tuổi là hai mi li mét, nam dưới bốn mươi tuổi là hai phẩy năm mi li mét, còn nữ là một phẩy năm mi li mét."
   },
   {
    "id": "05-0",
-   "text": "Rồi đến phần huyết động. Nô a đrê na lin ảnh hưởng thế nào lên cung lượng tim, và tương hợp giữa tâm thất với động mạch?"
+   "text": "Trạm hai, tiến triển. Điện tâm đồ không đứng yên, mà thay đổi theo thời gian."
   },
   {
    "id": "05-1",
-   "text": "Và khi nào, trái tim bắt đầu giảm hiệu suất?"
+   "text": "Vài phút đầu, sóng T tối cấp, cao và rộng."
+  },
+  {
+   "id": "05-2",
+   "text": "Sau vài giờ, ét tê chênh lên."
+  },
+  {
+   "id": "05-3",
+   "text": "Từ vài giờ đến vài ngày, xuất hiện sóng Q hoại tử."
+  },
+  {
+   "id": "05-4",
+   "text": "Từ vài ngày đến vài tuần, sóng T đảo ngược."
+  },
+  {
+   "id": "05-5",
+   "text": "Nhớ thứ tự: T tối cấp, ét tê chênh lên, sóng Q, rồi T đảo."
+  },
+  {
+   "id": "05-6",
+   "text": "Nếu điện tâm đồ đầu tiên chưa rõ mà vẫn nghi ngờ, hãy làm lại sau mười lăm đến ba mươi phút."
   },
   {
    "id": "06-0",
-   "text": "Ở hội trường chuyên đề, câu chuyện chuyển sang thở máy."
+   "text": "Trạm ba, định khu. Ví dụ thứ nhất: động mạch vành phải bị tắc."
   },
   {
    "id": "06-1",
-   "text": "Công suất cơ học, có những hạn chế gì, khi ta dùng nó để bảo vệ phổi?"
+   "text": "Vùng thành dưới của tim bị thiếu máu."
+  },
+  {
+   "id": "06-2",
+   "text": "Ba chuyển đạo nhìn thành dưới là hai, ba và a-vê-ép, nên ét tê chênh lên."
+  },
+  {
+   "id": "06-3",
+   "text": "Ở phía đối diện, chuyển đạo một và a-vê-lờ có ét tê chênh xuống, đó là hình ảnh soi gương."
+  },
+  {
+   "id": "06-4",
+   "text": "Nếu ét tê ở chuyển đạo ba cao hơn chuyển đạo hai, hãy nghĩ ngay đến động mạch vành phải."
   },
   {
    "id": "07-0",
-   "text": "Hội trường kín chỗ, thảo luận sôi nổi đến tận phút cuối."
+   "text": "Ví dụ thứ hai, một điện tâm đồ khác."
   },
   {
    "id": "07-1",
-   "text": "Vì sau mỗi trang trình chiếu, là một bệnh nhân đang chờ ta ở khoa."
+   "text": "Phóng to các chuyển đạo trước tim, từ vê một đến vê sáu."
+  },
+  {
+   "id": "07-2",
+   "text": "Vê một đến vê bốn có ét tê chênh lên, sóng T cao."
+  },
+  {
+   "id": "07-3",
+   "text": "Đây là nhồi máu thành trước, thủ phạm là động mạch liên thất trước."
+  },
+  {
+   "id": "07-4",
+   "text": "Tắc đoạn gần của động mạch này làm hoại tử một vùng cơ tim rất rộng, nên đặc biệt nguy hiểm."
+  },
+  {
+   "id": "07-5",
+   "text": "Hình soi gương ở thành dưới: chuyển đạo ba và a-vê-ép chênh xuống."
   },
   {
    "id": "08-0",
-   "text": "Học, để cứu người."
+   "text": "Ví dụ thứ ba, động mạch mũ bị tắc."
   },
   {
    "id": "08-1",
-   "text": "Cảm ơn ban tổ chức và quý thầy cô, vì một ngày thật nhiều giá trị."
+   "text": "Vùng thành bên của tim bị thiếu máu."
   },
   {
    "id": "08-2",
-   "text": "Cám ơn các bạn, và thả tim cho mình nhé!"
+   "text": "Các chuyển đạo nhìn thành bên là một, a-vê-lờ, vê năm và vê sáu, nên ét tê chênh lên."
+  },
+  {
+   "id": "08-3",
+   "text": "Soi gương ở thành dưới: chuyển đạo ba và a-vê-ép chênh xuống."
+  },
+  {
+   "id": "08-4",
+   "text": "Biến đổi ở a-vê-lờ thường nhỏ, rất dễ bỏ sót, nên luôn soi kỹ a-vê-lờ."
+  },
+  {
+   "id": "09-0",
+   "text": "Trạm bốn, soi gương. Vì sao có chuyển đạo chênh lên, lại có chuyển đạo chênh xuống?"
+  },
+  {
+   "id": "09-1",
+   "text": "Hãy hình dung dòng tổn thương như một mũi tên, chỉ về phía vùng cơ tim đang thiếu máu."
+  },
+  {
+   "id": "09-2",
+   "text": "Khi mũi tên xoay về thành dưới, các chuyển đạo hai, ba, a-vê-ép chênh lên, còn a-vê-lờ và chuyển đạo một chênh xuống."
+  },
+  {
+   "id": "09-3",
+   "text": "Chuyển đạo ba chênh cao nhất, gợi ý tắc động mạch vành phải."
+  },
+  {
+   "id": "10-0",
+   "text": "Chiếu mũi tên lên trục chuyển đạo ba: cùng hướng, hình chiếu dương, nên ét tê chênh lên."
+  },
+  {
+   "id": "10-1",
+   "text": "Chiếu lên trục a-vê-lờ: ngược hướng, hình chiếu âm, nên ét tê chênh xuống."
+  },
+  {
+   "id": "10-2",
+   "text": "Đó chính là hình ảnh soi gương: cùng một mũi tên, nhưng nhìn từ phía đối diện."
+  },
+  {
+   "id": "10-3",
+   "text": "Khi có hình soi gương, khả năng nhồi máu càng cao, và điều này giúp phân biệt với viêm màng ngoài tim."
+  },
+  {
+   "id": "11-0",
+   "text": "Trạm năm, thất phải. Khi động mạch vành phải tắc ở đoạn gần, thất phải cũng bị thiếu máu."
+  },
+  {
+   "id": "11-1",
+   "text": "Vì vậy, nhồi máu thất phải thường đi kèm nhồi máu thành dưới."
+  },
+  {
+   "id": "11-2",
+   "text": "Hãy gắn thêm chuyển đạo vê bốn phải, đặt đối xứng với vê bốn sang bên phải ngực. Ét tê chênh lên từ không phẩy năm mi li mét là có ý nghĩa."
+  },
+  {
+   "id": "11-3",
+   "text": "Gợi ý ngay trên điện tâm đồ thường: vê một chênh lên, và chuyển đạo ba cao hơn chuyển đạo hai."
+  },
+  {
+   "id": "11-4",
+   "text": "Ý nghĩa lâm sàng: tránh thuốc ni-trát và lợi tiểu, vì thất phải phụ thuộc tiền tải, rất dễ tụt huyết áp."
+  },
+  {
+   "id": "12-0",
+   "text": "Tiếp theo là thành sau. Ở vê một đến vê ba, ét tê chênh xuống nằm ngang, sóng R cao, sóng T dương."
+  },
+  {
+   "id": "12-1",
+   "text": "Đừng vội nghĩ đây là thiếu máu dưới nội mạc."
+  },
+  {
+   "id": "12-2",
+   "text": "Hãy lật ngược dải điện tâm đồ, như nhìn từ phía sau lưng."
+  },
+  {
+   "id": "12-3",
+   "text": "Hình soi gương hiện ra: ét tê chênh lên kèm sóng Q. Đó là nhồi máu thành sau."
+  },
+  {
+   "id": "12-4",
+   "text": "Gắn thêm vê bảy đến vê chín để xác nhận: ét tê chênh lên từ không phẩy năm mi li mét."
+  },
+  {
+   "id": "13-0",
+   "text": "Trạm sáu, các dạng tương đương. Có khi điện tâm đồ không hề có ét tê chênh lên, nhưng bệnh nhân vẫn đang tắc mạch cấp."
+  },
+  {
+   "id": "13-1",
+   "text": "Hãy phóng to chuyển đạo vê ba."
+  },
+  {
+   "id": "13-2",
+   "text": "Điểm J chênh xuống, đoạn ét tê đi lên dốc,"
+  },
+  {
+   "id": "13-3",
+   "text": "sóng T cao, nhọn và đối xứng,"
+  },
+  {
+   "id": "13-4",
+   "text": "kèm a-vê-rờ chênh lên nhẹ."
+  },
+  {
+   "id": "13-5",
+   "text": "Đây là sóng đơ Uyn-tơ, tương đương nhồi máu cơ tim ét tê chênh lên, do tắc động mạch liên thất trước đoạn gần."
+  },
+  {
+   "id": "14-0",
+   "text": "Tiếp theo là hội chứng Uê-len. Bệnh nhân vừa có cơn đau ngực, nay đã hết đau."
+  },
+  {
+   "id": "14-1",
+   "text": "Ở vê hai và vê ba, sóng T đảo sâu và đối xứng, hoặc có dạng hai pha."
+  },
+  {
+   "id": "14-2",
+   "text": "Đoạn ét tê gần như không chênh, và chưa có sóng Q."
+  },
+  {
+   "id": "14-3",
+   "text": "Đây là dấu hiệu hẹp rất nặng động mạch liên thất trước đoạn gần, bệnh nhân có thể nhồi máu thành trước rộng trong thời gian ngắn."
+  },
+  {
+   "id": "14-4",
+   "text": "Không được làm nghiệm pháp gắng sức, mà cần chụp mạch vành sớm."
+  },
+  {
+   "id": "15-0",
+   "text": "Một hình ảnh khác: ét tê chênh xuống lan tỏa, ở sáu chuyển đạo trở lên."
+  },
+  {
+   "id": "15-1",
+   "text": "Kèm theo ét tê chênh lên ở a-vê-rờ, đôi khi cả vê một."
+  },
+  {
+   "id": "15-2",
+   "text": "Hình ảnh này gợi ý thiếu máu dưới nội tâm mạc lan tỏa, do hẹp nặng thân chung động mạch vành trái, hoặc bệnh ba nhánh."
+  },
+  {
+   "id": "15-3",
+   "text": "Đây là bệnh nhân nặng, cần báo ngay chuyên khoa tim mạch can thiệp."
+  },
+  {
+   "id": "16-0",
+   "text": "Ngược lại, không phải ét tê chênh lên nào cũng là nhồi máu."
+  },
+  {
+   "id": "16-1",
+   "text": "Viêm màng ngoài tim: ét tê chênh lên lan tỏa, hình lõm, đoạn PR chênh xuống, và không có hình soi gương."
+  },
+  {
+   "id": "16-2",
+   "text": "Tái cực sớm: hay gặp ở người trẻ, điểm J có móc, sóng T cao."
+  },
+  {
+   "id": "16-3",
+   "text": "Phì đại thất trái: sóng S rất sâu ở vê một đến vê ba, kèm ét tê chênh lên."
+  },
+  {
+   "id": "16-4",
+   "text": "Block nhánh trái hoặc nhịp máy tạo nhịp: QRS rộng, cần dùng tiêu chuẩn Sgát-bô-sa riêng."
+  },
+  {
+   "id": "16-5",
+   "text": "Khi còn nghi ngờ, hãy so với điện tâm đồ cũ, làm lại điện tâm đồ, xét nghiệm men tim, và siêu âm tim."
+  },
+  {
+   "id": "17-0",
+   "text": "Trạm bảy, ôn tập. Gom tất cả lại thành một bảng định khu, cần học thuộc."
+  },
+  {
+   "id": "17-1",
+   "text": "Thành dưới: chuyển đạo hai, ba, a-vê-ép, thủ phạm thường là động mạch vành phải."
+  },
+  {
+   "id": "17-2",
+   "text": "Thành trước: vê một đến vê bốn, do động mạch liên thất trước."
+  },
+  {
+   "id": "17-3",
+   "text": "Thành bên: chuyển đạo một, a-vê-lờ, vê năm và vê sáu, do động mạch mũ."
+  },
+  {
+   "id": "17-4",
+   "text": "Thành sau: soi gương ở vê một đến vê ba, hãy gắn thêm vê bảy đến vê chín."
+  },
+  {
+   "id": "17-5",
+   "text": "Thất phải: gắn vê bốn phải, và tránh thuốc ni-trát vì dễ tụt huyết áp."
+  },
+  {
+   "id": "18-0",
+   "text": "Cuối cùng, năm điều cần nhớ."
+  },
+  {
+   "id": "18-1",
+   "text": "Một, đo ét tê tại điểm J, chênh từ một mi li mét ở hai chuyển đạo liên tiếp."
+  },
+  {
+   "id": "18-2",
+   "text": "Hai, tiến triển: T tối cấp, ét tê chênh lên, sóng Q, rồi T đảo."
+  },
+  {
+   "id": "18-3",
+   "text": "Ba, định khu theo nhóm chuyển đạo, từ đó đoán động mạch thủ phạm."
+  },
+  {
+   "id": "18-4",
+   "text": "Bốn, luôn tìm hình soi gương, và gắn thêm vê bốn phải, vê bảy đến vê chín khi cần."
+  },
+  {
+   "id": "18-5",
+   "text": "Năm, nhớ các dạng tương đương: thành sau, đơ Uyn-tơ, Uê-len, và a-vê-rờ chênh lên."
+  },
+  {
+   "id": "18-6",
+   "text": "Cảm ơn bạn đã theo dõi. Hẹn gặp lại ở bài tiếp theo."
   }
  ]
 }
