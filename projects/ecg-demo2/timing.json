@@ -1,0 +1,136 @@
+[
+ {
+  "orig": 18.0,
+  "dur": 15.08,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 1.873,
+    "text": "Tim được nuôi bởi 3 động mạch vành chính."
+   },
+   {
+    "start": 2.723,
+    "dur": 2.077,
+    "text": "RCA — động mạch vành phải: nuôi thành dưới và thất phải."
+   },
+   {
+    "start": 5.149,
+    "dur": 2.406,
+    "text": "LAD — động mạch liên thất trước: nuôi thành trước và vách liên thất."
+   },
+   {
+    "start": 7.905,
+    "dur": 1.299,
+    "text": "LCx — động mạch mũ: nuôi thành bên."
+   },
+   {
+    "start": 9.554,
+    "dur": 4.535,
+    "text": "Tắc nhánh nào → vùng đó thiếu máu → chuyển đạo nhìn vùng đó có ST chênh lên."
+   }
+  ]
+ },
+ {
+  "orig": 21.0,
+  "dur": 21.04,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.831,
+    "text": "ECG thay đổi theo thời gian — nhớ 4 giai đoạn."
+   },
+   {
+    "start": 4.681,
+    "dur": 2.763,
+    "text": "① Vài phút đầu: T tối cấp — cao, rộng."
+   },
+   {
+    "start": 7.794,
+    "dur": 1.743,
+    "text": "② Vài giờ: ST chênh lên."
+   },
+   {
+    "start": 9.887,
+    "dur": 2.685,
+    "text": "③ Giờ – ngày: sóng Q hoại tử."
+   },
+   {
+    "start": 12.922,
+    "dur": 2.249,
+    "text": "④ Ngày – tuần: T đảo."
+   },
+   {
+    "start": 15.521,
+    "dur": 4.517,
+    "text": "T tối cấp → ST chênh lên → sóng Q → T đảo."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 19.6,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.065,
+    "text": "Ví dụ: tắc động mạch vành phải (RCA)."
+   },
+   {
+    "start": 2.915,
+    "dur": 1.664,
+    "text": "Thành dưới thiếu máu."
+   },
+   {
+    "start": 4.929,
+    "dur": 4.163,
+    "text": "II · III · aVF nhìn thành dưới → ST chênh LÊN."
+   },
+   {
+    "start": 9.442,
+    "dur": 4.676,
+    "text": "Phía đối diện, I · aVL → ST chênh XUỐNG = soi gương."
+   },
+   {
+    "start": 14.468,
+    "dur": 4.121,
+    "text": "ST ở III > II → nghĩ RCA."
+   }
+  ]
+ },
+ {
+  "orig": 21.0,
+  "dur": 26.04,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.613,
+    "text": "Gom lại: bảng định khu — cần học thuộc."
+   },
+   {
+    "start": 3.463,
+    "dur": 4.777,
+    "text": "Thành dưới: II, III, aVF → RCA."
+   },
+   {
+    "start": 8.59,
+    "dur": 3.041,
+    "text": "Thành trước: V1 – V4 → LAD."
+   },
+   {
+    "start": 11.981,
+    "dur": 4.573,
+    "text": "Thành bên: I, aVL, V5 – V6 → LCx."
+   },
+   {
+    "start": 16.904,
+    "dur": 3.924,
+    "text": "Thành sau: soi gương ở V1 – V3 → gắn V7 – V9."
+   },
+   {
+    "start": 21.178,
+    "dur": 3.876,
+    "text": "Thất phải: gắn V4R · tránh nitrate vì dễ tụt huyết áp."
+   }
+  ]
+ }
+]

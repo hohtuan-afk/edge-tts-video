@@ -1,6 +1,6 @@
 // Bản thử phong cách "Monitor ICU + Bàn đọc ECG"
 import React from 'react';
-import {AbsoluteFill, interpolate, Easing} from 'remotion';
+import {AbsoluteFill, interpolate, Easing, useCurrentFrame} from 'remotion';
 import {TransitionSeries, linearTiming} from '@remotion/transitions';
 import {fade} from '@remotion/transitions/fade';
 import {slide} from '@remotion/transitions/slide';
@@ -118,6 +118,7 @@ const S1: React.FC = () => {
 // Cảnh 2: monitor nhiều kênh — 4 giai đoạn
 const S2: React.FC = () => {
   const t = useT();
+  const rt = useCurrentFrame() / 30; // sóng quét theo thời gian thật, không bị kéo giãn
   const rows: [string, string, string, Lead][] = [
     ['T TỐI CẤP', 'vài phút', '#B98CFF', STAGE.hyper],
     ['ST CHÊNH LÊN', 'vài giờ', M.r, STAGE.stemi],
@@ -132,7 +133,7 @@ const S2: React.FC = () => {
         {rows.map(([, , c, L], i) => (
           <g key={i} opacity={ap(t, 0.3 + i * 0.9)}>
             <line x1={0} x2={1680} y1={85 + i * 160 + 150} y2={85 + i * 160 + 150} stroke="#0f1d15" strokeWidth={2} />
-            <Sweep t={Math.max(0, t - (0.3 + i * 0.9)) + 0.6} x={420} y0={85 + i * 160 + 100} w={980} win={3} pxmv={95} color={c} leadAt={() => L} rr={0.85} />
+            <Sweep t={rt + 0.6 + i * 0.37} x={420} y0={85 + i * 160 + 100} w={980} win={3} pxmv={95} color={c} leadAt={() => L} rr={0.85} />
           </g>
         ))}
       </Svg>
@@ -285,4 +286,4 @@ export const LabSample: React.FC = () => (
   </AbsoluteFill>
 );
 export const LAB_DUR = 210 + 180 + 240 + 200 - 18 - 24 - 20;
-export {S1 as MonitorScene, M as MCOL, MONO};
+export {S2 as StagesScene, S1 as MonitorScene, M as MCOL, MONO};

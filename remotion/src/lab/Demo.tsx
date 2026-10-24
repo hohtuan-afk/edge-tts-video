@@ -10,13 +10,13 @@ import {VecRotate, VecProject} from './Vector';
 import {PaperDeWinter, PaperPosterior} from './Paper';
 
 const SC = [MonitorScene, VecRotate, VecProject, PaperDeWinter, PaperPosterior];
-const Fade: React.FC<{dur: number; children: React.ReactNode}> = ({dur, children}) => {
+export const Fade: React.FC<{dur: number; children: React.ReactNode}> = ({dur, children}) => {
   const f = useCurrentFrame();
   const o = Math.min(interpolate(f, [0, 12], [0, 1], {extrapolateRight: 'clamp'}), interpolate(f, [dur - 10, dur], [1, 0], {extrapolateLeft: 'clamp'}));
   return <AbsoluteFill style={{opacity: o}}>{children}</AbsoluteFill>;
 };
 // Nhãn chuỗi bài ở góc trên bên trái
-const SeriesTag: React.FC = () => {
+export const SeriesTag: React.FC = () => {
   const f = useCurrentFrame();
   const a = interpolate(f, [6, 24], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   return (

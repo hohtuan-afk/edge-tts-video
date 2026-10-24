@@ -11,10 +11,11 @@ const isWB = mode.startsWith('wbsample');
 const isLab = mode.startsWith('labsample');
 const isVec = mode.startsWith('vecsample');
 const isPaper = mode.startsWith('papersample');
-const isDemo = mode.startsWith('demo');
+const isDemo2 = mode.startsWith('demo2');
+const isDemo = mode.startsWith('demo') && !isDemo2;
 const isTable = mode.startsWith('tablesample');
 const isTH = mode.startsWith('tablehand');
-const id = isTH ? 'TableHand' : isTable ? 'TableSample' : isDemo ? 'Demo' : is3d ? 'Test3D' : isWB ? 'WBSample' : isLab ? 'LabSample' : isVec ? 'VectorSample' : isPaper ? 'PaperSample' : 'Main';
+const id = isDemo2 ? 'Demo2' : isTH ? 'TableHand' : isTable ? 'TableSample' : isDemo ? 'Demo' : is3d ? 'Test3D' : isWB ? 'WBSample' : isLab ? 'LabSample' : isVec ? 'VectorSample' : isPaper ? 'PaperSample' : 'Main';
 const chromiumOptions = {gl: 'swangle'};
 const serveUrl = await bundle({entryPoint: path.resolve('src/index.ts')});
 const composition = await selectComposition({serveUrl, id, chromiumOptions});
@@ -58,6 +59,17 @@ if (isTable) {
     console.log('still', frame);
   }
   await renderMedia({composition, serveUrl, codec: 'h264', crf: 22, pixelFormat: 'yuv420p', outputLocation: 'out/table_sample.mp4', concurrency: 4, chromiumOptions});
+  console.log('done');
+  process.exit(0);
+}
+
+if (isDemo2) {
+  const frames = fs.readFileSync('stills.txt', 'utf8').trim().split(/\s+/).map(Number);
+  for (const frame of frames) {
+    await renderStill({composition, serveUrl, output: `out/d2_${String(frame).padStart(5, '0')}.png`, frame, chromiumOptions});
+    console.log('still', frame);
+  }
+  if (mode === 'demo2') await renderMedia({composition, serveUrl, codec: 'h264', audioCodec: 'aac', crf: 22, pixelFormat: 'yuv420p', outputLocation: 'out/demo2.mp4', concurrency: 4, chromiumOptions});
   console.log('done');
   process.exit(0);
 }

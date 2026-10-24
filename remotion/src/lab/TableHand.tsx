@@ -1,7 +1,7 @@
 // Bảng định khu trên giấy ECG hồng + lớp vẽ tay (rough.js): kẻ bảng, gạch chân, ✓, mũi tên, tim có động mạch vành, ghi chú bên lề
 import React from 'react';
 import {AbsoluteFill, interpolate, Easing} from 'remotion';
-import {FONT, useT} from '../lib';
+import {FONT, useT, CapCtx} from '../lib';
 import {MONO} from './Lab';
 import {LAYOUT} from './ecg';
 import {HAND, RLine, RPath, RArrow} from '../wb/wb';
@@ -37,6 +37,7 @@ export const TableHand: React.FC = () => {
   const local = t - (cur >= 0 ? rowStart(cur) : 0);
   // vị trí khung tim
   const HX = 1395, HY = 110, HW = 480, HH = 820;
+  const showCap = React.useContext(CapCtx);
   return (
     <AbsoluteFill style={{background: 'radial-gradient(circle at 40% 35%, #3a4a52, #1d272c 75%)'}}>
       <AbsoluteFill style={{background: 'repeating-linear-gradient(95deg, rgba(255,255,255,0.018) 0 2px, transparent 2px 9px)'}} />
@@ -132,11 +133,11 @@ export const TableHand: React.FC = () => {
         </svg>
       )}
 
-      <div style={{position: 'absolute', left: 0, right: 0, bottom: 22, display: 'flex', justifyContent: 'center'}}>
+      {showCap && <div style={{position: 'absolute', left: 0, right: 0, bottom: 22, display: 'flex', justifyContent: 'center'}}>
         <div style={{maxWidth: 1500, padding: '10px 30px', borderRadius: 14, background: 'rgba(20,24,30,0.88)', border: '1px solid rgba(255,255,255,0.15)', fontFamily: FONT, fontSize: 30, fontWeight: 500, color: '#F1F5F9'}}>
           {row ? `${row.zone}: ST chênh lên ở ${row.leads} — thủ phạm ${row.art}.` : 'Bảng định khu nhồi máu cơ tim cấp.'}
         </div>
-      </div>
+      </div>}
     </AbsoluteFill>
   );
 };
