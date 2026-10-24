@@ -137,7 +137,7 @@ def main():
         if sc.get("end"):
             ep = f"{WORK}/end{i}.png"; big_png(sc["end"], ep); overlays.append((ep, t + tm["sents"][0]["start"], t + D))
         for j, s in enumerate(tm["sents"]):
-            if sc.get("hook") or (sc.get("end") and j == 0):
+            if os.environ.get("NOSUB") or sc.get("hook") or (sc.get("end") and j == 0):
                 continue  # chữ lớn đã thay phụ đề
             cs = chunks(s["text"]); tot = sum(len(c) for c in cs); st = t + s["start"]
             end_s = t + (tm["sents"][j + 1]["start"] if j + 1 < len(tm["sents"]) else D) - 0.05
