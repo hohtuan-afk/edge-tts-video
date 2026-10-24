@@ -113,7 +113,7 @@ const Cover: React.FC = () => {
 // ================= TIM + DẢI ECG (thành bên, thất phải) =================
 type Strip = {ld: string; k: number; L: Lead};
 type Grp = {k0: number; k1: number; t0: number; fill: string; ink: string; label: string};
-type TCfg = {title: string; hot: Hot6; zone: Zone6; zoneC: string; occlT: number; zoneT: number; zoneLabel: string; lbl: [number, number]; to: [number, number]; strips: Strip[]; groups: Grp[]; rowH: number; y0: number; notes: {t0: number; c: string; x: number; y: number; w: number; text: React.ReactNode}[]};
+type TCfg = {hide?: string[]; title: string; hot: Hot6; zone: Zone6; zoneC: string; occlT: number; zoneT: number; zoneLabel: string; lbl: [number, number]; to: [number, number]; strips: Strip[]; groups: Grp[]; rowH: number; y0: number; notes: {t0: number; c: string; x: number; y: number; w: number; text: React.ReactNode}[]};
 const makeTerritory = (cfg: TCfg): React.FC => {
   const C: React.FC = () => {
     const t = useT();
@@ -128,7 +128,7 @@ const makeTerritory = (cfg: TCfg): React.FC => {
           <div style={{position: 'absolute', left: 30, top: 18, fontFamily: HAND, fontSize: 40, color: '#1E1E24'}}>{cfg.title}</div>
           <svg viewBox="0 0 740 800" width={740} height={800} style={{position: 'absolute', inset: 0}}>
             <Heart6 id={'tr' + cfg.zone} x={40} y={70} s={HS} prog={dp(t, 0.2, 1.4)} art={dp(t, 0.5, 1.2)} labelA={ap(t, 1.4)} beat={beat}
-              hot={cfg.hot} occl={dp(t, cfg.occlT, 0.6)} zone={cfg.zone} zoneC={cfg.zoneC} zoneA={ap(t, cfg.zoneT, 0.8)} />
+              hide={cfg.hide} hot={cfg.hot} occl={dp(t, cfg.occlT, 0.6)} zone={cfg.zone} zoneC={cfg.zoneC} zoneA={ap(t, cfg.zoneT, 0.8)} />
             <g opacity={ap(t, cfg.zoneT + 0.4, 0.5)}>
               <RArrow x1={cfg.lbl[0] + 60} y1={cfg.lbl[1] - 34} x2={40 + cfg.to[0] * HS} y2={70 + cfg.to[1] * HS} prog={dp(t, cfg.zoneT + 0.4, 0.5)} stroke="#C81E3A" sw={3.5} curve={-0.25} seed={9} head={16} />
               <text x={cfg.lbl[0]} y={cfg.lbl[1]} fontFamily={HAND} fontSize={38} fill="#C81E3A">{cfg.zoneLabel}</text>
@@ -175,7 +175,7 @@ const LAT: Record<string, Lead> = {
   III: {r: 0.5, s: -0.25, st: -0.16, t: -0.12}, aVF: {r: 0.7, s: -0.2, st: -0.12, t: -0.05},
 };
 const LateralScene = makeTerritory({
-  title: 'Tắc động mạch mũ', hot: 'lcx', zone: 'lat', zoneC: '#16A34A', occlT: 0.9, zoneT: 2.1, zoneLabel: 'thành bên', lbl: [520, 770], to: [419, 420],
+  hide: ['LAD'], title: 'Tắc động mạch mũ', hot: 'lcx', zone: 'lat', zoneC: '#16A34A', occlT: 0.9, zoneT: 2.1, zoneLabel: 'thành bên', lbl: [520, 770], to: [419, 420],
   rowH: 112, y0: 86,
   strips: [{ld: 'I', k: 0, L: LAT.I}, {ld: 'aVL', k: 1, L: LAT.aVL}, {ld: 'V5', k: 2, L: LAT.V5}, {ld: 'V6', k: 3, L: LAT.V6}, {ld: 'III', k: 4.35, L: LAT.III}, {ld: 'aVF', k: 5.35, L: LAT.aVF}],
   groups: [
@@ -308,9 +308,9 @@ const MimicScene: React.FC = () => {
 const TAKE = [
   ['Đo ST tại ', 'điểm J', ': ≥ 1 mm ở 2 chuyển đạo liên tiếp'],
   ['Tiến triển: ', 'T tối cấp → ST↑ → Q → T đảo', ''],
-  ['', 'Định khu', ' theo nhóm chuyển đạo → đoán động mạch thủ phạm'],
+  ['', 'Định khu', ' theo nhóm chuyển đạo → động mạch thủ phạm'],
   ['Luôn tìm ', 'soi gương', ' · gắn V4R, V7–V9 khi cần'],
-  ['Dạng ', 'tương đương', ': thành sau · de Winter · Wellens · aVR'],
+  ['', 'Tương đương', ': thành sau · de Winter · Wellens · aVR'],
 ];
 const SummaryScene: React.FC = () => {
   const t = useT();
@@ -330,7 +330,7 @@ const SummaryScene: React.FC = () => {
         {TAKE.map((x, i) => {
           const a = ap(t, 2 * (i + 1), 0.5);
           return (
-            <div key={i} style={{position: 'absolute', left: 150, top: 118 + i * 100, width: 1000, fontFamily: FONT, fontSize: 36, fontWeight: 600, color: '#1F2937', opacity: a, transform: `translateX(${(1 - a) * 20}px)`, whiteSpace: 'nowrap'}}>
+            <div key={i} style={{position: 'absolute', left: 150, top: 118 + i * 100, width: 1000, fontFamily: FONT, fontSize: 33, fontWeight: 600, color: '#1F2937', opacity: a, transform: `translateX(${(1 - a) * 20}px)`, whiteSpace: 'nowrap'}}>
               <span style={{color: STC[i], fontWeight: 800}}>{i + 1}. </span>{x[0]}<b style={{color: '#C81E3A'}}>{x[1]}</b>{x[2]}
             </div>
           );

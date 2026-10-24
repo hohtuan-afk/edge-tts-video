@@ -43,8 +43,8 @@ const Pill: React.FC<{t: string; x: number; y: number; ax: number; ay: number; c
   );
 };
 
-export const Heart6: React.FC<{x: number; y: number; s: number; prog: number; art?: number; zone?: Zone6; zoneA?: number; zoneC?: string; hot?: Hot6; occl?: number; labels?: boolean; labelA?: number; beat?: number; id?: string}> = ({
-  x, y, s, prog, art = 1, zone = null, zoneA = 0, zoneC = '#FF3B3B', hot = null, occl = 0, labels = true, labelA = 1, beat = 0, id = 'h6',
+export const Heart6: React.FC<{x: number; y: number; s: number; prog: number; art?: number; zone?: Zone6; zoneA?: number; zoneC?: string; hot?: Hot6; occl?: number; labels?: boolean; labelA?: number; beat?: number; id?: string; hide?: string[]}> = ({
+  x, y, s, prog, art = 1, zone = null, zoneA = 0, zoneC = '#FF3B3B', hot = null, occl = 0, labels = true, labelA = 1, beat = 0, id = 'h6', hide = [],
 }) => {
   const k = (a: number, b: number) => Math.max(0, Math.min(1, (prog - a) / (b - a)));
   const u = (n: string) => `${id}-${n}`;
@@ -122,7 +122,7 @@ export const Heart6: React.FC<{x: number; y: number; s: number; prog: number; ar
       {labels && (
         <g opacity={labelA}>
           <Pill t="RCA" x={88} y={330} ax={345} ay={720} c="#B3122E" left />
-          <Pill t="LAD" x={380} y={540} ax={668} ay={1010} c="#B3122E" />
+          {!hide.includes('LAD') && <Pill t="LAD" x={380} y={540} ax={668} ay={1010} c="#B3122E" />}
           <Pill t="LCx" x={470} y={262} ax={955} ay={650} c="#B3122E" />
           <Pill t="ĐMC" x={410} y={70} ax={760} ay={190} c="#9F1D2F" />
           <Pill t="ĐMP" x={470} y={150} ax={900} ay={330} c="#2F4FA8" />
