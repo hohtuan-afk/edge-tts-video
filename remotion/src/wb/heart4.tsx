@@ -15,7 +15,7 @@ const H = {
   aorta: 'M262,214 C254,142 268,96 310,82 C350,70 386,90 388,138',
   br1: 'M292,90 C290,64 288,40 287,16', br2: 'M320,80 C321,56 322,34 323,12', br3: 'M346,82 C352,60 358,40 364,20',
   svc: 'M206,30 C206,86 206,140 202,196',
-  ivc: 'M132,368 C128,398 124,420 120,448',
+  ivc: 'M140,362 C138,380 136,396 134,412',
   pa: 'M298,232 C304,190 330,162 372,152', paL: 'M370,152 C398,146 424,142 452,140', paR: 'M318,170 C296,170 280,172 266,176',
   fatR: 'M248,214 C214,222 180,238 172,272 C165,322 176,372 206,416 C226,440 250,455 276,463',
   fatL: 'M336,236 C344,300 345,380 350,520',
@@ -136,7 +136,7 @@ export const Heart4: React.FC<{x: number; y: number; s: number; prog: number; ar
         {zone && zone !== 'post' && zoneA > 0 && (
           <g opacity={zoneA}>
             <path d={Z[zone]} fill={`url(#${u('zone')})`} filter={`url(#${u('soft')})`} style={{mixBlendMode: 'screen'}} />
-            <path d={Z[zone]} fill={zoneC} opacity={0.32} style={{mixBlendMode: 'multiply'}} />
+            <path d={Z[zone]} fill={zoneC} opacity={0.5} style={{mixBlendMode: 'multiply'}} />
             <path d={Z[zone]} fill="none" stroke="#fff" strokeWidth={2.5} strokeDasharray="8 7" opacity={0.85} />
           </g>
         )}
@@ -170,8 +170,8 @@ export const Heart4: React.FC<{x: number; y: number; s: number; prog: number; ar
         {labels && (
           <g opacity={labelA} fontFamily={FONT} fontWeight={700}>
             {[
-              ['RCA', 78, 300, 168, 296, '#B3122E'], ['LAD', 382, 476, 350, 470, '#B3122E'], ['LCx', 452, 270, 428, 278, '#B3122E'],
-              ['ĐMC', 410, 86, 384, 110, '#8E2B24'], ['ĐMP', 456, 120, 440, 140, '#2B3C86'], ['TMC trên', 112, 60, 186, 70, '#1E3D78'],
+              ['RCA', 78, 300, 168, 296, '#B3122E'], ['LAD', 396, 500, 351, 486, '#B3122E'], ['LCx', 452, 270, 428, 278, '#B3122E'],
+              ['ĐMC', 410, 86, 384, 110, '#8E2B24'], ['ĐMP', 456, 120, 440, 140, '#2B3C86'], ['TMC trên', 150, 150, 188, 138, '#1E3D78'],
             ].map(([t, lx, ly, px, py, c], i) => (
               <g key={i}>
                 <line x1={lx as number} y1={(ly as number) - 7} x2={px as number} y2={py as number} stroke={c as string} strokeWidth={1.5} opacity={0.7} />
