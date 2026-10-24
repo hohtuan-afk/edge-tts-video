@@ -129,9 +129,6 @@ export const Heart4: React.FC<{x: number; y: number; s: number; prog: number; ar
           <path d={H.fatL} fill="none" stroke="#F2CF7E" strokeWidth={20} strokeLinecap="round" />
           <path d={H.lcx} fill="none" stroke="#F2CF7E" strokeWidth={18} strokeLinecap="round" />
         </g>
-        {/* động mạch phổi phía trước */}
-        <Tube d={H.pa} w={52} dark="#2B3C86" mid="#4E66C4" light="#AEBBF0" a={k(0.45, 0.7)} />
-        <Tube d={H.paL} w={32} dark="#2B3C86" mid="#4E66C4" light="#AEBBF0" a={k(0.5, 0.75)} />
         {/* vùng tổn thương */}
         {zone && zone !== 'post' && zoneA > 0 && (
           <g opacity={zoneA}>
@@ -147,6 +144,9 @@ export const Heart4: React.FC<{x: number; y: number; s: number; prog: number; ar
             <text x={448} y={360} fill={zoneC} fontFamily={FONT} fontWeight={700} fontSize={22} transform="rotate(72 448 360)">mặt sau</text>
           </g>
         )}
+        {/* động mạch phổi phía trước */}
+        <Tube d={H.pa} w={52} dark="#2B3C86" mid="#4E66C4" light="#AEBBF0" a={k(0.45, 0.7)} />
+        <Tube d={H.paL} w={32} dark="#2B3C86" mid="#4E66C4" light="#AEBBF0" a={k(0.5, 0.75)} />
         {/* tĩnh mạch tim + động mạch vành */}
         <Vessel d={H.gcv} w={4} prog={ka(0.3, 0.8)} vein dim={!!hot} />
         <Vessel d={H.rca} w={7} prog={ka(0, 0.55)} hot={isHot('rca')} dim={dim('rca')} />
