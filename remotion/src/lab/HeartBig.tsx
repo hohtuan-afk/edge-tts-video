@@ -2,7 +2,7 @@
 import React from 'react';
 import {AbsoluteFill, interpolate} from 'remotion';
 import {FONT, useT} from '../lib';
-import {Heart4, Zone4, Hot4} from '../wb/heart4';
+import {Heart5 as Heart4, Zone5 as Zone4, Hot5 as Hot4} from '../wb/heart5';
 
 const SEQ: [string, Zone4, Hot4, string][] = [
   ['Tim bình thường', null, null, '#FFFFFF'],

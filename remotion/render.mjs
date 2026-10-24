@@ -64,6 +64,8 @@ if (isTable) {
 }
 
 if (isDemo2) {
+  const hb = await selectComposition({serveUrl, id: 'HeartBig', chromiumOptions});
+  for (const frame of [60, 120, 190, 262, 334]) await renderStill({composition: hb, serveUrl, output: `out/hb_${String(frame).padStart(4, '0')}.png`, frame, chromiumOptions});
   const frames = fs.readFileSync('stills.txt', 'utf8').trim().split(/\s+/).map(Number);
   for (const frame of frames) {
     await renderStill({composition, serveUrl, output: `out/d2_${String(frame).padStart(5, '0')}.png`, frame, chromiumOptions});

@@ -8,7 +8,7 @@ import {Caption, Progress} from '../Main';
 import {StagesScene, MONO} from './Lab';
 import {TableHand} from './TableHand';
 import {Fade, SeriesTag} from './Demo';
-import {Heart4, Zone4, Hot4} from '../wb/heart4';
+import {Heart5 as Heart4, Zone5 as Zone4, Hot5 as Hot4} from '../wb/heart5';
 import {HAND, RPath, RArrow} from '../wb/wb';
 import {INFERIOR, tracePts, ecgAt, Lead} from './ecg';
 
