@@ -1,0 +1,23 @@
+Downloading Chrome Headless Shell https://www.remotion.dev/chrome-headless-shell
+Customize this behavior by adding a onBrowserDownload function to selectComposition().
+Downloading from: https://remotion.media/chromium-headless-shell-linux-x64-157.0.8080.0.zip?clear
+Downloading Chrome Headless Shell - 9.5 Mb/98.9 Mb
+Downloading Chrome Headless Shell - 19.1 Mb/98.9 Mb
+Downloading Chrome Headless Shell - 28.6 Mb/98.9 Mb
+Downloading Chrome Headless Shell - 38.2 Mb/98.9 Mb
+Downloading Chrome Headless Shell - 47.7 Mb/98.9 Mb
+Downloading Chrome Headless Shell - 57.3 Mb/98.9 Mb
+Downloading Chrome Headless Shell - 66.8 Mb/98.9 Mb
+Downloading Chrome Headless Shell - 76.4 Mb/98.9 Mb
+Downloading Chrome Headless Shell - 85.9 Mb/98.9 Mb
+Downloading Chrome Headless Shell - 95.5 Mb/98.9 Mb
+Downloading Chrome Headless Shell - 98.9 Mb/98.9 Mb
+still 226
+still 432
+still 768
+still 1064
+still 1378
+still 1652
+still 2062
+still 2433
+done
