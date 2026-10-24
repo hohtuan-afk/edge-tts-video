@@ -21,15 +21,15 @@ def clip(n):
 
 # Cảnh -> [(clip, giây vào, tỉ lệ thời lượng)], tiếng gốc, chip tiêu đề
 SCENES = [
-    dict(segs=[("4815", 1.0, 1.0)], amb=0.10, chip=None, hook="THỨ BẢY NÀY\nMÌNH… ĐI HỌC!"),
-    dict(segs=[("4810", 1.5, 0.48), ("4811", 1.0, 0.52)], amb=0.45, chip="📍 TP. CẦN THƠ · 24/10/2026"),
-    dict(segs=[("4812", 2.0, 1.0)], amb=0.40, chip="KHAI MẠC HỘI NGHỊ"),
-    dict(segs=[("4814", 2.0, 0.42), ("4817", 0.0, 0.58)], amb=0.10, chip="KHAI MẠC HỘI NGHỊ"),
-    dict(segs=[("4818", 0.0, 0.45), ("4819", 0.0, 0.55)], amb=0.06, chip="SSC 2026 · 129 KHUYẾN CÁO"),
-    dict(segs=[("4822", 0.0, 0.5), ("4823", 1.0, 0.5)], amb=0.06, chip="HUYẾT ĐỘNG · NE · VAC"),
-    dict(segs=[("4826", 0.0, 0.5), ("4827", 0.5, 0.5)], amb=0.06, chip="THỞ MÁY · MECHANICAL POWER"),
-    dict(segs=[("4828", 0.0, 0.45), ("4829", 2.0, 0.55)], amb=0.06, chip="HỘI TRƯỜNG CHUYÊN ĐỀ"),
-    dict(segs=[("4821", 1.0, 0.5), ("4815", 3.0, 0.5)], amb=0.06, chip=None, end="HỌC ĐỂ\nCỨU NGƯỜI"),
+    dict(segs=[("4815", 1.0, 1.0)], amb=0.10, chip=None),
+    dict(segs=[("4810", 1.5, 0.48), ("4811", 1.0, 0.52)], amb=0.45, chip=None),
+    dict(segs=[("4812", 2.0, 1.0)], amb=0.40, chip=None),
+    dict(segs=[("4814", 2.0, 0.42), ("4817", 0.0, 0.58)], amb=0.10, chip=None),
+    dict(segs=[("4818", 0.0, 0.45), ("4819", 0.0, 0.55)], amb=0.06, chip=None),
+    dict(segs=[("4822", 0.0, 0.5), ("4823", 1.0, 0.5)], amb=0.06, chip=None),
+    dict(segs=[("4826", 0.0, 0.5), ("4827", 0.5, 0.5)], amb=0.06, chip=None),
+    dict(segs=[("4828", 0.0, 0.45), ("4829", 2.0, 0.55)], amb=0.06, chip=None),
+    dict(segs=[("4821", 1.0, 0.5), ("4815", 3.0, 0.5)], amb=0.06, chip=None),
 ]
 
 def run(cmd):
@@ -64,18 +64,18 @@ def text_block(d, xy, lines, f, fill=(255, 255, 255), stroke=8, anchor="mm", gap
 
 def sub_png(text, path):
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
-    f = font(F_XB, 58)
+    f = font(F_XB, 48)
     import math
-    nl = math.ceil(len(text) / 28)
+    nl = math.ceil(len(text) / 32)
     lines = textwrap.wrap(text, max(14, math.ceil(len(text) / nl) + 3))
-    lh = 70; bh = lh * len(lines) + 40; cy = 1330
+    lh = 60; bh = lh * len(lines) + 40; cy = 1330
     # dải nền tối mờ cho dễ đọc
     box = Image.new("RGBA", (W, H), (0, 0, 0, 0)); bd = ImageDraw.Draw(box)
     bd.rounded_rectangle((60, cy - bh / 2, W - 60, cy + bh / 2), 28, fill=(0, 0, 0, 120))
     im = Image.alpha_composite(box, im); d = ImageDraw.Draw(im)
     for i, ln in enumerate(lines):
         d.text((W / 2, cy - lh * (len(lines) - 1) / 2 + i * lh), ln, font=f, fill=(255, 255, 255),
-               anchor="mm", stroke_width=6, stroke_fill=(0, 0, 0))
+               anchor="mm", stroke_width=5, stroke_fill=(0, 0, 0))
     im.save(path)
 
 def chunks(text, maxc=52):

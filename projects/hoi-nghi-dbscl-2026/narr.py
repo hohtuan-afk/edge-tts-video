@@ -8,7 +8,7 @@ NARR = [
    "Mở màn là tiết mục văn nghệ rực rỡ, đưa cả hội trường đi qua những miền đất của Tổ quốc.")],
  [("Cờ đỏ sao vàng tung bay, tà áo dài thướt tha – một khởi đầu thật tự hào",
    "Cờ đỏ sao vàng tung bay, tà áo dài thướt tha, một khởi đầu thật tự hào.")],
- [("Phát biểu khai mạc hội nghị", "Tiếp theo là phần phát biểu khai mạc hội nghị."),
+ [("GS.TS.BS Nguyễn Gia Bình phát biểu khai mạc hội nghị", "Giáo sư, Tiến sĩ, Bác sĩ Nguyễn Gia Bình phát biểu khai mạc hội nghị."),
   ("Ban tổ chức tri ân các đơn vị đồng hành", "Và ban tổ chức tri ân các đơn vị đã đồng hành cùng hội nghị.")],
  [("Phiên toàn thể đầu tiên: cập nhật Surviving Sepsis Campaign 2026",
    "Phiên toàn thể đầu tiên cập nhật hướng dẫn Chiến dịch Sống còn Nhiễm khuẩn huyết, năm hai nghìn không trăm hai mươi sáu."),

@@ -14,6 +14,7 @@ SR, FPS = 22050, 25
 LEAD = float(os.environ.get("LEAD", 0.7))
 GAP = float(os.environ.get("GAP", 0.55))
 TAIL = float(os.environ.get("TAIL", 1.3))
+MIN = float(os.environ.get("MIN", 6.0))
 
 spec = importlib.util.spec_from_file_location("narr", os.path.join(proj, "narr.py"))
 narr = importlib.util.module_from_spec(spec)
@@ -38,7 +39,7 @@ for i, sc in enumerate(narr.NARR):
         clips.append((t, a))
         t += d + GAP
     orig = narr.SCENE_DUR[i]
-    dur = round(max(t - GAP + TAIL, orig * 0.6, 6.0) * FPS) / FPS
+    dur = round(max(t - GAP + TAIL, orig * 0.6 if MIN >= 6 else 0, MIN) * FPS) / FPS
     buf = np.zeros(int(dur * SR) + 1, np.float32)
     for st, a in clips:
         k = int(st * SR)
