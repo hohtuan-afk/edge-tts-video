@@ -33,7 +33,7 @@ const H = {
 };
 const Z: Record<string, string> = {
   ant: 'M336,250 C300,302 302,420 342,518 C374,496 398,430 398,360 C398,300 374,262 336,250 Z',
-  inf: 'M180,384 C212,440 280,496 350,524 C380,504 396,482 404,458 C330,470 262,442 208,394 Z',
+  inf: 'M174,368 C208,434 278,494 350,526 C386,502 406,472 416,432 C340,454 264,426 210,376 Z',
   lat: 'M404,212 C432,252 434,332 418,402 C408,442 392,472 376,498 C394,420 400,322 382,232 Z',
   rv: 'M182,242 C202,214 252,204 300,214 C322,224 336,240 336,252 C342,330 340,420 346,506 C300,490 240,450 204,400 C178,360 174,300 182,242 Z',
 };
@@ -126,6 +126,7 @@ export const Heart5: React.FC<{x: number; y: number; s: number; prog: number; ar
           <path d={H.raAur} fill={C.aur} />
         </g>
         {/* vùng tổn thương: tô phẳng + gạch chéo + viền trắng đứt */}
+        {zone && zoneA > 0 && <path d={H.vent} fill="#FFFFFF" opacity={0.38 * zoneA} />}
         {zone && zone !== 'post' && zoneA > 0 && (
           <g opacity={zoneA}>
             <path d={Z[zone]} fill={`url(#${u('hatch')})`} opacity={0.92} />
@@ -166,7 +167,7 @@ export const Heart5: React.FC<{x: number; y: number; s: number; prog: number; ar
       {labels && (
         <g opacity={labelA}>
           <Pill t="RCA" x={96} y={300} px={170} py={296} c="#B3122E" left />
-          <Pill t="LAD" x={384} y={548} px={350} py={500} c="#B3122E" />
+          <Pill t="LAD" x={392} y={528} px={350} py={500} c="#B3122E" />
           <Pill t="LCx" x={452} y={292} px={428} py={286} c="#B3122E" />
           <Pill t="ĐMC" x={404} y={92} px={382} py={112} c="#9F1D2F" />
           <Pill t="ĐMP" x={460} y={140} px={440} py={142} c="#2F4FA8" />
