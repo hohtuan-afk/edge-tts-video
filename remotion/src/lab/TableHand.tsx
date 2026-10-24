@@ -5,7 +5,7 @@ import {FONT, useT} from '../lib';
 import {MONO} from './Lab';
 import {LAYOUT} from './ecg';
 import {HAND, RLine, RPath, RArrow} from '../wb/wb';
-import {Heart2, Zone2, Hot2} from '../wb/heart2';
+import {Heart3 as Heart2, Zone3 as Zone2, Hot3 as Hot2} from '../wb/heart3';
 
 const P = {paper: '#FFF6F2', minor: '#F6C9C1', major: '#EC9A8E', ink: '#1E1E24', ink2: '#5B4A47', pen: '#C81E3A', pencil: '#3B3B48'};
 const ap = (t: number, s: number, d = 0.6) => interpolate(t, [s, s + d], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.bezier(0.33, 1, 0.68, 1)});
@@ -102,7 +102,7 @@ export const TableHand: React.FC = () => {
       <div style={{position: 'absolute', left: HX, top: HY, width: HW, height: HH, background: '#FCFAF4', boxShadow: '0 20px 40px rgba(0,0,0,0.45)', transform: `rotate(1.4deg) translateX(${(1 - ap(t, 1.2, 0.8)) * 500}px)`, borderRadius: 3}}>
         <div style={{position: 'absolute', left: 24, top: 14, fontFamily: HAND, fontSize: 38, color: P.ink}}>{row ? row.zone : 'Tim & động mạch vành'}</div>
         <svg viewBox={`0 0 ${HW} ${HH}`} width={HW} height={HH} style={{position: 'absolute', inset: 0}}>
-          <Heart2 x={12} y={48} s={1.08} prog={dp(t, 1.4, 2.2)} art={dp(t, 3.0, 1.2)} labelA={ap(t, 3.6)}
+          <Heart2 x={14} y={40} s={1.1} prog={dp(t, 1.4, 2.2)} art={dp(t, 3.0, 1.2)} labelA={ap(t, 3.6)}
             hot={row ? row.hot : null} occl={row ? dp(t, rowStart(cur) + 0.6, 0.5) : 0}
             zone={row ? row.hz : null} zoneC={row ? row.c : '#D7263D'} zoneA={row && row.hz ? ap(t, rowStart(cur) + 0.9, 0.6) : 0} />
           {/* sơ đồ 12 ô vẽ tay */}
