@@ -104,7 +104,7 @@ export const Heart3: React.FC<{x: number; y: number; s: number; prog: number; ar
         <g opacity={zoneA}>
           <path d="M226,176 C250,150 312,150 330,176" fill="none" stroke={zoneC} strokeWidth={10} strokeLinecap="round" strokeDasharray="6 9" />
           <path d={G.la} fill={zoneC} opacity={0.22} />
-          <text x={250} y={214} fill={zoneC} fontFamily={HAND} fontSize={22}>mặt sau</text>
+          <text x={271} y={214} textAnchor="middle" fill={zoneC} fontFamily={HAND} fontSize={24}>mặt sau</text>
         </g>
       )}
       {/* động mạch vành trên bề mặt */}
@@ -123,7 +123,7 @@ export const Heart3: React.FC<{x: number; y: number; s: number; prog: number; ar
       {labels && (
         <g opacity={labelA} fontFamily={HAND}>
           <text x={133} y={218} textAnchor="middle" fill="#7A3B33" fontSize={22}>nhĩ P</text>
-          <text x={271} y={214} textAnchor="middle" fill="#7A3B33" fontSize={22}>nhĩ T</text>
+          <text x={271} y={214} textAnchor="middle" fill="#7A3B33" fontSize={22} opacity={zone === 'post' ? 1 - zoneA : 1}>nhĩ T</text>
           <text x={140} y={340} textAnchor="middle" fill="#7A3B33" fontSize={22}>thất P</text>
           <text x={268} y={340} textAnchor="middle" fill="#7A3B33" fontSize={22}>thất T</text>
           <text x={8} y={300} fill={C.cor} fontSize={24}>RCA</text>
