@@ -5,6 +5,7 @@ import {noise2D} from '@remotion/noise';
 import {FONT, useT, CapCtx} from '../lib';
 import {beatV, tracePts, LAYOUT, Lead} from './ecg';
 import {MONO} from './Lab';
+import {Heart6} from '../wb/heart6';
 
 const P = {paper: '#FFF6F2', minor: '#F6C9C1', major: '#EC9A8E', ink: '#1E1E24', hl: 'rgba(255,230,0,0.55)', pen: '#D7263D', blue: '#2563EB'};
 const ap = (t: number, s: number, d = 0.6) => interpolate(t, [s, s + d], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.bezier(0.33, 1, 0.68, 1)});
@@ -101,6 +102,15 @@ const HeartCard: React.FC<{x: number; y: number; a: number; occl: number; zone: 
   </div>
 );
 
+// thẻ tim (ảnh minh hoạ) cho cảnh thành trước
+const HeartCard6: React.FC<{x: number; y: number; a: number; occl: number; zone: number}> = ({x, y, a, occl, zone}) => (
+  <div style={{position: 'absolute', left: x, top: y, width: 380, height: 400, borderRadius: 8, background: '#FCFAF4', boxShadow: '0 16px 36px rgba(0,0,0,0.5)', opacity: a, transform: `rotate(2deg) translateY(${(1 - a) * 30}px)`}}>
+    <svg viewBox="0 0 380 400" width={380} height={400}>
+      <Heart6 id="ant6" x={22} y={34} s={0.62} prog={1} art={1} labels={false} hot="lad" occl={occl} zone="ant" zoneC="#2563EB" zoneA={zone} />
+    </svg>
+    <div style={{position: 'absolute', left: 18, top: 10, fontFamily: FONT, fontSize: 26, fontWeight: 800, color: '#C81E3A'}}>LAD tắc</div>
+  </div>
+);
 // Cảnh 1: thành trước (LAD)
 const A1: React.FC = () => {
   const t = useT();
@@ -117,7 +127,7 @@ const A1: React.FC = () => {
         <Sheet leads={ANTERIOR} hl={hl} />
       </div>
       <Sticky x={1180} y={130} a={ap(t, 5)} c="#FFE873" w={330}>V1 – V4<br />ST chênh lên<br />→ THÀNH TRƯỚC</Sticky>
-      <HeartCard x={1530} y={120} a={ap(t, 5.6)} occl={ap(t, 6.2)} zone={ap(t, 6.4, 0.8)} label="LAD tắc" />
+      <HeartCard6 x={1520} y={110} a={ap(t, 5.6)} occl={ap(t, 6.0, 0.6)} zone={ap(t, 6.3, 0.8)} />
       <Sticky x={1200} y={520} a={ap(t, 7.2)} c="#BFDBFE" rot={1.5} w={560} size={30}>Soi gương ở thành dưới: <b>III, aVF chênh xuống</b></Sticky>
       <Cap text="ST chênh lên từ V1 đến V4 — nhồi máu thành trước, thủ phạm là động mạch liên thất trước." />
     </Desk>
@@ -230,4 +240,5 @@ export const PaperSample: React.FC = () => (
 );
 export const PAPER_DUR = 810;
 
+export {Sheet, Desk, Sticky, P as PP, cellPos};
 export {A1 as PaperAnterior, A2 as PaperDeWinter, A3 as PaperPosterior};

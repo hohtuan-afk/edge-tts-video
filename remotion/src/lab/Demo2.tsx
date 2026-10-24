@@ -166,6 +166,7 @@ const InferiorScene: React.FC = () => {
   );
 };
 
+export {CoronaryScene, InferiorScene};
 const SC = [CoronaryScene, StagesScene, InferiorScene, TableHand];
 export const Demo2: React.FC = () => (
   <AbsoluteFill style={{background: '#0E1116', fontFamily: FONT}}>

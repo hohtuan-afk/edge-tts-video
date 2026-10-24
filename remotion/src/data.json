@@ -1,138 +1,593 @@
 {
  "fps": 30,
- "total": 2453,
+ "total": 12952,
  "scenes": [
   {
    "from": 0,
-   "dur": 452,
+   "dur": 569,
    "sents": [
     {
      "start": 0.5,
-     "dur": 1.873,
+     "dur": 3.646,
+     "text": "Điện tâm đồ trong nhồi máu cơ tim cấp"
+    },
+    {
+     "start": 4.496,
+     "dur": 7.862,
+     "text": "7 trạm: Nhận diện → Tiến triển → Định khu → Soi gương → Thất phải · Thành sau → Tương đương → Ôn tập"
+    },
+    {
+     "start": 12.708,
+     "dur": 5.242,
+     "text": "Mục tiêu: nhìn ECG 12 chuyển đạo → nói được vùng nào thiếu máu, động mạch nào tắc."
+    }
+   ]
+  },
+  {
+   "from": 569,
+   "dur": 541,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 6.001,
+     "text": "Trạm 1 · NHẬN DIỆN — Nam 58 tuổi, đau ngực trái 30 phút, vã mồ hôi."
+    },
+    {
+     "start": 6.851,
+     "dur": 4.235,
+     "text": "Trên monitor, ST ở chuyển đạo II chênh lên dần — máy báo động."
+    },
+    {
+     "start": 11.436,
+     "dur": 5.601,
+     "text": "Monitor chỉ là gợi ý → làm ECG 12 chuyển đạo trong vòng 10 phút."
+    }
+   ]
+  },
+  {
+   "from": 1110,
+   "dur": 469,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.427,
      "text": "Tim được nuôi bởi 3 động mạch vành chính."
     },
     {
-     "start": 2.723,
+     "start": 3.277,
      "dur": 2.077,
      "text": "RCA — động mạch vành phải: nuôi thành dưới và thất phải."
     },
     {
-     "start": 5.149,
+     "start": 5.703,
      "dur": 2.406,
      "text": "LAD — động mạch liên thất trước: nuôi thành trước và vách liên thất."
     },
     {
-     "start": 7.905,
+     "start": 8.46,
      "dur": 1.299,
      "text": "LCx — động mạch mũ: nuôi thành bên."
     },
     {
-     "start": 9.554,
+     "start": 10.108,
      "dur": 4.535,
      "text": "Tắc nhánh nào → vùng đó thiếu máu → chuyển đạo nhìn vùng đó có ST chênh lên."
     }
    ]
   },
   {
-   "from": 452,
-   "dur": 632,
+   "from": 1579,
+   "dur": 520,
    "sents": [
     {
      "start": 0.5,
-     "dur": 3.831,
-     "text": "ECG thay đổi theo thời gian — nhớ 4 giai đoạn."
+     "dur": 2.271,
+     "text": "ECG 12 chuyển đạo của bệnh nhân."
     },
     {
-     "start": 4.681,
-     "dur": 2.763,
-     "text": "① Vài phút đầu: T tối cấp — cao, rộng."
+     "start": 3.121,
+     "dur": 3.637,
+     "text": "Mỗi chuyển đạo = một “camera” nhìn tim từ một góc."
     },
     {
-     "start": 7.794,
-     "dur": 1.743,
-     "text": "② Vài giờ: ST chênh lên."
+     "start": 7.108,
+     "dur": 4.48,
+     "text": "II · III · aVF: ST chênh lên → cùng nhìn thành dưới."
     },
     {
-     "start": 9.887,
-     "dur": 2.685,
-     "text": "③ Giờ – ngày: sóng Q hoại tử."
-    },
-    {
-     "start": 12.922,
-     "dur": 2.249,
-     "text": "④ Ngày – tuần: T đảo."
-    },
-    {
-     "start": 15.521,
-     "dur": 4.517,
-     "text": "T tối cấp → ST chênh lên → sóng Q → T đảo."
+     "start": 11.939,
+     "dur": 4.379,
+     "text": "aVL: ST chênh xuống — hình soi gương (trạm 4)."
     }
    ]
   },
   {
-   "from": 1084,
-   "dur": 588,
+   "from": 2099,
+   "dur": 781,
    "sents": [
     {
      "start": 0.5,
-     "dur": 2.065,
-     "text": "Ví dụ: tắc động mạch vành phải (RCA)."
+     "dur": 4.622,
+     "text": "Đo ST ở đâu? Tại điểm J — nơi QRS vừa kết thúc."
     },
     {
-     "start": 2.915,
+     "start": 5.472,
+     "dur": 3.08,
+     "text": "So với đường đẳng điện (đoạn PR)."
+    },
+    {
+     "start": 8.902,
+     "dur": 2.683,
+     "text": "Chuyển đạo III: ST chênh lên khoảng 3 mm."
+    },
+    {
+     "start": 11.935,
+     "dur": 4.519,
+     "text": "Tiêu chuẩn: ST chênh lên ≥ 1 mm ở ≥ 2 chuyển đạo liên tiếp."
+    },
+    {
+     "start": 16.803,
+     "dur": 8.22,
+     "text": "Riêng V2–V3: nam ≥ 40 tuổi ≥ 2 mm · nam < 40 tuổi ≥ 2,5 mm · nữ ≥ 1,5 mm."
+    }
+   ]
+  },
+  {
+   "from": 2880,
+   "dur": 805,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.971,
+     "text": "Trạm 2 · TIẾN TRIỂN — ECG thay đổi theo thời gian."
+    },
+    {
+     "start": 5.821,
+     "dur": 2.763,
+     "text": "① Vài phút đầu: T tối cấp — cao, rộng."
+    },
+    {
+     "start": 8.934,
+     "dur": 1.743,
+     "text": "② Vài giờ: ST chênh lên."
+    },
+    {
+     "start": 11.027,
+     "dur": 2.685,
+     "text": "③ Giờ – ngày: sóng Q hoại tử."
+    },
+    {
+     "start": 14.062,
+     "dur": 2.249,
+     "text": "④ Ngày – tuần: T đảo."
+    },
+    {
+     "start": 16.662,
+     "dur": 4.517,
+     "text": "Nhớ: T tối cấp → ST chênh lên → sóng Q → T đảo."
+    },
+    {
+     "start": 21.529,
+     "dur": 4.301,
+     "text": "ECG đầu chưa rõ mà vẫn nghi? Làm lại sau 15–30 phút."
+    }
+   ]
+  },
+  {
+   "from": 3685,
+   "dur": 657,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.374,
+     "text": "Trạm 3 · ĐỊNH KHU — ví dụ 1: tắc động mạch vành phải (RCA)."
+    },
+    {
+     "start": 5.224,
      "dur": 1.664,
      "text": "Thành dưới thiếu máu."
     },
     {
-     "start": 4.929,
+     "start": 7.239,
      "dur": 4.163,
      "text": "II · III · aVF nhìn thành dưới → ST chênh LÊN."
     },
     {
-     "start": 9.442,
+     "start": 11.752,
      "dur": 4.676,
      "text": "Phía đối diện, I · aVL → ST chênh XUỐNG = soi gương."
     },
     {
-     "start": 14.468,
+     "start": 16.778,
      "dur": 4.121,
      "text": "ST ở III > II → nghĩ RCA."
     }
    ]
   },
   {
-   "from": 1672,
-   "dur": 781,
+   "from": 4342,
+   "dur": 654,
    "sents": [
     {
      "start": 0.5,
-     "dur": 2.613,
-     "text": "Gom lại: bảng định khu — cần học thuộc."
+     "dur": 2.108,
+     "text": "Ví dụ 2: một ECG khác."
     },
     {
-     "start": 3.463,
+     "start": 2.958,
+     "dur": 2.861,
+     "text": "Phóng to các chuyển đạo trước tim."
+    },
+    {
+     "start": 6.17,
+     "dur": 2.96,
+     "text": "V1 – V4: ST chênh lên, T cao."
+    },
+    {
+     "start": 9.48,
+     "dur": 3.009,
+     "text": "→ Nhồi máu THÀNH TRƯỚC — thủ phạm LAD."
+    },
+    {
+     "start": 12.838,
+     "dur": 4.385,
+     "text": "Tắc LAD đoạn gần → vùng hoại tử rất rộng, nguy hiểm."
+    },
+    {
+     "start": 17.573,
+     "dur": 3.223,
+     "text": "Soi gương ở thành dưới: III, aVF chênh xuống."
+    }
+   ]
+  },
+  {
+   "from": 4996,
+   "dur": 573,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.086,
+     "text": "Ví dụ 3: tắc động mạch mũ (LCx)."
+    },
+    {
+     "start": 2.936,
+     "dur": 1.641,
+     "text": "Thành bên thiếu máu."
+    },
+    {
+     "start": 4.927,
+     "dur": 4.948,
+     "text": "I · aVL · V5 · V6: ST chênh LÊN."
+    },
+    {
+     "start": 10.225,
+     "dur": 3.138,
+     "text": "Soi gương: III · aVF chênh XUỐNG."
+    },
+    {
+     "start": 13.713,
+     "dur": 4.403,
+     "text": "aVL thay đổi nhỏ, dễ bỏ sót — luôn soi kỹ aVL!"
+    }
+   ]
+  },
+  {
+   "from": 5569,
+   "dur": 627,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.94,
+     "text": "Trạm 4 · SOI GƯƠNG — vì sao có chuyển đạo chênh xuống?"
+    },
+    {
+     "start": 5.79,
+     "dur": 4.001,
+     "text": "Dòng tổn thương = một vector, chỉ về vùng cơ tim thiếu máu."
+    },
+    {
+     "start": 10.14,
+     "dur": 6.376,
+     "text": "Vector xoay về thành dưới: II, III, aVF chênh lên · aVL, I chênh xuống."
+    },
+    {
+     "start": 16.867,
+     "dur": 3.03,
+     "text": "III chênh cao nhất → gợi ý tắc động mạch vành phải."
+    }
+   ]
+  },
+  {
+   "from": 6196,
+   "dur": 596,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.656,
+     "text": "Chiếu lên III: cùng hướng → hình chiếu dương → ST chênh LÊN."
+    },
+    {
+     "start": 5.506,
+     "dur": 4.212,
+     "text": "Chiếu lên aVL: ngược hướng → hình chiếu âm → ST chênh XUỐNG."
+    },
+    {
+     "start": 10.068,
+     "dur": 3.916,
+     "text": "Soi gương = cùng một vector, nhìn từ phía đối diện."
+    },
+    {
+     "start": 14.333,
+     "dur": 4.545,
+     "text": "Có soi gương → càng nghĩ nhồi máu (giúp phân biệt viêm màng ngoài tim)."
+    }
+   ]
+  },
+  {
+   "from": 6792,
+   "dur": 864,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 5.2,
+     "text": "Trạm 5 · THẤT PHẢI — RCA tắc đoạn gần."
+    },
+    {
+     "start": 6.05,
+     "dur": 2.923,
+     "text": "Thường đi kèm nhồi máu thành dưới."
+    },
+    {
+     "start": 9.322,
+     "dur": 7.742,
+     "text": "Gắn V4R (đối xứng V4 qua bên phải): ST chênh lên ≥ 0,5 mm."
+    },
+    {
+     "start": 17.414,
+     "dur": 4.646,
+     "text": "Gợi ý ngay trên ECG thường: V1 chênh lên · III > II."
+    },
+    {
+     "start": 22.41,
+     "dur": 5.382,
+     "text": "Lâm sàng: tránh nitrate, lợi tiểu — thất phải phụ thuộc tiền tải, dễ tụt huyết áp."
+    }
+   ]
+  },
+  {
+   "from": 7656,
+   "dur": 676,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 6.577,
+     "text": "THÀNH SAU — V1–V3: ST chênh xuống nằm ngang · R cao · T dương."
+    },
+    {
+     "start": 7.427,
+     "dur": 1.988,
+     "text": "Đừng vội nghĩ “thiếu máu dưới nội mạc”!"
+    },
+    {
+     "start": 9.765,
+     "dur": 2.933,
+     "text": "Lật ngược dải ECG — như nhìn từ phía sau lưng."
+    },
+    {
+     "start": 13.048,
+     "dur": 3.917,
+     "text": "Hình soi gương: ST chênh lên + sóng Q → NMCT thành sau."
+    },
+    {
+     "start": 17.314,
+     "dur": 4.196,
+     "text": "Gắn V7–V9: ST chênh lên ≥ 0,5 mm để xác nhận."
+    }
+   ]
+  },
+  {
+   "from": 8332,
+   "dur": 670,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 6.633,
+     "text": "Trạm 6 · TƯƠNG ĐƯƠNG — không có ST chênh lên, vẫn là tắc mạch cấp."
+    },
+    {
+     "start": 7.483,
+     "dur": 1.347,
+     "text": "Phóng to V3:"
+    },
+    {
+     "start": 9.179,
+     "dur": 2.273,
+     "text": "① J chênh xuống, ST đi lên dốc"
+    },
+    {
+     "start": 11.803,
+     "dur": 1.969,
+     "text": "② T cao, nhọn, đối xứng"
+    },
+    {
+     "start": 14.122,
+     "dur": 1.377,
+     "text": "③ aVR chênh lên nhẹ"
+    },
+    {
+     "start": 15.849,
+     "dur": 5.53,
+     "text": "de Winter = tương đương STEMI → tắc LAD đoạn gần."
+    }
+   ]
+  },
+  {
+   "from": 9002,
+   "dur": 682,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.701,
+     "text": "Hội chứng Wellens — bệnh nhân đã HẾT đau ngực."
+    },
+    {
+     "start": 5.551,
+     "dur": 3.997,
+     "text": "V2 – V3: sóng T đảo sâu, đối xứng (hoặc T hai pha)."
+    },
+    {
+     "start": 9.898,
+     "dur": 2.877,
+     "text": "ST gần như không chênh · chưa có sóng Q."
+    },
+    {
+     "start": 13.125,
+     "dur": 5.338,
+     "text": "= hẹp rất nặng LAD đoạn gần → sắp nhồi máu thành trước rộng."
+    },
+    {
+     "start": 18.813,
+     "dur": 2.897,
+     "text": "KHÔNG làm nghiệm pháp gắng sức → chụp mạch vành sớm."
+    }
+   ]
+  },
+  {
+   "from": 9684,
+   "dur": 547,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.825,
+     "text": "ST chênh xuống lan tỏa ở ≥ 6 chuyển đạo…"
+    },
+    {
+     "start": 4.675,
+     "dur": 3.246,
+     "text": "…kèm ST chênh LÊN ở aVR (± V1)."
+    },
+    {
+     "start": 8.271,
+     "dur": 5.812,
+     "text": "→ Thiếu máu lan tỏa: hẹp nặng thân chung ĐMV trái hoặc bệnh 3 nhánh."
+    },
+    {
+     "start": 14.433,
+     "dur": 2.825,
+     "text": "Bệnh nhân nặng — báo tim mạch can thiệp ngay."
+    }
+   ]
+  },
+  {
+   "from": 10231,
+   "dur": 928,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.711,
+     "text": "Ngược lại: không phải ST chênh lên nào cũng là nhồi máu!"
+    },
+    {
+     "start": 3.561,
+     "dur": 5.893,
+     "text": "Viêm màng ngoài tim: chênh lan tỏa, hình lõm · PR chênh xuống · không soi gương."
+    },
+    {
+     "start": 9.805,
+     "dur": 4.027,
+     "text": "Tái cực sớm: người trẻ · điểm J có móc · T cao."
+    },
+    {
+     "start": 14.182,
+     "dur": 4.322,
+     "text": "Phì đại thất trái: S rất sâu ở V1–V3 kèm ST chênh lên."
+    },
+    {
+     "start": 18.854,
+     "dur": 4.943,
+     "text": "Block nhánh trái / máy tạo nhịp: QRS rộng → dùng tiêu chuẩn Sgarbossa."
+    },
+    {
+     "start": 24.146,
+     "dur": 5.78,
+     "text": "Còn nghi ngờ? So ECG cũ · làm lại ECG · men tim · siêu âm tim."
+    }
+   ]
+  },
+  {
+   "from": 11159,
+   "dur": 845,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.726,
+     "text": "Trạm 7 · ÔN TẬP — bảng định khu, cần học thuộc."
+    },
+    {
+     "start": 5.576,
      "dur": 4.777,
      "text": "Thành dưới: II, III, aVF → RCA."
     },
     {
-     "start": 8.59,
+     "start": 10.703,
      "dur": 3.041,
      "text": "Thành trước: V1 – V4 → LAD."
     },
     {
-     "start": 11.981,
+     "start": 14.094,
      "dur": 4.573,
      "text": "Thành bên: I, aVL, V5 – V6 → LCx."
     },
     {
-     "start": 16.904,
+     "start": 19.017,
      "dur": 3.924,
      "text": "Thành sau: soi gương ở V1 – V3 → gắn V7 – V9."
     },
     {
-     "start": 21.178,
+     "start": 23.29,
      "dur": 3.876,
      "text": "Thất phải: gắn V4R · tránh nitrate vì dễ tụt huyết áp."
+    }
+   ]
+  },
+  {
+   "from": 12004,
+   "dur": 948,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 1.629,
+     "text": "5 điều cần nhớ"
+    },
+    {
+     "start": 2.479,
+     "dur": 4.183,
+     "text": "① Đo ST tại điểm J: ≥ 1 mm ở 2 chuyển đạo liên tiếp."
+    },
+    {
+     "start": 7.012,
+     "dur": 4.779,
+     "text": "② Tiến triển: T tối cấp → ST chênh lên → sóng Q → T đảo."
+    },
+    {
+     "start": 12.141,
+     "dur": 3.431,
+     "text": "③ Định khu theo nhóm chuyển đạo → đoán động mạch thủ phạm."
+    },
+    {
+     "start": 15.921,
+     "dur": 4.887,
+     "text": "④ Luôn tìm soi gương · gắn V4R, V7–V9 khi cần."
+    },
+    {
+     "start": 21.158,
+     "dur": 5.549,
+     "text": "⑤ Nhớ dạng tương đương: thành sau · de Winter · Wellens · aVR."
+    },
+    {
+     "start": 27.057,
+     "dur": 3.539,
+     "text": "Cảm ơn bạn đã theo dõi!"
     }
    ]
   }

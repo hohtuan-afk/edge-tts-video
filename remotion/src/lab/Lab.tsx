@@ -76,6 +76,7 @@ const Num: React.FC<{x: number; y: number; label: string; v: string; c: string; 
 // Cảnh 1: monitor, ST tăng dần, báo động
 const S1: React.FC = () => {
   const t = useT();
+  const rt = useCurrentFrame() / 30;
   const stAt = (bt: number) => 0.3 * interpolate(bt, [1.2, 4.2], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   const leadAt = (bt: number): Lead => {
     const s = stAt(bt);
@@ -91,9 +92,9 @@ const S1: React.FC = () => {
       <div style={{position: 'absolute', left: 30, top: 62, fontFamily: FONT, fontSize: 30, fontWeight: 600, color: M.w, opacity: ap(t, 0.3)}}>Nam 58 tuổi · đau ngực trái 30 phút · vã mồ hôi</div>
       <Svg vb="0 0 1680 760">
         <text x={30} y={160} fill={M.g} fontFamily={MONO} fontSize={26} fontWeight={700}>II</text>
-        <Sweep t={t} x={30} y0={330} w={1180} win={4} pxmv={150} color={M.g} leadAt={leadAt} />
+        <Sweep t={rt} x={30} y0={330} w={1180} win={4} pxmv={150} color={M.g} leadAt={() => leadAt(t)} />
         <text x={30} y={520} fill={M.c} fontFamily={MONO} fontSize={26} fontWeight={700}>Pleth</text>
-        <Sweep t={t} x={30} y0={640} w={1180} win={4} pxmv={70} color={M.c} sw={2.5} leadAt={() => ({p: 0, q: 0, r: 0.0, s: 0, t: 1.2, tw: 0.12, tPos: 0.18})} />
+        <Sweep t={rt} x={30} y0={640} w={1180} win={4} pxmv={70} color={M.c} sw={2.5} leadAt={() => ({p: 0, q: 0, r: 0.0, s: 0, t: 1.2, tw: 0.12, tPos: 0.18})} />
         <line x1={1250} x2={1250} y1={130} y2={740} stroke="#13261b" strokeWidth={2} />
       </Svg>
       <Num x={1290} y={130} label="HR" v="92" c={M.g} />
@@ -286,4 +287,4 @@ export const LabSample: React.FC = () => (
   </AbsoluteFill>
 );
 export const LAB_DUR = 210 + 180 + 240 + 200 - 18 - 24 - 20;
-export {S2 as StagesScene, S1 as MonitorScene, M as MCOL, MONO};
+export {S3 as PaperZoomScene, S4 as CaliperScene, S2 as StagesScene, S1 as MonitorScene, M as MCOL, MONO};
