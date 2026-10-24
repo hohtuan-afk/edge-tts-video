@@ -5,19 +5,19 @@ import {FONT, useT} from '../lib';
 import {MONO} from './Lab';
 import {LAYOUT} from './ecg';
 import {HAND, RLine, RPath, RArrow} from '../wb/wb';
-import {Heart, Artery} from '../wb/heart';
+import {Heart2, Zone2, Hot2} from '../wb/heart2';
 
 const P = {paper: '#FFF6F2', minor: '#F6C9C1', major: '#EC9A8E', ink: '#1E1E24', ink2: '#5B4A47', pen: '#C81E3A', pencil: '#3B3B48'};
 const ap = (t: number, s: number, d = 0.6) => interpolate(t, [s, s + d], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.bezier(0.33, 1, 0.68, 1)});
 const dp = (t: number, s: number, d = 0.8) => interpolate(t, [s, s + d], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.quad)});
 
-type Row = {zone: string; leads: string; art: string; mirror: string; c: string; hl: string; map: string[]; hz: 'inf' | 'ant' | 'lat' | null; hot: Artery; note: string};
+type Row = {zone: string; leads: string; art: string; mirror: string; c: string; hl: string; map: string[]; hz: Zone2; hot: Hot2; note: string};
 const ROWS: Row[] = [
   {zone: 'Thành dưới', leads: 'II · III · aVF', art: 'RCA (~80%) · LCx', mirror: 'I · aVL', c: '#E11D48', hl: 'rgba(251,113,133,0.34)', map: ['II', 'III', 'aVF'], hz: 'inf', hot: 'rca', note: 'III > II → nghĩ RCA'},
   {zone: 'Thành trước', leads: 'V1 – V4', art: 'LAD', mirror: 'II · III · aVF', c: '#2563EB', hl: 'rgba(96,165,250,0.34)', map: ['V1', 'V2', 'V3', 'V4'], hz: 'ant', hot: 'lad', note: 'LAD = “widow maker”'},
   {zone: 'Thành bên', leads: 'I · aVL · V5–V6', art: 'LCx · nhánh chéo', mirror: 'II · III · aVF', c: '#16A34A', hl: 'rgba(74,222,128,0.34)', map: ['I', 'aVL', 'V5', 'V6'], hz: 'lat', hot: 'lcx', note: 'aVL nhỏ — đừng bỏ sót!'},
-  {zone: 'Thành sau', leads: 'V7 – V9', art: 'RCA · LCx', mirror: 'V1 – V3 (ST↓)', c: '#9333EA', hl: 'rgba(192,132,252,0.34)', map: ['V1', 'V2', 'V3'], hz: null, hot: 'lcx', note: 'lật gương V1–V3 ↕'},
-  {zone: 'Thất phải', leads: 'V4R · (V1)', art: 'RCA đoạn gần', mirror: '—', c: '#D97706', hl: 'rgba(251,191,36,0.40)', map: ['V1'], hz: null, hot: 'rca', note: 'nhớ gắn V4R! tránh nitrate'},
+  {zone: 'Thành sau', leads: 'V7 – V9', art: 'RCA · LCx', mirror: 'V1 – V3 (ST↓)', c: '#9333EA', hl: 'rgba(192,132,252,0.34)', map: ['V1', 'V2', 'V3'], hz: 'post', hot: 'lcx', note: 'lật gương V1–V3 ↕'},
+  {zone: 'Thất phải', leads: 'V4R · (V1)', art: 'RCA đoạn gần', mirror: '—', c: '#D97706', hl: 'rgba(251,191,36,0.40)', map: ['V1'], hz: 'rv', hot: 'rcaP', note: 'nhớ gắn V4R! tránh nitrate'},
 ];
 const COLS = [{h: 'VÙNG', w: 250}, {h: 'ST CHÊNH LÊN', w: 330}, {h: 'ĐỘNG MẠCH', w: 300}, {h: 'SOI GƯƠNG', w: 300}];
 const X0 = 70, Y0 = 110, W0 = 1260, H0 = 820, MM = 8;
@@ -102,24 +102,24 @@ export const TableHand: React.FC = () => {
       <div style={{position: 'absolute', left: HX, top: HY, width: HW, height: HH, background: '#FCFAF4', boxShadow: '0 20px 40px rgba(0,0,0,0.45)', transform: `rotate(1.4deg) translateX(${(1 - ap(t, 1.2, 0.8)) * 500}px)`, borderRadius: 3}}>
         <div style={{position: 'absolute', left: 24, top: 14, fontFamily: HAND, fontSize: 38, color: P.ink}}>{row ? row.zone : 'Tim & động mạch vành'}</div>
         <svg viewBox={`0 0 ${HW} ${HH}`} width={HW} height={HH} style={{position: 'absolute', inset: 0}}>
-          <Heart x={44} y={60} s={0.95} prog={dp(t, 1.6, 1.6)} art={dp(t, 2.6, 0.9)} labels labelA={ap(t, 3.2)}
+          <Heart2 x={12} y={48} s={1.08} prog={dp(t, 1.4, 2.2)} art={dp(t, 3.0, 1.2)} labelA={ap(t, 3.6)}
             hot={row ? row.hot : null} occl={row ? dp(t, rowStart(cur) + 0.6, 0.5) : 0}
-            zone={row ? row.hz : null} zoneA={row && row.hz ? 0.55 * ap(t, rowStart(cur) + 0.9, 0.6) : 0} />
+            zone={row ? row.hz : null} zoneC={row ? row.c : '#D7263D'} zoneA={row && row.hz ? ap(t, rowStart(cur) + 0.9, 0.6) : 0} />
           {/* sơ đồ 12 ô vẽ tay */}
           {LAYOUT.map((r, ri) => r.map((ld, ci) => {
             const on = row?.map.includes(ld);
-            const x = 34 + ci * 104, y = 520 + ri * 66;
+            const x = 34 + ci * 104, y = 562 + ri * 62;
             return (
               <g key={ld}>
-                <path d={`M${x},${y} h94 v56 h-94 Z`} fill={on ? row!.hl : 'rgba(255,255,255,0.6)'} stroke="none" />
-                <RPath d={`M${x},${y} L${x + 94},${y + 1} L${x + 93},${y + 56} L${x + 1},${y + 55} Z`} stroke={on ? row!.c : '#B9A6A0'} sw={on ? 3 : 1.8} rough={1.1} seed={90 + ri * 4 + ci} prog={dp(t, 1.8 + (ri * 4 + ci) * 0.05, 0.5)} />
-                <text x={x + 47} y={y + 38} textAnchor="middle" fontFamily={HAND} fontSize={30} fill={on ? row!.c : P.ink2}>{ld}</text>
+                <path d={`M${x},${y} h94 v52 h-94 Z`} fill={on ? row!.hl : 'rgba(255,255,255,0.6)'} stroke="none" />
+                <RPath d={`M${x},${y} L${x + 94},${y + 1} L${x + 93},${y + 52} L${x + 1},${y + 51} Z`} stroke={on ? row!.c : '#B9A6A0'} sw={on ? 3 : 1.8} rough={1.1} seed={90 + ri * 4 + ci} prog={dp(t, 1.8 + (ri * 4 + ci) * 0.05, 0.5)} />
+                <text x={x + 47} y={y + 36} textAnchor="middle" fontFamily={HAND} fontSize={30} fill={on ? row!.c : P.ink2}>{ld}</text>
               </g>
             );
           }))}
         </svg>
         {row && (
-          <div key={cur} style={{position: 'absolute', left: 26, top: 740, width: HW - 50, fontFamily: HAND, fontSize: 36, color: P.pen, opacity: ap(local, 1.1, 0.4), transform: `rotate(-2deg) translateY(${(1 - ap(local, 1.1, 0.4)) * 10}px)`}}>
+          <div key={cur} style={{position: 'absolute', left: 26, top: 758, width: HW - 50, fontFamily: HAND, fontSize: 34, color: P.pen, opacity: ap(local, 1.1, 0.4), transform: `rotate(-2deg) translateY(${(1 - ap(local, 1.1, 0.4)) * 10}px)`}}>
             ✎ {row.note}
           </div>
         )}
@@ -128,7 +128,7 @@ export const TableHand: React.FC = () => {
       {/* ===== mũi tên vẽ tay từ hàng đang giảng sang tim ===== */}
       {row && (
         <svg viewBox="0 0 1920 1080" width={1920} height={1080} style={{position: 'absolute', inset: 0, pointerEvents: 'none'}}>
-          <RArrow key={cur} x1={X0 + W0 - 30} y1={Y0 + rowY(cur) + RH / 2} x2={HX + 70} y2={HY + 300} prog={dp(local, 0.4, 0.6)} stroke={row.c} sw={4} rough={1.2} curve={-0.18} seed={100 + cur} head={22} />
+          <RArrow key={cur} x1={X0 + W0 - 30} y1={Y0 + rowY(cur) + RH / 2} x2={HX + 60} y2={HY + 320} prog={dp(local, 0.4, 0.6)} stroke={row.c} sw={4} rough={1.2} curve={-0.18} seed={100 + cur} head={22} />
         </svg>
       )}
 
