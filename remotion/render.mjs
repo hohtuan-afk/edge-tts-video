@@ -43,6 +43,11 @@ if (isTH) {
     console.log('still', frame);
   }
   await renderMedia({composition, serveUrl, codec: 'h264', crf: 22, pixelFormat: 'yuv420p', outputLocation: 'out/tablehand.mp4', concurrency: 4, chromiumOptions});
+  const hb = await selectComposition({serveUrl, id: 'HeartBig', chromiumOptions});
+  for (const frame of [60, 120, 190, 262, 334]) {
+    await renderStill({composition: hb, serveUrl, output: `out/hb_${String(frame).padStart(4, '0')}.png`, frame, chromiumOptions});
+  }
+  await renderMedia({composition: hb, serveUrl, codec: 'h264', crf: 20, pixelFormat: 'yuv420p', outputLocation: 'out/heartbig.mp4', concurrency: 4, chromiumOptions});
   console.log('done');
   process.exit(0);
 }
