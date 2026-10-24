@@ -25,7 +25,7 @@ NARR = [
  [("HỌC ĐỂ CỨU NGƯỜI", "Học, để cứu người."),
   ("Cảm ơn Ban tổ chức và quý thầy cô vì một ngày thật nhiều giá trị",
    "Cảm ơn ban tổ chức và quý thầy cô, vì một ngày thật nhiều giá trị."),
-  ("Bạn cũng làm Hồi sức? Thả ❤️ và lưu lại nhé!", "Bạn cũng làm hồi sức? Thả tim, và lưu lại nhé!")],
+  ("Cám ơn các bạn và thả tim cho mình nhé ❤️", "Cám ơn các bạn, và thả tim cho mình nhé!")],
 ]
 STEP = 3.0
 SCENE_DUR = [STEP * len(sc) + 3 for sc in NARR]
