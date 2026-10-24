@@ -5,79 +5,91 @@
  "lines": [
   {
    "id": "00-0",
-   "text": "Bệnh nhân nam năm mươi tám tuổi, đau ngực trái ba mươi phút, vã mồ hôi."
+   "text": "Tim được nuôi bởi ba động mạch vành chính."
   },
   {
    "id": "00-1",
-   "text": "Trên màn hình theo dõi, đoạn ét tê ở chuyển đạo hai chênh lên dần, và máy bắt đầu báo động."
+   "text": "Động mạch vành phải nuôi thành dưới và thất phải."
+  },
+  {
+   "id": "00-2",
+   "text": "Động mạch liên thất trước nuôi thành trước và vách liên thất."
+  },
+  {
+   "id": "00-3",
+   "text": "Động mạch mũ nuôi thành bên."
+  },
+  {
+   "id": "00-4",
+   "text": "Tắc nhánh nào, vùng đó thiếu máu, và các chuyển đạo nhìn vùng đó sẽ có ét tê chênh lên."
   },
   {
    "id": "01-0",
-   "text": "Hãy hình dung dòng tổn thương như một mũi tên, chỉ về phía vùng cơ tim đang thiếu máu."
+   "text": "Điện tâm đồ không đứng yên, mà thay đổi theo thời gian, qua bốn giai đoạn."
   },
   {
    "id": "01-1",
-   "text": "Khi mũi tên xoay về thành dưới, các chuyển đạo hai, ba, a-vê-ép chênh lên, còn a-vê-lờ và chuyển đạo một chênh xuống."
+   "text": "Vài phút đầu, sóng T tối cấp, cao và rộng."
   },
   {
    "id": "01-2",
-   "text": "Chuyển đạo ba chênh cao nhất, gợi ý tắc động mạch vành phải."
+   "text": "Sau vài giờ, ét tê chênh lên."
+  },
+  {
+   "id": "01-3",
+   "text": "Từ vài giờ đến vài ngày, xuất hiện sóng Q hoại tử."
+  },
+  {
+   "id": "01-4",
+   "text": "Từ vài ngày đến vài tuần, sóng T đảo ngược."
+  },
+  {
+   "id": "01-5",
+   "text": "Nhớ thứ tự: T tối cấp, ét tê chênh lên, sóng Q, rồi T đảo."
   },
   {
    "id": "02-0",
-   "text": "Chiếu mũi tên lên trục chuyển đạo ba: cùng hướng, hình chiếu dương, nên ét tê chênh lên."
+   "text": "Lấy ví dụ, động mạch vành phải bị tắc."
   },
   {
    "id": "02-1",
-   "text": "Chiếu lên trục a-vê-lờ: ngược hướng, hình chiếu âm, nên ét tê chênh xuống."
+   "text": "Vùng thành dưới của tim bị thiếu máu."
   },
   {
    "id": "02-2",
-   "text": "Đó chính là hình ảnh soi gương: cùng một mũi tên, nhưng nhìn từ phía đối diện."
+   "text": "Ba chuyển đạo nhìn thành dưới là hai, ba và a-vê-ép, nên ét tê chênh lên."
+  },
+  {
+   "id": "02-3",
+   "text": "Ở phía đối diện, chuyển đạo một và a-vê-lờ có ét tê chênh xuống, đó là hình ảnh soi gương."
+  },
+  {
+   "id": "02-4",
+   "text": "Nếu ét tê ở chuyển đạo ba cao hơn chuyển đạo hai, hãy nghĩ ngay đến động mạch vành phải."
   },
   {
    "id": "03-0",
-   "text": "Có khi điện tâm đồ không hề có ét tê chênh lên, nhưng bệnh nhân vẫn đang tắc mạch cấp."
+   "text": "Gom tất cả lại thành một bảng định khu, cần học thuộc."
   },
   {
    "id": "03-1",
-   "text": "Hãy phóng to chuyển đạo vê ba."
+   "text": "Thành dưới: chuyển đạo hai, ba, a-vê-ép, thủ phạm thường là động mạch vành phải."
   },
   {
    "id": "03-2",
-   "text": "Điểm J chênh xuống, đoạn ét tê đi lên dốc,"
+   "text": "Thành trước: vê một đến vê bốn, do động mạch liên thất trước."
   },
   {
    "id": "03-3",
-   "text": "sóng T cao, nhọn và đối xứng,"
+   "text": "Thành bên: chuyển đạo một, a-vê-lờ, vê năm và vê sáu, do động mạch mũ."
   },
   {
    "id": "03-4",
-   "text": "kèm a-vê-rờ chênh lên nhẹ."
+   "text": "Thành sau: soi gương ở vê một đến vê ba, hãy gắn thêm vê bảy đến vê chín."
   },
   {
    "id": "03-5",
-   "text": "Đây là sóng đơ Uyn-tơ, tương đương nhồi máu cơ tim ét tê chênh lên, do tắc động mạch liên thất trước đoạn gần."
-  },
-  {
-   "id": "04-0",
-   "text": "Ở vê một đến vê ba, ét tê chênh xuống nằm ngang, sóng R cao, sóng T dương."
-  },
-  {
-   "id": "04-1",
-   "text": "Đừng vội nghĩ đây là thiếu máu dưới nội mạc."
-  },
-  {
-   "id": "04-2",
-   "text": "Hãy lật ngược dải điện tâm đồ, như nhìn từ phía sau lưng."
-  },
-  {
-   "id": "04-3",
-   "text": "Hình soi gương hiện ra: ét tê chênh lên kèm sóng Q. Đó là nhồi máu thành sau."
-  },
-  {
-   "id": "04-4",
-   "text": "Gắn thêm vê bảy đến vê chín để xác nhận: ét tê chênh lên từ không phẩy năm mi li mét."
+   "text": "Thất phải: gắn vê bốn phải, và tránh thuốc ni-trát vì dễ tụt huyết áp."
   }
  ]
 }
