@@ -5,7 +5,7 @@ import {FONT, useT, CapCtx} from '../lib';
 import {MONO} from './Lab';
 import {LAYOUT} from './ecg';
 import {HAND, RLine, RPath, RArrow} from '../wb/wb';
-import {Heart5 as Heart2, Zone5 as Zone2, Hot5 as Hot2} from '../wb/heart5';
+import {Heart6 as Heart2, Zone6 as Zone2, Hot6 as Hot2} from '../wb/heart6';
 
 const P = {paper: '#FFF6F2', minor: '#F6C9C1', major: '#EC9A8E', ink: '#1E1E24', ink2: '#5B4A47', pen: '#C81E3A', pencil: '#3B3B48'};
 const ap = (t: number, s: number, d = 0.6) => interpolate(t, [s, s + d], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.bezier(0.33, 1, 0.68, 1)});

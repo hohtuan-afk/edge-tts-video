@@ -8,7 +8,7 @@ import {Caption, Progress} from '../Main';
 import {StagesScene, MONO} from './Lab';
 import {TableHand} from './TableHand';
 import {Fade, SeriesTag} from './Demo';
-import {Heart5 as Heart4, Zone5 as Zone4, Hot5 as Hot4} from '../wb/heart5';
+import {Heart6 as Heart4, Zone6 as Zone4, Hot6 as Hot4} from '../wb/heart6';
 import {HAND, RPath, RArrow} from '../wb/wb';
 import {INFERIOR, tracePts, ecgAt, Lead} from './ecg';
 
@@ -111,7 +111,7 @@ const InferiorScene: React.FC = () => {
             hot="rca" occl={dp(t, 1.0, 0.6)} zone="inf" zoneC="#E11D48" zoneA={ap(t, 2.0, 0.8)} />
           {/* nhãn vẽ tay vùng thành dưới */}
           <g opacity={ap(t, 2.4, 0.5)}>
-            <RArrow x1={210} y1={735} x2={40 + 262 * HS} y2={70 + 462 * HS} prog={dp(t, 2.4, 0.5)} stroke="#C81E3A" sw={3.5} curve={-0.25} seed={7} head={16} />
+            <RArrow x1={210} y1={735} x2={40 + 270 * HS} y2={70 + 500 * HS} prog={dp(t, 2.4, 0.5)} stroke="#C81E3A" sw={3.5} curve={-0.25} seed={7} head={16} />
             <text x={40} y={760} fontFamily={HAND} fontSize={38} fill="#C81E3A">thành dưới</text>
           </g>
         </svg>
