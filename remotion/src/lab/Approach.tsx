@@ -297,8 +297,8 @@ const RhythmScene: React.FC = () => {
 // ================= 4 · TẦN SỐ =================
 const RateScene: React.FC = () => {
   const t = useT();
-  const mm = 10, pxs = 25 * mm, pxmv = 10 * mm, W0 = 1260, H0 = 520, y0 = 330;
-  const X0 = 150; // đỉnh R đầu tiên trên vạch đậm (x = 150 = 15 mm)
+  const mm = 16, pxs = 25 * mm, pxmv = 8 * mm, W0 = 1264, H0 = 528, y0 = 360;
+  const X0 = 160; // đỉnh R đầu tiên trên vạch đậm (x = 160 = 10 mm)
   const f = (x: number) => {const T = (x - X0) / pxs; const tr = ((T + 0.32) % 0.8 + 0.8) % 0.8 - 0.32; return beatN(tr);};
   const pts: string[] = [];
   for (let x = 20; x <= W0 - 20; x += 2) pts.push(`${x},${(y0 - f(x) * pxmv).toFixed(1)}`);
@@ -320,11 +320,11 @@ const RateScene: React.FC = () => {
             return (
               <g key={l} opacity={ap(t, 2.0 + i * 0.35, 0.3)}>
                 <line x1={x} x2={x} y1={70} y2={H0 - 60} stroke={on ? PEN : '#64748B'} strokeWidth={on ? 4 : 2} strokeDasharray={on ? undefined : '6 6'} />
-                <text x={x} y={58} textAnchor="middle" fontFamily={MONO} fontSize={on ? 40 * (1 + 0.3 * hit) : 32} fontWeight={700} fill={on ? PEN : '#334155'}>{l}</text>
+                <text x={x} y={58} textAnchor="middle" fontFamily={MONO} fontSize={on ? 36 * (1 + 0.25 * hit) : 30} fontWeight={700} fill={on ? PEN : '#334155'}>{l}</text>
               </g>
             );
           })}
-          {hit > 0 && <circle cx={X0 + 20 * mm} cy={y0 - 1.1 * pxmv} r={34} fill="none" stroke={PEN} strokeWidth={5} opacity={hit} />}
+          {hit > 0 && <circle cx={X0 + 20 * mm} cy={y0 - 1.1 * pxmv} r={30} fill="none" stroke={PEN} strokeWidth={5} opacity={hit} />}
         </svg>
       </div>
       <div style={{position: 'absolute', left: 1340, top: 120, padding: '14px 26px', borderRadius: 16, background: PEN, color: '#fff', fontFamily: MONO, fontSize: 54, fontWeight: 700, opacity: hit, transform: `scale(${0.85 + 0.15 * hit})`, boxShadow: '0 12px 28px rgba(0,0,0,0.4)'}}>75 l/ph</div>
@@ -445,7 +445,7 @@ const AxisTable: React.FC = () => {
           })}
         </svg>
         {AXROWS.map((r, k) => (
-          <div key={k} style={{position: 'absolute', left: 420, top: ty + k * rh + rh / 2 - 24, width: 560, fontFamily: FONT, fontSize: k === 1 ? 30 : 38, fontWeight: 800, color: r.c, opacity: ap(t, r.t0 + 0.2, 0.5), lineHeight: 1.15}}>{r.res}</div>
+          <div key={k} style={{position: 'absolute', left: 420, top: ty + k * rh + rh / 2 - 24, width: 590, fontFamily: FONT, fontSize: k === 1 ? 27 : 38, fontWeight: 800, color: r.c, opacity: ap(t, r.t0 + 0.2, 0.5), lineHeight: 1.15}}>{r.res}</div>
         ))}
       </div>
       <Card x={1300} y={150} w={560} a={ap(t, 6.0)} c="#2563EB" title="Lệch TRÁI (< −30°)">block phân nhánh trái trước · NMCT thành dưới · dày thất trái</Card>
@@ -497,7 +497,7 @@ const makeInterval = (cfg: ICfg): React.FC => {
             {(cfg.dots ?? []).map((d, i) => (
               <g key={'d' + i} opacity={ap(t, d.t0)}>
                 <circle cx={xOf(d.x)} cy={Y0 - f(d.x) * pxmv} r={11} fill={PEN} />
-                <text x={xOf(d.x) + 18} y={Y0 - f(d.x) * pxmv - 18} fontFamily={FONT} fontSize={30} fontWeight={800} fill={PEN}>{d.label}</text>
+                <text x={xOf(d.x) - 20} y={Y0 - f(d.x) * pxmv + 56} textAnchor="end" fontFamily={FONT} fontSize={30} fontWeight={800} fill={PEN}>{d.label}</text>
               </g>
             ))}
             <text x={W0 - 20} y={H0 - 14} textAnchor="end" fontFamily={MONO} fontSize={18} fill="#9b6b64">1 ô nhỏ = 0,04 s · 25 mm/s</text>
