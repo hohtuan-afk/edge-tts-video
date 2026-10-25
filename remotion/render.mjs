@@ -11,12 +11,13 @@ const isWB = mode.startsWith('wbsample');
 const isLab = mode.startsWith('labsample');
 const isVec = mode.startsWith('vecsample');
 const isPaper = mode.startsWith('papersample');
-const isFull = mode.startsWith('full');
+const isAppr = mode.startsWith('appr');
+const isFull = mode.startsWith('full') || isAppr;
 const isDemo2 = mode.startsWith('demo2');
 const isDemo = mode.startsWith('demo') && !isDemo2;
 const isTable = mode.startsWith('tablesample');
 const isTH = mode.startsWith('tablehand');
-const id = isFull ? 'Full' : isDemo2 ? 'Demo2' : isTH ? 'TableHand' : isTable ? 'TableSample' : isDemo ? 'Demo' : is3d ? 'Test3D' : isWB ? 'WBSample' : isLab ? 'LabSample' : isVec ? 'VectorSample' : isPaper ? 'PaperSample' : 'Main';
+const id = isAppr ? 'Approach' : isFull ? 'Full' : isDemo2 ? 'Demo2' : isTH ? 'TableHand' : isTable ? 'TableSample' : isDemo ? 'Demo' : is3d ? 'Test3D' : isWB ? 'WBSample' : isLab ? 'LabSample' : isVec ? 'VectorSample' : isPaper ? 'PaperSample' : 'Main';
 const chromiumOptions = {gl: 'swangle'};
 const serveUrl = await bundle({entryPoint: path.resolve('src/index.ts')});
 const composition = await selectComposition({serveUrl, id, chromiumOptions});
@@ -65,7 +66,7 @@ if (isTable) {
 }
 
 if (isFull) {
-  if (mode === 'full-stills') {
+  if (mode.endsWith('-stills')) {
     const frames = fs.readFileSync('stills.txt', 'utf8').trim().split(/\s+/).map(Number);
     for (const frame of frames) {
       await renderStill({composition, serveUrl, output: `out/f_${String(frame).padStart(5, '0')}.png`, frame, chromiumOptions});

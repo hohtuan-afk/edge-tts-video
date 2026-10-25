@@ -16,14 +16,14 @@ export const Fade: React.FC<{dur: number; children: React.ReactNode}> = ({dur, c
   return <AbsoluteFill style={{opacity: o}}>{children}</AbsoluteFill>;
 };
 // Nhãn chuỗi bài ở góc trên bên trái
-export const SeriesTag: React.FC = () => {
+export const SeriesTag: React.FC<{sub?: string}> = ({sub = 'Nhồi máu cơ tim cấp'}) => {
   const f = useCurrentFrame();
   const a = interpolate(f, [6, 24], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   return (
     <div style={{position: 'absolute', left: 22, top: 6, display: 'flex', alignItems: 'center', gap: 12, padding: '5px 16px 5px 10px', borderRadius: 10, background: 'rgba(8,12,18,0.78)', border: '1px solid rgba(255,255,255,0.14)', opacity: a, fontFamily: FONT}}>
       <svg width={34} height={20} viewBox="0 0 34 20"><polyline points="0,12 8,12 11,4 14,18 17,9 20,12 34,12" fill="none" stroke="#FC6255" strokeWidth={2.4} strokeLinejoin="round" /></svg>
       <span style={{fontSize: 21, fontWeight: 800, letterSpacing: 1.2, color: '#F1F5F9'}}>TIẾP CẬN ĐIỆN TÂM ĐỒ CƠ BẢN</span>
-      <span style={{fontSize: 19, fontWeight: 500, color: '#94A3B8'}}>· Nhồi máu cơ tim cấp</span>
+      <span style={{fontSize: 19, fontWeight: 500, color: '#94A3B8'}}>· {sub}</span>
     </div>
   );
 };

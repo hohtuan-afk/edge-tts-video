@@ -9,6 +9,7 @@ import {PaperSample, PAPER_DUR} from './lab/Paper';
 import {Demo} from './lab/Demo';
 import {Demo2} from './lab/Demo2';
 import {Full} from './lab/Full';
+import {Approach} from './lab/Approach';
 import {TableScene, TABLE_DUR} from './lab/Table';
 import {TableHand, TABLEHAND_DUR} from './lab/TableHand';
 import {HeartBig, HEARTBIG_DUR} from './lab/HeartBig';
@@ -21,6 +22,7 @@ export const Root: React.FC = () => (
     <Composition id="HeartBig" component={HeartBig} durationInFrames={HEARTBIG_DUR} fps={30} width={1920} height={1080} />
     <Composition id="TableHand" component={TableHand} durationInFrames={TABLEHAND_DUR} fps={30} width={1920} height={1080} />
     <Composition id="TableSample" component={TableScene} durationInFrames={TABLE_DUR} fps={30} width={1920} height={1080} />
+    <Composition id="Approach" component={Approach} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />
     <Composition id="Full" component={Full} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />
     <Composition id="Demo2" component={Demo2} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />
     <Composition id="Demo" component={Demo} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />
