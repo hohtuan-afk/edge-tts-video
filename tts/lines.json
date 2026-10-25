@@ -5,382 +5,286 @@
  "lines": [
   {
    "id": "00-0",
-   "text": "Xin chào, hôm nay chúng ta cùng tìm hiểu điện tâm đồ trong nhồi máu cơ tim cấp."
+   "text": "Xin chào, hôm nay chúng ta học cách tiếp cận ban đầu một điện tâm đồ."
   },
   {
    "id": "00-1",
-   "text": "Bài học đi qua bảy trạm: nhận diện, tiến triển, định khu, soi gương, thất phải và thành sau, các dạng tương đương, và cuối cùng là ôn tập."
+   "text": "Hãy nhớ một câu: kiểm giấy, xem nhịp, đếm số, tìm trục, đo khoảng, soi ét tê."
   },
   {
    "id": "00-2",
-   "text": "Mục tiêu là nhìn một điện tâm đồ mười hai chuyển đạo, nói ngay được vùng nào đang thiếu máu, và động mạch nào bị tắc."
+   "text": "Đọc theo đúng một trình tự cố định, bạn sẽ không bỏ sót điều gì."
   },
   {
    "id": "01-0",
-   "text": "Trạm một, nhận diện. Bệnh nhân nam năm mươi tám tuổi, đau ngực trái ba mươi phút, vã mồ hôi."
+   "text": "Trạm một, kiểm tra. Trước hết, xem tên bệnh nhân, ngày giờ đo, và triệu chứng lúc đo."
   },
   {
    "id": "01-1",
-   "text": "Trên màn hình theo dõi, đoạn ét tê ở chuyển đạo hai chênh lên dần, và máy báo động."
+   "text": "Giấy điện tâm đồ có ô nhỏ một mi li mét, năm ô nhỏ tạo thành một ô lớn."
   },
   {
    "id": "01-2",
-   "text": "Màn hình theo dõi chỉ là gợi ý. Cần làm ngay điện tâm đồ mười hai chuyển đạo, trong vòng mười phút kể từ khi bệnh nhân đến."
+   "text": "Chiều ngang là thời gian. Với tốc độ hai mươi lăm mi li mét mỗi giây, một ô nhỏ là không phẩy không bốn giây, một ô lớn là không phẩy hai giây."
+  },
+  {
+   "id": "01-3",
+   "text": "Chiều dọc là điện thế. Với chuẩn mười mi li mét cho một mi li vôn, mỗi ô nhỏ là không phẩy một mi li vôn."
+  },
+  {
+   "id": "01-4",
+   "text": "Xung chuẩn ở đầu dải phải cao đúng mười mi li mét. Nếu không, mọi số đo biên độ sẽ sai."
+  },
+  {
+   "id": "01-5",
+   "text": "Ghi nhớ: một ô nhỏ không phẩy không bốn giây, một ô lớn không phẩy hai giây, năm ô lớn là một giây."
   },
   {
    "id": "02-0",
-   "text": "Trước hết, tim được nuôi bởi ba động mạch vành chính."
+   "text": "Tờ điện tâm đồ chuẩn gồm bốn cột, ba hàng, và một dải nhịp chuyển đạo hai dài ở dưới cùng."
   },
   {
    "id": "02-1",
-   "text": "Động mạch vành phải nuôi thành dưới và thất phải."
+   "text": "Hai cột đầu là sáu chuyển đạo chi, nhìn tim theo mặt phẳng trán. Hai cột sau là sáu chuyển đạo trước tim, nhìn theo mặt phẳng ngang."
   },
   {
    "id": "02-2",
-   "text": "Động mạch liên thất trước nuôi thành trước và vách liên thất."
+   "text": "Một mẹo kiểm tra nhanh: ở a-vê-rờ, sóng P, QRS và T bình thường đều âm."
   },
   {
    "id": "02-3",
-   "text": "Động mạch mũ nuôi thành bên."
-  },
-  {
-   "id": "02-4",
-   "text": "Tắc nhánh nào, vùng đó thiếu máu, và các chuyển đạo nhìn vùng đó sẽ có ét tê chênh lên."
+   "text": "Nếu a-vê-rờ lại dương, còn chuyển đạo một âm, hãy nghĩ đến mắc đảo điện cực hai tay, trước khi nghĩ đến bệnh."
   },
   {
    "id": "03-0",
-   "text": "Đây là điện tâm đồ mười hai chuyển đạo của bệnh nhân."
+   "text": "Trạm hai, nhịp. Hãy nhìn dải nhịp chuyển đạo hai ở dưới cùng."
   },
   {
    "id": "03-1",
-   "text": "Hãy coi mỗi chuyển đạo như một chiếc camera, nhìn quả tim từ một góc riêng."
+   "text": "Câu hỏi thứ nhất: nhịp có đều không? Dùng compa đo các khoảng RR liên tiếp."
   },
   {
    "id": "03-2",
-   "text": "Ba chuyển đạo hai, ba và a-vê-ép có ét tê chênh lên, cả ba cùng nhìn thành dưới."
+   "text": "Câu hỏi thứ hai: có sóng P không, và mỗi sóng P có đi trước một phức bộ QRS không?"
   },
   {
    "id": "03-3",
-   "text": "Còn a-vê-lờ thì ét tê chênh xuống, đó là hình soi gương, sẽ nói kỹ ở trạm bốn."
+   "text": "Câu hỏi thứ ba: sóng P có dương ở chuyển đạo hai, âm ở a-vê-rờ không. Đủ ba điều này là nhịp xoang."
+  },
+  {
+   "id": "03-4",
+   "text": "So sánh với dải này: không thấy sóng P, các khoảng RR không đều hoàn toàn. Đó là rung nhĩ."
+  },
+  {
+   "id": "03-5",
+   "text": "Ghi nhớ ba câu hỏi: đều không, có P không, và P có dương ở chuyển đạo hai không."
   },
   {
    "id": "04-0",
-   "text": "Đo ét tê ở đâu? Tại điểm J, là nơi phức bộ QRS vừa kết thúc."
+   "text": "Trạm ba, tần số. Cách nhanh nhất là quy tắc ba trăm."
   },
   {
    "id": "04-1",
-   "text": "Đặt compa từ đường đẳng điện của đoạn PR, đến điểm J."
+   "text": "Tìm một sóng R nằm trên vạch đậm, rồi đếm các vạch đậm tiếp theo: ba trăm, một trăm năm mươi, một trăm, bảy mươi lăm, sáu mươi, năm mươi."
   },
   {
    "id": "04-2",
-   "text": "Ở chuyển đạo ba, ét tê chênh lên khoảng ba mi li mét."
+   "text": "Sóng R kế tiếp rơi vào vạch thứ tư, vậy tần số là bảy mươi lăm lần mỗi phút."
   },
   {
    "id": "04-3",
-   "text": "Tiêu chuẩn chẩn đoán: ét tê chênh lên từ một mi li mét, ở ít nhất hai chuyển đạo liên tiếp."
+   "text": "Chính xác hơn: lấy ba trăm chia số ô lớn, hoặc một nghìn năm trăm chia số ô nhỏ giữa hai sóng R."
   },
   {
    "id": "04-4",
-   "text": "Riêng vê hai và vê ba, ngưỡng cao hơn: nam từ bốn mươi tuổi là hai mi li mét, nam dưới bốn mươi tuổi là hai phẩy năm mi li mét, còn nữ là một phẩy năm mi li mét."
+   "text": "Nếu nhịp không đều, hãy đếm số phức bộ QRS trên cả dải mười giây, rồi nhân sáu."
+  },
+  {
+   "id": "04-5",
+   "text": "Ở người lớn, tần số bình thường từ sáu mươi đến một trăm. Dưới sáu mươi là nhịp chậm, trên một trăm là nhịp nhanh."
   },
   {
    "id": "05-0",
-   "text": "Trạm hai, tiến triển. Điện tâm đồ không đứng yên, mà thay đổi theo thời gian."
+   "text": "Trạm bốn, trục điện tim. Đây là hướng chung của sóng khử cực thất, trên mặt phẳng trán."
   },
   {
    "id": "05-1",
-   "text": "Vài phút đầu, sóng T tối cấp, cao và rộng."
+   "text": "Trục bình thường nằm trong khoảng từ âm ba mươi độ đến cộng chín mươi độ."
   },
   {
    "id": "05-2",
-   "text": "Sau vài giờ, ét tê chênh lên."
+   "text": "Cách nhanh nhất: chỉ nhìn phức bộ QRS ở chuyển đạo một và a-vê-ép."
   },
   {
    "id": "05-3",
-   "text": "Từ vài giờ đến vài ngày, xuất hiện sóng Q hoại tử."
+   "text": "Chuyển đạo một dương, a-vê-ép dương: trục nằm trong góc phần tư bình thường."
   },
   {
    "id": "05-4",
-   "text": "Từ vài ngày đến vài tuần, sóng T đảo ngược."
-  },
-  {
-   "id": "05-5",
-   "text": "Nhớ thứ tự: T tối cấp, ét tê chênh lên, sóng Q, rồi T đảo."
-  },
-  {
-   "id": "05-6",
-   "text": "Nếu điện tâm đồ đầu tiên chưa rõ mà vẫn nghi ngờ, hãy làm lại sau mười lăm đến ba mươi phút."
+   "text": "Mẹo nhớ: phức bộ QRS dương giống ngón tay cái chỉ lên. Hai ngón cái cùng chỉ lên là bình thường."
   },
   {
    "id": "06-0",
-   "text": "Trạm ba, định khu. Ví dụ thứ nhất: động mạch vành phải bị tắc."
+   "text": "Nếu chuyển đạo một dương mà a-vê-ép âm, hãy xem chuyển đạo hai. Hai dương thì vẫn bình thường, hai âm là trục lệch trái."
   },
   {
    "id": "06-1",
-   "text": "Vùng thành dưới của tim bị thiếu máu."
+   "text": "Chuyển đạo một âm, a-vê-ép dương: trục lệch phải."
   },
   {
    "id": "06-2",
-   "text": "Ba chuyển đạo nhìn thành dưới là hai, ba và a-vê-ép, nên ét tê chênh lên."
+   "text": "Cả hai cùng âm: trục vô định, hay còn gọi là trục cực phải."
   },
   {
    "id": "06-3",
-   "text": "Ở phía đối diện, chuyển đạo một và a-vê-lờ có ét tê chênh xuống, đó là hình ảnh soi gương."
+   "text": "Trục lệch trái hay gặp trong block phân nhánh trái trước. Trục lệch phải gặp trong dày thất phải, hay thuyên tắc phổi."
   },
   {
    "id": "06-4",
-   "text": "Nếu ét tê ở chuyển đạo ba cao hơn chuyển đạo hai, hãy nghĩ ngay đến động mạch vành phải."
+   "text": "Lưu ý, ở trẻ nhỏ, trục bình thường lệch phải hơn người lớn."
   },
   {
    "id": "07-0",
-   "text": "Ví dụ thứ hai, một điện tâm đồ khác."
+   "text": "Trạm năm, sóng P và khoảng PR. Hãy phóng to một nhát bóp ở chuyển đạo hai."
   },
   {
    "id": "07-1",
-   "text": "Phóng to các chuyển đạo trước tim, từ vê một đến vê sáu."
+   "text": "Sóng P là khử cực nhĩ, rộng dưới không phẩy mười hai giây, tức ba ô nhỏ, và cao dưới hai phẩy năm mi li mét."
   },
   {
    "id": "07-2",
-   "text": "Vê một đến vê bốn có ét tê chênh lên, sóng T cao."
+   "text": "Khoảng PR tính từ đầu sóng P đến đầu phức bộ QRS, bình thường từ không phẩy mười hai đến không phẩy hai mươi giây, tức ba đến năm ô nhỏ."
   },
   {
    "id": "07-3",
-   "text": "Đây là nhồi máu thành trước, thủ phạm là động mạch liên thất trước."
+   "text": "PR dài hơn không phẩy hai mươi giây là block nhĩ thất độ một."
   },
   {
    "id": "07-4",
-   "text": "Tắc đoạn gần của động mạch này làm hoại tử một vùng cơ tim rất rộng, nên đặc biệt nguy hiểm."
-  },
-  {
-   "id": "07-5",
-   "text": "Hình soi gương ở thành dưới: chuyển đạo ba và a-vê-ép chênh xuống."
+   "text": "PR ngắn dưới không phẩy mười hai giây, hãy nghĩ đến hội chứng tiền kích thích, hoặc nhịp bộ nối."
   },
   {
    "id": "08-0",
-   "text": "Ví dụ thứ ba, động mạch mũ bị tắc."
+   "text": "Trạm sáu, phức bộ QRS, là khử cực thất."
   },
   {
    "id": "08-1",
-   "text": "Vùng thành bên của tim bị thiếu máu."
+   "text": "Độ rộng QRS bình thường dưới không phẩy mười hai giây, tức chưa tới ba ô nhỏ."
   },
   {
    "id": "08-2",
-   "text": "Các chuyển đạo nhìn thành bên là một, a-vê-lờ, vê năm và vê sáu, nên ét tê chênh lên."
+   "text": "QRS từ không phẩy mười hai giây trở lên gợi ý block nhánh, nhịp xuất phát từ thất, hoặc tăng kali máu."
   },
   {
    "id": "08-3",
-   "text": "Soi gương ở thành dưới: chuyển đạo ba và a-vê-ép chênh xuống."
-  },
-  {
-   "id": "08-4",
-   "text": "Biến đổi ở a-vê-lờ thường nhỏ, rất dễ bỏ sót, nên luôn soi kỹ a-vê-lờ."
+   "text": "Ngoài độ rộng, hãy để ý sóng Q bệnh lý, và biên độ QRS để phát hiện dày thất."
   },
   {
    "id": "09-0",
-   "text": "Trạm bốn, soi gương. Vì sao có chuyển đạo chênh lên, lại có chuyển đạo chênh xuống?"
+   "text": "Ở các chuyển đạo trước tim, sóng R tăng dần từ vê một đến vê sáu, còn sóng S nhỏ dần."
   },
   {
    "id": "09-1",
-   "text": "Hãy hình dung dòng tổn thương như một mũi tên, chỉ về phía vùng cơ tim đang thiếu máu."
+   "text": "Vùng chuyển tiếp, nơi R bằng S, thường ở vê ba hoặc vê bốn."
   },
   {
    "id": "09-2",
-   "text": "Khi mũi tên xoay về thành dưới, các chuyển đạo hai, ba, a-vê-ép chênh lên, còn a-vê-lờ và chuyển đạo một chênh xuống."
-  },
-  {
-   "id": "09-3",
-   "text": "Chuyển đạo ba chênh cao nhất, gợi ý tắc động mạch vành phải."
+   "text": "Nếu sóng R tăng kém, hãy nghĩ đến nhồi máu thành trước cũ, hoặc đặt sai vị trí điện cực."
   },
   {
    "id": "10-0",
-   "text": "Chiếu mũi tên lên trục chuyển đạo ba: cùng hướng, hình chiếu dương, nên ét tê chênh lên."
+   "text": "Khoảng QT tính từ đầu phức bộ QRS đến cuối sóng T."
   },
   {
    "id": "10-1",
-   "text": "Chiếu lên trục a-vê-lờ: ngược hướng, hình chiếu âm, nên ét tê chênh xuống."
+   "text": "QT thay đổi theo tần số tim, nên cần hiệu chỉnh: QTc bằng QT chia căn bậc hai của RR, theo công thức Ba-dét."
   },
   {
    "id": "10-2",
-   "text": "Đó chính là hình ảnh soi gương: cùng một mũi tên, nhưng nhìn từ phía đối diện."
+   "text": "Ví dụ: QT không phẩy ba tám giây, RR không phẩy tám giây, QTc khoảng không phẩy bốn hai giây."
   },
   {
    "id": "10-3",
-   "text": "Khi có hình soi gương, khả năng nhồi máu càng cao, và điều này giúp phân biệt với viêm màng ngoài tim."
+   "text": "QTc bình thường dưới bốn trăm năm mươi mi li giây ở nam, dưới bốn trăm sáu mươi ở nữ. Trên năm trăm là nguy cơ xoắn đỉnh."
+  },
+  {
+   "id": "10-4",
+   "text": "Mẹo nhanh: khi tần số từ sáu mươi đến một trăm, QT ngắn hơn một nửa khoảng RR thường là bình thường."
   },
   {
    "id": "11-0",
-   "text": "Trạm năm, thất phải. Khi động mạch vành phải tắc ở đoạn gần, thất phải cũng bị thiếu máu."
+   "text": "Trạm bảy, đoạn ét tê và sóng T. Đoạn ét tê bình thường nằm ngang, trên đường đẳng điện."
   },
   {
    "id": "11-1",
-   "text": "Vì vậy, nhồi máu thất phải thường đi kèm nhồi máu thành dưới."
+   "text": "Đo tại điểm J. Chênh lên hoặc chênh xuống từ một mi li mét, ở hai chuyển đạo liên tiếp, là bất thường."
   },
   {
    "id": "11-2",
-   "text": "Hãy gắn thêm chuyển đạo vê bốn phải, đặt đối xứng với vê bốn sang bên phải ngực. Ét tê chênh lên từ không phẩy năm mi li mét là có ý nghĩa."
+   "text": "Sóng T thường cùng chiều với QRS. Sóng T đảo là bình thường ở a-vê-rờ và vê một, đôi khi ở chuyển đạo ba."
   },
   {
    "id": "11-3",
-   "text": "Gợi ý ngay trên điện tâm đồ thường: vê một chênh lên, và chuyển đạo ba cao hơn chuyển đạo hai."
-  },
-  {
-   "id": "11-4",
-   "text": "Ý nghĩa lâm sàng: tránh thuốc ni-trát và lợi tiểu, vì thất phải phụ thuộc tiền tải, rất dễ tụt huyết áp."
+   "text": "Nếu thấy ét tê chênh lên, hãy xem bài điện tâm đồ trong nhồi máu cơ tim cấp."
   },
   {
    "id": "12-0",
-   "text": "Tiếp theo là thành sau. Ở vê một đến vê ba, ét tê chênh xuống nằm ngang, sóng R cao, sóng T dương."
+   "text": "Bây giờ, hãy thực hành đọc điện tâm đồ này theo đúng trình tự."
   },
   {
    "id": "12-1",
-   "text": "Đừng vội nghĩ đây là thiếu máu dưới nội mạc."
+   "text": "Kiểm giấy: hai mươi lăm mi li mét mỗi giây, chuẩn mười mi li mét, a-vê-rờ âm. Đúng."
   },
   {
    "id": "12-2",
-   "text": "Hãy lật ngược dải điện tâm đồ, như nhìn từ phía sau lưng."
+   "text": "Nhịp: đều, có sóng P trước mỗi QRS, P dương ở chuyển đạo hai. Đây là nhịp xoang."
   },
   {
    "id": "12-3",
-   "text": "Hình soi gương hiện ra: ét tê chênh lên kèm sóng Q. Đó là nhồi máu thành sau."
+   "text": "Tần số: bốn ô lớn giữa hai sóng R, vậy bảy mươi lăm lần mỗi phút."
   },
   {
    "id": "12-4",
-   "text": "Gắn thêm vê bảy đến vê chín để xác nhận: ét tê chênh lên từ không phẩy năm mi li mét."
+   "text": "Trục: chuyển đạo một dương, a-vê-ép dương, trục bình thường."
+  },
+  {
+   "id": "12-5",
+   "text": "Các khoảng: PR không phẩy mười sáu giây, QRS không phẩy không chín giây, QTc không phẩy bốn hai giây, đều bình thường."
+  },
+  {
+   "id": "12-6",
+   "text": "Ét tê và sóng T bình thường. Kết luận: điện tâm đồ bình thường."
   },
   {
    "id": "13-0",
-   "text": "Trạm sáu, các dạng tương đương. Có khi điện tâm đồ không hề có ét tê chênh lên, nhưng bệnh nhân vẫn đang tắc mạch cấp."
+   "text": "Tóm lại, sáu bước trong một câu dễ nhớ."
   },
   {
    "id": "13-1",
-   "text": "Hãy phóng to chuyển đạo vê ba."
+   "text": "Kiểm giấy: tốc độ, xung chuẩn, và a-vê-rờ phải âm."
   },
   {
    "id": "13-2",
-   "text": "Điểm J chênh xuống, đoạn ét tê đi lên dốc,"
+   "text": "Xem nhịp: đều không, có P không, P có dương ở chuyển đạo hai không."
   },
   {
    "id": "13-3",
-   "text": "sóng T cao, nhọn và đối xứng,"
+   "text": "Đếm số: ba trăm chia số ô lớn. Nhịp không đều thì đếm mười giây, nhân sáu."
   },
   {
    "id": "13-4",
-   "text": "kèm a-vê-rờ chênh lên nhẹ."
+   "text": "Tìm trục: nhìn chuyển đạo một và a-vê-ép, hai ngón cái cùng chỉ lên là bình thường."
   },
   {
    "id": "13-5",
-   "text": "Đây là sóng đơ Uyn-tơ, tương đương nhồi máu cơ tim ét tê chênh lên, do tắc động mạch liên thất trước đoạn gần."
+   "text": "Đo khoảng: P dưới ba ô nhỏ, PR từ ba đến năm ô, QRS dưới ba ô, QTc dưới bốn trăm năm mươi mi li giây."
   },
   {
-   "id": "14-0",
-   "text": "Tiếp theo là hội chứng Uê-len. Bệnh nhân vừa có cơn đau ngực, nay đã hết đau."
+   "id": "13-6",
+   "text": "Soi ét tê: nằm trên đường đẳng điện, sóng T cùng chiều QRS."
   },
   {
-   "id": "14-1",
-   "text": "Ở vê hai và vê ba, sóng T đảo sâu và đối xứng, hoặc có dạng hai pha."
-  },
-  {
-   "id": "14-2",
-   "text": "Đoạn ét tê gần như không chênh, và chưa có sóng Q."
-  },
-  {
-   "id": "14-3",
-   "text": "Đây là dấu hiệu hẹp rất nặng động mạch liên thất trước đoạn gần, bệnh nhân có thể nhồi máu thành trước rộng trong thời gian ngắn."
-  },
-  {
-   "id": "14-4",
-   "text": "Không được làm nghiệm pháp gắng sức, mà cần chụp mạch vành sớm."
-  },
-  {
-   "id": "15-0",
-   "text": "Một hình ảnh khác: ét tê chênh xuống lan tỏa, ở sáu chuyển đạo trở lên."
-  },
-  {
-   "id": "15-1",
-   "text": "Kèm theo ét tê chênh lên ở a-vê-rờ, đôi khi cả vê một."
-  },
-  {
-   "id": "15-2",
-   "text": "Hình ảnh này gợi ý thiếu máu dưới nội tâm mạc lan tỏa, do hẹp nặng thân chung động mạch vành trái, hoặc bệnh ba nhánh."
-  },
-  {
-   "id": "15-3",
-   "text": "Đây là bệnh nhân nặng, cần báo ngay chuyên khoa tim mạch can thiệp."
-  },
-  {
-   "id": "16-0",
-   "text": "Ngược lại, không phải ét tê chênh lên nào cũng là nhồi máu."
-  },
-  {
-   "id": "16-1",
-   "text": "Viêm màng ngoài tim: ét tê chênh lên lan tỏa, hình lõm, đoạn PR chênh xuống, và không có hình soi gương."
-  },
-  {
-   "id": "16-2",
-   "text": "Tái cực sớm: hay gặp ở người trẻ, điểm J có móc, sóng T cao."
-  },
-  {
-   "id": "16-3",
-   "text": "Phì đại thất trái: sóng S rất sâu ở vê một đến vê ba, kèm ét tê chênh lên."
-  },
-  {
-   "id": "16-4",
-   "text": "Block nhánh trái hoặc nhịp máy tạo nhịp: QRS rộng, cần dùng tiêu chuẩn Sgát-bô-sa riêng."
-  },
-  {
-   "id": "16-5",
-   "text": "Khi còn nghi ngờ, hãy so với điện tâm đồ cũ, làm lại điện tâm đồ, xét nghiệm men tim, và siêu âm tim."
-  },
-  {
-   "id": "17-0",
-   "text": "Trạm bảy, ôn tập. Gom tất cả lại thành một bảng định khu, cần học thuộc."
-  },
-  {
-   "id": "17-1",
-   "text": "Thành dưới: chuyển đạo hai, ba, a-vê-ép, thủ phạm thường là động mạch vành phải."
-  },
-  {
-   "id": "17-2",
-   "text": "Thành trước: vê một đến vê bốn, do động mạch liên thất trước."
-  },
-  {
-   "id": "17-3",
-   "text": "Thành bên: chuyển đạo một, a-vê-lờ, vê năm và vê sáu, do động mạch mũ."
-  },
-  {
-   "id": "17-4",
-   "text": "Thành sau: soi gương ở vê một đến vê ba, hãy gắn thêm vê bảy đến vê chín."
-  },
-  {
-   "id": "17-5",
-   "text": "Thất phải: gắn vê bốn phải, và tránh thuốc ni-trát vì dễ tụt huyết áp."
-  },
-  {
-   "id": "18-0",
-   "text": "Cuối cùng, năm điều cần nhớ."
-  },
-  {
-   "id": "18-1",
-   "text": "Một, đo ét tê tại điểm J, chênh từ một mi li mét ở hai chuyển đạo liên tiếp."
-  },
-  {
-   "id": "18-2",
-   "text": "Hai, tiến triển: T tối cấp, ét tê chênh lên, sóng Q, rồi T đảo."
-  },
-  {
-   "id": "18-3",
-   "text": "Ba, định khu theo nhóm chuyển đạo, từ đó đoán động mạch thủ phạm."
-  },
-  {
-   "id": "18-4",
-   "text": "Bốn, luôn tìm hình soi gương, và gắn thêm vê bốn phải, vê bảy đến vê chín khi cần."
-  },
-  {
-   "id": "18-5",
-   "text": "Năm, nhớ các dạng tương đương: thành sau, đơ Uyn-tơ, Uê-len, và a-vê-rờ chênh lên."
-  },
-  {
-   "id": "18-6",
+   "id": "13-7",
    "text": "Cảm ơn bạn đã theo dõi. Hẹn gặp lại ở bài tiếp theo."
   }
  ]
