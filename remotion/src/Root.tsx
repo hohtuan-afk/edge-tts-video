@@ -10,6 +10,7 @@ import {Demo} from './lab/Demo';
 import {Demo2} from './lab/Demo2';
 import {Full} from './lab/Full';
 import {Approach} from './lab/Approach';
+import {Short1} from './lab/Short1';
 import {Hyper, HYPER_DEMO_N} from './lab/Hyper';
 import {TableScene, TABLE_DUR} from './lab/Table';
 import {TableHand, TABLEHAND_DUR} from './lab/TableHand';
@@ -24,6 +25,7 @@ export const Root: React.FC = () => (
     <Composition id="TableHand" component={TableHand} durationInFrames={TABLEHAND_DUR} fps={30} width={1920} height={1080} />
     <Composition id="TableSample" component={TableScene} durationInFrames={TABLE_DUR} fps={30} width={1920} height={1080} />
     <Composition id="HyperDemo" component={Hyper} durationInFrames={Math.max(30, data.scenes[Math.min(HYPER_DEMO_N, data.scenes.length) - 1].from + data.scenes[Math.min(HYPER_DEMO_N, data.scenes.length) - 1].dur)} fps={data.fps} width={1920} height={1080} />
+    <Composition id="Short1" component={Short1} durationInFrames={data.total} fps={data.fps} width={1080} height={1920} />
     <Composition id="Approach" component={Approach} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />
     <Composition id="Full" component={Full} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />
     <Composition id="Demo2" component={Demo2} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />

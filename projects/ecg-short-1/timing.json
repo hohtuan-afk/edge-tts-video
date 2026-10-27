@@ -1,0 +1,101 @@
+[
+ {
+  "orig": 6.0,
+  "dur": 4.2,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 3.49,
+    "text": "Đọc ECG không bỏ sót? Chỉ cần 6 bước!"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 5.76,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 5.067,
+    "text": "① KIỂM giấy: 25 mm/s · 10 mm/mV · aVR phải âm"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 6.76,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 6.065,
+    "text": "② xem NHỊP: Đều? Có P? P dương DII? → nhịp xoang"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 6.76,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 6.041,
+    "text": "③ đếm SỐ: 300 – 150 – 100 – 75…"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 5.64,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 4.925,
+    "text": "④ tìm TRỤC: DI 👍 + aVF 👍 = bình thường"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 7.0,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 6.298,
+    "text": "⑤ đo KHOẢNG: PR 3–5 ô · QRS < 3 ô · QTc < 450 ms"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.92,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 4.213,
+    "text": "⑥ soi ST: nằm trên đường đẳng điện"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.72,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 4.0,
+    "text": "KIỂM – NHỊP – SỐ – TRỤC – KHOẢNG – ST"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 3.16,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 2.475,
+    "text": "Lưu lại để ôn · xem bài đầy đủ trên kênh!"
+   }
+  ]
+ }
+]
