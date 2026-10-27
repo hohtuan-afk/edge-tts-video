@@ -1,441 +1,401 @@
 {
  "fps": 30,
- "total": 11560,
+ "total": 10042,
  "scenes": [
   {
    "from": 0,
-   "dur": 424,
+   "dur": 438,
    "sents": [
     {
      "start": 0.5,
-     "dur": 3.312,
-     "text": "Tiếp cận ban đầu một điện tâm đồ"
-    },
-    {
-     "start": 4.162,
-     "dur": 5.539,
-     "text": "Nhớ 1 câu: KIỂM giấy – xem NHỊP – đếm SỐ – tìm TRỤC – đo KHOẢNG – soi ST"
-    },
-    {
-     "start": 10.051,
-     "dur": 3.084,
-     "text": "Đọc theo một trình tự cố định → không bỏ sót."
-    }
-   ]
-  },
-  {
-   "from": 424,
-   "dur": 1138,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 5.829,
-     "text": "Trạm 1 · KIỂM TRA — đúng bệnh nhân, ngày giờ, triệu chứng lúc đo."
-    },
-    {
-     "start": 6.679,
-     "dur": 4.001,
-     "text": "Ô nhỏ = 1 mm · 5 ô nhỏ = 1 ô lớn."
-    },
-    {
-     "start": 11.03,
-     "dur": 7.795,
-     "text": "Chiều ngang = thời gian (25 mm/s): ô nhỏ 0,04 s · ô lớn 0,2 s."
-    },
-    {
-     "start": 19.175,
-     "dur": 6.177,
-     "text": "Chiều dọc = điện thế (10 mm/mV): ô nhỏ 0,1 mV."
-    },
-    {
-     "start": 25.702,
-     "dur": 5.479,
-     "text": "Xung chuẩn đầu dải: cao đúng 10 mm = 1 mV."
-    },
-    {
-     "start": 31.532,
-     "dur": 5.439,
-     "text": "Ghi nhớ: 1 ô nhỏ = 0,04 s · 1 ô lớn = 0,2 s · 5 ô lớn = 1 giây."
-    }
-   ]
-  },
-  {
-   "from": 1562,
-   "dur": 755,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 4.793,
-     "text": "Bố cục: 4 cột × 3 hàng + dải nhịp DII dài ở dưới."
-    },
-    {
-     "start": 5.643,
-     "dur": 7.165,
-     "text": "Cột 1–2: 6 chuyển đạo chi (mặt phẳng trán) · Cột 3–4: 6 chuyển đạo trước tim (mặt phẳng ngang)."
-    },
-    {
-     "start": 13.158,
-     "dur": 4.975,
-     "text": "Mẹo kiểm tra: aVR bình thường ÂM — P, QRS, T đều hướng xuống."
-    },
-    {
-     "start": 18.483,
-     "dur": 5.677,
-     "text": "aVR dương + DI âm → nghĩ mắc đảo điện cực hai tay."
-    }
-   ]
-  },
-  {
-   "from": 2317,
-   "dur": 989,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 3.868,
-     "text": "Trạm 2 · NHỊP — nhìn dải nhịp DII."
-    },
-    {
-     "start": 4.718,
-     "dur": 4.798,
-     "text": "① Đều không? Đo các khoảng RR bằng compa."
-    },
-    {
-     "start": 9.866,
-     "dur": 4.43,
-     "text": "② Có sóng P? Mỗi P đi trước một QRS?"
-    },
-    {
-     "start": 14.645,
-     "dur": 6.314,
-     "text": "③ P dương ở DII (âm ở aVR) → NHỊP XOANG."
-    },
-    {
-     "start": 21.309,
-     "dur": 5.728,
-     "text": "So sánh: không có P · RR không đều hoàn toàn → rung nhĩ."
-    },
-    {
-     "start": 27.387,
-     "dur": 4.59,
-     "text": "Ghi nhớ 3 câu hỏi: Đều? – Có P? – P dương DII?"
-    }
-   ]
-  },
-  {
-   "from": 3306,
-   "dur": 1081,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 3.904,
-     "text": "Trạm 3 · TẦN SỐ — quy tắc 300."
-    },
-    {
-     "start": 4.754,
-     "dur": 8.163,
-     "text": "Tìm R trên vạch đậm, đếm các vạch tiếp: 300 – 150 – 100 – 75 – 60 – 50."
-    },
-    {
-     "start": 13.267,
-     "dur": 3.932,
-     "text": "R kế tiếp rơi ở vạch thứ 4 → 75 lần/phút."
-    },
-    {
-     "start": 17.549,
-     "dur": 5.501,
-     "text": "Chính xác hơn: 300 ÷ số ô lớn · 1500 ÷ số ô nhỏ."
-    },
-    {
-     "start": 23.4,
-     "dur": 4.719,
-     "text": "Nhịp không đều: đếm số QRS trong 10 giây × 6."
-    },
-    {
-     "start": 28.47,
-     "dur": 6.559,
-     "text": "Người lớn: 60–100 bình thường · < 60 nhịp chậm · > 100 nhịp nhanh."
-    }
-   ]
-  },
-  {
-   "from": 4387,
-   "dur": 739,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 5.169,
-     "text": "Trạm 4 · TRỤC — hướng chung của khử cực thất (mặt phẳng trán)."
-    },
-    {
-     "start": 6.019,
-     "dur": 3.007,
-     "text": "Trục bình thường: −30° đến +90°."
-    },
-    {
-     "start": 9.377,
-     "dur": 3.604,
-     "text": "Cách nhanh: chỉ nhìn QRS ở DI và aVF."
-    },
-    {
-     "start": 13.33,
-     "dur": 3.798,
-     "text": "DI dương + aVF dương → trục BÌNH THƯỜNG."
-    },
-    {
-     "start": 17.478,
-     "dur": 6.171,
-     "text": "Mẹo: QRS dương = ngón cái chỉ lên 👍 · hai ngón cái cùng lên = bình thường."
-    }
-   ]
-  },
-  {
-   "from": 5126,
-   "dur": 760,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 6.825,
-     "text": "DI (+) aVF (−) → xem DII: dương = bình thường · âm = lệch TRÁI."
-    },
-    {
-     "start": 7.675,
-     "dur": 2.991,
-     "text": "DI (−) aVF (+) → lệch PHẢI."
-    },
-    {
-     "start": 11.016,
-     "dur": 3.258,
-     "text": "DI (−) aVF (−) → trục vô định (cực phải)."
-    },
-    {
-     "start": 14.624,
-     "dur": 6.071,
-     "text": "Lệch trái: block phân nhánh trái trước… · Lệch phải: dày thất phải, thuyên tắc phổi…"
-    },
-    {
-     "start": 21.044,
-     "dur": 3.28,
-     "text": "Trẻ nhỏ: trục bình thường lệch phải hơn người lớn."
-    }
-   ]
-  },
-  {
-   "from": 5886,
-   "dur": 836,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 4.832,
-     "text": "Trạm 5 · SÓNG P & PR — phóng to một nhát bóp ở DII."
-    },
-    {
-     "start": 5.682,
-     "dur": 5.836,
-     "text": "Sóng P: rộng < 0,12 s (3 ô nhỏ) · cao < 2,5 mm."
-    },
-    {
-     "start": 11.868,
-     "dur": 6.904,
-     "text": "PR: đầu P → đầu QRS = 0,12–0,20 s (3–5 ô nhỏ)."
-    },
-    {
-     "start": 19.122,
-     "dur": 2.838,
-     "text": "PR > 0,20 s → block nhĩ thất độ 1."
-    },
-    {
-     "start": 22.31,
-     "dur": 4.569,
-     "text": "PR < 0,12 s → nghĩ tiền kích thích (WPW) hoặc nhịp bộ nối."
-    }
-   ]
-  },
-  {
-   "from": 6722,
-   "dur": 591,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 2.856,
-     "text": "Trạm 6 · QRS — khử cực thất."
-    },
-    {
-     "start": 3.706,
-     "dur": 4.226,
-     "text": "Độ rộng QRS < 0,12 s (chưa tới 3 ô nhỏ)."
-    },
-    {
-     "start": 8.281,
-     "dur": 5.397,
-     "text": "QRS ≥ 0,12 s → block nhánh · nhịp thất · tăng kali máu…"
-    },
-    {
-     "start": 14.028,
-     "dur": 4.662,
-     "text": "Để ý thêm: sóng Q bệnh lý · biên độ QRS (dày thất)."
-    }
-   ]
-  },
-  {
-   "from": 7313,
-   "dur": 463,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 4.797,
-     "text": "Chuyển đạo trước tim: R tăng dần V1 → V6, S nhỏ dần."
-    },
-    {
-     "start": 5.647,
-     "dur": 3.689,
-     "text": "Vùng chuyển tiếp (R = S) ở V3–V4."
-    },
-    {
-     "start": 9.686,
-     "dur": 4.74,
-     "text": "R tăng kém → nhồi máu thành trước cũ? đặt sai điện cực?"
-    }
-   ]
-  },
-  {
-   "from": 7776,
-   "dur": 925,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 2.97,
-     "text": "QT: từ đầu QRS → cuối sóng T."
-    },
-    {
-     "start": 3.82,
-     "dur": 6.798,
-     "text": "QT thay đổi theo tần số → QTc = QT ÷ √RR (Bazett)."
-    },
-    {
-     "start": 10.968,
-     "dur": 5.651,
-     "text": "Ví dụ: QT 0,38 s · RR 0,8 s → QTc ≈ 0,42 s."
-    },
-    {
-     "start": 16.969,
-     "dur": 7.317,
-     "text": "QTc bình thường: nam < 450 ms · nữ < 460 ms · > 500 ms: nguy cơ xoắn đỉnh."
-    },
-    {
-     "start": 24.637,
-     "dur": 5.209,
-     "text": "Mẹo nhanh: nhịp 60–100 → QT < ½ RR thường là ổn."
-    }
-   ]
-  },
-  {
-   "from": 8701,
-   "dur": 677,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 4.49,
-     "text": "Trạm 7 · ST–T — đoạn ST nằm trên đường đẳng điện."
-    },
-    {
-     "start": 5.34,
-     "dur": 5.132,
-     "text": "Đo tại điểm J · chênh ≥ 1 mm ở 2 chuyển đạo liên tiếp là bất thường."
-    },
-    {
-     "start": 10.822,
-     "dur": 6.7,
-     "text": "T thường cùng chiều QRS · T đảo bình thường ở aVR, V1 (± DIII)."
-    },
-    {
-     "start": 17.873,
      "dur": 3.701,
-     "text": "ST chênh lên? → xem bài “ECG trong nhồi máu cơ tim cấp”."
+     "text": "Dày nhĩ – Dày thất trên điện tâm đồ"
+    },
+    {
+     "start": 4.551,
+     "dur": 3.992,
+     "text": "Thần chú: Nhĩ xem P · Thất xem QRS"
+    },
+    {
+     "start": 8.893,
+     "dur": 4.696,
+     "text": "nhĩ Phải CAO · nhĩ Trái RỘNG · thất Trái CỘNG · thất Phải LẬT"
     }
    ]
   },
   {
-   "from": 9378,
-   "dur": 1074,
+   "from": 438,
+   "dur": 563,
    "sents": [
     {
      "start": 0.5,
-     "dur": 2.883,
-     "text": "Thực hành: đọc ECG này theo đúng trình tự."
+     "dur": 5.317,
+     "text": "Trạm 1 · NGUYÊN TẮC — buồng tim to → điện thế lớn hơn, kéo dài hơn."
     },
     {
-     "start": 3.733,
-     "dur": 5.354,
-     "text": "KIỂM: 25 mm/s · 10 mm/mV · aVR âm ✓"
+     "start": 6.167,
+     "dur": 2.643,
+     "text": "Vector tổng lệch về phía buồng to."
     },
     {
-     "start": 9.436,
+     "start": 9.16,
+     "dur": 6.416,
+     "text": "ECG: độ đặc hiệu cao, độ nhạy THẤP → bình thường chưa loại trừ."
+    },
+    {
+     "start": 15.926,
+     "dur": 1.832,
+     "text": "Chẩn đoán xác định: siêu âm tim."
+    }
+   ]
+  },
+  {
+   "from": 1001,
+   "dur": 644,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 5.216,
+     "text": "Sóng P = nhĩ phải (đi trước) + nhĩ trái (đi sau) chồng lên nhau."
+    },
+    {
+     "start": 6.066,
+     "dur": 5.002,
+     "text": "DII: P tròn, rộng < 0,12 s, cao < 2,5 mm."
+    },
+    {
+     "start": 11.419,
+     "dur": 4.815,
+     "text": "V1: P hai pha — phần dương (nhĩ phải) rồi phần âm nhỏ (nhĩ trái)."
+    },
+    {
+     "start": 16.584,
+     "dur": 3.883,
+     "text": "Vì vậy: nhìn P ở DII và V1."
+    }
+   ]
+  },
+  {
+   "from": 1645,
+   "dur": 700,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 5.029,
+     "text": "Trạm 2 · NHĨ PHẢI to → phần đầu của P CAO lên."
+    },
+    {
+     "start": 5.879,
+     "dur": 4.402,
+     "text": "DII: P cao nhọn > 2,5 mm = “P phế”."
+    },
+    {
+     "start": 10.631,
+     "dur": 3.305,
+     "text": "V1: phần dương đầu > 1,5 mm."
+    },
+    {
+     "start": 14.286,
+     "dur": 2.594,
+     "text": "Độ rộng P không đổi — chỉ CAO."
+    },
+    {
+     "start": 17.23,
+     "dur": 5.103,
+     "text": "Nguyên nhân: tăng áp phổi, bệnh phổi mạn, tim bẩm sinh, bệnh van ba lá."
+    }
+   ]
+  },
+  {
+   "from": 2345,
+   "dur": 857,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 5.61,
+     "text": "Trạm 3 · NHĨ TRÁI to → phần sau của P đến muộn, kéo DÀI."
+    },
+    {
+     "start": 6.46,
      "dur": 5.993,
-     "text": "NHỊP: đều · có P trước mỗi QRS · P dương DII → nhịp xoang ✓"
+     "text": "DII: P rộng > 0,11 s, hai đỉnh cách nhau > 0,04 s = “P hai lá”."
     },
     {
-     "start": 15.779,
-     "dur": 4.015,
-     "text": "SỐ: 4 ô lớn giữa 2 R → 75 lần/phút ✓"
+     "start": 12.803,
+     "dur": 4.93,
+     "text": "V1: phần âm cuối sâu > 1 mm và rộng > 0,04 s."
     },
     {
-     "start": 20.144,
-     "dur": 3.372,
-     "text": "TRỤC: DI (+) aVF (+) → bình thường ✓"
+     "start": 18.083,
+     "dur": 2.999,
+     "text": "Mẹo: phần âm ở V1 lớn hơn 1 ô vuông nhỏ."
     },
     {
-     "start": 23.867,
-     "dur": 6.499,
-     "text": "KHOẢNG: PR 0,16 s · QRS 0,09 s · QTc 0,42 s ✓"
-    },
-    {
-     "start": 30.716,
-     "dur": 4.072,
-     "text": "ST–T bình thường → KẾT LUẬN: ECG BÌNH THƯỜNG."
+     "start": 21.432,
+     "dur": 6.118,
+     "text": "Nguyên nhân: hẹp hai lá, tăng huyết áp, hẹp chủ, hở hai lá, bệnh cơ tim phì đại."
     }
    ]
   },
   {
-   "from": 10452,
-   "dur": 1108,
+   "from": 3202,
+   "dur": 438,
    "sents": [
     {
      "start": 0.5,
-     "dur": 2.089,
-     "text": "6 bước – 1 câu thần chú"
+     "dur": 3.69,
+     "text": "So sánh nhanh: nhĩ Phải CAO · nhĩ Trái RỘNG."
     },
     {
-     "start": 2.939,
-     "dur": 3.461,
-     "text": "KIỂM giấy: 25 mm/s · 10 mm/mV · aVR âm"
+     "start": 4.54,
+     "dur": 6.219,
+     "text": "DII: cao nhọn ↔ rộng hai đỉnh · V1: dương đầu cao ↔ âm cuối to."
     },
     {
-     "start": 6.749,
-     "dur": 3.857,
-     "text": "xem NHỊP: Đều? – Có P? – P dương DII?"
+     "start": 11.109,
+     "dur": 2.503,
+     "text": "Có cả hai → dày hai nhĩ."
+    }
+   ]
+  },
+  {
+   "from": 3640,
+   "dur": 940,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 5.627,
+     "text": "Trạm 4 · THẤT TRÁI — vector thất trái lớn, hướng ra sau và sang trái."
     },
     {
-     "start": 10.957,
-     "dur": 5.397,
-     "text": "đếm SỐ: 300 ÷ số ô lớn · không đều: 10 giây × 6"
+     "start": 6.477,
+     "dur": 5.245,
+     "text": "→ R rất cao ở V5–V6 · S rất sâu ở V1–V2."
     },
     {
-     "start": 16.704,
-     "dur": 4.128,
-     "text": "tìm TRỤC: DI và aVF — hai ngón cái 👍👍"
+     "start": 12.072,
+     "dur": 9.423,
+     "text": "Thất trái CỘNG: S V1 + R V5 (hoặc V6) ≥ 35 mm (Sokolow-Lyon)."
     },
     {
-     "start": 21.182,
-     "dur": 6.915,
-     "text": "đo KHOẢNG: P < 3 ô nhỏ · PR 3–5 ô · QRS < 3 ô · QTc < 450 ms"
+     "start": 21.845,
+     "dur": 5.453,
+     "text": "Ví dụ: 16 + 22 = 38 mm ≥ 35 → dày thất trái."
     },
     {
-     "start": 28.447,
-     "dur": 3.597,
-     "text": "soi ST: đẳng điện · T cùng chiều QRS"
+     "start": 27.648,
+     "dur": 2.694,
+     "text": "Mẹo: 35 mm = 7 ô lớn."
+    }
+   ]
+  },
+  {
+   "from": 4580,
+   "dur": 824,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 7.265,
+     "text": "Cornell: R aVL + S V3 > 28 mm (nam) · > 20 mm (nữ)."
     },
     {
-     "start": 32.394,
+     "start": 8.115,
+     "dur": 9.975,
+     "text": "Peguero-Lo Presti (mới hơn): S sâu nhất + S V4 ≥ 28 mm (nam) · ≥ 23 mm (nữ)."
+    },
+    {
+     "start": 18.441,
+     "dur": 2.855,
+     "text": "Peguero-Lo Presti nhạy hơn các tiêu chuẩn cũ."
+    },
+    {
+     "start": 21.646,
+     "dur": 4.8,
+     "text": "Người trẻ, gầy, vận động viên: điện thế cao có thể bình thường."
+    }
+   ]
+  },
+  {
+   "from": 5404,
+   "dur": 790,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 7.346,
+     "text": "Dấu “tăng gánh” thất trái: ST chênh xuống + T đảo KHÔNG đối xứng ở V5–V6, DI, aVL."
+    },
+    {
+     "start": 8.196,
+     "dur": 4.047,
+     "text": "Hình dạng: ST dốc xuống, T đảo nông dần rồi lên nhanh."
+    },
+    {
+     "start": 12.594,
+     "dur": 3.019,
+     "text": "Dấu hỗ trợ: dày nhĩ trái · trục lệch trái."
+    },
+    {
+     "start": 15.963,
+     "dur": 4.1,
+     "text": "Nguyên nhân: tăng huyết áp, hẹp van chủ, bệnh cơ tim phì đại."
+    },
+    {
+     "start": 20.412,
+     "dur": 4.93,
+     "text": "Đừng nhầm với thiếu máu cơ tim — so ECG cũ, hỏi triệu chứng."
+    }
+   ]
+  },
+  {
+   "from": 6194,
+   "dur": 932,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.679,
+     "text": "Trạm 5 · THẤT PHẢI — vector quay sang phải và ra trước."
+    },
+    {
+     "start": 5.529,
+     "dur": 6.735,
+     "text": "Thất phải LẬT: V1 có R > S (R/S > 1) hoặc R > 7 mm."
+    },
+    {
+     "start": 12.615,
+     "dur": 3.839,
+     "text": "V5–V6: S sâu > 7 mm (R/S < 1)."
+    },
+    {
+     "start": 16.804,
+     "dur": 5.863,
+     "text": "Trục lệch phải ≥ +110° · QRS < 0,12 s (không phải block nhánh phải)."
+    },
+    {
+     "start": 23.017,
+     "dur": 7.026,
+     "text": "Dấu hỗ trợ: P phế · tăng gánh thất phải (ST↓ T đảo V1–V4, DII, DIII, aVF)."
+    }
+   ]
+  },
+  {
+   "from": 7126,
+   "dur": 620,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 8.654,
+     "text": "Nguyên nhân: tăng áp phổi, hẹp hai lá, thuyên tắc phổi, bệnh phổi mạn, tim bẩm sinh."
+    },
+    {
+     "start": 9.504,
+     "dur": 5.956,
+     "text": "R cao ở V1 còn gặp: NMCT thành sau, block nhánh phải, WPW."
+    },
+    {
+     "start": 15.811,
+     "dur": 3.863,
+     "text": "→ Luôn đọc kèm trục, độ rộng QRS và bối cảnh lâm sàng."
+    }
+   ]
+  },
+  {
+   "from": 7746,
+   "dur": 688,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.673,
+     "text": "Trạm 6 · ÔN TẬP — bảng 4 buồng tim."
+    },
+    {
+     "start": 4.523,
+     "dur": 3.424,
+     "text": "Nhĩ phải: P DII > 2,5 mm — CAO."
+    },
+    {
+     "start": 8.297,
+     "dur": 4.452,
+     "text": "Nhĩ trái: P DII > 0,11 s hai đỉnh · V1 âm cuối > 1 ô nhỏ — RỘNG."
+    },
+    {
+     "start": 13.099,
+     "dur": 5.084,
+     "text": "Thất trái: S V1 + R V5/V6 ≥ 35 mm · tăng gánh — CỘNG."
+    },
+    {
+     "start": 18.533,
+     "dur": 3.387,
+     "text": "Thất phải: V1 R/S > 1 · trục ≥ +110° — LẬT."
+    }
+   ]
+  },
+  {
+   "from": 8434,
+   "dur": 805,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.305,
+     "text": "Thực hành: bệnh nhân tăng huyết áp lâu năm."
+    },
+    {
+     "start": 3.155,
+     "dur": 6.087,
+     "text": "S V1 = 16 mm · R V5 = 24 mm → 40 mm ≥ 35 ✓"
+    },
+    {
+     "start": 9.592,
+     "dur": 5.43,
+     "text": "V5–V6: ST chênh xuống, T đảo không đối xứng → tăng gánh ✓"
+    },
+    {
+     "start": 15.372,
+     "dur": 4.866,
+     "text": "V1: phần âm cuối của P > 1 ô nhỏ → dày nhĩ trái ✓"
+    },
+    {
+     "start": 20.588,
+     "dur": 5.254,
+     "text": "KẾT LUẬN: dày thất trái kèm tăng gánh + dày nhĩ trái → siêu âm tim."
+    }
+   ]
+  },
+  {
+   "from": 9239,
+   "dur": 803,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 1.629,
+     "text": "5 điều cần nhớ"
+    },
+    {
+     "start": 2.479,
+     "dur": 4.126,
+     "text": "① Nhĩ xem P (DII, V1) · Thất xem QRS"
+    },
+    {
+     "start": 6.955,
+     "dur": 2.806,
+     "text": "② Nhĩ phải CAO > 2,5 mm · Nhĩ trái RỘNG, hai đỉnh"
+    },
+    {
+     "start": 10.111,
+     "dur": 4.061,
+     "text": "③ Thất trái CỘNG: S V1 + R V5 ≥ 35 mm (7 ô lớn)"
+    },
+    {
+     "start": 14.522,
+     "dur": 3.698,
+     "text": "④ Thất phải LẬT: V1 R > S · trục lệch phải"
+    },
+    {
+     "start": 18.57,
+     "dur": 3.291,
+     "text": "⑤ ECG gợi ý — siêu âm tim khẳng định"
+    },
+    {
+     "start": 22.21,
      "dur": 3.539,
      "text": "Cảm ơn bạn đã theo dõi!"
     }
