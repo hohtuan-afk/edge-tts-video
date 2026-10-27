@@ -1,4 +1,4 @@
-// BÀI 2: DÀY NHĨ – DÀY THẤT — chuỗi "Tiếp cận điện tâm đồ cơ bản"
+// BÀI 2: LỚN NHĨ & PHÌ ĐẠI THẤT TRÊN ĐIỆN TÂM ĐỒ — chuỗi "Tiếp cận điện tâm đồ cơ bản"
 // Thần chú: Nhĩ xem P · Thất xem QRS — nhĩ Phải CAO · nhĩ Trái RỘNG · thất Trái CỘNG · thất Phải LẬT
 import React from 'react';
 import {AbsoluteFill, Audio, Sequence, interpolate, Easing, staticFile, useCurrentFrame} from 'remotion';
@@ -11,6 +11,7 @@ import {MONO} from './Lab';
 import {Fade, SeriesTag} from './Demo';
 import {Heart6, Zone6, SC as HSC, OX as HOX, OY as HOY} from '../wb/heart6';
 import {HAND, RPath} from '../wb/wb';
+import {tracePts, beatV, Lead} from './ecg';
 
 const ap = (t: number, s: number, d = 0.6) => interpolate(t, [s, s + d], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.bezier(0.33, 1, 0.68, 1)});
 const dp = (t: number, s: number, d = 0.8) => interpolate(t, [s, s + d], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.quad)});
@@ -48,7 +49,7 @@ const Card: React.FC<{x: number; y: number; w: number; a: number; c: string; tit
 const h2s = (x: number, y: number, s: number, ix: number, iy: number): [number, number] => [x + s * (HOX + ix * HSC), y + s * (HOY + iy * HSC)];
 
 // ================= THANH TRẠM =================
-const ST6 = ['NGUYÊN TẮC', 'NHĨ PHẢI', 'NHĨ TRÁI', 'THẤT TRÁI', 'THẤT PHẢI', 'ÔN TẬP'];
+const ST6 = ['NGUYÊN TẮC', 'LỚN NHĨ PHẢI', 'LỚN NHĨ TRÁI', 'PHÌ ĐẠI THẤT TRÁI', 'PHÌ ĐẠI THẤT PHẢI', 'ÔN TẬP'];
 const STC = ['#14B8A6', C.ra, C.la, C.lv, C.rv, '#22C55E'];
 const StationBar: React.FC = () => {
   const f = useCurrentFrame();
@@ -73,7 +74,7 @@ const StationBar: React.FC = () => {
 };
 
 // ================= 0 · BÌA =================
-const MANTRA: [string, string, string, string][] = [['nhĩ Phải', 'CAO', C.ra, 'ra'], ['nhĩ Trái', 'RỘNG', C.la, 'la'], ['thất Trái', 'CỘNG', C.lv, 'lv'], ['thất Phải', 'LẬT', C.rv, 'rv']];
+const MANTRA: [string, string, string, string][] = [['lớn nhĩ Phải', 'CAO', C.ra, 'ra'], ['lớn nhĩ Trái', 'RỘNG', C.la, 'la'], ['phì đại thất Trái', 'CỘNG', C.lv, 'lv'], ['phì đại thất Phải', 'LẬT', C.rv, 'rv']];
 const Cover: React.FC = () => {
   const t = useT();
   const beat = useBeat();
@@ -87,25 +88,26 @@ const Cover: React.FC = () => {
       </svg>
       <div style={{position: 'absolute', left: 110, top: 140, fontFamily: FONT, fontSize: 26, fontWeight: 800, letterSpacing: 4, color: '#5EEAD4', opacity: ap(t, 0.2)}}>TIẾP CẬN ĐIỆN TÂM ĐỒ CƠ BẢN · BÀI 2</div>
       <div style={{position: 'absolute', left: 106, top: 186, width: 1050, fontFamily: FONT, fontSize: 84, fontWeight: 800, lineHeight: 1.06, color: '#F8FAFC', opacity: ap(t, 0.4), transform: `translateY(${(1 - ap(t, 0.4)) * 20}px)`}}>
-        Dày nhĩ <span style={{color: '#64748B'}}>–</span><br /><span style={{color: '#FB7185'}}>Dày thất</span>
+        Lớn nhĩ <span style={{color: '#64748B'}}>&amp;</span><br /><span style={{color: '#FB7185'}}>Phì đại thất</span>
       </div>
-      <div style={{position: 'absolute', left: 110, top: 420, display: 'flex', gap: 16, opacity: ap(t, 2.0), transform: `translateY(${(1 - ap(t, 2.0)) * 14}px)`, fontFamily: FONT}}>
+      <div style={{position: 'absolute', left: 112, top: 372, fontFamily: FONT, fontSize: 30, fontWeight: 600, color: '#CBD5E1', opacity: ap(t, 0.8)}}>trên điện tâm đồ · <span style={{color: '#FDE047'}}>đọc 4 buồng tim qua sóng P và QRS</span></div>
+      <div style={{position: 'absolute', left: 110, top: 450, display: 'flex', gap: 16, opacity: ap(t, 2.0), transform: `translateY(${(1 - ap(t, 2.0)) * 14}px)`, fontFamily: FONT}}>
         {[['Nhĩ', 'xem P'], ['Thất', 'xem QRS']].map(([a, b], i) => (
           <div key={a} style={{padding: '10px 24px', borderRadius: 14, background: 'rgba(255,255,255,0.08)', border: '2px solid rgba(255,255,255,0.25)', fontSize: 36, fontWeight: 800, color: '#F1F5F9', opacity: ap(t, 2.0 + i * 0.4)}}>{a} <span style={{color: '#FDE047'}}>{b}</span></div>
         ))}
       </div>
-      <div style={{position: 'absolute', left: 110, top: 530, width: 1000, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14}}>
+      <div style={{position: 'absolute', left: 110, top: 560, width: 1000, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14}}>
         {MANTRA.map(([a, b, c], i) => {
           const k = ap(t, 4.0 + i * 0.5, 0.4);
           return (
             <div key={a} style={{display: 'flex', alignItems: 'baseline', gap: 12, padding: '12px 22px', borderRadius: 16, background: 'rgba(255,255,255,0.06)', border: `3px solid ${c}`, opacity: k, transform: `scale(${0.9 + 0.1 * k})`, fontFamily: FONT}}>
-              <span style={{fontSize: 30, fontWeight: 600, color: '#CBD5E1'}}>{a}</span>
-              <span style={{fontSize: 44, fontWeight: 900, color: c, letterSpacing: 1}}>{b}</span>
+              <span style={{fontSize: 27, fontWeight: 600, color: '#CBD5E1'}}>{a}</span>
+              <span style={{fontSize: 40, fontWeight: 900, color: c, letterSpacing: 1}}>{b}</span>
             </div>
           );
         })}
       </div>
-      <div style={{position: 'absolute', left: 112, top: 800, fontFamily: FONT, fontSize: 20, color: '#94A3B8', opacity: ap(t, 1.0)}}>Nguồn: AHA/ACCF/HRS ECG Recommendations Part V · LITFL ECG Library · ESC 2024 Hypertension Guidelines</div>
+      <div style={{position: 'absolute', left: 112, top: 820, fontFamily: FONT, fontSize: 20, color: '#94A3B8', opacity: ap(t, 1.0)}}>Nguồn: AHA/ACCF/HRS ECG Recommendations Part V · LITFL ECG Library · ESC 2024 Hypertension Guidelines</div>
     </AbsoluteFill>
   );
 };
@@ -132,13 +134,13 @@ const Principle: React.FC = () => {
             <line x1={cx} y1={cy} x2={nx} y2={ny} stroke="#64748B" strokeWidth={8} strokeDasharray="12 10" strokeLinecap="round" opacity={0.7} />
             <line x1={cx} y1={cy} x2={vx} y2={vy} stroke="#111827" strokeWidth={14} strokeLinecap="round" markerEnd="url(#arrP)" />
             <text x={nx - 24} y={ny + 30} textAnchor="end" fontFamily={HAND} fontSize={34} fill="#475569" opacity={vec}>bình thường</text>
-            <text x={vx + 34} y={vy + 12} fontFamily={HAND} fontSize={40} fill={C.lv} opacity={vec}>lệch về buồng to</text>
+            <text x={vx + 34} y={vy + 12} fontFamily={HAND} fontSize={40} fill={C.lv} opacity={vec}>lệch về buồng phì đại</text>
           </g>
         )}
       </svg>
       <div style={{position: 'absolute', left: HX + 40, top: 70, padding: '8px 22px', borderRadius: 30, background: zc, color: '#fff', fontFamily: FONT, fontSize: 32, fontWeight: 800, opacity: t < 2.2 ? 1 : 0}}>{name}</div>
-      <Card light x={1100} y={120} w={760} a={ap(t, 0.0)} c="#0F766E" title="Buồng tim to">→ điện thế <b>LỚN</b> hơn · <b>KÉO DÀI</b> hơn</Card>
-      <Card light x={1100} y={300} w={760} a={ap(t, 2.0)} c={C.lv} title="Vector tổng">lệch về phía buồng to</Card>
+      <Card light x={1100} y={120} w={760} a={ap(t, 0.0)} c="#0F766E" title="Buồng tim lớn / phì đại">→ điện thế <b>LỚN</b> hơn · <b>KÉO DÀI</b> hơn</Card>
+      <Card light x={1100} y={300} w={760} a={ap(t, 2.0)} c={C.lv} title="Vector tổng">lệch về phía buồng tim đó</Card>
       <div style={{position: 'absolute', left: 1100, top: 470, width: 760, padding: '18px 24px', borderRadius: 16, background: '#fff', boxShadow: '0 12px 28px rgba(15,23,42,0.12)', opacity: ap(t, 4.0), transform: `translateX(${(1 - ap(t, 4.0)) * 40}px)`, fontFamily: FONT, boxSizing: 'border-box'}}>
         {[['Độ đặc hiệu', 0.9, '#16A34A', 'CAO'], ['Độ nhạy', 0.3, '#DC2626', 'THẤP']].map(([n, v, c, l], i) => (
           <div key={n as string} style={{display: 'flex', alignItems: 'center', gap: 16, marginTop: i ? 14 : 0}}>
@@ -149,7 +151,7 @@ const Principle: React.FC = () => {
             <div style={{width: 90, fontSize: 28, fontWeight: 900, color: c as string}}>{l}</div>
           </div>
         ))}
-        <div style={{fontSize: 26, fontWeight: 700, color: '#475569', marginTop: 12}}>ECG bình thường <b style={{color: PEN}}>chưa loại trừ</b> dày buồng tim</div>
+        <div style={{fontSize: 26, fontWeight: 700, color: '#475569', marginTop: 12}}>ECG bình thường <b style={{color: PEN}}>chưa loại trừ</b> lớn buồng tim</div>
       </div>
       <Memo x={1100} y={720} w={760} a={ap(t, 6.0)}>ECG gợi ý → <span style={{color: '#0F766E'}}>SIÊU ÂM TIM khẳng định</span></Memo>
     </LightBg>
@@ -289,10 +291,10 @@ const NormalP = makeP({
     {t0: 2.0, c: '#0F766E', title: 'DII: P tròn', text: <>rộng &lt; 0,12 s · cao &lt; 2,5 mm</>},
     {t0: 4.0, c: C.ra, title: 'V1: P hai pha', text: <>dương (nhĩ phải) → âm nhỏ (nhĩ trái)</>},
   ],
-  memo: {t0: 6.0, text: <>Dày nhĩ → nhìn P ở <span style={{color: PEN}}>DII</span> và <span style={{color: PEN}}>V1</span></>},
+  memo: {t0: 6.0, text: <>Lớn nhĩ → nhìn P ở <span style={{color: PEN}}>DII</span> và <span style={{color: PEN}}>V1</span></>},
 });
 const RAE = makeP({
-  head: 'Nhĩ PHẢI to → P CAO',
+  head: 'Lớn nhĩ PHẢI → P CAO',
   morphT: 0.3,
   dii: {ra: {mu: 0.04, w: 0.018, a: 0.24}, la: {mu: 0.07, w: 0.02, a: 0.06}},
   v1: {ra: {mu: 0.04, w: 0.018, a: 0.2}, la: {mu: 0.075, w: 0.02, a: -0.04}},
@@ -311,7 +313,7 @@ const RAE = makeP({
   ],
 });
 const LAE = makeP({
-  head: 'Nhĩ TRÁI to → P RỘNG',
+  head: 'Lớn nhĩ TRÁI → P RỘNG',
   morphT: 0.3,
   dii: {ra: {mu: 0.04, w: 0.018, a: 0.09}, la: {mu: 0.1, w: 0.022, a: 0.1}},
   v1: {ra: {mu: 0.04, w: 0.018, a: 0.07}, la: {mu: 0.105, w: 0.028, a: -0.14}},
@@ -330,7 +332,125 @@ const LAE = makeP({
   ],
 });
 
-const SC: React.FC[] = [Cover, Principle, NormalP, RAE, LAE];
+// ================= 5 · SO SÁNH HAI NHĨ =================
+const RAE_SET = {dii: {ra: {mu: 0.04, w: 0.018, a: 0.24}, la: {mu: 0.07, w: 0.02, a: 0.06}}, v1: {ra: {mu: 0.04, w: 0.018, a: 0.2}, la: {mu: 0.075, w: 0.02, a: -0.04}}};
+const LAE_SET = {dii: {ra: {mu: 0.04, w: 0.018, a: 0.09}, la: {mu: 0.1, w: 0.022, a: 0.1}}, v1: {ra: {mu: 0.04, w: 0.018, a: 0.07}, la: {mu: 0.105, w: 0.028, a: -0.14}}};
+const MiniP: React.FC<{set: PSet; norm: PSet; a: number; label: string; c: string}> = ({set, norm, a, label, c}) => {
+  const W = 400, H = 280, B = 170, xs = 1300, ys = 520;
+  const x = (tt: number) => 30 + (tt + 0.03) * xs;
+  const path = (P: PSet) => {
+    const o: string[] = [];
+    for (let tt = -0.03; tt <= 0.22; tt += 0.002) o.push(`${x(tt).toFixed(1)},${(B - (gs(tt, P.ra) + gs(tt, P.la)) * ys).toFixed(1)}`);
+    return o.join(' ');
+  };
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} width={W} height={H} style={{opacity: a, borderRadius: 10, boxShadow: '0 6px 16px rgba(0,0,0,0.15)'}}>
+      <Pink w={W} h={H} mm={26} sub={5} />
+      <text x={14} y={34} fontFamily={MONO} fontSize={28} fontWeight={700} fill={INK}>{label}</text>
+      <polyline points={path(norm)} fill="none" stroke="#94A3B8" strokeWidth={4} strokeDasharray="8 7" />
+      <polyline points={path(set)} fill="none" stroke={c} strokeWidth={7} strokeLinejoin="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - a} />
+    </svg>
+  );
+};
+const CompareAtria: React.FC = () => {
+  const t = useT();
+  const cols: [string, string, string, typeof RAE_SET, string, string][] = [
+    ['LỚN NHĨ PHẢI', 'P CAO', C.ra, RAE_SET, 'cao nhọn > 2,5 mm', 'dương đầu > 1,5 mm'],
+    ['LỚN NHĨ TRÁI', 'P RỘNG', C.la, LAE_SET, 'rộng > 0,11 s, hai đỉnh', 'âm cuối > 1 ô nhỏ'],
+  ];
+  return (
+    <DeskBg>
+      {cols.map(([h, k, c, set, d1, d2], i) => {
+        const x = 60 + i * 920;
+        const a = ap(t, -1 + i * 0.3, 0.6);
+        return (
+          <div key={h} style={{position: 'absolute', left: x, top: 90, width: 880, height: 610, borderRadius: 20, background: '#FCFAF4', borderTop: `12px solid ${c}`, boxShadow: '0 20px 40px rgba(0,0,0,0.4)', opacity: a, transform: `translateY(${(1 - a) * 30}px)`, fontFamily: FONT}}>
+            <div style={{position: 'absolute', left: 30, top: 18, fontSize: 40, fontWeight: 900, color: c}}>{h} <span style={{color: '#26221C'}}>→ {k}</span></div>
+            <div style={{position: 'absolute', left: 30, top: 100}}><MiniP set={set.dii} norm={N_DII} a={ap(t, 0.2 + i * 0.4, 0.8)} label="DII" c={c} /></div>
+            <div style={{position: 'absolute', left: 450, top: 100}}><MiniP set={set.v1} norm={N_V1} a={ap(t, 2.0 + i * 0.4, 0.8)} label="V1" c={c} /></div>
+            <div style={{position: 'absolute', left: 30, top: 400, width: 400, fontSize: 30, fontWeight: 800, color: '#26221C', opacity: ap(t, 0.5 + i * 0.4)}}>DII: <span style={{color: c}}>{d1}</span></div>
+            <div style={{position: 'absolute', left: 450, top: 400, width: 400, fontSize: 30, fontWeight: 800, color: '#26221C', opacity: ap(t, 2.3 + i * 0.4)}}>V1: <span style={{color: c}}>{d2}</span></div>
+            <div style={{position: 'absolute', left: 30, top: 520, fontSize: 24, fontWeight: 600, color: '#64748B', opacity: ap(t, 0.5)}}>– – – sóng P bình thường để so sánh</div>
+          </div>
+        );
+      })}
+      <div style={{position: 'absolute', left: 60, top: 740, width: 1800, padding: '18px 30px', borderRadius: 16, background: 'linear-gradient(90deg, #8B5CF6, #F97316)', color: '#fff', fontFamily: FONT, fontSize: 38, fontWeight: 900, opacity: ap(t, 4.0), transform: `scale(${0.95 + 0.05 * ap(t, 4.0)})`, boxSizing: 'border-box', boxShadow: '0 14px 30px rgba(0,0,0,0.4)'}}>
+        Có cả hai dấu hiệu (P cao VÀ rộng) → LỚN HAI NHĨ
+      </div>
+    </DeskBg>
+  );
+};
+
+// ================= 6 · PHÌ ĐẠI THẤT TRÁI — SOKOLOW-LYON =================
+const LVH_V1: Lead = {p: 0.1, r: 0.25, s: -1.62, t: 0.25, tw: 0.07};
+const LVH_V5: Lead = {p: 0.1, q: -0.1, r: 2.2, s: -0.12, t: 0.45, tw: 0.07};
+const Sokolow: React.FC = () => {
+  const t = useT();
+  const mm = 12, pxs = 25 * mm, pxmv = 10 * mm, W0 = 1180, H0 = 760, B = 380;
+  const RT = 1.08; // đỉnh R nhát thứ 2
+  const sV1 = -beatV(0.03, LVH_V1) * 10, rV5 = beatV(0, LVH_V5) * 10; // mm
+  const sMM = 16, rMM = 22;
+  const bar = dp(t, 4.0, 1.0), seg2 = dp(t, 4.6, 1.0);
+  const BX = 1450, BB = 820, k = 10; // thang cột: 10 px/mm
+  return (
+    <DeskBg>
+      <div style={{position: 'absolute', left: 40, top: 110, width: W0, height: H0, boxShadow: '0 30px 60px rgba(0,0,0,0.45)', transform: `rotate(-0.4deg) translateY(${(1 - ap(t, -1.5, 0.6)) * 900}px)`}}>
+        <svg viewBox={`0 0 ${W0} ${H0}`} width={W0} height={H0} style={{position: 'absolute', inset: 0}}>
+          <Pink w={W0} h={H0} mm={mm} sub={5} />
+          <line x1={590} x2={590} y1={10} y2={H0 - 10} stroke="#D6B3AD" strokeWidth={3} />
+          {[['V1', 0, LVH_V1], ['V5', 600, LVH_V5]].map(([n, ox, L]) => (
+            <g key={n as string}>
+              <text x={(ox as number) + 20} y={50} fontFamily={MONO} fontSize={38} fontWeight={700} fill={INK}>{n as string}</text>
+              <polyline points={tracePts((ox as number) + 10, B, 0, 1.85, pxs, pxmv, L as Lead, 0.8, 0.003)} fill="none" stroke={INK} strokeWidth={3.2} strokeLinejoin="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - dp(t, -0.5, 1.4)} />
+            </g>
+          ))}
+          {/* đo S V1 */}
+          <g opacity={ap(t, 2.0)}>
+            <rect x={10 + RT * pxs - 18} y={B} width={36} height={sV1 / 10 * pxmv} fill="rgba(14,165,233,0.25)" />
+            <path d={`M${10 + (RT + 0.08) * pxs},${B} h14 V${B + sV1 / 10 * pxmv} h-14`} fill="none" stroke="#0284C7" strokeWidth={4} />
+            <text x={10 + (RT + 0.08) * pxs + 26} y={B + sV1 / 20 * pxmv + 10} fontFamily={MONO} fontSize={32} fontWeight={700} fill="#0284C7">S {sMM} mm</text>
+          </g>
+          {/* đo R V5 */}
+          <g opacity={ap(t, 2.4)}>
+            <rect x={610 + RT * pxs - 18} y={B - rV5 / 10 * pxmv} width={36} height={rV5 / 10 * pxmv} fill="rgba(220,38,38,0.2)" />
+            <path d={`M${610 + (RT + 0.08) * pxs},${B} h14 V${B - rV5 / 10 * pxmv} h-14`} fill="none" stroke={C.lv} strokeWidth={4} />
+            <text x={610 + (RT + 0.08) * pxs + 26} y={B - rV5 / 20 * pxmv + 10} fontFamily={MONO} fontSize={32} fontWeight={700} fill={C.lv}>R {rMM} mm</text>
+          </g>
+          <text x={W0 - 18} y={H0 - 14} textAnchor="end" fontFamily={MONO} fontSize={18} fill="#9b6b64">25 mm/s · 10 mm/mV</text>
+        </svg>
+        <div style={{position: 'absolute', left: 20, top: 640, display: 'flex', gap: 14, opacity: ap(t, 2.0), fontFamily: FONT, fontSize: 28, fontWeight: 800}}>
+          <span style={{padding: '6px 16px', borderRadius: 12, background: '#0284C7', color: '#fff'}}>S rất sâu ở V1–V2</span>
+          <span style={{padding: '6px 16px', borderRadius: 12, background: C.lv, color: '#fff'}}>R rất cao ở V5–V6</span>
+        </div>
+      </div>
+      <div style={{position: 'absolute', left: 1280, top: 64, fontFamily: FONT, fontSize: 38, fontWeight: 800, color: '#F8FAFC'}}>Phì đại thất TRÁI → CỘNG</div>
+      <div style={{position: 'absolute', left: 1280, top: 120, width: 240, height: 250, borderRadius: 14, background: '#FCFAF4', boxShadow: '0 12px 28px rgba(0,0,0,0.4)', overflow: 'hidden', opacity: ap(t, -1)}}>
+        <svg viewBox="0 0 240 250" width={240} height={250}><Heart6 id="lvh" x={-8} y={4} s={0.46} prog={1} art={1} labels={false} zone="lv" zoneC={C.lv} zoneA={ap(t, 0.2, 0.6)} /></svg>
+      </div>
+      <div style={{position: 'absolute', left: 1540, top: 130, width: 330, fontFamily: FONT, fontSize: 28, fontWeight: 700, color: '#E2E8F0', lineHeight: 1.3, opacity: ap(t, 0.4)}}>Sokolow-Lyon:<br /><span style={{color: '#FDE047', fontWeight: 900}}>S V1 + R V5/V6<br />≥ 35 mm</span></div>
+      {/* cột cộng */}
+      <svg viewBox="0 0 1920 1080" width={1920} height={1080} style={{position: 'absolute', inset: 0}}>
+        <g opacity={ap(t, 4.0, 0.4)}>
+          <line x1={BX - 70} x2={BX + 230} y1={BB - 35 * k} y2={BB - 35 * k} stroke="#FDE047" strokeWidth={4} strokeDasharray="14 10" />
+          <text x={BX + 230} y={BB - 35 * k - 12} textAnchor="end" fontFamily={MONO} fontSize={28} fontWeight={700} fill="#FDE047">35 mm</text>
+          <rect x={BX} y={BB - sMM * k * bar} width={110} height={sMM * k * bar} fill="#0284C7" />
+          <rect x={BX} y={BB - sMM * k - rMM * k * seg2} width={110} height={rMM * k * seg2} fill={C.lv} />
+          <text x={BX + 55} y={BB - sMM * k / 2 + 10} textAnchor="middle" fontFamily={MONO} fontSize={28} fontWeight={700} fill="#fff" opacity={bar}>16</text>
+          <text x={BX + 55} y={BB - sMM * k - rMM * k / 2 + 10} textAnchor="middle" fontFamily={MONO} fontSize={28} fontWeight={700} fill="#fff" opacity={seg2}>22</text>
+          <text x={BX - 16} y={BB - sMM * k / 2 + 10} textAnchor="end" fontFamily={FONT} fontSize={26} fontWeight={800} fill="#7DD3FC" opacity={bar}>S V1</text>
+          <text x={BX - 16} y={BB - sMM * k - rMM * k / 2 + 10} textAnchor="end" fontFamily={FONT} fontSize={26} fontWeight={800} fill="#FCA5A5" opacity={seg2}>R V5</text>
+          <line x1={BX - 10} x2={BX + 120} y1={BB} y2={BB} stroke="#E2E8F0" strokeWidth={3} />
+        </g>
+        <g opacity={ap(t, 6.0)}>
+          <text x={BX + 140} y={BB - 38 * k + 10} fontFamily={MONO} fontSize={40} fontWeight={700} fill="#4ADE80">= 38 mm ✓</text>
+        </g>
+      </svg>
+      <div style={{position: 'absolute', left: 1280, top: 850, width: 590, padding: '10px 18px', borderRadius: 12, background: '#FFF4C2', border: '2px solid #E8C547', fontFamily: FONT, fontSize: 28, fontWeight: 800, color: '#26221C', opacity: ap(t, 8.0), boxSizing: 'border-box'}}>Mẹo: 35 mm = <span style={{color: PEN}}>7 ô lớn</span></div>
+    </DeskBg>
+  );
+};
+
+const SC: React.FC[] = [Cover, Principle, NormalP, RAE, LAE, CompareAtria, Sokolow];
 export const HYPER_DEMO_N = SC.length;
 export const Hyper: React.FC = () => (
   <AbsoluteFill style={{background: '#0E1116', fontFamily: FONT}}>
@@ -348,7 +468,7 @@ export const Hyper: React.FC = () => (
         );
       })}
     </CapCtx.Provider>
-    <SeriesTag sub="Dày nhĩ – Dày thất" />
+    <SeriesTag sub="Lớn nhĩ & Phì đại thất" />
     <StationBar />
     <Caption />
     <Progress />
