@@ -73,7 +73,7 @@ const Hook: React.FC = () => {
           <linearGradient id="shF" x1="0" x2="1"><stop offset="0" stopColor="#39FF8A" stopOpacity="0" /><stop offset="1" stopColor="#39FF8A" /></linearGradient>
           <clipPath id="shC"><rect x={head - 600} y={1100} width={600} height={300} /></clipPath>
         </defs>
-        <Heart6 id="hk" x={150} y={600} s={1.5} prog={dp(t, 0, 0.8)} art={1} labels={false} beat={beat} />
+        <Heart6 id="hk" x={175} y={690} s={1.38} prog={dp(t, 0, 0.8)} art={1} labels={false} beat={beat} />
         <polyline points={pts.join(' ')} fill="none" stroke="#39FF8A" strokeWidth={4} opacity={0.15} />
         <g clipPath="url(#shC)"><polyline points={pts.join(' ')} fill="none" stroke="url(#shF)" strokeWidth={7} /></g>
       </svg>
@@ -254,9 +254,9 @@ const BeatPanel: React.FC<{t: number; mode: 'k' | 'st'}> = ({t, mode}) => {
     return o.join(' ');
   };
   const BR: [number, number, number, string, string, number][] = [
-    [-0.2, -0.045, 650, 'PR 3–5 ô', '#B45309', 0.4],
-    [-0.045, 0.045, 140, 'QRS < 3 ô', PEN, 1.5],
-    [-0.045, 0.335, 720, 'QTc < 450 ms', '#BE185D', 2.6],
+    [-0.2, -0.045, 590, 'PR 3–5 ô', '#B45309', 0.4],
+    [-0.045, 0.045, 150, 'QRS < 3 ô', PEN, 1.5],
+    [-0.045, 0.335, 668, 'QTc < 450 ms', '#BE185D', 2.6],
   ];
   return (
     <svg viewBox="0 0 960 760" width={960} height={760}>
