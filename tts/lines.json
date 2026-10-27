@@ -1,259 +1,43 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+8%",
+ "rate": "+12%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Xin chào, đây là bài hai: lớn nhĩ và phì đại thất trên điện tâm đồ, đọc bốn buồng tim qua sóng P và phức bộ QRS."
-  },
-  {
-   "id": "00-1",
-   "text": "Câu thần chú của bài: nhĩ thì xem sóng P, thất thì xem phức bộ QRS."
-  },
-  {
-   "id": "00-2",
-   "text": "Và nhớ bốn chữ: lớn nhĩ phải thì cao, lớn nhĩ trái thì rộng, phì đại thất trái thì cộng, phì đại thất phải thì lật."
+   "text": "Đọc điện tâm đồ mà không bỏ sót? Chỉ cần nhớ sáu bước."
   },
   {
    "id": "01-0",
-   "text": "Trạm một, nguyên tắc. Khi một buồng tim lớn hoặc phì đại, điện thế của nó lớn hơn, và kéo dài hơn."
-  },
-  {
-   "id": "01-1",
-   "text": "Mũi tên điện tổng hợp sẽ lệch về phía buồng tim đó."
-  },
-  {
-   "id": "01-2",
-   "text": "Lưu ý: điện tâm đồ có độ đặc hiệu cao nhưng độ nhạy thấp. Điện tâm đồ bình thường chưa loại trừ được lớn buồng tim."
-  },
-  {
-   "id": "01-3",
-   "text": "Muốn khẳng định, cần siêu âm tim."
+   "text": "Một, kiểm giấy: hai mươi lăm mi li mét mỗi giây, chuẩn mười mi li mét, và a-vê-rờ phải âm."
   },
   {
    "id": "02-0",
-   "text": "Sóng P là tổng của hai phần: nhĩ phải khử cực trước, nhĩ trái khử cực sau, hai phần chồng lên nhau."
-  },
-  {
-   "id": "02-1",
-   "text": "Ở chuyển đạo hai, sóng P tròn, rộng dưới không phẩy mười hai giây, cao dưới hai phẩy năm mi li mét."
-  },
-  {
-   "id": "02-2",
-   "text": "Ở vê một, sóng P thường hai pha: phần dương đầu là nhĩ phải, phần âm sau là nhĩ trái."
-  },
-  {
-   "id": "02-3",
-   "text": "Vì vậy, muốn đánh giá lớn nhĩ, hãy nhìn sóng P ở chuyển đạo hai và vê một."
+   "text": "Hai, xem nhịp: đều không, có P không, P có dương ở chuyển đạo hai không. Đủ ba là nhịp xoang."
   },
   {
    "id": "03-0",
-   "text": "Trạm hai, lớn nhĩ phải. Khi nhĩ phải lớn, phần đầu của sóng P cao vọt lên."
-  },
-  {
-   "id": "03-1",
-   "text": "Ở chuyển đạo hai, sóng P cao nhọn trên hai phẩy năm mi li mét, gọi là P phế."
-  },
-  {
-   "id": "03-2",
-   "text": "Ở vê một, phần dương đầu của sóng P cao trên một phẩy năm mi li mét."
-  },
-  {
-   "id": "03-3",
-   "text": "Độ rộng sóng P vẫn bình thường, nó chỉ cao lên."
-  },
-  {
-   "id": "03-4",
-   "text": "Nguyên nhân thường gặp: tăng áp phổi, bệnh phổi mạn tính, tim bẩm sinh, và bệnh van ba lá."
+   "text": "Ba, đếm số: tìm R trên vạch đậm, rồi đếm ba trăm, một trăm năm mươi, một trăm, bảy mươi lăm."
   },
   {
    "id": "04-0",
-   "text": "Trạm ba, lớn nhĩ trái. Khi nhĩ trái lớn, phần sau của sóng P đến muộn hơn và kéo dài ra."
-  },
-  {
-   "id": "04-1",
-   "text": "Ở chuyển đạo hai, sóng P rộng trên không phẩy mười một giây, có hai đỉnh cách nhau hơn một ô nhỏ, gọi là P hai lá."
-  },
-  {
-   "id": "04-2",
-   "text": "Ở vê một, phần âm cuối của sóng P sâu hơn một mi li mét, và rộng hơn không phẩy không bốn giây."
-  },
-  {
-   "id": "04-3",
-   "text": "Mẹo nhớ: phần âm ở vê một lớn hơn một ô vuông nhỏ."
-  },
-  {
-   "id": "04-4",
-   "text": "Nguyên nhân: hẹp van hai lá, tăng huyết áp, hẹp van động mạch chủ, hở van hai lá, và bệnh cơ tim phì đại."
+   "text": "Bốn, tìm trục: chuyển đạo một dương, a-vê-ép dương, hai ngón cái cùng chỉ lên là bình thường."
   },
   {
    "id": "05-0",
-   "text": "So sánh nhanh: lớn nhĩ phải làm sóng P cao, lớn nhĩ trái làm sóng P rộng."
-  },
-  {
-   "id": "05-1",
-   "text": "Ở chuyển đạo hai, cao nhọn so với rộng hai đỉnh. Ở vê một, phần dương đầu cao so với phần âm cuối to."
-  },
-  {
-   "id": "05-2",
-   "text": "Nếu có cả hai dấu hiệu, đó là lớn hai nhĩ."
+   "text": "Năm, đo khoảng: PR ba đến năm ô nhỏ, QRS dưới ba ô, QTc dưới bốn trăm năm mươi mi li giây."
   },
   {
    "id": "06-0",
-   "text": "Trạm bốn, phì đại thất trái. Thất trái phì đại làm mũi tên điện lớn hơn, hướng ra sau và sang trái."
-  },
-  {
-   "id": "06-1",
-   "text": "Kết quả là sóng R rất cao ở vê năm, vê sáu, và sóng S rất sâu ở vê một, vê hai."
-  },
-  {
-   "id": "06-2",
-   "text": "Thất trái thì cộng: lấy sóng S ở vê một cộng sóng R ở vê năm hoặc vê sáu. Từ ba mươi lăm mi li mét trở lên là phì đại thất trái, theo tiêu chuẩn Sô-cô-lốp Li-ông."
-  },
-  {
-   "id": "06-3",
-   "text": "Ví dụ: mười sáu cộng hai mươi hai bằng ba mươi tám mi li mét, vượt ba mươi lăm, vậy là phì đại thất trái."
-  },
-  {
-   "id": "06-4",
-   "text": "Mẹo nhớ: ba mươi lăm mi li mét bằng bảy ô lớn."
+   "text": "Sáu, soi ét tê: nằm ngang trên đường đẳng điện, sóng T cùng chiều QRS."
   },
   {
    "id": "07-0",
-   "text": "Tiêu chuẩn Coóc-nen: sóng R ở a-vê-lờ cộng sóng S ở vê ba, trên hai mươi tám mi li mét ở nam, trên hai mươi mi li mét ở nữ."
-  },
-  {
-   "id": "07-1",
-   "text": "Tiêu chuẩn mới hơn, Pê-ghê-rô Lô Prét-ti: sóng S sâu nhất ở bất kỳ chuyển đạo nào, cộng sóng S ở vê bốn. Từ hai mươi tám mi li mét ở nam, từ hai mươi ba ở nữ."
-  },
-  {
-   "id": "07-2",
-   "text": "Các nghiên cứu cho thấy tiêu chuẩn này nhạy hơn các tiêu chuẩn cũ."
-  },
-  {
-   "id": "07-3",
-   "text": "Lưu ý, ở người trẻ, người gầy và vận động viên, điện thế cao đơn thuần có thể là bình thường."
+   "text": "Nhắc lại nhé: kiểm, nhịp, số, trục, khoảng, ét tê."
   },
   {
    "id": "08-0",
-   "text": "Dạng tăng gánh thất trái, còn gọi là strain: đoạn ét tê chênh xuống, sóng T đảo không đối xứng, ở vê năm, vê sáu, chuyển đạo một và a-vê-lờ."
-  },
-  {
-   "id": "08-1",
-   "text": "Hình dạng: đoạn ét tê dốc xuống, sóng T đảo xuống từ từ rồi đi lên nhanh."
-  },
-  {
-   "id": "08-2",
-   "text": "Các dấu hỗ trợ: lớn nhĩ trái, và trục lệch trái."
-  },
-  {
-   "id": "08-3",
-   "text": "Nguyên nhân: tăng huyết áp, hẹp van động mạch chủ, và bệnh cơ tim phì đại."
-  },
-  {
-   "id": "08-4",
-   "text": "Đừng nhầm với thiếu máu cơ tim. Hãy so với điện tâm đồ cũ, và hỏi triệu chứng."
-  },
-  {
-   "id": "09-0",
-   "text": "Trạm năm, phì đại thất phải. Thất phải phì đại làm mũi tên điện quay sang phải và ra trước."
-  },
-  {
-   "id": "09-1",
-   "text": "Thất phải thì lật: ở vê một, bình thường S lớn hơn R, nay lật ngược thành R lớn hơn S, hoặc R cao trên bảy mi li mét."
-  },
-  {
-   "id": "09-2",
-   "text": "Ngược lại, ở vê năm, vê sáu, sóng S sâu trên bảy mi li mét."
-  },
-  {
-   "id": "09-3",
-   "text": "Trục lệch phải từ cộng một trăm mười độ, và QRS hẹp dưới không phẩy mười hai giây, để không nhầm với block nhánh phải."
-  },
-  {
-   "id": "09-4",
-   "text": "Dấu hỗ trợ: sóng P phế, và dạng tăng gánh thất phải, với ét tê chênh xuống, T đảo ở vê một đến vê bốn và các chuyển đạo dưới."
-  },
-  {
-   "id": "10-0",
-   "text": "Nguyên nhân phì đại thất phải: tăng áp phổi, hẹp van hai lá, thuyên tắc phổi, bệnh phổi mạn tính, và tim bẩm sinh như tứ chứng Fa-lô, hẹp van động mạch phổi."
-  },
-  {
-   "id": "10-1",
-   "text": "Lưu ý, sóng R cao ở vê một còn gặp trong nhồi máu thành sau, block nhánh phải, và hội chứng tiền kích thích."
-  },
-  {
-   "id": "10-2",
-   "text": "Vì vậy luôn đọc kèm trục, độ rộng QRS, và bối cảnh lâm sàng."
-  },
-  {
-   "id": "11-0",
-   "text": "Trạm sáu, ôn tập. Gom lại thành bảng bốn buồng tim."
-  },
-  {
-   "id": "11-1",
-   "text": "Lớn nhĩ phải: sóng P ở chuyển đạo hai cao trên hai phẩy năm mi li mét."
-  },
-  {
-   "id": "11-2",
-   "text": "Lớn nhĩ trái: sóng P rộng có hai đỉnh, phần âm cuối ở vê một lớn hơn một ô nhỏ."
-  },
-  {
-   "id": "11-3",
-   "text": "Phì đại thất trái: sóng S vê một cộng R vê năm hoặc vê sáu từ ba mươi lăm mi li mét, kèm dạng tăng gánh."
-  },
-  {
-   "id": "11-4",
-   "text": "Phì đại thất phải: vê một lật thành R lớn hơn S, trục lệch phải."
-  },
-  {
-   "id": "12-0",
-   "text": "Thực hành: một bệnh nhân tăng huyết áp lâu năm."
-  },
-  {
-   "id": "12-1",
-   "text": "Sóng S ở vê một mười sáu, R ở vê năm hai mươi bốn, tổng bốn mươi mi li mét. Đạt tiêu chuẩn phì đại thất trái."
-  },
-  {
-   "id": "12-2",
-   "text": "Ở vê năm, vê sáu, ét tê chênh xuống, T đảo không đối xứng. Có dạng tăng gánh."
-  },
-  {
-   "id": "12-3",
-   "text": "Ở vê một, phần âm cuối của sóng P lớn hơn một ô nhỏ. Có lớn nhĩ trái."
-  },
-  {
-   "id": "12-4",
-   "text": "Kết luận: phì đại thất trái kèm dạng tăng gánh, và lớn nhĩ trái. Đề nghị siêu âm tim."
-  },
-  {
-   "id": "13-0",
-   "text": "Cuối cùng, năm điều cần nhớ."
-  },
-  {
-   "id": "13-1",
-   "text": "Một, nhĩ xem sóng P ở chuyển đạo hai và vê một, thất xem phức bộ QRS."
-  },
-  {
-   "id": "13-2",
-   "text": "Hai, lớn nhĩ phải thì P cao, lớn nhĩ trái thì P rộng có hai đỉnh."
-  },
-  {
-   "id": "13-3",
-   "text": "Ba, phì đại thất trái thì cộng: S vê một cộng R vê năm từ ba mươi lăm mi li mét."
-  },
-  {
-   "id": "13-4",
-   "text": "Bốn, phì đại thất phải thì lật: vê một R lớn hơn S, trục lệch phải."
-  },
-  {
-   "id": "13-5",
-   "text": "Năm, điện tâm đồ chỉ gợi ý, siêu âm tim mới khẳng định."
-  },
-  {
-   "id": "13-6",
-   "text": "Cảm ơn bạn đã theo dõi. Hẹn gặp lại ở bài tiếp theo."
+   "text": "Lưu lại để ôn, và xem bài đầy đủ trên kênh nhé."
   }
  ]
 }
