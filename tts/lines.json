@@ -5,286 +5,254 @@
  "lines": [
   {
    "id": "00-0",
-   "text": "Xin chào, hôm nay chúng ta học cách tiếp cận ban đầu một điện tâm đồ."
+   "text": "Xin chào, đây là bài hai: dày nhĩ và dày thất trên điện tâm đồ."
   },
   {
    "id": "00-1",
-   "text": "Hãy nhớ một câu: kiểm giấy, xem nhịp, đếm số, tìm trục, đo khoảng, soi ét tê."
+   "text": "Câu thần chú của bài: nhĩ thì xem sóng P, thất thì xem phức bộ QRS."
   },
   {
    "id": "00-2",
-   "text": "Đọc theo đúng một trình tự cố định, bạn sẽ không bỏ sót điều gì."
+   "text": "Và nhớ bốn chữ: nhĩ phải cao, nhĩ trái rộng, thất trái cộng, thất phải lật."
   },
   {
    "id": "01-0",
-   "text": "Trạm một, kiểm tra. Trước hết, xem tên bệnh nhân, ngày giờ đo, và triệu chứng lúc đo."
+   "text": "Trạm một, nguyên tắc. Buồng tim to lên thì điện thế của nó lớn hơn, và kéo dài hơn."
   },
   {
    "id": "01-1",
-   "text": "Giấy điện tâm đồ có ô nhỏ một mi li mét, năm ô nhỏ tạo thành một ô lớn."
+   "text": "Mũi tên điện tổng hợp sẽ lệch về phía buồng tim to đó."
   },
   {
    "id": "01-2",
-   "text": "Chiều ngang là thời gian. Với tốc độ hai mươi lăm mi li mét mỗi giây, một ô nhỏ là không phẩy không bốn giây, một ô lớn là không phẩy hai giây."
+   "text": "Lưu ý: điện tâm đồ có độ đặc hiệu cao nhưng độ nhạy thấp. Điện tâm đồ bình thường chưa loại trừ được dày buồng tim."
   },
   {
    "id": "01-3",
-   "text": "Chiều dọc là điện thế. Với chuẩn mười mi li mét cho một mi li vôn, mỗi ô nhỏ là không phẩy một mi li vôn."
-  },
-  {
-   "id": "01-4",
-   "text": "Xung chuẩn ở đầu dải phải cao đúng mười mi li mét. Nếu không, mọi số đo biên độ sẽ sai."
-  },
-  {
-   "id": "01-5",
-   "text": "Ghi nhớ: một ô nhỏ không phẩy không bốn giây, một ô lớn không phẩy hai giây, năm ô lớn là một giây."
+   "text": "Muốn khẳng định, cần siêu âm tim."
   },
   {
    "id": "02-0",
-   "text": "Tờ điện tâm đồ chuẩn gồm bốn cột, ba hàng, và một dải nhịp chuyển đạo hai dài ở dưới cùng."
+   "text": "Sóng P là tổng của hai phần: nhĩ phải khử cực trước, nhĩ trái khử cực sau, hai phần chồng lên nhau."
   },
   {
    "id": "02-1",
-   "text": "Hai cột đầu là sáu chuyển đạo chi, nhìn tim theo mặt phẳng trán. Hai cột sau là sáu chuyển đạo trước tim, nhìn theo mặt phẳng ngang."
+   "text": "Ở chuyển đạo hai, sóng P tròn, rộng dưới không phẩy mười hai giây, cao dưới hai phẩy năm mi li mét."
   },
   {
    "id": "02-2",
-   "text": "Một mẹo kiểm tra nhanh: ở a-vê-rờ, sóng P, QRS và T bình thường đều âm."
+   "text": "Ở vê một, sóng P thường hai pha: phần dương đầu là nhĩ phải, phần âm sau là nhĩ trái."
   },
   {
    "id": "02-3",
-   "text": "Nếu a-vê-rờ lại dương, còn chuyển đạo một âm, hãy nghĩ đến mắc đảo điện cực hai tay, trước khi nghĩ đến bệnh."
+   "text": "Vì vậy, muốn xem dày nhĩ, hãy nhìn sóng P ở chuyển đạo hai và vê một."
   },
   {
    "id": "03-0",
-   "text": "Trạm hai, nhịp. Hãy nhìn dải nhịp chuyển đạo hai ở dưới cùng."
+   "text": "Trạm hai, nhĩ phải. Khi nhĩ phải to, phần đầu của sóng P cao vọt lên."
   },
   {
    "id": "03-1",
-   "text": "Câu hỏi thứ nhất: nhịp có đều không? Dùng compa đo các khoảng RR liên tiếp."
+   "text": "Ở chuyển đạo hai, sóng P cao nhọn trên hai phẩy năm mi li mét, gọi là P phế."
   },
   {
    "id": "03-2",
-   "text": "Câu hỏi thứ hai: có sóng P không, và mỗi sóng P có đi trước một phức bộ QRS không?"
+   "text": "Ở vê một, phần dương đầu của sóng P cao trên một phẩy năm mi li mét."
   },
   {
    "id": "03-3",
-   "text": "Câu hỏi thứ ba: sóng P có dương ở chuyển đạo hai, âm ở a-vê-rờ không. Đủ ba điều này là nhịp xoang."
+   "text": "Độ rộng sóng P vẫn bình thường, nó chỉ cao lên."
   },
   {
    "id": "03-4",
-   "text": "So sánh với dải này: không thấy sóng P, các khoảng RR không đều hoàn toàn. Đó là rung nhĩ."
-  },
-  {
-   "id": "03-5",
-   "text": "Ghi nhớ ba câu hỏi: đều không, có P không, và P có dương ở chuyển đạo hai không."
+   "text": "Nguyên nhân thường gặp: tăng áp phổi, bệnh phổi mạn tính, tim bẩm sinh, và bệnh van ba lá."
   },
   {
    "id": "04-0",
-   "text": "Trạm ba, tần số. Cách nhanh nhất là quy tắc ba trăm."
+   "text": "Trạm ba, nhĩ trái. Khi nhĩ trái to, phần sau của sóng P đến muộn hơn và kéo dài ra."
   },
   {
    "id": "04-1",
-   "text": "Tìm một sóng R nằm trên vạch đậm, rồi đếm các vạch đậm tiếp theo: ba trăm, một trăm năm mươi, một trăm, bảy mươi lăm, sáu mươi, năm mươi."
+   "text": "Ở chuyển đạo hai, sóng P rộng trên không phẩy mười một giây, có hai đỉnh cách nhau hơn một ô nhỏ, gọi là P hai lá."
   },
   {
    "id": "04-2",
-   "text": "Sóng R kế tiếp rơi vào vạch thứ tư, vậy tần số là bảy mươi lăm lần mỗi phút."
+   "text": "Ở vê một, phần âm cuối của sóng P sâu hơn một mi li mét, và rộng hơn không phẩy không bốn giây."
   },
   {
    "id": "04-3",
-   "text": "Chính xác hơn: lấy ba trăm chia số ô lớn, hoặc một nghìn năm trăm chia số ô nhỏ giữa hai sóng R."
+   "text": "Mẹo nhớ: phần âm ở vê một lớn hơn một ô vuông nhỏ."
   },
   {
    "id": "04-4",
-   "text": "Nếu nhịp không đều, hãy đếm số phức bộ QRS trên cả dải mười giây, rồi nhân sáu."
-  },
-  {
-   "id": "04-5",
-   "text": "Ở người lớn, tần số bình thường từ sáu mươi đến một trăm. Dưới sáu mươi là nhịp chậm, trên một trăm là nhịp nhanh."
+   "text": "Nguyên nhân: hẹp van hai lá, tăng huyết áp, hẹp van động mạch chủ, hở van hai lá, và bệnh cơ tim phì đại."
   },
   {
    "id": "05-0",
-   "text": "Trạm bốn, trục điện tim. Đây là hướng chung của sóng khử cực thất, trên mặt phẳng trán."
+   "text": "So sánh nhanh: nhĩ phải làm sóng P cao, nhĩ trái làm sóng P rộng."
   },
   {
    "id": "05-1",
-   "text": "Trục bình thường nằm trong khoảng từ âm ba mươi độ đến cộng chín mươi độ."
+   "text": "Ở chuyển đạo hai, cao nhọn so với rộng hai đỉnh. Ở vê một, phần dương đầu cao so với phần âm cuối to."
   },
   {
    "id": "05-2",
-   "text": "Cách nhanh nhất: chỉ nhìn phức bộ QRS ở chuyển đạo một và a-vê-ép."
-  },
-  {
-   "id": "05-3",
-   "text": "Chuyển đạo một dương, a-vê-ép dương: trục nằm trong góc phần tư bình thường."
-  },
-  {
-   "id": "05-4",
-   "text": "Mẹo nhớ: phức bộ QRS dương giống ngón tay cái chỉ lên. Hai ngón cái cùng chỉ lên là bình thường."
+   "text": "Nếu có cả hai dấu hiệu, đó là dày hai nhĩ."
   },
   {
    "id": "06-0",
-   "text": "Nếu chuyển đạo một dương mà a-vê-ép âm, hãy xem chuyển đạo hai. Hai dương thì vẫn bình thường, hai âm là trục lệch trái."
+   "text": "Trạm bốn, thất trái. Thất trái dày làm mũi tên điện lớn hơn, hướng ra sau và sang trái."
   },
   {
    "id": "06-1",
-   "text": "Chuyển đạo một âm, a-vê-ép dương: trục lệch phải."
+   "text": "Kết quả là sóng R rất cao ở vê năm, vê sáu, và sóng S rất sâu ở vê một, vê hai."
   },
   {
    "id": "06-2",
-   "text": "Cả hai cùng âm: trục vô định, hay còn gọi là trục cực phải."
+   "text": "Thất trái thì cộng: lấy sóng S ở vê một cộng sóng R ở vê năm hoặc vê sáu. Từ ba mươi lăm mi li mét trở lên là dày thất trái, theo tiêu chuẩn Sô-cô-lốp Li-ông."
   },
   {
    "id": "06-3",
-   "text": "Trục lệch trái hay gặp trong block phân nhánh trái trước. Trục lệch phải gặp trong dày thất phải, hay thuyên tắc phổi."
+   "text": "Ví dụ: mười sáu cộng hai mươi hai bằng ba mươi tám mi li mét, vượt ba mươi lăm, vậy là dày thất trái."
   },
   {
    "id": "06-4",
-   "text": "Lưu ý, ở trẻ nhỏ, trục bình thường lệch phải hơn người lớn."
+   "text": "Mẹo nhớ: ba mươi lăm mi li mét bằng bảy ô lớn."
   },
   {
    "id": "07-0",
-   "text": "Trạm năm, sóng P và khoảng PR. Hãy phóng to một nhát bóp ở chuyển đạo hai."
+   "text": "Tiêu chuẩn Coóc-nen: sóng R ở a-vê-lờ cộng sóng S ở vê ba, trên hai mươi tám mi li mét ở nam, trên hai mươi mi li mét ở nữ."
   },
   {
    "id": "07-1",
-   "text": "Sóng P là khử cực nhĩ, rộng dưới không phẩy mười hai giây, tức ba ô nhỏ, và cao dưới hai phẩy năm mi li mét."
+   "text": "Tiêu chuẩn mới hơn, Pê-ghê-rô Lô Prét-ti: sóng S sâu nhất ở bất kỳ chuyển đạo nào, cộng sóng S ở vê bốn. Từ hai mươi tám mi li mét ở nam, từ hai mươi ba ở nữ."
   },
   {
    "id": "07-2",
-   "text": "Khoảng PR tính từ đầu sóng P đến đầu phức bộ QRS, bình thường từ không phẩy mười hai đến không phẩy hai mươi giây, tức ba đến năm ô nhỏ."
+   "text": "Các nghiên cứu cho thấy tiêu chuẩn này nhạy hơn các tiêu chuẩn cũ."
   },
   {
    "id": "07-3",
-   "text": "PR dài hơn không phẩy hai mươi giây là block nhĩ thất độ một."
-  },
-  {
-   "id": "07-4",
-   "text": "PR ngắn dưới không phẩy mười hai giây, hãy nghĩ đến hội chứng tiền kích thích, hoặc nhịp bộ nối."
+   "text": "Lưu ý, ở người trẻ, người gầy và vận động viên, điện thế cao đơn thuần có thể là bình thường."
   },
   {
    "id": "08-0",
-   "text": "Trạm sáu, phức bộ QRS, là khử cực thất."
+   "text": "Dấu hiệu tăng gánh thất trái: đoạn ét tê chênh xuống, sóng T đảo không đối xứng, ở vê năm, vê sáu, chuyển đạo một và a-vê-lờ."
   },
   {
    "id": "08-1",
-   "text": "Độ rộng QRS bình thường dưới không phẩy mười hai giây, tức chưa tới ba ô nhỏ."
+   "text": "Hình dạng: đoạn ét tê dốc xuống, sóng T đảo xuống từ từ rồi đi lên nhanh."
   },
   {
    "id": "08-2",
-   "text": "QRS từ không phẩy mười hai giây trở lên gợi ý block nhánh, nhịp xuất phát từ thất, hoặc tăng kali máu."
+   "text": "Các dấu hỗ trợ: dày nhĩ trái, và trục lệch trái."
   },
   {
    "id": "08-3",
-   "text": "Ngoài độ rộng, hãy để ý sóng Q bệnh lý, và biên độ QRS để phát hiện dày thất."
+   "text": "Nguyên nhân: tăng huyết áp, hẹp van động mạch chủ, và bệnh cơ tim phì đại."
+  },
+  {
+   "id": "08-4",
+   "text": "Đừng nhầm với thiếu máu cơ tim. Hãy so với điện tâm đồ cũ, và hỏi triệu chứng."
   },
   {
    "id": "09-0",
-   "text": "Ở các chuyển đạo trước tim, sóng R tăng dần từ vê một đến vê sáu, còn sóng S nhỏ dần."
+   "text": "Trạm năm, thất phải. Thất phải dày làm mũi tên điện quay sang phải và ra trước."
   },
   {
    "id": "09-1",
-   "text": "Vùng chuyển tiếp, nơi R bằng S, thường ở vê ba hoặc vê bốn."
+   "text": "Thất phải thì lật: ở vê một, bình thường S lớn hơn R, nay lật ngược thành R lớn hơn S, hoặc R cao trên bảy mi li mét."
   },
   {
    "id": "09-2",
-   "text": "Nếu sóng R tăng kém, hãy nghĩ đến nhồi máu thành trước cũ, hoặc đặt sai vị trí điện cực."
+   "text": "Ngược lại, ở vê năm, vê sáu, sóng S sâu trên bảy mi li mét."
+  },
+  {
+   "id": "09-3",
+   "text": "Trục lệch phải từ cộng một trăm mười độ, và QRS hẹp dưới không phẩy mười hai giây, để không nhầm với block nhánh phải."
+  },
+  {
+   "id": "09-4",
+   "text": "Dấu hỗ trợ: sóng P phế, và tăng gánh thất phải, với ét tê chênh xuống, T đảo ở vê một đến vê bốn và các chuyển đạo dưới."
   },
   {
    "id": "10-0",
-   "text": "Khoảng QT tính từ đầu phức bộ QRS đến cuối sóng T."
+   "text": "Nguyên nhân dày thất phải: tăng áp phổi, hẹp van hai lá, thuyên tắc phổi, bệnh phổi mạn tính, và tim bẩm sinh như tứ chứng Fa-lô, hẹp van động mạch phổi."
   },
   {
    "id": "10-1",
-   "text": "QT thay đổi theo tần số tim, nên cần hiệu chỉnh: QTc bằng QT chia căn bậc hai của RR, theo công thức Ba-dét."
+   "text": "Lưu ý, sóng R cao ở vê một còn gặp trong nhồi máu thành sau, block nhánh phải, và hội chứng tiền kích thích."
   },
   {
    "id": "10-2",
-   "text": "Ví dụ: QT không phẩy ba tám giây, RR không phẩy tám giây, QTc khoảng không phẩy bốn hai giây."
-  },
-  {
-   "id": "10-3",
-   "text": "QTc bình thường dưới bốn trăm năm mươi mi li giây ở nam, dưới bốn trăm sáu mươi ở nữ. Trên năm trăm là nguy cơ xoắn đỉnh."
-  },
-  {
-   "id": "10-4",
-   "text": "Mẹo nhanh: khi tần số từ sáu mươi đến một trăm, QT ngắn hơn một nửa khoảng RR thường là bình thường."
+   "text": "Vì vậy luôn đọc kèm trục, độ rộng QRS, và bối cảnh lâm sàng."
   },
   {
    "id": "11-0",
-   "text": "Trạm bảy, đoạn ét tê và sóng T. Đoạn ét tê bình thường nằm ngang, trên đường đẳng điện."
+   "text": "Trạm sáu, ôn tập. Gom lại thành bảng bốn buồng tim."
   },
   {
    "id": "11-1",
-   "text": "Đo tại điểm J. Chênh lên hoặc chênh xuống từ một mi li mét, ở hai chuyển đạo liên tiếp, là bất thường."
+   "text": "Nhĩ phải: sóng P ở chuyển đạo hai cao trên hai phẩy năm mi li mét."
   },
   {
    "id": "11-2",
-   "text": "Sóng T thường cùng chiều với QRS. Sóng T đảo là bình thường ở a-vê-rờ và vê một, đôi khi ở chuyển đạo ba."
+   "text": "Nhĩ trái: sóng P rộng có hai đỉnh, phần âm cuối ở vê một lớn hơn một ô nhỏ."
   },
   {
    "id": "11-3",
-   "text": "Nếu thấy ét tê chênh lên, hãy xem bài điện tâm đồ trong nhồi máu cơ tim cấp."
+   "text": "Thất trái: sóng S vê một cộng R vê năm hoặc vê sáu từ ba mươi lăm mi li mét, kèm tăng gánh."
+  },
+  {
+   "id": "11-4",
+   "text": "Thất phải: vê một lật thành R lớn hơn S, trục lệch phải."
   },
   {
    "id": "12-0",
-   "text": "Bây giờ, hãy thực hành đọc điện tâm đồ này theo đúng trình tự."
+   "text": "Thực hành: một bệnh nhân tăng huyết áp lâu năm."
   },
   {
    "id": "12-1",
-   "text": "Kiểm giấy: hai mươi lăm mi li mét mỗi giây, chuẩn mười mi li mét, a-vê-rờ âm. Đúng."
+   "text": "Sóng S ở vê một mười sáu, R ở vê năm hai mươi bốn, tổng bốn mươi mi li mét. Đạt tiêu chuẩn."
   },
   {
    "id": "12-2",
-   "text": "Nhịp: đều, có sóng P trước mỗi QRS, P dương ở chuyển đạo hai. Đây là nhịp xoang."
+   "text": "Ở vê năm, vê sáu, ét tê chênh xuống, T đảo không đối xứng. Có tăng gánh."
   },
   {
    "id": "12-3",
-   "text": "Tần số: bốn ô lớn giữa hai sóng R, vậy bảy mươi lăm lần mỗi phút."
+   "text": "Ở vê một, phần âm cuối của sóng P lớn hơn một ô nhỏ. Có dày nhĩ trái."
   },
   {
    "id": "12-4",
-   "text": "Trục: chuyển đạo một dương, a-vê-ép dương, trục bình thường."
-  },
-  {
-   "id": "12-5",
-   "text": "Các khoảng: PR không phẩy mười sáu giây, QRS không phẩy không chín giây, QTc không phẩy bốn hai giây, đều bình thường."
-  },
-  {
-   "id": "12-6",
-   "text": "Ét tê và sóng T bình thường. Kết luận: điện tâm đồ bình thường."
+   "text": "Kết luận: dày thất trái kèm tăng gánh, và dày nhĩ trái. Đề nghị siêu âm tim."
   },
   {
    "id": "13-0",
-   "text": "Tóm lại, sáu bước trong một câu dễ nhớ."
+   "text": "Cuối cùng, năm điều cần nhớ."
   },
   {
    "id": "13-1",
-   "text": "Kiểm giấy: tốc độ, xung chuẩn, và a-vê-rờ phải âm."
+   "text": "Một, nhĩ xem sóng P ở chuyển đạo hai và vê một, thất xem phức bộ QRS."
   },
   {
    "id": "13-2",
-   "text": "Xem nhịp: đều không, có P không, P có dương ở chuyển đạo hai không."
+   "text": "Hai, nhĩ phải cao, nhĩ trái rộng có hai đỉnh."
   },
   {
    "id": "13-3",
-   "text": "Đếm số: ba trăm chia số ô lớn. Nhịp không đều thì đếm mười giây, nhân sáu."
+   "text": "Ba, thất trái cộng: S vê một cộng R vê năm từ ba mươi lăm mi li mét."
   },
   {
    "id": "13-4",
-   "text": "Tìm trục: nhìn chuyển đạo một và a-vê-ép, hai ngón cái cùng chỉ lên là bình thường."
+   "text": "Bốn, thất phải lật: vê một R lớn hơn S, trục lệch phải."
   },
   {
    "id": "13-5",
-   "text": "Đo khoảng: P dưới ba ô nhỏ, PR từ ba đến năm ô, QRS dưới ba ô, QTc dưới bốn trăm năm mươi mi li giây."
+   "text": "Năm, điện tâm đồ chỉ gợi ý, siêu âm tim mới khẳng định."
   },
   {
    "id": "13-6",
-   "text": "Soi ét tê: nằm trên đường đẳng điện, sóng T cùng chiều QRS."
-  },
-  {
-   "id": "13-7",
    "text": "Cảm ơn bạn đã theo dõi. Hẹn gặp lại ở bài tiếp theo."
   }
  ]

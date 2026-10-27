@@ -1,6 +1,6 @@
 # BÀI 2 · DÀY NHĨ – DÀY THẤT — chuỗi "Tiếp cận điện tâm đồ cơ bản"
 # Câu thần chú: Nhĩ xem P · Thất xem QRS — nhĩ Phải CAO · nhĩ Trái RỘNG · thất Trái CỘNG · thất Phải LẬT
-# 7 trạm: NGUYÊN TẮC → NHĨ PHẢI → NHĨ TRÁI → THẤT TRÁI → THẤT PHẢI → TRẺ EM → ÔN TẬP
+# 6 trạm: NGUYÊN TẮC → NHĨ PHẢI → NHĨ TRÁI → THẤT TRÁI → THẤT PHẢI → ÔN TẬP
 # Nguồn: AHA/ACCF/HRS 2009 Recommendations for the Standardization and Interpretation of the ECG, Part V
 #        (Chamber hypertrophy) — Hancock et al.; LITFL ECG Library (LVH, RVH, LAE, RAE — cập nhật 2024–2025);
 #        Peguero-Lo Presti criterion (JACC 2017) và tổng quan/meta-analysis sau đó; ESC 2024 Guidelines
@@ -105,22 +105,13 @@ NARR = [
   # 10 · Nguyên nhân thất phải
   [("Nguyên nhân: tăng áp phổi, hẹp hai lá, thuyên tắc phổi, bệnh phổi mạn, tim bẩm sinh.",
     "Nguyên nhân dày thất phải: tăng áp phổi, hẹp van hai lá, thuyên tắc phổi, bệnh phổi mạn tính, và tim bẩm sinh như tứ chứng Fa-lô, hẹp van động mạch phổi."),
-   ("R cao ở V1 còn gặp: NMCT thành sau, block nhánh phải, WPW, trẻ nhỏ.",
-    "Lưu ý, sóng R cao ở vê một còn gặp trong nhồi máu thành sau, block nhánh phải, hội chứng tiền kích thích, và ở trẻ nhỏ."),
+   ("R cao ở V1 còn gặp: NMCT thành sau, block nhánh phải, WPW.",
+    "Lưu ý, sóng R cao ở vê một còn gặp trong nhồi máu thành sau, block nhánh phải, và hội chứng tiền kích thích."),
    ("→ Luôn đọc kèm trục, độ rộng QRS và bối cảnh lâm sàng.",
     "Vì vậy luôn đọc kèm trục, độ rộng QRS, và bối cảnh lâm sàng.")],
-  # 11 · Trẻ em
-  [("Trạm 6 · TRẺ EM — sơ sinh: thất phải ưu thế là BÌNH THƯỜNG.",
-    "Trạm sáu, trẻ em. Ở trẻ sơ sinh, thất phải ưu thế là bình thường."),
-   ("Sơ sinh: R cao V1, trục lệch phải — không phải bệnh.",
-    "Trẻ sơ sinh có sóng R cao ở vê một và trục lệch phải, đó không phải là bệnh."),
-   ("Tiêu chuẩn dày thất ở trẻ: so với bảng chuẩn theo tuổi.",
-    "Vì vậy, chẩn đoán dày thất ở trẻ em phải so với bảng giá trị chuẩn theo tuổi."),
-   ("Sẽ có bài riêng: “ECG trẻ em”.",
-    "Phần này sẽ có một bài riêng về điện tâm đồ trẻ em.")],
   # 12 · Bảng 4 buồng
-  [("Trạm 7 · ÔN TẬP — bảng 4 buồng tim.",
-    "Trạm bảy, ôn tập. Gom lại thành bảng bốn buồng tim."),
+  [("Trạm 6 · ÔN TẬP — bảng 4 buồng tim.",
+    "Trạm sáu, ôn tập. Gom lại thành bảng bốn buồng tim."),
    ("Nhĩ phải: P DII > 2,5 mm — CAO.",
     "Nhĩ phải: sóng P ở chuyển đạo hai cao trên hai phẩy năm mi li mét."),
    ("Nhĩ trái: P DII > 0,11 s hai đỉnh · V1 âm cuối > 1 ô nhỏ — RỘNG.",
@@ -151,11 +142,13 @@ NARR = [
     "Ba, thất trái cộng: S vê một cộng R vê năm từ ba mươi lăm mi li mét."),
    ("④ Thất phải LẬT: V1 R > S · trục lệch phải",
     "Bốn, thất phải lật: vê một R lớn hơn S, trục lệch phải."),
-   ("⑤ ECG gợi ý — siêu âm tim khẳng định · trẻ em có chuẩn riêng",
-    "Năm, điện tâm đồ chỉ gợi ý, siêu âm tim mới khẳng định, và trẻ em có chuẩn riêng."),
+   ("⑤ ECG gợi ý — siêu âm tim khẳng định",
+    "Năm, điện tâm đồ chỉ gợi ý, siêu âm tim mới khẳng định."),
    ("Cảm ơn bạn đã theo dõi!",
     "Cảm ơn bạn đã theo dõi. Hẹn gặp lại ở bài tiếp theo.")],
 ]
-STATION = [0, 1, 1, 2, 3, 3, 4, 4, 4, 5, 5, 6, 7, 7, 7]
+STATION = [0, 1, 1, 2, 3, 3, 4, 4, 4, 5, 5, 6, 6, 6]
+KEYS = [[2 * j for j in range(len(sc))] for sc in NARR]
 STEP = 3.0
 SCENE_DUR = [STEP * len(sc) + 3 for sc in NARR]
+assert len(NARR) == len(STATION) == len(KEYS) == 14
