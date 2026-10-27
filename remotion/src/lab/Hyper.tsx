@@ -134,7 +134,7 @@ const Principle: React.FC = () => {
             <line x1={cx} y1={cy} x2={nx} y2={ny} stroke="#64748B" strokeWidth={8} strokeDasharray="12 10" strokeLinecap="round" opacity={0.7} />
             <line x1={cx} y1={cy} x2={vx} y2={vy} stroke="#111827" strokeWidth={14} strokeLinecap="round" markerEnd="url(#arrP)" />
             <text x={nx - 24} y={ny + 30} textAnchor="end" fontFamily={HAND} fontSize={34} fill="#475569" opacity={vec}>bình thường</text>
-            <text x={vx + 34} y={vy + 12} fontFamily={HAND} fontSize={40} fill={C.lv} opacity={vec}>lệch về buồng phì đại</text>
+            <text x={vx + 30} y={vy - 14} fontFamily={HAND} fontSize={40} fill={C.lv} opacity={vec}>lệch về</text><text x={vx + 30} y={vy + 30} fontFamily={HAND} fontSize={40} fill={C.lv} opacity={vec}>buồng phì đại</text>
           </g>
         )}
       </svg>
@@ -431,10 +431,10 @@ const Sokolow: React.FC = () => {
       {/* cột cộng */}
       <svg viewBox="0 0 1920 1080" width={1920} height={1080} style={{position: 'absolute', inset: 0}}>
         <g opacity={ap(t, 4.0, 0.4)}>
-          <line x1={BX - 70} x2={BX + 230} y1={BB - 35 * k} y2={BB - 35 * k} stroke="#FDE047" strokeWidth={4} strokeDasharray="14 10" />
-          <text x={BX + 230} y={BB - 35 * k - 12} textAnchor="end" fontFamily={MONO} fontSize={28} fontWeight={700} fill="#FDE047">35 mm</text>
+          <line x1={BX - 74} x2={BX + 130} y1={BB - 35 * k} y2={BB - 35 * k} stroke="#FDE047" strokeWidth={4} strokeDasharray="14 10" />
+          <text x={BX - 84} y={BB - 35 * k + 10} textAnchor="end" fontFamily={MONO} fontSize={28} fontWeight={700} fill="#FDE047">35 mm</text>
           <rect x={BX} y={BB - sMM * k * bar} width={110} height={sMM * k * bar} fill="#0284C7" />
-          <rect x={BX} y={BB - sMM * k - rMM * k * seg2} width={110} height={rMM * k * seg2} fill={C.lv} />
+          <rect x={BX} y={BB - sMM * k - rMM * k * seg2} width={110} height={rMM * k * seg2} fill={C.lv} opacity={seg2 > 0.01 ? 1 : 0} />
           <text x={BX + 55} y={BB - sMM * k / 2 + 10} textAnchor="middle" fontFamily={MONO} fontSize={28} fontWeight={700} fill="#fff" opacity={bar}>16</text>
           <text x={BX + 55} y={BB - sMM * k - rMM * k / 2 + 10} textAnchor="middle" fontFamily={MONO} fontSize={28} fontWeight={700} fill="#fff" opacity={seg2}>22</text>
           <text x={BX - 16} y={BB - sMM * k / 2 + 10} textAnchor="end" fontFamily={FONT} fontSize={26} fontWeight={800} fill="#7DD3FC" opacity={bar}>S V1</text>

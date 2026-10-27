@@ -11,7 +11,7 @@ NARR = [
     "Xin chào, đây là bài hai: lớn nhĩ và phì đại thất trên điện tâm đồ, đọc bốn buồng tim qua sóng P và phức bộ QRS."),
    ("Thần chú: Nhĩ xem P · Thất xem QRS",
     "Câu thần chú của bài: nhĩ thì xem sóng P, thất thì xem phức bộ QRS."),
-   ("nhĩ Phải CAO · nhĩ Trái RỘNG · thất Trái CỘNG · thất Phải LẬT",
+   ("lớn nhĩ Phải → CAO · lớn nhĩ Trái → RỘNG · phì đại thất Trái → CỘNG · phì đại thất Phải → LẬT",
     "Và nhớ bốn chữ: lớn nhĩ phải thì cao, lớn nhĩ trái thì rộng, phì đại thất trái thì cộng, phì đại thất phải thì lật.")],
   # 1 · Nguyên tắc
   [("Trạm 1 · NGUYÊN TẮC — buồng tim lớn/phì đại → điện thế LỚN hơn, KÉO DÀI hơn.",
