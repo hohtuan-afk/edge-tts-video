@@ -124,15 +124,15 @@ const Principle: React.FC = () => {
   return (
     <LightBg>
       <svg viewBox="0 0 1920 1080" width={1920} height={1080} style={{position: 'absolute', inset: 0}}>
-        <defs><marker id="arrP" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#111827" /></marker></defs>
+        <defs><marker id="arrP" markerUnits="userSpaceOnUse" markerWidth="44" markerHeight="44" refX="22" refY="22" orient="auto"><path d="M0,4 L40,22 L0,40 Z" fill="#111827" /></marker></defs>
         <Heart6 id="pr" x={HX} y={HY} s={HS} prog={dp(t, -1.5, 1.0)} art={1} labels={false} beat={beat} zone={z} zoneC={zc} zoneA={0.85} />
         {/* vector bình thường (mờ) và vector khi thất trái dày */}
         {vec > 0 && (
           <g>
             <line x1={cx} y1={cy} x2={nx} y2={ny} stroke="#64748B" strokeWidth={8} strokeDasharray="12 10" strokeLinecap="round" opacity={0.7} />
             <line x1={cx} y1={cy} x2={vx} y2={vy} stroke="#111827" strokeWidth={14} strokeLinecap="round" markerEnd="url(#arrP)" />
-            <text x={nx - 20} y={ny + 46} textAnchor="middle" fontFamily={HAND} fontSize={34} fill="#475569" opacity={vec}>bình thường</text>
-            <text x={vx + 10} y={vy - 24} fontFamily={HAND} fontSize={38} fill={C.lv} opacity={vec}>lệch về buồng to</text>
+            <text x={nx - 24} y={ny + 30} textAnchor="end" fontFamily={HAND} fontSize={34} fill="#475569" opacity={vec}>bình thường</text>
+            <text x={vx + 34} y={vy + 12} fontFamily={HAND} fontSize={40} fill={C.lv} opacity={vec}>lệch về buồng to</text>
           </g>
         )}
       </svg>
@@ -195,7 +195,7 @@ const makeP = (cfg: PCfg): React.FC => {
       for (let x = T0; x <= 0.2; x += 0.001) if (Math.abs(sum(x)) > 0.012) {on = x; break;}
       for (let x = 0.2; x >= T0; x -= 0.001) if (Math.abs(sum(x)) > 0.012) {off = x; break;}
       const peaks: number[] = [];
-      for (let x = T0 + 0.002; x < 0.2; x += 0.001) if (sum(x) > sum(x - 0.002) && sum(x) >= sum(x + 0.002) && sum(x) > 0.03) peaks.push(x);
+      for (let x = T0 + 0.002; x < 0.2; x += 0.001) if (sum(x) > sum(x - 0.002) && sum(x) >= sum(x + 0.002) && sum(x) > 0.03 && (!peaks.length || x - peaks[peaks.length - 1] > 0.01)) peaks.push(x);
       const a = p === 'dii' ? 1 : ap(t, cfg.v1T0, 0.6);
       const comp = ap(t, p === 'dii' ? 0.2 : cfg.v1T0 + 0.2, 0.6);
       return (
@@ -234,7 +234,7 @@ const makeP = (cfg: PCfg): React.FC => {
               return (
                 <g key={i} opacity={k}>
                   <rect x={x0} y={y0} width={0.04 * PXS} height={0.1 * PXMV} fill="rgba(250,204,21,0.35)" stroke="#B45309" strokeWidth={4} />
-                  <text x={x0 + 0.02 * PXS} y={y0 + 0.1 * PXMV + 40} textAnchor="middle" fontFamily={HAND} fontSize={30} fill="#B45309">{m.label}</text>
+                  <text x={x0 + 0.04 * PXS + 14} y={y0 + 0.1 * PXMV + 36} fontFamily={HAND} fontSize={32} fill="#B45309">{m.label}</text>
                 </g>
               );
             }
