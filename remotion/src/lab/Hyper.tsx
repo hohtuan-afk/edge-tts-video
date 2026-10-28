@@ -681,7 +681,7 @@ const Practice: React.FC = () => {
       <div style={{position: 'absolute', left: 40, top: 130, width: 1500, height: 760, transform: `scale(${S}) rotate(-0.5deg)`, transformOrigin: '0 0', boxShadow: '0 30px 60px rgba(0,0,0,0.45)'}}>
         <Sheet leads={LVH12} hl={hl} />
       </div>
-      <div style={{position: 'absolute', left: 1365, top: 470, zIndex: 2, opacity: ap(t, 6.0), transform: `rotate(1deg) translateY(${(1 - ap(t, 6)) * 30}px)`}}>
+      <div style={{position: 'absolute', left: 1420, top: 548, zIndex: 2, opacity: ap(t, 6.0), transformOrigin: '0 0', transform: `rotate(1deg) scale(0.72) translateY(${(1 - ap(t, 6)) * 30}px)`}}>
         <MiniP set={LAE_SET.v1} norm={N_V1} a={ap(t, 6.0, 0.8)} label="V1 · P" c={C.la} />
       </div>
       <div style={{position: 'absolute', left: 1260, top: 120, width: 610, height: 640, background: '#FDFDF8', backgroundImage: 'repeating-linear-gradient(0deg, transparent 0 119px, #BFD7EA 119px 121px)', boxShadow: '0 20px 40px rgba(0,0,0,0.45)', transform: 'rotate(1deg)'}}>
