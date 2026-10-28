@@ -1,283 +1,35 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+8%",
+ "rate": "+12%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Xin chào, đây là bài ba: khoảng PR và block nhĩ thất trên điện tâm đồ."
-  },
-  {
-   "id": "00-1",
-   "text": "Câu thần chú của bài: tìm P, đo PR, xem rơi."
-  },
-  {
-   "id": "00-2",
-   "text": "Mục tiêu là nhận diện đúng từng mức độ block nhĩ thất, chỉ bằng dải nhịp."
+   "text": "Block nhĩ thất, nhìn một dải nhịp là biết độ mấy. Nhớ ba bước: tìm P, đo PR, xem rơi."
   },
   {
    "id": "01-0",
-   "text": "Trạm một, khoảng PR bình thường. PR được đo từ đầu sóng P đến đầu phức bộ QRS."
-  },
-  {
-   "id": "01-1",
-   "text": "Khoảng này gồm thời gian dẫn truyền trong nhĩ, qua nút nhĩ thất, rồi qua bó His và mạng Puốc-kin-giê."
-  },
-  {
-   "id": "01-2",
-   "text": "Phần chậm nhất là nút nhĩ thất, giống như một cánh cổng giữa nhĩ và thất."
-  },
-  {
-   "id": "01-3",
-   "text": "Bình thường, PR từ không phẩy mười hai đến không phẩy hai mươi giây, tức ba đến năm ô nhỏ."
+   "text": "Một, block độ một: PR dài hơn không phẩy hai mươi giây, cố định. Dài mà không rơi."
   },
   {
    "id": "02-0",
-   "text": "Tìm P: mỗi sóng P có một phức bộ QRS theo sau không?"
-  },
-  {
-   "id": "02-1",
-   "text": "Đo PR: khoảng PR cố định, hay thay đổi từ nhát này sang nhát khác?"
-  },
-  {
-   "id": "02-2",
-   "text": "Xem rơi: có sóng P nào không dẫn xuống thất, tức là không có QRS theo sau không?"
-  },
-  {
-   "id": "02-3",
-   "text": "Mẹo: dùng compa đánh dấu khoảng PP. Sóng P thường đi đều như nhịp trống, kể cả khi bị che trong sóng T."
+   "text": "Hai, Mô-bít một: PR dài, dài, dài, rồi rơi."
   },
   {
    "id": "03-0",
-   "text": "Trạm hai, PR ngắn, dưới không phẩy mười hai giây."
-  },
-  {
-   "id": "03-1",
-   "text": "Thứ nhất, hội chứng tiền kích thích: PR ngắn, có sóng đen-ta ở chân QRS, và QRS rộng."
-  },
-  {
-   "id": "03-2",
-   "text": "Xung đi qua một đường phụ, né nút nhĩ thất, nên thất được kích hoạt sớm."
-  },
-  {
-   "id": "03-3",
-   "text": "Thứ hai, nhịp bộ nối: sóng P âm ở chuyển đạo hai, ba và a-vê-ép, hoặc ẩn trong QRS."
+   "text": "Ba, Mô-bít hai: PR cố định, đang yên bỗng rơi."
   },
   {
    "id": "04-0",
-   "text": "Trạm ba, block nhĩ thất độ một: PR dài hơn không phẩy hai mươi giây."
-  },
-  {
-   "id": "04-1",
-   "text": "PR dài nhưng cố định, và mọi sóng P đều dẫn xuống thất."
-  },
-  {
-   "id": "04-2",
-   "text": "Thực chất đây là dẫn truyền chậm, chưa phải mất dẫn truyền."
-  },
-  {
-   "id": "04-3",
-   "text": "Khi PR rất dài, sóng P có thể lẫn vào sóng T của nhát trước, rất dễ bỏ sót."
-  },
-  {
-   "id": "04-4",
-   "text": "Nhớ: độ một là dài mà không rơi."
+   "text": "Bốn, block độ ba: P đi đường P, QRS đi đường QRS, nhĩ nhanh hơn thất."
   },
   {
    "id": "05-0",
-   "text": "Trạm bốn, block nhĩ thất độ hai, Mô-bít một, còn gọi là Ven-kê-bách."
-  },
-  {
-   "id": "05-1",
-   "text": "Khoảng PR dài dần qua từng nhát, cho đến khi một sóng P không dẫn."
-  },
-  {
-   "id": "05-2",
-   "text": "PR dài nhất ngay trước nhát rơi, và ngắn nhất ngay sau nhát rơi."
-  },
-  {
-   "id": "05-3",
-   "text": "Chu kỳ lặp lại, nên các phức bộ QRS đi theo từng nhóm."
-  },
-  {
-   "id": "05-4",
-   "text": "Nhớ: dài, dài, dài, rồi rơi."
+   "text": "Nhắc lại nhé: tìm P, đo PR, xem rơi."
   },
   {
    "id": "06-0",
-   "text": "Mẹo đọc nhanh: so khoảng PR ngay sau nhát rơi với PR ngay trước nhát rơi."
-  },
-  {
-   "id": "06-1",
-   "text": "Nếu PR sau ngắn hơn rõ rệt, đó là Mô-bít một."
-  },
-  {
-   "id": "06-2",
-   "text": "Mô-bít một thường do block tại nút nhĩ thất, và QRS thường hẹp."
-  },
-  {
-   "id": "06-3",
-   "text": "Lưu ý, kiểu Mô-bít trên điện tâm đồ không phải lúc nào cũng khẳng định được vị trí block."
-  },
-  {
-   "id": "07-0",
-   "text": "Trạm năm, block nhĩ thất độ hai, Mô-bít hai."
-  },
-  {
-   "id": "07-1",
-   "text": "Khoảng PR cố định ở các nhát được dẫn, rồi đột ngột một sóng P không dẫn."
-  },
-  {
-   "id": "07-2",
-   "text": "PR ngay trước và ngay sau nhát rơi bằng nhau."
-  },
-  {
-   "id": "07-3",
-   "text": "Khoảng RR chứa nhát rơi đúng bằng hai lần khoảng RR bình thường."
-  },
-  {
-   "id": "07-4",
-   "text": "Mô-bít hai thường do block dưới nút nhĩ thất, ở hệ His và Puốc-kin-giê, và hay kèm QRS rộng."
-  },
-  {
-   "id": "07-5",
-   "text": "Nhớ: đang yên bỗng rơi. Dạng này có nguy cơ tiến triển thành block độ ba."
-  },
-  {
-   "id": "08-0",
-   "text": "Block hai trên một: cứ hai sóng P thì có một sóng không dẫn."
-  },
-  {
-   "id": "08-1",
-   "text": "Vì không có hai khoảng PR liên tiếp để so sánh, ta không xếp được là Mô-bít một hay hai."
-  },
-  {
-   "id": "08-2",
-   "text": "Gợi ý: PR dài kèm QRS hẹp thì nghiêng về Mô-bít một. PR bình thường kèm QRS rộng thì nghiêng về Mô-bít hai."
-  },
-  {
-   "id": "08-3",
-   "text": "Block nhĩ thất cao độ: từ hai sóng P liên tiếp trở lên không dẫn, ví dụ ba trên một, bốn trên một."
-  },
-  {
-   "id": "09-0",
-   "text": "Trạm sáu, block nhĩ thất độ ba, hay block nhĩ thất hoàn toàn."
-  },
-  {
-   "id": "09-1",
-   "text": "Không có sóng P nào dẫn xuống thất."
-  },
-  {
-   "id": "09-2",
-   "text": "Sóng P đi đều, phức bộ QRS cũng đều, nhưng hai bên hoàn toàn không liên quan với nhau."
-  },
-  {
-   "id": "09-3",
-   "text": "Vì vậy PR thay đổi ngẫu nhiên, và tần số nhĩ nhanh hơn tần số thất."
-  },
-  {
-   "id": "09-4",
-   "text": "Nhớ: P đi đường P, QRS đi đường QRS."
-  },
-  {
-   "id": "10-0",
-   "text": "Khi đó, thất được chỉ huy bởi một nhịp thoát."
-  },
-  {
-   "id": "10-1",
-   "text": "QRS hẹp gợi ý nhịp thoát bộ nối, thường khoảng bốn mươi đến sáu mươi lần mỗi phút."
-  },
-  {
-   "id": "10-2",
-   "text": "QRS rộng gợi ý nhịp thoát thất, thường dưới bốn mươi lần mỗi phút."
-  },
-  {
-   "id": "10-3",
-   "text": "QRS thoát càng rộng và nhịp càng chậm, thì vị trí block thường càng thấp."
-  },
-  {
-   "id": "11-0",
-   "text": "Cần phân biệt: phân ly nhĩ thất không đồng nghĩa với block độ ba."
-  },
-  {
-   "id": "11-1",
-   "text": "Phân ly nhĩ thất là nhĩ và thất hoạt động độc lập, thường vì thất nhanh hơn, ví dụ nhịp nhanh thất hay nhịp tự thất gia tốc."
-  },
-  {
-   "id": "11-2",
-   "text": "Còn trong block độ ba, nhĩ nhanh hơn thất, và sóng P dù đến đúng thời điểm vẫn không dẫn được."
-  },
-  {
-   "id": "11-3",
-   "text": "Mẹo: nhĩ nhanh hơn thất thì nghĩ block, thất nhanh hơn nhĩ thì nghĩ phân ly."
-  },
-  {
-   "id": "12-0",
-   "text": "Trạm bảy, ôn tập. Gom lại thành bảng block nhĩ thất."
-  },
-  {
-   "id": "12-1",
-   "text": "Độ một: PR trên không phẩy hai mươi giây, cố định, không rơi."
-  },
-  {
-   "id": "12-2",
-   "text": "Mô-bít một: PR dài dần rồi rơi, nhịp đi theo nhóm."
-  },
-  {
-   "id": "12-3",
-   "text": "Mô-bít hai: PR cố định, rồi rơi đột ngột."
-  },
-  {
-   "id": "12-4",
-   "text": "Hai trên một thì không xếp được Mô-bít. Cao độ là từ hai sóng P liên tiếp không dẫn."
-  },
-  {
-   "id": "12-5",
-   "text": "Độ ba: P và QRS độc lập, nhĩ nhanh hơn thất."
-  },
-  {
-   "id": "13-0",
-   "text": "Thực hành: hãy đọc ba dải nhịp chuyển đạo hai."
-  },
-  {
-   "id": "13-1",
-   "text": "Dải một: PR không phẩy mười sáu, rồi không phẩy hai bốn, rồi không phẩy ba mươi giây, sau đó một sóng P không dẫn. Đây là Mô-bít một."
-  },
-  {
-   "id": "13-2",
-   "text": "Dải hai: PR luôn là không phẩy mười sáu giây, rồi đột ngột một sóng P không dẫn, QRS rộng. Đây là Mô-bít hai."
-  },
-  {
-   "id": "13-3",
-   "text": "Dải ba: sóng P chín mươi lần mỗi phút, QRS rộng ba mươi lăm lần mỗi phút, không liên quan nhau. Đây là block độ ba với nhịp thoát thất."
-  },
-  {
-   "id": "14-0",
-   "text": "Cuối cùng, năm điều cần nhớ."
-  },
-  {
-   "id": "14-1",
-   "text": "Một, luôn theo trình tự: tìm P, đo PR, xem rơi."
-  },
-  {
-   "id": "14-2",
-   "text": "Hai, PR bình thường từ không phẩy mười hai đến không phẩy hai mươi giây. PR ngắn gợi ý tiền kích thích hoặc nhịp bộ nối."
-  },
-  {
-   "id": "14-3",
-   "text": "Ba, độ một: dài mà không rơi."
-  },
-  {
-   "id": "14-4",
-   "text": "Bốn, độ hai: Mô-bít một dài dần rồi rơi, Mô-bít hai đang yên bỗng rơi."
-  },
-  {
-   "id": "14-5",
-   "text": "Năm, độ ba: P và QRS mỗi bên một đường, nhĩ nhanh hơn thất."
-  },
-  {
-   "id": "14-6",
-   "text": "Cảm ơn bạn đã theo dõi. Hẹn gặp lại ở bài tiếp theo."
+   "text": "Lưu lại để ôn, và xem bài đầy đủ trên kênh nhé."
   }
  ]
 }
