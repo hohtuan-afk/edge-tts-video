@@ -1,403 +1,92 @@
 {
  "fps": 30,
- "total": 10453,
+ "total": 1207,
  "scenes": [
   {
    "from": 0,
-   "dur": 565,
+   "dur": 150,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 6.258,
-     "text": "Lớn nhĩ & Phì đại thất trên điện tâm đồ — đọc 4 buồng tim qua sóng P và QRS"
-    },
-    {
-     "start": 7.108,
-     "dur": 3.992,
-     "text": "Thần chú: Nhĩ xem P · Thất xem QRS"
-    },
-    {
-     "start": 11.45,
-     "dur": 6.395,
-     "text": "lớn nhĩ Phải → CAO · lớn nhĩ Trái → RỘNG · phì đại thất Trái → CỘNG · phì đại thất Phải → LẬT"
+     "start": 0.25,
+     "dur": 4.299,
+     "text": "Nhìn ECG, đoán buồng tim nào đang to?"
     }
    ]
   },
   {
-   "from": 565,
-   "dur": 585,
+   "from": 150,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 6.224,
-     "text": "Trạm 1 · NGUYÊN TẮC — buồng tim lớn/phì đại → điện thế LỚN hơn, KÉO DÀI hơn."
-    },
-    {
-     "start": 7.074,
-     "dur": 2.459,
-     "text": "Vector tổng lệch về phía buồng tim đó."
-    },
-    {
-     "start": 9.883,
-     "dur": 6.415,
-     "text": "ECG: độ đặc hiệu cao, độ nhạy THẤP → bình thường chưa loại trừ."
-    },
-    {
-     "start": 16.648,
-     "dur": 1.832,
-     "text": "Chẩn đoán xác định: siêu âm tim."
+     "start": 0.25,
+     "dur": 2.772,
+     "text": "Nhĩ xem P · Thất xem QRS"
     }
    ]
   },
   {
-   "from": 1150,
-   "dur": 645,
+   "from": 282,
+   "dur": 154,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 5.217,
-     "text": "Sóng P = nhĩ phải (đi trước) + nhĩ trái (đi sau) chồng lên nhau."
-    },
-    {
-     "start": 6.067,
-     "dur": 4.999,
-     "text": "DII: P tròn, rộng < 0,12 s, cao < 2,5 mm."
-    },
-    {
-     "start": 11.415,
-     "dur": 4.815,
-     "text": "V1: P hai pha — phần dương (nhĩ phải) rồi phần âm nhỏ (nhĩ trái)."
-    },
-    {
-     "start": 16.58,
-     "dur": 3.96,
-     "text": "Vì vậy: nhìn P ở DII và V1."
+     "start": 0.25,
+     "dur": 4.401,
+     "text": "① Lớn nhĩ phải → P CAO > 2,5 mm ở DII"
     }
    ]
   },
   {
-   "from": 1795,
-   "dur": 708,
+   "from": 436,
+   "dur": 153,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 5.306,
-     "text": "Trạm 2 · LỚN NHĨ PHẢI → phần đầu của P CAO lên."
-    },
-    {
-     "start": 6.156,
-     "dur": 4.402,
-     "text": "DII: P cao nhọn > 2,5 mm = “P phế”."
-    },
-    {
-     "start": 10.908,
-     "dur": 3.305,
-     "text": "V1: phần dương đầu > 1,5 mm."
-    },
-    {
-     "start": 14.564,
-     "dur": 2.594,
-     "text": "Độ rộng P không đổi — chỉ CAO."
-    },
-    {
-     "start": 17.508,
-     "dur": 5.103,
-     "text": "Nguyên nhân: tăng áp phổi, bệnh phổi mạn, tim bẩm sinh, bệnh van ba lá."
+     "start": 0.25,
+     "dur": 4.434,
+     "text": "② Lớn nhĩ trái → P RỘNG > 0,11 s, hai đỉnh"
     }
    ]
   },
   {
-   "from": 2503,
-   "dur": 865,
+   "from": 589,
+   "dur": 162,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 5.907,
-     "text": "Trạm 3 · LỚN NHĨ TRÁI → phần sau của P đến muộn, kéo DÀI."
-    },
-    {
-     "start": 6.757,
-     "dur": 5.993,
-     "text": "DII: P rộng > 0,11 s, hai đỉnh cách nhau > 0,04 s = “P hai lá”."
-    },
-    {
-     "start": 13.1,
-     "dur": 4.927,
-     "text": "V1: phần âm cuối sâu > 1 mm và rộng > 0,04 s."
-    },
-    {
-     "start": 18.377,
-     "dur": 2.999,
-     "text": "Mẹo: phần âm ở V1 lớn hơn 1 ô vuông nhỏ."
-    },
-    {
-     "start": 21.726,
-     "dur": 6.118,
-     "text": "Nguyên nhân: hẹp hai lá, tăng huyết áp, hẹp chủ, hở hai lá, bệnh cơ tim phì đại."
+     "start": 0.25,
+     "dur": 4.686,
+     "text": "③ Phì đại thất trái → CỘNG: S V1 + R V5 ≥ 35 mm"
     }
    ]
   },
   {
-   "from": 3368,
-   "dur": 456,
+   "from": 751,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 4.206,
-     "text": "So sánh nhanh: lớn nhĩ Phải → P CAO · lớn nhĩ Trái → P RỘNG."
-    },
-    {
-     "start": 5.056,
-     "dur": 6.219,
-     "text": "DII: cao nhọn ↔ rộng hai đỉnh · V1: dương đầu cao ↔ âm cuối to."
-    },
-    {
-     "start": 11.625,
-     "dur": 2.561,
-     "text": "Có cả hai → lớn hai nhĩ."
+     "start": 0.25,
+     "dur": 3.511,
+     "text": "④ Phì đại thất phải → LẬT: V1 R > S"
     }
    ]
   },
   {
-   "from": 3824,
-   "dur": 965,
+   "from": 883,
+   "dur": 192,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 6.125,
-     "text": "Trạm 4 · PHÌ ĐẠI THẤT TRÁI — vector thất trái lớn, hướng ra sau và sang trái."
-    },
-    {
-     "start": 6.975,
-     "dur": 5.245,
-     "text": "→ R rất cao ở V5–V6 · S rất sâu ở V1–V2."
-    },
-    {
-     "start": 12.569,
-     "dur": 9.601,
-     "text": "Thất trái CỘNG: S V1 + R V5 (hoặc V6) ≥ 35 mm (Sokolow-Lyon)."
-    },
-    {
-     "start": 22.52,
-     "dur": 5.604,
-     "text": "Ví dụ: 16 + 22 = 38 mm ≥ 35 → phì đại thất trái."
-    },
-    {
-     "start": 28.475,
-     "dur": 2.694,
-     "text": "Mẹo: 35 mm = 7 ô lớn."
+     "start": 0.25,
+     "dur": 5.704,
+     "text": "CAO – RỘNG – CỘNG – LẬT"
     }
    ]
   },
   {
-   "from": 4789,
-   "dur": 823,
+   "from": 1075,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 7.265,
-     "text": "Cornell: R aVL + S V3 > 28 mm (nam) · > 20 mm (nữ)."
-    },
-    {
-     "start": 8.115,
-     "dur": 9.975,
-     "text": "Peguero-Lo Presti (mới hơn): S sâu nhất + S V4 ≥ 28 mm (nam) · ≥ 23 mm (nữ)."
-    },
-    {
-     "start": 18.441,
-     "dur": 2.855,
-     "text": "Peguero-Lo Presti nhạy hơn các tiêu chuẩn cũ."
-    },
-    {
-     "start": 21.646,
-     "dur": 4.8,
-     "text": "Người trẻ, gầy, vận động viên: điện thế cao có thể bình thường."
-    }
-   ]
-  },
-  {
-   "from": 5612,
-   "dur": 819,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 8.269,
-     "text": "Dạng tăng gánh (strain): ST chênh xuống + T đảo KHÔNG đối xứng ở V5–V6, DI, aVL."
-    },
-    {
-     "start": 9.119,
-     "dur": 4.047,
-     "text": "Hình dạng: ST dốc xuống, T đảo nông dần rồi lên nhanh."
-    },
-    {
-     "start": 13.516,
-     "dur": 3.029,
-     "text": "Dấu hỗ trợ: lớn nhĩ trái · trục lệch trái."
-    },
-    {
-     "start": 16.895,
-     "dur": 4.1,
-     "text": "Nguyên nhân: tăng huyết áp, hẹp van chủ, bệnh cơ tim phì đại."
-    },
-    {
-     "start": 21.344,
-     "dur": 4.93,
-     "text": "Đừng nhầm với thiếu máu cơ tim — so ECG cũ, hỏi triệu chứng."
-    }
-   ]
-  },
-  {
-   "from": 6431,
-   "dur": 956,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 5.259,
-     "text": "Trạm 5 · PHÌ ĐẠI THẤT PHẢI — vector quay sang phải và ra trước."
-    },
-    {
-     "start": 6.109,
-     "dur": 6.735,
-     "text": "Thất phải LẬT: V1 có R > S (R/S > 1) hoặc R > 7 mm."
-    },
-    {
-     "start": 13.195,
-     "dur": 3.839,
-     "text": "V5–V6: S sâu > 7 mm (R/S < 1)."
-    },
-    {
-     "start": 17.384,
-     "dur": 5.863,
-     "text": "Trục lệch phải ≥ +110° · QRS < 0,12 s (không phải block nhánh phải)."
-    },
-    {
-     "start": 23.597,
-     "dur": 7.268,
-     "text": "Dấu hỗ trợ: P phế · tăng gánh thất phải (ST↓ T đảo V1–V4, DII, DIII, aVF)."
-    }
-   ]
-  },
-  {
-   "from": 7387,
-   "dur": 624,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 8.784,
-     "text": "Nguyên nhân: tăng áp phổi, hẹp hai lá, thuyên tắc phổi, bệnh phổi mạn, tim bẩm sinh."
-    },
-    {
-     "start": 9.634,
-     "dur": 5.956,
-     "text": "R cao ở V1 còn gặp: NMCT thành sau, block nhánh phải, WPW."
-    },
-    {
-     "start": 15.94,
-     "dur": 3.863,
-     "text": "→ Luôn đọc kèm trục, độ rộng QRS và bối cảnh lâm sàng."
-    }
-   ]
-  },
-  {
-   "from": 8011,
-   "dur": 731,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 3.673,
-     "text": "Trạm 6 · ÔN TẬP — bảng 4 buồng tim."
-    },
-    {
-     "start": 4.523,
-     "dur": 3.652,
-     "text": "Lớn nhĩ phải: P DII > 2,5 mm — CAO."
-    },
-    {
-     "start": 8.524,
-     "dur": 4.647,
-     "text": "Lớn nhĩ trái: P DII > 0,11 s hai đỉnh · V1 âm cuối > 1 ô nhỏ — RỘNG."
-    },
-    {
-     "start": 13.521,
-     "dur": 5.716,
-     "text": "Phì đại thất trái: S V1 + R V5/V6 ≥ 35 mm · tăng gánh — CỘNG."
-    },
-    {
-     "start": 19.588,
-     "dur": 3.79,
-     "text": "Phì đại thất phải: V1 R/S > 1 · trục ≥ +110° — LẬT."
-    }
-   ]
-  },
-  {
-   "from": 8742,
-   "dur": 845,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 2.305,
-     "text": "Thực hành: bệnh nhân tăng huyết áp lâu năm."
-    },
-    {
-     "start": 3.155,
-     "dur": 6.874,
-     "text": "S V1 = 16 mm · R V5 = 24 mm → 40 mm ≥ 35 ✓"
-    },
-    {
-     "start": 10.379,
-     "dur": 5.646,
-     "text": "V5–V6: ST chênh xuống, T đảo không đối xứng → tăng gánh ✓"
-    },
-    {
-     "start": 16.375,
-     "dur": 4.867,
-     "text": "V1: phần âm cuối của P > 1 ô nhỏ → lớn nhĩ trái ✓"
-    },
-    {
-     "start": 21.592,
-     "dur": 5.564,
-     "text": "KẾT LUẬN: phì đại thất trái kèm dạng tăng gánh + lớn nhĩ trái → siêu âm tim."
-    }
-   ]
-  },
-  {
-   "from": 9587,
-   "dur": 866,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 1.629,
-     "text": "5 điều cần nhớ"
-    },
-    {
-     "start": 2.479,
-     "dur": 4.126,
-     "text": "① Nhĩ xem P (DII, V1) · Thất xem QRS"
-    },
-    {
-     "start": 6.955,
-     "dur": 4.032,
-     "text": "② Nhĩ phải CAO > 2,5 mm · Nhĩ trái RỘNG, hai đỉnh"
-    },
-    {
-     "start": 11.337,
-     "dur": 4.515,
-     "text": "③ Thất trái CỘNG: S V1 + R V5 ≥ 35 mm (7 ô lớn)"
-    },
-    {
-     "start": 16.202,
-     "dur": 4.161,
-     "text": "④ Thất phải LẬT: V1 R > S · trục lệch phải"
-    },
-    {
-     "start": 20.713,
-     "dur": 3.291,
-     "text": "⑤ ECG gợi ý — siêu âm tim khẳng định"
-    },
-    {
-     "start": 24.354,
-     "dur": 3.539,
-     "text": "Cảm ơn bạn đã theo dõi!"
+     "start": 0.25,
+     "dur": 2.475,
+     "text": "Lưu lại để ôn · xem bài đầy đủ trên kênh!"
     }
    ]
   }

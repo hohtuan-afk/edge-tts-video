@@ -1,0 +1,90 @@
+[
+ {
+  "orig": 6.0,
+  "dur": 5.0,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 4.299,
+    "text": "Nhìn ECG, đoán buồng tim nào đang to?"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.4,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 2.772,
+    "text": "Nhĩ xem P · Thất xem QRS"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 5.12,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 4.401,
+    "text": "① Lớn nhĩ phải → P CAO > 2,5 mm ở DII"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 5.12,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 4.434,
+    "text": "② Lớn nhĩ trái → P RỘNG > 0,11 s, hai đỉnh"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 5.4,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 4.686,
+    "text": "③ Phì đại thất trái → CỘNG: S V1 + R V5 ≥ 35 mm"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.4,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 3.511,
+    "text": "④ Phì đại thất phải → LẬT: V1 R > S"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 6.4,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 5.704,
+    "text": "CAO – RỘNG – CỘNG – LẬT"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.4,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 2.475,
+    "text": "Lưu lại để ôn · xem bài đầy đủ trên kênh!"
+   }
+  ]
+ }
+]
