@@ -12,6 +12,7 @@ import {Fade, SeriesTag} from './Demo';
 import {Heart6, Zone6, SC as HSC, OX as HOX, OY as HOY} from '../wb/heart6';
 import {HAND, RPath} from '../wb/wb';
 import {tracePts, beatV, Lead} from './ecg';
+import {Sheet} from './Paper';
 
 const ap = (t: number, s: number, d = 0.6) => interpolate(t, [s, s + d], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.bezier(0.33, 1, 0.68, 1)});
 const dp = (t: number, s: number, d = 0.8) => interpolate(t, [s, s + d], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.quad)});
@@ -450,7 +451,297 @@ const Sokolow: React.FC = () => {
   );
 };
 
-const SC: React.FC[] = [Cover, Principle, NormalP, RAE, LAE, CompareAtria, Sokolow];
+
+// ================= tiện ích: dải ECG ngắn trên giấy hồng =================
+const Strip: React.FC<{L: Lead; label: string; w?: number; h?: number; mm?: number; base?: number; prog?: number; dur?: number; children?: React.ReactNode}> = ({L, label, w = 560, h = 300, mm = 10, base, prog = 1, dur, children}) => {
+  const pxs = 25 * mm, pxmv = 10 * mm, B = base ?? h * 0.58;
+  return (
+    <svg viewBox={`0 0 ${w} ${h}`} width={w} height={h} style={{display: 'block'}}>
+      <Pink w={w} h={h} mm={mm} />
+      <text x={14} y={36} fontFamily={MONO} fontSize={30} fontWeight={700} fill={INK}>{label}</text>
+      <polyline points={tracePts(10, B, 0, dur ?? (w - 20) / pxs, pxs, pxmv, L, 0.8, 0.003)} fill="none" stroke={INK} strokeWidth={3} strokeLinejoin="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - prog} />
+      {children}
+    </svg>
+  );
+};
+const Box: React.FC<{x: number; y: number; w: number; a: number; children: React.ReactNode; rot?: number}> = ({x, y, w, a, children, rot = 0}) => (
+  <div style={{position: 'absolute', left: x, top: y, width: w, borderRadius: 14, overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.45)', opacity: a, transform: `rotate(${rot}deg) translateY(${(1 - a) * 40}px)`}}>{children}</div>
+);
+
+// ================= 7 · CORNELL & PEGUERO-LO PRESTI =================
+const C_AVL: Lead = {p: 0.08, r: 1.5, s: -0.1, t: 0.25};
+const C_V3: Lead = {p: 0.1, r: 0.4, s: -1.6, t: 0.35};
+const C_V4: Lead = {p: 0.1, r: 0.9, s: -1.4, t: 0.35};
+const MeasBar: React.FC<{x: number; B: number; v: number; c: string; label: string; a: number; mm?: number}> = ({x, B, v, c, label, a, mm = 10}) => {
+  const hh = v * 10 * mm;
+  return (
+    <g opacity={a}>
+      <path d={`M${x},${B} h12 V${B - hh} h-12`} fill="none" stroke={c} strokeWidth={4} />
+      <text x={x + 20} y={B - hh / 2 + 10} fontFamily={MONO} fontSize={28} fontWeight={700} fill={c}>{label}</text>
+    </g>
+  );
+};
+const Cornell: React.FC = () => {
+  const t = useT();
+  const mm = 10, B = 170, xR = 10 + 1.08 * 250;
+  return (
+    <DeskBg>
+      <div style={{position: 'absolute', left: 60, top: 70, fontFamily: FONT, fontSize: 40, fontWeight: 800, color: '#F8FAFC'}}>Phì đại thất trái · thêm 2 tiêu chuẩn</div>
+      <Box x={60} y={150} w={560} a={ap(t, 0.0)} rot={-0.6}><Strip L={C_AVL} label="aVL" h={300} base={B + 60} mm={mm} prog={dp(t, 0, 0.8)}><MeasBar x={xR + 26} B={B + 60} v={beatV(0, C_AVL)} c={C.lv} label="R" a={ap(t, 0.6)} /></Strip></Box>
+      <Box x={650} y={150} w={560} a={ap(t, 0.3)} rot={0.6}><Strip L={C_V3} label="V3" h={300} base={110} mm={mm} prog={dp(t, 0.3, 0.8)}><MeasBar x={xR + 30} B={110} v={beatV(0.03, C_V3)} c="#0284C7" label="S" a={ap(t, 0.9)} /></Strip></Box>
+      <Box x={60} y={500} w={1150} a={ap(t, 2.0)} rot={-0.4}><Strip L={C_V4} label="V4 + S sâu nhất ở bất kỳ chuyển đạo" w={1150} h={330} base={120} mm={mm} prog={dp(t, 2.0, 1.0)}><MeasBar x={xR + 30} B={120} v={beatV(0.03, C_V4)} c="#7C3AED" label="S V4" a={ap(t, 2.6)} /></Strip></Box>
+      <Card x={1250} y={150} w={620} a={ap(t, 0.0)} c="#0284C7" title="Cornell">R aVL + S V3<br /><b>&gt; 28 mm</b> (nam) · <b>&gt; 20 mm</b> (nữ)</Card>
+      <Card x={1250} y={370} w={620} a={ap(t, 2.0)} c="#7C3AED" title="Peguero-Lo Presti (2017)">S sâu nhất + S V4<br /><b>≥ 28 mm</b> (nam) · <b>≥ 23 mm</b> (nữ)</Card>
+      <div style={{position: 'absolute', left: 1250, top: 600, width: 620, padding: '16px 22px', borderRadius: 16, background: '#7C3AED', color: '#fff', fontFamily: FONT, fontSize: 32, fontWeight: 800, opacity: ap(t, 4.0), transform: `scale(${0.92 + 0.08 * ap(t, 4.0)})`, boxSizing: 'border-box', boxShadow: '0 12px 28px rgba(0,0,0,0.4)'}}>↑ Độ nhạy cao hơn tiêu chuẩn cũ</div>
+      <Memo x={1250} y={730} w={620} a={ap(t, 6.0)}>Người trẻ · gầy · vận động viên:<br /><span style={{color: PEN}}>điện thế cao có thể BÌNH THƯỜNG</span></Memo>
+    </DeskBg>
+  );
+};
+
+// ================= 8 · DẠNG TĂNG GÁNH =================
+const g1 = (x: number, mu: number, w: number, a: number) => a * Math.exp(-((x - mu) ** 2) / (2 * w * w));
+const strainF = (tr: number) => g1(tr, -0.15, 0.02, 0.1) + g1(tr, 0, 0.012, 2.0) + g1(tr, 0.028, 0.01, -0.15) +
+  (tr > 0.045 && tr < 0.34 ? (() => {const u = (tr - 0.045) / 0.29; return -0.32 * Math.pow(Math.sin(Math.PI * Math.pow(u, 0.62)), 1.25) * 1;})() : 0);
+const ischF = (tr: number) => g1(tr, -0.15, 0.02, 0.1) + g1(tr, 0, 0.012, 1.2) + g1(tr, 0.028, 0.01, -0.15) + g1(tr, 0.22, 0.045, -0.45);
+const Zoom: React.FC<{f: (tr: number) => number; label: string; prog: number; c: string; w?: number; h?: number; mm?: number; B?: number}> = ({f, label, prog, c, w = 600, h = 520, mm = 20, B = 330}) => {
+  const pxs = 25 * mm * 0.5, pxmv = 10 * mm * 0.5;
+  const pts: string[] = [];
+  for (let tr = -0.28; tr <= 0.5; tr += 0.002) pts.push(`${(60 + (tr + 0.28) * pxs * 1.8).toFixed(1)},${(B - f(tr) * pxmv).toFixed(1)}`);
+  return (
+    <svg viewBox={`0 0 ${w} ${h}`} width={w} height={h} style={{display: 'block'}}>
+      <Pink w={w} h={h} mm={mm} />
+      <line x1={10} x2={w - 10} y1={B} y2={B} stroke="#2563EB" strokeWidth={2.5} strokeDasharray="10 8" />
+      <text x={16} y={40} fontFamily={MONO} fontSize={30} fontWeight={700} fill={INK}>{label}</text>
+      <polyline points={pts.join(' ')} fill="none" stroke={c} strokeWidth={6} strokeLinejoin="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - prog} />
+    </svg>
+  );
+};
+const Strain: React.FC = () => {
+  const t = useT();
+  return (
+    <DeskBg>
+      <div style={{position: 'absolute', left: 60, top: 70, fontFamily: FONT, fontSize: 40, fontWeight: 800, color: '#F8FAFC'}}>Dạng tăng gánh (strain) thất trái</div>
+      <Box x={60} y={150} w={600} a={ap(t, 0)}><Zoom f={strainF} label="V5 · tăng gánh" prog={dp(t, 0, 1.0)} c={INK} /></Box>
+      <svg viewBox="0 0 1920 1080" width={1920} height={1080} style={{position: 'absolute', inset: 0, pointerEvents: 'none'}}>
+        <g opacity={ap(t, 2.0)}>
+          <text x={330} y={610} fontFamily={HAND} fontSize={36} fill={PEN}>ST dốc xuống ↘</text>
+          <text x={430} y={650} fontFamily={HAND} fontSize={36} fill={PEN}>T lên nhanh ↗</text>
+          <text x={110} y={600} fontFamily={HAND} fontSize={34} fill="#0284C7">R rất cao</text>
+        </g>
+      </svg>
+      <Box x={700} y={150} w={600} a={ap(t, 8.0)}><Zoom f={ischF} label="thiếu máu · T đối xứng" prog={dp(t, 8.0, 1.0)} c="#7C3AED" /></Box>
+      <div style={{position: 'absolute', left: 700, top: 690, width: 600, textAlign: 'center', fontFamily: FONT, fontSize: 28, fontWeight: 800, color: '#C4B5FD', opacity: ap(t, 8.4)}}>T đảo nhọn, ĐỐI XỨNG → nghĩ thiếu máu</div>
+      <div style={{position: 'absolute', left: 60, top: 690, width: 600, textAlign: 'center', fontFamily: FONT, fontSize: 28, fontWeight: 800, color: '#FCA5A5', opacity: ap(t, 2.0)}}>T đảo KHÔNG đối xứng → tăng gánh</div>
+      <Card x={1340} y={150} w={530} a={ap(t, 0)} c={C.lv} title="ST↓ + T đảo không đối xứng">V5–V6 · DI · aVL</Card>
+      <Card x={1340} y={330} w={530} a={ap(t, 4.0)} c={C.la} title="Dấu hỗ trợ">lớn nhĩ trái · trục lệch trái</Card>
+      <Card x={1340} y={510} w={530} a={ap(t, 6.0)} c="#475569" title="Nguyên nhân">tăng huyết áp · hẹp van chủ · bệnh cơ tim phì đại</Card>
+      <Memo x={60} y={780} w={1240} a={ap(t, 8.0)}>Đừng nhầm với thiếu máu cơ tim → <span style={{color: PEN}}>so ECG cũ · hỏi triệu chứng</span></Memo>
+    </DeskBg>
+  );
+};
+
+// ================= 9 · PHÌ ĐẠI THẤT PHẢI =================
+const V1N: Lead = {p: 0.1, r: 0.25, s: -1.0, t: 0.15};
+const V1R: Lead = {p: 0.18, q: 0, r: 1.0, s: -0.25, st: -0.06, t: -0.2};
+const V6N: Lead = {p: 0.1, r: 1.3, s: -0.15, t: 0.3};
+const V6R: Lead = {p: 0.1, r: 0.4, s: -0.9, t: 0.2};
+const mix = (a: Lead, b: Lead, k: number): Lead => {
+  const o: Lead = {};
+  (['p', 'q', 'r', 's', 't', 'tw', 'tPos', 'st'] as const).forEach((n) => {
+    const va = a[n], vb = b[n];
+    if (va !== undefined || vb !== undefined) o[n] = (va ?? (n === 'tw' ? 0.055 : n === 'tPos' ? 0.27 : 0)) * (1 - k) + (vb ?? (n === 'tw' ? 0.055 : n === 'tPos' ? 0.27 : 0)) * k;
+  });
+  return o;
+};
+const RVH: React.FC = () => {
+  const t = useT();
+  const k1 = dp(t, 2.2, 1.2), k6 = dp(t, 4.2, 1.0);
+  const ang = interpolate(t, [6.0, 7.2], [60, 125], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.cubic)});
+  const cx = 1100, cy = 820, R = 120;
+  const P = (d: number, r = R): [number, number] => [cx + r * Math.cos((d * Math.PI) / 180), cy + r * Math.sin((d * Math.PI) / 180)];
+  const [vx, vy] = P(ang, R - 10);
+  return (
+    <DeskBg>
+      <div style={{position: 'absolute', left: 60, top: 70, fontFamily: FONT, fontSize: 40, fontWeight: 800, color: '#F8FAFC'}}>Phì đại thất PHẢI → <span style={{color: '#60A5FA'}}>LẬT</span></div>
+      <Box x={60} y={150} w={560} a={ap(t, 0)} rot={-0.5}><Strip L={mix(V1N, V1R, k1)} label="V1" h={330} base={200} /></Box>
+      <Box x={650} y={150} w={560} a={ap(t, 0.2)} rot={0.5}><Strip L={mix(V6N, V6R, k6)} label="V6" h={330} base={200} /></Box>
+      <div style={{position: 'absolute', left: 60, top: 500, width: 560, textAlign: 'center', fontFamily: FONT, fontSize: 34, fontWeight: 900, color: k1 > 0.5 ? '#60A5FA' : '#CBD5E1'}}>{k1 > 0.5 ? 'R > S  (R/S > 1) ✓' : 'bình thường: S > R'}</div>
+      <div style={{position: 'absolute', left: 650, top: 500, width: 560, textAlign: 'center', fontFamily: FONT, fontSize: 34, fontWeight: 900, color: k6 > 0.5 ? '#60A5FA' : '#CBD5E1', opacity: ap(t, 4.0)}}>{k6 > 0.5 ? 'S sâu > 7 mm ✓' : 'bình thường: R > S'}</div>
+      <svg viewBox="0 0 1920 1080" width={1920} height={1080} style={{position: 'absolute', inset: 0}}>
+        <g opacity={ap(t, 6.0)}>
+          <circle cx={cx} cy={cy} r={R} fill="rgba(255,255,255,0.04)" stroke="#334155" strokeWidth={3} />
+          <path d={`M${cx},${cy} L${P(110)[0]},${P(110)[1]} A${R},${R} 0 0 1 ${P(180)[0]},${P(180)[1]} Z`} fill="rgba(59,130,246,0.35)" />
+          <line x1={cx - R - 10} x2={cx + R + 10} y1={cy} y2={cy} stroke="#38BDF8" strokeWidth={2} />
+          <line x1={cx} x2={cx} y1={cy - R - 10} y2={cy + R + 10} stroke="#38BDF8" strokeWidth={2} />
+          <line x1={cx} y1={cy} x2={vx} y2={vy} stroke="#FC6255" strokeWidth={8} strokeLinecap="round" />
+          <text x={cx - R - 20} y={cy + R + 20} textAnchor="end" fontFamily={MONO} fontSize={26} fill="#93C5FD">≥ +110°</text>
+        </g>
+      </svg>
+      <div style={{position: 'absolute', left: 60, top: 640, width: 830, fontFamily: FONT, opacity: ap(t, 6.0)}}>
+        <div style={{fontSize: 34, fontWeight: 900, color: '#F8FAFC'}}>Trục lệch phải ≥ +110°</div>
+        <div style={{fontSize: 30, fontWeight: 700, color: '#FCA5A5', marginTop: 10}}>QRS &lt; 0,12 s — không phải block nhánh phải</div>
+      </div>
+      <div style={{position: 'absolute', left: 1280, top: 150, width: 240, height: 250, borderRadius: 14, background: '#FCFAF4', boxShadow: '0 12px 28px rgba(0,0,0,0.4)', overflow: 'hidden', opacity: ap(t, 0)}}>
+        <svg viewBox="0 0 240 250" width={240} height={250}><Heart6 id="rvh" x={-8} y={4} s={0.46} prog={1} art={1} labels={false} zone="rv" zoneC={C.rv} zoneA={ap(t, 0.3, 0.6)} /></svg>
+      </div>
+      <Card x={1540} y={150} w={330} a={ap(t, 0.2)} c={C.rv} title="Vector">→ phải, ra trước</Card>
+      <Card x={1280} y={430} w={590} a={ap(t, 2.0)} c={C.rv} title="V1: R > S hoặc R > 7 mm" />
+      <Card x={1280} y={560} w={590} a={ap(t, 4.0)} c={C.rv} title="V5–V6: S sâu > 7 mm" />
+      <Card x={1280} y={690} w={590} a={ap(t, 8.0)} c={C.ra} title="Dấu hỗ trợ">P phế · tăng gánh thất phải (V1–V4, DII, DIII, aVF)</Card>
+    </DeskBg>
+  );
+};
+
+// ================= 10 · NGUYÊN NHÂN & BẪY =================
+const RVCause: React.FC = () => {
+  const t = useT();
+  const causes = ['Tăng áp phổi', 'Hẹp van hai lá', 'Thuyên tắc phổi', 'Bệnh phổi mạn', 'Tim bẩm sinh (Fallot, hẹp van ĐMP)'];
+  const traps: [string, string][] = [['Phì đại thất phải', C.rv], ['NMCT thành sau', PEN], ['Block nhánh phải', '#D97706'], ['Hội chứng tiền kích thích (WPW)', '#7C3AED']];
+  return (
+    <DeskBg>
+      <div style={{position: 'absolute', left: 60, top: 70, fontFamily: FONT, fontSize: 40, fontWeight: 800, color: '#F8FAFC'}}>Phì đại thất phải: nguyên nhân & bẫy</div>
+      <div style={{position: 'absolute', left: 60, top: 150, width: 820, padding: '24px 30px', borderRadius: 20, background: '#FCFAF4', boxShadow: '0 20px 40px rgba(0,0,0,0.4)', fontFamily: FONT, boxSizing: 'border-box', borderTop: `10px solid ${C.rv}`}}>
+        <div style={{fontSize: 34, fontWeight: 900, color: C.rv}}>Nguyên nhân</div>
+        {causes.map((c, i) => <div key={c} style={{fontSize: 32, fontWeight: 700, color: '#26221C', marginTop: 14, opacity: ap(t, 0.2 + i * 0.3, 0.4)}}>• {c}</div>)}
+      </div>
+      <div style={{position: 'absolute', left: 940, top: 150, width: 920, padding: '24px 30px', borderRadius: 20, background: '#FCFAF4', boxShadow: '0 20px 40px rgba(0,0,0,0.4)', fontFamily: FONT, boxSizing: 'border-box', borderTop: `10px solid ${PEN}`, opacity: ap(t, 2.0)}}>
+        <div style={{fontSize: 34, fontWeight: 900, color: PEN}}>⚠ R cao ở V1 — nghĩ đến:</div>
+        <div style={{display: 'flex', flexWrap: 'wrap', gap: 14, marginTop: 18}}>
+          {traps.map(([n, c], i) => <div key={n} style={{padding: '12px 22px', borderRadius: 30, background: c, color: '#fff', fontSize: 30, fontWeight: 800, opacity: ap(t, 2.2 + i * 0.3, 0.4), transform: `scale(${0.8 + 0.2 * ap(t, 2.2 + i * 0.3, 0.4)})`}}>{n}</div>)}
+        </div>
+      </div>
+      <Memo x={940} y={560} w={920} a={ap(t, 4.0)}>Luôn đọc kèm: <span style={{color: PEN}}>trục · độ rộng QRS · lâm sàng</span></Memo>
+    </DeskBg>
+  );
+};
+
+// ================= 11 · BẢNG 4 BUỒNG =================
+const ROWS4: [string, string, string, string, string][] = [
+  ['Lớn nhĩ PHẢI', 'P DII > 2,5 mm (P phế)', 'V1: dương đầu > 1,5 mm', 'CAO', C.ra],
+  ['Lớn nhĩ TRÁI', 'P DII > 0,11 s, hai đỉnh', 'V1: âm cuối > 1 ô nhỏ', 'RỘNG', C.la],
+  ['Phì đại thất TRÁI', 'S V1 + R V5/V6 ≥ 35 mm', 'tăng gánh V5–V6', 'CỘNG', C.lv],
+  ['Phì đại thất PHẢI', 'V1: R/S > 1 (R > 7 mm)', 'trục ≥ +110°', 'LẬT', C.rv],
+];
+const Table4: React.FC = () => {
+  const t = useT();
+  const W0 = 1760, H0 = 820, TY = 150, RH = 150;
+  const cols = [40, 470, 1020, 1480];
+  return (
+    <DeskBg>
+      <div style={{position: 'absolute', left: 80, top: 100, width: W0, height: H0, boxShadow: '0 30px 60px rgba(0,0,0,0.45)', transform: `rotate(-0.4deg) translateY(${(1 - ap(t, -1, 0.7)) * 900}px)`}}>
+        <svg viewBox={`0 0 ${W0} ${H0}`} width={W0} height={H0} style={{position: 'absolute', inset: 0}}>
+          <Pink w={W0} h={H0} mm={10} />
+          <RPath d={`M40,${TY - 8} L${W0 - 40},${TY - 10}`} stroke={INK} sw={3} rough={1.2} seed={5} prog={dp(t, 0, 0.7)} />
+          {ROWS4.map((r, i) => {
+            const k = dp(t, 2 * (i + 1) - 0.2, 0.6);
+            const y = TY + i * RH;
+            return (
+              <g key={i}>
+                <rect x={30} y={y + 10} width={(W0 - 60) * k} height={RH - 20} rx={14} fill={r[4]} opacity={0.14} />
+                <RPath d={`M40,${y + RH} L${W0 - 40},${y + RH + (i % 2 ? 2 : -2)}`} stroke="#3B3B48" sw={1.6} rough={1.6} seed={11 + i} prog={k} />
+                <RPath d={`M${cols[3] + 40},${y + RH / 2 + 4} L${cols[3] + 54},${y + RH / 2 + 22} L${cols[3] + 82},${y + RH / 2 - 16}`} stroke={PEN} sw={5} rough={0.9} seed={40 + i} prog={dp(t, 2 * (i + 1) + 0.8, 0.3)} />
+              </g>
+            );
+          })}
+        </svg>
+        <div style={{position: 'absolute', left: 40, top: 40, fontFamily: FONT, fontSize: 46, fontWeight: 900, color: INK}}>BẢNG 4 BUỒNG TIM</div>
+        <div style={{position: 'absolute', left: 620, top: 50, fontFamily: HAND, fontSize: 38, color: PEN, transform: 'rotate(-3deg)', opacity: ap(t, 0.6)}}>Nhĩ xem P · Thất xem QRS</div>
+        {['BUỒNG', 'TIÊU CHUẨN CHÍNH', 'DẤU KÈM', 'NHỚ'].map((h, j) => <div key={h} style={{position: 'absolute', left: cols[j], top: TY - 44, fontFamily: FONT, fontSize: 22, fontWeight: 800, letterSpacing: 1.5, color: '#5B4A47'}}>{h}</div>)}
+        {ROWS4.map((r, i) => {
+          const y = TY + i * RH + 46;
+          return [r[0], r[1], r[2], r[3]].map((txt, j) => {
+            const a = ap(t, 2 * (i + 1) + j * 0.2, 0.4);
+            return <div key={i + '-' + j} style={{position: 'absolute', left: cols[j] + (j === 3 ? 100 : 0), top: y - (j === 3 ? 10 : 0), fontFamily: j === 3 ? FONT : FONT, fontSize: j === 0 ? 36 : j === 3 ? 50 : 30, fontWeight: j === 0 || j === 3 ? 900 : 700, color: j === 0 || j === 3 ? r[4] : INK, opacity: a, whiteSpace: 'nowrap'}}>{txt}</div>;
+          });
+        })}
+      </div>
+    </DeskBg>
+  );
+};
+
+// ================= 12 · THỰC HÀNH =================
+const LVH12: Record<string, Lead> = {
+  I: {r: 1.2, s: -0.1, st: -0.06, t: -0.15}, II: {r: 1.0, s: -0.2, t: 0.15}, III: {r: 0.3, s: -0.6, t: 0.15},
+  aVR: {p: -0.1, q: 0.05, r: -1.0, s: 0.1, t: 0.1}, aVL: {r: 1.1, s: -0.1, st: -0.06, t: -0.15}, aVF: {r: 0.5, s: -0.4, t: 0.12},
+  V1: {r: 0.2, s: -1.6, st: 0.1, t: 0.3}, V2: {r: 0.3, s: -2.1, st: 0.15, t: 0.4}, V3: {r: 0.6, s: -1.5, st: 0.08, t: 0.3},
+  V4: {r: 1.6, s: -0.6, t: 0.1}, V5: {r: 2.4, s: -0.15, st: -0.12, t: -0.3, tw: 0.07}, V6: {r: 1.9, s: -0.1, st: -0.1, t: -0.25, tw: 0.07},
+};
+const Practice: React.FC = () => {
+  const t = useT();
+  const S = 0.78;
+  const hl: Record<string, number> = {};
+  if (t > 1.8 && t < 4.2) {hl.V1 = ap(t, 2, 0.4); hl.V5 = ap(t, 2.2, 0.4);}
+  if (t > 3.8 && t < 6.2) {hl.V5 = ap(t, 4, 0.4); hl.V6 = ap(t, 4.2, 0.4);}
+  const REP: [string, string, number, string][] = [
+    ['CỘNG', 'S V1 16 + R V5 24 = 40 mm ≥ 35', 2, C.lv], ['TĂNG GÁNH', 'V5–V6: ST↓, T đảo không đối xứng', 4, C.lv], ['NHĨ TRÁI', 'V1: âm cuối P > 1 ô nhỏ', 6, C.la],
+  ];
+  return (
+    <DeskBg>
+      <div style={{position: 'absolute', left: 50, top: 58, fontFamily: FONT, fontSize: 40, fontWeight: 800, color: '#F8FAFC'}}>Thực hành · BN tăng huyết áp lâu năm</div>
+      <div style={{position: 'absolute', left: 40, top: 130, width: 1500, height: 760, transform: `scale(${S}) rotate(-0.5deg)`, transformOrigin: '0 0', boxShadow: '0 30px 60px rgba(0,0,0,0.45)'}}>
+        <Sheet leads={LVH12} hl={hl} />
+      </div>
+      <div style={{position: 'absolute', left: 60, top: 760, opacity: ap(t, 6.0), transform: `translateY(${(1 - ap(t, 6)) * 30}px)`, display: 'flex', alignItems: 'center', gap: 16}}>
+        <MiniP set={LAE_SET.v1} norm={N_V1} a={ap(t, 6.0, 0.8)} label="V1 · P" c={C.la} />
+      </div>
+      <div style={{position: 'absolute', left: 1260, top: 120, width: 610, height: 640, background: '#FDFDF8', backgroundImage: 'repeating-linear-gradient(0deg, transparent 0 119px, #BFD7EA 119px 121px)', boxShadow: '0 20px 40px rgba(0,0,0,0.45)', transform: 'rotate(1deg)'}}>
+        <div style={{position: 'absolute', left: 24, top: 20, fontFamily: FONT, fontSize: 30, fontWeight: 800, color: PEN}}>PHIẾU ĐỌC ECG</div>
+        {REP.map(([k, v, s, c], i) => {
+          const a = ap(t, s, 0.5);
+          return (
+            <div key={k} style={{position: 'absolute', left: 24, top: 90 + i * 120, width: 570, opacity: a, transform: `translateX(${(1 - a) * 20}px)`, fontFamily: FONT}}>
+              <div style={{fontSize: 24, fontWeight: 800, color: c, letterSpacing: 1}}>{k} <span style={{color: '#16A34A'}}>✓</span></div>
+              <div style={{fontSize: 27, fontWeight: 600, color: '#1F2937', lineHeight: 1.25}}>{v}</div>
+            </div>
+          );
+        })}
+      </div>
+      <div style={{position: 'absolute', left: 500, top: 800, width: 1370, padding: '16px 26px', borderRadius: 14, background: '#16A34A', color: '#fff', fontFamily: FONT, fontSize: 32, fontWeight: 800, opacity: ap(t, 8.0), transform: `scale(${0.92 + 0.08 * ap(t, 8)})`, transformOrigin: 'left center', boxSizing: 'border-box', boxShadow: '0 12px 28px rgba(0,0,0,0.4)'}}>KẾT LUẬN: phì đại thất trái dạng tăng gánh + lớn nhĩ trái → siêu âm tim</div>
+    </DeskBg>
+  );
+};
+
+// ================= 13 · TÓM TẮT =================
+const TAKE5: [string, string, string, string][] = [
+  ['Nhĩ xem ', 'P', ' (DII, V1) · Thất xem QRS', '#14B8A6'],
+  ['Lớn nhĩ phải ', 'CAO', ' > 2,5 mm · lớn nhĩ trái RỘNG, hai đỉnh', C.ra],
+  ['Phì đại thất trái ', 'CỘNG', ': S V1 + R V5 ≥ 35 mm (7 ô lớn)', C.lv],
+  ['Phì đại thất phải ', 'LẬT', ': V1 R > S · trục lệch phải', C.rv],
+  ['ECG gợi ý — ', 'siêu âm tim', ' khẳng định', '#22C55E'],
+];
+const Summary: React.FC = () => {
+  const t = useT();
+  const beat = useBeat();
+  return (
+    <DeskBg>
+      <div style={{position: 'absolute', left: 70, top: 90, width: 1250, height: 830, background: '#FDFDF8', backgroundImage: 'repeating-linear-gradient(0deg, transparent 0 109px, #BFD7EA 109px 111px)', boxShadow: '0 30px 60px rgba(0,0,0,0.45)', transform: `rotate(-0.8deg) translateY(${(1 - ap(t, 0, 0.8)) * 900}px)`}}>
+        <div style={{position: 'absolute', left: 0, top: 0, bottom: 0, width: 4, marginLeft: 100, background: '#F4A3A3'}} />
+        <div style={{position: 'absolute', left: 130, top: 26, fontFamily: FONT, fontSize: 50, fontWeight: 800, color: PEN, letterSpacing: 1}}>5 ĐIỀU CẦN NHỚ</div>
+        <svg viewBox="0 0 1250 830" width={1250} height={830} style={{position: 'absolute', inset: 0}}>
+          <RPath d="M130,96 C330,88 520,102 640,92" stroke={PEN} sw={4} rough={1.5} seed={4} prog={dp(t, 0.5, 0.8)} />
+          {TAKE5.map((_, i) => {
+            const y = 168 + i * 110;
+            return <RPath key={i} d={`M34,${y + 8} L48,${y + 26} L78,${y - 14}`} stroke={PEN} sw={5} rough={0.9} seed={70 + i} prog={dp(t, 2 * (i + 1) + 0.6, 0.4)} />;
+          })}
+        </svg>
+        {TAKE5.map((x, i) => {
+          const a = ap(t, 2 * (i + 1), 0.5);
+          return (
+            <div key={i} style={{position: 'absolute', left: 130, top: 140 + i * 110, width: 1100, fontFamily: FONT, fontSize: 34, fontWeight: 600, color: '#1F2937', opacity: a, transform: `translateX(${(1 - a) * 20}px)`, whiteSpace: 'nowrap'}}>
+              <span style={{color: x[3], fontWeight: 900}}>{i + 1}. </span>{x[0]}<b style={{color: x[3]}}>{x[1]}</b>{x[2]}
+            </div>
+          );
+        })}
+        <div style={{position: 'absolute', left: 130, top: 715, fontFamily: HAND, fontSize: 52, color: '#1F2937', opacity: ap(t, 12.0), transform: `rotate(-2deg) scale(${0.9 + 0.1 * ap(t, 12.0)})`}}>Cảm ơn bạn đã theo dõi! ♥</div>
+      </div>
+      <svg viewBox="0 0 1920 1080" width={1920} height={1080} style={{position: 'absolute', inset: 0}}>
+        <Heart6 id="sum3" x={1330} y={200} s={1.1} prog={dp(t, 0.6, 1.2)} art={1} labels={false} beat={beat} />
+      </svg>
+    </DeskBg>
+  );
+};
+
+const SC: React.FC[] = [Cover, Principle, NormalP, RAE, LAE, CompareAtria, Sokolow, Cornell, Strain, RVH, RVCause, Table4, Practice, Summary];
 export const HYPER_DEMO_N = SC.length;
 export const Hyper: React.FC = () => (
   <AbsoluteFill style={{background: '#0E1116', fontFamily: FONT}}>
