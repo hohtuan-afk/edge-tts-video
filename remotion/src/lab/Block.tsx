@@ -208,11 +208,11 @@ const PRScene: React.FC = () => {
   const rt = useCurrentFrame() / 30;
   const HX = 20, HY = 110, HS = 1.15;
   const mm = 40, W = 1000, Hh = 560, B = 400;
-  const X = (x: number) => 60 + (x + 0.2) * 25 * mm, Yv = (v: number) => B - v * 10 * mm * 0.5;
+  const X = (x: number) => 40 + (x + 0.22) * 1550, Yv = (v: number) => B - v * 10 * mm * 0.5;
   const f = (x: number) => g(x, -0.15, 0.022, 0.14) + qrsN(x);
   const pts: string[] = [];
-  for (let x = -0.2; x <= 0.5; x += 0.002) pts.push(`${X(x).toFixed(1)},${Yv(f(x)).toFixed(1)}`);
-  const seg: [number, number, string, string, number][] = [[-0.175, -0.115, '#38BDF8', 'nhĩ', 1.0], [-0.115, -0.065, '#F59E0B', 'nút nhĩ thất', 2.0], [-0.065, -0.04, '#22C55E', 'His', 1.4]];
+  for (let x = -0.22; x <= 0.4; x += 0.002) pts.push(`${X(x).toFixed(1)},${Yv(f(x)).toFixed(1)}`);
+  const seg: [number, number, string, string, number][] = [[-0.175, -0.115, '#38BDF8', 'nhĩ', 1.0], [-0.115, -0.065, '#F59E0B', 'nút nhĩ thất', 2.0], [-0.065, -0.04, '#22C55E', 'His–Purkinje', 1.4]];
   return (
     <DeskBg>
       <Head t={t}>Khoảng PR: từ đầu P đến đầu QRS</Head>
@@ -228,15 +228,15 @@ const PRScene: React.FC = () => {
           {seg.map(([a, b, c, n, s0], i) => (
             <g key={n} opacity={ap(t, s0 + (i === 0 ? 0 : 0), 0.5)}>
               <rect x={X(a)} y={B - 120} width={X(b) - X(a)} height={160} fill={c} opacity={0.22} />
-              <text x={(X(a) + X(b)) / 2} y={B + 90 + i * 0} textAnchor="middle" fontFamily={FONT} fontSize={24} fontWeight={800} fill={c}>{n}</text>
+              <text x={(X(a) + X(b)) / 2} y={B - 140 - i * 34} textAnchor="middle" fontFamily={FONT} fontSize={26} fontWeight={800} fill={c}>{n}</text>
             </g>
           ))}
           <polyline points={pts.join(' ')} fill="none" stroke={INK} strokeWidth={6} strokeLinejoin="round" />
-          <Bracket x0={X(-0.175)} x1={X(-0.04)} y={B + 130} c={CPR} label="PR 0,12 – 0,20 s" a={ap(t, 6.0)} size={34} />
+          <Bracket x0={X(-0.175)} x1={X(-0.04)} y={B + 70} c={CPR} label="PR 0,12 – 0,20 s" a={ap(t, 6.0)} size={34} />
           <circle cx={X(-0.175)} cy={B} r={9} fill={CP} opacity={ap(t, 0)} />
           <circle cx={X(-0.04)} cy={B} r={9} fill={CQ} opacity={ap(t, 0)} />
-          <text x={X(-0.175)} y={B - 150} textAnchor="middle" fontFamily={FONT} fontSize={26} fontWeight={800} fill={CP} opacity={ap(t, 0)}>đầu P</text>
-          <text x={X(-0.04) + 30} y={B - 150} textAnchor="middle" fontFamily={FONT} fontSize={26} fontWeight={800} fill={CQ} opacity={ap(t, 0)}>đầu QRS</text>
+          <text x={X(-0.175) - 10} y={B + 40} textAnchor="end" fontFamily={FONT} fontSize={26} fontWeight={800} fill={CP} opacity={ap(t, 0)}>đầu P</text>
+          <text x={X(-0.04) + 40} y={B + 40} fontFamily={FONT} fontSize={26} fontWeight={800} fill={CQ} opacity={ap(t, 0)}>đầu QRS</text>
         </svg>
       </div>
       <Card x={860} y={730} w={480} a={ap(t, 4.0)} c="#F59E0B" title="Chậm nhất: nút nhĩ thất">“cổng” giữa nhĩ và thất</Card>
@@ -312,7 +312,7 @@ const ShortPR: React.FC = () => {
           <polyline points={line(wpw)} fill="none" stroke={INK} strokeWidth={6} strokeLinejoin="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - dp(t, -0.5, 1)} />
           <Bracket x0={X(-0.125)} x1={X(-0.06)} y={B + 70} c={CPR} label="PR ngắn" a={ap(t, 2.0)} size={28} />
           <text x={X(-0.03) - 10} y={Yv(0.3) - 20} textAnchor="end" fontFamily={HAND} fontSize={38} fill="#B45309" opacity={ap(t, 2.4)}>sóng delta</text>
-          <Bracket x0={X(-0.06)} x1={X(0.11)} y={B + 150} c={CQ} label="QRS rộng" a={ap(t, 2.8)} size={28} />
+          <Bracket x0={X(-0.06)} x1={X(0.11)} y={B + 115} c={CQ} label="QRS rộng" a={ap(t, 2.8)} size={28} />
           <text x={W - 20} y={Hh - 16} textAnchor="end" fontFamily={FONT} fontSize={22} fontWeight={700} fill="#64748B" opacity={ap(t, 0.2)}>– – – nhát bình thường</text>
         </svg>
       </div>
@@ -411,7 +411,7 @@ const Mobitz1Tip: React.FC = () => {
           <text x={40} y={60} fontFamily={FONT} fontSize={34} fontWeight={800} fill={INK}>“Bậc thang” PR</text>
           <line x1={80} x2={1120} y1={BB - 140} y2={BB - 140} stroke="#CBD5E1" strokeWidth={2} />
           <line x1={80} x2={1120} y1={BB - 140 - 0.2 * kk} y2={BB - 140 - 0.2 * kk} stroke="#94A3B8" strokeWidth={2} strokeDasharray="10 8" />
-          <text x={1120} y={BB - 150 - 0.2 * kk} textAnchor="end" fontFamily={MONO} fontSize={22} fill="#64748B">0,20 s</text>
+          <text x={76} y={BB - 132 - 0.2 * kk} textAnchor="end" fontFamily={MONO} fontSize={22} fill="#64748B">0,20</text>
           {bars.map((v, i) => {
             const x = BX + i * 160, a = ap(t, 0.2 + i * 0.3, 0.4);
             if (v === null) return <g key={i}><Drop x={x + 45} y={BB - 200} a={a} /><text x={x + 45} y={BB - 110} textAnchor="middle" fontFamily={FONT} fontSize={24} fontWeight={800} fill={PEN} opacity={a}>rơi</text></g>;
