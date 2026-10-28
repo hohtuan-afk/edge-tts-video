@@ -1,92 +1,439 @@
 {
  "fps": 30,
- "total": 1207,
+ "total": 9494,
  "scenes": [
   {
    "from": 0,
-   "dur": 150,
+   "dur": 389,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 4.299,
-     "text": "Nhìn ECG, đoán buồng tim nào đang to?"
+     "start": 0.5,
+     "dur": 3.865,
+     "text": "Khoảng PR & Block nhĩ thất trên điện tâm đồ"
+    },
+    {
+     "start": 4.715,
+     "dur": 3.461,
+     "text": "Thần chú: Tìm P – Đo PR – Xem RƠI"
+    },
+    {
+     "start": 8.527,
+     "dur": 3.423,
+     "text": "Mục tiêu: nhận diện đúng từng mức độ block nhĩ thất."
     }
    ]
   },
   {
-   "from": 150,
-   "dur": 132,
+   "from": 389,
+   "dur": 629,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 2.772,
-     "text": "Nhĩ xem P · Thất xem QRS"
+     "start": 0.5,
+     "dur": 5.384,
+     "text": "Trạm 1 · PR BÌNH THƯỜNG — từ đầu P đến đầu QRS."
+    },
+    {
+     "start": 6.234,
+     "dur": 5.063,
+     "text": "PR = dẫn truyền trong nhĩ + nút nhĩ thất + bó His – Purkinje."
+    },
+    {
+     "start": 11.647,
+     "dur": 3.449,
+     "text": "Phần chậm nhất: nút nhĩ thất — “cổng” giữa nhĩ và thất."
+    },
+    {
+     "start": 15.447,
+     "dur": 4.5,
+     "text": "Bình thường: 0,12 – 0,20 s = 3 – 5 ô nhỏ."
     }
    ]
   },
   {
-   "from": 282,
-   "dur": 154,
+   "from": 1018,
+   "dur": 603,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 4.401,
-     "text": "① Lớn nhĩ phải → P CAO > 2,5 mm ở DII"
+     "start": 0.5,
+     "dur": 3.024,
+     "text": "Tìm P: mỗi sóng P có QRS theo sau không?"
+    },
+    {
+     "start": 3.874,
+     "dur": 3.717,
+     "text": "Đo PR: PR có cố định, hay thay đổi?"
+    },
+    {
+     "start": 7.941,
+     "dur": 4.165,
+     "text": "Xem RƠI: có sóng P không dẫn (không có QRS theo sau)?"
+    },
+    {
+     "start": 12.456,
+     "dur": 6.674,
+     "text": "Mẹo: dùng compa đánh dấu khoảng PP — P “đi đều như nhịp trống”."
     }
    ]
   },
   {
-   "from": 436,
-   "dur": 153,
+   "from": 1621,
+   "dur": 618,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 4.434,
-     "text": "② Lớn nhĩ trái → P RỘNG > 0,11 s, hai đỉnh"
+     "start": 0.5,
+     "dur": 2.859,
+     "text": "Trạm 2 · PR NGẮN < 0,12 s."
+    },
+    {
+     "start": 3.709,
+     "dur": 5.783,
+     "text": "Tiền kích thích (WPW): PR ngắn + sóng delta + QRS rộng."
+    },
+    {
+     "start": 9.842,
+     "dur": 3.705,
+     "text": "Đường phụ dẫn tắt, “né” nút nhĩ thất."
+    },
+    {
+     "start": 13.897,
+     "dur": 5.69,
+     "text": "Nhịp bộ nối: P âm ở DII, DIII, aVF (hoặc ẩn trong QRS)."
     }
    ]
   },
   {
-   "from": 589,
-   "dur": 162,
+   "from": 2239,
+   "dur": 561,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 4.686,
-     "text": "③ Phì đại thất trái → CỘNG: S V1 + R V5 ≥ 35 mm"
+     "start": 0.5,
+     "dur": 3.695,
+     "text": "Trạm 3 · BLOCK NHĨ THẤT ĐỘ I — PR > 0,20 s."
+    },
+    {
+     "start": 4.545,
+     "dur": 3.023,
+     "text": "PR dài nhưng CỐ ĐỊNH · mọi P đều có QRS."
+    },
+    {
+     "start": 7.919,
+     "dur": 2.748,
+     "text": "Thực chất là dẫn truyền CHẬM, không phải mất dẫn truyền."
+    },
+    {
+     "start": 11.017,
+     "dur": 4.285,
+     "text": "PR rất dài: P có thể lẫn vào sóng T của nhát trước."
+    },
+    {
+     "start": 15.651,
+     "dur": 2.046,
+     "text": "Nhớ: “dài mà không rơi”."
     }
    ]
   },
   {
-   "from": 751,
-   "dur": 132,
+   "from": 2800,
+   "dur": 609,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 3.511,
-     "text": "④ Phì đại thất phải → LẬT: V1 R > S"
+     "start": 0.5,
+     "dur": 4.065,
+     "text": "Trạm 4 · BLOCK ĐỘ II MOBITZ I (Wenckebach)."
+    },
+    {
+     "start": 4.915,
+     "dur": 3.566,
+     "text": "PR dài dần qua từng nhát → một P không dẫn."
+    },
+    {
+     "start": 8.831,
+     "dur": 3.3,
+     "text": "PR dài nhất ngay trước nhát rơi · ngắn nhất ngay sau."
+    },
+    {
+     "start": 12.481,
+     "dur": 3.479,
+     "text": "Chu kỳ lặp lại → nhịp đi theo NHÓM."
+    },
+    {
+     "start": 16.31,
+     "dur": 3.008,
+     "text": "Nhớ: “dài… dài… dài… RƠI!”"
     }
    ]
   },
   {
-   "from": 883,
-   "dur": 192,
+   "from": 3409,
+   "dur": 509,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 5.704,
-     "text": "CAO – RỘNG – CỘNG – LẬT"
+     "start": 0.5,
+     "dur": 3.79,
+     "text": "Mẹo: so PR ngay SAU nhát rơi với PR ngay TRƯỚC nhát rơi."
+    },
+    {
+     "start": 4.64,
+     "dur": 2.862,
+     "text": "Sau ngắn hơn trước rõ rệt → Mobitz I."
+    },
+    {
+     "start": 7.852,
+     "dur": 3.595,
+     "text": "Thường do block tại nút nhĩ thất · QRS thường hẹp."
+    },
+    {
+     "start": 11.797,
+     "dur": 4.155,
+     "text": "Lưu ý: kiểu Mobitz trên ECG không luôn khẳng định vị trí block."
     }
    ]
   },
   {
-   "from": 1075,
-   "dur": 132,
+   "from": 3918,
+   "dur": 760,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 2.475,
-     "text": "Lưu lại để ôn · xem bài đầy đủ trên kênh!"
+     "start": 0.5,
+     "dur": 2.804,
+     "text": "Trạm 5 · BLOCK ĐỘ II MOBITZ II."
+    },
+    {
+     "start": 3.654,
+     "dur": 3.873,
+     "text": "PR CỐ ĐỊNH ở các nhát dẫn → đột ngột một P không dẫn."
+    },
+    {
+     "start": 7.877,
+     "dur": 2.153,
+     "text": "PR trước và sau nhát rơi BẰNG nhau."
+    },
+    {
+     "start": 10.379,
+     "dur": 3.043,
+     "text": "Khoảng RR chứa nhát rơi = đúng 2 lần RR thường."
+    },
+    {
+     "start": 13.772,
+     "dur": 5.496,
+     "text": "Thường block dưới nút (His – Purkinje) · hay kèm QRS rộng."
+    },
+    {
+     "start": 19.618,
+     "dur": 4.699,
+     "text": "Nhớ: “đang yên bỗng RƠI” — nguy cơ tiến triển thành block độ III."
+    }
+   ]
+  },
+  {
+   "from": 4678,
+   "dur": 694,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.29,
+     "text": "Block 2:1: cứ 2 sóng P thì 1 sóng không dẫn."
+    },
+    {
+     "start": 4.14,
+     "dur": 4.478,
+     "text": "Không có 2 PR liên tiếp để so → KHÔNG xếp được Mobitz I hay II."
+    },
+    {
+     "start": 8.968,
+     "dur": 7.388,
+     "text": "Gợi ý: PR dài + QRS hẹp → nghiêng Mobitz I · PR bình thường + QRS rộng → nghiêng Mobitz II."
+    },
+    {
+     "start": 16.706,
+     "dur": 5.453,
+     "text": "Block cao độ: ≥ 2 sóng P liên tiếp không dẫn (3:1, 4:1…)."
+    }
+   ]
+  },
+  {
+   "from": 5372,
+   "dur": 574,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.544,
+     "text": "Trạm 6 · BLOCK NHĨ THẤT ĐỘ III (hoàn toàn)."
+    },
+    {
+     "start": 4.394,
+     "dur": 1.521,
+     "text": "KHÔNG sóng P nào dẫn xuống thất."
+    },
+    {
+     "start": 6.265,
+     "dur": 4.832,
+     "text": "P đều (PP đều) · QRS đều (RR đều) · nhưng KHÔNG liên quan nhau."
+    },
+    {
+     "start": 11.447,
+     "dur": 3.453,
+     "text": "PR thay đổi ngẫu nhiên · tần số nhĩ > tần số thất."
+    },
+    {
+     "start": 15.251,
+     "dur": 2.882,
+     "text": "Nhớ: “P đi đường P, QRS đi đường QRS”."
+    }
+   ]
+  },
+  {
+   "from": 5946,
+   "dur": 485,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.084,
+     "text": "Thất được chỉ huy bởi NHỊP THOÁT."
+    },
+    {
+     "start": 2.934,
+     "dur": 4.284,
+     "text": "QRS hẹp → thoát bộ nối (thường khoảng 40 – 60 l/ph)."
+    },
+    {
+     "start": 7.568,
+     "dur": 3.423,
+     "text": "QRS rộng → thoát thất (thường < 40 l/ph)."
+    },
+    {
+     "start": 11.341,
+     "dur": 3.813,
+     "text": "QRS thoát càng rộng, nhịp càng chậm → vị trí block càng thấp."
+    }
+   ]
+  },
+  {
+   "from": 6431,
+   "dur": 599,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.997,
+     "text": "Phân ly nhĩ thất ≠ block độ III."
+    },
+    {
+     "start": 3.847,
+     "dur": 5.871,
+     "text": "Phân ly nhĩ thất: nhĩ và thất độc lập vì THẤT nhanh hơn (vd. nhịp nhanh thất, nhịp tự thất gia tốc)."
+    },
+    {
+     "start": 10.068,
+     "dur": 4.568,
+     "text": "Block độ III: NHĨ nhanh hơn thất, P đến đúng lúc vẫn không dẫn."
+    },
+    {
+     "start": 14.986,
+     "dur": 3.982,
+     "text": "Mẹo: tần số nhĩ > thất → nghĩ block · thất > nhĩ → nghĩ phân ly."
+    }
+   ]
+  },
+  {
+   "from": 7030,
+   "dur": 728,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.66,
+     "text": "Trạm 7 · ÔN TẬP — bảng block nhĩ thất."
+    },
+    {
+     "start": 4.51,
+     "dur": 3.732,
+     "text": "Độ I: PR > 0,20 s, cố định · không rơi."
+    },
+    {
+     "start": 8.592,
+     "dur": 3.148,
+     "text": "Mobitz I: PR dài dần → rơi · nhịp theo nhóm."
+    },
+    {
+     "start": 12.09,
+     "dur": 2.74,
+     "text": "Mobitz II: PR cố định → rơi đột ngột."
+    },
+    {
+     "start": 15.18,
+     "dur": 4.941,
+     "text": "2:1 · cao độ: không xếp được Mobitz · ≥ 2 P liên tiếp không dẫn."
+    },
+    {
+     "start": 20.471,
+     "dur": 2.796,
+     "text": "Độ III: P và QRS độc lập · nhĩ nhanh hơn thất."
+    }
+   ]
+  },
+  {
+   "from": 7758,
+   "dur": 852,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.221,
+     "text": "Thực hành: đọc 3 dải nhịp DII."
+    },
+    {
+     "start": 3.071,
+     "dur": 8.219,
+     "text": "Dải 1: PR 0,16 → 0,24 → 0,30 s → P không dẫn → Mobitz I ✓"
+    },
+    {
+     "start": 11.641,
+     "dur": 7.378,
+     "text": "Dải 2: PR luôn 0,16 s → đột ngột P không dẫn, QRS rộng → Mobitz II ✓"
+    },
+    {
+     "start": 19.368,
+     "dur": 8.029,
+     "text": "Dải 3: P 90 l/ph, QRS rộng 35 l/ph, không liên quan → block độ III, thoát thất ✓"
+    }
+   ]
+  },
+  {
+   "from": 8610,
+   "dur": 884,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 1.629,
+     "text": "5 điều cần nhớ"
+    },
+    {
+     "start": 2.479,
+     "dur": 3.797,
+     "text": "① Tìm P – Đo PR – Xem RƠI"
+    },
+    {
+     "start": 6.627,
+     "dur": 6.604,
+     "text": "② PR bình thường 0,12 – 0,20 s · ngắn: tiền kích thích, nhịp bộ nối"
+    },
+    {
+     "start": 13.581,
+     "dur": 2.197,
+     "text": "③ Độ I: dài mà không rơi"
+    },
+    {
+     "start": 16.127,
+     "dur": 4.428,
+     "text": "④ Độ II: Mobitz I dài dần rồi rơi · Mobitz II đang yên bỗng rơi"
+    },
+    {
+     "start": 20.906,
+     "dur": 3.685,
+     "text": "⑤ Độ III: P và QRS mỗi bên một đường · nhĩ nhanh hơn thất"
+    },
+    {
+     "start": 24.941,
+     "dur": 3.539,
+     "text": "Cảm ơn bạn đã theo dõi!"
     }
    ]
   }
