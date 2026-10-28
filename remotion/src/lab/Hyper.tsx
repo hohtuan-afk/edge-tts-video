@@ -501,7 +501,7 @@ const Cornell: React.FC = () => {
 // ================= 8 · DẠNG TĂNG GÁNH =================
 const g1 = (x: number, mu: number, w: number, a: number) => a * Math.exp(-((x - mu) ** 2) / (2 * w * w));
 const strainF = (tr: number) => g1(tr, -0.15, 0.02, 0.1) + g1(tr, 0, 0.012, 2.0) + g1(tr, 0.028, 0.01, -0.15) +
-  (tr > 0.045 && tr < 0.34 ? (() => {const u = (tr - 0.045) / 0.29; return -0.32 * Math.pow(Math.sin(Math.PI * Math.pow(u, 0.62)), 1.25) * 1;})() : 0);
+  (tr > 0.045 && tr < 0.34 ? (() => {const u = (tr - 0.045) / 0.29; return -0.32 * Math.pow(Math.max(0, Math.sin(Math.PI * Math.pow(u, 0.62))), 1.25);})() : 0);
 const ischF = (tr: number) => g1(tr, -0.15, 0.02, 0.1) + g1(tr, 0, 0.012, 1.2) + g1(tr, 0.028, 0.01, -0.15) + g1(tr, 0.22, 0.045, -0.45);
 const Zoom: React.FC<{f: (tr: number) => number; label: string; prog: number; c: string; w?: number; h?: number; mm?: number; B?: number}> = ({f, label, prog, c, w = 600, h = 520, mm = 20, B = 330}) => {
   const pxs = 25 * mm * 0.5, pxmv = 10 * mm * 0.5;
@@ -681,7 +681,7 @@ const Practice: React.FC = () => {
       <div style={{position: 'absolute', left: 40, top: 130, width: 1500, height: 760, transform: `scale(${S}) rotate(-0.5deg)`, transformOrigin: '0 0', boxShadow: '0 30px 60px rgba(0,0,0,0.45)'}}>
         <Sheet leads={LVH12} hl={hl} />
       </div>
-      <div style={{position: 'absolute', left: 60, top: 760, opacity: ap(t, 6.0), transform: `translateY(${(1 - ap(t, 6)) * 30}px)`, display: 'flex', alignItems: 'center', gap: 16}}>
+      <div style={{position: 'absolute', left: 1365, top: 470, zIndex: 2, opacity: ap(t, 6.0), transform: `rotate(1deg) translateY(${(1 - ap(t, 6)) * 30}px)`}}>
         <MiniP set={LAE_SET.v1} norm={N_V1} a={ap(t, 6.0, 0.8)} label="V1 · P" c={C.la} />
       </div>
       <div style={{position: 'absolute', left: 1260, top: 120, width: 610, height: 640, background: '#FDFDF8', backgroundImage: 'repeating-linear-gradient(0deg, transparent 0 119px, #BFD7EA 119px 121px)', boxShadow: '0 20px 40px rgba(0,0,0,0.45)', transform: 'rotate(1deg)'}}>
@@ -696,7 +696,7 @@ const Practice: React.FC = () => {
           );
         })}
       </div>
-      <div style={{position: 'absolute', left: 500, top: 800, width: 1370, padding: '16px 26px', borderRadius: 14, background: '#16A34A', color: '#fff', fontFamily: FONT, fontSize: 32, fontWeight: 800, opacity: ap(t, 8.0), transform: `scale(${0.92 + 0.08 * ap(t, 8)})`, transformOrigin: 'left center', boxSizing: 'border-box', boxShadow: '0 12px 28px rgba(0,0,0,0.4)'}}>KẾT LUẬN: phì đại thất trái dạng tăng gánh + lớn nhĩ trái → siêu âm tim</div>
+      <div style={{position: 'absolute', left: 60, top: 800, width: 1810, padding: '16px 26px', borderRadius: 14, background: '#16A34A', color: '#fff', fontFamily: FONT, fontSize: 32, fontWeight: 800, opacity: ap(t, 8.0), transform: `scale(${0.92 + 0.08 * ap(t, 8)})`, transformOrigin: 'left center', boxSizing: 'border-box', boxShadow: '0 12px 28px rgba(0,0,0,0.4)'}}>KẾT LUẬN: phì đại thất trái dạng tăng gánh + lớn nhĩ trái → siêu âm tim</div>
     </DeskBg>
   );
 };
