@@ -142,7 +142,7 @@ const V1L: Lead = {p: 0.1, r: 0.25, s: -1.6, t: 0.25, tw: 0.07};
 const V5L: Lead = {p: 0.1, q: -0.1, r: 2.2, s: -0.12, t: 0.45, tw: 0.07};
 const LVH: React.FC = () => {
   const t = useSec();
-  const mm = 9, pxs = 25 * mm, pxmv = 10 * mm, B = 290, RT = 0.92;
+  const mm = 9, pxs = 25 * mm, pxmv = 10 * mm, B = 290, RT = 1.08;
   const sV = -beatV(0.03, V1L), rV = beatV(0, V5L);
   const k1 = dp(t, 1.0, 0.6), k2 = dp(t, 1.6, 0.6);
   const ok = usePop(2.6);
