@@ -110,7 +110,7 @@ const Hook: React.FC = () => {
       <svg viewBox={`0 0 ${W} ${H}`} width={W} height={H} style={{position: 'absolute', inset: 0}}>
         <Heart6 id="h2k" x={210} y={590} s={1.2} prog={dp(t, 0, 0.6)} art={1} labels={false} beat={beat} zone={z as Zone6} zoneC={CD[z]} zoneA={0.9} />
       </svg>
-      <div style={{position: 'absolute', left: 0, right: 0, top: 1240, display: 'flex', justifyContent: 'center', gap: 14, transform: `scale(${p2})`}}>
+      <div style={{position: 'absolute', left: 0, right: 0, top: 1200, display: 'flex', justifyContent: 'center', gap: 14, transform: `scale(${p2})`}}>
         {KW.map(([, k, zz], i) => <div key={k} style={{padding: '10px 22px', borderRadius: 20, border: `4px solid ${CD[zz]}`, background: i === ci ? CD[zz] : 'rgba(10,16,22,0.8)', color: '#fff', fontFamily: FONT, fontSize: 46, fontWeight: 900}}>{k}</div>)}
       </div>
     </AbsoluteFill>
@@ -142,18 +142,18 @@ const V1L: Lead = {p: 0.1, r: 0.25, s: -1.6, t: 0.25, tw: 0.07};
 const V5L: Lead = {p: 0.1, q: -0.1, r: 2.2, s: -0.12, t: 0.45, tw: 0.07};
 const LVH: React.FC = () => {
   const t = useSec();
-  const mm = 9, pxs = 25 * mm, pxmv = 10 * mm, B = 320, RT = 0.92;
+  const mm = 9, pxs = 25 * mm, pxmv = 10 * mm, B = 290, RT = 0.92;
   const sV = -beatV(0.03, V1L), rV = beatV(0, V5L);
   const k1 = dp(t, 1.0, 0.6), k2 = dp(t, 1.6, 0.6);
   const ok = usePop(2.6);
-  const BX = 420, BB = 1310, kk = 7;
+  const BX = 450, BB = 1300, kk = 7;
   return (
     <AbsoluteFill>
       <StepHead i={2} /><MiniHeart z="lv" c={CD.lv} t={t} />
-      <Panel t={t} h={540}>
-        <svg viewBox="0 0 960 540" width={960} height={540}>
-          <Pink w={960} h={540} mm={mm * 2} />
-          <line x1={480} x2={480} y1={0} y2={540} stroke="#D6B3AD" strokeWidth={4} />
+      <Panel t={t} h={480}>
+        <svg viewBox="0 0 960 480" width={960} height={480}>
+          <Pink w={960} h={480} mm={mm * 2} />
+          <line x1={480} x2={480} y1={0} y2={480} stroke="#D6B3AD" strokeWidth={4} />
           {[['V1', 0, V1L], ['V5', 480, V5L]].map(([n, ox, L]) => (
             <g key={n as string}>
               <text x={(ox as number) + 18} y={52} fontFamily={MONO} fontSize={44} fontWeight={700} fill={INK}>{n as string}</text>
@@ -162,8 +162,8 @@ const LVH: React.FC = () => {
           ))}
           <rect x={10 + RT * pxs - 16} y={B} width={32} height={sV * pxmv} fill="rgba(14,165,233,0.35)" opacity={k1} />
           <rect x={490 + RT * pxs - 16} y={B - rV * pxmv} width={32} height={rV * pxmv} fill="rgba(220,38,38,0.3)" opacity={k2} />
-          <text x={10 + RT * pxs + 24} y={B + sV * pxmv - 10} fontFamily={MONO} fontSize={40} fontWeight={700} fill="#0284C7" opacity={k1}>S 16</text>
-          <text x={490 + RT * pxs + 24} y={B - rV * pxmv + 40} fontFamily={MONO} fontSize={40} fontWeight={700} fill={CD.lv} opacity={k2}>R 22</text>
+          <text x={10 + RT * pxs + 50} y={B + sV * pxmv - 10} fontFamily={MONO} fontSize={40} fontWeight={700} fill="#0284C7" opacity={k1}>S 16</text>
+          <text x={490 + RT * pxs + 50} y={B - rV * pxmv + 40} fontFamily={MONO} fontSize={40} fontWeight={700} fill={CD.lv} opacity={k2}>R 22</text>
         </svg>
       </Panel>
       <svg viewBox={`0 0 ${W} ${H}`} width={W} height={H} style={{position: 'absolute', inset: 0}}>
@@ -171,6 +171,8 @@ const LVH: React.FC = () => {
         <text x={BX - 130} y={BB - 35 * kk + 14} textAnchor="end" fontFamily={MONO} fontSize={40} fontWeight={700} fill="#FDE047" opacity={ap(t, 1.0)}>35</text>
         <rect x={BX} y={BB - 16 * kk * k1} width={180} height={16 * kk * k1} fill="#0284C7" />
         <rect x={BX} y={BB - 16 * kk - 22 * kk * k2} width={180} height={22 * kk * k2} fill={CD.lv} opacity={k2 > 0.01 ? 1 : 0} />
+        <text x={BX + 90} y={BB - 8 * kk + 14} textAnchor="middle" fontFamily={MONO} fontSize={40} fontWeight={700} fill="#fff" opacity={k1}>16</text>
+        <text x={BX + 90} y={BB - 27 * kk + 14} textAnchor="middle" fontFamily={MONO} fontSize={40} fontWeight={700} fill="#fff" opacity={k2}>22</text>
         <text x={BX + 220} y={BB - 38 * kk + 14} fontFamily={MONO} fontSize={64} fontWeight={700} fill="#4ADE80" opacity={ok > 0.1 ? 1 : 0} transform={`translate(${BX + 220} ${BB - 38 * kk}) scale(${ok}) translate(${-(BX + 220)} ${-(BB - 38 * kk)})`}>= 38 ✓</text>
       </svg>
     </AbsoluteFill>
