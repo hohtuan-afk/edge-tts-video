@@ -50,7 +50,7 @@ NARR = [
     "Nó cũng gặp trong thông liên nhĩ, tăng áp phổi, thuyên tắc phổi, và bệnh tim thiếu máu cục bộ."),
    ("Block nhánh phải mới xuất hiện → đối chiếu lâm sàng.",
     "Khi block nhánh phải mới xuất hiện, cần đối chiếu với bệnh cảnh lâm sàng."),
-   ("Trong block nhánh phải, vẫn đánh giá được ST chênh lên ở V1 – V3.",
+   ("Block nhánh phải ít che lấp chẩn đoán nhồi máu cơ tim.",
     "Lưu ý, block nhánh phải không che lấp đáng kể việc đánh giá nhồi máu cơ tim.")],
   # 5 · LBBB
   [("Trạm 3 · BLOCK NHÁNH TRÁI — thất trái khử cực muộn.",
