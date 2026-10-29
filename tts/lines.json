@@ -1,35 +1,291 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+12%",
+ "rate": "+8%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Block nhĩ thất, nhìn một dải nhịp là biết độ mấy. Nhớ ba bước: tìm P, đo PR, xem rơi."
+   "text": "Xin chào, đây là bài bốn: block nhánh và block phân nhánh trên điện tâm đồ."
+  },
+  {
+   "id": "00-1",
+   "text": "Câu thần chú của bài: QRS rộng, hãy nhìn vê một và vê sáu."
+  },
+  {
+   "id": "00-2",
+   "text": "Vê một hướng lên là block nhánh phải, vê một hướng xuống là block nhánh trái. Còn block phân nhánh, hãy nhìn trục."
   },
   {
    "id": "01-0",
-   "text": "Một, block độ một: PR dài hơn không phẩy hai mươi giây, cố định. Dài mà không rơi."
+   "text": "Trạm một, nguyên tắc. Bó His chia thành nhánh phải và nhánh trái."
+  },
+  {
+   "id": "01-1",
+   "text": "Nhánh trái lại chia tiếp thành phân nhánh trái trước và phân nhánh trái sau."
+  },
+  {
+   "id": "01-2",
+   "text": "Bình thường, hai thất khử cực gần như cùng lúc, nên QRS hẹp, dưới không phẩy mười hai giây."
+  },
+  {
+   "id": "01-3",
+   "text": "Vách liên thất khử cực đầu tiên, từ trái sang phải, tạo sóng r nhỏ ở vê một và sóng q nhỏ ở vê sáu."
   },
   {
    "id": "02-0",
-   "text": "Hai, Mô-bít một: PR dài, dài, dài, rồi rơi."
+   "text": "Khi một nhánh bị block, xung phải đi vòng qua cơ tim, chậm hơn nhiều."
+  },
+  {
+   "id": "02-1",
+   "text": "Thất bên bị block khử cực sau, nên QRS rộng, từ không phẩy mười hai giây trở lên."
+  },
+  {
+   "id": "02-2",
+   "text": "Phần khử cực muộn hướng về phía thất bị block."
+  },
+  {
+   "id": "02-3",
+   "text": "Vì vậy, hãy nhìn vê một ở bên phải, và vê sáu ở bên trái."
   },
   {
    "id": "03-0",
-   "text": "Ba, Mô-bít hai: PR cố định, đang yên bỗng rơi."
+   "text": "Trạm hai, block nhánh phải. Thất phải khử cực muộn."
+  },
+  {
+   "id": "03-1",
+   "text": "Ở vê một và vê hai, phức bộ có dạng r s R phẩy, giống tai thỏ, với sóng R phẩy muộn hướng lên."
+  },
+  {
+   "id": "03-2",
+   "text": "Ở chuyển đạo một và vê sáu, sóng S rộng và kéo dài, trên bốn mươi mi li giây, hoặc dài hơn sóng R."
+  },
+  {
+   "id": "03-3",
+   "text": "QRS từ không phẩy mười hai giây trở lên, và thời gian đỉnh R ở vê năm, vê sáu vẫn bình thường."
+  },
+  {
+   "id": "03-4",
+   "text": "Mẹo: vê một hướng lên, nghĩ ngay block nhánh phải."
   },
   {
    "id": "04-0",
-   "text": "Bốn, block độ ba: P đi đường P, QRS đi đường QRS, nhĩ nhanh hơn thất."
+   "text": "Block nhánh phải có thể gặp ở người khỏe mạnh."
+  },
+  {
+   "id": "04-1",
+   "text": "Nó cũng gặp trong thông liên nhĩ, tăng áp phổi, thuyên tắc phổi, và bệnh tim thiếu máu cục bộ."
+  },
+  {
+   "id": "04-2",
+   "text": "Khi block nhánh phải mới xuất hiện, cần đối chiếu với bệnh cảnh lâm sàng."
+  },
+  {
+   "id": "04-3",
+   "text": "Lưu ý, block nhánh phải không che lấp đáng kể việc đánh giá nhồi máu cơ tim."
   },
   {
    "id": "05-0",
-   "text": "Nhắc lại nhé: tìm P, đo PR, xem rơi."
+   "text": "Trạm ba, block nhánh trái. Thất trái khử cực muộn."
+  },
+  {
+   "id": "05-1",
+   "text": "Vách liên thất khử cực ngược chiều, từ phải sang trái, nên mất sóng q nhỏ ở chuyển đạo một, vê năm và vê sáu."
+  },
+  {
+   "id": "05-2",
+   "text": "Ở vê một, phức bộ QS hoặc rS sâu và rộng, hướng xuống."
+  },
+  {
+   "id": "05-3",
+   "text": "Ở chuyển đạo một, a-vê-lờ, vê năm, vê sáu, sóng R rộng, có khấc hoặc dẹt đỉnh, giống chữ M."
+  },
+  {
+   "id": "05-4",
+   "text": "QRS từ không phẩy mười hai giây trở lên, và thời gian đỉnh R ở vê năm, vê sáu trên sáu mươi mi li giây."
+  },
+  {
+   "id": "05-5",
+   "text": "Mẹo: vê một hướng xuống, nghĩ ngay block nhánh trái."
   },
   {
    "id": "06-0",
-   "text": "Lưu lại để ôn, và xem bài đầy đủ trên kênh nhé."
+   "text": "Block nhánh trái thường gợi ý có bệnh tim thực thể."
+  },
+  {
+   "id": "06-1",
+   "text": "Hay gặp trong tăng huyết áp, bệnh mạch vành, bệnh cơ tim, và hẹp van động mạch chủ."
+  },
+  {
+   "id": "06-2",
+   "text": "Block nhánh trái làm khó chẩn đoán nhồi máu cơ tim và phì đại thất trái trên điện tâm đồ."
+  },
+  {
+   "id": "06-3",
+   "text": "Khi nghi nhồi máu trên nền block nhánh trái, cần dùng tiêu chuẩn Sgát-bô-sa, sẽ học ở bài sau."
+  },
+  {
+   "id": "07-0",
+   "text": "So sánh nhanh, chỉ cần nhìn vê một và vê sáu."
+  },
+  {
+   "id": "07-1",
+   "text": "Block nhánh phải: vê một có R phẩy hướng lên, vê sáu có S rộng."
+  },
+  {
+   "id": "07-2",
+   "text": "Block nhánh trái: vê một hướng xuống, vê sáu có R rộng có khấc và mất sóng q."
+  },
+  {
+   "id": "07-3",
+   "text": "Mẹo nhớ như cần xi-nhan xe hơi: gạt lên là rẽ phải, gạt xuống là rẽ trái."
+  },
+  {
+   "id": "08-0",
+   "text": "Trạm bốn. Block nhánh không hoàn toàn có hình dạng tương tự, nhưng QRS chỉ từ không phẩy mười một đến không phẩy mười hai giây."
+  },
+  {
+   "id": "08-1",
+   "text": "Block nhánh phải không hoàn toàn khá thường gặp, và thường lành tính."
+  },
+  {
+   "id": "08-2",
+   "text": "Rối loạn dẫn truyền trong thất không đặc hiệu: QRS trên không phẩy mười một giây, nhưng không đủ tiêu chuẩn block nhánh phải hay trái."
+  },
+  {
+   "id": "08-3",
+   "text": "Có thể gặp trong bệnh cơ tim, do thuốc chống loạn nhịp, hoặc tăng kali máu."
+  },
+  {
+   "id": "09-0",
+   "text": "Trạm năm, block phân nhánh. Lúc này QRS không rộng, mà hãy nhìn trục."
+  },
+  {
+   "id": "09-1",
+   "text": "Block phân nhánh trái trước: trục lệch trái, từ âm bốn mươi lăm đến âm chín mươi độ."
+  },
+  {
+   "id": "09-2",
+   "text": "Ở a-vê-lờ có dạng q R, ở chuyển đạo hai, ba và a-vê-ép có dạng r S."
+  },
+  {
+   "id": "09-3",
+   "text": "QRS dưới không phẩy mười hai giây. Đây là block phân nhánh thường gặp nhất."
+  },
+  {
+   "id": "10-0",
+   "text": "Block phân nhánh trái sau: trục lệch phải, từ cộng chín mươi đến cộng một trăm tám mươi độ."
+  },
+  {
+   "id": "10-1",
+   "text": "Ở chuyển đạo một và a-vê-lờ có dạng r S, ở chuyển đạo ba và a-vê-ép có dạng q R."
+  },
+  {
+   "id": "10-2",
+   "text": "Dạng này hiếm gặp, và chỉ chẩn đoán khi đã loại trừ các nguyên nhân trục lệch phải khác."
+  },
+  {
+   "id": "10-3",
+   "text": "Ví dụ như phì đại thất phải, thuyên tắc phổi, bệnh phổi mạn tính, hay người gầy cao."
+  },
+  {
+   "id": "11-0",
+   "text": "Khi có nhiều rối loạn phối hợp, hãy mô tả từng thành phần."
+  },
+  {
+   "id": "11-1",
+   "text": "Thường gặp nhất là block nhánh phải kèm block phân nhánh trái trước."
+  },
+  {
+   "id": "11-2",
+   "text": "Nếu kèm PR dài, hãy ghi rõ: block nhánh phải, block phân nhánh trái trước, và block nhĩ thất độ một."
+  },
+  {
+   "id": "11-3",
+   "text": "Khuyến cáo chuẩn hoá điện tâm đồ của Hoa Kỳ không khuyến khích dùng thuật ngữ block hai nhánh hay block ba nhánh."
+  },
+  {
+   "id": "12-0",
+   "text": "Trạm sáu, biến đổi ét tê và sóng T thứ phát."
+  },
+  {
+   "id": "12-1",
+   "text": "Trong block nhánh, đoạn ét tê và sóng T ngược chiều với phần cuối của QRS. Đó là điều bình thường."
+  },
+  {
+   "id": "12-2",
+   "text": "Block nhánh phải có T đảo ở vê một đến vê ba. Block nhánh trái có ét tê chênh lên ở vê một đến vê ba, và chênh xuống ở vê năm, vê sáu."
+  },
+  {
+   "id": "12-3",
+   "text": "Đừng nhầm với thiếu máu. Chính ét tê cùng chiều với QRS mới là dấu hiệu đáng ngờ."
+  },
+  {
+   "id": "13-0",
+   "text": "Trạm bảy, ôn tập. Gom lại thành một bảng."
+  },
+  {
+   "id": "13-1",
+   "text": "Block nhánh phải: QRS rộng, vê một có hình tai thỏ, S rộng ở chuyển đạo một và vê sáu."
+  },
+  {
+   "id": "13-2",
+   "text": "Block nhánh trái: QRS rộng, vê một hướng xuống, vê sáu có R rộng có khấc, mất sóng q."
+  },
+  {
+   "id": "13-3",
+   "text": "Block phân nhánh trái trước: trục từ âm bốn mươi lăm đến âm chín mươi độ, q R ở a-vê-lờ."
+  },
+  {
+   "id": "13-4",
+   "text": "Block phân nhánh trái sau: trục từ cộng chín mươi đến cộng một trăm tám mươi độ, sau khi loại trừ nguyên nhân khác."
+  },
+  {
+   "id": "14-0",
+   "text": "Thực hành: hãy đọc hai điện tâm đồ."
+  },
+  {
+   "id": "14-1",
+   "text": "Điện tâm đồ một: QRS không phẩy mười bốn giây, vê một dạng r S R phẩy, S rộng ở chuyển đạo một và vê sáu. Đây là block nhánh phải."
+  },
+  {
+   "id": "14-2",
+   "text": "Thêm vào đó, trục âm sáu mươi độ, q R ở a-vê-lờ, nên có kèm block phân nhánh trái trước."
+  },
+  {
+   "id": "14-3",
+   "text": "Điện tâm đồ hai: QRS không phẩy mười sáu giây, vê một dạng QS, vê sáu có R rộng có khấc và mất sóng q. Đây là block nhánh trái."
+  },
+  {
+   "id": "14-4",
+   "text": "Ét tê và sóng T ngược chiều QRS, là biến đổi thứ phát, phù hợp với block nhánh."
+  },
+  {
+   "id": "15-0",
+   "text": "Cuối cùng, năm điều cần nhớ."
+  },
+  {
+   "id": "15-1",
+   "text": "Một, QRS từ không phẩy mười hai giây, hãy nghĩ block nhánh, và nhìn vê một, vê sáu."
+  },
+  {
+   "id": "15-2",
+   "text": "Hai, vê một hướng lên, hình tai thỏ, là block nhánh phải."
+  },
+  {
+   "id": "15-3",
+   "text": "Ba, vê một hướng xuống, vê sáu R rộng có khấc, mất q, là block nhánh trái."
+  },
+  {
+   "id": "15-4",
+   "text": "Bốn, block phân nhánh: QRS hẹp, nhìn trục. Phân nhánh trái trước lệch trái, phân nhánh trái sau lệch phải."
+  },
+  {
+   "id": "15-5",
+   "text": "Năm, ét tê ngược chiều QRS là thứ phát, cùng chiều mới đáng ngờ."
+  },
+  {
+   "id": "15-6",
+   "text": "Cảm ơn bạn đã theo dõi. Hẹn gặp lại ở bài tiếp theo."
   }
  ]
 }
