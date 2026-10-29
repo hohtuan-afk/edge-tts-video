@@ -1,0 +1,457 @@
+{
+ "fps": 30,
+ "total": 11054,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 500,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.09,
+     "text": "Block nhánh & Block phân nhánh trên điện tâm đồ"
+    },
+    {
+     "start": 4.94,
+     "dur": 3.78,
+     "text": "QRS rộng: nhìn V1 và V6"
+    },
+    {
+     "start": 9.069,
+     "dur": 6.624,
+     "text": "V1 hướng LÊN → nhánh PHẢI · V1 hướng XUỐNG → nhánh TRÁI · phân nhánh → nhìn TRỤC"
+    }
+   ]
+  },
+  {
+   "from": 500,
+   "dur": 617,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.044,
+     "text": "Trạm 1 · NGUYÊN TẮC — bó His chia: nhánh phải + nhánh trái."
+    },
+    {
+     "start": 4.894,
+     "dur": 3.206,
+     "text": "Nhánh trái chia tiếp: phân nhánh trái trước + phân nhánh trái sau."
+    },
+    {
+     "start": 8.45,
+     "dur": 4.912,
+     "text": "Bình thường: hai thất khử cực gần như cùng lúc → QRS hẹp < 0,12 s."
+    },
+    {
+     "start": 13.713,
+     "dur": 5.829,
+     "text": "Vách liên thất khử cực đầu tiên, từ TRÁI sang PHẢI → r nhỏ ở V1, q nhỏ ở V6."
+    }
+   ]
+  },
+  {
+   "from": 1117,
+   "dur": 490,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.514,
+     "text": "Một nhánh bị block → xung đi VÒNG qua cơ tim, chậm."
+    },
+    {
+     "start": 4.364,
+     "dur": 4.645,
+     "text": "Thất bên bị block khử cực SAU → QRS RỘNG ≥ 0,12 s."
+    },
+    {
+     "start": 9.359,
+     "dur": 2.124,
+     "text": "Phần khử cực muộn quay về phía thất bị block."
+    },
+    {
+     "start": 11.833,
+     "dur": 3.479,
+     "text": "Vì vậy: nhìn V1 (bên phải) và V6 (bên trái)."
+    }
+   ]
+  },
+  {
+   "from": 1607,
+   "dur": 805,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.791,
+     "text": "Trạm 2 · BLOCK NHÁNH PHẢI — thất phải khử cực muộn."
+    },
+    {
+     "start": 4.641,
+     "dur": 6.094,
+     "text": "V1 – V2: rsR' hoặc rSR' (“tai thỏ”), sóng R' muộn hướng LÊN."
+    },
+    {
+     "start": 11.085,
+     "dur": 5.706,
+     "text": "DI, V6: sóng S rộng, “dính” (> 40 ms hoặc dài hơn R)."
+    },
+    {
+     "start": 17.14,
+     "dur": 5.412,
+     "text": "QRS ≥ 0,12 s · thời gian đỉnh R ở V5 – V6 bình thường."
+    },
+    {
+     "start": 22.902,
+     "dur": 2.952,
+     "text": "Mẹo: V1 hướng LÊN → nhánh PHẢI."
+    }
+   ]
+  },
+  {
+   "from": 2412,
+   "dur": 521,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.219,
+     "text": "Block nhánh phải có thể gặp ở người khỏe mạnh."
+    },
+    {
+     "start": 3.069,
+     "dur": 5.128,
+     "text": "Bệnh liên quan: thông liên nhĩ, tăng áp phổi, thuyên tắc phổi, bệnh tim thiếu máu."
+    },
+    {
+     "start": 8.547,
+     "dur": 3.451,
+     "text": "Block nhánh phải mới xuất hiện → đối chiếu lâm sàng."
+    },
+    {
+     "start": 12.348,
+     "dur": 3.996,
+     "text": "Block nhánh phải ít che lấp chẩn đoán nhồi máu cơ tim."
+    }
+   ]
+  },
+  {
+   "from": 2933,
+   "dur": 963,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.801,
+     "text": "Trạm 3 · BLOCK NHÁNH TRÁI — thất trái khử cực muộn."
+    },
+    {
+     "start": 4.651,
+     "dur": 5.955,
+     "text": "Vách khử cực ngược, từ PHẢI sang TRÁI → MẤT q nhỏ ở DI, V5, V6."
+    },
+    {
+     "start": 10.956,
+     "dur": 3.611,
+     "text": "V1: QS hoặc rS sâu, rộng — hướng XUỐNG."
+    },
+    {
+     "start": 14.917,
+     "dur": 6.746,
+     "text": "DI, aVL, V5, V6: R rộng, có khấc hoặc dẹt đỉnh (hình “M”)."
+    },
+    {
+     "start": 22.013,
+     "dur": 5.844,
+     "text": "QRS ≥ 0,12 s · thời gian đỉnh R ở V5 – V6 > 60 ms."
+    },
+    {
+     "start": 28.207,
+     "dur": 2.928,
+     "text": "Mẹo: V1 hướng XUỐNG → nhánh TRÁI."
+    }
+   ]
+  },
+  {
+   "from": 3896,
+   "dur": 566,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.466,
+     "text": "Block nhánh trái thường gợi ý bệnh tim thực thể."
+    },
+    {
+     "start": 3.316,
+     "dur": 4.435,
+     "text": "Tăng huyết áp, bệnh mạch vành, bệnh cơ tim, hẹp van động mạch chủ."
+    },
+    {
+     "start": 8.1,
+     "dur": 4.466,
+     "text": "Block nhánh trái che lấp chẩn đoán nhồi máu cơ tim và phì đại thất trái."
+    },
+    {
+     "start": 12.916,
+     "dur": 4.937,
+     "text": "Nghi nhồi máu trên nền block nhánh trái → tiêu chuẩn Sgarbossa (bài sau)."
+    }
+   ]
+  },
+  {
+   "from": 4462,
+   "dur": 544,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.473,
+     "text": "So sánh nhanh: V1 và V6."
+    },
+    {
+     "start": 3.323,
+     "dur": 4.127,
+     "text": "Nhánh PHẢI: V1 rSR' hướng lên · V6 S rộng."
+    },
+    {
+     "start": 7.801,
+     "dur": 4.661,
+     "text": "Nhánh TRÁI: V1 QS/rS hướng xuống · V6 R rộng có khấc, mất q."
+    },
+    {
+     "start": 12.811,
+     "dur": 4.342,
+     "text": "Mẹo xi-nhan: cần gạt LÊN = rẽ PHẢI · cần gạt XUỐNG = rẽ TRÁI."
+    }
+   ]
+  },
+  {
+   "from": 5006,
+   "dur": 692,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 7.079,
+     "text": "Trạm 4 · KHÔNG HOÀN TOÀN — hình dạng giống, QRS 0,11 – 0,12 s."
+    },
+    {
+     "start": 7.929,
+     "dur": 3.246,
+     "text": "Block nhánh phải không hoàn toàn: thường gặp, thường lành tính."
+    },
+    {
+     "start": 11.525,
+     "dur": 6.345,
+     "text": "Rối loạn dẫn truyền trong thất KHÔNG ĐẶC HIỆU: QRS > 0,11 s nhưng không đủ tiêu chuẩn nhánh phải hay trái."
+    },
+    {
+     "start": 18.22,
+     "dur": 3.84,
+     "text": "Gặp trong bệnh cơ tim, thuốc chống loạn nhịp, tăng kali máu."
+    }
+   ]
+  },
+  {
+   "from": 5698,
+   "dur": 634,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 5.04,
+     "text": "Trạm 5 · BLOCK PHÂN NHÁNH — QRS KHÔNG rộng, nhìn TRỤC."
+    },
+    {
+     "start": 5.89,
+     "dur": 4.282,
+     "text": "Block phân nhánh trái trước: trục lệch trái −45° đến −90°."
+    },
+    {
+     "start": 10.522,
+     "dur": 4.862,
+     "text": "aVL: dạng qR · DII, DIII, aVF: dạng rS."
+    },
+    {
+     "start": 15.735,
+     "dur": 4.422,
+     "text": "QRS < 0,12 s · thường gặp nhất trong các block phân nhánh."
+    }
+   ]
+  },
+  {
+   "from": 6332,
+   "dur": 614,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.566,
+     "text": "Block phân nhánh trái sau: trục lệch phải +90° đến +180°."
+    },
+    {
+     "start": 5.416,
+     "dur": 4.844,
+     "text": "DI, aVL: dạng rS · DIII, aVF: dạng qR."
+    },
+    {
+     "start": 10.61,
+     "dur": 3.799,
+     "text": "Hiếm gặp · phải LOẠI TRỪ nguyên nhân trục lệch phải khác."
+    },
+    {
+     "start": 14.759,
+     "dur": 4.685,
+     "text": "Vd. phì đại thất phải, thuyên tắc phổi, bệnh phổi mạn, người gầy cao."
+    }
+   ]
+  },
+  {
+   "from": 6946,
+   "dur": 578,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.702,
+     "text": "Block phối hợp: mô tả TỪNG thành phần."
+    },
+    {
+     "start": 3.552,
+     "dur": 2.998,
+     "text": "Thường gặp: block nhánh phải + block phân nhánh trái trước."
+    },
+    {
+     "start": 6.901,
+     "dur": 6.104,
+     "text": "Nếu kèm PR dài: ghi rõ “block nhánh phải + block phân nhánh trái trước + block nhĩ thất độ I”."
+    },
+    {
+     "start": 13.355,
+     "dur": 4.923,
+     "text": "AHA/ACCF/HRS không khuyến cáo dùng thuật ngữ “block hai nhánh”, “block ba nhánh”."
+    }
+   ]
+  },
+  {
+   "from": 7524,
+   "dur": 733,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.527,
+     "text": "Trạm 6 · BIẾN ĐỔI ST–T THỨ PHÁT."
+    },
+    {
+     "start": 3.377,
+     "dur": 5.895,
+     "text": "Trong block nhánh: ST–T NGƯỢC chiều phần cuối QRS — là bình thường."
+    },
+    {
+     "start": 9.622,
+     "dur": 8.381,
+     "text": "Block nhánh phải: T đảo ở V1 – V3 · block nhánh trái: ST chênh lên V1 – V3, ST chênh xuống V5 – V6."
+    },
+    {
+     "start": 18.353,
+     "dur": 5.101,
+     "text": "Đừng nhầm với thiếu máu cơ tim — ST–T CÙNG chiều QRS mới đáng ngờ."
+    }
+   ]
+  },
+  {
+   "from": 8257,
+   "dur": 840,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.257,
+     "text": "Trạm 7 · ÔN TẬP — bảng block nhánh & phân nhánh."
+    },
+    {
+     "start": 4.107,
+     "dur": 5.557,
+     "text": "Block nhánh phải: QRS ≥ 0,12 s · V1 rSR' (tai thỏ) · S rộng DI, V6."
+    },
+    {
+     "start": 10.014,
+     "dur": 5.974,
+     "text": "Block nhánh trái: QRS ≥ 0,12 s · V1 hướng xuống · V6 R rộng khấc, mất q."
+    },
+    {
+     "start": 16.339,
+     "dur": 5.026,
+     "text": "Phân nhánh trái trước: trục −45° đến −90° · qR aVL."
+    },
+    {
+     "start": 21.714,
+     "dur": 5.286,
+     "text": "Phân nhánh trái sau: trục +90° đến +180° · loại trừ nguyên nhân khác."
+    }
+   ]
+  },
+  {
+   "from": 9097,
+   "dur": 941,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 1.823,
+     "text": "Thực hành: đọc 2 ECG."
+    },
+    {
+     "start": 2.673,
+     "dur": 9.023,
+     "text": "ECG 1: QRS 0,14 s · V1 rSR' · S rộng DI, V6 → block nhánh phải ✓"
+    },
+    {
+     "start": 12.045,
+     "dur": 5.489,
+     "text": "… + trục −60°, qR aVL → kèm block phân nhánh trái trước ✓"
+    },
+    {
+     "start": 17.884,
+     "dur": 7.619,
+     "text": "ECG 2: QRS 0,16 s · V1 QS · V6 R rộng khấc, mất q → block nhánh trái ✓"
+    },
+    {
+     "start": 25.853,
+     "dur": 4.487,
+     "text": "ST–T ngược chiều QRS → thứ phát, phù hợp block nhánh ✓"
+    }
+   ]
+  },
+  {
+   "from": 10038,
+   "dur": 1016,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 1.628,
+     "text": "5 điều cần nhớ"
+    },
+    {
+     "start": 2.478,
+     "dur": 5.201,
+     "text": "① QRS ≥ 0,12 s → nghĩ block nhánh · nhìn V1 và V6"
+    },
+    {
+     "start": 8.029,
+     "dur": 3.732,
+     "text": "② V1 hướng LÊN (tai thỏ) → nhánh PHẢI"
+    },
+    {
+     "start": 12.111,
+     "dur": 5.161,
+     "text": "③ V1 hướng XUỐNG, V6 R rộng khấc, mất q → nhánh TRÁI"
+    },
+    {
+     "start": 17.622,
+     "dur": 7.18,
+     "text": "④ Phân nhánh: QRS hẹp, nhìn TRỤC (trái trước: lệch trái · trái sau: lệch phải)"
+    },
+    {
+     "start": 25.152,
+     "dur": 3.839,
+     "text": "⑤ ST–T ngược chiều QRS là thứ phát — cùng chiều mới đáng ngờ"
+    },
+    {
+     "start": 29.34,
+     "dur": 3.539,
+     "text": "Cảm ơn bạn đã theo dõi!"
+    }
+   ]
+  }
+ ]
+}
