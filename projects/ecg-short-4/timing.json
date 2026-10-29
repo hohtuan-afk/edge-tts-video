@@ -1,0 +1,79 @@
+[
+ {
+  "orig": 6.0,
+  "dur": 8.52,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 7.835,
+    "text": "QRS rộng? Nhìn V1 là biết block nhánh nào!"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 7.4,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 6.719,
+    "text": "① Nhánh PHẢI: V1 hướng LÊN — rSR′ “tai thỏ”"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 6.8,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 6.105,
+    "text": "② Nhánh TRÁI: V1 hướng XUỐNG · V6 R khấc, mất q"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 6.56,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 5.851,
+    "text": "③ Phân nhánh trái TRƯỚC: trục lệch TRÁI −45° → −90°"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 6.44,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 5.721,
+    "text": "④ Phân nhánh trái SAU: trục lệch PHẢI +90° → +180°"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.96,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 4.243,
+    "text": "V1 LÊN → PHẢI · V1 XUỐNG → TRÁI · Phân nhánh → TRỤC"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.4,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 2.475,
+    "text": "Lưu lại để ôn · xem bài đầy đủ trên kênh!"
+   }
+  ]
+ }
+]
