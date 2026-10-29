@@ -365,10 +365,10 @@ const EVO: Lead[] = [
 const EVO_L: [string, string, string][] = [['Vài phút đầu', 'T tối cấp', CI], ['Tiếp theo', 'ST chênh lên · “bia mộ”', CJ], ['Sau vài giờ', 'Q hoại tử · R giảm', '#7C3AED'], ['Sau đó', 'ST về · T đảo', CF], ['Lâu dài', 'Q tồn tại', CN]];
 const Evolution: React.FC = () => {
   const t = useT();
-  const i = Math.max(0, Math.min(4, Math.floor(t / 2)));
-  const k = Math.max(0, Math.min(1, (t - 2 * i) / 0.9));
-  const stage = t < 2 ? lerpLead(EVO[0], EVO[1], Math.max(0, Math.min(1, t / 2))) : i >= 5 ? EVO[5] : lerpLead(EVO[i], EVO[i + 1], k);
-  const cur = Math.max(0, Math.min(4, Math.floor((t + 0.3) / 2) - 1));
+  const i = Math.max(1, Math.min(5, Math.floor(t / 2)));
+  const k = t < 2 ? 0 : Math.max(0, Math.min(1, (t - 2 * i) / 0.9));
+  const stage = lerpLead(EVO[i - 1], EVO[i], k);
+  const cur = i - 1;
   return (
     <DeskBg>
       <Head t={t}>Tiến triển theo thời gian</Head>
