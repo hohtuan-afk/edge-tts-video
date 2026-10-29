@@ -1,35 +1,287 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+12%",
+ "rate": "+8%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "QRS rộng? Nhìn vê một là biết block nhánh nào. Mẹo như cần xi-nhan: gạt lên rẽ phải, gạt xuống rẽ trái."
+   "text": "Nhồi máu cơ tim ét tê chênh lên trên điện tâm đồ, nhận diện và định khu."
+  },
+  {
+   "id": "00-1",
+   "text": "Thần chú của bài hôm nay: chênh, soi gương, định khu."
+  },
+  {
+   "id": "00-2",
+   "text": "Mục tiêu là nhìn một điện tâm đồ mười hai chuyển đạo, nói được vùng nào đang nhồi máu, và động mạch nào là thủ phạm."
   },
   {
    "id": "01-0",
-   "text": "Một, block nhánh phải: vê một hướng lên, dạng r S R phẩy như tai thỏ. Vê sáu có S rộng."
+   "text": "Trạm một. Khi một động mạch vành bị tắc, quanh ổ nhồi máu có ba vùng, mỗi vùng để lại một dấu ấn trên điện tâm đồ."
+  },
+  {
+   "id": "01-1",
+   "text": "Vùng thiếu máu làm thay đổi sóng T, lúc đầu là sóng T tối cấp, về sau sóng T đảo."
+  },
+  {
+   "id": "01-2",
+   "text": "Vùng tổn thương làm đoạn ét tê chênh lên."
+  },
+  {
+   "id": "01-3",
+   "text": "Vùng hoại tử tạo ra sóng Q hoại tử."
   },
   {
    "id": "02-0",
-   "text": "Hai, block nhánh trái: vê một hướng xuống. Vê sáu có R rộng có khấc, và mất sóng q."
+   "text": "Trạm hai, tiêu chuẩn. Đoạn ét tê được đo tại điểm J, so với đường đẳng điện."
+  },
+  {
+   "id": "02-1",
+   "text": "Điểm J là nơi phức bộ QRS kết thúc và đoạn ét tê bắt đầu."
+  },
+  {
+   "id": "02-2",
+   "text": "Đường đẳng điện lấy ở đoạn PR, hoặc đoạn TP ngay trước đó. Một ô nhỏ bằng một mi li mét, tức không phẩy một mi li vôn."
   },
   {
    "id": "03-0",
-   "text": "Ba, block phân nhánh trái trước: QRS không rộng, trục lệch trái, từ âm bốn mươi lăm đến âm chín mươi độ."
+   "text": "Nghĩ đến nhồi máu cơ tim ét tê chênh lên khi có ét tê chênh lên mới, ở ít nhất hai chuyển đạo liên tiếp."
+  },
+  {
+   "id": "03-1",
+   "text": "Ở vê hai và vê ba, ngưỡng là hai mi li mét ở nam từ bốn mươi tuổi, hai phẩy năm mi li mét ở nam dưới bốn mươi tuổi, và một phẩy năm mi li mét ở nữ."
+  },
+  {
+   "id": "03-2",
+   "text": "Ở các chuyển đạo khác, ngưỡng là một mi li mét."
+  },
+  {
+   "id": "03-3",
+   "text": "Vê hai và vê ba có ngưỡng cao hơn, vì ở người bình thường, đoạn ét tê tại đây có thể hơi chênh lên sẵn."
+  },
+  {
+   "id": "03-4",
+   "text": "Lưu ý, các ngưỡng này không áp dụng khi có phì đại thất trái hoặc block nhánh trái."
   },
   {
    "id": "04-0",
-   "text": "Bốn, block phân nhánh trái sau: trục lệch phải, từ chín mươi đến một trăm tám mươi độ, nhớ loại trừ nguyên nhân khác."
+   "text": "Hai chuyển đạo liên tiếp là hai chuyển đạo cùng nhìn vào một vùng tim."
+  },
+  {
+   "id": "04-1",
+   "text": "Nhóm dưới gồm chuyển đạo hai, ba, a-vê-ép. Nhóm bên gồm chuyển đạo một, a-vê-lờ, vê năm, vê sáu. Ở nhóm trước, các chuyển đạo từ vê một đến vê sáu nằm kề nhau."
+  },
+  {
+   "id": "04-2",
+   "text": "Ví dụ, ét tê chênh lên ở chuyển đạo ba và vê hai thì không phải hai chuyển đạo liên tiếp."
   },
   {
    "id": "05-0",
-   "text": "Nhắc lại nhé: vê một lên là phải, vê một xuống là trái, phân nhánh thì nhìn trục."
+   "text": "Trạm ba, soi gương. Khi một vùng có ét tê chênh lên, chuyển đạo nhìn từ phía đối diện sẽ thấy ét tê chênh xuống."
+  },
+  {
+   "id": "05-1",
+   "text": "Giống như nhìn một vật từ phía trước và từ phía sau, cùng một biến đổi nhưng ngược chiều."
+  },
+  {
+   "id": "05-2",
+   "text": "Vùng dưới, gồm chuyển đạo hai, ba, a-vê-ép, soi gương với vùng bên cao, gồm chuyển đạo một và a-vê-lờ."
+  },
+  {
+   "id": "05-3",
+   "text": "Thành sau soi gương với vê một đến vê ba."
   },
   {
    "id": "06-0",
-   "text": "Lưu lại để ôn, và xem bài đầy đủ trên kênh nhé."
+   "text": "Khi có thay đổi soi gương, khả năng ét tê chênh lên là do nhồi máu cao hơn."
+  },
+  {
+   "id": "06-1",
+   "text": "Ngược lại, viêm màng ngoài tim hay tái cực sớm thường cho ét tê chênh lên lan toả, và thường không có soi gương, trừ ở a-vê-rờ và vê một."
+  },
+  {
+   "id": "06-2",
+   "text": "Đôi khi thay đổi soi gương xuất hiện sớm hơn, và rõ hơn cả ét tê chênh lên."
+  },
+  {
+   "id": "07-0",
+   "text": "Trạm bốn, tiến triển. Điện tâm đồ nhồi máu thay đổi theo thời gian."
+  },
+  {
+   "id": "07-1",
+   "text": "Trong vài phút đầu, sóng T tối cấp, cao, rộng đáy và cân đối."
+  },
+  {
+   "id": "07-2",
+   "text": "Tiếp theo, đoạn ét tê chênh lên, có thể kéo cả sóng T lên thành một khối, gọi là dạng bia mộ."
+  },
+  {
+   "id": "07-3",
+   "text": "Sau vài giờ, sóng Q hoại tử xuất hiện, sóng R giảm dần."
+  },
+  {
+   "id": "07-4",
+   "text": "Sau đó, đoạn ét tê về dần đường đẳng điện, sóng T đảo."
+  },
+  {
+   "id": "07-5",
+   "text": "Sóng Q thường tồn tại lâu dài. Nếu ét tê vẫn chênh lên kéo dài nhiều tuần, cần nghĩ đến phình thất."
+  },
+  {
+   "id": "08-0",
+   "text": "Trạm năm, định khu. Chuyển đạo nào có ét tê chênh lên, vùng tim đó đang nhồi máu."
+  },
+  {
+   "id": "08-1",
+   "text": "Mỗi vùng lại gắn với một động mạch thủ phạm thường gặp."
+  },
+  {
+   "id": "08-2",
+   "text": "Có ba động mạch chính: động mạch vành phải, động mạch liên thất trước, và động mạch mũ."
+  },
+  {
+   "id": "09-0",
+   "text": "Vùng dưới: ét tê chênh lên ở chuyển đạo hai, ba và a-vê-ép."
+  },
+  {
+   "id": "09-1",
+   "text": "Thay đổi soi gương là ét tê chênh xuống ở a-vê-lờ, có thể kèm chuyển đạo một."
+  },
+  {
+   "id": "09-2",
+   "text": "Thủ phạm thường là động mạch vành phải, ít gặp hơn là động mạch mũ."
+  },
+  {
+   "id": "09-3",
+   "text": "Nếu ét tê ở chuyển đạo ba chênh cao hơn chuyển đạo hai, nghĩ nhiều đến động mạch vành phải."
+  },
+  {
+   "id": "10-0",
+   "text": "Vùng trước có thủ phạm là động mạch liên thất trước."
+  },
+  {
+   "id": "10-1",
+   "text": "Vùng vách: ét tê chênh lên ở vê một và vê hai."
+  },
+  {
+   "id": "10-2",
+   "text": "Vùng trước vách: từ vê một đến vê bốn."
+  },
+  {
+   "id": "10-3",
+   "text": "Vùng trước rộng: từ vê một đến vê sáu, kèm chuyển đạo một và a-vê-lờ, thường do tắc đoạn gần của động mạch liên thất trước."
+  },
+  {
+   "id": "10-4",
+   "text": "Vùng ét tê chênh lên càng rộng, lượng cơ tim bị đe doạ càng nhiều."
+  },
+  {
+   "id": "11-0",
+   "text": "Vùng bên cao: chuyển đạo một và a-vê-lờ. Vùng bên: vê năm và vê sáu."
+  },
+  {
+   "id": "11-1",
+   "text": "Thủ phạm là động mạch mũ, hoặc nhánh chéo của động mạch liên thất trước."
+  },
+  {
+   "id": "11-2",
+   "text": "Thay đổi soi gương của vùng bên cao là ét tê chênh xuống ở chuyển đạo ba và a-vê-ép."
+  },
+  {
+   "id": "12-0",
+   "text": "Trạm sáu. Mười hai chuyển đạo thông thường không nhìn trực tiếp vào thành sau."
+  },
+  {
+   "id": "12-1",
+   "text": "Hãy nghi ngờ khi thấy ét tê chênh xuống ở vê một đến vê ba, kèm sóng R cao và sóng T dương."
+  },
+  {
+   "id": "12-2",
+   "text": "Nếu lật ngược hình ảnh vê một đến vê ba, ta thấy chính là ét tê chênh lên nhìn từ phía sau."
+  },
+  {
+   "id": "12-3",
+   "text": "Để khẳng định, gắn thêm vê bảy đến vê chín ở lưng. Ét tê chênh lên từ không phẩy năm mi li mét là có ý nghĩa."
+  },
+  {
+   "id": "13-0",
+   "text": "Thất phải. Hãy nghĩ đến nhồi máu thất phải khi bệnh nhân có nhồi máu vùng dưới."
+  },
+  {
+   "id": "13-1",
+   "text": "Gắn thêm các chuyển đạo bên phải ngực. Ét tê chênh lên ở vê bốn phải từ không phẩy năm mi li mét là có ý nghĩa."
+  },
+  {
+   "id": "13-2",
+   "text": "Thủ phạm thường là đoạn gần của động mạch vành phải."
+  },
+  {
+   "id": "13-3",
+   "text": "Cần ghi nhận sớm, vì nhồi máu thất phải ảnh hưởng đến xử trí, nhất là phải thận trọng với thuốc giãn mạch."
+  },
+  {
+   "id": "14-0",
+   "text": "Trạm bảy, ôn tập. Cùng xem lại bảng định khu."
+  },
+  {
+   "id": "14-1",
+   "text": "Vùng dưới, hai, ba, a-vê-ép, thường do động mạch vành phải. Vùng trước vách, vê một đến vê bốn, do động mạch liên thất trước."
+  },
+  {
+   "id": "14-2",
+   "text": "Vùng bên, một, a-vê-lờ, vê năm, vê sáu, do động mạch mũ hoặc nhánh chéo. Vùng trước rộng do động mạch liên thất trước đoạn gần."
+  },
+  {
+   "id": "14-3",
+   "text": "Thành sau, nhìn qua vê bảy đến vê chín, do động mạch mũ hoặc vành phải. Thất phải, nhìn qua vê bốn phải, do động mạch vành phải đoạn gần."
+  },
+  {
+   "id": "15-0",
+   "text": "Thực hành: đọc hai điện tâm đồ theo ba bước chênh, soi gương, định khu."
+  },
+  {
+   "id": "15-1",
+   "text": "Điện tâm đồ một: ét tê chênh lên ở hai, ba, a-vê-ép, chuyển đạo ba cao hơn hai, và ét tê chênh xuống ở a-vê-lờ."
+  },
+  {
+   "id": "15-2",
+   "text": "Kết luận: nhồi máu vùng dưới, nghĩ đến động mạch vành phải, và cần gắn thêm vê bốn phải."
+  },
+  {
+   "id": "15-3",
+   "text": "Điện tâm đồ hai: ét tê chênh lên từ vê một đến vê sáu, kèm một và a-vê-lờ, ét tê chênh xuống ở ba và a-vê-ép."
+  },
+  {
+   "id": "15-4",
+   "text": "Kết luận: nhồi máu vùng trước rộng, do động mạch liên thất trước đoạn gần."
+  },
+  {
+   "id": "16-0",
+   "text": "Năm điều cần nhớ."
+  },
+  {
+   "id": "16-1",
+   "text": "Một, đo ét tê tại điểm J, ở ít nhất hai chuyển đạo liên tiếp. Vê hai, vê ba có ngưỡng theo tuổi và giới, các chuyển đạo khác từ một mi li mét."
+  },
+  {
+   "id": "16-2",
+   "text": "Hai, luôn tìm thay đổi soi gương. Có soi gương, chẩn đoán nhồi máu càng chắc."
+  },
+  {
+   "id": "16-3",
+   "text": "Ba, nhớ chuỗi tiến triển: sóng T tối cấp, ét tê chênh lên, sóng Q, rồi sóng T đảo."
+  },
+  {
+   "id": "16-4",
+   "text": "Bốn, ét tê chênh ở đâu thì vùng đó nhồi máu, và suy ra động mạch thủ phạm."
+  },
+  {
+   "id": "16-5",
+   "text": "Năm, ét tê chênh xuống ở vê một đến vê ba thì nghĩ đến thành sau. Nhồi máu vùng dưới thì gắn thêm vê bốn phải."
+  },
+  {
+   "id": "16-6",
+   "text": "Bài sau, chúng ta sẽ học nhồi máu khi điện tâm đồ không điển hình, gồm các dạng tắc mạch cấp và tiêu chuẩn Sgát-bô-sa. Cảm ơn bạn đã theo dõi."
   }
  ]
 }
