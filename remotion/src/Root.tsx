@@ -16,6 +16,7 @@ import {Short3} from './lab/Short3';
 import {Short4} from './lab/Short4';
 import {Block, BLOCK_N} from './lab/Block';
 import {Bundle, BUNDLE_N} from './lab/Bundle';
+import {Infarct, INFARCT_N} from './lab/Infarct';
 import {Hyper, HYPER_DEMO_N} from './lab/Hyper';
 import {TableScene, TABLE_DUR} from './lab/Table';
 import {TableHand, TABLEHAND_DUR} from './lab/TableHand';
@@ -32,6 +33,8 @@ export const Root: React.FC = () => (
     <Composition id="Hyper" component={Hyper} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />
     <Composition id="HyperDemo" component={Hyper} durationInFrames={Math.max(30, data.scenes[Math.min(HYPER_DEMO_N, data.scenes.length) - 1].from + data.scenes[Math.min(HYPER_DEMO_N, data.scenes.length) - 1].dur)} fps={data.fps} width={1920} height={1080} />
     <Composition id="BlockDemo" component={Block} durationInFrames={Math.max(30, data.scenes[Math.min(BLOCK_N, data.scenes.length) - 1].from + data.scenes[Math.min(BLOCK_N, data.scenes.length) - 1].dur)} fps={data.fps} width={1920} height={1080} />
+    <Composition id="InfarctDemo" component={Infarct} durationInFrames={Math.max(30, data.scenes[Math.min(INFARCT_N, data.scenes.length) - 1].from + data.scenes[Math.min(INFARCT_N, data.scenes.length) - 1].dur)} fps={data.fps} width={1920} height={1080} />
+    <Composition id="InfarctFull" component={Infarct} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />
     <Composition id="BundleDemo" component={Bundle} durationInFrames={Math.max(30, data.scenes[Math.min(BUNDLE_N, data.scenes.length) - 1].from + data.scenes[Math.min(BUNDLE_N, data.scenes.length) - 1].dur)} fps={data.fps} width={1920} height={1080} />
     <Composition id="BundleFull" component={Bundle} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />
     <Composition id="BlockFull" component={Block} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />
