@@ -176,8 +176,8 @@ const MeasureJ: React.FC = () => {
               </g>
               <g opacity={ap(t, 2)}>
                 <circle cx={X(0.06)} cy={Y(f(0.06))} r={14} fill={PEN} stroke="#fff" strokeWidth={3} />
-                <text x={X(0.06) - 30} y={Y(f(0.06)) - 120} textAnchor="end" fontFamily={HAND} fontSize={44} fill={PEN}>điểm J</text>
-                <line x1={X(0.06) - 34} y1={Y(f(0.06)) - 112} x2={X(0.06) - 8} y2={Y(f(0.06)) - 18} stroke={PEN} strokeWidth={3} />
+                <text x={X(0.06) - 70} y={Y(f(0.06)) - 120} textAnchor="end" fontFamily={HAND} fontSize={44} fill={PEN}>điểm J</text>
+                <line x1={X(0.06) - 74} y1={Y(f(0.06)) - 112} x2={X(0.06) - 8} y2={Y(f(0.06)) - 18} stroke={PEN} strokeWidth={3} />
               </g>
               <g opacity={ap(t, 4.6)}>
                 <line x1={X(0.075)} x2={X(0.075)} y1={Y(0)} y2={Y(f(0.06))} stroke={PEN} strokeWidth={5} />
