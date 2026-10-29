@@ -480,16 +480,16 @@ const Lateral: React.FC = () => {
 };
 
 // ===== thân người: mặt trước (chuyển đạo phải) / mặt sau (V7–V9) =====
-const Torso: React.FC<{back?: boolean; a: number; hi: string; dots: [string, number, number][]}> = ({back, a, hi, dots}) => (
+const Torso: React.FC<{back?: boolean; a: number; hi: string; dots: [string, number, number, number?][]}> = ({back, a, hi, dots}) => (
   <svg viewBox="0 0 420 470" width={420} height={470} style={{opacity: a}}>
     <path d="M110,20 C150,40 270,40 310,20 C360,40 400,70 405,120 L395,440 C300,465 120,465 25,440 L15,120 C20,70 60,40 110,20 Z" fill="#E7D3C4" stroke="#8B6F5E" strokeWidth={4} />
     {back ? <path d="M210,60 L210,430" stroke="#B89A86" strokeWidth={6} strokeDasharray="4 10" /> : <path d="M210,60 L210,250 M120,250 Q210,300 300,250" stroke="#B89A86" strokeWidth={4} fill="none" />}
     {back ? <g fill="none" stroke="#B89A86" strokeWidth={3}><path d="M70,110 Q120,90 160,160 Q120,230 80,220" /><path d="M350,110 Q300,90 260,160 Q300,230 340,220" /></g> : null}
     <text x={210} y={460} textAnchor="middle" fontFamily={FONT} fontSize={22} fontWeight={800} fill="#5B4636">{back ? 'mặt SAU (lưng)' : 'mặt TRƯỚC'}</text>
-    {dots.map(([n, x, y]) => (
+    {dots.map(([n, x, y, dy]) => (
       <g key={n}>
         <circle cx={x} cy={y} r={n === hi ? 18 : 13} fill={n === hi ? PEN : '#1E293B'} stroke="#fff" strokeWidth={3} />
-        <text x={x} y={y - 24} textAnchor="middle" fontFamily={MONO} fontSize={22} fontWeight={700} fill={n === hi ? PEN : '#1E293B'}>{n}</text>
+        <text x={x} y={y + (dy ?? -24)} textAnchor="middle" fontFamily={MONO} fontSize={22} fontWeight={700} fill={n === hi ? PEN : '#1E293B'}>{n}</text>
       </g>
     ))}
   </svg>
@@ -511,7 +511,7 @@ const Posterior: React.FC = () => {
         </div>
       ))}
       <div style={{position: 'absolute', left: 60, top: 430, width: 880, fontFamily: HAND, fontSize: 38, color: flip > 0.5 ? '#FCA5A5' : '#93C5FD', opacity: ap(t, 2.4)}}>{flip > 0.5 ? '↻ lật ngược = ST chênh lên nhìn từ phía sau' : 'ST↓ · R cao · T dương ở V1–V3'}</div>
-      <div style={{position: 'absolute', left: 60, top: 500, opacity: ap(t, 6)}}><Torso back a={1} hi="V8" dots={[['V7', 120, 230], ['V8', 165, 205], ['V9', 200, 190]]} /></div>
+      <div style={{position: 'absolute', left: 60, top: 490, opacity: ap(t, 6), transform: 'scale(0.86)', transformOrigin: 'top left'}}><Torso back a={1} hi="V8" dots={[['V7', 120, 230], ['V8', 165, 205], ['V9', 200, 190]]} /></div>
       <Frame x={520} y={560} a={ap(t, 6.4)} c={UP}><Strip L={{r: 0.35, s: -0.1, st: 0.1, t: 0.25}} w={420} h={220} q={12} base={0.62} t0={-0.2} label="V8" /></Frame>
       <div style={{position: 'absolute', left: 520, top: 800, fontFamily: HAND, fontSize: 34, color: '#FCA5A5', opacity: ap(t, 6.8)}}>ST chênh lên ≥ 0,5 mm</div>
       <svg viewBox="0 0 1920 1080" width={1920} height={1080} style={{position: 'absolute', inset: 0, pointerEvents: 'none'}}>
@@ -527,10 +527,10 @@ const RightV: React.FC = () => {
   return (
     <DeskBg>
       <Head t={t}>Thất PHẢI</Head>
-      <div style={{position: 'absolute', left: 60, top: 140, opacity: ap(t, 2)}}><Torso a={1} hi="V4R" dots={[['V3R', 165, 225], ['V4R', 125, 250], ['V5R', 85, 252], ['V6R', 45, 255], ['V1', 230, 190], ['V2', 190, 190]]} /></div>
+      <div style={{position: 'absolute', left: 60, top: 140, opacity: ap(t, 2)}}><Torso a={1} hi="V4R" dots={[['V3R', 165, 225], ['V4R', 120, 255, -28], ['V5R', 80, 262, 42], ['V6R', 40, 262, -26], ['V1', 235, 190], ['V2', 185, 190]]} /></div>
       <div style={{position: 'absolute', left: 60, top: 620, width: 420, fontFamily: HAND, fontSize: 30, color: '#CBD5E1', opacity: ap(t, 2.4)}}>V3R – V6R: đặt đối xứng V3 – V6 sang bên phải ngực</div>
       <Frame x={520} y={160} a={ap(t, 2.4)} c={UP}><Strip L={{r: 0.3, s: -0.6, st: 0.12, t: 0.25}} w={560} h={300} q={14} base={0.55} t0={-0.2} label="V4R" stroke={4}>
-        {(X, Y) => <g opacity={ap(t, 3)}><line x1={X(0.11)} x2={X(0.11)} y1={Y(0)} y2={Y(0.12)} stroke={PEN} strokeWidth={4} /><text x={X(0.11) + 14} y={Y(0.06) + 10} fontFamily={MONO} fontSize={26} fontWeight={700} fill={PEN}>≥ 0,5 mm</text></g>}
+        {(X, Y) => <g opacity={ap(t, 3)}><line x1={X(0.11)} x2={X(0.11)} y1={Y(0)} y2={Y(0.12)} stroke={PEN} strokeWidth={4} /><text x={X(0.11) + 14} y={Y(-0.5)} fontFamily={MONO} fontSize={26} fontWeight={700} fill={PEN}>≥ 0,5 mm</text></g>}
       </Strip></Frame>
       <svg viewBox="0 0 1920 1080" width={1920} height={1080} style={{position: 'absolute', inset: 0, pointerEvents: 'none'}}>
         <Heart6 id="rv5" x={1360} y={110} s={0.8} prog={1} art={1} labels={false} zone="rv" zoneC="#7C3AED" zoneA={ap(t, 4) * 0.9} hot="rcaP" occl={ap(t, 4)} />
