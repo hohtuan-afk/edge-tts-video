@@ -168,12 +168,6 @@ const Badge: React.FC<{s: number; c: string; children: React.ReactNode}> = ({s, 
   </div>
 );
 
-const Badge: React.FC<{s: number; c: string; children: React.ReactNode}> = ({s, c, children}) => (
-  <div style={{position: 'absolute', left: 0, right: 0, top: 1110, display: 'flex', justifyContent: 'center'}}>
-    <div style={{padding: '12px 40px', borderRadius: 20, background: c, color: '#fff', fontFamily: FONT, fontSize: 60, fontWeight: 900, transform: `scale(${s})`, boxShadow: `0 0 40px ${c}aa`}}>{children}</div>
-  </div>
-);
-
 const CTA: React.FC = () => {
   const t = useSec();
   const beat = beatOf();
@@ -187,34 +181,6 @@ const CTA: React.FC = () => {
       <div style={{position: 'absolute', left: 80, right: 80, top: 980, padding: '26px 30px', borderRadius: 26, background: '#60A5FA', color: '#0B1218', textAlign: 'center', fontFamily: FONT, fontSize: 52, fontWeight: 900, transform: `scale(${q})`}}>Xem bài đầy đủ trên kênh ▶</div>
       <div style={{position: 'absolute', left: 0, right: 0, top: 1150, textAlign: 'center', fontFamily: FONT, fontSize: 40, fontWeight: 700, color: '#CBD5E1', opacity: ap(t, 1.2)}}>Tiếp cận điện tâm đồ cơ bản · Bài 4</div>
     </AbsoluteFill>
-  );
-};
-const TopBar: React.FC = () => {
-  const f = useCurrentFrame();
-  const idx = data.scenes.findIndex((s) => f >= s.from && f < s.from + s.dur);
-  return (
-    <>
-      <div style={{position: 'absolute', left: 60, right: 60, top: 70, display: 'flex', gap: 10}}>
-        {ST.map(([, , c], i) => {
-          const sc = data.scenes[i + 1];
-          const k = !sc ? 0 : Math.max(0, Math.min(1, (f - sc.from) / sc.dur));
-          return <div key={i} style={{flex: 1, height: 10, borderRadius: 5, background: 'rgba(255,255,255,0.18)', overflow: 'hidden'}}><div style={{width: `${k * 100}%`, height: '100%', background: c}} /></div>;
-        })}
-      </div>
-      <div style={{position: 'absolute', left: 60, top: 104, fontFamily: FONT, fontSize: 28, fontWeight: 800, letterSpacing: 3, color: '#5EEAD4', opacity: idx === 0 ? 0 : 1}}>TIẾP CẬN ĐIỆN TÂM ĐỒ CƠ BẢN · BÀI 3</div>
-    </>
-  );
-};
-const BigCap: React.FC = () => {
-  const f = useCurrentFrame();
-  const sc = data.scenes.find((s) => f >= s.from && f < s.from + s.dur);
-  if (!sc || !sc.sents[0]) return null;
-  const t = (f - sc.from) / 30, s = sc.sents[0];
-  const a = Math.min(1, Math.max(0, (t - s.start + 0.2) / 0.25));
-  return (
-    <div style={{position: 'absolute', left: 50, right: 50, top: 1330, display: 'flex', justifyContent: 'center', opacity: a}}>
-      <div style={{padding: '18px 30px', borderRadius: 24, background: 'rgba(5,8,12,0.82)', border: '2px solid rgba(255,255,255,0.15)', fontFamily: FONT, fontSize: 50, fontWeight: 800, color: '#fff', textAlign: 'center', lineHeight: 1.28}}>{s.text}</div>
-    </div>
   );
 };
 const TopBar: React.FC = () => {
