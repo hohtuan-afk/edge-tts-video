@@ -1,0 +1,83 @@
+{
+ "fps": 30,
+ "total": 1284,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 204,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 6.116,
+     "text": "ST chênh lên ở đâu? Biết ngay động mạch nào tắc!"
+    }
+   ]
+  },
+  {
+   "from": 204,
+   "dur": 262,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 8.017,
+     "text": "① CHÊNH: đo ST tại điểm J · ≥ 1 mm ở ≥ 2 chuyển đạo liên tiếp"
+    }
+   ]
+  },
+  {
+   "from": 466,
+   "dur": 201,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 6.013,
+     "text": "② SOI GƯƠNG: phía đối diện ST chênh XUỐNG"
+    }
+   ]
+  },
+  {
+   "from": 667,
+   "dur": 214,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 6.439,
+     "text": "③ DƯỚI: II, III, aVF → động mạch vành phải"
+    }
+   ]
+  },
+  {
+   "from": 881,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.674,
+     "text": "④ TRƯỚC: V1 – V4 → động mạch liên thất trước"
+    }
+   ]
+  },
+  {
+   "from": 1013,
+   "dur": 139,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.94,
+     "text": "Dưới → vành phải · Trước → liên thất trước · Bên → mũ"
+    }
+   ]
+  },
+  {
+   "from": 1152,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.475,
+     "text": "Lưu lại để ôn · xem bài đầy đủ trên kênh!"
+    }
+   ]
+  }
+ ]
+}
