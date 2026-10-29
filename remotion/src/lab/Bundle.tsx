@@ -115,7 +115,7 @@ const Branches: React.FC<{x: number; y: number; s: number; a: number; blk?: Blk;
   const lbOff = blk.lb;
   const lab = (p: number[], t: string, c: string, dx: number, dy: number) => {
     const [px, py] = P(p);
-    const w = t.length * 14 + 24;
+    const w = t.length * 12.5 + 24;
     const bx = dx < 0 ? px + dx - w : px + dx;
     return (
       <g opacity={labels}>
@@ -153,7 +153,7 @@ const Branches: React.FC<{x: number; y: number; s: number; a: number; blk?: Blk;
       })()}
       {lab(P0.his0, 'bó His', '#A16207', -60, -40)}
       {lab(P0.rb[1], 'nhánh phải', CR, -70, 30)}
-      {lab(P0.laf[2], 'phân nhánh trái trước', CA, 30, -30)}
+      {lab(P0.laf[2], 'phân nhánh trái trước', CA, -10, -80)}
       {lab(P0.lpf[1], 'phân nhánh trái sau', CPo, 60, 60)}
     </g>
   );
@@ -272,11 +272,11 @@ const Mechanism: React.FC = () => {
         <text x={P([560, 1080])[0] - 60} y={P([560, 1080])[1] + 60} fontFamily={HAND} fontSize={38} fill="#FDE047" opacity={ap(t, 0.6)}>đi vòng, chậm…</text>
       </svg>
       <Box x={900} y={140} a={ap(t, 1.6)}><Zoom f={mixM(M.V1n, M.V1r, wide)} label="V1" w={960} h={420} base={260} scale={1.1}>
-        {(X) => <Br x0={X(0)} x1={X(0.08 + 0.045 * wide)} y={380} c={PEN} label={wide > 0.6 ? 'QRS ≥ 0,12 s' : 'QRS hẹp'} a={ap(t, 2.4)} size={30} />}
+        {(X) => <Br x0={X(0)} x1={X(0.08 + 0.045 * wide)} y={340} c={PEN} label={wide > 0.6 ? 'QRS ≥ 0,12 s' : 'QRS hẹp'} a={ap(t, 2.4)} size={30} />}
       </Zoom></Box>
-      <Card x={900} y={600} w={960} a={ap(t, 0)} c={PEN} title="Xung đi VÒNG qua cơ tim — chậm" />
-      <Card x={900} y={710} w={960} a={ap(t, 2.0)} c={PEN} title="Thất bị block khử cực SAU → QRS RỘNG ≥ 0,12 s" />
-      <Memo x={900} y={830} w={960} a={ap(t, 6.0)}>Khử cực muộn hướng về thất bị block → nhìn <span style={{color: CR}}>V1</span> (phải) &amp; <span style={{color: CL}}>V6</span> (trái)</Memo>
+      <Card x={900} y={585} w={960} a={ap(t, 0)} c={PEN} title="Xung đi VÒNG qua cơ tim — chậm" />
+      <Card x={900} y={685} w={960} a={ap(t, 2.0)} c={PEN} title="Thất bị block khử cực SAU → QRS RỘNG ≥ 0,12 s" />
+      <Memo x={900} y={790} w={960} a={ap(t, 6.0)}>Khử cực muộn hướng về thất bị block → nhìn <span style={{color: CR}}>V1</span> (phải) &amp; <span style={{color: CL}}>V6</span> (trái)</Memo>
     </DeskBg>
   );
 };
@@ -292,12 +292,12 @@ const RBBB: React.FC = () => {
           <g>
             <g opacity={ap(t, 2.8)}>
               <text x={X(0.015)} y={Y(0.25) - 18} textAnchor="middle" fontFamily={MONO} fontSize={30} fontWeight={700} fill={CR}>r</text>
-              <text x={X(0.045) + 20} y={Y(-0.55) + 36} fontFamily={MONO} fontSize={30} fontWeight={700} fill={CR}>S</text>
+              <text x={X(0.045) + 22} y={Y(-0.55) + 14} fontFamily={MONO} fontSize={30} fontWeight={700} fill={CR}>S</text>
               <text x={X(0.095)} y={Y(0.95) - 18} textAnchor="middle" fontFamily={MONO} fontSize={34} fontWeight={700} fill={CR}>R′</text>
               <text x={X(0.18)} y={Y(0.95) - 30} fontFamily={HAND} fontSize={42} fill={PEN}>“tai thỏ” 🐰</text>
             </g>
-            <Br x0={X(0)} x1={X(0.125)} y={430} c={PEN} label="QRS ≥ 0,12 s" a={ap(t, 6.0)} />
-            <text x={X(0.32)} y={Y(-0.28) + 50} textAnchor="middle" fontFamily={HAND} fontSize={30} fill="#7C3AED" opacity={ap(t, 6.4)}>T đảo (thứ phát)</text>
+            <Br x0={X(0)} x1={X(0.125)} y={395} c={PEN} label="QRS ≥ 0,12 s" a={ap(t, 6.0)} />
+            <text x={X(0.36)} y={Y(-0.28) + 56} textAnchor="start" fontFamily={HAND} fontSize={30} fill="#7C3AED" opacity={ap(t, 6.4)}>T đảo (thứ phát)</text>
           </g>
         )}
       </Zoom></Box>
@@ -340,8 +340,8 @@ const LBBB: React.FC = () => {
         {(X, Y) => (
           <g>
             <g opacity={ap(t, 6.2)}><text x={X(0.075)} y={Y(1.2) - 24} textAnchor="middle" fontFamily={HAND} fontSize={36} fill={CL}>R khấc “M”</text></g>
-            <g opacity={ap(t, 2.4)}><circle cx={X(0)} cy={Y(0)} r={22} fill="none" stroke={PEN} strokeWidth={4} /><text x={X(0) - 30} y={Y(0) + 56} textAnchor="end" fontFamily={HAND} fontSize={32} fill={PEN}>mất q</text></g>
-            <Br x0={X(0)} x1={X(0.105)} y={Y(0) + 110} c={CL} label="đỉnh R > 60 ms" a={ap(t, 8.0)} size={24} />
+            <g opacity={ap(t, 2.4)}><circle cx={X(0)} cy={Y(0)} r={22} fill="none" stroke={PEN} strokeWidth={4} /><text x={X(0) - 30} y={Y(0) - 34} textAnchor="end" fontFamily={HAND} fontSize={32} fill={PEN}>mất q</text></g>
+            <Br x0={X(0)} x1={X(0.105)} y={Y(0) + 60} c={CL} label="đỉnh R > 60 ms" a={ap(t, 8.0)} size={24} />
           </g>
         )}
       </Zoom></Box>
