@@ -41,12 +41,12 @@ const Frame: React.FC<{x: number; y: number; a: number; c?: string; children: Re
 // mẫu sóng
 const S: Record<string, Lead> = {
   norm: {},
-  hyper: {t: 0.85, tw: 0.075, tPos: 0.25},
-  stemi: {st: 0.28, t: 0.55, tw: 0.08, tPos: 0.25},
+  hyper: {t: 1.05, tw: 0.06, tPos: 0.25},
+  stemi: {st: 0.38, t: 0.42, tw: 0.075, tPos: 0.23},
   tomb: {r: 0.7, s: 0, st: 0.55, t: 0.75, tw: 0.09, tPos: 0.22},
   qwave: {q: -0.45, r: 0.35, s: -0.1, st: 0.12, t: 0.3},
   tinv: {q: -0.45, r: 0.35, s: -0.1, st: 0, t: -0.32, tw: 0.07},
-  dep: {r: 0.6, s: -0.2, st: -0.15, t: -0.12},
+  dep: {r: 0.6, s: -0.2, st: -0.22, t: -0.12},
   peri: {r: 0.9, s: -0.15, st: 0.18, t: 0.35, tw: 0.07},
 };
 const NORM12: Record<string, Lead> = {
@@ -116,7 +116,7 @@ const Cover: React.FC = () => {
 const Zones: React.FC = () => {
   const t = useT();
   const HX = 30, HY = 110, HS = 1.3;
-  const [cx, cy] = h2s(HX, HY, HS, [770, 880]);
+  const [cx, cy] = h2s(HX, HY, HS, [730, 850]);
   const ring = (r: number, c: string, s: number, lab: string, dx: number, dy: number) => {
     const k = ap(t, s, 0.7);
     return (
@@ -135,9 +135,9 @@ const Zones: React.FC = () => {
       <Head t={t}>Ba vùng quanh ổ tắc mạch</Head>
       <svg viewBox="0 0 1920 1080" width={1920} height={1080} style={{position: 'absolute', inset: 0}}>
         <Heart6 id="z5" x={HX} y={HY} s={HS} prog={1} art={1} labels={false} hot="lad" occl={ap(t, 0)} />
-        {ring(150, CI, 2, 'thiếu máu', 120, -230)}
-        {ring(100, CJ, 4, 'tổn thương', 160, -150)}
-        {ring(52, CN, 6, 'hoại tử', 200, -70)}
+        {ring(140, CI, 2, 'thiếu máu', 120, -230)}
+        {ring(92, CJ, 4, 'tổn thương', 160, -150)}
+        {ring(48, CN, 6, 'hoại tử', 200, -70)}
       </svg>
       {[
         [S.hyper, 'T tối cấp → T đảo', CI, 2],
@@ -146,7 +146,7 @@ const Zones: React.FC = () => {
       ].map(([L, lab, c, s], i) => (
         <div key={i}>
           <Frame x={1060} y={140 + i * 250} a={ap(t, s as number)} c={c as string}>
-            <Strip L={L as Lead} w={420} h={210} q={10} base={0.62} t0={0.05} />
+            <Strip L={L as Lead} w={420} h={210} q={10} base={0.62} t0={-0.2} />
           </Frame>
           <div style={{position: 'absolute', left: 1500, top: 205 + i * 250, width: 360, fontFamily: FONT, fontSize: 34, fontWeight: 900, color: c === CI ? '#FDE047' : c === CN ? '#CBD5E1' : '#FCA5A5', opacity: ap(t, (s as number) + 0.3)}}>{lab as string}</div>
         </div>
@@ -172,16 +172,17 @@ const MeasureJ: React.FC = () => {
                 <line x1={X(-0.3)} x2={X(0.6)} y1={Y(0)} y2={Y(0)} stroke="#2563EB" strokeWidth={4} strokeDasharray="14 10" />
                 <rect x={X(-0.12)} y={Y(0) - 26} width={X(-0.04) - X(-0.12)} height={52} rx={10} fill="rgba(37,99,235,0.18)" stroke="#2563EB" strokeWidth={3} />
                 <text x={X(-0.08)} y={Y(0) + 62} textAnchor="middle" fontFamily={HAND} fontSize={36} fill="#2563EB">đoạn PR</text>
-                <text x={X(0.42)} y={Y(0) + 44} fontFamily={HAND} fontSize={34} fill="#2563EB">đường đẳng điện</text>
+                <text x={X(0.42)} y={Y(0) + 50} fontFamily={HAND} fontSize={34} fill="#2563EB">đường đẳng điện</text>
               </g>
               <g opacity={ap(t, 2)}>
-                <circle cx={X(0.045)} cy={Y(f(0.045))} r={14} fill={PEN} stroke="#fff" strokeWidth={3} />
-                <text x={X(0.045) + 24} y={Y(f(0.045)) - 22} fontFamily={HAND} fontSize={44} fill={PEN}>điểm J</text>
+                <circle cx={X(0.06)} cy={Y(f(0.06))} r={14} fill={PEN} stroke="#fff" strokeWidth={3} />
+                <text x={X(0.06) - 30} y={Y(f(0.06)) - 120} textAnchor="end" fontFamily={HAND} fontSize={44} fill={PEN}>điểm J</text>
+                <line x1={X(0.06) - 34} y1={Y(f(0.06)) - 112} x2={X(0.06) - 8} y2={Y(f(0.06)) - 18} stroke={PEN} strokeWidth={3} />
               </g>
               <g opacity={ap(t, 4.6)}>
-                <line x1={X(0.045) - 40} x2={X(0.045) - 40} y1={Y(0)} y2={Y(f(0.045))} stroke={PEN} strokeWidth={5} />
-                <path d={`M${X(0.045) - 52},${Y(0)} h24 M${X(0.045) - 52},${Y(f(0.045))} h24`} stroke={PEN} strokeWidth={5} />
-                <text x={X(0.045) - 60} y={(Y(0) + Y(f(0.045))) / 2 + 12} textAnchor="end" fontFamily={MONO} fontSize={32} fontWeight={700} fill={PEN}>ST ↑ {(f(0.045) * 10).toFixed(1).replace('.', ',')} mm</text>
+                <line x1={X(0.075)} x2={X(0.075)} y1={Y(0)} y2={Y(f(0.06))} stroke={PEN} strokeWidth={5} />
+                <path d={`M${X(0.075) - 12},${Y(0)} h24 M${X(0.075) - 12},${Y(f(0.06))} h24`} stroke={PEN} strokeWidth={5} />
+                <text x={X(0.075) + 18} y={(Y(0) + Y(f(0.06))) / 2 + 12} fontFamily={MONO} fontSize={32} fontWeight={700} fill={PEN}>ST ↑ {Math.round(f(0.06) * 10)} mm</text>
               </g>
             </g>
           )}
@@ -291,12 +292,12 @@ const Mirror: React.FC = () => {
       <Head t={t}>Soi gương</Head>
       <svg viewBox="0 0 1920 1080" width={1920} height={1080} style={{position: 'absolute', inset: 0}}>
         <defs><marker id="arV" markerUnits="userSpaceOnUse" markerWidth="40" markerHeight="40" refX="6" refY="20" orient="auto"><path d="M0,0 L36,20 L0,40 Z" fill="#FDE047" /></marker></defs>
-        <g opacity={1 - post * 0.75}>
+        <g opacity={1 - post}>
           <Heart6 id="mr5" x={HX} y={HY} s={HS} prog={1} art={1} labels={false} beat={beat} zone="inf" zoneC="#FF3B3B" zoneA={ap(t, 0.2) * 0.9} />
           <line x1={cx} y1={cy - 140} x2={cx} y2={cy - 140 + 230 * vk} stroke="#FDE047" strokeWidth={12} markerEnd="url(#arV)" opacity={vk > 0.02 ? 1 : 0} />
-          <text x={cx + 30} y={cy - 40} fontFamily={FONT} fontSize={26} fontWeight={800} fill="#FDE047" opacity={vk}>vector tổn thương</text>
-          <Eye x={cx} y={cy + 230} ang={-90} c={CG} label="II · III · aVF" a={ap(t, 1.2)} />
-          <Eye x={cx + 330} y={cy - 300} ang={110} c={CB} label="aVL" a={ap(t, 1.6)} />
+          <text x={cx + 200} y={cy + 60} fontFamily={FONT} fontSize={28} fontWeight={800} fill="#FDE047" opacity={vk}>vector tổn thương ↓</text>
+          <Eye x={cx} y={cy + 230} ang={-90} c={CG} label="II · III · aVF" a={ap(t, 0.2)} />
+          <Eye x={cx + 330} y={cy - 300} ang={110} c={CB} label="aVL" a={ap(t, 0.6)} />
         </g>
         <g opacity={post}>
           <text x={500} y={250} textAnchor="middle" fontFamily={FONT} fontSize={36} fontWeight={900} fill="#E2E8F0">Thành sau ↔ V1 – V3</text>
@@ -306,14 +307,14 @@ const Mirror: React.FC = () => {
       </svg>
       {/* cặp ô: nhìn từ hai phía */}
       <div style={{opacity: 1 - post}}>
-        <Frame x={1120} y={170} a={ap(t, 1.6)} c={CB}><Strip L={S.dep} w={360} h={200} q={10} base={0.5} t0={0.05} label="aVL" dark /></Frame>
-        <div style={{position: 'absolute', left: 1500, top: 230, fontFamily: FONT, fontSize: 34, fontWeight: 900, color: '#FDBA74', opacity: ap(t, 2)}}>ST ↓ (nhìn từ<br />phía đối diện)</div>
-        <Frame x={1120} y={420} a={ap(t, 1.2)} c={CG}><Strip L={S.stemi} w={360} h={200} q={10} base={0.62} t0={0.05} label="III" dark /></Frame>
-        <div style={{position: 'absolute', left: 1500, top: 480, fontFamily: FONT, fontSize: 34, fontWeight: 900, color: '#86EFAC', opacity: ap(t, 1.4)}}>ST ↑ (nhìn vào<br />vùng tổn thương)</div>
+        <Frame x={1120} y={170} a={ap(t, 0.6)} c={CB}><Strip L={S.dep} w={360} h={200} q={12} base={0.5} t0={-0.2} label="aVL" dark /></Frame>
+        <div style={{position: 'absolute', left: 1500, top: 230, fontFamily: FONT, fontSize: 34, fontWeight: 900, color: '#FDBA74', opacity: ap(t, 0.8)}}>ST ↓ (nhìn từ<br />phía đối diện)</div>
+        <Frame x={1120} y={420} a={ap(t, 0.2)} c={CG}><Strip L={S.stemi} w={360} h={200} q={12} base={0.62} t0={-0.2} label="III" dark /></Frame>
+        <div style={{position: 'absolute', left: 1500, top: 480, fontFamily: FONT, fontSize: 34, fontWeight: 900, color: '#86EFAC', opacity: ap(t, 0.4)}}>ST ↑ (nhìn vào<br />vùng tổn thương)</div>
       </div>
       <div style={{opacity: post}}>
-        <Frame x={160} y={360} a={post} c="#06B6D4"><Strip L={{r: 1.0, s: -0.3, st: -0.25, t: 0.5, tw: 0.075}} w={300} h={220} q={9} base={0.55} t0={0.05} label="V2" dark /></Frame>
-        <Frame x={540} y={360} a={post} c="#06B6D4"><Strip L={(T) => -ecgAt(T, {r: 1.0, s: -0.3, st: -0.25, t: 0.5, tw: 0.075}, 0.8, 0.15)} w={300} h={220} q={9} base={0.55} t0={0.05} label="lật ngược" dark /></Frame>
+        <Frame x={160} y={360} a={post} c="#06B6D4"><Strip L={{r: 1.0, s: -0.3, st: -0.32, t: 0.5, tw: 0.075}} w={300} h={220} q={9} base={0.55} t0={-0.2} label="V2" dark /></Frame>
+        <Frame x={540} y={360} a={post} c="#06B6D4"><Strip L={(T) => -ecgAt(T, {r: 1.0, s: -0.3, st: -0.32, t: 0.5, tw: 0.075}, 0.8, 0.15)} w={300} h={220} q={9} base={0.55} t0={-0.2} label="lật ngược" dark /></Frame>
       </div>
       <Card x={1120} y={680} w={740} a={ap(t, 4) * (1 - post)} c="#06B6D4" title="Dưới (II, III, aVF) ↔ Bên cao (I, aVL)" />
       <Card x={1120} y={680} w={740} a={post} c="#06B6D4" title="Thành sau ↔ V1 – V3" />
@@ -325,17 +326,17 @@ const Mirror: React.FC = () => {
 // ================= 6 · GIÁ TRỊ CỦA SOI GƯƠNG =================
 const MirrorValue: React.FC = () => {
   const t = useT();
-  const peri: Lead = {r: 0.9, s: -0.15, st: 0.16, t: 0.35, tw: 0.07, p: 0.12};
+  const peri: Lead = {r: 0.9, s: -0.15, st: 0.24, t: 0.35, tw: 0.07, p: 0.12};
   return (
     <DeskBg>
       <Head t={t}>Soi gương giúp gì?</Head>
       <div style={{position: 'absolute', left: 60, top: 140, fontFamily: FONT, fontSize: 34, fontWeight: 900, color: '#FCA5A5', opacity: ap(t, -1)}}>Nhồi máu vùng dưới</div>
-      <Frame x={60} y={195} a={ap(t, -1)}><Strip L={S.stemi} w={400} h={210} q={10} base={0.62} t0={0.05} label="III" /></Frame>
-      <Frame x={480} y={195} a={ap(t, 0.3)} c="#06B6D4"><Strip L={S.dep} w={400} h={210} q={10} base={0.5} t0={0.05} label="aVL" /></Frame>
+      <Frame x={60} y={195} a={ap(t, -1)}><Strip L={S.stemi} w={400} h={210} q={10} base={0.62} t0={-0.2} label="III" /></Frame>
+      <Frame x={480} y={195} a={ap(t, 0.3)} c="#06B6D4"><Strip L={S.dep} w={400} h={210} q={10} base={0.5} t0={-0.2} label="aVL" /></Frame>
       <div style={{position: 'absolute', left: 480, top: 420, fontFamily: HAND, fontSize: 38, color: '#67E8F9', opacity: ap(t, 0.6)}}>✓ có soi gương</div>
       <div style={{position: 'absolute', left: 60, top: 500, fontFamily: FONT, fontSize: 34, fontWeight: 900, color: '#C4B5FD', opacity: ap(t, 2)}}>Viêm màng ngoài tim · tái cực sớm</div>
       {['II', 'V5', 'aVL'].map((ld, i) => (
-        <Frame key={ld} x={60 + i * 280} y={555} a={ap(t, 2 + i * 0.2)}><Strip L={peri} w={260} h={190} q={8} base={0.62} t0={0.05} label={ld} /></Frame>
+        <Frame key={ld} x={60 + i * 280} y={555} a={ap(t, 2 + i * 0.2)}><Strip L={peri} w={260} h={190} q={8} base={0.62} t0={-0.2} label={ld} /></Frame>
       ))}
       <div style={{position: 'absolute', left: 60, top: 760, fontFamily: HAND, fontSize: 36, color: '#C4B5FD', opacity: ap(t, 2.6)}}>ST chênh lên lan toả · thường KHÔNG soi gương (trừ aVR, V1)</div>
       <Card x={960} y={195} w={900} a={ap(t, 0)} c="#06B6D4" title="Có soi gương → khả năng nhồi máu cao hơn" />
