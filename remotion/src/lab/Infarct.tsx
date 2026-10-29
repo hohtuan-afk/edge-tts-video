@@ -10,7 +10,7 @@ import {MONO} from './Lab';
 import {Fade, SeriesTag} from './Demo';
 import {Heart6, SC as HSC, OX as HOX, OY as HOY} from '../wb/heart6';
 import {HAND} from '../wb/wb';
-import {beatV, ecgAt, Lead, LAYOUT} from './ecg';
+import {beatV, ecgAt, Lead, LAYOUT, NORMAL, INFERIOR} from './ecg';
 import {Sheet, cellPos} from './Paper';
 import {Memo, Card, Head, DeskBg, Pink, ap, dp, useBeat, INK, PEN} from './Bundle';
 
@@ -346,7 +346,295 @@ const MirrorValue: React.FC = () => {
   );
 };
 
-const SCN: React.FC[] = [Cover, Zones, MeasureJ, Thresholds, Contiguous, Mirror, MirrorValue];
+// ================= phần 2 =================
+const KEYS_L = ['p', 'q', 'r', 's', 't', 'tw', 'tPos', 'st'] as const;
+const lerpLead = (a: Lead, b: Lead, k: number): Lead => {
+  const A = {...NORMAL, ...a}, B = {...NORMAL, ...b};
+  const o: Lead = {};
+  for (const key of KEYS_L) (o as Record<string, number>)[key] = (A[key] as number) * (1 - k) + (B[key] as number) * k;
+  return o;
+};
+const EVO: Lead[] = [
+  {},
+  {t: 1.05, tw: 0.06, tPos: 0.25},
+  {r: 0.75, s: 0, st: 0.5, t: 0.6, tw: 0.085, tPos: 0.22},
+  {q: -0.45, r: 0.35, s: -0.05, st: 0.28, t: 0.45, tw: 0.08, tPos: 0.23},
+  {q: -0.45, r: 0.35, s: -0.1, st: 0, t: -0.38, tw: 0.07},
+  {q: -0.45, r: 0.45, s: -0.1, st: 0, t: -0.12, tw: 0.06},
+];
+const EVO_L: [string, string, string][] = [['Vài phút đầu', 'T tối cấp', CI], ['Tiếp theo', 'ST chênh lên · “bia mộ”', CJ], ['Sau vài giờ', 'Q hoại tử · R giảm', '#7C3AED'], ['Sau đó', 'ST về · T đảo', CF], ['Lâu dài', 'Q tồn tại', CN]];
+const Evolution: React.FC = () => {
+  const t = useT();
+  const i = Math.max(0, Math.min(4, Math.floor(t / 2)));
+  const k = Math.max(0, Math.min(1, (t - 2 * i) / 0.9));
+  const stage = t < 2 ? lerpLead(EVO[0], EVO[1], Math.max(0, Math.min(1, t / 2))) : i >= 5 ? EVO[5] : lerpLead(EVO[i], EVO[i + 1], k);
+  const cur = Math.max(0, Math.min(4, Math.floor((t + 0.3) / 2) - 1));
+  return (
+    <DeskBg>
+      <Head t={t}>Tiến triển theo thời gian</Head>
+      <Frame x={60} y={130} a={ap(t, -1)}>
+        <Strip L={(T) => ecgAt(T, stage, 0.8, 0.15)} w={1180} h={420} q={16} base={0.6} t0={-0.15} stroke={5} label="V3" />
+      </Frame>
+      <div style={{position: 'absolute', left: 1280, top: 150, width: 580, padding: '26px 30px', borderRadius: 18, background: '#FCFAF4', borderLeft: `14px solid ${EVO_L[cur][2]}`, boxSizing: 'border-box', fontFamily: FONT, boxShadow: '0 14px 30px rgba(0,0,0,0.35)', opacity: ap(t, 1.6)}}>
+        <div style={{fontSize: 28, fontWeight: 800, color: '#64748B'}}>{EVO_L[cur][0]}</div>
+        <div style={{fontSize: 44, fontWeight: 900, color: EVO_L[cur][2] === CI ? '#A16207' : EVO_L[cur][2], marginTop: 6, lineHeight: 1.15}}>{EVO_L[cur][1]}</div>
+      </div>
+      <div style={{position: 'absolute', left: 1280, top: 380, width: 580, padding: '16px 22px', borderRadius: 16, background: PEN, color: '#fff', fontFamily: FONT, fontSize: 28, fontWeight: 800, boxSizing: 'border-box', opacity: ap(t, 10.4)}}>⚑ ST chênh lên kéo dài nhiều tuần → nghĩ phình thất</div>
+      <div style={{position: 'absolute', left: 60, top: 590, width: 1800, height: 6, borderRadius: 3, background: 'rgba(255,255,255,0.2)'}}><div style={{width: `${Math.min(1, t / 10.5) * 100}%`, height: '100%', background: '#FDE047', borderRadius: 3}} /></div>
+      {EVO_L.map(([when, what, c], j) => {
+        const a = ap(t, 2 + j * 2, 0.5);
+        const on = j === cur;
+        return (
+          <div key={j} style={{position: 'absolute', left: 60 + j * 362, top: 620, opacity: a, transform: `translateY(${(1 - a) * 30}px) scale(${on ? 1.03 : 1})`, transformOrigin: 'top center'}}>
+            <div style={{borderRadius: 12, overflow: 'hidden', outline: `${on ? 6 : 3}px solid ${c}`, boxShadow: '0 12px 24px rgba(0,0,0,0.4)'}}>
+              <Strip L={EVO[j + 1]} w={340} h={170} q={8} base={0.6} t0={-0.2} />
+            </div>
+            <div style={{fontFamily: FONT, fontSize: 24, fontWeight: 800, color: '#94A3B8', marginTop: 10}}>{when}</div>
+            <div style={{fontFamily: FONT, fontSize: 28, fontWeight: 900, color: c === CN ? '#CBD5E1' : c === CI ? '#FDE047' : c === '#7C3AED' ? '#C4B5FD' : c === CF ? '#93C5FD' : '#FCA5A5', width: 340}}>{what}</div>
+          </div>
+        );
+      })}
+    </DeskBg>
+  );
+};
+
+// ===== thẻ tim =====
+const HeartCard: React.FC<{x: number; y: number; w?: number; a: number; zone: 'inf' | 'ant' | 'lat' | 'rv' | 'post'; hot: 'rca' | 'lad' | 'lcx' | 'rcaP' | null; c: string; title: string; sub?: string; id: string; s?: number}> = ({x, y, w = 540, a, zone, hot, c, title, sub, id, s = 0.82}) => (
+  <div style={{position: 'absolute', left: x, top: y, width: w, height: 560 * s + 90, borderRadius: 18, background: 'rgba(15,23,42,0.75)', border: `3px solid ${c}`, opacity: a, transform: `translateY(${(1 - a) * 30}px)`, overflow: 'hidden'}}>
+    <div style={{padding: '12px 20px', fontFamily: FONT}}>
+      <div style={{fontSize: 30, fontWeight: 900, color: c === CRCA ? '#93C5FD' : c === CLCX ? '#FCD34D' : '#FCA5A5'}}>{title}</div>
+      {sub && <div style={{fontSize: 22, fontWeight: 700, color: '#CBD5E1'}}>{sub}</div>}
+    </div>
+    <svg viewBox={`0 0 ${w} ${560 * s}`} width={w} height={560 * s} style={{position: 'absolute', left: 0, top: 80}}>
+      <Heart6 id={id} x={(w - 500 * s) / 2} y={0} s={s} prog={1} art={1} labels={false} zone={zone} zoneC={c} zoneA={0.9 * a} hot={hot} occl={a} />
+    </svg>
+  </div>
+);
+const Arteries: React.FC = () => {
+  const t = useT();
+  return (
+    <DeskBg>
+      <Head t={t}>Định khu: chênh ở đâu → vùng đó</Head>
+      <HeartCard id="a1" x={60} y={150} a={ap(t, 2)} zone="inf" hot="rca" c={CRCA} title="Động mạch vành phải" sub="RCA · vùng dưới, thất phải" />
+      <HeartCard id="a2" x={690} y={150} a={ap(t, 2.6)} zone="ant" hot="lad" c={CLAD} title="Động mạch liên thất trước" sub="LAD · vùng trước, vách" />
+      <HeartCard id="a3" x={1320} y={150} a={ap(t, 3.2)} zone="lat" hot="lcx" c={CLCX} title="Động mạch mũ" sub="LCx · vùng bên" />
+      <Memo x={60} y={790} w={1800} a={ap(t, 0)}>Chuyển đạo nào chênh → vùng đó nhồi máu → suy ra <span style={{color: PEN}}>động mạch thủ phạm</span></Memo>
+    </DeskBg>
+  );
+};
+
+// ===== cảnh định khu chung: tờ ECG + thẻ tim + thẻ chữ =====
+type Grp = [string[], string, number];
+const SheetBox2: React.FC<{x: number; y: number; a: number; leads: Record<string, Lead>; sc: number; groups: Grp[]}> = ({x, y, a, leads, sc, groups}) => (
+  <div style={{position: 'absolute', left: x, top: y, width: 1500 * sc, height: 760 * sc, borderRadius: 10, overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.45)', opacity: a, transform: `translateY(${(1 - a) * 30}px)`}}>
+    <div style={{transform: `scale(${sc})`, transformOrigin: 'top left'}}><Sheet leads={leads} /></div>
+    <svg viewBox="0 0 1500 760" width={1500 * sc} height={760 * sc} style={{position: 'absolute', left: 0, top: 0}}>
+      {groups.map(([lds, c, ga], gi) => lds.map((ld) => {
+        const [lx, y0] = cellPos(ld);
+        return <rect key={gi + ld} x={lx + 6} y={y0 - 100} width={363} height={160} rx={12} fill={c} fillOpacity={0.14 * ga} stroke={c} strokeWidth={6} opacity={ga} />;
+      }))}
+    </svg>
+  </div>
+);
+const INF12: Record<string, Lead> = {...NORM12, ...INFERIOR, V1: NORM12.V1, V2: NORM12.V2};
+const ANTW: Record<string, Lead> = {
+  ...NORM12,
+  I: {r: 0.6, s: -0.1, st: 0.2, t: 0.45}, aVL: {r: 0.45, s: -0.2, st: 0.2, t: 0.4}, II: {r: 0.9, s: -0.2, st: -0.02, t: 0.2},
+  III: {r: 0.5, s: -0.3, st: -0.2, t: -0.15}, aVF: {r: 0.7, s: -0.25, st: -0.15, t: -0.05},
+  V1: {r: 0.15, s: -0.9, st: 0.25, t: 0.5, tw: 0.08}, V2: {r: 0.25, s: -1.0, st: 0.42, t: 0.7, tw: 0.08, tPos: 0.24},
+  V3: {r: 0.4, s: -0.8, st: 0.42, t: 0.7, tw: 0.08, tPos: 0.24}, V4: {r: 0.7, s: -0.4, st: 0.35, t: 0.6, tw: 0.08},
+  V5: {r: 0.9, s: -0.25, st: 0.28, t: 0.5}, V6: {r: 0.8, s: -0.15, st: 0.22, t: 0.45},
+};
+const LAT12: Record<string, Lead> = {
+  ...NORM12,
+  I: {r: 0.7, s: -0.1, st: 0.22, t: 0.45}, aVL: {r: 0.5, s: -0.15, st: 0.24, t: 0.4}, V5: {r: 1.0, s: -0.2, st: 0.2, t: 0.45}, V6: {r: 0.9, s: -0.15, st: 0.2, t: 0.4},
+  III: {r: 0.5, s: -0.3, st: -0.2, t: -0.15}, aVF: {r: 0.7, s: -0.2, st: -0.14, t: -0.05},
+};
+const UP = '#DC2626', DN = '#2563EB';
+const Localize: React.FC<{title: string; leads: Record<string, Lead>; groups: Grp[]; zone: 'inf' | 'ant' | 'lat'; hot: 'rca' | 'lad' | 'lcx'; hc: string; htitle: string; id: string; cards: [string, string | null, string, number][]; memo?: [React.ReactNode, number]}> = ({title, leads, groups, zone, hot, hc, htitle, id, cards, memo}) => {
+  const t = useT();
+  return (
+    <DeskBg>
+      <Head t={t}>{title}</Head>
+      <SheetBox2 x={60} y={140} a={ap(t, -1)} leads={leads} sc={0.8} groups={groups} />
+      <HeartCard id={id} x={1300} y={120} w={560} a={ap(t, 0.3)} zone={zone} hot={hot} c={hc} title={htitle} s={0.72} />
+      {cards.map(([ti, sub, c, s], i) => <Card key={i} x={60 + (i % 2) * 610} y={770 + Math.floor(i / 2) * 0} w={590} a={ap(t, s)} c={c} title={ti}>{sub}</Card>)}
+      {memo && <Memo x={1300} y={660} w={560} a={ap(t, memo[1])}>{memo[0]}</Memo>}
+    </DeskBg>
+  );
+};
+const Inferior: React.FC = () => {
+  const t = useT();
+  return <Localize id="inf5" title="Vùng DƯỚI" leads={INF12} groups={[[['II', 'III', 'aVF'], UP, ap(t, 0)], [['aVL', 'I'], DN, ap(t, 2)]]} zone="inf" hot="rca" hc={CRCA} htitle="Vành phải (± mũ)"
+    cards={[['ST↑ II, III, aVF', 'soi gương: ST↓ aVL (± I)', UP, 0], ['Thủ phạm: vành phải', 'ít hơn: động mạch mũ', CRCA, 4]]} memo={[<>ST ở <span style={{color: PEN}}>III &gt; II</span> → nghĩ vành phải</>, 6]} />;
+};
+const Anterior: React.FC = () => {
+  const t = useT();
+  return <Localize id="ant5" title="Vùng TRƯỚC" leads={ANTW} groups={[[['V1', 'V2'], UP, ap(t, 2)], [['V3', 'V4'], UP, ap(t, 4)], [['V5', 'V6', 'I', 'aVL'], '#F97316', ap(t, 6)], [['III', 'aVF'], DN, ap(t, 6.4)]]} zone="ant" hot="lad" hc={CLAD} htitle="Liên thất trước"
+    cards={[['Vách: V1–V2 · Trước vách: V1–V4', null, UP, 2], ['Trước rộng: V1–V6 + I, aVL', '→ liên thất trước đoạn gần', '#F97316', 6]]} memo={[<>Vùng càng rộng → cơ tim <span style={{color: PEN}}>nguy cơ càng nhiều</span></>, 8]} />;
+};
+const Lateral: React.FC = () => {
+  const t = useT();
+  return <Localize id="lat5" title="Vùng BÊN CAO & BÊN" leads={LAT12} groups={[[['I', 'aVL'], UP, ap(t, 0)], [['V5', 'V6'], '#F97316', ap(t, 0.6)], [['III', 'aVF'], DN, ap(t, 4)]]} zone="lat" hot="lcx" hc={CLCX} htitle="Mũ / nhánh chéo"
+    cards={[['Bên cao: I, aVL · Bên: V5, V6', null, UP, 0], ['Soi gương: ST↓ III, aVF', null, DN, 4]]} memo={[<>Thủ phạm: <span style={{color: '#B45309'}}>động mạch mũ</span> hoặc nhánh chéo</>, 2]} />;
+};
+
+// ===== thân người: mặt trước (chuyển đạo phải) / mặt sau (V7–V9) =====
+const Torso: React.FC<{back?: boolean; a: number; hi: string; dots: [string, number, number][]}> = ({back, a, hi, dots}) => (
+  <svg viewBox="0 0 420 470" width={420} height={470} style={{opacity: a}}>
+    <path d="M110,20 C150,40 270,40 310,20 C360,40 400,70 405,120 L395,440 C300,465 120,465 25,440 L15,120 C20,70 60,40 110,20 Z" fill="#E7D3C4" stroke="#8B6F5E" strokeWidth={4} />
+    {back ? <path d="M210,60 L210,430" stroke="#B89A86" strokeWidth={6} strokeDasharray="4 10" /> : <path d="M210,60 L210,250 M120,250 Q210,300 300,250" stroke="#B89A86" strokeWidth={4} fill="none" />}
+    {back ? <g fill="none" stroke="#B89A86" strokeWidth={3}><path d="M70,110 Q120,90 160,160 Q120,230 80,220" /><path d="M350,110 Q300,90 260,160 Q300,230 340,220" /></g> : null}
+    <text x={210} y={460} textAnchor="middle" fontFamily={FONT} fontSize={22} fontWeight={800} fill="#5B4636">{back ? 'mặt SAU (lưng)' : 'mặt TRƯỚC'}</text>
+    {dots.map(([n, x, y]) => (
+      <g key={n}>
+        <circle cx={x} cy={y} r={n === hi ? 18 : 13} fill={n === hi ? PEN : '#1E293B'} stroke="#fff" strokeWidth={3} />
+        <text x={x} y={y - 24} textAnchor="middle" fontFamily={MONO} fontSize={22} fontWeight={700} fill={n === hi ? PEN : '#1E293B'}>{n}</text>
+      </g>
+    ))}
+  </svg>
+);
+const POST3: Record<string, Lead> = {
+  V1: {r: 0.75, s: -0.35, st: -0.3, t: 0.45, tw: 0.075}, V2: {r: 1.05, s: -0.3, st: -0.36, t: 0.55, tw: 0.075}, V3: {r: 1.1, s: -0.3, st: -0.3, t: 0.5, tw: 0.075},
+};
+const Posterior: React.FC = () => {
+  const t = useT();
+  const flip = dp(t, 4, 1.0);
+  return (
+    <DeskBg>
+      <Head t={t}>Thành SAU</Head>
+      {['V1', 'V2', 'V3'].map((ld, i) => (
+        <div key={ld} style={{position: 'absolute', left: 60 + i * 300, top: 150, opacity: ap(t, 2 + i * 0.2), transform: `scaleY(${1 - 2 * flip})`, transition: 'none'}}>
+          <div style={{borderRadius: 12, overflow: 'hidden', outline: `4px solid ${flip > 0.5 ? UP : DN}`}}>
+            <Strip L={POST3[ld]} w={280} h={260} q={9} base={0.6} t0={-0.2} label={flip > 0.5 ? undefined : ld} />
+          </div>
+        </div>
+      ))}
+      <div style={{position: 'absolute', left: 60, top: 430, width: 880, fontFamily: HAND, fontSize: 38, color: flip > 0.5 ? '#FCA5A5' : '#93C5FD', opacity: ap(t, 2.4)}}>{flip > 0.5 ? '↻ lật ngược = ST chênh lên nhìn từ phía sau' : 'ST↓ · R cao · T dương ở V1–V3'}</div>
+      <div style={{position: 'absolute', left: 60, top: 500, opacity: ap(t, 6)}}><Torso back a={1} hi="V8" dots={[['V7', 120, 230], ['V8', 165, 205], ['V9', 200, 190]]} /></div>
+      <Frame x={520} y={560} a={ap(t, 6.4)} c={UP}><Strip L={{r: 0.35, s: -0.1, st: 0.1, t: 0.25}} w={420} h={220} q={12} base={0.62} t0={-0.2} label="V8" /></Frame>
+      <div style={{position: 'absolute', left: 520, top: 800, fontFamily: HAND, fontSize: 34, color: '#FCA5A5', opacity: ap(t, 6.8)}}>ST chênh lên ≥ 0,5 mm</div>
+      <svg viewBox="0 0 1920 1080" width={1920} height={1080} style={{position: 'absolute', inset: 0, pointerEvents: 'none'}}>
+        <Heart6 id="post5" x={1380} y={110} s={0.75} prog={1} art={1} labels={false} zone="post" zoneC="#16A34A" zoneA={ap(t, 0.3) * 0.9} hot="lcx" occl={ap(t, 0.3)} />
+      </svg>
+      <Card x={1060} y={560} w={800} a={ap(t, 0)} c={CG} title="12 chuyển đạo không nhìn trực tiếp thành sau" />
+      <Card x={1060} y={680} w={800} a={ap(t, 6)} c={UP} title="Khẳng định: gắn V7 – V9">ST chênh lên ≥ 0,5 mm (nam &lt; 40 tuổi: ≥ 1 mm)</Card>
+    </DeskBg>
+  );
+};
+const RightV: React.FC = () => {
+  const t = useT();
+  return (
+    <DeskBg>
+      <Head t={t}>Thất PHẢI</Head>
+      <div style={{position: 'absolute', left: 60, top: 140, opacity: ap(t, 2)}}><Torso a={1} hi="V4R" dots={[['V3R', 165, 225], ['V4R', 125, 250], ['V5R', 85, 252], ['V6R', 45, 255], ['V1', 230, 190], ['V2', 190, 190]]} /></div>
+      <div style={{position: 'absolute', left: 60, top: 620, width: 420, fontFamily: HAND, fontSize: 30, color: '#CBD5E1', opacity: ap(t, 2.4)}}>V3R – V6R: đặt đối xứng V3 – V6 sang bên phải ngực</div>
+      <Frame x={520} y={160} a={ap(t, 2.4)} c={UP}><Strip L={{r: 0.3, s: -0.6, st: 0.12, t: 0.25}} w={560} h={300} q={14} base={0.55} t0={-0.2} label="V4R" stroke={4}>
+        {(X, Y) => <g opacity={ap(t, 3)}><line x1={X(0.11)} x2={X(0.11)} y1={Y(0)} y2={Y(0.12)} stroke={PEN} strokeWidth={4} /><text x={X(0.11) + 14} y={Y(0.06) + 10} fontFamily={MONO} fontSize={26} fontWeight={700} fill={PEN}>≥ 0,5 mm</text></g>}
+      </Strip></Frame>
+      <svg viewBox="0 0 1920 1080" width={1920} height={1080} style={{position: 'absolute', inset: 0, pointerEvents: 'none'}}>
+        <Heart6 id="rv5" x={1360} y={110} s={0.8} prog={1} art={1} labels={false} zone="rv" zoneC="#7C3AED" zoneA={ap(t, 4) * 0.9} hot="rcaP" occl={ap(t, 4)} />
+      </svg>
+      <Card x={520} y={500} w={760} a={ap(t, 0)} c="#7C3AED" title="Nghĩ đến khi có nhồi máu vùng DƯỚI" />
+      <Card x={520} y={610} w={760} a={ap(t, 2)} c={UP} title="V4R: ST chênh lên ≥ 0,5 mm" />
+      <Card x={520} y={720} w={760} a={ap(t, 4)} c={CRCA} title="Thủ phạm: vành phải đoạn gần" />
+      <div style={{position: 'absolute', left: 1320, top: 620, width: 540, padding: '18px 24px', borderRadius: 16, background: PEN, color: '#fff', fontFamily: FONT, fontSize: 30, fontWeight: 800, boxSizing: 'border-box', opacity: ap(t, 6), boxShadow: '0 12px 28px rgba(0,0,0,0.4)'}}>Ghi nhận sớm: ảnh hưởng xử trí — thận trọng thuốc giãn mạch</div>
+    </DeskBg>
+  );
+};
+
+// ================= 14 · BẢNG ÔN TẬP =================
+const Review5: React.FC = () => {
+  const t = useT();
+  const rows: [string, string, string, string, string, number][] = [
+    ['Dưới', 'II, III, aVF', 'aVL (± I)', 'Vành phải (± mũ)', CRCA, 2],
+    ['Trước vách', 'V1 – V4', '—', 'Liên thất trước', CLAD, 2.4],
+    ['Bên', 'I, aVL, V5, V6', 'III, aVF', 'Mũ / nhánh chéo', CLCX, 4],
+    ['Trước rộng', 'V1 – V6, I, aVL', 'III, aVF', 'Liên thất trước đoạn gần', CLAD, 4.4],
+    ['Thành sau', 'V7 – V9', 'ST↓ V1 – V3', 'Mũ hoặc vành phải', CG, 6],
+    ['Thất phải', 'V4R', '—', 'Vành phải đoạn gần', '#7C3AED', 6.4],
+  ];
+  const cols = [300, 400, 400, 700];
+  return (
+    <DeskBg>
+      <Head t={t}>Bảng định khu</Head>
+      <div style={{position: 'absolute', left: 60, top: 140, width: 1800, borderRadius: 18, overflow: 'hidden', background: '#FCFAF4', boxShadow: '0 20px 40px rgba(0,0,0,0.4)', fontFamily: FONT, opacity: ap(t, 0)}}>
+        <div style={{display: 'flex', background: '#1E293B', color: '#F8FAFC', fontSize: 28, fontWeight: 800}}>
+          {['Vùng', 'ST chênh lên', 'Soi gương', 'Động mạch thủ phạm'].map((h, i) => <div key={h} style={{width: cols[i], padding: '16px 24px', boxSizing: 'border-box'}}>{h}</div>)}
+        </div>
+        {rows.map(([a, b, c, d, col, s]) => (
+          <div key={a} style={{display: 'flex', borderTop: '2px solid #E5E7EB', opacity: ap(t, s), transform: `translateX(${(1 - ap(t, s)) * 30}px)`, fontSize: 30, fontWeight: 700, color: '#1F2937', alignItems: 'center'}}>
+            <div style={{width: cols[0], padding: '20px 24px', boxSizing: 'border-box', color: col, fontWeight: 900, borderLeft: `10px solid ${col}`}}>{a}</div>
+            <div style={{width: cols[1], padding: '20px 24px', boxSizing: 'border-box'}}>{b}</div>
+            <div style={{width: cols[2], padding: '20px 24px', boxSizing: 'border-box', color: '#2563EB'}}>{c}</div>
+            <div style={{width: cols[3], padding: '20px 24px', boxSizing: 'border-box', fontWeight: 800}}>{d}</div>
+          </div>
+        ))}
+      </div>
+    </DeskBg>
+  );
+};
+
+// ================= 15 · THỰC HÀNH =================
+const Chk: React.FC<{y: number; a: number; c: string; k: string; children: React.ReactNode}> = ({y, a, c, k, children}) => (
+  <div style={{position: 'absolute', left: 1300, top: y, width: 560, display: 'flex', gap: 14, alignItems: 'flex-start', fontFamily: FONT, opacity: a, transform: `translateX(${(1 - a) * 30}px)`}}>
+    <span style={{flex: 'none', padding: '4px 12px', borderRadius: 10, background: c, color: '#fff', fontSize: 22, fontWeight: 900, marginTop: 4}}>{k}</span>
+    <span style={{fontSize: 28, fontWeight: 700, color: '#F1F5F9', lineHeight: 1.3}}>{children}</span>
+  </div>
+);
+const Practice5: React.FC = () => {
+  const t = useT();
+  const sw = ap(t, 6, 0.6);
+  return (
+    <DeskBg>
+      <Head t={t}>Thực hành: CHÊNH – SOI GƯƠNG – ĐỊNH KHU</Head>
+      <div style={{opacity: 1 - sw}}>
+        <div style={{position: 'absolute', left: 60, top: 128, fontFamily: FONT, fontSize: 30, fontWeight: 900, color: '#FDE047'}}>ECG 1</div>
+        <SheetBox2 x={60} y={175} a={ap(t, 2)} leads={INF12} sc={0.8} groups={[[['II', 'III', 'aVF'], UP, ap(t, 2.4)], [['aVL'], DN, ap(t, 2.8)]]} />
+        <Chk y={180} a={ap(t, 2.4)} c={UP} k="CHÊNH">ST↑ II, III, aVF · III &gt; II</Chk>
+        <Chk y={290} a={ap(t, 2.8)} c={DN} k="SOI GƯƠNG">ST↓ aVL</Chk>
+        <Chk y={370} a={ap(t, 4)} c={CRCA} k="ĐỊNH KHU">Vùng dưới → vành phải ✓</Chk>
+        <div style={{position: 'absolute', left: 1300, top: 470, width: 560, padding: '14px 20px', borderRadius: 14, background: '#7C3AED', color: '#fff', fontFamily: FONT, fontSize: 28, fontWeight: 800, boxSizing: 'border-box', opacity: ap(t, 4.4)}}>→ gắn thêm V4R</div>
+      </div>
+      <div style={{opacity: sw}}>
+        <div style={{position: 'absolute', left: 60, top: 128, fontFamily: FONT, fontSize: 30, fontWeight: 900, color: '#FDE047'}}>ECG 2</div>
+        <SheetBox2 x={60} y={175} a={sw} leads={ANTW} sc={0.8} groups={[[['V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'I', 'aVL'], UP, ap(t, 6.4)], [['III', 'aVF'], DN, ap(t, 6.8)]]} />
+        <Chk y={180} a={ap(t, 6.4)} c={UP} k="CHÊNH">ST↑ V1 – V6, I, aVL</Chk>
+        <Chk y={290} a={ap(t, 6.8)} c={DN} k="SOI GƯƠNG">ST↓ III, aVF</Chk>
+        <Chk y={370} a={ap(t, 8)} c={CLAD} k="ĐỊNH KHU">Trước rộng → liên thất trước đoạn gần ✓</Chk>
+      </div>
+    </DeskBg>
+  );
+};
+
+// ================= 16 · 5 ĐIỀU CẦN NHỚ =================
+const Takeaways5: React.FC = () => {
+  const t = useT();
+  const items: [React.ReactNode, string][] = [
+    [<>Đo ST tại <b>điểm J</b> · ≥ 2 chuyển đạo liên tiếp · V2–V3 theo tuổi, giới · chỗ khác ≥ 1 mm</>, PEN],
+    [<>Tìm <b>SOI GƯƠNG</b> — có soi gương, nhồi máu càng chắc</>, '#06B6D4'],
+    [<>Tiến triển: <b>T tối cấp → ST chênh lên → Q → T đảo</b></>, '#8B5CF6'],
+    [<><b>Chênh ở đâu</b> → vùng đó → động mạch đó</>, CF],
+    [<>ST↓ V1–V3 → nghĩ <b>thành sau</b> · nhồi máu dưới → gắn <b>V4R</b></>, CG],
+  ];
+  return (
+    <DeskBg>
+      <Head t={t}>5 điều cần nhớ</Head>
+      {items.map(([s, c], i) => {
+        const a = ap(t, 2 + i * 2);
+        return (
+          <div key={i} style={{position: 'absolute', left: 100, top: 140 + i * 128, width: 1720, height: 108, display: 'flex', alignItems: 'center', gap: 24, padding: '0 26px', borderRadius: 18, background: '#FCFAF4', borderLeft: `14px solid ${c}`, boxSizing: 'border-box', opacity: a, transform: `translateX(${(1 - a) * 50}px)`, boxShadow: '0 12px 26px rgba(0,0,0,0.35)', fontFamily: FONT}}>
+            <span style={{flex: 'none', width: 60, height: 60, borderRadius: 30, background: c, color: '#fff', fontSize: 34, fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{i + 1}</span>
+            <span style={{fontSize: 33, fontWeight: 700, color: '#1F2937'}}>{s}</span>
+          </div>
+        );
+      })}
+      <div style={{position: 'absolute', left: 100, top: 800, width: 1720, padding: '16px 26px', borderRadius: 16, background: 'rgba(94,234,212,0.12)', border: '2px solid #5EEAD4', boxSizing: 'border-box', fontFamily: FONT, fontSize: 32, fontWeight: 800, color: '#5EEAD4', opacity: ap(t, 12)}}>Bài 6: Nhồi máu khi ECG không điển hình — các dạng tắc mạch cấp &amp; Sgarbossa</div>
+    </DeskBg>
+  );
+};
+
+const SCN: React.FC[] = [Cover, Zones, MeasureJ, Thresholds, Contiguous, Mirror, MirrorValue, Evolution, Arteries, Inferior, Anterior, Lateral, Posterior, RightV, Review5, Practice5, Takeaways5];
 export const INFARCT_N = 7;
 export const Infarct: React.FC = () => (
   <AbsoluteFill style={{background: '#0E1116', fontFamily: FONT}}>
