@@ -670,7 +670,7 @@ const Takeaways: React.FC = () => {
           </div>
         );
       })}
-      <div style={{position: 'absolute', left: 0, right: 0, top: 850, textAlign: 'center', fontFamily: FONT, fontSize: 40, fontWeight: 800, color: '#5EEAD4', opacity: ap(t, 12)}}>Cảm ơn bạn đã theo dõi! · Bài sau: tiêu chuẩn Sgarbossa</div>
+      <div style={{position: 'absolute', left: 0, right: 0, top: 850, textAlign: 'center', fontFamily: FONT, fontSize: 40, fontWeight: 800, color: '#5EEAD4', opacity: ap(t, 12)}}>Cảm ơn bạn đã theo dõi!</div>
     </DeskBg>
   );
 };
