@@ -305,7 +305,7 @@ const Sg1996: React.FC = () => {
       {crit.map(([m, ld, ti, sub, pts, s, base], i) => (
         <div key={i}>
           <Frame x={60 + i * 610} y={140} a={ap(t, s)} c={['#DC2626', '#2563EB', '#F59E0B'][i]}>
-            <Strip L={bf(m)} w={580} h={400} q={8} base={base} t0={-0.2} label={ld} stroke={4} />
+            <Strip L={bf(m)} w={580} h={400} q={11} base={base} t0={-0.2} label={ld} stroke={4} />
           </Frame>
           <div style={{position: 'absolute', left: 60 + i * 610, top: 555, width: 580, fontFamily: FONT, opacity: ap(t, s + 0.2)}}>
             <div style={{fontSize: 30, fontWeight: 900, color: '#F8FAFC'}}>{ti}</div>
@@ -337,12 +337,12 @@ const Smith: React.FC = () => {
               <g opacity={ap(t, 2)}>
                 <line x1={X(0.07) - 70} x2={X(0.07) - 70} y1={Y(0)} y2={Y(f(0.07))} stroke={DN} strokeWidth={6} />
                 <path d={`M${X(0.07) - 84},${Y(0)} h28 M${X(0.07) - 84},${Y(f(0.07))} h28`} stroke={DN} strokeWidth={6} />
-                <text x={X(0.07) - 92} y={(Y(0) + Y(f(0.07))) / 2} textAnchor="end" fontFamily={MONO} fontSize={34} fontWeight={700} fill={DN}>S 12 mm</text>
+                <text x={X(0.07) + 30} y={Y(f(0.07)) + 12} fontFamily={MONO} fontSize={34} fontWeight={700} fill={DN}>S 12 mm</text>
               </g>
               <g opacity={ap(t, 2.4)}>
                 <line x1={X(0.17)} x2={X(0.17)} y1={Y(0)} y2={Y(0.3)} stroke={UP} strokeWidth={6} />
                 <path d={`M${X(0.17) - 14},${Y(0)} h28 M${X(0.17) - 14},${Y(0.3)} h28`} stroke={UP} strokeWidth={6} />
-                <text x={X(0.17) + 22} y={Y(0.15) + 12} fontFamily={MONO} fontSize={34} fontWeight={700} fill={UP}>ST 3 mm</text>
+                <text x={X(0.17) + 10} y={Y(0) + 50} fontFamily={MONO} fontSize={34} fontWeight={700} fill={UP}>ST 3 mm</text>
               </g>
             </g>
           )}
@@ -427,12 +427,12 @@ const SM2: Morph = {c: [[0.012, 0.007, 0.08], [0.07, 0.025, -1.5]], st: 0.5, t: 
 const CON: Morph = {c: [[0.045, 0.02, 1.0], [0.105, 0.022, 1.1]], st: 0.1, t: [0.34, 0.06, 0.4], end: 0.145};
 const Practice6: React.FC = () => {
   const t = useT();
-  const sw = ap(t, 6, 0.6);
+  const sw = ap(t, 6, 0.35);
   const leads = ['V1', 'V2', 'V3', 'V4', 'V5', 'V6'];
   return (
     <DeskBg>
       <Head t={t}>Thực hành: đọc 2 ECG</Head>
-      <div style={{opacity: 1 - sw}}>
+      <div style={{opacity: Math.max(0, 1 - sw * 2)}}>
         <Tag x={60} y={128} a={ap(t, 1)} c="#FDE047">ECG 1 · đau ngực</Tag>
         {leads.map((ld, i) => (
           <Frame key={ld} x={60 + (i % 3) * 400} y={175 + Math.floor(i / 3) * 240} a={ap(t, 2 + i * 0.08)} c={ap(t, 2.4) > 0.5 ? UP : undefined}><Strip L={DW[ld]} w={380} h={220} q={9} base={0.62} t0={-0.2} label={ld} /></Frame>
@@ -442,10 +442,10 @@ const Practice6: React.FC = () => {
         <Chk6 y={290} a={ap(t, 2.8)} c={AMB} k="aVR">ST↑ 1 mm</Chk6>
         <Chk6 y={370} a={ap(t, 4)} c={CLAD} k="KẾT LUẬN">Dạng de Winter → tắc liên thất trước đoạn gần ✓</Chk6>
       </div>
-      <div style={{opacity: sw}}>
+      <div style={{opacity: Math.max(0, sw * 2 - 1)}}>
         <Tag x={60} y={128} a={sw} c="#FDE047">ECG 2 · block nhánh trái</Tag>
         <Frame x={60} y={175} a={sw} c={UP}><Strip L={bf(SM2)} w={600} h={520} q={13} base={0.4} t0={-0.2} label="V3" stroke={5}>
-          {(X, Y) => <g opacity={ap(t, 6.6)}><text x={X(0.07) + 30} y={Y(-1.5) + 10} fontFamily={MONO} fontSize={30} fontWeight={700} fill={DN}>S 15 mm</text><line x1={X(0.17)} x2={X(0.17)} y1={Y(0)} y2={Y(0.5)} stroke={UP} strokeWidth={6} /><text x={X(0.17) + 16} y={Y(0.25) + 10} fontFamily={MONO} fontSize={30} fontWeight={700} fill={UP}>ST 5 mm</text></g>}
+          {(X, Y) => <g opacity={ap(t, 6.6)}><text x={X(0.07) + 30} y={Y(-1.5) + 10} fontFamily={MONO} fontSize={30} fontWeight={700} fill={DN}>S 15 mm</text><line x1={X(0.17)} x2={X(0.17)} y1={Y(0)} y2={Y(0.5)} stroke={UP} strokeWidth={6} /><text x={X(0.17) + 10} y={Y(0) + 46} fontFamily={MONO} fontSize={30} fontWeight={700} fill={UP}>ST 5 mm</text></g>}
         </Strip></Frame>
         <Frame x={690} y={175} a={sw} c={UP}><Strip L={bf(CON)} w={560} h={520} q={13} base={0.72} t0={-0.2} label="V5" stroke={5}>
           {(X, Y) => <g opacity={ap(t, 7)}><circle cx={X(0.17)} cy={Y(0.1)} r={22} fill="none" stroke={UP} strokeWidth={5} /><text x={X(0.17) + 30} y={Y(0.1) + 70} fontFamily={HAND} fontSize={34} fill={UP}>ST↑ tương hợp 1 mm</text></g>}
