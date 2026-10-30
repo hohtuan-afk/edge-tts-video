@@ -658,5 +658,5 @@ export const Infarct: React.FC = () => (
     <Progress />
   </AbsoluteFill>
 );
-export {Strip, Frame, S, NORM12, SheetBox, GroupRects, h2s, StationBar};
+export {Strip, Frame, S, NORM12, SheetBox, GroupRects, h2s, StationBar, SheetBox2, HeartCard, Torso};
 void interpolate; void LAYOUT;
