@@ -1,0 +1,412 @@
+[
+ {
+  "orig": 12.0,
+  "dur": 15.6,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 5.297,
+    "text": "Nhồi máu cơ tim khi điện tâm đồ không điển hình — Các dạng gợi ý tắc mạch cấp và tiêu chuẩn Sgarbossa"
+   },
+   {
+    "start": 6.147,
+    "dur": 3.188,
+    "text": "Thần chú: KHÔNG CHÊNH ≠ KHÔNG TẮC"
+   },
+   {
+    "start": 9.685,
+    "dur": 4.913,
+    "text": "Mục tiêu: nhận ra tắc mạch vành cấp khi ST chưa đủ ngưỡng, hoặc QRS rộng che lấp."
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 32.08,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 6.423,
+    "text": "Trạm 1 · KHÁI NIỆM — có tắc mạch nhưng KHÔNG đủ tiêu chuẩn ST chênh lên."
+   },
+   {
+    "start": 7.273,
+    "dur": 7.185,
+    "text": "Vì: tắc ở vùng 12 chuyển đạo nhìn kém · tắc sớm, chưa hoàn toàn · QRS rộng che lấp."
+   },
+   {
+    "start": 14.808,
+    "dur": 8.869,
+    "text": "Định nghĩa nhồi máu lần thứ 5 (2026): vẫn giữ STEMI/NSTEMI, nhưng liệt kê các dạng gợi ý tắc mạch cấp."
+   },
+   {
+    "start": 24.026,
+    "dur": 7.039,
+    "text": "Không chênh ≠ không tắc → đọc kỹ sóng T, soi gương, và QRS rộng."
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 15.0,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.011,
+    "text": "Trạm 2 · SÓNG T TỐI CẤP — dấu hiệu sớm nhất của tắc mạch."
+   },
+   {
+    "start": 4.861,
+    "dur": 4.813,
+    "text": "T cao, RỘNG ĐÁY, cân đối, to so với QRS đi trước."
+   },
+   {
+    "start": 10.024,
+    "dur": 3.965,
+    "text": "Khác tăng kali máu: T cao, nhọn, HẸP đáy."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 24.08,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 6.724,
+    "text": "Dạng de Winter: ST chênh XUỐNG đi lên 1 – 3 mm tại điểm J ở V1 – V6."
+   },
+   {
+    "start": 7.574,
+    "dur": 2.981,
+    "text": "Kèm sóng T cao, cân đối ở cùng chuyển đạo."
+   },
+   {
+    "start": 10.905,
+    "dur": 4.02,
+    "text": "Thường ST chênh lên nhẹ ở aVR (0,5 – 2 mm)."
+   },
+   {
+    "start": 15.275,
+    "dur": 4.626,
+    "text": "Gợi ý tắc động mạch liên thất trước đoạn gần · khoảng 2% nhồi máu thành trước."
+   },
+   {
+    "start": 20.251,
+    "dur": 2.836,
+    "text": "Không có ST chênh lên điển hình — nhưng là tắc mạch cấp."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 29.8,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 5.986,
+    "text": "Trạm 3 · WELLENS — sóng T ở V2 – V3 khi bệnh nhân HẾT đau."
+   },
+   {
+    "start": 6.836,
+    "dur": 5.703,
+    "text": "Dạng A: T hai pha · Dạng B (thường gặp hơn): T đảo sâu, cân đối."
+   },
+   {
+    "start": 12.89,
+    "dur": 6.167,
+    "text": "ST đẳng điện hoặc chênh lên < 1 mm · sóng R còn · không có Q."
+   },
+   {
+    "start": 19.407,
+    "dur": 5.418,
+    "text": "Ý nghĩa: hẹp nặng liên thất trước đoạn gần, đã tự tái thông — nguy cơ tắc lại rất cao."
+   },
+   {
+    "start": 25.175,
+    "dur": 3.635,
+    "text": "Tránh nghiệm pháp gắng sức — có thể gây nhồi máu, rối loạn nhịp."
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 18.88,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 5.679,
+    "text": "Trạm 4 · THÀNH SAU ẨN — ST chênh xuống tối đa ở V1 – V4."
+   },
+   {
+    "start": 6.529,
+    "dur": 2.811,
+    "text": "Kèm sóng R cao, T dương ở V1 – V3."
+   },
+   {
+    "start": 9.69,
+    "dur": 4.485,
+    "text": "Khác thiếu máu dưới nội mạc: ST chênh xuống thường tối đa ở V5 – V6."
+   },
+   {
+    "start": 14.525,
+    "dur": 3.366,
+    "text": "Khẳng định bằng V7 – V9 (như bài 5)."
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 21.12,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.77,
+    "text": "Dạng Aslanger: nhồi máu vùng dưới kèm bệnh nhiều nhánh."
+   },
+   {
+    "start": 4.62,
+    "dur": 3.933,
+    "text": "① ST chênh lên CHỈ ở III (không ở II, aVF)."
+   },
+   {
+    "start": 8.902,
+    "dur": 7.643,
+    "text": "② ST chênh xuống ở V4 – V6 (ít nhất 1 chuyển đạo), T dương · ③ ST ở V1 cao hơn V2."
+   },
+   {
+    "start": 16.895,
+    "dur": 3.216,
+    "text": "Không đủ “2 chuyển đạo liên tiếp” → dễ bị bỏ sót."
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 23.04,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 5.3,
+    "text": "Trạm 5 · ST chênh xuống LAN TOẢ + ST chênh lên aVR."
+   },
+   {
+    "start": 6.15,
+    "dur": 5.892,
+    "text": "Gợi ý thiếu máu dưới nội mạc lan toả: hẹp thân chung, bệnh 3 nhánh, hoặc do tăng nhu cầu."
+   },
+   {
+    "start": 12.392,
+    "dur": 4.274,
+    "text": "KHÔNG đặc hiệu cho tắc mạch cấp (định nghĩa nhồi máu 2026)."
+   },
+   {
+    "start": 17.016,
+    "dur": 5.007,
+    "text": "Phân biệt de Winter: de Winter có T cao cân đối ở V1 – V6."
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 21.96,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.559,
+    "text": "Trạm 6 · SGARBOSSA — block nhánh trái và nhịp máy tạo nhịp thất."
+   },
+   {
+    "start": 5.409,
+    "dur": 6.074,
+    "text": "Bình thường: ST – T NGƯỢC chiều QRS (nhắc bài 4) → không dùng ngưỡng ST thông thường."
+   },
+   {
+    "start": 11.833,
+    "dur": 3.678,
+    "text": "Tìm cái BẤT THƯỜNG: CÙNG chiều là bệnh · NGƯỢC quá mức là bệnh."
+   },
+   {
+    "start": 15.861,
+    "dur": 5.116,
+    "text": "Tương hợp = ST cùng chiều QRS · bất tương hợp = ngược chiều."
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 26.48,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.017,
+    "text": "Tiêu chuẩn Sgarbossa (1996):"
+   },
+   {
+    "start": 4.867,
+    "dur": 4.67,
+    "text": "① ST chênh lên TƯƠNG HỢP ≥ 1 mm ở bất kỳ chuyển đạo: 5 điểm."
+   },
+   {
+    "start": 9.887,
+    "dur": 9.052,
+    "text": "② ST chênh xuống ≥ 1 mm ở V1, V2 hoặc V3: 3 điểm · ③ ST chênh lên BẤT tương hợp > 5 mm: 2 điểm."
+   },
+   {
+    "start": 19.289,
+    "dur": 6.192,
+    "text": "≥ 3 điểm → nhồi máu: đặc hiệu rất cao, nhưng nhạy thấp (bỏ sót khoảng một nửa)."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 37.24,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 6.014,
+    "text": "Sgarbossa cải tiến (Smith, 2012): giữ ① và ②, thay ③."
+   },
+   {
+    "start": 6.864,
+    "dur": 6.25,
+    "text": "③ mới: ST chênh lên bất tương hợp ≥ 1 mm VÀ ST/S ≥ 25% (tỉ lệ ≤ −0,25)."
+   },
+   {
+    "start": 13.464,
+    "dur": 7.682,
+    "text": "Ví dụ: S sâu 12 mm, ST chênh lên 3 mm → 3/12 = 25% → dương tính."
+   },
+   {
+    "start": 21.496,
+    "dur": 6.956,
+    "text": "Vì sao tỉ lệ? QRS càng lớn, ST ngược chiều càng lớn — đo tương đối thì công bằng hơn."
+   },
+   {
+    "start": 28.801,
+    "dur": 7.435,
+    "text": "Kiểm chứng: nhạy 80%, đặc hiệu 99% (so với 49% và 100% của bản gốc)."
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 19.48,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 5.798,
+    "text": "Nhịp máy tạo nhịp thất: QRS rộng giống block nhánh trái → dùng được Sgarbossa cải tiến."
+   },
+   {
+    "start": 6.648,
+    "dur": 5.094,
+    "text": "Nghiên cứu 2021: nhạy 81%, đặc hiệu 96% trong nhịp máy tạo nhịp thất."
+   },
+   {
+    "start": 12.092,
+    "dur": 6.39,
+    "text": "Ngoài ra có thuật toán Barcelona (2020) cho block nhánh trái — nhạy hơn, cần thêm kiểm chứng."
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 26.48,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.452,
+    "text": "Trạm 7 · ÔN TẬP — các dạng gợi ý tắc mạch cấp."
+   },
+   {
+    "start": 3.302,
+    "dur": 3.884,
+    "text": "T tối cấp · de Winter → liên thất trước đoạn gần."
+   },
+   {
+    "start": 7.535,
+    "dur": 10.699,
+    "text": "Wellens → hẹp nặng liên thất trước, đã tái thông · Thành sau: ST↓ V1 – V4 · Aslanger: chỉ III + ST↓ V4 – V6."
+   },
+   {
+    "start": 18.584,
+    "dur": 6.902,
+    "text": "Block nhánh trái / máy tạo nhịp → Sgarbossa cải tiến · aVR + chênh xuống lan toả: không đặc hiệu."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 35.28,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 1.69,
+    "text": "Thực hành: đọc 2 ECG."
+   },
+   {
+    "start": 2.54,
+    "dur": 7.927,
+    "text": "ECG 1: đau ngực · V1 – V6 ST chênh xuống đi lên 2 mm, T cao cân đối · aVR chênh lên 1 mm."
+   },
+   {
+    "start": 10.817,
+    "dur": 3.908,
+    "text": "→ Dạng de Winter · gợi ý tắc liên thất trước đoạn gần ✓"
+   },
+   {
+    "start": 15.074,
+    "dur": 10.485,
+    "text": "ECG 2: block nhánh trái · V3: S sâu 15 mm, ST chênh lên 5 mm · V5: ST chênh lên tương hợp 1 mm."
+   },
+   {
+    "start": 25.909,
+    "dur": 8.363,
+    "text": "→ 5/15 = 33% ≥ 25% và có ST chênh lên tương hợp → Sgarbossa cải tiến dương tính ✓"
+   }
+  ]
+ },
+ {
+  "orig": 24.0,
+  "dur": 37.4,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 0.965,
+    "text": "5 điều cần nhớ"
+   },
+   {
+    "start": 1.815,
+    "dur": 5.97,
+    "text": "① Không chênh ≠ không tắc — đọc sóng T, soi gương, QRS rộng"
+   },
+   {
+    "start": 8.135,
+    "dur": 4.407,
+    "text": "② T tối cấp, de Winter → nghĩ liên thất trước đoạn gần"
+   },
+   {
+    "start": 12.892,
+    "dur": 5.403,
+    "text": "③ Wellens: T ở V2 – V3 khi hết đau → hẹp nặng, tránh gắng sức"
+   },
+   {
+    "start": 18.645,
+    "dur": 8.957,
+    "text": "④ ST↓ tối đa V1 – V4 → thành sau · chỉ III chênh + ST↓ V4 – V6 → Aslanger"
+   },
+   {
+    "start": 27.952,
+    "dur": 6.894,
+    "text": "⑤ Block nhánh trái / máy tạo nhịp: cùng chiều là bệnh, ngược quá mức (ST/S ≥ 25%) là bệnh"
+   },
+   {
+    "start": 35.196,
+    "dur": 1.187,
+    "text": "Cảm ơn bạn đã theo dõi!"
+   }
+  ]
+ }
+]
