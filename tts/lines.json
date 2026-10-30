@@ -1,263 +1,35 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+8%",
+ "rate": "+12%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Nhồi máu cơ tim khi điện tâm đồ không điển hình, các dạng gợi ý tắc mạch cấp, và tiêu chuẩn Sgát-bô-sa."
-  },
-  {
-   "id": "00-1",
-   "text": "Thần chú của bài hôm nay: không chênh, không có nghĩa là không tắc."
-  },
-  {
-   "id": "00-2",
-   "text": "Mục tiêu là nhận ra tắc mạch vành cấp, khi ét tê chưa đủ ngưỡng, hoặc khi QRS rộng che lấp."
+   "text": "Ét tê không chênh, chưa chắc mạch vành không tắc. Đây là bốn dạng điện tâm đồ dễ bỏ sót."
   },
   {
    "id": "01-0",
-   "text": "Trạm một, khái niệm. Có những trường hợp động mạch vành đang tắc, nhưng điện tâm đồ không đủ tiêu chuẩn ét tê chênh lên."
-  },
-  {
-   "id": "01-1",
-   "text": "Lý do là vùng bị tắc nằm ở nơi mười hai chuyển đạo nhìn kém, hoặc tắc còn sớm, chưa hoàn toàn, hoặc QRS rộng che lấp đoạn ét tê."
-  },
-  {
-   "id": "01-2",
-   "text": "Định nghĩa nhồi máu cơ tim lần thứ năm, năm hai nghìn không trăm hai mươi sáu, vẫn giữ cách chia có hay không có ét tê chênh lên, nhưng đã liệt kê các dạng điện tâm đồ gợi ý tắc mạch vành cấp."
-  },
-  {
-   "id": "01-3",
-   "text": "Vì vậy, không chênh không có nghĩa là không tắc. Hãy đọc kỹ sóng T, thay đổi soi gương, và các trường hợp QRS rộng."
+   "text": "Một, dạng đơ Uyn-tơ: ét tê chênh xuống đi lên, kèm sóng T cao cân đối ở vê một đến vê sáu. Nghĩ tắc động mạch liên thất trước đoạn gần."
   },
   {
    "id": "02-0",
-   "text": "Trạm hai. Sóng T tối cấp là dấu hiệu sớm nhất của tắc mạch."
-  },
-  {
-   "id": "02-1",
-   "text": "Sóng T cao, rộng đáy, cân đối, và to bất thường so với phức bộ QRS đi trước."
-  },
-  {
-   "id": "02-2",
-   "text": "Khác với tăng kali máu, khi sóng T cao, nhọn, nhưng hẹp đáy."
+   "text": "Hai, Uê-len: sóng T đảo sâu hoặc hai pha ở vê hai, vê ba khi đã hết đau. Hẹp nặng, cần tránh nghiệm pháp gắng sức."
   },
   {
    "id": "03-0",
-   "text": "Dạng đơ Uyn-tơ: ét tê chênh xuống, đi lên dốc, từ một đến ba mi li mét tại điểm J, ở các chuyển đạo vê một đến vê sáu."
-  },
-  {
-   "id": "03-1",
-   "text": "Kèm theo là sóng T cao, cân đối ở cùng các chuyển đạo đó."
-  },
-  {
-   "id": "03-2",
-   "text": "Thường có ét tê chênh lên nhẹ ở a-vê-rờ, từ không phẩy năm đến hai mi li mét."
-  },
-  {
-   "id": "03-3",
-   "text": "Dạng này gợi ý tắc động mạch liên thất trước đoạn gần, gặp trong khoảng hai phần trăm nhồi máu thành trước."
-  },
-  {
-   "id": "03-4",
-   "text": "Không có ét tê chênh lên điển hình, nhưng đây là tắc mạch cấp."
+   "text": "Ba, thành sau: ét tê chênh xuống rõ nhất ở vê một đến vê bốn, sóng R cao. Gắn thêm vê bảy đến vê chín."
   },
   {
    "id": "04-0",
-   "text": "Trạm ba, hội chứng Uê-len. Thay đổi sóng T ở vê hai và vê ba, ghi được khi bệnh nhân đã hết đau."
-  },
-  {
-   "id": "04-1",
-   "text": "Dạng A là sóng T hai pha. Dạng B, thường gặp hơn, là sóng T đảo sâu và cân đối."
-  },
-  {
-   "id": "04-2",
-   "text": "Đoạn ét tê đẳng điện, hoặc chênh lên dưới một mi li mét. Sóng R vẫn còn, và không có sóng Q."
-  },
-  {
-   "id": "04-3",
-   "text": "Ý nghĩa: hẹp nặng động mạch liên thất trước đoạn gần, mạch đã tự tái thông, nhưng nguy cơ tắc lại rất cao."
-  },
-  {
-   "id": "04-4",
-   "text": "Cần tránh nghiệm pháp gắng sức, vì có thể gây nhồi máu cơ tim hoặc rối loạn nhịp."
+   "text": "Bốn, block nhánh trái: ét tê cùng chiều QRS, hoặc ngược chiều từ hai mươi lăm phần trăm sóng S, là tiêu chuẩn Sgát-bô-sa cải tiến dương tính."
   },
   {
    "id": "05-0",
-   "text": "Trạm bốn. Nhồi máu thành sau thường ẩn dưới dạng ét tê chênh xuống, rõ nhất ở vê một đến vê bốn."
-  },
-  {
-   "id": "05-1",
-   "text": "Kèm sóng R cao và sóng T dương ở vê một đến vê ba."
-  },
-  {
-   "id": "05-2",
-   "text": "Khác với thiếu máu dưới nội mạc, khi ét tê chênh xuống thường rõ nhất ở vê năm, vê sáu."
-  },
-  {
-   "id": "05-3",
-   "text": "Khẳng định bằng cách gắn vê bảy đến vê chín, như đã học ở bài năm."
+   "text": "Nhớ nhé: không chênh không có nghĩa là không tắc. Nhìn sóng T, soi gương, và QRS rộng."
   },
   {
    "id": "06-0",
-   "text": "Dạng Át-xlan-gơ: nhồi máu vùng dưới ở bệnh nhân có bệnh nhiều nhánh mạch vành."
-  },
-  {
-   "id": "06-1",
-   "text": "Một, ét tê chênh lên chỉ ở chuyển đạo ba, không ở chuyển đạo hai và a-vê-ép."
-  },
-  {
-   "id": "06-2",
-   "text": "Hai, ét tê chênh xuống ở ít nhất một chuyển đạo từ vê bốn đến vê sáu, sóng T dương. Ba, ét tê ở vê một cao hơn vê hai."
-  },
-  {
-   "id": "06-3",
-   "text": "Vì không đủ hai chuyển đạo liên tiếp, dạng này rất dễ bị bỏ sót."
-  },
-  {
-   "id": "07-0",
-   "text": "Trạm năm. Ét tê chênh xuống lan toả ở nhiều chuyển đạo, kèm ét tê chênh lên ở a-vê-rờ."
-  },
-  {
-   "id": "07-1",
-   "text": "Dạng này gợi ý thiếu máu dưới nội mạc lan toả, do hẹp thân chung, bệnh ba nhánh, hoặc do tăng nhu cầu ô xy."
-  },
-  {
-   "id": "07-2",
-   "text": "Theo định nghĩa nhồi máu năm hai nghìn không trăm hai mươi sáu, dạng này không đặc hiệu cho tắc mạch cấp."
-  },
-  {
-   "id": "07-3",
-   "text": "Phân biệt với dạng đơ Uyn-tơ: dạng đơ Uyn-tơ có sóng T cao, cân đối ở vê một đến vê sáu."
-  },
-  {
-   "id": "08-0",
-   "text": "Trạm sáu, tiêu chuẩn Sgát-bô-sa, dùng khi có block nhánh trái hoặc nhịp máy tạo nhịp thất."
-  },
-  {
-   "id": "08-1",
-   "text": "Bình thường, ét tê và sóng T ngược chiều với QRS, như đã học ở bài bốn, nên không dùng được ngưỡng ét tê thông thường."
-  },
-  {
-   "id": "08-2",
-   "text": "Hãy tìm điều bất thường: cùng chiều là bệnh, ngược chiều quá mức cũng là bệnh."
-  },
-  {
-   "id": "08-3",
-   "text": "Tương hợp là ét tê cùng chiều với phần chính của QRS. Bất tương hợp là ngược chiều."
-  },
-  {
-   "id": "09-0",
-   "text": "Tiêu chuẩn Sgát-bô-sa gốc, công bố năm một chín chín sáu, có ba tiêu chí."
-  },
-  {
-   "id": "09-1",
-   "text": "Một, ét tê chênh lên tương hợp, từ một mi li mét ở bất kỳ chuyển đạo nào: năm điểm."
-  },
-  {
-   "id": "09-2",
-   "text": "Hai, ét tê chênh xuống từ một mi li mét ở vê một, vê hai hoặc vê ba: ba điểm. Ba, ét tê chênh lên bất tương hợp trên năm mi li mét: hai điểm."
-  },
-  {
-   "id": "09-3",
-   "text": "Từ ba điểm trở lên là nhồi máu. Rất đặc hiệu, nhưng độ nhạy thấp, có thể bỏ sót khoảng một nửa số ca."
-  },
-  {
-   "id": "10-0",
-   "text": "Tiêu chuẩn Sgát-bô-sa cải tiến của Xmít, năm hai nghìn không trăm mười hai, giữ tiêu chí một và hai, chỉ thay tiêu chí ba."
-  },
-  {
-   "id": "10-1",
-   "text": "Tiêu chí ba mới: ét tê chênh lên bất tương hợp từ một mi li mét, và bằng ít nhất hai mươi lăm phần trăm độ sâu sóng S đi trước."
-  },
-  {
-   "id": "10-2",
-   "text": "Ví dụ, sóng S sâu mười hai mi li mét, ét tê chênh lên ba mi li mét. Ba chia mười hai bằng hai mươi lăm phần trăm, là dương tính."
-  },
-  {
-   "id": "10-3",
-   "text": "Vì sao dùng tỉ lệ? QRS càng lớn, ét tê ngược chiều càng lớn, nên đo tương đối sẽ công bằng hơn đo tuyệt đối."
-  },
-  {
-   "id": "10-4",
-   "text": "Trong nghiên cứu kiểm chứng, tiêu chuẩn cải tiến có độ nhạy tám mươi phần trăm, độ đặc hiệu chín mươi chín phần trăm, so với bốn mươi chín và một trăm phần trăm của bản gốc."
-  },
-  {
-   "id": "11-0",
-   "text": "Nhịp máy tạo nhịp thất cho QRS rộng, giống block nhánh trái, nên cũng dùng được tiêu chuẩn Sgát-bô-sa cải tiến."
-  },
-  {
-   "id": "11-1",
-   "text": "Một nghiên cứu năm hai nghìn không trăm hai mươi mốt cho thấy độ nhạy tám mươi mốt phần trăm, đặc hiệu chín mươi sáu phần trăm."
-  },
-  {
-   "id": "11-2",
-   "text": "Ngoài ra còn có thuật toán Bác-xê-lô-na, năm hai nghìn không trăm hai mươi, cho block nhánh trái, nhạy hơn nhưng cần thêm kiểm chứng."
-  },
-  {
-   "id": "12-0",
-   "text": "Trạm bảy, ôn tập các dạng gợi ý tắc mạch cấp."
-  },
-  {
-   "id": "12-1",
-   "text": "Sóng T tối cấp và dạng đơ Uyn-tơ gợi ý tắc động mạch liên thất trước đoạn gần."
-  },
-  {
-   "id": "12-2",
-   "text": "Uê-len là hẹp nặng liên thất trước đã tái thông. Thành sau có ét tê chênh xuống vê một đến vê bốn. Át-xlan-gơ có ét tê chênh lên chỉ ở chuyển đạo ba, và chênh xuống vê bốn đến vê sáu."
-  },
-  {
-   "id": "12-3",
-   "text": "Block nhánh trái và máy tạo nhịp thì dùng Sgát-bô-sa cải tiến. Còn a-vê-rờ chênh lên kèm chênh xuống lan toả thì không đặc hiệu."
-  },
-  {
-   "id": "13-0",
-   "text": "Thực hành: đọc hai điện tâm đồ."
-  },
-  {
-   "id": "13-1",
-   "text": "Điện tâm đồ một: bệnh nhân đau ngực, vê một đến vê sáu có ét tê chênh xuống đi lên hai mi li mét, sóng T cao cân đối, a-vê-rờ chênh lên một mi li mét."
-  },
-  {
-   "id": "13-2",
-   "text": "Kết luận: dạng đơ Uyn-tơ, gợi ý tắc động mạch liên thất trước đoạn gần."
-  },
-  {
-   "id": "13-3",
-   "text": "Điện tâm đồ hai: block nhánh trái. Ở vê ba, sóng S sâu mười lăm mi li mét, ét tê chênh lên năm mi li mét. Ở vê năm, ét tê chênh lên tương hợp một mi li mét."
-  },
-  {
-   "id": "13-4",
-   "text": "Năm chia mười lăm bằng ba mươi ba phần trăm, lớn hơn hai mươi lăm phần trăm, lại có ét tê chênh lên tương hợp. Tiêu chuẩn Sgát-bô-sa cải tiến dương tính."
-  },
-  {
-   "id": "14-0",
-   "text": "Năm điều cần nhớ."
-  },
-  {
-   "id": "14-1",
-   "text": "Một, không chênh không có nghĩa là không tắc. Hãy đọc sóng T, soi gương, và QRS rộng."
-  },
-  {
-   "id": "14-2",
-   "text": "Hai, sóng T tối cấp và dạng đơ Uyn-tơ, nghĩ đến tắc liên thất trước đoạn gần."
-  },
-  {
-   "id": "14-3",
-   "text": "Ba, Uê-len: sóng T ở vê hai, vê ba khi hết đau, là hẹp nặng, cần tránh gắng sức."
-  },
-  {
-   "id": "14-4",
-   "text": "Bốn, ét tê chênh xuống rõ nhất ở vê một đến vê bốn, nghĩ thành sau. Chỉ chuyển đạo ba chênh lên kèm vê bốn đến vê sáu chênh xuống, nghĩ dạng Át-xlan-gơ."
-  },
-  {
-   "id": "14-5",
-   "text": "Năm, với block nhánh trái và máy tạo nhịp: cùng chiều là bệnh, ngược chiều quá mức, từ hai mươi lăm phần trăm sóng S, cũng là bệnh."
-  },
-  {
-   "id": "14-6",
-   "text": "Cảm ơn bạn đã theo dõi."
+   "text": "Lưu lại để ôn, và xem bài đầy đủ trên kênh nhé."
   }
  ]
 }
