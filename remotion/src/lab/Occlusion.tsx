@@ -62,16 +62,16 @@ const DW: Record<string, Lead> = {
 const WELL_A = (T: number) => {const x = per(T); return beatV(x, {r: 0.8, s: -0.6, st: 0.03, t: 0.3, tw: 0.04, tPos: 0.2}) + gs(x, 0.33, 0.04, -0.32);};
 const WELL_B: Lead = {r: 0.8, s: -0.6, st: 0.03, t: -0.75, tw: 0.065, tPos: 0.27};
 const POSTX: Record<string, Lead> = {
-  V1: {r: 0.75, s: -0.35, st: -0.28, t: 0.45, tw: 0.075}, V2: {r: 1.05, s: -0.3, st: -0.36, t: 0.55, tw: 0.075},
-  V3: {r: 1.1, s: -0.3, st: -0.3, t: 0.5, tw: 0.075}, V4: {r: 1.2, s: -0.3, st: -0.22, t: 0.45},
+  V1: {r: 0.75, s: -0.35, st: -0.4, t: 0.35, tw: 0.075}, V2: {r: 1.05, s: -0.3, st: -0.48, t: 0.4, tw: 0.075},
+  V3: {r: 1.1, s: -0.3, st: -0.42, t: 0.38, tw: 0.075}, V4: {r: 1.2, s: -0.3, st: -0.3, t: 0.35},
 };
 const SUBENDO: Record<string, Lead> = {V2: {r: 0.4, s: -1.0, st: -0.05, t: 0.3}, V5: {r: 1.1, s: -0.2, st: -0.22, t: 0.1}, V6: {r: 0.9, s: -0.15, st: -0.25, t: 0.05}};
 const ASL: Record<string, Lead> = {
   ...NORM12,
-  II: {r: 0.9, s: -0.2, st: 0.02, t: 0.3}, III: {r: 0.5, s: -0.2, st: 0.16, t: 0.45, tw: 0.075}, aVF: {r: 0.7, s: -0.2, st: 0.05, t: 0.35},
+  II: {r: 0.9, s: -0.2, st: 0.02, t: 0.3}, III: {r: 0.5, s: -0.2, st: 0.24, t: 0.5, tw: 0.075}, aVF: {r: 0.7, s: -0.2, st: 0.05, t: 0.35},
   I: {r: 0.5, s: -0.1, st: -0.06, t: 0.15}, aVL: {r: 0.3, s: -0.25, st: -0.12, t: -0.1},
   V1: {r: 0.2, s: -0.9, st: 0.1, t: 0.25}, V2: {r: 0.4, s: -1.2, st: 0, t: 0.35},
-  V4: {r: 1.2, s: -0.45, st: -0.12, t: 0.3}, V5: {r: 1.15, s: -0.25, st: -0.15, t: 0.25}, V6: {r: 0.9, s: -0.15, st: -0.14, t: 0.2},
+  V4: {r: 1.2, s: -0.45, st: -0.18, t: 0.3}, V5: {r: 1.15, s: -0.25, st: -0.2, t: 0.25}, V6: {r: 0.9, s: -0.15, st: -0.18, t: 0.2},
 };
 
 // ================= 0 · BÌA =================
@@ -130,13 +130,13 @@ const Hyperacute: React.FC = () => {
       <Tag x={60} y={130} a={ap(t, 0)} c="#FCA5A5">T tối cấp (thiếu máu)</Tag>
       <Frame x={60} y={180} a={ap(t, 0)} c={UP}>
         <Strip L={(T) => beatV(T, HYPER)} w={W} h={H} q={q} base={0.72} t0={-0.3} stroke={6} prog={dp(t, 0, 1)}>
-          {(X, Y) => <g opacity={ap(t, 2)}><path d={`M${X(0.15)},${Y(0) + 30} h${X(0.37) - X(0.15)}`} stroke={UP} strokeWidth={6} /><text x={X(0.26)} y={Y(0) + 75} textAnchor="middle" fontFamily={HAND} fontSize={40} fill={UP}>RỘNG đáy · cân đối</text><text x={X(0.26)} y={Y(0.95) - 20} textAnchor="middle" fontFamily={HAND} fontSize={36} fill={UP}>to so với QRS</text></g>}
+          {(X, Y) => <g opacity={ap(t, 2)}><path d={`M${X(0.15)},${Y(0) + 30} h${X(0.37) - X(0.15)}`} stroke={UP} strokeWidth={6} /><text x={X(0.3)} y={Y(0) + 75} textAnchor="middle" fontFamily={HAND} fontSize={40} fill={UP}>RỘNG đáy · cân đối</text><text x={X(0.26)} y={Y(0.95) - 20} textAnchor="middle" fontFamily={HAND} fontSize={36} fill={UP}>to so với QRS</text></g>}
         </Strip>
       </Frame>
       <Tag x={1000} y={130} a={ap(t, 4)} c="#93C5FD">Tăng kali máu</Tag>
       <Frame x={1000} y={180} a={ap(t, 4)} c={DN}>
         <Strip L={(T) => beatV(T, KALI)} w={W} h={H} q={q} base={0.72} t0={-0.3} stroke={6}>
-          {(X, Y) => <g opacity={ap(t, 4.4)}><path d={`M${X(0.17)},${Y(0) + 30} h${X(0.27) - X(0.17)}`} stroke={DN} strokeWidth={6} /><text x={X(0.22)} y={Y(0) + 75} textAnchor="middle" fontFamily={HAND} fontSize={40} fill={DN}>HẸP đáy · nhọn</text></g>}
+          {(X, Y) => <g opacity={ap(t, 4.4)}><path d={`M${X(0.17)},${Y(0) + 30} h${X(0.27) - X(0.17)}`} stroke={DN} strokeWidth={6} /><text x={X(0.3)} y={Y(0) + 75} textAnchor="middle" fontFamily={HAND} fontSize={40} fill={DN}>HẸP đáy · nhọn</text></g>}
         </Strip>
       </Frame>
       <Memo x={60} y={700} w={1800} a={ap(t, 2.4)}>T tối cấp = dấu hiệu <span style={{color: PEN}}>sớm nhất</span> của tắc mạch — chú ý T “to bất thường” so với QRS</Memo>
@@ -154,7 +154,7 @@ const DeWinter: React.FC = () => {
       {leads.map((ld, i) => (
         <Frame key={ld} x={60 + (i % 3) * 400} y={130 + Math.floor(i / 3) * 250} a={ap(t, i * 0.12)} c={ap(t, 2) > 0.5 ? UP : undefined}>
           <Strip L={DW[ld]} w={380} h={230} q={9} base={0.62} t0={-0.2} label={ld}>
-            {(X, Y) => <circle cx={X(0.18)} cy={Y(DW[ld].st ?? 0)} r={13} fill="none" stroke={DN} strokeWidth={4} opacity={ap(t, 0.6)} />}
+            {(X, Y) => <circle cx={X(0.2)} cy={Y(DW[ld].st ?? 0)} r={13} fill="none" stroke={DN} strokeWidth={4} opacity={ap(t, 0.6)} />}
           </Strip>
         </Frame>
       ))}
@@ -178,10 +178,10 @@ const Wellens: React.FC = () => {
       <div style={{position: 'absolute', left: 520, top: 66, padding: '6px 20px', borderRadius: 14, background: '#16A34A', color: '#fff', fontFamily: FONT, fontSize: 28, fontWeight: 900, opacity: ap(t, 0.3)}}>ghi khi HẾT đau</div>
       <Tag x={60} y={130} a={ap(t, 2)} c="#C4B5FD">Dạng A · T hai pha</Tag>
       <Frame x={60} y={180} a={ap(t, 2)} c={VIO}><Strip L={WELL_A} w={620} h={300} q={q} base={0.55} t0={-0.2} label="V2" stroke={4} /></Frame>
-      <Tag x={720} y={130} a={ap(t, 2.4)} c="#C4B5FD">Dạng B · T đảo sâu, cân đối (thường gặp hơn)</Tag>
+      <Tag x={720} y={130} a={ap(t, 2.4)} c="#C4B5FD">Dạng B · T đảo sâu (hay gặp hơn)</Tag>
       <Frame x={720} y={180} a={ap(t, 2.4)} c={VIO}><Strip L={WELL_B} w={620} h={300} q={q} base={0.45} t0={-0.2} label="V3" stroke={4} /></Frame>
       {['ST đẳng điện / chênh < 1 mm', 'Sóng R còn', 'Không có sóng Q'].map((s, i) => (
-        <div key={s} style={{position: 'absolute', left: 60 + i * 430, top: 510, padding: '10px 20px', borderRadius: 14, background: 'rgba(22,163,74,0.18)', border: '2px solid #22C55E', fontFamily: FONT, fontSize: 28, fontWeight: 800, color: '#BBF7D0', opacity: ap(t, 4 + i * 0.3)}}>✓ {s}</div>
+        <div key={s} style={{position: 'absolute', left: 60 + i * 470, top: 510, padding: '10px 18px', borderRadius: 14, background: 'rgba(22,163,74,0.18)', border: '2px solid #22C55E', fontFamily: FONT, fontSize: 26, fontWeight: 800, color: '#BBF7D0', opacity: ap(t, 4 + i * 0.3)}}>✓ {s}</div>
       ))}
       <HeartCard id="wl6" x={1380} y={120} w={480} a={ap(t, 6)} zone="ant" hot="lad" c={VIO} title="Liên thất trước đoạn gần" sub="hẹp nặng · đã tự tái thông" s={0.6} />
       <Card x={60} y={610} w={1280} a={ap(t, 6)} c={VIO} title="Ý nghĩa: hẹp nặng, mạch đã tái thông — nguy cơ TẮC LẠI rất cao" />
