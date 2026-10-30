@@ -289,15 +289,15 @@ const SgPrinciple: React.FC = () => {
 };
 
 // ===== Sgarbossa 1996 =====
-const SG1: Morph = {c: [[0.045, 0.02, 1.0], [0.105, 0.022, 1.1]], st: 0.15, t: [0.34, 0.06, 0.4], end: 0.145};
-const SG2: Morph = {c: [[0.012, 0.007, 0.08], [0.075, 0.033, -1.3]], st: -0.15, t: [0.34, 0.06, -0.3], end: 0.145};
+const SG1: Morph = {c: [[0.045, 0.02, 1.0], [0.105, 0.022, 1.1]], st: 0.32, t: [0.34, 0.06, 0.45], end: 0.145};
+const SG2: Morph = {c: [[0.012, 0.007, 0.08], [0.075, 0.033, -1.3]], st: -0.25, t: [0.34, 0.06, -0.3], end: 0.145};
 const SG3: Morph = {c: [[0.012, 0.007, 0.08], [0.075, 0.03, -2.4]], st: 0.6, t: [0.32, 0.06, 0.7], end: 0.145};
 const Sg1996: React.FC = () => {
   const t = useT();
   const crit: [Morph, string, string, string, number, number, number][] = [
-    [SG1, 'V6', '① ST↑ TƯƠNG HỢP ≥ 1 mm', 'bất kỳ chuyển đạo', 5, 2, 0.75],
+    [SG1, 'V6', '① ST↑ TƯƠNG HỢP ≥ 1 mm', 'bất kỳ chuyển đạo', 5, 2, 0.78],
     [SG2, 'V2', '② ST↓ ≥ 1 mm ở V1–V3', 'tương hợp', 3, 4, 0.38],
-    [SG3, 'V3', '③ ST↑ BẤT tương hợp > 5 mm', 'ngược chiều quá mức', 2, 4.5, 0.25],
+    [SG3, 'V3', '③ ST↑ BẤT tương hợp > 5 mm', 'ngược chiều quá mức', 2, 4.5, 0.42],
   ];
   return (
     <DeskBg>
@@ -305,7 +305,7 @@ const Sg1996: React.FC = () => {
       {crit.map(([m, ld, ti, sub, pts, s, base], i) => (
         <div key={i}>
           <Frame x={60 + i * 610} y={140} a={ap(t, s)} c={['#DC2626', '#2563EB', '#F59E0B'][i]}>
-            <Strip L={bf(m)} w={580} h={400} q={11} base={base} t0={-0.2} label={ld} stroke={4} />
+            <Strip L={bf(m)} w={580} h={400} q={9} base={base} t0={-0.2} label={ld} stroke={4} />
           </Frame>
           <div style={{position: 'absolute', left: 60 + i * 610, top: 555, width: 580, fontFamily: FONT, opacity: ap(t, s + 0.2)}}>
             <div style={{fontSize: 30, fontWeight: 900, color: '#F8FAFC'}}>{ti}</div>
