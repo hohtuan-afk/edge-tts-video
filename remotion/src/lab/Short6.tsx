@@ -122,7 +122,7 @@ const S4: React.FC = () => {
         {(X, Y) => <g opacity={ap(t, 1.2)}><circle cx={X(0.17)} cy={Y(0.3)} r={20} fill="none" stroke={PEN} strokeWidth={5} /><text x={X(0.17)} y={Y(1.4) - 20} textAnchor="middle" fontFamily={HAND} fontSize={38} fill={PEN}>CÙNG chiều</text></g>}
       </Lead>
       <Lead t={t} f={(T) => beat(SG)(T)} label="V3" x={550} base={190} q={13} delay={0.5}>
-        {(X, Y) => <g opacity={ap(t, 1.6)}><text x={X(0.07) + 26} y={Y(-1.2) + 10} fontFamily={MONO} fontSize={30} fontWeight={700} fill="#2563EB">S 12</text><text x={X(0.2)} y={Y(0) + 48} fontFamily={MONO} fontSize={30} fontWeight={700} fill={PEN}>ST 3</text><text x={X(0.3)} y={Y(-1.0)} textAnchor="middle" fontFamily={HAND} fontSize={38} fill={PEN}>3/12 = 25%</text></g>}
+        {(X, Y) => <g opacity={ap(t, 1.6)}><text x={X(0.07) + 26} y={Y(-1.2) + 10} fontFamily={MONO} fontSize={30} fontWeight={700} fill="#2563EB">S 12</text><text x={X(0.2)} y={Y(0) + 48} fontFamily={MONO} fontSize={30} fontWeight={700} fill={PEN}>ST 3</text><text x={X(0.45)} y={Y(-0.7)} textAnchor="middle" fontFamily={HAND} fontSize={44} fill={PEN}>3/12 = 25%</text></g>}
       </Lead>
       <Badge s={usePop(2.4)} c={CSG}>Sgarbossa cải tiến (+)</Badge>
     </AbsoluteFill>
