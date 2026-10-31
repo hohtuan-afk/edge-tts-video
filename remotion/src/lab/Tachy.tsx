@@ -28,11 +28,11 @@ const mk = (Rs: number[], L: Lead, Ps: PW[] = [], base?: (T: number) => number) 
 const reg = (t0: number, rr: number, n: number) => Array.from({length: n}, (_, i) => t0 + i * rr);
 const QRS: Lead = {q: -0.06, r: 1.1, s: -0.25, t: 0.28, tw: 0.045, tPos: 0.2};
 // rung nhĩ
-const AF_R = [0.18, 0.55, 0.78, 1.25, 1.52, 1.95, 2.13, 2.62, 2.95, 3.22, 3.71, 3.96, 4.42, 4.7, 5.12, 5.33, 5.8, 6.2];
+const AF_R = [0.18, 0.55, 0.78, 1.25, 1.52, 1.95, 2.13, 2.62, 2.95, 3.22, 3.71, 3.96, 4.42, 4.7, 5.12, 5.33, 5.8, 6.2, 6.43, 6.9, 7.2, 7.62, 7.85];
 const fwav = (T: number) => 0.05 * Math.sin(2 * Math.PI * 6.3 * T) + 0.035 * Math.sin(2 * Math.PI * 8.9 * T + 1.3) + 0.02 * Math.sin(2 * Math.PI * 11.7 * T + 0.4);
 const AF = mk(AF_R, {...QRS, t: 0.18}, [], fwav);
 // nhịp nhanh nhĩ đa ổ: 3 dạng P
-const MAT_R = [0.3, 0.78, 1.18, 1.7, 2.12, 2.55, 3.05, 3.45, 3.95, 4.38];
+const MAT_R = [0.3, 0.78, 1.18, 1.7, 2.12, 2.55, 3.05, 3.45, 3.95, 4.38, 4.9, 5.32, 5.78, 6.25, 6.7, 7.15];
 const MAT_P: PW[] = MAT_R.map((r, i) => {
   const k = i % 3;
   return k === 0 ? {t: r - 0.16, a: 0.18, w: 0.02} : k === 1 ? {t: r - 0.12, a: -0.14, w: 0.018} : {t: r - 0.2, a: 0.26, w: 0.03};
@@ -41,7 +41,7 @@ const MAT = mk(MAT_R, {...QRS, t: 0.22}, MAT_P);
 // cuồng nhĩ 2:1 (F 300/phút → chu kỳ 0,2 s; thất 150/phút)
 const saw = (T: number, ph = 0) => {const x = (((T + ph) / 0.2) % 1 + 1) % 1; return x < 0.75 ? -x / 0.75 : -1 + (x - 0.75) / 0.25 * 1;};
 const FL_R = reg(0.12, 0.4, 20);
-const FL_II = mk(FL_R, {...QRS, t: 0.0, tw: 0.04}, [], (T) => 0.16 * (saw(T, 0.05) + 0.5));
+const FL_II = mk(FL_R, {...QRS, r: 0.8, t: 0.0, tw: 0.04}, [], (T) => 0.26 * (saw(T, 0.05) + 0.5));
 const FL_V1 = mk(FL_R, {q: 0, r: 0.25, s: -0.9, t: 0.0}, [], (T) => {const x = (((T + 0.05) / 0.2) % 1 + 1) % 1; return gs(x, 0.5, 0.09, 0.18);});
 // RP / PR: nhịp đều 150, P ngược sau QRS
 const RP_R = reg(0.15, 0.4, 20);
@@ -144,7 +144,7 @@ const Principle: React.FC = () => {
       <Card x={640} y={140} w={600} a={ap(t, 0)} c={CF} title="Nhịp nhanh: > 100 lần/phút" />
       <Frame x={640} y={260} a={ap(t, 2)}>
         <Strip L={f1} w={600} h={320} q={18} base={0.62} t0={-0.25} stroke={5}>
-          {(X, Y) => <g opacity={ap(t, 2.4)}><path d={`M${X(-0.04)},${Y(0) + 70} v14 H${X(0.045)} v-14`} fill="none" stroke={CF} strokeWidth={5} /><text x={X(0)} y={Y(0) + 125} textAnchor="middle" fontFamily={MONO} fontSize={30} fontWeight={700} fill={CF}>QRS &lt; 0,12 s</text></g>}
+          {(X, Y) => <g opacity={ap(t, 2.4)}><path d={`M${X(-0.04)},${Y(0) + 36} v14 H${X(0.045)} v-14`} fill="none" stroke={CF} strokeWidth={5} /><text x={X(0) + 120} y={Y(0) + 56} textAnchor="middle" fontFamily={MONO} fontSize={30} fontWeight={700} fill={CF}>QRS &lt; 0,12 s</text></g>}
         </Strip>
       </Frame>
       <Card x={1290} y={140} w={570} a={ap(t, 2)} c={C1} title="QRS hẹp">thất khử cực qua đường dẫn truyền bình thường</Card>
