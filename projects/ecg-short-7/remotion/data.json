@@ -1,0 +1,83 @@
+{
+ "fps": 30,
+ "total": 1128,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 206,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 6.2,
+     "text": "Nhịp nhanh QRS hẹp? Hỏi 3 câu là ra tên!"
+    }
+   ]
+  },
+  {
+   "from": 206,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.611,
+     "text": "① Không đều hoàn toàn, không P → RUNG NHĨ"
+    }
+   ]
+  },
+  {
+   "from": 338,
+   "dur": 198,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 5.91,
+     "text": "② Đều ~ 150 → tìm sóng F răng cưa → CUỒNG NHĨ 2:1"
+    }
+   ]
+  },
+  {
+   "from": 536,
+   "dur": 156,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.501,
+     "text": "③ Không thấy P, r′ giả V1 → vòng vào lại NÚT nhĩ thất"
+    }
+   ]
+  },
+  {
+   "from": 692,
+   "dur": 172,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 5.032,
+     "text": "④ P sau QRS, RP ≥ 90 ms → vòng vào lại qua ĐƯỜNG PHỤ"
+    }
+   ]
+  },
+  {
+   "from": 864,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.337,
+     "text": "ĐỀU? – P Ở ĐÂU? – RP DÀI HAY NGẮN?"
+    }
+   ]
+  },
+  {
+   "from": 996,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.475,
+     "text": "Lưu lại để ôn · xem bài đầy đủ trên kênh!"
+    }
+   ]
+  }
+ ]
+}
