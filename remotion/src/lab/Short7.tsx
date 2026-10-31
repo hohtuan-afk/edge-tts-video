@@ -59,7 +59,7 @@ const Hook: React.FC = () => {
   return (
     <AbsoluteFill>
       <div style={{position: 'absolute', left: 0, right: 0, top: 170, textAlign: 'center', fontFamily: FONT, fontSize: 100, fontWeight: 900, color: '#fff', lineHeight: 1.05, transform: `scale(${0.6 + 0.4 * p1})`, opacity: Math.min(1, p1 * 1.5)}}>NHỊP NHANH<br /><span style={{color: '#4ADE80'}}>QRS HẸP?</span></div>
-      <div style={{position: 'absolute', left: 0, right: 0, top: 410, textAlign: 'center', fontFamily: FONT, fontSize: 52, fontWeight: 800, color: '#CBD5E1', opacity: ap(t, 0.4)}}>hỏi 3 câu là ra tên</div>
+      <div style={{position: 'absolute', left: 0, right: 0, top: 1000, textAlign: 'center', fontFamily: FONT, fontSize: 52, fontWeight: 800, color: '#CBD5E1', opacity: ap(t, 0.4)}}>hỏi 3 câu là ra tên</div>
       <Lead t={t} f={AVN_II} label="II" x={60} w={960} q={10} base={330} />
       <div style={{position: 'absolute', left: 40, right: 40, top: 1110, display: 'flex', justifyContent: 'center', gap: 12, transform: `scale(${p2})`}}>
         {Q.map(([a, c]) => <div key={a} style={{padding: '10px 20px', borderRadius: 18, border: `4px solid ${c}`, background: 'rgba(10,16,22,0.85)', fontFamily: FONT, fontSize: 44, color: c, fontWeight: 900}}>{a}</div>)}
