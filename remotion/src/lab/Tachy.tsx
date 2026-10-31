@@ -326,7 +326,7 @@ const Circuit: React.FC<{x: number; y: number; a: number}> = ({x, y, a}) => {
   const p0 = pts[i % 4], p1 = pts[(i + 1) % 4];
   const dx = p0[0] + (p1[0] - p0[0]) * r, dy = p0[1] + (p1[1] - p0[1]) * r;
   return (
-    <svg viewBox="0 0 500 380" width={500} height={380} style={{position: 'absolute', left: x, top: y, opacity: a}}>
+    <svg viewBox="0 0 560 380" width={560} height={380} style={{position: 'absolute', left: x, top: y, opacity: a}}>
       <rect x={40} y={20} width={420} height={110} rx={20} fill="rgba(139,92,246,0.18)" stroke={CP} strokeWidth={3} />
       <text x={250} y={62} textAnchor="middle" fontFamily={FONT} fontSize={28} fontWeight={900} fill="#C4B5FD">NHĨ</text>
       <rect x={40} y={250} width={420} height={110} rx={20} fill="rgba(220,38,38,0.15)" stroke={CF} strokeWidth={3} />
@@ -354,7 +354,7 @@ const AVRTScene: React.FC = () => {
           )}
         </Strip>
       </Frame>
-      <Circuit x={1340} y={140} a={ap(t, 4)} />
+      <Circuit x={1300} y={140} a={ap(t, 4)} />
       <Card x={60} y={580} w={1200} a={ap(t, 0)} c="#F97316" title="P tách rõ khỏi QRS · RP ngắn (RP < PR) nhưng ≥ 90 ms" />
       <Card x={1300} y={540} w={560} a={ap(t, 4)} c={CP} title="Dạng xuôi chiều">xuống qua nút → QRS hẹp · ngược lên qua đường phụ</Card>
       <Memo x={60} y={700} w={1200} a={ap(t, 6)}>Vòng đi xa hơn → P đến <span style={{color: PEN}}>muộn hơn</span> so với vòng vào lại nút</Memo>
@@ -372,7 +372,7 @@ const LongRP: React.FC = () => {
             <g opacity={ap(t, 0.4)}>
               <path d={`M${X(0.15)},${Y(0) + 80} v14 H${X(0.39)} v-14`} fill="none" stroke={CF} strokeWidth={5} /><text x={X(0.27)} y={Y(0) + 128} textAnchor="middle" fontFamily={MONO} fontSize={28} fontWeight={700} fill={CF}>RP</text>
               <path d={`M${X(0.39)},${Y(0) + 80} v14 H${X(0.55)} v-14`} fill="none" stroke={CB} strokeWidth={5} /><text x={X(0.47)} y={Y(0) + 128} textAnchor="middle" fontFamily={MONO} fontSize={28} fontWeight={700} fill={CB}>PR</text>
-              <g opacity={ap(t, 4)}><circle cx={X(0.4)} cy={Y(0.22)} r={22} fill="none" stroke={CP} strokeWidth={5} /><text x={X(0.4) + 34} y={Y(0.22) - 26} fontFamily={HAND} fontSize={34} fill={CP}>P khác P xoang</text></g>
+              <g opacity={ap(t, 4)}><circle cx={X(0.4)} cy={Y(0.22)} r={22} fill="none" stroke={CP} strokeWidth={5} /><text x={X(0.6)} y={Y(1.3)} fontFamily={HAND} fontSize={34} fill={CP}>P khác P xoang</text><line x1={X(0.6)} y1={Y(1.3) + 6} x2={X(0.42)} y2={Y(0.3)} stroke={CP} strokeWidth={3} /></g>
             </g>
           )}
         </Strip>
