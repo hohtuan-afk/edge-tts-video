@@ -1,35 +1,239 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+12%",
+ "rate": "+8%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Ét tê không chênh, chưa chắc mạch vành không tắc. Đây là bốn dạng điện tâm đồ dễ bỏ sót."
+   "text": "Nhịp nhanh QRS hẹp trên điện tâm đồ: đều hay không, P ở đâu."
+  },
+  {
+   "id": "00-1",
+   "text": "Thần chú của bài hôm nay gồm ba câu hỏi: đều không, P ở đâu, và RP dài hay ngắn."
+  },
+  {
+   "id": "00-2",
+   "text": "Mục tiêu là gọi đúng tên một nhịp nhanh QRS hẹp, chỉ từ điện tâm đồ."
   },
   {
    "id": "01-0",
-   "text": "Một, dạng đơ Uyn-tơ: ét tê chênh xuống đi lên, kèm sóng T cao cân đối ở vê một đến vê sáu. Nghĩ tắc động mạch liên thất trước đoạn gần."
+   "text": "Trạm một, nguyên tắc. Nhịp nhanh là khi tần số tim trên một trăm lần mỗi phút."
+  },
+  {
+   "id": "01-1",
+   "text": "QRS hẹp, dưới không phẩy mười hai giây, nghĩa là thất được khử cực qua đường dẫn truyền bình thường."
+  },
+  {
+   "id": "01-2",
+   "text": "Vì vậy nguồn gốc nhịp nằm ở trên thất: từ nút xoang, từ nhĩ, hoặc từ vòng vào lại có liên quan nút nhĩ thất."
+  },
+  {
+   "id": "01-3",
+   "text": "Hãy đọc theo ba câu hỏi: nhịp có đều không, sóng P ở đâu, và khoảng RP dài hay ngắn."
   },
   {
    "id": "02-0",
-   "text": "Hai, Uê-len: sóng T đảo sâu hoặc hai pha ở vê hai, vê ba khi đã hết đau. Hẹp nặng, cần tránh nghiệm pháp gắng sức."
+   "text": "Trạm hai, đều hay không đều. Dùng compa đo các khoảng RR liên tiếp."
+  },
+  {
+   "id": "02-1",
+   "text": "Nếu nhịp không đều hoàn toàn, và không thấy sóng P, đó là rung nhĩ."
+  },
+  {
+   "id": "02-2",
+   "text": "Đường nền lăn tăn với các sóng f nhỏ, không đều, không có hình dạng cố định."
+  },
+  {
+   "id": "02-3",
+   "text": "Tần số thất thay đổi liên tục, còn phức bộ QRS vẫn hẹp."
   },
   {
    "id": "03-0",
-   "text": "Ba, thành sau: ét tê chênh xuống rõ nhất ở vê một đến vê bốn, sóng R cao. Gắn thêm vê bảy đến vê chín."
+   "text": "Không đều nhưng vẫn thấy sóng P thì sao?"
+  },
+  {
+   "id": "03-1",
+   "text": "Đó có thể là nhịp nhanh nhĩ đa ổ: có từ ba hình dạng sóng P khác nhau trở lên, khoảng PR và RR thay đổi, hay gặp ở bệnh nhân bệnh phổi."
+  },
+  {
+   "id": "03-2",
+   "text": "Cuồng nhĩ với tỉ lệ dẫn truyền thay đổi cũng có thể làm nhịp không đều. Khi đó hãy tìm sóng F."
   },
   {
    "id": "04-0",
-   "text": "Bốn, block nhánh trái: ét tê cùng chiều QRS, hoặc ngược chiều từ hai mươi lăm phần trăm sóng S, là tiêu chuẩn Sgát-bô-sa cải tiến dương tính."
+   "text": "Trạm ba, cuồng nhĩ. Dấu hiệu đặc trưng là sóng F hình răng cưa."
+  },
+  {
+   "id": "04-1",
+   "text": "Tần số nhĩ khoảng hai trăm năm mươi đến ba trăm năm mươi, thường là khoảng ba trăm lần mỗi phút."
+  },
+  {
+   "id": "04-2",
+   "text": "Trong cuồng nhĩ điển hình, sóng F âm ở chuyển đạo hai, ba, a-vê-ép, và dương ở vê một."
+  },
+  {
+   "id": "04-3",
+   "text": "Thường dẫn truyền hai trên một, nên tần số thất khoảng một trăm năm mươi lần mỗi phút, và đều."
+  },
+  {
+   "id": "04-4",
+   "text": "Mẹo nhớ: nhịp nhanh đều khoảng một trăm năm mươi, hãy luôn đi tìm sóng F, vì sóng F có thể lẩn vào QRS hoặc sóng T."
   },
   {
    "id": "05-0",
-   "text": "Nhớ nhé: không chênh không có nghĩa là không tắc. Nhìn sóng T, soi gương, và QRS rộng."
+   "text": "Trạm bốn, P ở đâu. Nếu nhịp đều và không thấy sóng F, hãy đi tìm sóng P."
+  },
+  {
+   "id": "05-1",
+   "text": "Khoảng RP tính từ sóng R đến sóng P ngay sau nó. Khoảng PR tính từ sóng P đến sóng R kế tiếp."
+  },
+  {
+   "id": "05-2",
+   "text": "Gọi là RP ngắn khi RP nhỏ hơn PR, và RP dài khi RP lớn hơn PR."
+  },
+  {
+   "id": "05-3",
+   "text": "Sóng P âm ở chuyển đạo hai, ba, a-vê-ép cho biết nhĩ được khử cực ngược, từ dưới lên."
   },
   {
    "id": "06-0",
-   "text": "Lưu lại để ôn, và xem bài đầy đủ trên kênh nhé."
+   "text": "RP rất ngắn, dưới chín mươi mi li giây, hoặc không thấy P, nghĩ đến nhịp nhanh vòng vào lại nút nhĩ thất."
+  },
+  {
+   "id": "06-1",
+   "text": "Sóng P lẩn trong QRS, hoặc nằm ngay ở cuối QRS."
+  },
+  {
+   "id": "06-2",
+   "text": "Dấu hiệu gợi ý là sóng r phẩy giả ở vê một, và sóng S giả ở chuyển đạo hai, ba, a-vê-ép."
+  },
+  {
+   "id": "06-3",
+   "text": "Đây là dạng thường gặp nhất trong nhịp nhanh trên thất kịch phát."
+  },
+  {
+   "id": "07-0",
+   "text": "RP ngắn nhưng từ chín mươi mi li giây trở lên, nghĩ đến nhịp nhanh vòng vào lại nhĩ thất qua đường phụ."
+  },
+  {
+   "id": "07-1",
+   "text": "Sóng P tách rõ khỏi QRS, thường nằm trên đoạn ét tê."
+  },
+  {
+   "id": "07-2",
+   "text": "Ở dạng xuôi chiều, xung đi xuống thất qua nút nhĩ thất nên QRS hẹp, rồi đi ngược lên nhĩ qua đường phụ."
+  },
+  {
+   "id": "07-3",
+   "text": "Vì vòng vào lại đi xa hơn, sóng P xuất hiện muộn hơn so với vòng vào lại nút nhĩ thất."
+  },
+  {
+   "id": "08-0",
+   "text": "Khi RP dài, nghĩa là RP lớn hơn PR."
+  },
+  {
+   "id": "08-1",
+   "text": "Nghĩ đến nhịp nhanh nhĩ, vòng vào lại nút nhĩ thất không điển hình, hoặc hiếm hơn là nhịp nhanh bộ nối vòng vào lại kéo dài."
+  },
+  {
+   "id": "08-2",
+   "text": "Trong nhịp nhanh nhĩ, sóng P đi trước QRS, nhưng có hình dạng khác với sóng P xoang."
+  },
+  {
+   "id": "09-0",
+   "text": "Trạm năm, nhịp nhanh xoang. Đây là chẩn đoán không được bỏ sót."
+  },
+  {
+   "id": "09-1",
+   "text": "Sóng P bình thường, dương ở chuyển đạo một và hai, và đi trước mỗi phức bộ QRS."
+  },
+  {
+   "id": "09-2",
+   "text": "Tần số tăng và giảm từ từ, không khởi phát hay kết thúc đột ngột."
+  },
+  {
+   "id": "09-3",
+   "text": "Đây thường là phản ứng của cơ thể với sốt, đau, thiếu dịch, thiếu máu, hay sốc. Cần tìm nguyên nhân."
+  },
+  {
+   "id": "10-0",
+   "text": "Trạm sáu, khi khó phân biệt, có thêm vài manh mối."
+  },
+  {
+   "id": "10-1",
+   "text": "Khởi phát và kết thúc đột ngột gợi ý nhịp nhanh vòng vào lại."
+  },
+  {
+   "id": "10-2",
+   "text": "Nghiệm pháp phế vị hoặc adenosine gây block nhĩ thất thoáng qua, làm lộ sóng F hoặc sóng P, giúp chẩn đoán cuồng nhĩ hay nhịp nhanh nhĩ."
+  },
+  {
+   "id": "10-3",
+   "text": "Nếu nhịp nhanh cắt đột ngột, nghĩ đến vòng vào lại có liên quan nút nhĩ thất. Luôn ghi điện tâm đồ liên tục trong lúc làm."
+  },
+  {
+   "id": "11-0",
+   "text": "Trạm bảy, ôn tập bằng sơ đồ ba bước."
+  },
+  {
+   "id": "11-1",
+   "text": "Không đều: không có P là rung nhĩ, có từ ba dạng P là nhịp nhanh nhĩ đa ổ, thấy sóng F là cuồng nhĩ dẫn truyền thay đổi."
+  },
+  {
+   "id": "11-2",
+   "text": "Đều: thấy sóng F là cuồng nhĩ, sóng P xoang là nhịp nhanh xoang."
+  },
+  {
+   "id": "11-3",
+   "text": "RP rất ngắn là vòng vào lại nút, RP ngắn nhưng từ chín mươi mi li giây là vòng vào lại qua đường phụ, RP dài nghĩ nhịp nhanh nhĩ."
+  },
+  {
+   "id": "12-0",
+   "text": "Thực hành: đọc hai điện tâm đồ."
+  },
+  {
+   "id": "12-1",
+   "text": "Điện tâm đồ một: nhịp đều, một trăm năm mươi lần mỗi phút, chuyển đạo hai, ba, a-vê-ép có sóng răng cưa âm."
+  },
+  {
+   "id": "12-2",
+   "text": "Kết luận: cuồng nhĩ điển hình, dẫn truyền hai trên một."
+  },
+  {
+   "id": "12-3",
+   "text": "Điện tâm đồ hai: nhịp đều, một trăm tám mươi lần mỗi phút, không thấy sóng P rõ, có r phẩy giả ở vê một và S giả ở chuyển đạo hai."
+  },
+  {
+   "id": "12-4",
+   "text": "Kết luận: nhịp nhanh vòng vào lại nút nhĩ thất."
+  },
+  {
+   "id": "13-0",
+   "text": "Năm điều cần nhớ."
+  },
+  {
+   "id": "13-1",
+   "text": "Một, QRS hẹp và nhanh là nhịp trên thất. Hãy hỏi: đều không, P ở đâu, RP dài hay ngắn."
+  },
+  {
+   "id": "13-2",
+   "text": "Hai, không đều hoàn toàn và không có P là rung nhĩ."
+  },
+  {
+   "id": "13-3",
+   "text": "Ba, nhịp đều khoảng một trăm năm mươi, hãy tìm sóng F của cuồng nhĩ hai trên một."
+  },
+  {
+   "id": "13-4",
+   "text": "Bốn, không thấy P, có r phẩy giả ở vê một là vòng vào lại nút. P sau QRS, RP từ chín mươi mi li giây là vòng vào lại qua đường phụ."
+  },
+  {
+   "id": "13-5",
+   "text": "Năm, RP dài nghĩ nhịp nhanh nhĩ. P xoang, tăng giảm từ từ là nhịp nhanh xoang."
+  },
+  {
+   "id": "13-6",
+   "text": "Cảm ơn bạn đã theo dõi."
   }
  ]
 }
