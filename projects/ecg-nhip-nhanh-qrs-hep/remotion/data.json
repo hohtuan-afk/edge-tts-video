@@ -1,0 +1,380 @@
+{
+ "fps": 30,
+ "total": 8957,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 450,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.867,
+     "text": "Nhịp nhanh QRS hẹp trên điện tâm đồ — Đều hay không, P ở đâu"
+    },
+    {
+     "start": 4.717,
+     "dur": 5.179,
+     "text": "Thần chú: ĐỀU? – P Ở ĐÂU? – RP DÀI HAY NGẮN?"
+    },
+    {
+     "start": 10.246,
+     "dur": 3.745,
+     "text": "Mục tiêu: gọi đúng tên một nhịp nhanh QRS hẹp chỉ từ điện tâm đồ."
+    }
+   ]
+  },
+  {
+   "from": 450,
+   "dur": 671,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.594,
+     "text": "Trạm 1 · NGUYÊN TẮC — nhịp nhanh: tần số > 100 lần/phút."
+    },
+    {
+     "start": 5.444,
+     "dur": 4.701,
+     "text": "QRS hẹp (< 0,12 s) → thất khử cực qua đường dẫn truyền bình thường."
+    },
+    {
+     "start": 10.496,
+     "dur": 5.396,
+     "text": "→ nguồn gốc nhịp ở TRÊN thất: xoang, nhĩ, hoặc vòng vào lại qua nút nhĩ thất."
+    },
+    {
+     "start": 16.242,
+     "dur": 5.138,
+     "text": "Đọc theo 3 câu hỏi: ĐỀU? – P Ở ĐÂU? – RP DÀI HAY NGẮN?"
+    }
+   ]
+  },
+  {
+   "from": 1121,
+   "dur": 535,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.506,
+     "text": "Trạm 2 · ĐỀU HAY KHÔNG — đo các khoảng RR."
+    },
+    {
+     "start": 5.356,
+     "dur": 3.681,
+     "text": "Không đều HOÀN TOÀN + không thấy sóng P → RUNG NHĨ."
+    },
+    {
+     "start": 9.387,
+     "dur": 3.991,
+     "text": "Đường nền lăn tăn: sóng f, không đều, không có hình dạng cố định."
+    },
+    {
+     "start": 13.728,
+     "dur": 3.102,
+     "text": "Tần số thất thay đổi liên tục · QRS vẫn hẹp."
+    }
+   ]
+  },
+  {
+   "from": 1656,
+   "dur": 502,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 1.903,
+     "text": "Không đều nhưng CÓ sóng P?"
+    },
+    {
+     "start": 2.753,
+     "dur": 7.513,
+     "text": "Nhịp nhanh nhĩ đa ổ: ≥ 3 hình dạng P khác nhau · PR, RR thay đổi · hay gặp ở bệnh phổi."
+    },
+    {
+     "start": 10.616,
+     "dur": 5.12,
+     "text": "Cuồng nhĩ dẫn truyền thay đổi cũng có thể không đều — tìm sóng F."
+    }
+   ]
+  },
+  {
+   "from": 2158,
+   "dur": 826,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.402,
+     "text": "Trạm 3 · CUỒNG NHĨ — sóng F hình răng cưa."
+    },
+    {
+     "start": 5.252,
+     "dur": 4.255,
+     "text": "Tần số nhĩ khoảng 250 – 350, thường ~ 300 lần/phút."
+    },
+    {
+     "start": 9.857,
+     "dur": 5.221,
+     "text": "Cuồng nhĩ điển hình: F ÂM ở II, III, aVF · F DƯƠNG ở V1."
+    },
+    {
+     "start": 15.428,
+     "dur": 4.417,
+     "text": "Thường dẫn 2:1 → tần số thất ~ 150 lần/phút, đều."
+    },
+    {
+     "start": 20.195,
+     "dur": 6.354,
+     "text": "Mẹo: nhịp đều ~ 150 → luôn TÌM sóng F (có thể lẩn trong QRS hoặc T)."
+    }
+   ]
+  },
+  {
+   "from": 2984,
+   "dur": 724,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 5.162,
+     "text": "Trạm 4 · P Ở ĐÂU — nhịp đều, không có sóng F: tìm sóng P."
+    },
+    {
+     "start": 6.012,
+     "dur": 6.366,
+     "text": "RP: từ R đến P sau nó · PR: từ P đến R kế tiếp."
+    },
+    {
+     "start": 12.728,
+     "dur": 4.951,
+     "text": "RP NGẮN: RP < PR · RP DÀI: RP > PR."
+    },
+    {
+     "start": 18.028,
+     "dur": 5.099,
+     "text": "P ÂM ở II, III, aVF → nhĩ khử cực NGƯỢC từ dưới lên."
+    }
+   ]
+  },
+  {
+   "from": 3708,
+   "dur": 572,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 5.311,
+     "text": "RP RẤT NGẮN (< 90 ms) hoặc không thấy P → vòng vào lại nút nhĩ thất."
+    },
+    {
+     "start": 6.161,
+     "dur": 3.016,
+     "text": "P lẩn trong QRS hoặc ngay cuối QRS."
+    },
+    {
+     "start": 9.526,
+     "dur": 5.756,
+     "text": "Dấu hiệu: r′ giả ở V1 · S giả ở II, III, aVF."
+    },
+    {
+     "start": 15.632,
+     "dur": 2.454,
+     "text": "Thường gặp nhất trong nhịp nhanh trên thất kịch phát."
+    }
+   ]
+  },
+  {
+   "from": 4280,
+   "dur": 600,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.83,
+     "text": "RP NGẮN nhưng ≥ 90 ms → vòng vào lại nhĩ thất qua đường phụ."
+    },
+    {
+     "start": 5.68,
+     "dur": 3.191,
+     "text": "P tách rõ khỏi QRS, nằm trên đoạn ST."
+    },
+    {
+     "start": 9.221,
+     "dur": 5.322,
+     "text": "Dạng xuôi chiều: xuống thất qua nút nhĩ thất → QRS hẹp · ngược lên nhĩ qua đường phụ."
+    },
+    {
+     "start": 14.893,
+     "dur": 4.127,
+     "text": "Vòng đi xa hơn → P đến muộn hơn so với vòng vào lại nút."
+    }
+   ]
+  },
+  {
+   "from": 4880,
+   "dur": 458,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.826,
+     "text": "RP DÀI (RP > PR):"
+    },
+    {
+     "start": 3.676,
+     "dur": 5.728,
+     "text": "Nhịp nhanh nhĩ · vòng vào lại nút nhĩ thất không điển hình · (hiếm) nhịp nhanh bộ nối vòng vào lại kéo dài."
+    },
+    {
+     "start": 9.754,
+     "dur": 4.493,
+     "text": "Nhịp nhanh nhĩ: P đi trước QRS, hình dạng KHÁC P xoang."
+    }
+   ]
+  },
+  {
+   "from": 5338,
+   "dur": 613,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.003,
+     "text": "Trạm 5 · NHỊP NHANH XOANG — đừng bỏ sót."
+    },
+    {
+     "start": 4.853,
+     "dur": 4.352,
+     "text": "P bình thường: dương ở I, II · đi trước MỖI QRS."
+    },
+    {
+     "start": 9.555,
+     "dur": 3.239,
+     "text": "Tăng và giảm TỪ TỪ, không khởi phát đột ngột."
+    },
+    {
+     "start": 13.145,
+     "dur": 6.303,
+     "text": "Là phản ứng: sốt, đau, thiếu dịch, thiếu máu, sốc… → tìm nguyên nhân."
+    }
+   ]
+  },
+  {
+   "from": 5951,
+   "dur": 641,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.859,
+     "text": "Trạm 6 · KHI KHÓ — vài manh mối thêm."
+    },
+    {
+     "start": 3.709,
+     "dur": 2.706,
+     "text": "Khởi phát và kết thúc ĐỘT NGỘT → nghĩ vòng vào lại."
+    },
+    {
+     "start": 6.765,
+     "dur": 6.963,
+     "text": "Nghiệm pháp phế vị / adenosine: block nhĩ thất thoáng qua → LỘ sóng F hoặc P (cuồng nhĩ, nhịp nhanh nhĩ)."
+    },
+    {
+     "start": 14.078,
+     "dur": 6.301,
+     "text": "Nếu nhịp nhanh CẮT đột ngột → nghĩ vòng vào lại có nút nhĩ thất · luôn ghi ECG liên tục."
+    }
+   ]
+  },
+  {
+   "from": 6592,
+   "dur": 660,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.17,
+     "text": "Trạm 7 · ÔN TẬP — sơ đồ 3 bước."
+    },
+    {
+     "start": 3.02,
+     "dur": 6.594,
+     "text": "Không đều: không P → rung nhĩ · ≥ 3 dạng P → nhịp nhanh nhĩ đa ổ · có F → cuồng nhĩ dẫn truyền thay đổi."
+    },
+    {
+     "start": 9.964,
+     "dur": 3.699,
+     "text": "Đều: có F → cuồng nhĩ · P xoang → nhịp nhanh xoang."
+    },
+    {
+     "start": 14.012,
+     "dur": 6.982,
+     "text": "RP rất ngắn → vòng vào lại nút · RP ngắn ≥ 90 ms → qua đường phụ · RP dài → nhịp nhanh nhĩ…"
+    }
+   ]
+  },
+  {
+   "from": 7252,
+   "dur": 699,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 1.69,
+     "text": "Thực hành: đọc 2 ECG."
+    },
+    {
+     "start": 2.54,
+     "dur": 6.297,
+     "text": "ECG 1: đều, 150 lần/phút · II, III, aVF có sóng răng cưa âm."
+    },
+    {
+     "start": 9.187,
+     "dur": 2.793,
+     "text": "→ Cuồng nhĩ điển hình, dẫn 2:1 ✓"
+    },
+    {
+     "start": 12.33,
+     "dur": 7.432,
+     "text": "ECG 2: đều, 180 lần/phút · không thấy P rõ · r′ giả ở V1, S giả ở II."
+    },
+    {
+     "start": 20.112,
+     "dur": 2.196,
+     "text": "→ Nhịp nhanh vòng vào lại nút nhĩ thất ✓"
+    }
+   ]
+  },
+  {
+   "from": 7951,
+   "dur": 1006,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 0.965,
+     "text": "5 điều cần nhớ"
+    },
+    {
+     "start": 1.815,
+     "dur": 6.977,
+     "text": "① QRS hẹp + nhanh → trên thất · hỏi: ĐỀU? – P Ở ĐÂU? – RP?"
+    },
+    {
+     "start": 9.142,
+     "dur": 2.667,
+     "text": "② Không đều hoàn toàn, không P → rung nhĩ"
+    },
+    {
+     "start": 12.159,
+     "dur": 3.983,
+     "text": "③ Đều ~ 150 → tìm sóng F (cuồng nhĩ 2:1)"
+    },
+    {
+     "start": 16.492,
+     "dur": 8.52,
+     "text": "④ Không thấy P, r′ giả V1 → vòng vào lại nút · P sau QRS, RP ≥ 90 ms → qua đường phụ"
+    },
+    {
+     "start": 25.362,
+     "dur": 5.619,
+     "text": "⑤ RP dài → nhịp nhanh nhĩ · P xoang, tăng giảm từ từ → nhịp nhanh xoang"
+    },
+    {
+     "start": 31.331,
+     "dur": 1.189,
+     "text": "Cảm ơn bạn đã theo dõi!"
+    }
+   ]
+  }
+ ]
+}
