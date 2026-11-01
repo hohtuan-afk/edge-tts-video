@@ -1,0 +1,83 @@
+{
+ "fps": 30,
+ "total": 1085,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 204,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 6.101,
+     "text": "QRS rộng + nhanh? Nghĩ nhịp nhanh THẤT trước!"
+    }
+   ]
+  },
+  {
+   "from": 204,
+   "dur": 145,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.132,
+     "text": "① PHÂN LY nhĩ thất: P đi đường P, QRS đi đường QRS"
+    }
+   ]
+  },
+  {
+   "from": 349,
+   "dur": 192,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 5.718,
+     "text": "② Nhát BẮT ĐƯỢC · nhát HỖN HỢP"
+    }
+   ]
+  },
+  {
+   "from": 541,
+   "dur": 148,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.208,
+     "text": "③ ĐỒNG HƯỚNG: V1 → V6 cùng dương hoặc cùng âm"
+    }
+   ]
+  },
+  {
+   "from": 689,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.791,
+     "text": "④ Chưa chắc → COI LÀ nhịp nhanh thất"
+    }
+   ]
+  },
+  {
+   "from": 821,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.227,
+     "text": "RỘNG + NHANH → nghĩ THẤT trước"
+    }
+   ]
+  },
+  {
+   "from": 953,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.475,
+     "text": "Lưu lại để ôn · xem bài đầy đủ trên kênh!"
+    }
+   ]
+  }
+ ]
+}
