@@ -127,8 +127,8 @@ const Pathway: React.FC = () => {
       </div>
       <Card x={1000} y={470} w={860} a={ap(t, 4)} c={OR} title="Một phần thất bị kích thích TRƯỚC = tiền kích thích" />
       <Frame x={1000} y={590} a={ap(t, 6)}>
-        <Strip L={(x) => wpwB(x)} w={860} h={300} q={16} base={0.66} t0={-0.15} label="QRS hợp nhất" stroke={5}>
-          {(X, Y) => <g><DeltaHi X={X} Y={Y} f={(x) => wpwB(x)} t0={0} a={ap(t, 6.3)} /><text x={X(0.02)} y={Y(0.3) - 30} textAnchor="middle" fontFamily={HAND} fontSize={30} fill={OR} opacity={ap(t, 6.5)}>qua đường phụ</text><text x={X(0.14)} y={Y(1.0) - 10} fontFamily={HAND} fontSize={30} fill={CB} opacity={ap(t, 6.8)}>qua đường bình thường</text></g>}
+        <Strip L={(x) => wpwB(x)} w={860} h={300} q={11} base={0.72} t0={-0.2} label="QRS hợp nhất" stroke={5}>
+          {(X, Y) => <g><DeltaHi X={X} Y={Y} f={(x) => wpwB(x)} t0={0} a={ap(t, 6.3)} /><text x={X(-0.02)} y={Y(0) + 50} textAnchor="end" fontFamily={HAND} fontSize={30} fill={OR} opacity={ap(t, 6.5)}>qua đường phụ ↗</text><text x={X(0.12)} y={Y(0.6)} fontFamily={HAND} fontSize={30} fill={CB} opacity={ap(t, 6.8)}>← qua đường bình thường</text></g>}
         </Strip>
       </Frame>
     </DeskBg>
@@ -144,19 +144,19 @@ const Signs: React.FC = () => {
       <Head t={t}>Dấu hiệu khi nhịp xoang</Head>
       <Chips x={560} y={58} a={ap(t, -1)} size={26} />
       <Frame x={60} y={140} a={ap(t, 0)}>
-        <Strip L={f} w={1180} h={640} q={30} base={0.6} t0={-0.14} label="II" stroke={6}>
+        <Strip L={f} w={1180} h={640} q={24} base={0.62} t0={-0.2} label="II" stroke={6}>
           {(X, Y) => (
             <g>
-              <polyline points={Array.from({length: 240}, (_, i) => -0.14 + i * 0.0025).map((x) => `${X(x)},${Y(normB(x + 0.07))}`).join(' ')} fill="none" stroke="#94A3B8" strokeWidth={4} strokeDasharray="8 8" opacity={ap(t, 2) * 0.8} />
+              <polyline points={Array.from({length: 260}, (_, i) => -0.2 + i * 0.0025).map((x) => `${X(x)},${Y(normB(x + 0.07))}`).join(' ')} fill="none" stroke="#94A3B8" strokeWidth={4} strokeDasharray="8 8" opacity={ap(t, 2) * 0.8} />
               <g opacity={ap(t, 2)}>
                 <path d={`M${X(-0.09)},${Y(0) + 150} v18 H${X(0)} v-18`} fill="none" stroke={CB} strokeWidth={6} />
-                <text x={X(-0.045)} y={Y(0) + 210} textAnchor="middle" fontFamily={MONO} fontSize={32} fontWeight={700} fill={CB}>PR 0,09 s</text>
+                <text x={X(-0.1)} y={Y(0) + 210} textAnchor="middle" fontFamily={MONO} fontSize={32} fontWeight={700} fill={CB}>PR 0,09 s</text>
               </g>
               <DeltaHi X={X} Y={Y} f={f} t0={0} a={ap(t, 4)} w={12} />
               <text x={X(0.0) - 20} y={Y(0.3) - 50} textAnchor="end" fontFamily={HAND} fontSize={44} fill={OR} opacity={ap(t, 4.3)}>sóng delta</text>
               <g opacity={ap(t, 6)}>
-                <path d={`M${X(0)},${Y(1.0) - 40} v-18 H${X(0.13)} v18`} fill="none" stroke={CR} strokeWidth={6} />
-                <text x={X(0.065)} y={Y(1.0) - 76} textAnchor="middle" fontFamily={MONO} fontSize={32} fontWeight={700} fill={CR}>QRS 0,13 s</text>
+                <path d={`M${X(0)},${Y(0) + 150} v18 H${X(0.13)} v-18`} fill="none" stroke={CR} strokeWidth={6} />
+                <text x={X(0.18)} y={Y(0) + 210} textAnchor="start" fontFamily={MONO} fontSize={32} fontWeight={700} fill={CR}>QRS 0,13 s</text>
                 <text x={X(0.33)} y={Y(-0.28) + 70} textAnchor="middle" fontFamily={HAND} fontSize={36} fill={CP}>T ngược chiều (thứ phát)</text>
               </g>
             </g>
@@ -178,10 +178,10 @@ const Variable: React.FC = () => {
   return (
     <DeskBg>
       <Head t={t}>Mức tiền kích thích có thể thay đổi</Head>
-      {[[(x: number) => wpwB(x, {d: 0.45}), 'Delta RÕ', OR, 0], [(x: number) => wpwB(x, {d: 0.12, r: 1.1}), 'Delta NHỎ — dễ bỏ sót', '#FBBF24', 2]].map(([f, s, c, st], i) => (
+      {[[(x: number) => wpwB(x, {d: 0.6, r: 1.0}), 'Delta RÕ', OR, 0], [(x: number) => wpwB(x, {d: 0.1, r: 1.1}), 'Delta NHỎ — dễ bỏ sót', '#FBBF24', 2]].map(([f, s, c, st], i) => (
         <div key={i}>
           <Tag8 x={60 + i * 920} y={130} a={ap(t, st as number)} c={c as string}>{s as string}</Tag8>
-          <Frame x={60 + i * 920} y={180} a={ap(t, st as number)} c={c as string}><Strip L={train(f as (x: number) => number)} w={880} h={300} q={14} base={0.62} t0={0} label="II" stroke={4} /></Frame>
+          <Frame x={60 + i * 920} y={180} a={ap(t, st as number)} c={c as string}><Strip L={train(f as (x: number) => number)} w={880} h={300} q={16} base={0.66} t0={0} label="II" stroke={5} /></Frame>
         </div>
       ))}
       <Tag8 x={60} y={520} a={ap(t, 4)} c="#86EFAC">Tiền kích thích TỪNG LÚC — lúc có lúc mất</Tag8>
@@ -252,14 +252,14 @@ const Localize: React.FC = () => {
     <DeskBg>
       <Head t={t}>Định vị sơ bộ — nhìn V1</Head>
       <svg viewBox="0 0 1920 1080" width={1920} height={1080} style={{position: 'absolute', inset: 0}}>
-        <Heart4C id="lcL" x={40} y={110} s={0.42} cond={1} ring={0.8} apL={ap(t, 2)} dots={t > 2 ? rL.dots : []} glowL={t > 2 ? rL.glow : 0} />
-        <Heart4C id="lcR" x={1000} y={110} s={0.42} cond={1} ring={0.8} apR={ap(t, 4)} dots={t > 4 ? rR.dots : []} glowR={t > 4 ? rR.glow : 0} />
+        <Heart4C id="lcL" x={20} y={100} s={0.5} cond={1} ring={0.8} apL={ap(t, 2)} dots={t > 2 ? rL.dots : []} glowL={t > 2 ? rL.glow : 0} />
+        <Heart4C id="lcR" x={980} y={100} s={0.5} cond={1} ring={0.8} apR={ap(t, 4)} dots={t > 4 ? rR.dots : []} glowR={t > 4 ? rR.glow : 0} />
       </svg>
-      <Frame x={560} y={150} a={ap(t, 2)} c={CR}><Strip L={fA} w={380} h={360} q={14} base={0.68} t0={-0.14} label="V1" stroke={5}>{(X, Y) => <DeltaHi X={X} Y={Y} f={fA} t0={0} a={1} />}</Strip></Frame>
-      <Frame x={1520} y={150} a={ap(t, 4)} c={CB}><Strip L={fB} w={360} h={360} q={14} base={0.3} t0={-0.14} label="V1" stroke={5}>{(X, Y) => <DeltaHi X={X} Y={Y} f={fB} t0={0} a={1} />}</Strip></Frame>
-      <Card x={60} y={680} w={880} a={ap(t, 2)} c={CR} title="V1 DƯƠNG → đường phụ bên TRÁI (dạng A)" />
-      <Card x={1000} y={680} w={860} a={ap(t, 4)} c={CB} title="V1 ÂM → đường phụ bên PHẢI (dạng B)" />
-      <Memo x={60} y={800} w={1800} a={ap(t, 6)}>Định vị chính xác: thuật toán chuyên sâu &amp; thăm dò điện sinh lý</Memo>
+      <Frame x={600} y={180} a={ap(t, 2)} c={CR}><Strip L={fA} w={340} h={400} q={14} base={0.68} t0={-0.14} label="V1" stroke={5}>{(X, Y) => <DeltaHi X={X} Y={Y} f={fA} t0={0} a={1} />}</Strip></Frame>
+      <Frame x={1560} y={180} a={ap(t, 4)} c={CB}><Strip L={fB} w={320} h={400} q={14} base={0.3} t0={-0.14} label="V1" stroke={5}>{(X, Y) => <DeltaHi X={X} Y={Y} f={fB} t0={0} a={1} />}</Strip></Frame>
+      <Card x={60} y={740} w={880} a={ap(t, 2)} c={CR} title="V1 DƯƠNG → đường phụ bên TRÁI (dạng A)" />
+      <Card x={1000} y={740} w={860} a={ap(t, 4)} c={CB} title="V1 ÂM → đường phụ bên PHẢI (dạng B)" />
+      <Memo x={60} y={850} w={1800} a={ap(t, 6)}>Định vị chính xác: thuật toán chuyên sâu &amp; thăm dò điện sinh lý</Memo>
     </DeskBg>
   );
 };
