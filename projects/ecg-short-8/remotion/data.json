@@ -1,0 +1,83 @@
+{
+ "fps": 30,
+ "total": 1126,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 160,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.627,
+     "text": "WPW: có một “cửa thứ 2” giữa nhĩ và thất!"
+    }
+   ]
+  },
+  {
+   "from": 160,
+   "dur": 168,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.891,
+     "text": "① PR NGẮN < 0,12 s — xung đi tắt, không chờ ở nút"
+    }
+   ]
+  },
+  {
+   "from": 328,
+   "dur": 138,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.911,
+     "text": "② SÓNG DELTA — đầu QRS dốc lên từ từ"
+    }
+   ]
+  },
+  {
+   "from": 466,
+   "dur": 160,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.679,
+     "text": "③ QRS RỘNG — dễ nhầm nhồi máu, phì đại thất, block nhánh"
+    }
+   ]
+  },
+  {
+   "from": 626,
+   "dur": 236,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 7.129,
+     "text": "④ Rung nhĩ + WPW: không đều, QRS rộng đổi hình, rất nhanh → NGUY HIỂM"
+    }
+   ]
+  },
+  {
+   "from": 862,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.439,
+     "text": "PR NGẮN – DELTA – QRS RỘNG"
+    }
+   ]
+  },
+  {
+   "from": 994,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.475,
+     "text": "Lưu lại để ôn · xem bài đầy đủ trên kênh!"
+    }
+   ]
+  }
+ ]
+}
