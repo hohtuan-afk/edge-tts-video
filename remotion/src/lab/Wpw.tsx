@@ -127,7 +127,7 @@ const Pathway: React.FC = () => {
       </div>
       <Card x={1000} y={470} w={860} a={ap(t, 4)} c={OR} title="Một phần thất bị kích thích TRƯỚC = tiền kích thích" />
       <Frame x={1000} y={590} a={ap(t, 6)}>
-        <Strip L={(x) => wpwB(x)} w={860} h={300} q={11} base={0.72} t0={-0.2} label="QRS hợp nhất" stroke={5}>
+        <Strip L={(x) => wpwB(x)} w={860} h={300} q={11} base={0.72} t0={-0.75} label="QRS hợp nhất" stroke={5}>
           {(X, Y) => <g><DeltaHi X={X} Y={Y} f={(x) => wpwB(x)} t0={0} a={ap(t, 6.3)} /><text x={X(-0.02)} y={Y(0) + 50} textAnchor="end" fontFamily={HAND} fontSize={30} fill={OR} opacity={ap(t, 6.5)}>qua đường phụ ↗</text><text x={X(0.12)} y={Y(0.6)} fontFamily={HAND} fontSize={30} fill={CB} opacity={ap(t, 6.8)}>← qua đường bình thường</text></g>}
         </Strip>
       </Frame>
@@ -144,10 +144,10 @@ const Signs: React.FC = () => {
       <Head t={t}>Dấu hiệu khi nhịp xoang</Head>
       <Chips x={560} y={58} a={ap(t, -1)} size={26} />
       <Frame x={60} y={140} a={ap(t, 0)}>
-        <Strip L={f} w={1180} h={640} q={24} base={0.62} t0={-0.2} label="II" stroke={6}>
+        <Strip L={f} w={1180} h={640} q={24} base={0.62} t0={-0.55} label="II" stroke={6}>
           {(X, Y) => (
             <g>
-              <polyline points={Array.from({length: 260}, (_, i) => -0.2 + i * 0.0025).map((x) => `${X(x)},${Y(normB(x + 0.07))}`).join(' ')} fill="none" stroke="#94A3B8" strokeWidth={4} strokeDasharray="8 8" opacity={ap(t, 2) * 0.8} />
+              <polyline points={Array.from({length: 360}, (_, i) => -0.55 + i * 0.0025).map((x) => `${X(x)},${Y(normB(x + 0.07))}`).join(' ')} fill="none" stroke="#94A3B8" strokeWidth={4} strokeDasharray="8 8" opacity={ap(t, 2) * 0.8} />
               <g opacity={ap(t, 2)}>
                 <path d={`M${X(-0.09)},${Y(0) + 150} v18 H${X(0)} v-18`} fill="none" stroke={CB} strokeWidth={6} />
                 <text x={X(-0.1)} y={Y(0) + 210} textAnchor="middle" fontFamily={MONO} fontSize={32} fontWeight={700} fill={CB}>PR 0,09 s</text>
@@ -257,9 +257,9 @@ const Localize: React.FC = () => {
       </svg>
       <Frame x={600} y={180} a={ap(t, 2)} c={CR}><Strip L={fA} w={340} h={400} q={14} base={0.68} t0={-0.14} label="V1" stroke={5}>{(X, Y) => <DeltaHi X={X} Y={Y} f={fA} t0={0} a={1} />}</Strip></Frame>
       <Frame x={1560} y={180} a={ap(t, 4)} c={CB}><Strip L={fB} w={320} h={400} q={14} base={0.3} t0={-0.14} label="V1" stroke={5}>{(X, Y) => <DeltaHi X={X} Y={Y} f={fB} t0={0} a={1} />}</Strip></Frame>
-      <Card x={60} y={740} w={880} a={ap(t, 2)} c={CR} title="V1 DƯƠNG → đường phụ bên TRÁI (dạng A)" />
-      <Card x={1000} y={740} w={860} a={ap(t, 4)} c={CB} title="V1 ÂM → đường phụ bên PHẢI (dạng B)" />
-      <Memo x={60} y={850} w={1800} a={ap(t, 6)}>Định vị chính xác: thuật toán chuyên sâu &amp; thăm dò điện sinh lý</Memo>
+      <Card x={60} y={720} w={880} a={ap(t, 2)} c={CR} title="V1 DƯƠNG → đường phụ bên TRÁI (dạng A)" />
+      <Card x={1000} y={720} w={860} a={ap(t, 4)} c={CB} title="V1 ÂM → đường phụ bên PHẢI (dạng B)" />
+      <Memo x={60} y={820} w={1800} a={ap(t, 6)}>Định vị chính xác: thuật toán chuyên sâu &amp; thăm dò điện sinh lý</Memo>
     </DeskBg>
   );
 };
