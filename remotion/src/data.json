@@ -1,81 +1,346 @@
 {
  "fps": 30,
- "total": 1126,
+ "total": 8062,
  "scenes": [
   {
    "from": 0,
-   "dur": 160,
+   "dur": 427,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 4.627,
-     "text": "WPW: có một “cửa thứ 2” giữa nhĩ và thất!"
+     "start": 0.5,
+     "dur": 4.17,
+     "text": "Nhịp nhanh QRS rộng trên điện tâm đồ — Nhịp nhanh thất hay trên thất?"
+    },
+    {
+     "start": 5.02,
+     "dur": 4.168,
+     "text": "Thần chú: RỘNG + NHANH → nghĩ THẤT trước"
+    },
+    {
+     "start": 9.538,
+     "dur": 3.692,
+     "text": "Mục tiêu: nhận ra các dấu hiệu nhịp nhanh thất, và tránh các cái bẫy."
     }
    ]
   },
   {
-   "from": 160,
-   "dur": 168,
+   "from": 427,
+   "dur": 533,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 4.891,
-     "text": "① PR NGẮN < 0,12 s — xung đi tắt, không chờ ở nút"
+     "start": 0.5,
+     "dur": 5.22,
+     "text": "Trạm 1 · NGUYÊN TẮC — nhịp nhanh với QRS ≥ 0,12 s có 3 nguồn."
+    },
+    {
+     "start": 6.07,
+     "dur": 2.696,
+     "text": "① Nhịp nhanh THẤT: ổ phát nhịp nằm trong thất."
+    },
+    {
+     "start": 9.116,
+     "dur": 3.447,
+     "text": "② Nhịp nhanh trên thất + block nhánh / dẫn truyền lệch hướng."
+    },
+    {
+     "start": 12.914,
+     "dur": 3.856,
+     "text": "③ Nhịp nhanh trên thất đi qua đường phụ (bài 8)."
     }
    ]
   },
   {
-   "from": 328,
-   "dur": 138,
+   "from": 960,
+   "dur": 463,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 3.911,
-     "text": "② SÓNG DELTA — đầu QRS dốc lên từ từ"
+     "start": 0.5,
+     "dur": 3.0,
+     "text": "Khoảng 80% nhịp nhanh QRS rộng là nhịp nhanh THẤT."
+    },
+    {
+     "start": 3.85,
+     "dur": 3.997,
+     "text": "Càng chắc hơn khi có bệnh tim cấu trúc, nhồi máu cũ."
+    },
+    {
+     "start": 8.197,
+     "dur": 2.944,
+     "text": "CHƯA CHẮC → coi là nhịp nhanh thất."
+    },
+    {
+     "start": 11.491,
+     "dur": 2.952,
+     "text": "Không dùng thuốc chẹn kênh canxi khi chưa loại trừ nhịp nhanh thất."
     }
    ]
   },
   {
-   "from": 466,
-   "dur": 160,
+   "from": 1423,
+   "dur": 901,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 4.679,
-     "text": "③ QRS RỘNG — dễ nhầm nhồi máu, phì đại thất, block nhánh"
+     "start": 0.5,
+     "dur": 4.21,
+     "text": "Trạm 2 · DẤU HIỆU CHẮC CHẮN — phân ly nhĩ thất."
+    },
+    {
+     "start": 5.06,
+     "dur": 5.932,
+     "text": "Nhĩ và thất đập độc lập: P đi đường P, QRS đi đường QRS."
+    },
+    {
+     "start": 11.343,
+     "dur": 3.965,
+     "text": "Tần số thất NHANH hơn nhĩ → nhịp nhanh thất."
+    },
+    {
+     "start": 15.658,
+     "dur": 6.489,
+     "text": "Khó thấy P khi nhanh — tìm “bướu” lạ trên QRS, ST, T."
+    },
+    {
+     "start": 22.498,
+     "dur": 6.554,
+     "text": "Chỉ thấy ở khoảng 3/4 ca → KHÔNG thấy cũng CHƯA loại trừ."
     }
    ]
   },
   {
-   "from": 626,
-   "dur": 236,
+   "from": 2324,
+   "dur": 492,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 7.129,
-     "text": "④ Rung nhĩ + WPW: không đều, QRS rộng đổi hình, rất nhanh → NGUY HIỂM"
+     "start": 0.5,
+     "dur": 5.738,
+     "text": "Nhát BẮT ĐƯỢC: một xung xoang “lọt” xuống thất → 1 nhát QRS HẸP chen giữa."
+    },
+    {
+     "start": 6.588,
+     "dur": 5.479,
+     "text": "Nhát HỖN HỢP: xung xoang và xung thất gặp nhau → QRS lai, hình dạng trung gian."
+    },
+    {
+     "start": 12.418,
+     "dur": 2.969,
+     "text": "Thấy một trong ba dấu hiệu → nhịp nhanh thất."
     }
    ]
   },
   {
-   "from": 862,
-   "dur": 132,
+   "from": 2816,
+   "dur": 438,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 3.439,
-     "text": "PR NGẮN – DELTA – QRS RỘNG"
+     "start": 0.5,
+     "dur": 2.242,
+     "text": "Trạm 3 · ĐỒNG HƯỚNG ở các chuyển đạo trước tim."
+    },
+    {
+     "start": 3.092,
+     "dur": 3.564,
+     "text": "V1 → V6 CÙNG dương hoặc CÙNG âm."
+    },
+    {
+     "start": 7.006,
+     "dur": 2.18,
+     "text": "Đồng hướng ÂM → gần như chắc chắn nhịp nhanh thất."
+    },
+    {
+     "start": 9.536,
+     "dur": 4.045,
+     "text": "Đồng hướng DƯƠNG → nhịp nhanh thất, hoặc (hiếm) qua đường phụ bên trái."
     }
    ]
   },
   {
-   "from": 994,
-   "dur": 132,
+   "from": 3254,
+   "dur": 732,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 2.475,
-     "text": "Lưu lại để ôn · xem bài đầy đủ trên kênh!"
+     "start": 0.5,
+     "dur": 5.007,
+     "text": "Trạm 4 · HÌNH DẠNG QRS — có GIỐNG block nhánh điển hình không?"
+    },
+    {
+     "start": 5.857,
+     "dur": 4.767,
+     "text": "Block nhánh điển hình: khởi đầu QRS NHANH, gọn (đi qua bó His)."
+    },
+    {
+     "start": 10.974,
+     "dur": 7.133,
+     "text": "Nhịp nhanh thất: khởi đầu CHẬM, QRS rất rộng (> 0,14 – 0,16 s), hình dạng “lạ”."
+    },
+    {
+     "start": 18.457,
+     "dur": 4.96,
+     "text": "Trục “vô định” (−90° đến ±180°) → nghĩ nhịp nhanh thất."
+    }
+   ]
+  },
+  {
+   "from": 3986,
+   "dur": 990,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 5.709,
+     "text": "Trạm 5 · BRUGADA — 4 bước, chỉ cần 1 “CÓ” → nhịp nhanh thất."
+    },
+    {
+     "start": 6.559,
+     "dur": 2.952,
+     "text": "① KHÔNG có dạng RS ở mọi chuyển đạo trước tim?"
+    },
+    {
+     "start": 9.861,
+     "dur": 6.903,
+     "text": "② Từ đầu R đến đáy S > 100 ms (≥ 2,5 ô nhỏ) ở bất kỳ V nào?"
+    },
+    {
+     "start": 17.114,
+     "dur": 3.448,
+     "text": "③ Có phân ly nhĩ thất, nhát bắt được, nhát hỗn hợp?"
+    },
+    {
+     "start": 20.912,
+     "dur": 3.472,
+     "text": "④ Hình dạng V1, V6 KHÔNG giống block nhánh điển hình?"
+    },
+    {
+     "start": 24.734,
+     "dur": 7.249,
+     "text": "Cả 4 “KHÔNG” → nghĩ nhịp nhanh trên thất dẫn truyền lệch hướng · Khác: thuật toán aVR (Vereckei)."
+    }
+   ]
+  },
+  {
+   "from": 4976,
+   "dur": 783,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 1.788,
+     "text": "Trạm 6 · NHỮNG CÁI BẪY."
+    },
+    {
+     "start": 2.638,
+     "dur": 6.102,
+     "text": "Block nhánh SẴN CÓ: so với ECG cũ — cùng hình dạng thì nghĩ trên thất."
+    },
+    {
+     "start": 9.09,
+     "dur": 4.838,
+     "text": "Qua đường phụ (ngược chiều, rung nhĩ tiền kích thích) — rất giống nhịp nhanh thất."
+    },
+    {
+     "start": 14.278,
+     "dur": 5.544,
+     "text": "Tăng kali máu · ngộ độc thuốc chẹn kênh natri (thuốc chống trầm cảm ba vòng) → QRS rộng."
+    },
+    {
+     "start": 20.173,
+     "dur": 4.904,
+     "text": "Nhịp máy tạo nhịp: tìm gai tạo nhịp trước QRS."
+    }
+   ]
+  },
+  {
+   "from": 5759,
+   "dur": 591,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.251,
+     "text": "Trạm 7 · ÔN TẬP — sơ đồ tiếp cận."
+    },
+    {
+     "start": 3.101,
+     "dur": 2.72,
+     "text": "Rộng + nhanh → mặc định nhịp nhanh thất."
+    },
+    {
+     "start": 6.171,
+     "dur": 4.794,
+     "text": "Tìm: phân ly · bắt được · hỗn hợp · đồng hướng → khẳng định nhịp nhanh thất."
+    },
+    {
+     "start": 11.314,
+     "dur": 7.418,
+     "text": "Không có → Brugada 4 bước · loại trừ bẫy: block nhánh cũ, đường phụ, kali, thuốc, máy tạo nhịp."
+    }
+   ]
+  },
+  {
+   "from": 6350,
+   "dur": 863,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 1.69,
+     "text": "Thực hành: đọc 2 ECG."
+    },
+    {
+     "start": 2.54,
+     "dur": 7.852,
+     "text": "ECG 1: QRS 0,18 s, đều, 170/phút · có P lạc nhịp độc lập · 1 nhát QRS hẹp chen vào."
+    },
+    {
+     "start": 10.742,
+     "dur": 3.551,
+     "text": "→ Phân ly nhĩ thất + nhát bắt được → nhịp nhanh thất ✓"
+    },
+    {
+     "start": 14.643,
+     "dur": 9.539,
+     "text": "ECG 2: QRS 0,13 s, đều, 160/phút · V1 rsR′ điển hình · ECG cũ có block nhánh phải giống hệt."
+    },
+    {
+     "start": 24.531,
+     "dur": 3.214,
+     "text": "→ Nghĩ nhịp nhanh trên thất kèm block nhánh phải sẵn có ✓"
+    }
+   ]
+  },
+  {
+   "from": 7213,
+   "dur": 849,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 0.965,
+     "text": "5 điều cần nhớ"
+    },
+    {
+     "start": 1.815,
+     "dur": 5.513,
+     "text": "① RỘNG + NHANH → nghĩ THẤT trước (~80%) · chưa chắc → coi là nhịp nhanh thất"
+    },
+    {
+     "start": 7.678,
+     "dur": 4.639,
+     "text": "② Phân ly · bắt được · hỗn hợp → KHẲNG ĐỊNH nhịp nhanh thất"
+    },
+    {
+     "start": 12.668,
+     "dur": 3.144,
+     "text": "③ Đồng hướng V1 – V6 → nghĩ nhịp nhanh thất"
+    },
+    {
+     "start": 16.162,
+     "dur": 3.723,
+     "text": "④ Brugada: 1 “CÓ” trong 4 bước → nhịp nhanh thất"
+    },
+    {
+     "start": 20.235,
+     "dur": 5.503,
+     "text": "⑤ Bẫy: block nhánh cũ · đường phụ · kali · thuốc · máy tạo nhịp"
+    },
+    {
+     "start": 26.088,
+     "dur": 1.187,
+     "text": "Cảm ơn bạn đã theo dõi!"
     }
    ]
   }

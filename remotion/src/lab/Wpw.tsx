@@ -447,4 +447,4 @@ export const Wpw: React.FC = () => (
 );
 export {wpwB, normB, train, race, DeltaHi, Chips, Tag8, Lbl8, gs, sm};
 void PEN;
-export {paf, anti, ortho};
+export {paf, anti, ortho, antiB};
