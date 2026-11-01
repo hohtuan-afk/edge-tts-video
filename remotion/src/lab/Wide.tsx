@@ -12,7 +12,7 @@ import {HAND} from '../wb/wb';
 import {Heart4C, H4, Dot} from '../wb/heart4c';
 import {Memo, Card, Head, DeskBg, ap, PEN, beat, M} from './Bundle';
 import {Strip, Frame} from './Infarct';
-import {antiB} from './Wpw';
+import {antiB, paf} from './Wpw';
 
 const RD = '#DC2626', BL = '#2563EB', OR = '#F97316', PU = '#8B5CF6', GR = '#22C55E', TE = '#06B6D4';
 const gs = (x: number, mu: number, w: number, a: number) => a * Math.exp(-((x - mu) ** 2) / (2 * w * w));
@@ -282,7 +282,151 @@ const Morph: React.FC = () => {
   );
 };
 
-const SCN: React.FC[] = [Cover, Sources, Safety, AVDiss, CapFus, Concord, Morph];
+// ================= phần 2 =================
+const rsB = (x: number) => gs(x, 0.04, 0.025, 0.55) + gs(x, 0.15, 0.035, -1.05) + gs(x, 0.36, 0.06, 0.35);
+const Brugada: React.FC = () => {
+  const t = useT();
+  const steps: [string, number][] = [['KHÔNG có dạng RS ở mọi chuyển đạo trước tim?', 2], ['Đầu R → đáy S > 100 ms ở bất kỳ V nào?', 4], ['Phân ly · bắt được · hỗn hợp?', 6], ['V1, V6 KHÔNG giống block nhánh điển hình?', 8]];
+  const cur = Math.max(0, Math.min(3, Math.floor((t - 2) / 2)));
+  return (
+    <DeskBg>
+      <Head t={t}>Brugada — 4 bước, 1 “CÓ” → nhịp nhanh thất</Head>
+      {steps.map(([s, st], i) => {
+        const a = ap(t, st);
+        const on = i === cur && t >= 2;
+        return (
+          <div key={i} style={{position: 'absolute', left: 60 + i * 40, top: 140 + i * 130, width: 940, height: 110, display: 'flex', alignItems: 'center', gap: 20, padding: '0 22px', borderRadius: 18, background: on ? '#FFF7ED' : '#FCFAF4', border: `4px solid ${on ? '#F59E0B' : 'transparent'}`, boxSizing: 'border-box', opacity: a, transform: `translateX(${(1 - a) * 40}px)`, fontFamily: FONT, boxShadow: '0 12px 26px rgba(0,0,0,0.35)'}}>
+            <span style={{flex: 'none', width: 60, height: 60, borderRadius: 30, background: '#F59E0B', color: '#fff', fontSize: 34, fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{i + 1}</span>
+            <span style={{fontSize: 31, fontWeight: 800, color: '#1F2937', flex: 1}}>{s}</span>
+            <span style={{flex: 'none', padding: '6px 14px', borderRadius: 12, background: RD, color: '#fff', fontSize: 24, fontWeight: 900}}>CÓ → VT</span>
+          </div>
+        );
+      })}
+      <Frame x={1140} y={140} a={ap(t, 4)} c="#F59E0B">
+        <Strip L={(x) => rsB(x)} w={720} h={500} q={24} base={0.5} t0={-0.12} label="V4" stroke={6}>
+          {(X, Y) => <g opacity={ap(t, 4.4)}>
+            <line x1={X(0)} x2={X(0)} y1={Y(0) - 160} y2={Y(-1.05) + 10} stroke={BL} strokeWidth={3} strokeDasharray="8 6" />
+            <line x1={X(0.15)} x2={X(0.15)} y1={Y(0) - 160} y2={Y(-1.05)} stroke={BL} strokeWidth={3} strokeDasharray="8 6" />
+            <path d={`M${X(0)},${Y(0) - 150} H${X(0.15)}`} stroke={RD} strokeWidth={6} markerEnd="" />
+            <text x={X(0.075)} y={Y(0) - 170} textAnchor="middle" fontFamily={MONO} fontSize={32} fontWeight={700} fill={RD}>150 ms &gt; 100</text>
+            <text x={X(0) - 8} y={Y(0) + 40} textAnchor="end" fontFamily={HAND} fontSize={30} fill={BL}>đầu R</text>
+            <text x={X(0.15) + 14} y={Y(-1.05) + 10} fontFamily={HAND} fontSize={30} fill={BL}>đáy S</text>
+          </g>}
+        </Strip>
+      </Frame>
+      <Lbl9 x={1150} y={655} a={ap(t, 4.4)} c="#FCD34D">100 ms ≈ 2,5 ô nhỏ</Lbl9>
+      <div style={{position: 'absolute', left: 60, top: 700, width: 1800, padding: '18px 26px', borderRadius: 16, background: '#FCFAF4', borderLeft: `12px solid ${BL}`, boxSizing: 'border-box', fontFamily: FONT, opacity: ap(t, 10)}}>
+        <span style={{fontSize: 30, fontWeight: 900, color: BL}}>Cả 4 “KHÔNG”</span><span style={{fontSize: 30, fontWeight: 700, color: '#1F2937'}}> → nghĩ trên thất dẫn truyền lệch hướng</span>
+        <span style={{fontSize: 26, fontWeight: 700, color: '#64748B'}}> · Cách khác: thuật toán chỉ dùng aVR (Vereckei)</span>
+      </div>
+    </DeskBg>
+  );
+};
+const Traps: React.FC = () => {
+  const t = useT();
+  const hk = (x: number) => gs(x, 0.06, 0.04, 0.75) + gs(x, 0.15, 0.03, -0.3) + gs(x, 0.32, 0.03, 1.0) + gs(x, -0.12, 0.02, 0.04);
+  const pace = (x: number) => gs(x, -0.008, 0.0016, 2.2) + vtB(x + 0.01);
+  const bb = (x: number) => beat(M.V1r)(x);
+  const cyc = (f: (x: number) => number, rr: number, o = 0.08) => (T: number) => f(((T % rr) + rr) % rr - o);
+  const cell = (i: number, title: string, c: string, s: number, node: React.ReactNode, sub: string) => (
+    <div key={i} style={{position: 'absolute', left: 60 + (i % 2) * 910, top: 130 + Math.floor(i / 2) * 400, width: 890, opacity: ap(t, s), transform: `translateY(${(1 - ap(t, s)) * 20}px)`}}>
+      <div style={{fontFamily: FONT, fontSize: 30, fontWeight: 900, color: c, marginBottom: 8}}>{title}</div>
+      <div style={{borderRadius: 12, overflow: 'hidden', outline: `4px solid ${c}`}}>{node}</div>
+      <div style={{fontFamily: FONT, fontSize: 24, fontWeight: 700, color: '#CBD5E1', marginTop: 8}}>{sub}</div>
+    </div>
+  );
+  return (
+    <DeskBg>
+      <Head t={t}>Những cái bẫy</Head>
+      {cell(0, '① Block nhánh SẴN CÓ', BL, 2, <div style={{display: 'flex'}}><Strip L={cyc(bb, 0.8, 0.15)} w={440} h={240} q={9} base={0.6} t0={0} label="ECG cũ" /><Strip L={cyc(bb, 0.375, 0.1)} w={450} h={240} q={9} base={0.6} t0={0} label="cơn nhanh" /></div>, 'cùng hình dạng → nghĩ trên thất')}
+      {cell(1, '② Qua đường phụ', OR, 4, <Strip L={paf} w={890} h={240} q={9} base={0.55} t0={0} label="II" />, 'ngược chiều · rung nhĩ có tiền kích thích')}
+      {cell(2, '③ Tăng kali · thuốc chẹn kênh natri', PU, 6, <Strip L={cyc(hk, 0.5)} w={890} h={240} q={9} base={0.62} t0={0} label="II" />, 'QRS rộng + T nhọn · thuốc chống trầm cảm ba vòng')}
+      {cell(3, '④ Nhịp máy tạo nhịp', TE, 8, <Strip L={cyc(pace, 0.6, 0.1)} w={890} h={240} q={9} base={0.6} t0={0} label="II" />, 'tìm GAI tạo nhịp ngay trước QRS')}
+    </DeskBg>
+  );
+};
+const Review9: React.FC = () => {
+  const t = useT();
+  const box = (x: number, y: number, w: number, c: string, a: number, title: string, rows: string[]) => (
+    <div style={{position: 'absolute', left: x, top: y, width: w, padding: '16px 22px', borderRadius: 18, background: '#FCFAF4', borderTop: `10px solid ${c}`, boxSizing: 'border-box', fontFamily: FONT, opacity: a, transform: `translateY(${(1 - a) * 20}px)`, boxShadow: '0 14px 30px rgba(0,0,0,0.35)'}}>
+      <div style={{fontSize: 32, fontWeight: 900, color: c}}>{title}</div>
+      {rows.map((r) => <div key={r} style={{fontSize: 27, fontWeight: 700, color: '#1F2937', marginTop: 8}}>• {r}</div>)}
+    </div>
+  );
+  return (
+    <DeskBg>
+      <Head t={t}>Sơ đồ tiếp cận</Head>
+      <div style={{position: 'absolute', left: 560, top: 120, padding: '14px 40px', borderRadius: 20, background: RD, color: '#fff', fontFamily: FONT, fontSize: 40, fontWeight: 900, opacity: ap(t, 2)}}>RỘNG + NHANH → mặc định nhịp nhanh THẤT</div>
+      {box(60, 260, 880, RD, ap(t, 4), 'Tìm dấu hiệu khẳng định', ['phân ly nhĩ thất', 'nhát bắt được · nhát hỗn hợp', 'đồng hướng V1 – V6', '→ NHỊP NHANH THẤT'])}
+      {box(980, 260, 880, '#F59E0B', ap(t, 6), 'Không có → Brugada 4 bước', ['1 “CÓ” → nhịp nhanh thất', '4 “KHÔNG” → trên thất lệch hướng'])}
+      {box(980, 560, 880, TE, ap(t, 6.4), 'Loại trừ bẫy', ['block nhánh cũ · đường phụ', 'tăng kali · thuốc · máy tạo nhịp'])}
+    </DeskBg>
+  );
+};
+const Chk9: React.FC<{y: number; a: number; c: string; k: string; children: React.ReactNode}> = ({y, a, c, k, children}) => (
+  <div style={{position: 'absolute', left: 1300, top: y, width: 560, display: 'flex', gap: 14, alignItems: 'flex-start', fontFamily: FONT, opacity: a, transform: `translateX(${(1 - a) * 30}px)`}}>
+    <span style={{flex: 'none', padding: '4px 12px', borderRadius: 10, background: c, color: '#fff', fontSize: 22, fontWeight: 900, marginTop: 4}}>{k}</span>
+    <span style={{fontSize: 28, fontWeight: 700, color: '#F1F5F9', lineHeight: 1.3}}>{children}</span>
+  </div>
+);
+const Practice9: React.FC = () => {
+  const t = useT();
+  const sw = ap(t, 6, 0.35);
+  const o1 = Math.max(0, 1 - sw * 2), o2 = Math.max(0, sw * 2 - 1);
+  const rb = (T: number) => beat(M.V1r)(((T % 0.375) + 0.375) % 0.375 - 0.1);
+  const rbOld = (T: number) => beat(M.V1r)(((T % 0.8) + 0.8) % 0.8 - 0.15);
+  return (
+    <DeskBg>
+      <Head t={t}>Thực hành: đọc 2 ECG</Head>
+      <div style={{opacity: o1}}>
+        <Tag9 x={60} y={128} a={1} c="#FDE047">ECG 1</Tag9>
+        <Frame x={60} y={175} a={ap(t, 2)} c={RD}><Strip L={vtTrain({p: true, cap: 7})} w={1200} h={420} q={12} base={0.55} t0={0} label="II" stroke={4}>
+          {(X, Y) => <g>{<g opacity={ap(t, 2.6)}>{P_T.slice(0, 4).map((p) => <circle key={p} cx={X(p)} cy={Y(0.17) - 26} r={13} fill={PU} />)}</g>}<g opacity={ap(t, 3)}><circle cx={X(VT_R[7] + 0.04)} cy={Y(0.4)} r={54} fill="none" stroke={GR} strokeWidth={6} /></g></g>}
+        </Strip></Frame>
+        <Chk9 y={180} a={ap(t, 2.4)} c={RD} k="QRS">0,18 s · đều · 170/phút</Chk9>
+        <Chk9 y={270} a={ap(t, 2.6)} c={PU} k="P">P độc lập (phân ly)</Chk9>
+        <Chk9 y={350} a={ap(t, 3)} c={GR} k="+">1 nhát QRS hẹp (bắt được)</Chk9>
+        <Chk9 y={440} a={ap(t, 4)} c={RD} k="KẾT LUẬN">Nhịp nhanh thất ✓</Chk9>
+      </div>
+      <div style={{opacity: o2}}>
+        <Tag9 x={60} y={128} a={1} c="#FDE047">ECG 2</Tag9>
+        <Frame x={60} y={175} a={sw} c={BL}><Strip L={rb} w={1200} h={330} q={12} base={0.6} t0={0} label="V1 · cơn nhanh" stroke={4} /></Frame>
+        <Frame x={60} y={540} a={sw}><Strip L={rbOld} w={1200} h={280} q={12} base={0.6} t0={0} label="V1 · ECG cũ" stroke={4} /></Frame>
+        <Chk9 y={180} a={ap(t, 6.4)} c={BL} k="QRS">0,13 s · đều · 160/phút</Chk9>
+        <Chk9 y={270} a={ap(t, 6.8)} c={BL} k="V1">rsR′ điển hình</Chk9>
+        <Chk9 y={350} a={ap(t, 7.2)} c={TE} k="CŨ">Block nhánh phải giống hệt</Chk9>
+        <Chk9 y={440} a={ap(t, 8)} c={GR} k="KẾT LUẬN">Trên thất + block nhánh phải sẵn có ✓</Chk9>
+      </div>
+    </DeskBg>
+  );
+};
+const Takeaways9: React.FC = () => {
+  const t = useT();
+  const items: [React.ReactNode, string][] = [
+    [<><b>RỘNG + NHANH → nghĩ THẤT trước</b> (~80%) · chưa chắc → coi là nhịp nhanh thất</>, RD],
+    [<>Phân ly · bắt được · hỗn hợp → <b>KHẲNG ĐỊNH</b> nhịp nhanh thất</>, PU],
+    [<><b>Đồng hướng</b> V1 – V6 → nghĩ nhịp nhanh thất</>, BL],
+    [<>Brugada: 1 <b>“CÓ”</b> trong 4 bước → nhịp nhanh thất</>, '#F59E0B'],
+    [<>Bẫy: <b>block nhánh cũ · đường phụ · kali · thuốc · máy tạo nhịp</b></>, TE],
+  ];
+  return (
+    <DeskBg>
+      <Head t={t}>5 điều cần nhớ</Head>
+      {items.map(([s, c], i) => {
+        const a = ap(t, 2 + i * 2);
+        return (
+          <div key={i} style={{position: 'absolute', left: 100, top: 140 + i * 128, width: 1720, height: 108, display: 'flex', alignItems: 'center', gap: 24, padding: '0 26px', borderRadius: 18, background: '#FCFAF4', borderLeft: `14px solid ${c}`, boxSizing: 'border-box', opacity: a, transform: `translateX(${(1 - a) * 50}px)`, boxShadow: '0 12px 26px rgba(0,0,0,0.35)', fontFamily: FONT}}>
+            <span style={{flex: 'none', width: 60, height: 60, borderRadius: 30, background: c, color: '#fff', fontSize: 34, fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{i + 1}</span>
+            <span style={{fontSize: 32, fontWeight: 700, color: '#1F2937'}}>{s}</span>
+          </div>
+        );
+      })}
+      <div style={{position: 'absolute', left: 0, right: 0, top: 820, textAlign: 'center', fontFamily: FONT, fontSize: 40, fontWeight: 800, color: '#5EEAD4', opacity: ap(t, 12)}}>Cảm ơn bạn đã theo dõi!</div>
+    </DeskBg>
+  );
+};
+
+const SCN: React.FC[] = [Cover, Sources, Safety, AVDiss, CapFus, Concord, Morph, Brugada, Traps, Review9, Practice9, Takeaways9];
 export const WIDE_N = 7;
 export const Wide: React.FC = () => (
   <AbsoluteFill style={{background: '#0E1116', fontFamily: FONT}}>
