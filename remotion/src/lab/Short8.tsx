@@ -115,8 +115,8 @@ const S4: React.FC = () => {
   const t = useSec();
   return (
     <AbsoluteFill><StepHead i={3} />
-      <Lead t={t} f={paf} label="II" x={60} w={960} q={12} base={300} t0={0} />
-      <Badge s={usePop(2.4)} c={CAF}>⚠ NGUY HIỂM — nguy cơ rung thất</Badge>
+      <Lead t={t} f={paf} label="II" x={60} w={960} q={15} base={300} t0={0} />
+      <Badge s={usePop(2.4)} c={CAF}>⚠ nguy cơ rung thất</Badge>
     </AbsoluteFill>
   );
 };
