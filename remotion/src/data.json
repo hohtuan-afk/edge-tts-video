@@ -1,81 +1,347 @@
 {
  "fps": 30,
- "total": 1128,
+ "total": 8066,
  "scenes": [
   {
    "from": 0,
-   "dur": 206,
+   "dur": 396,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 6.2,
-     "text": "Nhịp nhanh QRS hẹp? Hỏi 3 câu là ra tên!"
+     "start": 0.5,
+     "dur": 3.697,
+     "text": "Tiền kích thích thất (Wolff-Parkinson-White) trên điện tâm đồ"
+    },
+    {
+     "start": 4.547,
+     "dur": 4.186,
+     "text": "Thần chú: PR NGẮN – DELTA – QRS RỘNG"
+    },
+    {
+     "start": 9.083,
+     "dur": 3.121,
+     "text": "Mục tiêu: nhận ra đường phụ khi nhịp xoang, và khi nhịp nhanh."
     }
    ]
   },
   {
-   "from": 206,
-   "dur": 132,
+   "from": 396,
+   "dur": 616,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 3.611,
-     "text": "① Không đều hoàn toàn, không P → RUNG NHĨ"
+     "start": 0.5,
+     "dur": 5.428,
+     "text": "Trạm 1 · ĐƯỜNG PHỤ — một bó cơ nối thẳng nhĩ với thất."
+    },
+    {
+     "start": 6.278,
+     "dur": 2.814,
+     "text": "Nút nhĩ thất dẫn CHẬM · đường phụ dẫn NHANH."
+    },
+    {
+     "start": 9.442,
+     "dur": 4.811,
+     "text": "Xung qua đường phụ đến thất SỚM → một phần thất bị kích thích trước."
+    },
+    {
+     "start": 14.603,
+     "dur": 4.897,
+     "text": "Phần còn lại khử cực qua đường bình thường → QRS là hình HỢP NHẤT của hai đường."
     }
    ]
   },
   {
-   "from": 338,
-   "dur": 198,
+   "from": 1012,
+   "dur": 656,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 5.91,
-     "text": "② Đều ~ 150 → tìm sóng F răng cưa → CUỒNG NHĨ 2:1"
+     "start": 0.5,
+     "dur": 2.472,
+     "text": "Trạm 2 · DẤU HIỆU khi nhịp xoang."
+    },
+    {
+     "start": 3.322,
+     "dur": 4.41,
+     "text": "① PR NGẮN < 0,12 s — xung không phải chờ ở nút nhĩ thất."
+    },
+    {
+     "start": 8.082,
+     "dur": 4.238,
+     "text": "② SÓNG DELTA — phần đầu QRS dốc lên từ từ, như bị “trượt”."
+    },
+    {
+     "start": 12.67,
+     "dur": 8.214,
+     "text": "③ QRS RỘNG (> 0,11 – 0,12 s) · ST–T thường ngược chiều QRS (thứ phát)."
     }
    ]
   },
   {
-   "from": 536,
-   "dur": 156,
+   "from": 1668,
+   "dur": 409,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 4.501,
-     "text": "③ Không thấy P, r′ giả V1 → vòng vào lại NÚT nhĩ thất"
+     "start": 0.5,
+     "dur": 2.383,
+     "text": "Mức tiền kích thích có thể thay đổi."
+    },
+    {
+     "start": 3.233,
+     "dur": 4.536,
+     "text": "Đường phụ ở xa, nút dẫn nhanh → delta nhỏ, dễ bỏ sót."
+    },
+    {
+     "start": 8.118,
+     "dur": 4.514,
+     "text": "Tiền kích thích từng lúc (lúc có lúc mất) → gợi ý đường phụ dẫn kém, nguy cơ thấp hơn."
     }
    ]
   },
   {
-   "from": 692,
-   "dur": 172,
+   "from": 2077,
+   "dur": 516,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 5.032,
-     "text": "④ P sau QRS, RP ≥ 90 ms → vòng vào lại qua ĐƯỜNG PHỤ"
+     "start": 0.5,
+     "dur": 1.959,
+     "text": "Trạm 3 · DẠNG hay HỘI CHỨNG?"
+    },
+    {
+     "start": 2.809,
+     "dur": 4.471,
+     "text": "Dạng Wolff-Parkinson-White: có dấu hiệu trên ECG, KHÔNG có cơn nhịp nhanh."
+    },
+    {
+     "start": 7.63,
+     "dur": 4.86,
+     "text": "Hội chứng Wolff-Parkinson-White: dấu hiệu ECG + cơn nhịp nhanh hoặc triệu chứng."
+    },
+    {
+     "start": 12.84,
+     "dur": 3.36,
+     "text": "Gặp khoảng 0,1 – 0,3% dân số."
     }
    ]
   },
   {
-   "from": 864,
-   "dur": 132,
+   "from": 2593,
+   "dur": 576,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 3.337,
-     "text": "ĐỀU? – P Ở ĐÂU? – RP DÀI HAY NGẮN?"
+     "start": 0.5,
+     "dur": 2.199,
+     "text": "Dễ NHẦM với bệnh khác:"
+    },
+    {
+     "start": 3.049,
+     "dur": 4.192,
+     "text": "Delta âm ở III, aVF → giả sóng Q nhồi máu vùng dưới."
+    },
+    {
+     "start": 7.591,
+     "dur": 5.123,
+     "text": "R cao ở V1 → giả phì đại thất phải · QRS rộng → giả block nhánh."
+    },
+    {
+     "start": 13.064,
+     "dur": 5.129,
+     "text": "Thấy QRS rộng, Q lạ → luôn nhìn PR và tìm delta."
     }
    ]
   },
   {
-   "from": 996,
-   "dur": 132,
+   "from": 3169,
+   "dur": 551,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 2.475,
-     "text": "Lưu lại để ôn · xem bài đầy đủ trên kênh!"
+     "start": 0.5,
+     "dur": 2.853,
+     "text": "Trạm 4 · ĐỊNH VỊ SƠ BỘ — nhìn V1."
+    },
+    {
+     "start": 3.703,
+     "dur": 5.062,
+     "text": "V1 DƯƠNG (delta và R dương) → đường phụ bên TRÁI (dạng A)."
+    },
+    {
+     "start": 9.116,
+     "dur": 4.725,
+     "text": "V1 ÂM (S ưu thế) → đường phụ bên PHẢI (dạng B)."
+    },
+    {
+     "start": 14.191,
+     "dur": 3.163,
+     "text": "Định vị chính xác cần thuật toán chuyên sâu và thăm dò điện sinh lý."
+    }
+   ]
+  },
+  {
+   "from": 3720,
+   "dur": 499,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.343,
+     "text": "Trạm 5 · NHỊP NHANH QUA ĐƯỜNG PHỤ."
+    },
+    {
+     "start": 3.193,
+     "dur": 4.887,
+     "text": "XUÔI CHIỀU (thường gặp nhất): xuống qua nút, ngược lên qua đường phụ."
+    },
+    {
+     "start": 8.431,
+     "dur": 7.206,
+     "text": "→ QRS HẸP, MẤT delta · P sau QRS, RP ≥ 90 ms (như bài 7)."
+    }
+   ]
+  },
+  {
+   "from": 4219,
+   "dur": 448,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.85,
+     "text": "NGƯỢC CHIỀU (khoảng 5%): xuống qua đường phụ, ngược lên qua nút."
+    },
+    {
+     "start": 5.7,
+     "dur": 3.684,
+     "text": "→ QRS RỘNG, đều, tiền kích thích tối đa."
+    },
+    {
+     "start": 9.734,
+     "dur": 4.2,
+     "text": "Rất giống nhịp nhanh thất — xem bài 9."
+    }
+   ]
+  },
+  {
+   "from": 4667,
+   "dur": 895,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.955,
+     "text": "Trạm 6 · RUNG NHĨ CÓ TIỀN KÍCH THÍCH — dạng NGUY HIỂM."
+    },
+    {
+     "start": 4.805,
+     "dur": 3.678,
+     "text": "Xung rung nhĩ đi tắt xuống thất qua đường phụ, không bị nút “lọc”."
+    },
+    {
+     "start": 8.834,
+     "dur": 6.984,
+     "text": "ECG: KHÔNG ĐỀU · QRS RỘNG, thay đổi hình dạng từng nhát · RẤT NHANH (có thể gần 300/phút)."
+    },
+    {
+     "start": 16.167,
+     "dur": 5.786,
+     "text": "RR ngắn nhất < 250 ms (< 6 ô nhỏ) → nguy cơ rung thất."
+    },
+    {
+     "start": 22.303,
+     "dur": 6.538,
+     "text": "Tránh thuốc ức chế nút nhĩ thất (adenosine, chẹn kênh canxi, digoxin…) → có thể làm nặng thêm."
+    }
+   ]
+  },
+  {
+   "from": 5562,
+   "dur": 641,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 1.163,
+     "text": "Trạm 7 · ÔN TẬP."
+    },
+    {
+     "start": 2.013,
+     "dur": 4.689,
+     "text": "Nhịp xoang: PR ngắn · delta · QRS rộng → tiền kích thích."
+    },
+    {
+     "start": 7.052,
+     "dur": 8.37,
+     "text": "Nhịp nhanh QRS hẹp, đều, P sau QRS → xuôi chiều · QRS rộng, đều → ngược chiều (giống nhịp nhanh thất)."
+    },
+    {
+     "start": 15.772,
+     "dur": 4.576,
+     "text": "Không đều + QRS rộng thay đổi + rất nhanh → rung nhĩ có tiền kích thích."
+    }
+   ]
+  },
+  {
+   "from": 6203,
+   "dur": 746,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 1.69,
+     "text": "Thực hành: đọc 2 ECG."
+    },
+    {
+     "start": 2.54,
+     "dur": 8.344,
+     "text": "ECG 1: nhịp xoang · PR 0,09 s · QRS 0,13 s, đầu QRS dốc từ từ · V1 R dương."
+    },
+    {
+     "start": 11.234,
+     "dur": 2.853,
+     "text": "→ Tiền kích thích, gợi ý đường phụ bên trái ✓"
+    },
+    {
+     "start": 14.437,
+     "dur": 5.982,
+     "text": "ECG 2: không đều · QRS rộng, mỗi nhát mỗi khác · tần số ~ 250/phút."
+    },
+    {
+     "start": 20.768,
+     "dur": 3.107,
+     "text": "→ Rung nhĩ có tiền kích thích — nguy hiểm ✓"
+    }
+   ]
+  },
+  {
+   "from": 6949,
+   "dur": 1117,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 0.965,
+     "text": "5 điều cần nhớ"
+    },
+    {
+     "start": 1.815,
+     "dur": 4.129,
+     "text": "① PR NGẮN – DELTA – QRS RỘNG"
+    },
+    {
+     "start": 6.293,
+     "dur": 5.022,
+     "text": "② Dạng = chỉ có ECG · Hội chứng = ECG + cơn nhịp nhanh"
+    },
+    {
+     "start": 11.665,
+     "dur": 6.695,
+     "text": "③ Delta âm giả Q · R cao V1 giả phì đại thất phải → nhìn PR"
+    },
+    {
+     "start": 18.71,
+     "dur": 3.761,
+     "text": "④ V1 dương → bên trái · V1 âm → bên phải"
+    },
+    {
+     "start": 22.822,
+     "dur": 6.648,
+     "text": "⑤ Không đều + QRS rộng thay đổi + rất nhanh → rung nhĩ có tiền kích thích: NGUY HIỂM"
+    },
+    {
+     "start": 29.82,
+     "dur": 6.422,
+     "text": "Bài 9: Nhịp nhanh QRS rộng — nhịp nhanh thất hay trên thất?"
     }
    ]
   }
