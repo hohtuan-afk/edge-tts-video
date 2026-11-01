@@ -1,219 +1,35 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+8%",
+ "rate": "+12%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Tiền kích thích thất, hay hội chứng Wolff-Parkinson-White, trên điện tâm đồ."
-  },
-  {
-   "id": "00-1",
-   "text": "Thần chú của bài hôm nay: PR ngắn, sóng delta, QRS rộng."
-  },
-  {
-   "id": "00-2",
-   "text": "Mục tiêu là nhận ra đường phụ, cả khi nhịp xoang và khi nhịp nhanh."
+   "text": "Hội chứng Wolff-Parkinson-White: tim có thêm một cửa thứ hai giữa nhĩ và thất, gọi là đường phụ."
   },
   {
    "id": "01-0",
-   "text": "Trạm một, đường phụ. Đó là một bó cơ nối thẳng nhĩ với thất, đi vòng qua nút nhĩ thất."
-  },
-  {
-   "id": "01-1",
-   "text": "Nút nhĩ thất dẫn truyền chậm, còn đường phụ dẫn truyền nhanh."
-  },
-  {
-   "id": "01-2",
-   "text": "Vì vậy xung đi qua đường phụ đến thất sớm hơn, làm một phần thất bị kích thích trước, gọi là tiền kích thích."
-  },
-  {
-   "id": "01-3",
-   "text": "Phần còn lại của thất khử cực qua đường bình thường, nên QRS là hình hợp nhất của cả hai đường."
+   "text": "Một, PR ngắn, dưới không phẩy mười hai giây, vì xung đi tắt, không phải chờ ở nút nhĩ thất."
   },
   {
    "id": "02-0",
-   "text": "Trạm hai, các dấu hiệu khi bệnh nhân đang nhịp xoang."
-  },
-  {
-   "id": "02-1",
-   "text": "Một, PR ngắn, dưới không phẩy mười hai giây, vì xung không phải chờ ở nút nhĩ thất."
-  },
-  {
-   "id": "02-2",
-   "text": "Hai, sóng delta: phần đầu của QRS dốc lên từ từ, như bị trượt."
-  },
-  {
-   "id": "02-3",
-   "text": "Ba, QRS rộng, trên không phẩy mười một đến không phẩy mười hai giây. Đoạn ét tê và sóng T thường ngược chiều QRS, là biến đổi thứ phát."
+   "text": "Hai, sóng delta: phần đầu QRS dốc lên từ từ, như bị trượt."
   },
   {
    "id": "03-0",
-   "text": "Mức độ tiền kích thích có thể thay đổi giữa các lần ghi."
-  },
-  {
-   "id": "03-1",
-   "text": "Nếu đường phụ ở xa, hoặc nút nhĩ thất dẫn nhanh, sóng delta nhỏ và dễ bị bỏ sót."
-  },
-  {
-   "id": "03-2",
-   "text": "Tiền kích thích từng lúc, lúc có lúc mất, gợi ý đường phụ dẫn kém, nguy cơ thấp hơn."
+   "text": "Ba, QRS rộng, rất dễ bị đọc nhầm thành nhồi máu, phì đại thất hay block nhánh."
   },
   {
    "id": "04-0",
-   "text": "Trạm ba, phân biệt dạng và hội chứng."
-  },
-  {
-   "id": "04-1",
-   "text": "Dạng Wolff-Parkinson-White là khi có dấu hiệu trên điện tâm đồ, nhưng không có cơn nhịp nhanh."
-  },
-  {
-   "id": "04-2",
-   "text": "Hội chứng Wolff-Parkinson-White là khi có dấu hiệu trên điện tâm đồ, kèm cơn nhịp nhanh hoặc triệu chứng."
-  },
-  {
-   "id": "04-3",
-   "text": "Tiền kích thích gặp ở khoảng không phẩy một đến không phẩy ba phần trăm dân số."
+   "text": "Bốn, rung nhĩ kèm tiền kích thích: không đều, QRS rộng thay đổi hình dạng, rất nhanh. Đây là tình trạng nguy hiểm."
   },
   {
    "id": "05-0",
-   "text": "Tiền kích thích rất dễ bị đọc nhầm thành bệnh khác."
-  },
-  {
-   "id": "05-1",
-   "text": "Sóng delta âm ở chuyển đạo ba và a-vê-ép có thể giả sóng Q của nhồi máu vùng dưới."
-  },
-  {
-   "id": "05-2",
-   "text": "Sóng R cao ở vê một có thể giả phì đại thất phải, còn QRS rộng có thể giả block nhánh."
-  },
-  {
-   "id": "05-3",
-   "text": "Vì vậy, khi thấy QRS rộng hoặc sóng Q lạ, hãy luôn nhìn khoảng PR và tìm sóng delta."
+   "text": "Nhớ nhé: PR ngắn, sóng delta, QRS rộng."
   },
   {
    "id": "06-0",
-   "text": "Trạm bốn, định vị sơ bộ đường phụ bằng cách nhìn vê một."
-  },
-  {
-   "id": "06-1",
-   "text": "Vê một dương, sóng delta và R dương, gợi ý đường phụ bên trái, còn gọi là dạng A."
-  },
-  {
-   "id": "06-2",
-   "text": "Vê một âm, sóng S ưu thế, gợi ý đường phụ bên phải, còn gọi là dạng B."
-  },
-  {
-   "id": "06-3",
-   "text": "Định vị chính xác cần các thuật toán chuyên sâu và thăm dò điện sinh lý."
-  },
-  {
-   "id": "07-0",
-   "text": "Trạm năm, nhịp nhanh vòng vào lại qua đường phụ."
-  },
-  {
-   "id": "07-1",
-   "text": "Dạng xuôi chiều, thường gặp nhất: xung đi xuống qua nút nhĩ thất, rồi ngược lên nhĩ qua đường phụ."
-  },
-  {
-   "id": "07-2",
-   "text": "Khi đó QRS hẹp, mất sóng delta, và sóng P nằm sau QRS với RP từ chín mươi mi li giây, như đã học ở bài bảy."
-  },
-  {
-   "id": "08-0",
-   "text": "Dạng ngược chiều, chỉ khoảng năm phần trăm: xung đi xuống thất qua đường phụ, rồi ngược lên qua nút."
-  },
-  {
-   "id": "08-1",
-   "text": "Khi đó QRS rộng, nhịp đều, với mức tiền kích thích tối đa."
-  },
-  {
-   "id": "08-2",
-   "text": "Dạng này rất giống nhịp nhanh thất. Chúng ta sẽ học cách phân biệt ở bài chín."
-  },
-  {
-   "id": "09-0",
-   "text": "Trạm sáu, rung nhĩ có tiền kích thích. Đây là dạng nguy hiểm nhất."
-  },
-  {
-   "id": "09-1",
-   "text": "Xung rung nhĩ đi tắt xuống thất qua đường phụ, không còn được nút nhĩ thất lọc bớt."
-  },
-  {
-   "id": "09-2",
-   "text": "Trên điện tâm đồ: nhịp không đều, QRS rộng và thay đổi hình dạng từng nhát, tần số rất nhanh, có thể gần ba trăm lần mỗi phút."
-  },
-  {
-   "id": "09-3",
-   "text": "Nếu khoảng RR ngắn nhất dưới hai trăm năm mươi mi li giây, tức dưới khoảng sáu ô nhỏ, nguy cơ chuyển thành rung thất."
-  },
-  {
-   "id": "09-4",
-   "text": "Cần tránh thuốc ức chế nút nhĩ thất như adenosine, thuốc chẹn kênh canxi, digoxin, vì có thể làm nhịp nhanh hơn và nặng thêm."
-  },
-  {
-   "id": "10-0",
-   "text": "Trạm bảy, ôn tập."
-  },
-  {
-   "id": "10-1",
-   "text": "Khi nhịp xoang: PR ngắn, sóng delta, QRS rộng, là tiền kích thích."
-  },
-  {
-   "id": "10-2",
-   "text": "Nhịp nhanh QRS hẹp, đều, P sau QRS là dạng xuôi chiều. QRS rộng, đều là dạng ngược chiều, rất giống nhịp nhanh thất."
-  },
-  {
-   "id": "10-3",
-   "text": "Không đều, QRS rộng thay đổi hình dạng, rất nhanh, là rung nhĩ có tiền kích thích."
-  },
-  {
-   "id": "11-0",
-   "text": "Thực hành: đọc hai điện tâm đồ."
-  },
-  {
-   "id": "11-1",
-   "text": "Điện tâm đồ một: nhịp xoang, PR không phẩy không chín giây, QRS không phẩy mười ba giây, phần đầu QRS dốc từ từ, vê một có R dương."
-  },
-  {
-   "id": "11-2",
-   "text": "Kết luận: tiền kích thích, gợi ý đường phụ bên trái."
-  },
-  {
-   "id": "11-3",
-   "text": "Điện tâm đồ hai: nhịp không đều, QRS rộng và mỗi nhát mỗi khác, tần số khoảng hai trăm năm mươi lần mỗi phút."
-  },
-  {
-   "id": "11-4",
-   "text": "Kết luận: rung nhĩ có tiền kích thích, một tình trạng nguy hiểm."
-  },
-  {
-   "id": "12-0",
-   "text": "Năm điều cần nhớ."
-  },
-  {
-   "id": "12-1",
-   "text": "Một, thần chú: PR ngắn, sóng delta, QRS rộng."
-  },
-  {
-   "id": "12-2",
-   "text": "Hai, dạng là chỉ có dấu hiệu trên điện tâm đồ. Hội chứng là có thêm cơn nhịp nhanh."
-  },
-  {
-   "id": "12-3",
-   "text": "Ba, delta âm có thể giả sóng Q, R cao ở vê một có thể giả phì đại thất phải. Hãy nhìn khoảng PR."
-  },
-  {
-   "id": "12-4",
-   "text": "Bốn, vê một dương nghĩ đường phụ bên trái, vê một âm nghĩ bên phải."
-  },
-  {
-   "id": "12-5",
-   "text": "Năm, không đều, QRS rộng thay đổi, rất nhanh là rung nhĩ có tiền kích thích. Đây là tình trạng nguy hiểm."
-  },
-  {
-   "id": "12-6",
-   "text": "Bài sau, chúng ta sẽ học nhịp nhanh QRS rộng: nhịp nhanh thất hay nhịp nhanh trên thất. Cảm ơn bạn đã theo dõi."
+   "text": "Lưu lại để ôn, và xem bài đầy đủ trên kênh nhé."
   }
  ]
 }
