@@ -303,14 +303,14 @@ const Brugada: React.FC = () => {
         );
       })}
       <Frame x={1140} y={140} a={ap(t, 4)} c="#F59E0B">
-        <Strip L={(x) => rsB(x)} w={720} h={500} q={24} base={0.5} t0={-0.12} label="V4" stroke={6}>
+        <Strip L={(x) => rsB(x)} w={720} h={500} q={20} base={0.45} t0={-0.12} label="V4" stroke={6}>
           {(X, Y) => <g opacity={ap(t, 4.4)}>
             <line x1={X(0)} x2={X(0)} y1={Y(0) - 160} y2={Y(-1.05) + 10} stroke={BL} strokeWidth={3} strokeDasharray="8 6" />
             <line x1={X(0.15)} x2={X(0.15)} y1={Y(0) - 160} y2={Y(-1.05)} stroke={BL} strokeWidth={3} strokeDasharray="8 6" />
             <path d={`M${X(0)},${Y(0) - 150} H${X(0.15)}`} stroke={RD} strokeWidth={6} markerEnd="" />
             <text x={X(0.075)} y={Y(0) - 170} textAnchor="middle" fontFamily={MONO} fontSize={32} fontWeight={700} fill={RD}>150 ms &gt; 100</text>
             <text x={X(0) - 8} y={Y(0) + 40} textAnchor="end" fontFamily={HAND} fontSize={30} fill={BL}>đầu R</text>
-            <text x={X(0.15) + 14} y={Y(-1.05) + 10} fontFamily={HAND} fontSize={30} fill={BL}>đáy S</text>
+            <text x={X(0.15) + 14} y={Y(-0.8)} fontFamily={HAND} fontSize={30} fill={BL}>← đáy S</text>
           </g>}
         </Strip>
       </Frame>
