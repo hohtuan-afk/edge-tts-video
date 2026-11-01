@@ -224,7 +224,7 @@ const CapFus: React.FC = () => {
 const Concord: React.FC = () => {
   const t = useT();
   const neg = (x: number) => -1.3 * gs(x, 0.09, 0.045, 1) + gs(x, 0.33, 0.06, 0.45);
-  const pos = (x: number) => vtB(x) * 1.0;
+  const pos = (x: number) => vtB(x) * 1.35;
   const sw = ap(t, 4, 0.5);
   const leads = ['V1', 'V2', 'V3', 'V4', 'V5', 'V6'];
   return (
@@ -250,7 +250,7 @@ const Concord: React.FC = () => {
 const Morph: React.FC = () => {
   const t = useT();
   const k = ap(t, 6, 1);
-  const cx = 1560, cy = 640, R = 170;
+  const cx = 1650, cy = 700, R = 150;
   const pt = (d: number, rr = R) => [cx + rr * Math.cos((d * Math.PI) / 180), cy + rr * Math.sin((d * Math.PI) / 180)];
   const [x0, y0] = pt(-90), [x1, y1] = pt(-180);
   return (
@@ -259,7 +259,7 @@ const Morph: React.FC = () => {
       <Tag9 x={60} y={130} a={ap(t, 2)} c="#93C5FD">Block nhánh phải điển hình</Tag9>
       <Frame x={60} y={180} a={ap(t, 2)} c={BL}>
         <Strip L={(x) => beat(M.V1r)(x)} w={680} h={360} q={20} base={0.6} t0={-0.15} label="V1" stroke={5}>
-          {(X, Y) => <g opacity={ap(t, 2.4)}><line x1={X(0)} y1={Y(0)} x2={X(0.015)} y2={Y(0.25)} stroke={GR} strokeWidth={10} strokeLinecap="round" /><text x={X(0.0)} y={Y(0) + 60} fontFamily={HAND} fontSize={34} fill={GR}>khởi đầu NHANH</text></g>}
+          {(X, Y) => <g opacity={ap(t, 2.4)}><line x1={X(0)} y1={Y(0)} x2={X(0.015)} y2={Y(0.25)} stroke={GR} strokeWidth={10} strokeLinecap="round" /><text x={X(0.12)} y={Y(0.7)} fontFamily={HAND} fontSize={34} fill={GR}>← khởi đầu NHANH</text></g>}
         </Strip>
       </Frame>
       <Tag9 x={780} y={130} a={ap(t, 4)} c="#FCA5A5">Nhịp nhanh thất</Tag9>
@@ -275,9 +275,9 @@ const Morph: React.FC = () => {
         <circle cx={cx} cy={cy} r={R} fill="none" stroke="#94A3B8" strokeWidth={3} />
         <text x={cx - 70} y={cy - 60} textAnchor="middle" fontFamily={FONT} fontSize={22} fontWeight={900} fill={RD} opacity={k}>vô định</text>
       </svg>
-      <Card x={60} y={580} w={1320} a={ap(t, 2)} c={BL} title="Block nhánh: khởi đầu QRS dốc, gọn (vẫn qua bó His)" />
-      <Card x={60} y={690} w={1320} a={ap(t, 4)} c={RD} title="Nhịp nhanh thất: khởi đầu CHẬM · QRS rất rộng · hình dạng “lạ”" />
-      <Card x={60} y={800} w={1320} a={ap(t, 6)} c={RD} title="Trục vô định (−90° → ±180°) → nghĩ nhịp nhanh thất" />
+      <Card x={60} y={580} w={1280} a={ap(t, 2)} c={BL} title="Block nhánh: khởi đầu QRS dốc, gọn (vẫn qua bó His)" />
+      <Card x={60} y={690} w={1280} a={ap(t, 4)} c={RD} title="Nhịp nhanh thất: khởi đầu CHẬM · QRS rất rộng · hình dạng “lạ”" />
+      <Card x={60} y={800} w={1280} a={ap(t, 6)} c={RD} title="Trục vô định (−90° → ±180°) → nghĩ nhịp nhanh thất" />
     </DeskBg>
   );
 };
