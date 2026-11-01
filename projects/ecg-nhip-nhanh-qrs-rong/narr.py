@@ -1,0 +1,131 @@
+# BÀI 9 · NHỊP NHANH QRS RỘNG TRÊN ĐIỆN TÂM ĐỒ — NHỊP NHANH THẤT HAY TRÊN THẤT?
+# Thần chú: RỘNG + NHANH → nghĩ THẤT trước
+# Khung 7 trạm: NGUYÊN TẮC → DẤU HIỆU CHẮC CHẮN → ĐỒNG HƯỚNG → HÌNH DẠNG QRS → BRUGADA 4 BƯỚC → BẪY → ÔN TẬP
+# Nguồn: 2022 ESC Guidelines for ventricular arrhythmias and prevention of SCD; 2017 AHA/ACC/HRS VA Guideline;
+#        2019 ESC SVT Guidelines; Brugada P et al. Circulation 1991 (4 bước; nhạy 98,7%, đặc hiệu 96,5% trong nghiên cứu gốc);
+#        Vereckei A et al. Heart Rhythm 2008 (thuật toán aVR); LITFL; RCEM Learning; Prague ICU ECG Academy.
+NARR = [
+  # 0 · Bìa
+  [("Nhịp nhanh QRS rộng trên điện tâm đồ — Nhịp nhanh thất hay trên thất?",
+    "Nhịp nhanh QRS rộng trên điện tâm đồ: nhịp nhanh thất, hay nhịp nhanh trên thất?"),
+   ("Thần chú: RỘNG + NHANH → nghĩ THẤT trước",
+    "Thần chú của bài hôm nay: QRS rộng và nhanh, hãy nghĩ đến nhịp nhanh thất trước."),
+   ("Mục tiêu: nhận ra các dấu hiệu nhịp nhanh thất, và tránh các cái bẫy.",
+    "Mục tiêu là nhận ra các dấu hiệu của nhịp nhanh thất, và tránh những cái bẫy thường gặp.")],
+  # 1 · Nguyên tắc
+  [("Trạm 1 · NGUYÊN TẮC — nhịp nhanh với QRS ≥ 0,12 s có 3 nguồn.",
+    "Trạm một, nguyên tắc. Nhịp nhanh với QRS từ không phẩy mười hai giây có ba nguồn gốc."),
+   ("① Nhịp nhanh THẤT: ổ phát nhịp nằm trong thất.",
+    "Một, nhịp nhanh thất: ổ phát nhịp nằm ngay trong thất."),
+   ("② Nhịp nhanh trên thất + block nhánh / dẫn truyền lệch hướng.",
+    "Hai, nhịp nhanh trên thất kèm block nhánh, hoặc dẫn truyền lệch hướng."),
+   ("③ Nhịp nhanh trên thất đi qua đường phụ (bài 8).",
+    "Ba, nhịp nhanh trên thất đi xuống thất qua đường phụ, như đã học ở bài tám.")],
+  # 2 · An toàn
+  [("Khoảng 80% nhịp nhanh QRS rộng là nhịp nhanh THẤT.",
+    "Khoảng tám mươi phần trăm nhịp nhanh QRS rộng là nhịp nhanh thất."),
+   ("Càng chắc hơn khi có bệnh tim cấu trúc, nhồi máu cũ.",
+    "Tỉ lệ này càng cao khi bệnh nhân có bệnh tim cấu trúc, hoặc nhồi máu cơ tim cũ."),
+   ("CHƯA CHẮC → coi là nhịp nhanh thất.",
+    "Vì vậy, khi chưa chắc chắn, hãy coi đó là nhịp nhanh thất."),
+   ("Không dùng thuốc chẹn kênh canxi khi chưa loại trừ nhịp nhanh thất.",
+    "Không dùng thuốc chẹn kênh canxi khi chưa loại trừ được nhịp nhanh thất.")],
+  # 3 · Phân ly nhĩ thất
+  [("Trạm 2 · DẤU HIỆU CHẮC CHẮN — phân ly nhĩ thất.",
+    "Trạm hai, các dấu hiệu chắc chắn. Đầu tiên là phân ly nhĩ thất."),
+   ("Nhĩ và thất đập độc lập: P đi đường P, QRS đi đường QRS.",
+    "Nhĩ và thất đập độc lập với nhau: sóng P đi đường P, QRS đi đường QRS, như đã học ở bài ba."),
+   ("Tần số thất NHANH hơn nhĩ → nhịp nhanh thất.",
+    "Ở đây tần số thất nhanh hơn tần số nhĩ. Đó là nhịp nhanh thất."),
+   ("Khó thấy P khi nhanh — tìm “bướu” lạ trên QRS, ST, T.",
+    "Khi nhịp quá nhanh, sóng P khó thấy. Hãy tìm những cái bướu lạ trên QRS, đoạn ét tê và sóng T.")],
+  # 4 · Bắt được, hỗn hợp
+  [("Nhát BẮT ĐƯỢC: một xung xoang “lọt” xuống thất → 1 nhát QRS HẸP chen giữa.",
+    "Nhát bắt được: một xung xoang lọt xuống thất đúng lúc, tạo ra một nhát QRS hẹp chen vào giữa dải QRS rộng."),
+   ("Nhát HỖN HỢP: xung xoang và xung thất gặp nhau → QRS lai, hình dạng trung gian.",
+    "Nhát hỗn hợp: xung xoang và xung thất cùng khử cực thất, tạo ra một QRS lai, có hình dạng trung gian."),
+   ("Thấy một trong ba dấu hiệu → nhịp nhanh thất.",
+    "Thấy một trong ba dấu hiệu này, có thể khẳng định là nhịp nhanh thất.")],
+  # 5 · Đồng hướng
+  [("Trạm 3 · ĐỒNG HƯỚNG ở các chuyển đạo trước tim.",
+    "Trạm ba, đồng hướng ở các chuyển đạo trước tim."),
+   ("V1 → V6 CÙNG dương hoặc CÙNG âm.",
+    "Từ vê một đến vê sáu, QRS cùng dương, hoặc cùng âm."),
+   ("Đồng hướng ÂM → gần như chắc chắn nhịp nhanh thất.",
+    "Đồng hướng âm gần như chắc chắn là nhịp nhanh thất."),
+   ("Đồng hướng DƯƠNG → nhịp nhanh thất, hoặc (hiếm) qua đường phụ bên trái.",
+    "Đồng hướng dương gợi ý nhịp nhanh thất, hoặc hiếm hơn là nhịp nhanh qua đường phụ bên trái.")],
+  # 6 · Hình dạng QRS
+  [("Trạm 4 · HÌNH DẠNG QRS — có GIỐNG block nhánh điển hình không?",
+    "Trạm bốn, hình dạng QRS. Hãy so với block nhánh điển hình đã học ở bài bốn."),
+   ("Block nhánh điển hình: khởi đầu QRS NHANH, gọn (đi qua bó His).",
+    "Trong block nhánh điển hình, phần đầu QRS dốc nhanh và gọn, vì xung vẫn đi qua bó His."),
+   ("Nhịp nhanh thất: khởi đầu CHẬM, QRS rất rộng (> 0,14 – 0,16 s), hình dạng “lạ”.",
+    "Trong nhịp nhanh thất, phần đầu QRS chậm, QRS rất rộng, trên không phẩy mười bốn đến không phẩy mười sáu giây, và hình dạng lạ."),
+   ("Trục “vô định” (−90° đến ±180°) → nghĩ nhịp nhanh thất.",
+    "Trục nằm ở vùng vô định, từ âm chín mươi đến cộng trừ một trăm tám mươi độ, cũng gợi ý nhịp nhanh thất.")],
+  # 7 · Brugada
+  [("Trạm 5 · BRUGADA — 4 bước, chỉ cần 1 “CÓ” → nhịp nhanh thất.",
+    "Trạm năm, tiêu chí Bru-ga-đa gồm bốn bước. Chỉ cần một câu trả lời có, là nhịp nhanh thất."),
+   ("① KHÔNG có dạng RS ở mọi chuyển đạo trước tim?",
+    "Bước một: không có dạng RS ở tất cả các chuyển đạo trước tim?"),
+   ("② Từ đầu R đến đáy S > 100 ms (≥ 2,5 ô nhỏ) ở bất kỳ V nào?",
+    "Bước hai: khoảng từ đầu sóng R đến đáy sóng S trên một trăm mi li giây, tức khoảng hai ô rưỡi nhỏ, ở bất kỳ chuyển đạo trước tim nào?"),
+   ("③ Có phân ly nhĩ thất, nhát bắt được, nhát hỗn hợp?",
+    "Bước ba: có phân ly nhĩ thất, nhát bắt được, hoặc nhát hỗn hợp?"),
+   ("④ Hình dạng V1, V6 KHÔNG giống block nhánh điển hình?",
+    "Bước bốn: hình dạng ở vê một và vê sáu không giống block nhánh điển hình?"),
+   ("Cả 4 “KHÔNG” → nghĩ nhịp nhanh trên thất dẫn truyền lệch hướng · Khác: thuật toán aVR (Vereckei).",
+    "Nếu cả bốn câu đều là không, nghĩ đến nhịp nhanh trên thất dẫn truyền lệch hướng. Ngoài ra còn có thuật toán chỉ dùng a-vê-rờ của Ve-rê-kây.")],
+  # 8 · Bẫy
+  [("Trạm 6 · NHỮNG CÁI BẪY.",
+    "Trạm sáu, những cái bẫy cần biết."),
+   ("Block nhánh SẴN CÓ: so với ECG cũ — cùng hình dạng thì nghĩ trên thất.",
+    "Block nhánh sẵn có: hãy so với điện tâm đồ cũ. Nếu cùng hình dạng, nghĩ đến nhịp nhanh trên thất."),
+   ("Qua đường phụ (ngược chiều, rung nhĩ tiền kích thích) — rất giống nhịp nhanh thất.",
+    "Nhịp nhanh qua đường phụ, dạng ngược chiều, hay rung nhĩ có tiền kích thích, trông rất giống nhịp nhanh thất."),
+   ("Tăng kali máu · ngộ độc thuốc chẹn kênh natri (thuốc chống trầm cảm ba vòng) → QRS rộng.",
+    "Tăng kali máu và ngộ độc thuốc chẹn kênh natri, như thuốc chống trầm cảm ba vòng, cũng làm QRS rộng."),
+   ("Nhịp máy tạo nhịp: tìm gai tạo nhịp trước QRS.",
+    "Nhịp máy tạo nhịp cũng có QRS rộng. Hãy tìm gai tạo nhịp ngay trước QRS.")],
+  # 9 · Ôn tập
+  [("Trạm 7 · ÔN TẬP — sơ đồ tiếp cận.",
+    "Trạm bảy, ôn tập bằng sơ đồ tiếp cận."),
+   ("Rộng + nhanh → mặc định nhịp nhanh thất.",
+    "QRS rộng và nhanh, mặc định nghĩ nhịp nhanh thất."),
+   ("Tìm: phân ly · bắt được · hỗn hợp · đồng hướng → khẳng định nhịp nhanh thất.",
+    "Tìm phân ly nhĩ thất, nhát bắt được, nhát hỗn hợp, đồng hướng, để khẳng định nhịp nhanh thất."),
+   ("Không có → Brugada 4 bước · loại trừ bẫy: block nhánh cũ, đường phụ, kali, thuốc, máy tạo nhịp.",
+    "Nếu không có, dùng bốn bước Bru-ga-đa, và loại trừ các bẫy: block nhánh cũ, đường phụ, kali, thuốc, máy tạo nhịp.")],
+  # 10 · Thực hành
+  [("Thực hành: đọc 2 ECG.",
+    "Thực hành: đọc hai điện tâm đồ."),
+   ("ECG 1: QRS 0,18 s, đều, 170/phút · có P lạc nhịp độc lập · 1 nhát QRS hẹp chen vào.",
+    "Điện tâm đồ một: QRS không phẩy mười tám giây, đều, một trăm bảy mươi lần mỗi phút, có sóng P độc lập, và một nhát QRS hẹp chen vào."),
+   ("→ Phân ly nhĩ thất + nhát bắt được → nhịp nhanh thất ✓",
+    "Kết luận: có phân ly nhĩ thất và nhát bắt được, đây là nhịp nhanh thất."),
+   ("ECG 2: QRS 0,13 s, đều, 160/phút · V1 rsR′ điển hình · ECG cũ có block nhánh phải giống hệt.",
+    "Điện tâm đồ hai: QRS không phẩy mười ba giây, đều, một trăm sáu mươi lần mỗi phút, vê một có dạng r s R phẩy điển hình, và điện tâm đồ cũ có block nhánh phải giống hệt."),
+   ("→ Nghĩ nhịp nhanh trên thất kèm block nhánh phải sẵn có ✓",
+    "Kết luận: nghĩ đến nhịp nhanh trên thất kèm block nhánh phải sẵn có.")],
+  # 11 · 5 điều cần nhớ
+  [("5 điều cần nhớ",
+    "Năm điều cần nhớ."),
+   ("① RỘNG + NHANH → nghĩ THẤT trước (~80%) · chưa chắc → coi là nhịp nhanh thất",
+    "Một, QRS rộng và nhanh, nghĩ nhịp nhanh thất trước. Chưa chắc thì coi là nhịp nhanh thất."),
+   ("② Phân ly · bắt được · hỗn hợp → KHẲNG ĐỊNH nhịp nhanh thất",
+    "Hai, phân ly nhĩ thất, nhát bắt được, nhát hỗn hợp là các dấu hiệu khẳng định nhịp nhanh thất."),
+   ("③ Đồng hướng V1 – V6 → nghĩ nhịp nhanh thất",
+    "Ba, đồng hướng từ vê một đến vê sáu, nghĩ nhịp nhanh thất."),
+   ("④ Brugada: 1 “CÓ” trong 4 bước → nhịp nhanh thất",
+    "Bốn, theo Bru-ga-đa, chỉ cần một câu có trong bốn bước là nhịp nhanh thất."),
+   ("⑤ Bẫy: block nhánh cũ · đường phụ · kali · thuốc · máy tạo nhịp",
+    "Năm, nhớ các bẫy: block nhánh cũ, đường phụ, tăng kali, thuốc, và máy tạo nhịp."),
+   ("Cảm ơn bạn đã theo dõi!",
+    "Cảm ơn bạn đã theo dõi.")],
+]
+STATION = [0, 1, 1, 2, 2, 3, 4, 5, 6, 7, 7, 7]
+assert len(STATION) == len(NARR)
+KEYS = [[2 * j for j in range(len(sc))] for sc in NARR]
+STEP = 3.0
+SCENE_DUR = [STEP * len(sc) + 3 for sc in NARR]
