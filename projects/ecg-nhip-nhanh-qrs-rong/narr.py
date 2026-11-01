@@ -38,7 +38,9 @@ NARR = [
    ("Tần số thất NHANH hơn nhĩ → nhịp nhanh thất.",
     "Ở đây tần số thất nhanh hơn tần số nhĩ. Đó là nhịp nhanh thất."),
    ("Khó thấy P khi nhanh — tìm “bướu” lạ trên QRS, ST, T.",
-    "Khi nhịp quá nhanh, sóng P khó thấy. Hãy tìm những cái bướu lạ trên QRS, đoạn ét tê và sóng T.")],
+    "Khi nhịp quá nhanh, sóng P khó thấy. Hãy tìm những cái bướu lạ trên QRS, đoạn ét tê và sóng T."),
+   ("Chỉ thấy ở khoảng 3/4 ca → KHÔNG thấy cũng CHƯA loại trừ.",
+    "Lưu ý, phân ly nhĩ thất chỉ thấy ở khoảng ba phần tư số ca. Không thấy, cũng chưa loại trừ được nhịp nhanh thất.")],
   # 4 · Bắt được, hỗn hợp
   [("Nhát BẮT ĐƯỢC: một xung xoang “lọt” xuống thất → 1 nhát QRS HẸP chen giữa.",
     "Nhát bắt được: một xung xoang lọt xuống thất đúng lúc, tạo ra một nhát QRS hẹp chen vào giữa dải QRS rộng."),

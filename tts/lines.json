@@ -1,35 +1,223 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+12%",
+ "rate": "+8%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Hội chứng Wolff-Parkinson-White: tim có thêm một cửa thứ hai giữa nhĩ và thất, gọi là đường phụ."
+   "text": "Nhịp nhanh QRS rộng trên điện tâm đồ: nhịp nhanh thất, hay nhịp nhanh trên thất?"
+  },
+  {
+   "id": "00-1",
+   "text": "Thần chú của bài hôm nay: QRS rộng và nhanh, hãy nghĩ đến nhịp nhanh thất trước."
+  },
+  {
+   "id": "00-2",
+   "text": "Mục tiêu là nhận ra các dấu hiệu của nhịp nhanh thất, và tránh những cái bẫy thường gặp."
   },
   {
    "id": "01-0",
-   "text": "Một, PR ngắn, dưới không phẩy mười hai giây, vì xung đi tắt, không phải chờ ở nút nhĩ thất."
+   "text": "Trạm một, nguyên tắc. Nhịp nhanh với QRS từ không phẩy mười hai giây có ba nguồn gốc."
+  },
+  {
+   "id": "01-1",
+   "text": "Một, nhịp nhanh thất: ổ phát nhịp nằm ngay trong thất."
+  },
+  {
+   "id": "01-2",
+   "text": "Hai, nhịp nhanh trên thất kèm block nhánh, hoặc dẫn truyền lệch hướng."
+  },
+  {
+   "id": "01-3",
+   "text": "Ba, nhịp nhanh trên thất đi xuống thất qua đường phụ, như đã học ở bài tám."
   },
   {
    "id": "02-0",
-   "text": "Hai, sóng delta: phần đầu QRS dốc lên từ từ, như bị trượt."
+   "text": "Khoảng tám mươi phần trăm nhịp nhanh QRS rộng là nhịp nhanh thất."
+  },
+  {
+   "id": "02-1",
+   "text": "Tỉ lệ này càng cao khi bệnh nhân có bệnh tim cấu trúc, hoặc nhồi máu cơ tim cũ."
+  },
+  {
+   "id": "02-2",
+   "text": "Vì vậy, khi chưa chắc chắn, hãy coi đó là nhịp nhanh thất."
+  },
+  {
+   "id": "02-3",
+   "text": "Không dùng thuốc chẹn kênh canxi khi chưa loại trừ được nhịp nhanh thất."
   },
   {
    "id": "03-0",
-   "text": "Ba, QRS rộng, rất dễ bị đọc nhầm thành nhồi máu, phì đại thất hay block nhánh."
+   "text": "Trạm hai, các dấu hiệu chắc chắn. Đầu tiên là phân ly nhĩ thất."
+  },
+  {
+   "id": "03-1",
+   "text": "Nhĩ và thất đập độc lập với nhau: sóng P đi đường P, QRS đi đường QRS, như đã học ở bài ba."
+  },
+  {
+   "id": "03-2",
+   "text": "Ở đây tần số thất nhanh hơn tần số nhĩ. Đó là nhịp nhanh thất."
+  },
+  {
+   "id": "03-3",
+   "text": "Khi nhịp quá nhanh, sóng P khó thấy. Hãy tìm những cái bướu lạ trên QRS, đoạn ét tê và sóng T."
+  },
+  {
+   "id": "03-4",
+   "text": "Lưu ý, phân ly nhĩ thất chỉ thấy ở khoảng ba phần tư số ca. Không thấy, cũng chưa loại trừ được nhịp nhanh thất."
   },
   {
    "id": "04-0",
-   "text": "Bốn, rung nhĩ kèm tiền kích thích: không đều, QRS rộng thay đổi hình dạng, rất nhanh. Đây là tình trạng nguy hiểm."
+   "text": "Nhát bắt được: một xung xoang lọt xuống thất đúng lúc, tạo ra một nhát QRS hẹp chen vào giữa dải QRS rộng."
+  },
+  {
+   "id": "04-1",
+   "text": "Nhát hỗn hợp: xung xoang và xung thất cùng khử cực thất, tạo ra một QRS lai, có hình dạng trung gian."
+  },
+  {
+   "id": "04-2",
+   "text": "Thấy một trong ba dấu hiệu này, có thể khẳng định là nhịp nhanh thất."
   },
   {
    "id": "05-0",
-   "text": "Nhớ nhé: PR ngắn, sóng delta, QRS rộng."
+   "text": "Trạm ba, đồng hướng ở các chuyển đạo trước tim."
+  },
+  {
+   "id": "05-1",
+   "text": "Từ vê một đến vê sáu, QRS cùng dương, hoặc cùng âm."
+  },
+  {
+   "id": "05-2",
+   "text": "Đồng hướng âm gần như chắc chắn là nhịp nhanh thất."
+  },
+  {
+   "id": "05-3",
+   "text": "Đồng hướng dương gợi ý nhịp nhanh thất, hoặc hiếm hơn là nhịp nhanh qua đường phụ bên trái."
   },
   {
    "id": "06-0",
-   "text": "Lưu lại để ôn, và xem bài đầy đủ trên kênh nhé."
+   "text": "Trạm bốn, hình dạng QRS. Hãy so với block nhánh điển hình đã học ở bài bốn."
+  },
+  {
+   "id": "06-1",
+   "text": "Trong block nhánh điển hình, phần đầu QRS dốc nhanh và gọn, vì xung vẫn đi qua bó His."
+  },
+  {
+   "id": "06-2",
+   "text": "Trong nhịp nhanh thất, phần đầu QRS chậm, QRS rất rộng, trên không phẩy mười bốn đến không phẩy mười sáu giây, và hình dạng lạ."
+  },
+  {
+   "id": "06-3",
+   "text": "Trục nằm ở vùng vô định, từ âm chín mươi đến cộng trừ một trăm tám mươi độ, cũng gợi ý nhịp nhanh thất."
+  },
+  {
+   "id": "07-0",
+   "text": "Trạm năm, tiêu chí Bru-ga-đa gồm bốn bước. Chỉ cần một câu trả lời có, là nhịp nhanh thất."
+  },
+  {
+   "id": "07-1",
+   "text": "Bước một: không có dạng RS ở tất cả các chuyển đạo trước tim?"
+  },
+  {
+   "id": "07-2",
+   "text": "Bước hai: khoảng từ đầu sóng R đến đáy sóng S trên một trăm mi li giây, tức khoảng hai ô rưỡi nhỏ, ở bất kỳ chuyển đạo trước tim nào?"
+  },
+  {
+   "id": "07-3",
+   "text": "Bước ba: có phân ly nhĩ thất, nhát bắt được, hoặc nhát hỗn hợp?"
+  },
+  {
+   "id": "07-4",
+   "text": "Bước bốn: hình dạng ở vê một và vê sáu không giống block nhánh điển hình?"
+  },
+  {
+   "id": "07-5",
+   "text": "Nếu cả bốn câu đều là không, nghĩ đến nhịp nhanh trên thất dẫn truyền lệch hướng. Ngoài ra còn có thuật toán chỉ dùng a-vê-rờ của Ve-rê-kây."
+  },
+  {
+   "id": "08-0",
+   "text": "Trạm sáu, những cái bẫy cần biết."
+  },
+  {
+   "id": "08-1",
+   "text": "Block nhánh sẵn có: hãy so với điện tâm đồ cũ. Nếu cùng hình dạng, nghĩ đến nhịp nhanh trên thất."
+  },
+  {
+   "id": "08-2",
+   "text": "Nhịp nhanh qua đường phụ, dạng ngược chiều, hay rung nhĩ có tiền kích thích, trông rất giống nhịp nhanh thất."
+  },
+  {
+   "id": "08-3",
+   "text": "Tăng kali máu và ngộ độc thuốc chẹn kênh natri, như thuốc chống trầm cảm ba vòng, cũng làm QRS rộng."
+  },
+  {
+   "id": "08-4",
+   "text": "Nhịp máy tạo nhịp cũng có QRS rộng. Hãy tìm gai tạo nhịp ngay trước QRS."
+  },
+  {
+   "id": "09-0",
+   "text": "Trạm bảy, ôn tập bằng sơ đồ tiếp cận."
+  },
+  {
+   "id": "09-1",
+   "text": "QRS rộng và nhanh, mặc định nghĩ nhịp nhanh thất."
+  },
+  {
+   "id": "09-2",
+   "text": "Tìm phân ly nhĩ thất, nhát bắt được, nhát hỗn hợp, đồng hướng, để khẳng định nhịp nhanh thất."
+  },
+  {
+   "id": "09-3",
+   "text": "Nếu không có, dùng bốn bước Bru-ga-đa, và loại trừ các bẫy: block nhánh cũ, đường phụ, kali, thuốc, máy tạo nhịp."
+  },
+  {
+   "id": "10-0",
+   "text": "Thực hành: đọc hai điện tâm đồ."
+  },
+  {
+   "id": "10-1",
+   "text": "Điện tâm đồ một: QRS không phẩy mười tám giây, đều, một trăm bảy mươi lần mỗi phút, có sóng P độc lập, và một nhát QRS hẹp chen vào."
+  },
+  {
+   "id": "10-2",
+   "text": "Kết luận: có phân ly nhĩ thất và nhát bắt được, đây là nhịp nhanh thất."
+  },
+  {
+   "id": "10-3",
+   "text": "Điện tâm đồ hai: QRS không phẩy mười ba giây, đều, một trăm sáu mươi lần mỗi phút, vê một có dạng r s R phẩy điển hình, và điện tâm đồ cũ có block nhánh phải giống hệt."
+  },
+  {
+   "id": "10-4",
+   "text": "Kết luận: nghĩ đến nhịp nhanh trên thất kèm block nhánh phải sẵn có."
+  },
+  {
+   "id": "11-0",
+   "text": "Năm điều cần nhớ."
+  },
+  {
+   "id": "11-1",
+   "text": "Một, QRS rộng và nhanh, nghĩ nhịp nhanh thất trước. Chưa chắc thì coi là nhịp nhanh thất."
+  },
+  {
+   "id": "11-2",
+   "text": "Hai, phân ly nhĩ thất, nhát bắt được, nhát hỗn hợp là các dấu hiệu khẳng định nhịp nhanh thất."
+  },
+  {
+   "id": "11-3",
+   "text": "Ba, đồng hướng từ vê một đến vê sáu, nghĩ nhịp nhanh thất."
+  },
+  {
+   "id": "11-4",
+   "text": "Bốn, theo Bru-ga-đa, chỉ cần một câu có trong bốn bước là nhịp nhanh thất."
+  },
+  {
+   "id": "11-5",
+   "text": "Năm, nhớ các bẫy: block nhánh cũ, đường phụ, tăng kali, thuốc, và máy tạo nhịp."
+  },
+  {
+   "id": "11-6",
+   "text": "Cảm ơn bạn đã theo dõi."
   }
  ]
 }
