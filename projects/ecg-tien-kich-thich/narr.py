@@ -1,0 +1,131 @@
+# BÀI 8 · TIỀN KÍCH THÍCH THẤT (WOLFF-PARKINSON-WHITE) TRÊN ĐIỆN TÂM ĐỒ
+# Thần chú: PR NGẮN – DELTA – QRS RỘNG
+# Khung 7 trạm: ĐƯỜNG PHỤ → DẤU HIỆU → DẠNG HAY HỘI CHỨNG → ĐỊNH VỊ SƠ BỘ → NHỊP NHANH QUA ĐƯỜNG PHỤ → RUNG NHĨ TIỀN KÍCH THÍCH → ÔN TẬP
+# Nguồn: 2019 ESC SVT Guidelines; 2015 ACC/AHA/HRS Adult SVT Guideline; 2012 PACES/HRS Expert Consensus (asymptomatic WPW pattern);
+#        ACC Expert Analysis 2022 (Asymptomatic ventricular preexcitation); AHA/ACCF/HRS ECG Standardization; LITFL; Resus.com.au.
+NARR = [
+  # 0 · Bìa
+  [("Tiền kích thích thất (Wolff-Parkinson-White) trên điện tâm đồ",
+    "Tiền kích thích thất, hay hội chứng Wolff-Parkinson-White, trên điện tâm đồ."),
+   ("Thần chú: PR NGẮN – DELTA – QRS RỘNG",
+    "Thần chú của bài hôm nay: PR ngắn, sóng delta, QRS rộng."),
+   ("Mục tiêu: nhận ra đường phụ khi nhịp xoang, và khi nhịp nhanh.",
+    "Mục tiêu là nhận ra đường phụ, cả khi nhịp xoang và khi nhịp nhanh.")],
+  # 1 · Đường phụ
+  [("Trạm 1 · ĐƯỜNG PHỤ — một bó cơ nối thẳng nhĩ với thất.",
+    "Trạm một, đường phụ. Đó là một bó cơ nối thẳng nhĩ với thất, đi vòng qua nút nhĩ thất."),
+   ("Nút nhĩ thất dẫn CHẬM · đường phụ dẫn NHANH.",
+    "Nút nhĩ thất dẫn truyền chậm, còn đường phụ dẫn truyền nhanh."),
+   ("Xung qua đường phụ đến thất SỚM → một phần thất bị kích thích trước.",
+    "Vì vậy xung đi qua đường phụ đến thất sớm hơn, làm một phần thất bị kích thích trước, gọi là tiền kích thích."),
+   ("Phần còn lại khử cực qua đường bình thường → QRS là hình HỢP NHẤT của hai đường.",
+    "Phần còn lại của thất khử cực qua đường bình thường, nên QRS là hình hợp nhất của cả hai đường.")],
+  # 2 · Dấu hiệu
+  [("Trạm 2 · DẤU HIỆU khi nhịp xoang.",
+    "Trạm hai, các dấu hiệu khi bệnh nhân đang nhịp xoang."),
+   ("① PR NGẮN < 0,12 s — xung không phải chờ ở nút nhĩ thất.",
+    "Một, PR ngắn, dưới không phẩy mười hai giây, vì xung không phải chờ ở nút nhĩ thất."),
+   ("② SÓNG DELTA — phần đầu QRS dốc lên từ từ, như bị “trượt”.",
+    "Hai, sóng delta: phần đầu của QRS dốc lên từ từ, như bị trượt."),
+   ("③ QRS RỘNG (> 0,11 – 0,12 s) · ST–T thường ngược chiều QRS (thứ phát).",
+    "Ba, QRS rộng, trên không phẩy mười một đến không phẩy mười hai giây. Đoạn ét tê và sóng T thường ngược chiều QRS, là biến đổi thứ phát.")],
+  # 3 · Mức độ thay đổi
+  [("Mức tiền kích thích có thể thay đổi.",
+    "Mức độ tiền kích thích có thể thay đổi giữa các lần ghi."),
+   ("Đường phụ ở xa, nút dẫn nhanh → delta nhỏ, dễ bỏ sót.",
+    "Nếu đường phụ ở xa, hoặc nút nhĩ thất dẫn nhanh, sóng delta nhỏ và dễ bị bỏ sót."),
+   ("Tiền kích thích từng lúc (lúc có lúc mất) → gợi ý đường phụ dẫn kém, nguy cơ thấp hơn.",
+    "Tiền kích thích từng lúc, lúc có lúc mất, gợi ý đường phụ dẫn kém, nguy cơ thấp hơn.")],
+  # 4 · Dạng hay hội chứng
+  [("Trạm 3 · DẠNG hay HỘI CHỨNG?",
+    "Trạm ba, phân biệt dạng và hội chứng."),
+   ("Dạng Wolff-Parkinson-White: có dấu hiệu trên ECG, KHÔNG có cơn nhịp nhanh.",
+    "Dạng Wolff-Parkinson-White là khi có dấu hiệu trên điện tâm đồ, nhưng không có cơn nhịp nhanh."),
+   ("Hội chứng Wolff-Parkinson-White: dấu hiệu ECG + cơn nhịp nhanh hoặc triệu chứng.",
+    "Hội chứng Wolff-Parkinson-White là khi có dấu hiệu trên điện tâm đồ, kèm cơn nhịp nhanh hoặc triệu chứng."),
+   ("Gặp khoảng 0,1 – 0,3% dân số.",
+    "Tiền kích thích gặp ở khoảng không phẩy một đến không phẩy ba phần trăm dân số.")],
+  # 5 · Dễ nhầm
+  [("Dễ NHẦM với bệnh khác:",
+    "Tiền kích thích rất dễ bị đọc nhầm thành bệnh khác."),
+   ("Delta âm ở III, aVF → giả sóng Q nhồi máu vùng dưới.",
+    "Sóng delta âm ở chuyển đạo ba và a-vê-ép có thể giả sóng Q của nhồi máu vùng dưới."),
+   ("R cao ở V1 → giả phì đại thất phải · QRS rộng → giả block nhánh.",
+    "Sóng R cao ở vê một có thể giả phì đại thất phải, còn QRS rộng có thể giả block nhánh."),
+   ("Thấy QRS rộng, Q lạ → luôn nhìn PR và tìm delta.",
+    "Vì vậy, khi thấy QRS rộng hoặc sóng Q lạ, hãy luôn nhìn khoảng PR và tìm sóng delta.")],
+  # 6 · Định vị
+  [("Trạm 4 · ĐỊNH VỊ SƠ BỘ — nhìn V1.",
+    "Trạm bốn, định vị sơ bộ đường phụ bằng cách nhìn vê một."),
+   ("V1 DƯƠNG (delta và R dương) → đường phụ bên TRÁI (dạng A).",
+    "Vê một dương, sóng delta và R dương, gợi ý đường phụ bên trái, còn gọi là dạng A."),
+   ("V1 ÂM (S ưu thế) → đường phụ bên PHẢI (dạng B).",
+    "Vê một âm, sóng S ưu thế, gợi ý đường phụ bên phải, còn gọi là dạng B."),
+   ("Định vị chính xác cần thuật toán chuyên sâu và thăm dò điện sinh lý.",
+    "Định vị chính xác cần các thuật toán chuyên sâu và thăm dò điện sinh lý.")],
+  # 7 · Nhịp nhanh xuôi chiều
+  [("Trạm 5 · NHỊP NHANH QUA ĐƯỜNG PHỤ.",
+    "Trạm năm, nhịp nhanh vòng vào lại qua đường phụ."),
+   ("XUÔI CHIỀU (thường gặp nhất): xuống qua nút, ngược lên qua đường phụ.",
+    "Dạng xuôi chiều, thường gặp nhất: xung đi xuống qua nút nhĩ thất, rồi ngược lên nhĩ qua đường phụ."),
+   ("→ QRS HẸP, MẤT delta · P sau QRS, RP ≥ 90 ms (như bài 7).",
+    "Khi đó QRS hẹp, mất sóng delta, và sóng P nằm sau QRS với RP từ chín mươi mi li giây, như đã học ở bài bảy.")],
+  # 8 · Ngược chiều
+  [("NGƯỢC CHIỀU (khoảng 5%): xuống qua đường phụ, ngược lên qua nút.",
+    "Dạng ngược chiều, chỉ khoảng năm phần trăm: xung đi xuống thất qua đường phụ, rồi ngược lên qua nút."),
+   ("→ QRS RỘNG, đều, tiền kích thích tối đa.",
+    "Khi đó QRS rộng, nhịp đều, với mức tiền kích thích tối đa."),
+   ("Rất giống nhịp nhanh thất — xem bài 9.",
+    "Dạng này rất giống nhịp nhanh thất. Chúng ta sẽ học cách phân biệt ở bài chín.")],
+  # 9 · Rung nhĩ tiền kích thích
+  [("Trạm 6 · RUNG NHĨ CÓ TIỀN KÍCH THÍCH — dạng NGUY HIỂM.",
+    "Trạm sáu, rung nhĩ có tiền kích thích. Đây là dạng nguy hiểm nhất."),
+   ("Xung rung nhĩ đi tắt xuống thất qua đường phụ, không bị nút “lọc”.",
+    "Xung rung nhĩ đi tắt xuống thất qua đường phụ, không còn được nút nhĩ thất lọc bớt."),
+   ("ECG: KHÔNG ĐỀU · QRS RỘNG, thay đổi hình dạng từng nhát · RẤT NHANH (có thể gần 300/phút).",
+    "Trên điện tâm đồ: nhịp không đều, QRS rộng và thay đổi hình dạng từng nhát, tần số rất nhanh, có thể gần ba trăm lần mỗi phút."),
+   ("RR ngắn nhất < 250 ms (< 6 ô nhỏ) → nguy cơ rung thất.",
+    "Nếu khoảng RR ngắn nhất dưới hai trăm năm mươi mi li giây, tức dưới khoảng sáu ô nhỏ, nguy cơ chuyển thành rung thất."),
+   ("Tránh thuốc ức chế nút nhĩ thất (adenosine, chẹn kênh canxi, digoxin…) → có thể làm nặng thêm.",
+    "Cần tránh thuốc ức chế nút nhĩ thất như adenosine, thuốc chẹn kênh canxi, digoxin, vì có thể làm nhịp nhanh hơn và nặng thêm.")],
+  # 10 · Ôn tập
+  [("Trạm 7 · ÔN TẬP.",
+    "Trạm bảy, ôn tập."),
+   ("Nhịp xoang: PR ngắn · delta · QRS rộng → tiền kích thích.",
+    "Khi nhịp xoang: PR ngắn, sóng delta, QRS rộng, là tiền kích thích."),
+   ("Nhịp nhanh QRS hẹp, đều, P sau QRS → xuôi chiều · QRS rộng, đều → ngược chiều (giống nhịp nhanh thất).",
+    "Nhịp nhanh QRS hẹp, đều, P sau QRS là dạng xuôi chiều. QRS rộng, đều là dạng ngược chiều, rất giống nhịp nhanh thất."),
+   ("Không đều + QRS rộng thay đổi + rất nhanh → rung nhĩ có tiền kích thích.",
+    "Không đều, QRS rộng thay đổi hình dạng, rất nhanh, là rung nhĩ có tiền kích thích.")],
+  # 11 · Thực hành
+  [("Thực hành: đọc 2 ECG.",
+    "Thực hành: đọc hai điện tâm đồ."),
+   ("ECG 1: nhịp xoang · PR 0,09 s · QRS 0,13 s, đầu QRS dốc từ từ · V1 R dương.",
+    "Điện tâm đồ một: nhịp xoang, PR không phẩy không chín giây, QRS không phẩy mười ba giây, phần đầu QRS dốc từ từ, vê một có R dương."),
+   ("→ Tiền kích thích, gợi ý đường phụ bên trái ✓",
+    "Kết luận: tiền kích thích, gợi ý đường phụ bên trái."),
+   ("ECG 2: không đều · QRS rộng, mỗi nhát mỗi khác · tần số ~ 250/phút.",
+    "Điện tâm đồ hai: nhịp không đều, QRS rộng và mỗi nhát mỗi khác, tần số khoảng hai trăm năm mươi lần mỗi phút."),
+   ("→ Rung nhĩ có tiền kích thích — nguy hiểm ✓",
+    "Kết luận: rung nhĩ có tiền kích thích, một tình trạng nguy hiểm.")],
+  # 12 · 5 điều cần nhớ
+  [("5 điều cần nhớ",
+    "Năm điều cần nhớ."),
+   ("① PR NGẮN – DELTA – QRS RỘNG",
+    "Một, thần chú: PR ngắn, sóng delta, QRS rộng."),
+   ("② Dạng = chỉ có ECG · Hội chứng = ECG + cơn nhịp nhanh",
+    "Hai, dạng là chỉ có dấu hiệu trên điện tâm đồ. Hội chứng là có thêm cơn nhịp nhanh."),
+   ("③ Delta âm giả Q · R cao V1 giả phì đại thất phải → nhìn PR",
+    "Ba, delta âm có thể giả sóng Q, R cao ở vê một có thể giả phì đại thất phải. Hãy nhìn khoảng PR."),
+   ("④ V1 dương → bên trái · V1 âm → bên phải",
+    "Bốn, vê một dương nghĩ đường phụ bên trái, vê một âm nghĩ bên phải."),
+   ("⑤ Không đều + QRS rộng thay đổi + rất nhanh → rung nhĩ có tiền kích thích: NGUY HIỂM",
+    "Năm, không đều, QRS rộng thay đổi, rất nhanh là rung nhĩ có tiền kích thích. Đây là tình trạng nguy hiểm."),
+   ("Bài 9: Nhịp nhanh QRS rộng — nhịp nhanh thất hay trên thất?",
+    "Bài sau, chúng ta sẽ học nhịp nhanh QRS rộng: nhịp nhanh thất hay nhịp nhanh trên thất. Cảm ơn bạn đã theo dõi.")],
+]
+STATION = [0, 1, 2, 2, 3, 3, 4, 5, 5, 6, 7, 7, 7]
+assert len(STATION) == len(NARR)
+KEYS = [[2 * j for j in range(len(sc))] for sc in NARR]
+STEP = 3.0
+SCENE_DUR = [STEP * len(sc) + 3 for sc in NARR]
