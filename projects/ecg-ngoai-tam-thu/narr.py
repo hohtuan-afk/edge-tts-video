@@ -65,6 +65,8 @@ NARR = [
     "Nghỉ bù đủ, hay hoàn toàn, khi khoảng này bằng đúng hai lần R R. Nút xoang không bị chạm tới, nên vẫn phát nhịp đúng hẹn. Hay gặp ở ngoại tâm thu thất."),
    ("THIẾU (không hoàn toàn): < 2 × RR → nút xoang bị “cài lại” → hay gặp ở ngoại tâm thu NHĨ.",
     "Nghỉ bù thiếu, hay không hoàn toàn, khi khoảng này ngắn hơn hai lần R R. Nút xoang bị xung chen ngang cài lại. Hay gặp ở ngoại tâm thu nhĩ."),
+   ("Ngoại tâm thu thất XEN KẼ: chen giữa 2 nhát thường, KHÔNG có nghỉ bù.",
+    "Riêng ngoại tâm thu thất xen kẽ thì chen vào giữa hai nhát thường, và không có nghỉ bù nào."),
    ("Đây là gợi ý, không tuyệt đối — hình dạng QRS và P′ vẫn quyết định.",
     "Đây chỉ là gợi ý, không tuyệt đối. Hình dạng QRS và sóng P phẩy vẫn là chính.")],
   # 7 · Kiểu ghép
@@ -83,12 +85,10 @@ NARR = [
   # 8 · Nhịp thoát
   [("Trạm 6 · NHỊP THOÁT — ổ dưới ra cứu khi ổ trên im lặng.",
     "Trạm sáu, nhịp thoát. Khi ổ phía trên im lặng, ổ phía dưới sẽ ra cứu."),
-   ("Thoát BỘ NỐI: QRS HẸP, 40 – 60/phút.",
+   ("Thoát BỘ NỐI: QRS HẸP, 40 – 60/phút (người lớn).",
     "Nhịp thoát bộ nối: QRS hẹp, tần số khoảng bốn mươi đến sáu mươi lần mỗi phút."),
-   ("Thoát THẤT: QRS RỘNG, 20 – 40/phút.",
+   ("Thoát THẤT: QRS RỘNG, 20 – 40/phút (người lớn).",
     "Nhịp thoát thất: QRS rộng, tần số khoảng hai mươi đến bốn mươi lần mỗi phút."),
-   ("Số liệu người lớn — trẻ nhỏ có ngưỡng cao hơn.",
-    "Đây là số liệu ở người lớn. Ở trẻ nhỏ, các ngưỡng này cao hơn."),
    ("Nhịp thoát là CỨU — ĐỪNG XOÁ bằng thuốc chống loạn nhịp → xử trí NHỊP CHẬM bên dưới.",
     "Nhịp thoát là nhịp cứu. Đừng xoá nó bằng thuốc chống loạn nhịp. Hãy xử trí nhịp chậm và nguyên nhân bên dưới.")],
   # 9 · Nút xoang nghỉ & nhịp tự thất gia tốc
