@@ -378,7 +378,7 @@ const Patterns: React.FC = () => {
     ['NHỊP ĐÔI · 1 thường – 1 sớm', rhythm([[0.2, 's'], [0.68, 'v'], [1.8, 's'], [2.28, 'v'], [3.4, 's'], [3.88, 'v']]), 2, AM, null],
     ['NHỊP BA · 2 thường – 1 sớm', rhythm([[0.2, 's'], [1.0, 's'], [1.48, 'v'], [2.6, 's'], [3.4, 's'], [3.88, 'v']]), 2.4, AM, null],
     ['CẶP ĐÔI · 2 nhát liền', rhythm([[0.2, 's'], [1.0, 's'], [1.45, 'v'], [1.85, 'v'], [3.05, 's'], [3.85, 's']]), 4, OR, null],
-    ['≥ 3 nhát · > 100/phút · < 30 s', rhythm([[0.2, 's'], [1.0, 's'], [1.45, 'v'], [1.85, 'v'], [2.25, 'v'], [2.65, 'v'], [3.05, 'v'], [4.05, 's']]), 4.4, RD, (X) => <text x={X(2.25)} y={36} textAnchor="middle" fontFamily={FONT} fontSize={24} fontWeight={900} fill={RD}>nhịp nhanh thất KHÔNG BỀN BỈ</text>],
+    ['≥ 3 nhát thất liền · > 100/phút · < 30 s → nhịp nhanh thất KHÔNG BỀN BỈ', rhythm([[0.2, 's'], [1.0, 's'], [1.45, 'v'], [1.85, 'v'], [2.25, 'v'], [2.65, 'v'], [3.05, 'v'], [4.05, 's']]), 4.4, RD, null],
     ['ĐA DẠNG · nhiều hình', rhythm([[0.2, 's'], [0.68, 'v'], [1.8, 's'], [2.25, 'v2'], [3.4, 's'], [3.88, 'v']]), 6, PU, (X, Y) => <g><circle cx={X(0.75)} cy={Y(0.6)} r={30} fill="none" stroke={PU} strokeWidth={4} /><circle cx={X(2.3)} cy={Y(-0.5)} r={30} fill="none" stroke={PU} strokeWidth={4} /></g>],
     ['R TRÊN T → đa hình / rung thất', (T) => rhythm([[0.2, 's'], [1.0, 's'], [1.25, 'v']])(T) * (T < 1.55 ? 1 : 0) + tdp(T), 8, RD, (X, Y) => <circle cx={X(1.28)} cy={Y(0.4)} r={34} fill="none" stroke={RD} strokeWidth={5} />],
   ];
@@ -386,11 +386,11 @@ const Patterns: React.FC = () => {
     <DeskBg>
       <Head t={t}>Kiểu ghép: đếm nhát sớm</Head>
       {cells.map(([lab, f, st, c, ov], i) => (
-        <div key={i} style={{position: 'absolute', left: 60 + (i % 2) * 910, top: 120 + Math.floor(i / 2) * 225, opacity: ap(t, st), transform: `translateY(${(1 - ap(t, st)) * 20}px)`}}>
+        <div key={i} style={{position: 'absolute', width: 880, left: 60 + (i % 2) * 910, top: 118 + Math.floor(i / 2) * 225, opacity: ap(t, st), transform: `translateY(${(1 - ap(t, st)) * 20}px)`}}>
           <Frame x={0} y={0} a={1} c={c}>
             <Strip L={f} w={880} h={170} q={8} base={0.6} t0={0} stroke={3}>{ov ? (X, Y) => ov(X, Y) : undefined}</Strip>
           </Frame>
-          <div style={{position: 'absolute', right: 10, top: 136, padding: '3px 14px', borderRadius: 10, background: c, color: '#fff', fontFamily: FONT, fontSize: 22, fontWeight: 900}}>{lab}</div>
+          <div style={{position: 'absolute', left: 6, top: 180, padding: '3px 14px', whiteSpace: 'nowrap', borderRadius: 10, background: c, color: '#fff', fontFamily: FONT, fontSize: 22, fontWeight: 900}}>{lab}</div>
         </div>
       ))}
       <Memo x={60} y={800} w={1800} a={ap(t, 10)}>Ngoại tâm thu thất NHIỀU (&gt; ~10% số nhát / 24 giờ) → có thể gây BỆNH CƠ TIM → làm Holter</Memo>
@@ -450,9 +450,9 @@ const SinusRest: React.FC = () => {
     <DeskBg>
       <Head t={t}>Khi nút xoang nghỉ</Head>
       <Frame x={60} y={130} a={ap(t, -1)} c="#CA8A04">
-        <Strip L={rhythm([[0.25, 's'], [1.05, 's'], [1.85, 's'], [4.05, 's'], [4.85, 's']])} w={1180} h={230} q={9} base={0.66} t0={0} label="II" stroke={3.5}>
+        <Strip L={rhythm([[0.25, 's'], [1.05, 's'], [1.85, 's'], [3.75, 's'], [4.55, 's']])} w={1180} h={230} q={9} base={0.66} t0={0} label="II" stroke={3.5}>
           {(X) => <g opacity={ap(t, 0.5)}>{[2.65, 3.45, 4.25].map((e) => <line key={e} x1={X(e - 0.16)} x2={X(e - 0.16)} y1={40} y2={220} stroke="#64748B" strokeWidth={2.5} strokeDasharray="8 8" />)}
-            <rect x={X(2.2)} y={180} width={X(3.85) - X(2.2)} height={40} rx={8} fill="rgba(202,138,4,0.15)" /><text x={(X(2.2) + X(3.85)) / 2} y={208} textAnchor="middle" fontFamily={HAND} fontSize={28} fill="#A16207">không P, không QRS</text></g>}
+            <rect x={X(2.15)} y={180} width={X(3.45) - X(2.15)} height={40} rx={8} fill="rgba(202,138,4,0.15)" /><text x={(X(2.15) + X(3.45)) / 2} y={208} textAnchor="middle" fontFamily={HAND} fontSize={28} fill="#A16207">không P, không QRS</text></g>}
         </Strip>
       </Frame>
       <Card x={1280} y={130} w={580} a={ap(t, 0)} c="#CA8A04" title="NGƯNG XOANG">khoảng nghỉ KHÔNG là bội số PP (vạch đứt)</Card>
