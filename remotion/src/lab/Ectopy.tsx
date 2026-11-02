@@ -279,8 +279,8 @@ const Traps: React.FC = () => {
           {(X, Y) => <g opacity={ap(t, 8)}><circle cx={X(2.22)} cy={Y(0.1)} r={26} fill="none" stroke={PU} strokeWidth={5} /><text x={X(2.22) - 20} y={Y(0.1) - 36} textAnchor="end" fontFamily={HAND} fontSize={30} fill={PU}>P′ sớm</text><rect x={X(2.33)} y={Y(1.0)} width={X(2.47) - X(2.33)} height={Y(-0.5) - Y(1.0)} rx={6} fill="none" stroke={OR} strokeWidth={4} /><text x={X(2.5)} y={Y(1.0) + 10} fontFamily={HAND} fontSize={30} fill={OR}>QRS rộng</text></g>}
         </Strip>
       </Frame>
-      <Card x={1250} y={612} w={610} a={ap(t, 6)} c={OR} title="QRS RỘNG">hay dạng block nhánh phải · một nhánh còn trơ</Card>
-      <Card x={1250} y={768} w={610} a={ap(t, 8)} c={PU} title="Có P′ sớm đi trước → vẫn là NHĨ" />
+      <Card x={1250} y={630} w={610} a={ap(t, 6)} c={OR} title="QRS RỘNG">hay dạng block nhánh phải · một nhánh còn trơ</Card>
+      <Card x={1250} y={790} w={610} a={ap(t, 8)} c={PU} title="Có P′ sớm đi trước → vẫn là NHĨ" />
     </DeskBg>
   );
 };
