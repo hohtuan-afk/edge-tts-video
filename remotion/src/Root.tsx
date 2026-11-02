@@ -26,6 +26,7 @@ import {Occlusion, OCCL_N} from './lab/Occlusion';
 import {Tachy, TACHY_N} from './lab/Tachy';
 import {Wpw, WPW_N} from './lab/Wpw';
 import {Wide, WIDE_N} from './lab/Wide';
+import {Ectopy, ECTO_N} from './lab/Ectopy';
 import {Hyper, HYPER_DEMO_N} from './lab/Hyper';
 import {TableScene, TABLE_DUR} from './lab/Table';
 import {TableHand, TABLEHAND_DUR} from './lab/TableHand';
@@ -42,6 +43,8 @@ export const Root: React.FC = () => (
     <Composition id="Hyper" component={Hyper} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />
     <Composition id="HyperDemo" component={Hyper} durationInFrames={Math.max(30, data.scenes[Math.min(HYPER_DEMO_N, data.scenes.length) - 1].from + data.scenes[Math.min(HYPER_DEMO_N, data.scenes.length) - 1].dur)} fps={data.fps} width={1920} height={1080} />
     <Composition id="BlockDemo" component={Block} durationInFrames={Math.max(30, data.scenes[Math.min(BLOCK_N, data.scenes.length) - 1].from + data.scenes[Math.min(BLOCK_N, data.scenes.length) - 1].dur)} fps={data.fps} width={1920} height={1080} />
+    <Composition id="EctoDemo" component={Ectopy} durationInFrames={Math.max(30, data.scenes[Math.min(ECTO_N, data.scenes.length) - 1].from + data.scenes[Math.min(ECTO_N, data.scenes.length) - 1].dur)} fps={data.fps} width={1920} height={1080} />
+    <Composition id="EctoFull" component={Ectopy} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />
     <Composition id="WideDemo" component={Wide} durationInFrames={Math.max(30, data.scenes[Math.min(WIDE_N, data.scenes.length) - 1].from + data.scenes[Math.min(WIDE_N, data.scenes.length) - 1].dur)} fps={data.fps} width={1920} height={1080} />
     <Composition id="WideFull" component={Wide} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />
     <Composition id="WpwDemo" component={Wpw} durationInFrames={Math.max(30, data.scenes[Math.min(WPW_N, data.scenes.length) - 1].from + data.scenes[Math.min(WPW_N, data.scenes.length) - 1].dur)} fps={data.fps} width={1920} height={1080} />
