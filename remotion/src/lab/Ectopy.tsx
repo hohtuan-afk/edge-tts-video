@@ -26,7 +26,8 @@ const pJ = (x: number, d: number) => gs(x, d, 0.018, -0.12);                // P
 const pvc = (x: number) => gs(x, 0.05, 0.035, 1.35) + gs(x, 0.13, 0.035, -0.45) + gs(x, 0.34, 0.065, -0.5);
 const abr = (x: number) => gs(x, 0.0, 0.012, 0.9) + gs(x, 0.06, 0.03, -0.38) + gs(x, 0.27, 0.05, -0.12); // lệch hướng (dạng block nhánh phải ở II)
 const escV = (x: number) => gs(x, 0.06, 0.045, 1.0) + gs(x, 0.16, 0.04, -0.3) + gs(x, 0.38, 0.07, -0.4);
-type BT = 's' | 'a' | 'ab' | 'bl' | 'jb' | 'jh' | 'ja' | 'v' | 'ej' | 'ev';
+type BT = 's' | 'a' | 'ab' | 'bl' | 'jb' | 'jh' | 'ja' | 'v' | 'v2' | 'ej' | 'ev';
+const pvc2 = (x: number) => gs(x, 0.05, 0.04, -1.1) + gs(x, 0.14, 0.04, 0.35) + gs(x, 0.34, 0.065, 0.45);
 const one = (k: BT, x: number) => {
   switch (k) {
     case 's': return pS(x) + qrsN(x) + tN(x);
@@ -37,6 +38,7 @@ const one = (k: BT, x: number) => {
     case 'jh': return qrsN(x) + tN(x);
     case 'ja': return qrsN(x) + pJ(x, 0.12) + tN(x);
     case 'v': return pvc(x);
+    case 'v2': return pvc2(x);
     case 'ej': return qrsN(x) + tN(x);
     case 'ev': return escV(x);
   }
@@ -364,7 +366,189 @@ const Pause: React.FC = () => {
   );
 };
 
-const SCN: React.FC[] = [Cover, EarlyLate, PAC, PJC, Traps, PVC, Pause];
+// ================= 7 · KIỂU GHÉP =================
+const tdp = (T: number) => {
+  if (T < 1.55) return 0;
+  const amp = 0.35 + 0.65 * Math.abs(Math.sin((Math.PI * (T - 1.55)) / 1.5));
+  return amp * Math.sin(2 * Math.PI * 4.2 * (T - 1.55)) * Math.min(1, (T - 1.55) / 0.1);
+};
+const Patterns: React.FC = () => {
+  const t = useT();
+  const cells: [string, (T: number) => number, number, string, ((X: (T: number) => number, Y: (v: number) => number) => React.ReactNode) | null][] = [
+    ['NHỊP ĐÔI · 1 thường – 1 sớm', rhythm([[0.2, 's'], [0.68, 'v'], [1.8, 's'], [2.28, 'v'], [3.4, 's'], [3.88, 'v']]), 2, AM, null],
+    ['NHỊP BA · 2 thường – 1 sớm', rhythm([[0.2, 's'], [1.0, 's'], [1.48, 'v'], [2.6, 's'], [3.4, 's'], [3.88, 'v']]), 2.4, AM, null],
+    ['CẶP ĐÔI · 2 nhát liền', rhythm([[0.2, 's'], [1.0, 's'], [1.45, 'v'], [1.85, 'v'], [3.05, 's'], [3.85, 's']]), 4, OR, null],
+    ['≥ 3 nhát · > 100/phút · < 30 s', rhythm([[0.2, 's'], [1.0, 's'], [1.45, 'v'], [1.85, 'v'], [2.25, 'v'], [2.65, 'v'], [3.05, 'v'], [4.05, 's']]), 4.4, RD, (X) => <text x={X(2.25)} y={36} textAnchor="middle" fontFamily={FONT} fontSize={24} fontWeight={900} fill={RD}>nhịp nhanh thất KHÔNG BỀN BỈ</text>],
+    ['ĐA DẠNG · nhiều hình', rhythm([[0.2, 's'], [0.68, 'v'], [1.8, 's'], [2.25, 'v2'], [3.4, 's'], [3.88, 'v']]), 6, PU, (X, Y) => <g><circle cx={X(0.75)} cy={Y(0.6)} r={30} fill="none" stroke={PU} strokeWidth={4} /><circle cx={X(2.3)} cy={Y(-0.5)} r={30} fill="none" stroke={PU} strokeWidth={4} /></g>],
+    ['R TRÊN T → đa hình / rung thất', (T) => rhythm([[0.2, 's'], [1.0, 's'], [1.25, 'v']])(T) * (T < 1.55 ? 1 : 0) + tdp(T), 8, RD, (X, Y) => <circle cx={X(1.28)} cy={Y(0.4)} r={34} fill="none" stroke={RD} strokeWidth={5} />],
+  ];
+  return (
+    <DeskBg>
+      <Head t={t}>Kiểu ghép: đếm nhát sớm</Head>
+      {cells.map(([lab, f, st, c, ov], i) => (
+        <div key={i} style={{position: 'absolute', left: 60 + (i % 2) * 910, top: 120 + Math.floor(i / 2) * 225, opacity: ap(t, st), transform: `translateY(${(1 - ap(t, st)) * 20}px)`}}>
+          <Frame x={0} y={0} a={1} c={c}>
+            <Strip L={f} w={880} h={170} q={8} base={0.6} t0={0} stroke={3}>{ov ? (X, Y) => ov(X, Y) : undefined}</Strip>
+          </Frame>
+          <div style={{position: 'absolute', right: 10, top: 136, padding: '3px 14px', borderRadius: 10, background: c, color: '#fff', fontFamily: FONT, fontSize: 22, fontWeight: 900}}>{lab}</div>
+        </div>
+      ))}
+      <Memo x={60} y={800} w={1800} a={ap(t, 10)}>Ngoại tâm thu thất NHIỀU (&gt; ~10% số nhát / 24 giờ) → có thể gây BỆNH CƠ TIM → làm Holter</Memo>
+    </DeskBg>
+  );
+};
+
+// ================= 8 · NHỊP THOÁT =================
+const Escape: React.FC = () => {
+  const t = useT();
+  const rt = useCurrentFrame() / 30;
+  const pl = (rt % 1.2) / 1.2;
+  const off = ap(t, 0.5), jOn = ap(t, 2), vOn = ap(t, 4);
+  const FVL = [700, 1010];
+  const tier = (y: number, c: string, a: number, dim: boolean, name: string, rate: string, qrs: string) => (
+    <div style={{position: 'absolute', left: 560, top: y, width: 420, padding: '10px 18px', borderRadius: 14, background: dim ? 'rgba(51,65,85,0.75)' : c, color: '#fff', fontFamily: FONT, opacity: 0.35 + 0.65 * a, boxShadow: dim ? 'none' : '0 10px 22px rgba(0,0,0,0.35)'}}>
+      <div style={{fontSize: 30, fontWeight: 900}}>{name} <span style={{fontWeight: 800, opacity: 0.9}}>{rate}</span></div>
+      <div style={{fontSize: 22, fontWeight: 700, opacity: 0.9}}>{qrs}</div>
+    </div>
+  );
+  return (
+    <DeskBg>
+      <Head t={t}>Nhịp thoát: ổ dưới ra cứu</Head>
+      <svg viewBox="0 0 1920 1080" width={1920} height={1080} style={{position: 'absolute', inset: 0}}>
+        <Heart4C id="esc10" x={20} y={120} s={0.5} a={ap(t, -1)} ring={0.4} cond={0.8} dots={vOn > 0.5 ? spread(pl).map((d) => ({...d, pts: [FVL, d.pts[1]]})) : jOn > 0.5 ? [{pts: [H4.AV, ...H4.RB], k: pl * 0.999, c: TE}, {pts: [H4.AV, ...H4.LB], k: pl * 0.999, c: TE}] : []} />
+        <g transform="translate(20,120) scale(0.5)">
+          <g opacity={1 - 0.7 * off}><circle cx={H4.SA[0]} cy={H4.SA[1]} r={30} fill="#FDE047" stroke="#fff" strokeWidth={6} /></g>
+          <g opacity={off}><path d={`M${H4.SA[0] - 30},${H4.SA[1] - 30} L${H4.SA[0] + 30},${H4.SA[1] + 30} M${H4.SA[0] + 30},${H4.SA[1] - 30} L${H4.SA[0] - 30},${H4.SA[1] + 30}`} stroke={RD} strokeWidth={14} strokeLinecap="round" /></g>
+          {jOn > 0 && <g opacity={jOn}><Focus p={H4.AV} c={TE} pulse={pl} /></g>}
+          {vOn > 0 && <g opacity={vOn}><Focus p={FVL} c={BL} pulse={pl} /></g>}
+        </g>
+      </svg>
+      {tier(150, '#CA8A04', 1, off > 0.5, 'Nút xoang', '60 – 100', 'nhịp chủ')}
+      {tier(290, TE, jOn, jOn < 0.5, 'Bộ nối', '40 – 60', 'QRS HẸP')}
+      {tier(430, BL, vOn, vOn < 0.5, 'Thất', '20 – 40', 'QRS RỘNG')}
+      <Frame x={1010} y={150} a={ap(t, 2)} c={TE}>
+        <Strip L={rhythm([[0.3, 'ej'], [1.63, 'ej'], [2.96, 'ej']])} w={850} h={250} q={10} base={0.62} t0={0} label="II · thoát bộ nối ~45" stroke={3.5} />
+      </Frame>
+      <Frame x={1010} y={440} a={ap(t, 4)} c={BL}>
+        <Strip L={rhythm([[0.4, 'ev'], [2.4, 'ev']])} w={850} h={250} q={10} base={0.55} t0={0} label="II · thoát thất ~30" stroke={3.5} />
+      </Frame>
+      <div style={{position: 'absolute', left: 560, top: 600, width: 420, fontFamily: FONT, fontSize: 22, fontWeight: 700, color: '#94A3B8', opacity: ap(t, 4)}}>tần số ở người lớn</div>
+      <div style={{position: 'absolute', left: 60, top: 760, width: 1800, padding: '20px 30px', borderRadius: 18, background: RD, color: '#fff', fontFamily: FONT, fontSize: 40, fontWeight: 900, boxSizing: 'border-box', display: 'flex', alignItems: 'center', gap: 24, opacity: ap(t, 6), transform: `scale(${0.94 + 0.06 * ap(t, 6)})`}}>
+        <svg width={70} height={70} viewBox="0 0 70 70"><rect x={20} y={8} width={30} height={46} rx={6} fill="none" stroke="#fff" strokeWidth={5} /><line x1={35} y1={54} x2={35} y2={66} stroke="#fff" strokeWidth={5} /><line x1={6} y1={64} x2={64} y2={6} stroke="#FDE047" strokeWidth={7} strokeLinecap="round" /></svg>
+        Nhịp thoát là CỨU — ĐỪNG XOÁ bằng thuốc chống loạn nhịp → xử trí NHỊP CHẬM bên dưới
+      </div>
+    </DeskBg>
+  );
+};
+
+// ================= 9 · NÚT XOANG NGHỈ · NHỊP TỰ THẤT GIA TỐC =================
+const SinusRest: React.FC = () => {
+  const t = useT();
+  const af = (T: number) => (T < 2.2 ? 0.05 * Math.sin(2 * Math.PI * 6.3 * T) + 0.03 * Math.sin(2 * Math.PI * 9.1 * T + 1) : 0)
+    + rhythm([[0.2, 'jh'], [0.55, 'jh'], [0.83, 'jh'], [1.25, 'jh'], [1.5, 'jh'], [1.92, 'jh'], [4.3, 's']])(T);
+  return (
+    <DeskBg>
+      <Head t={t}>Khi nút xoang nghỉ</Head>
+      <Frame x={60} y={130} a={ap(t, -1)} c="#CA8A04">
+        <Strip L={rhythm([[0.25, 's'], [1.05, 's'], [1.85, 's'], [4.05, 's'], [4.85, 's']])} w={1180} h={230} q={9} base={0.66} t0={0} label="II" stroke={3.5}>
+          {(X) => <g opacity={ap(t, 0.5)}>{[2.65, 3.45, 4.25].map((e) => <line key={e} x1={X(e - 0.16)} x2={X(e - 0.16)} y1={40} y2={220} stroke="#64748B" strokeWidth={2.5} strokeDasharray="8 8" />)}
+            <rect x={X(2.2)} y={180} width={X(3.85) - X(2.2)} height={40} rx={8} fill="rgba(202,138,4,0.15)" /><text x={(X(2.2) + X(3.85)) / 2} y={208} textAnchor="middle" fontFamily={HAND} fontSize={28} fill="#A16207">không P, không QRS</text></g>}
+        </Strip>
+      </Frame>
+      <Card x={1280} y={130} w={580} a={ap(t, 0)} c="#CA8A04" title="NGƯNG XOANG">khoảng nghỉ KHÔNG là bội số PP (vạch đứt)</Card>
+      <Pill x={1280} y={290} a={ap(t, 2)} c="#B45309" size={28}>⏱ &gt; 3 giây khi thức → đáng chú ý</Pill>
+      <Frame x={60} y={390} a={ap(t, 4)} c={AM}>
+        <Strip L={af} w={1180} h={230} q={9} base={0.66} t0={0} label="II" stroke={3.5}>
+          {(X) => <g opacity={ap(t, 4.4)}><text x={X(1.0)} y={60} textAnchor="middle" fontFamily={HAND} fontSize={28} fill="#B45309">cơn rung nhĩ</text><text x={X(3.1)} y={60} textAnchor="middle" fontFamily={HAND} fontSize={28} fill={RD}>dứt → ngưng lâu</text></g>}
+        </Strip>
+      </Frame>
+      <Card x={1280} y={390} w={580} a={ap(t, 4)} c={AM} title="SUY NÚT XOANG">chậm xoang · ngưng xoang · hội chứng nhịp nhanh – nhịp chậm</Card>
+      <Frame x={60} y={650} a={ap(t, 6)} c={BL}>
+        <Strip L={rhythm([[0.3, 'ev'], [1.05, 'ev'], [1.8, 'ev'], [2.55, 'ev'], [3.3, 'ev'], [4.05, 'ev'], [4.8, 'ev']])} w={1180} h={230} q={9} base={0.58} t0={0} label="II · ~80/phút" stroke={3.5} />
+      </Frame>
+      <Card x={1280} y={650} w={580} a={ap(t, 6)} c={BL} title="NHỊP TỰ THẤT GIA TỐC">QRS rộng, đều, ~50 – 110/phút</Card>
+      <Memo x={1280} y={790} w={580} a={ap(t, 8)}>Sau tái tưới máu · ngộ độc digoxin → thường LÀNH, tự hết</Memo>
+    </DeskBg>
+  );
+};
+
+// ================= 10 · ÔN TẬP =================
+const Review10: React.FC = () => {
+  const t = useT();
+  const rows: [string, string, string, (T: number) => number, number][] = [
+    ['SỚM · P′ khác · QRS hẹp · nghỉ bù THIẾU', 'NGOẠI TÂM THU NHĨ', PU, rhythm([[0.25, 's'], [1.05, 's'], [1.57, 'a'], [2.37, 's']]), 2],
+    ['SỚM · không P · QRS rộng kỳ dị · nghỉ bù ĐỦ', 'NGOẠI TÂM THU THẤT', RD, rhythm([[0.25, 's'], [1.05, 's'], [1.53, 'v'], [2.65, 's']]), 4],
+    ['MUỘN sau khoảng nghỉ: hẹp → BỘ NỐI · rộng → THẤT', 'NHỊP THOÁT', BL, rhythm([[0.25, 's'], [1.05, 's'], [2.5, 'ej']]), 6],
+  ];
+  return (
+    <DeskBg>
+      <Head t={t}>Ôn tập · 3 câu hỏi</Head>
+      <div style={{position: 'absolute', left: 60, top: 120, fontFamily: FONT, fontSize: 32, fontWeight: 900, color: '#FDBA74', opacity: ap(t, 0)}}>SỚM hay MUỘN – HẸP hay RỘNG – NGHỈ BÙ ĐỦ hay THIẾU</div>
+      {rows.map(([q, a, c, f, st], i) => (
+        <div key={i} style={{position: 'absolute', left: 60, top: 190 + i * 230, width: 1800, height: 205, borderRadius: 18, background: '#FCFAF4', borderLeft: `14px solid ${c}`, boxSizing: 'border-box', display: 'flex', alignItems: 'center', gap: 26, padding: '0 22px', opacity: ap(t, st), transform: `translateX(${(1 - ap(t, st)) * 50}px)`, boxShadow: '0 12px 26px rgba(0,0,0,0.35)', fontFamily: FONT}}>
+          <div style={{flex: 'none', borderRadius: 10, overflow: 'hidden'}}><Strip L={f} w={640} h={170} q={9} base={0.62} t0={0} stroke={3} /></div>
+          <div><div style={{fontSize: 30, fontWeight: 700, color: '#334155'}}>{q}</div><div style={{fontSize: 44, fontWeight: 900, color: c, marginTop: 6}}>→ {a}</div></div>
+        </div>
+      ))}
+    </DeskBg>
+  );
+};
+
+// ================= 11 · LUYỆN ĐỌC =================
+const Practice10: React.FC = () => {
+  const t = useT();
+  const chb = (T: number) => rhythm([[0.3, 'jh'], [1.63, 'jh'], [2.96, 'jh'], [4.29, 'jh']])(T) + Array.from({length: 9}, (_, i) => gs(T, 0.12 + i * 0.6, 0.024, 0.13)).reduce((a, b) => a + b, 0);
+  const items: [string, (T: number) => number, number, string, string, string, React.ReactNode][] = [
+    ['Dải 1', rhythm([[0.2, 's'], [0.68, 'v'], [1.8, 's'], [2.28, 'v'], [3.4, 's'], [3.88, 'v']]), 2, '1 thường – 1 rộng, sớm, không P, T ngược', 'Ngoại tâm thu thất nhịp ĐÔI ✓', RD, null],
+    ['Dải 2', rhythm([[0.25, 's'], [1.05, 's'], [1.85, 's'], [2.25, 'bl'], [3.45, 's'], [4.25, 's']]), 6, 'nhịp đều, bỗng nghỉ · T trước nghỉ nhọn hơn', 'Ngoại tâm thu nhĩ BỊ BLOCK ✓', PU, null],
+    ['Dải 3', chb, 10, 'block hoàn toàn · QRS hẹp, đều, 45/phút', 'Thoát BỘ NỐI — đừng xoá ✓', TE, null],
+  ];
+  return (
+    <DeskBg>
+      <Head t={t}>Luyện đọc · 3 dải nhịp DII</Head>
+      {items.map(([tag, f, st, q, ans, c], i) => (
+        <div key={i} style={{opacity: ap(t, st)}}>
+          <Frame x={60} y={130 + i * 260} a={1} c={c}>
+            <Strip L={f} w={1100} h={230} q={9} base={0.62} t0={0} label={tag} stroke={3.5}>
+              {i === 1 ? (X, Y) => <circle cx={X(2.12)} cy={Y(0.3)} r={34} fill="none" stroke={PU} strokeWidth={4} opacity={ap(t, 8)} /> : undefined}
+            </Strip>
+          </Frame>
+          <div style={{position: 'absolute', left: 1200, top: 140 + i * 260, width: 660, fontFamily: FONT, fontSize: 28, fontWeight: 700, color: '#E2E8F0', lineHeight: 1.3}}>{q}</div>
+          <div style={{position: 'absolute', left: 1200, top: 240 + i * 260, padding: '10px 20px', borderRadius: 14, background: c, color: '#fff', fontFamily: FONT, fontSize: 32, fontWeight: 900, opacity: ap(t, st + 2), transform: `scale(${0.9 + 0.1 * ap(t, st + 2)})`, transformOrigin: 'left center'}}>{ans}</div>
+        </div>
+      ))}
+    </DeskBg>
+  );
+};
+
+// ================= 12 · 5 ĐIỀU CẦN NHỚ =================
+const Takeaways10: React.FC = () => {
+  const t = useT();
+  const items: [React.ReactNode, string][] = [
+    [<><b>SỚM</b> → ngoại tâm thu · <b>MUỘN</b> → nhịp thoát</>, OR],
+    [<>P′ sớm + QRS hẹp → <b>NHĨ</b> · không P + QRS rộng kỳ dị → <b>THẤT</b></>, PU],
+    [<>Khoảng nghỉ bất ngờ → <b>soi sóng T</b> tìm P′ bị block</>, TE],
+    [<><b>Cặp đôi · đa dạng · R trên T · ≥ 3 nhát liền</b> → báo động</>, RD],
+    [<>Nhịp thoát là <b>CỨU</b> — đừng xoá</>, BL],
+  ];
+  return (
+    <DeskBg>
+      <Head t={t}>5 điều cần nhớ</Head>
+      {items.map(([s2, c], i) => {
+        const a = ap(t, 2 + i * 2);
+        return (
+          <div key={i} style={{position: 'absolute', left: 100, top: 140 + i * 128, width: 1720, height: 108, display: 'flex', alignItems: 'center', gap: 24, padding: '0 26px', borderRadius: 18, background: '#FCFAF4', borderLeft: `14px solid ${c}`, boxSizing: 'border-box', opacity: a, transform: `translateX(${(1 - a) * 50}px)`, boxShadow: '0 12px 26px rgba(0,0,0,0.35)', fontFamily: FONT}}>
+            <span style={{flex: 'none', width: 60, height: 60, borderRadius: 30, background: c, color: '#fff', fontSize: 34, fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{i + 1}</span>
+            <span style={{fontSize: 34, fontWeight: 700, color: '#1F2937'}}>{s2}</span>
+          </div>
+        );
+      })}
+      <div style={{position: 'absolute', left: 0, right: 0, top: 820, textAlign: 'center', fontFamily: FONT, fontSize: 40, fontWeight: 800, color: '#5EEAD4', opacity: ap(t, 12)}}>Cảm ơn bạn đã theo dõi!</div>
+    </DeskBg>
+  );
+};
+
+const SCN: React.FC[] = [Cover, EarlyLate, PAC, PJC, Traps, PVC, Pause, Patterns, Escape, SinusRest, Review10, Practice10, Takeaways10];
 export const ECTO_N = 7;
 export const Ectopy: React.FC = () => (
   <AbsoluteFill style={{background: '#0E1116', fontFamily: FONT}}>
