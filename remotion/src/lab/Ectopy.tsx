@@ -48,7 +48,7 @@ const rhythm = (beats: [number, BT][]) => (T: number) => beats.reduce((v, [b, k]
 const sinus = (n: number, rr = 0.8, off = 0.25): [number, BT][] => Array.from({length: n}, (_, i) => [off + i * rr, 's']);
 
 // dải mẫu dùng nhiều lần
-const R_PAC: [number, BT][] = [[0.25, 's'], [1.05, 's'], [1.85, 's'], [2.37, 'a'], [3.17, 's'], [3.97, 's'], [4.52, 'a'], [5.32, 's'], [6.12, 's']];
+const R_PAC: [number, BT][] = [[0.25, 's'], [1.05, 's'], [1.85, 's'], [2.37, 'a'], [3.17, 's'], [3.57, 'a'], [4.37, 's'], [5.17, 's'], [5.97, 's']];
 const R_PVC: [number, BT][] = [[0.25, 's'], [1.05, 's'], [1.85, 's'], [2.33, 'v'], [3.45, 's'], [4.25, 's'], [5.05, 's'], [5.85, 's']];
 const R_ESC: [number, BT][] = [[0.25, 's'], [1.05, 's'], [1.85, 's'], [3.45, 'ej'], [4.85, 'ej'], [6.25, 'ej']];
 
@@ -152,12 +152,12 @@ const EarlyLate: React.FC = () => {
             <g>
               <g opacity={ap(t, 0.4)}>{exp1.map((e) => <line key={e} x1={X(e)} x2={X(e)} y1={40} y2={290} stroke="#64748B" strokeWidth={2.5} strokeDasharray="8 8" />)}</g>
               <g opacity={ap(t, 2)}>
-                <path d={`M${X(2.65)},${Y(1.5)} L${X(2.38)},${Y(1.5)}`} stroke={OR} strokeWidth={6} markerEnd="url(#arO)" />
-                <text x={X(2.5)} y={Y(1.5) - 16} textAnchor="middle" fontFamily={FONT} fontSize={30} fontWeight={900} fill={OR}>SỚM</text>
+                <path d={`M${X(2.65)},${Y(0.75)} L${X(2.47)},${Y(0.75)}`} stroke={OR} strokeWidth={6} markerEnd="url(#arO)" />
+                <text x={X(2.7)} y={Y(0.75) + 10} fontFamily={FONT} fontSize={30} fontWeight={900} fill={OR}>SỚM</text>
               </g>
               <g opacity={cmp > 0 ? 1 : 0}>
-                <path d={`M${cx},${Y(1.15)} L${cx + 0.8 * pxs},${Y(1.15)}`} stroke={TE} strokeWidth={4} />
-                <circle cx={cx} cy={Y(1.15)} r={7} fill={TE} /><circle cx={cx + 0.8 * pxs} cy={Y(1.15)} r={7} fill={TE} />
+                <path d={`M${cx},272 L${cx + 0.8 * pxs},272`} stroke={TE} strokeWidth={5} />
+                <circle cx={cx} cy={272} r={8} fill={TE} /><circle cx={cx + 0.8 * pxs} cy={272} r={8} fill={TE} />
               </g>
               <defs><marker id="arO" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill={OR} /></marker>
                 <marker id="arB" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill={BL} /></marker></defs>
@@ -171,10 +171,10 @@ const EarlyLate: React.FC = () => {
             <g>
               <g opacity={ap(t, 3.6)}>{exp1.map((e) => <line key={e} x1={X(e)} x2={X(e)} y1={40} y2={290} stroke="#64748B" strokeWidth={2.5} strokeDasharray="8 8" />)}</g>
               <g opacity={ap(t, 4.2)}>
-                <rect x={X(2.0)} y={50} width={X(3.4) - X(2.0)} height={60} rx={10} fill="rgba(37,99,235,0.12)" />
-                <text x={(X(2.0) + X(3.4)) / 2} y={90} textAnchor="middle" fontFamily={HAND} fontSize={32} fill={BL}>khoảng nghỉ dài</text>
-                <path d={`M${X(2.65)},${Y(1.4)} L${X(3.4)},${Y(1.4)}`} stroke={BL} strokeWidth={6} markerEnd="url(#arB)" />
-                <text x={X(3.05)} y={Y(1.4) - 16} textAnchor="middle" fontFamily={FONT} fontSize={30} fontWeight={900} fill={BL}>MUỘN</text>
+                <rect x={X(2.2)} y={212} width={X(3.3) - X(2.2)} height={50} rx={10} fill="rgba(37,99,235,0.12)" />
+                <text x={(X(2.2) + X(3.3)) / 2} y={248} textAnchor="middle" fontFamily={HAND} fontSize={32} fill={BL}>khoảng nghỉ dài</text>
+                <path d={`M${X(2.65)},${Y(0.75)} L${X(3.36)},${Y(0.75)}`} stroke={BL} strokeWidth={6} markerEnd="url(#arB)" />
+                <text x={X(2.95)} y={Y(0.75) - 14} textAnchor="middle" fontFamily={FONT} fontSize={30} fontWeight={900} fill={BL}>MUỘN</text>
               </g>
             </g>
           )}
@@ -205,10 +205,10 @@ const PAC: React.FC = () => {
         <Strip L={rhythm(R_PAC)} w={1170} h={330} q={11} base={0.6} t0={0} label="II" stroke={3.5}>
           {(X, Y) => (
             <g>
-              <g opacity={ap(t, 2)}><circle cx={X(2.22)} cy={Y(0.1)} r={30} fill="none" stroke={PU} strokeWidth={5} /><text x={X(2.22)} y={Y(0.1) - 42} textAnchor="middle" fontFamily={HAND} fontSize={34} fill={PU}>P′ sớm</text>
+              <g opacity={ap(t, 2)}><circle cx={X(2.22)} cy={Y(0.1)} r={30} fill="none" stroke={PU} strokeWidth={5} /><text x={X(2.18)} y={Y(0.1) - 40} textAnchor="end" fontFamily={HAND} fontSize={34} fill={PU}>P′ sớm</text>
                 <circle cx={X(1.69)} cy={Y(0.08)} r={26} fill="none" stroke="#64748B" strokeWidth={4} strokeDasharray="6 5" /><text x={X(1.69)} y={Y(0.08) + 58} textAnchor="middle" fontFamily={HAND} fontSize={28} fill="#475569">P xoang</text></g>
               <g opacity={ap(t, 4)}><rect x={X(2.33)} y={Y(1.1)} width={X(2.42) - X(2.33)} height={Y(-0.35) - Y(1.1)} rx={6} fill="rgba(34,197,94,0.18)" stroke={GR} strokeWidth={3} /></g>
-              <g opacity={ap(t, 6)}><circle cx={X(4.37)} cy={Y(0.32)} r={36} fill="none" stroke={OR} strokeWidth={5} /><text x={X(4.37)} y={Y(0.32) - 48} textAnchor="middle" fontFamily={HAND} fontSize={32} fill={OR}>T “có bướu”</text></g>
+              <g opacity={ap(t, 6)}><circle cx={X(3.42)} cy={Y(0.32)} r={36} fill="none" stroke={OR} strokeWidth={5} /><text x={X(3.36)} y={Y(0.32) - 48} textAnchor="end" fontFamily={HAND} fontSize={32} fill={OR}>T “có bướu”</text></g>
             </g>
           )}
         </Strip>
@@ -265,7 +265,7 @@ const Traps: React.FC = () => {
           {(X, Y) => (
             <g>
               <g opacity={ap(t, 0.5)}><rect x={X(2.25)} y={44} width={X(3.3) - X(2.25)} height={46} rx={8} fill="rgba(139,92,246,0.14)" /><text x={(X(2.25) + X(3.3)) / 2} y={78} textAnchor="middle" fontFamily={HAND} fontSize={28} fill={PU}>không có QRS</text></g>
-              <g opacity={lens}><circle cx={X(1.98)} cy={Y(0.25)} r={46} fill="rgba(255,255,255,0.25)" stroke="#334155" strokeWidth={6} /><line x1={X(1.98) + 32} y1={Y(0.25) + 32} x2={X(1.98) + 70} y2={Y(0.25) + 70} stroke="#334155" strokeWidth={10} strokeLinecap="round" /><text x={X(1.98) - 60} y={Y(0.25) - 58} fontFamily={HAND} fontSize={30} fill={PU}>P′ nằm trong T</text></g>
+              <g opacity={lens}><circle cx={X(1.98)} cy={Y(0.25)} r={46} fill="rgba(255,255,255,0.25)" stroke="#334155" strokeWidth={6} /><line x1={X(1.98) + 32} y1={Y(0.25) + 32} x2={X(1.98) + 70} y2={Y(0.25) + 70} stroke="#334155" strokeWidth={10} strokeLinecap="round" /><text x={X(1.98) + 80} y={Y(0.25) + 105} fontFamily={HAND} fontSize={30} fill={PU}>P′ nằm trong T</text></g>
             </g>
           )}
         </Strip>
@@ -279,8 +279,8 @@ const Traps: React.FC = () => {
           {(X, Y) => <g opacity={ap(t, 8)}><circle cx={X(2.22)} cy={Y(0.1)} r={26} fill="none" stroke={PU} strokeWidth={5} /><text x={X(2.22) - 20} y={Y(0.1) - 36} textAnchor="end" fontFamily={HAND} fontSize={30} fill={PU}>P′ sớm</text><rect x={X(2.33)} y={Y(1.0)} width={X(2.47) - X(2.33)} height={Y(-0.5) - Y(1.0)} rx={6} fill="none" stroke={OR} strokeWidth={4} /><text x={X(2.5)} y={Y(1.0) + 10} fontFamily={HAND} fontSize={30} fill={OR}>QRS rộng</text></g>}
         </Strip>
       </Frame>
-      <Card x={1250} y={620} w={610} a={ap(t, 6)} c={OR} title="QRS RỘNG (hay dạng block nhánh phải)">vì một nhánh còn trơ</Card>
-      <Card x={1250} y={770} w={610} a={ap(t, 8)} c={PU} title="Có P′ sớm đi trước → vẫn là NHĨ" />
+      <Card x={1250} y={612} w={610} a={ap(t, 6)} c={OR} title="QRS RỘNG">hay dạng block nhánh phải · một nhánh còn trơ</Card>
+      <Card x={1250} y={768} w={610} a={ap(t, 8)} c={PU} title="Có P′ sớm đi trước → vẫn là NHĨ" />
     </DeskBg>
   );
 };
@@ -297,16 +297,15 @@ const PVC: React.FC = () => {
         <Heart4C id="pvc10" x={20} y={110} s={0.5} a={ap(t, -1)} ring={0.5} cond={0.5} glowL={0.3 + 0.5 * Math.sin(ph * Math.PI)} glowC={RD} dots={spread(ph)} />
         <g transform="translate(20,110) scale(0.5)"><Focus p={FV} c={RD} pulse={ph} /></g>
       </svg>
-      <Lbl x={70} y={760} a={ap(t, 6)} c="#FCA5A5" size={30}>lan chậm từ tế bào → tế bào, không đi đường dẫn truyền nhanh</Lbl>
+      <Lbl x={70} y={760} a={ap(t, 6)} c="#FCA5A5" size={30}>lan chậm: tế bào → tế bào</Lbl>
       <Frame x={690} y={130} a={ap(t, -1)} c={RD}>
         <Strip L={rhythm(R_PVC)} w={1170} h={360} q={11} base={0.55} t0={0} label="II" stroke={3.5}>
           {(X, Y) => (
             <g>
-              <g opacity={ap(t, 0.4)}><line x1={X(2.33)} x2={X(2.33)} y1={Y(1.6)} y2={Y(-0.8)} stroke={RD} strokeWidth={3} /><line x1={X(2.49)} x2={X(2.49)} y1={Y(1.6)} y2={Y(-0.8)} stroke={RD} strokeWidth={3} /><text x={X(2.41)} y={Y(1.6) - 10} textAnchor="middle" fontFamily={FONT} fontSize={26} fontWeight={900} fill={RD}>≥ 0,12 s</text></g>
+              <g opacity={ap(t, 0.4)}><line x1={X(2.33)} x2={X(2.33)} y1={Y(1.5)} y2={Y(-0.8)} stroke={RD} strokeWidth={3} strokeDasharray="6 5" /><line x1={X(2.49)} x2={X(2.49)} y1={Y(1.5)} y2={Y(-0.8)} stroke={RD} strokeWidth={3} strokeDasharray="6 5" /><path d={`M${X(2.33)},${Y(1.3)} L${X(2.49)},${Y(1.3)}`} stroke={RD} strokeWidth={4} /><text x={X(2.53)} y={Y(1.3) + 10} fontFamily={FONT} fontSize={28} fontWeight={900} fill={RD}>≥ 0,12 s</text></g>
               <g opacity={ap(t, 2)}><circle cx={X(2.17)} cy={Y(0.05)} r={28} fill="none" stroke="#64748B" strokeWidth={4} strokeDasharray="6 5" /><text x={X(2.17) - 34} y={Y(0.05) + 60} textAnchor="middle" fontFamily={HAND} fontSize={30} fill="#475569">không P′</text></g>
               <g opacity={ap(t, 4)}>
-                <path d={`M${X(2.38)},${Y(0.2)} L${X(2.38)},${Y(1.1)}`} stroke={RD} strokeWidth={6} markerEnd="url(#arR)" />
-                <path d={`M${X(2.67)},${Y(0.05)} L${X(2.67)},${Y(-0.75)}`} stroke={BL} strokeWidth={6} markerEnd="url(#arBl)" />
+                                <path d={`M${X(2.67)},${Y(0.05)} L${X(2.67)},${Y(-0.75)}`} stroke={BL} strokeWidth={6} markerEnd="url(#arBl)" />
                 <text x={X(2.72) + 14} y={Y(-0.6)} fontFamily={HAND} fontSize={30} fill={BL}>T ngược chiều</text>
               </g>
               <defs><marker id="arR" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill={RD} /></marker>
@@ -331,7 +330,7 @@ const Pause: React.FC = () => {
   const brk = (X: (T: number) => number, a: number, b: number, y: number, c: string, txt: string, op: number) => (
     <g opacity={op}>
       <path d={`M${X(a)},${y + 14} L${X(a)},${y} L${X(b)},${y} L${X(b)},${y + 14}`} fill="none" stroke={c} strokeWidth={5} />
-      <text x={(X(a) + X(b)) / 2} y={y - 10} textAnchor="middle" fontFamily={FONT} fontSize={26} fontWeight={900} fill={c}>{txt}</text>
+      <text x={X(b) + 14} y={y + 12} fontFamily={FONT} fontSize={26} fontWeight={900} fill={c}>{txt}</text>
     </g>
   );
   const ruler = (X: (T: number) => number, a: number, y: number, op: number) => (
@@ -343,22 +342,22 @@ const Pause: React.FC = () => {
       <Head t={t}>Nghỉ bù: đủ hay thiếu?</Head>
       <div style={{position: 'absolute', left: 60, top: 118, fontFamily: FONT, fontSize: 26, fontWeight: 800, color: '#A5F3FC', opacity: ap(t, 0)}}>Đo từ R TRƯỚC → R SAU nhát sớm · so với 2 × RR</div>
       <Frame x={60} y={170} a={ap(t, 1.4)} c={RD}>
-        <Strip L={rhythm(R_PVC)} w={1180} h={220} q={q} base={0.6} t0={0} label="II · thất" stroke={3}>
-          {(X) => <g>{brk(X, 1.85, 3.45, 30, RD, '= 2 × RR → ĐỦ ✓', ap(t, 2))}{ruler(X, 1.85, 200, ap(t, 2.4))}</g>}
+        <Strip L={rhythm(R_PVC)} w={1180} h={240} q={q} base={0.68} t0={0} label="II · thất" stroke={3}>
+          {(X) => <g>{brk(X, 1.85, 3.45, 22, RD, '= 2 × RR → ĐỦ ✓', ap(t, 2))}{ruler(X, 1.85, 218, ap(t, 2.4))}</g>}
         </Strip>
       </Frame>
-      <Frame x={60} y={420} a={ap(t, 3.4)} c={PU}>
-        <Strip L={rhythm(R_PAC)} w={1180} h={220} q={q} base={0.6} t0={0} label="II · nhĩ" stroke={3}>
-          {(X) => <g>{brk(X, 1.85, 3.17, 30, PU, '< 2 × RR → THIẾU', ap(t, 4))}{ruler(X, 1.85, 200, ap(t, 4.4))}</g>}
+      <Frame x={60} y={430} a={ap(t, 3.4)} c={PU}>
+        <Strip L={rhythm(R_PAC)} w={1180} h={240} q={q} base={0.68} t0={0} label="II · nhĩ" stroke={3}>
+          {(X) => <g>{brk(X, 1.85, 3.17, 22, PU, '< 2 × RR → THIẾU', ap(t, 4))}{ruler(X, 1.85, 218, ap(t, 4.4))}</g>}
         </Strip>
       </Frame>
-      <Frame x={60} y={670} a={ap(t, 6)} c={OR}>
-        <Strip L={rhythm(R_INT)} w={1180} h={220} q={q} base={0.6} t0={0} label="II · xen kẽ" stroke={3}>
-          {(X) => brk(X, 1.85, 2.73, 30, OR, 'chen giữa · KHÔNG nghỉ bù', ap(t, 6.4))}
+      <Frame x={60} y={690} a={ap(t, 6)} c={OR}>
+        <Strip L={rhythm(R_INT)} w={1180} h={240} q={q} base={0.68} t0={0} label="II · xen kẽ" stroke={3}>
+          {(X) => brk(X, 1.85, 2.73, 22, OR, 'chen giữa · KHÔNG nghỉ bù', ap(t, 6.4))}
         </Strip>
       </Frame>
       <Card x={1280} y={170} w={580} a={ap(t, 2)} c={RD} title="ĐỦ (hoàn toàn) → THẤT">nút xoang KHÔNG bị chạm, vẫn phát đúng hẹn</Card>
-      <Card x={1280} y={420} w={580} a={ap(t, 4)} c={PU} title="THIẾU (không hoàn toàn) → NHĨ">nút xoang bị “cài lại”</Card>
+      <Card x={1280} y={430} w={580} a={ap(t, 4)} c={PU} title="THIẾU (không hoàn toàn) → NHĨ">nút xoang bị “cài lại”</Card>
       <Card x={1280} y={600} w={580} a={ap(t, 6)} c={OR} title="Thất XEN KẼ: không nghỉ bù" />
       <Memo x={1280} y={730} w={580} a={ap(t, 8)}>Chỉ là GỢI Ý — hình dạng QRS &amp; P′ vẫn là chính</Memo>
     </DeskBg>
