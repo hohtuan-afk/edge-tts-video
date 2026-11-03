@@ -1,251 +1,35 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+8%",
+ "rate": "+12%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Ngoại tâm thu và nhịp thoát: nhát đến sớm, và nhát đến cứu."
-  },
-  {
-   "id": "00-1",
-   "text": "Ở bài ba, ta đã thấy nhát bóp bị rơi. Hôm nay là nhát đến sớm, và nhát đến cứu."
-  },
-  {
-   "id": "00-2",
-   "text": "Thần chú gồm ba câu hỏi: sớm hay muộn, hẹp hay rộng, nghỉ bù đủ hay thiếu."
+   "text": "Nhát đến sớm, hay nhát đến cứu? Ba câu hỏi để đọc ngoại tâm thu."
   },
   {
    "id": "01-0",
-   "text": "Trạm một, sớm hay muộn. Luôn so nhát lạ với khoảng R R cơ bản của nhịp nền."
-  },
-  {
-   "id": "01-1",
-   "text": "Nhát đến sớm hơn dự kiến là ngoại tâm thu: một ổ phát nhịp khác chen ngang."
-  },
-  {
-   "id": "01-2",
-   "text": "Nhát đến muộn, sau một khoảng nghỉ dài, là nhịp thoát: ổ phát nhịp bên dưới ra cứu."
-  },
-  {
-   "id": "01-3",
-   "text": "Cách làm đơn giản: lấy compa hoặc mép giấy đánh dấu một khoảng R R, rồi dời sang nhát kế tiếp."
+   "text": "Một, sớm hay muộn. Đến sớm là ngoại tâm thu, đến muộn sau khoảng nghỉ là nhịp thoát."
   },
   {
    "id": "02-0",
-   "text": "Trạm hai, hẹp hay rộng. Bắt đầu với ngoại tâm thu nhĩ."
-  },
-  {
-   "id": "02-1",
-   "text": "Có một sóng P phẩy đến sớm, và hình dạng khác với sóng P xoang."
-  },
-  {
-   "id": "02-2",
-   "text": "QRS theo sau thường hẹp, giống QRS của nhịp nền, vì xung vẫn đi xuống bằng đường dẫn truyền bình thường."
-  },
-  {
-   "id": "02-3",
-   "text": "Sóng P phẩy càng sớm, càng dễ lẫn vào sóng T phía trước, làm sóng T có một cái bướu."
+   "text": "Hai, hẹp hay rộng. Sóng P phẩy sớm và QRS hẹp là nhĩ. Không có P, QRS rộng kỳ dị là thất."
   },
   {
    "id": "03-0",
-   "text": "Ngoại tâm thu bộ nối: QRS hẹp và đến sớm."
-  },
-  {
-   "id": "03-1",
-   "text": "Sóng P âm ở chuyển đạo hai, ba và a-vê-ép, nằm ngay trước QRS với PR ngắn dưới không phẩy mười hai giây, lẫn trong QRS, hoặc ngay sau QRS."
-  },
-  {
-   "id": "03-2",
-   "text": "Lý do là xung từ bộ nối đi ngược lên nhĩ, đồng thời đi xuôi xuống thất."
+   "text": "Ba, nghỉ bù. Đủ hai lần R R gợi ý thất. Thiếu gợi ý nhĩ."
   },
   {
    "id": "04-0",
-   "text": "Bẫy thứ nhất: ngoại tâm thu nhĩ bị block. Sóng P phẩy đến rất sớm, khi nút nhĩ thất còn trơ, nên không có QRS theo sau."
-  },
-  {
-   "id": "04-1",
-   "text": "Trông giống ngưng xoang, hay block nhĩ thất độ hai. Nhưng hãy soi sóng T ngay trước khoảng nghỉ: sóng P phẩy nằm ở đó."
-  },
-  {
-   "id": "04-2",
-   "text": "Đây là nguyên nhân hay gặp nhất của một khoảng nghỉ bất ngờ."
-  },
-  {
-   "id": "04-3",
-   "text": "Bẫy thứ hai: dẫn truyền lệch hướng. Ngoại tâm thu nhĩ đến sớm khi một nhánh còn trơ, nên QRS rộng, hay gặp dạng block nhánh phải."
-  },
-  {
-   "id": "04-4",
-   "text": "Manh mối là có sóng P phẩy sớm đi trước QRS rộng. Đó vẫn là ngoại tâm thu nhĩ."
+   "text": "Và nhớ: nhịp thoát là nhịp cứu, đừng xoá nó bằng thuốc chống loạn nhịp."
   },
   {
    "id": "05-0",
-   "text": "Trạm ba, ngoại tâm thu thất. QRS rộng từ không phẩy mười hai giây trở lên, hình dạng kỳ dị."
-  },
-  {
-   "id": "05-1",
-   "text": "Không có sóng P phẩy đi trước."
-  },
-  {
-   "id": "05-2",
-   "text": "Đoạn ét tê và sóng T ngược chiều với QRS."
-  },
-  {
-   "id": "05-3",
-   "text": "Vì xung xuất phát ngay trong thất, lan chậm từ tế bào cơ tim này sang tế bào khác, không đi theo đường dẫn truyền nhanh."
+   "text": "Nhắc lại: sớm hay muộn, hẹp hay rộng, nghỉ bù đủ hay thiếu."
   },
   {
    "id": "06-0",
-   "text": "Trạm bốn, nghỉ bù đủ hay thiếu. Đo từ sóng R ngay trước, đến sóng R ngay sau nhát đến sớm."
-  },
-  {
-   "id": "06-1",
-   "text": "Nghỉ bù đủ, hay hoàn toàn, khi khoảng này bằng đúng hai lần R R. Nút xoang không bị chạm tới, nên vẫn phát nhịp đúng hẹn. Hay gặp ở ngoại tâm thu thất."
-  },
-  {
-   "id": "06-2",
-   "text": "Nghỉ bù thiếu, hay không hoàn toàn, khi khoảng này ngắn hơn hai lần R R. Nút xoang bị xung chen ngang cài lại. Hay gặp ở ngoại tâm thu nhĩ."
-  },
-  {
-   "id": "06-3",
-   "text": "Riêng ngoại tâm thu thất xen kẽ thì chen vào giữa hai nhát thường, và không có nghỉ bù nào."
-  },
-  {
-   "id": "06-4",
-   "text": "Đây chỉ là gợi ý, không tuyệt đối. Hình dạng QRS và sóng P phẩy vẫn là chính."
-  },
-  {
-   "id": "07-0",
-   "text": "Trạm năm, kiểu ghép. Hãy đếm cách các nhát sớm xuất hiện."
-  },
-  {
-   "id": "07-1",
-   "text": "Nhịp đôi: một nhát thường, một nhát sớm, xen kẽ nhau. Nhịp ba: hai nhát thường, một nhát sớm."
-  },
-  {
-   "id": "07-2",
-   "text": "Cặp đôi là hai nhát sớm liền nhau. Từ ba nhát thất liền nhau, tần số trên một trăm lần mỗi phút, kéo dài dưới ba mươi giây, là nhịp nhanh thất không bền bỉ."
-  },
-  {
-   "id": "07-3",
-   "text": "Đơn dạng là các nhát cùng một hình. Đa dạng là nhiều hình khác nhau, gợi ý nhiều ổ, và thường bệnh nặng hơn."
-  },
-  {
-   "id": "07-4",
-   "text": "R trên T: nhát thất rơi trúng sóng T của nhát trước. Lúc này có thể khởi phát nhịp nhanh thất đa hình, hoặc rung thất, nhất là khi Q T dài hay thiếu máu cơ tim."
-  },
-  {
-   "id": "07-5",
-   "text": "Ngoài ra, ngoại tâm thu thất quá nhiều, trên khoảng mười phần trăm số nhát trong hai mươi bốn giờ, có thể gây bệnh cơ tim. Khi đó cần đo điện tâm đồ hai mươi bốn giờ."
-  },
-  {
-   "id": "08-0",
-   "text": "Trạm sáu, nhịp thoát. Khi ổ phía trên im lặng, ổ phía dưới sẽ ra cứu."
-  },
-  {
-   "id": "08-1",
-   "text": "Nhịp thoát bộ nối: QRS hẹp, tần số khoảng bốn mươi đến sáu mươi lần mỗi phút."
-  },
-  {
-   "id": "08-2",
-   "text": "Nhịp thoát thất: QRS rộng, tần số khoảng hai mươi đến bốn mươi lần mỗi phút."
-  },
-  {
-   "id": "08-3",
-   "text": "Nhịp thoát là nhịp cứu. Đừng xoá nó bằng thuốc chống loạn nhịp. Hãy xử trí nhịp chậm và nguyên nhân bên dưới."
-  },
-  {
-   "id": "09-0",
-   "text": "Khi nút xoang nghỉ, ta có ngưng xoang: mất cả sóng P lẫn QRS, và khoảng nghỉ không phải bội số của khoảng P P."
-  },
-  {
-   "id": "09-1",
-   "text": "Khoảng ngưng trên ba giây lúc bệnh nhân đang thức là đáng chú ý."
-  },
-  {
-   "id": "09-2",
-   "text": "Hội chứng suy nút xoang gồm nhịp chậm xoang, ngưng xoang, và hội chứng nhịp nhanh nhịp chậm, khi cơn rung nhĩ vừa dứt thì tim ngưng một lúc lâu."
-  },
-  {
-   "id": "09-3",
-   "text": "Nhịp tự thất gia tốc: QRS rộng, đều, tần số khoảng năm mươi đến một trăm mười lần mỗi phút."
-  },
-  {
-   "id": "09-4",
-   "text": "Hay gặp sau tái tưới máu mạch vành, hoặc ngộ độc đi-gô-xin. Thường lành tính và tự hết."
-  },
-  {
-   "id": "10-0",
-   "text": "Ôn tập bằng ba câu hỏi."
-  },
-  {
-   "id": "10-1",
-   "text": "Đến sớm, sóng P phẩy khác, QRS hẹp, nghỉ bù thiếu: ngoại tâm thu nhĩ."
-  },
-  {
-   "id": "10-2",
-   "text": "Đến sớm, không có sóng P, QRS rộng kỳ dị, nghỉ bù đủ: ngoại tâm thu thất."
-  },
-  {
-   "id": "10-3",
-   "text": "Đến muộn sau khoảng nghỉ: QRS hẹp là nhịp thoát bộ nối, QRS rộng là nhịp thoát thất."
-  },
-  {
-   "id": "11-0",
-   "text": "Luyện đọc ba dải nhịp ở chuyển đạo hai."
-  },
-  {
-   "id": "11-1",
-   "text": "Dải một: cứ một nhát thường lại có một nhát rộng, đến sớm, không có sóng P, sóng T ngược chiều."
-  },
-  {
-   "id": "11-2",
-   "text": "Kết luận: ngoại tâm thu thất nhịp đôi."
-  },
-  {
-   "id": "11-3",
-   "text": "Dải hai: nhịp xoang đều, bỗng có một khoảng nghỉ. Sóng T ngay trước khoảng nghỉ nhọn hơn các sóng T khác."
-  },
-  {
-   "id": "11-4",
-   "text": "Kết luận: ngoại tâm thu nhĩ bị block, không phải block nhĩ thất."
-  },
-  {
-   "id": "11-5",
-   "text": "Dải ba: block nhĩ thất hoàn toàn, QRS hẹp, đều, bốn mươi lăm lần mỗi phút."
-  },
-  {
-   "id": "11-6",
-   "text": "Kết luận: nhịp thoát bộ nối. Đừng xoá nó, hãy xử trí block."
-  },
-  {
-   "id": "12-0",
-   "text": "Năm điều cần nhớ."
-  },
-  {
-   "id": "12-1",
-   "text": "Một, đến sớm là ngoại tâm thu, đến muộn là nhịp thoát."
-  },
-  {
-   "id": "12-2",
-   "text": "Hai, sóng P phẩy sớm và QRS hẹp là ngoại tâm thu nhĩ. Không có P và QRS rộng kỳ dị là ngoại tâm thu thất."
-  },
-  {
-   "id": "12-3",
-   "text": "Ba, gặp khoảng nghỉ bất ngờ, hãy soi sóng T để tìm sóng P phẩy bị block."
-  },
-  {
-   "id": "12-4",
-   "text": "Bốn, cặp đôi, đa dạng, R trên T, và từ ba nhát thất liền nhau là các dấu hiệu báo động."
-  },
-  {
-   "id": "12-5",
-   "text": "Năm, nhịp thoát là nhịp cứu, đừng xoá nó."
-  },
-  {
-   "id": "12-6",
-   "text": "Cảm ơn bạn đã theo dõi."
+   "text": "Lưu lại để ôn, và xem bài đầy đủ trên kênh nhé."
   }
  ]
 }
