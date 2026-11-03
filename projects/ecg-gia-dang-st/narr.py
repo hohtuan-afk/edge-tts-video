@@ -2,7 +2,7 @@
 # Thần chú: CHÊNH ≠ TẮC · 4 câu kiểm tra: LAN TOẢ? – SOI GƯƠNG? – HÌNH DẠNG? – BỐI CẢNH?
 # Khung 7 trạm: 4 CÂU KIỂM TRA → MÀNG NGOÀI TIM → TÁI CỰC SỚM → THỨ PHÁT → BRUGADA → PHÌNH THẤT · PHỔI → ÔN TẬP
 # Vị trí học: sau bài 6 (khép cụm nhồi máu cơ tim).
-# Nguồn: 2025 ESC Myocarditis & Pericarditis; 2015 ESC Pericardial Diseases (tiêu chuẩn chẩn đoán);
+# Nguồn: 2025 ESC Myocarditis & Pericarditis; Table 4 (tiêu chuẩn chẩn đoán IMPS) — đã đối chiếu toàn văn;
 #        2022 ESC Ventricular Arrhythmias & SCD (Brugada); Bayés de Luna 2012 (đồng thuận 2 típ Brugada);
 #        2026 AHA/ACC Acute Pulmonary Embolism; 2023 ESC ACS; 5th UDMI; Ginzton 1982 (ST/T V6); LITFL.
 NARR = [
@@ -33,8 +33,12 @@ NARR = [
     "Đoạn PR chênh xuống, rõ nhất ở chuyển đạo hai. Riêng a-vê-rờ thì ngược lại: ST chênh xuống, PR chênh lên."),
    ("KHÔNG soi gương (trừ aVR, V1) · KHÔNG có sóng Q.",
     "Không có soi gương, trừ a-vê-rờ và vê một. Và không có sóng Q."),
-   ("Chẩn đoán: ≥ 2 trong 4 · đau ngực kiểu màng ngoài tim · tiếng cọ · ECG điển hình · tràn dịch.",
-    "Chẩn đoán cần ít nhất hai trong bốn tiêu chuẩn: đau ngực kiểu màng ngoài tim, tiếng cọ màng ngoài tim, điện tâm đồ điển hình, và tràn dịch màng ngoài tim.")],
+   ("Chẩn đoán (ESC 2025): đau ngực + > 1 tiêu chuẩn thêm · tiếng cọ · ECG · CRP tăng · tràn dịch mới.",
+    "Theo hướng dẫn châu Âu năm hai nghìn không trăm hai mươi lăm, chẩn đoán xác định khi có đau ngực kèm hơn một tiêu chuẩn thêm: tiếng cọ màng ngoài tim, điện tâm đồ có PR chênh xuống hoặc ST chênh lan toả, CRP tăng, hoặc tràn dịch màng ngoài tim mới hay nặng thêm."),
+   ("ECG thay đổi theo giờ – ngày · ECG bình thường lúc đầu KHÔNG loại trừ.",
+    "Điện tâm đồ thay đổi theo giờ đến ngày, và điện tâm đồ bình thường lúc đầu không loại trừ chẩn đoán."),
+   ("Lưu ý: VIÊM CƠ TIM cũng có thể ST chênh + troponin tăng, mạch vành bình thường → luôn nghĩ tới.",
+    "Lưu ý: viêm cơ tim cũng có thể gây ST chênh và troponin tăng, trong khi mạch vành bình thường. Khi điện tâm đồ thay đổi, luôn nghĩ đến viêm cơ tim.")],
   # 3 · Tái cực sớm
   [("Trạm 3 · TÁI CỰC SỚM: điểm J chênh, có KHẤC hoặc TRÁT cuối QRS.",
     "Trạm ba, tái cực sớm. Điểm J chênh lên, có khấc hoặc trát ở cuối QRS."),
@@ -148,7 +152,7 @@ TITLES = ["Bìa", "4 câu kiểm tra", "Viêm màng ngoài tim", "Tái cực s�
 VIS = [
   "Bìa: ECG 12 chuyển đạo có ST chênh; kính lúp soi; chip ‘CHÊNH ≠ TẮC’; dòng nối ‘Bài 6: KHÔNG CHÊNH ≠ KHÔNG TẮC’.",
   "4 thẻ câu hỏi lật dần (LAN TOẢ · SOI GƯƠNG · HÌNH DẠNG · BỐI CẢNH), cạnh là sơ đồ 12 chuyển đạo: một bên ST chênh theo vùng có soi gương (đỏ), một bên chênh lan toả (vàng); thẻ đỏ ‘còn nghi ngờ → coi như TẮC’.",
-  "Lưới 12 chuyển đạo: ST lõm lan toả tô vàng, PR chênh xuống khoanh ở II, aVR khoanh tím (ngược chiều); tim minh hoạ có màng ngoài tim đỏ viêm; bảng 2/4 tiêu chuẩn.",
+  "Lưới 12 chuyển đạo: ST lõm lan toả tô vàng, PR chênh xuống khoanh ở II, aVR khoanh tím (ngược chiều); tim minh hoạ có màng ngoài tim đỏ viêm; bảng tiêu chuẩn ESC 2025: đau ngực + > 1 tiêu chuẩn thêm; thẻ phụ ‘viêm cơ tim cũng chênh ST, mạch vành bình thường’.",
   "Phóng to V4: khấc J (mũi tên), ST lõm, T cao; thước đo ST/T ở V6 với 2 ví dụ (0,15 → tái cực sớm · 0,3 → viêm màng ngoài tim); thẻ cảnh báo tắc động mạch liên thất trước sớm.",
   "3 dải: dày thất trái (S sâu V2 + ST chênh), block nhánh trái (V1), máy tạo nhịp (gai + QRS rộng); mũi tên ngược chiều QRS – ST; chip ‘NGƯỢC = bình thường · CÙNG = bệnh’.",
   "V1 – V2 đặt cạnh nhau: típ 1 vòm (đỏ) và típ 2 yên ngựa (cam); thẻ ‘chỉ típ 1 chẩn đoán’; dòng chú thích 3 típ cũ → 2 típ.",
