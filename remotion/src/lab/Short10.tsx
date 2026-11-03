@@ -77,7 +77,7 @@ const S1: React.FC = () => {
   const t = useSec();
   return (
     <AbsoluteFill><StepHead i={0} />
-      <Lead t={t} f={rhythm([[0.2, 's'], [1.0, 's'], [1.48, 'v'], [2.6, 's'], [3.75, 'ej']])} label="II" x={60} w={960} q={10} base={330} t0={0}>
+      <Lead t={t} f={rhythm([[0.2, 's'], [1.0, 's'], [1.48, 'v'], [2.6, 's'], [3.75, 'ej']])} label="II" x={60} w={960} q={8} base={330} t0={0}>
         {(X, Y) => <g>
           <g opacity={ap(t, 0.8)}>{[1.8, 3.4].map((e) => <line key={e} x1={X(e)} x2={X(e)} y1={80} y2={520} stroke="#64748B" strokeWidth={3} strokeDasharray="10 10" />)}</g>
           <g opacity={ap(t, 1.2)}><text x={X(1.55)} y={Y(1.7)} textAnchor="middle" fontFamily={FONT} fontSize={50} fontWeight={900} fill={COR}>SỚM</text><circle cx={X(1.55)} cy={Y(0.4)} r={70} fill="none" stroke={COR} strokeWidth={7} /></g>
