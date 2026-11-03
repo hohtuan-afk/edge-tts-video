@@ -35,9 +35,9 @@ const beat = (b: B) => (x: number) => {
   const seg = sm((x - J) / 0.006) * (1 - sm((x - (tp + 0.07)) / 0.03));
   v += j * seg;                                                              // ST chênh
   v += conv * sm((x - J) / 0.008) * gs(x, (J + tp) / 2 + 0.02, 0.09, 1) * 1.0; // ST lồi (tắc thật)
-  v += gs(x, J - 0.004, 0.007, notch);                                       // khấc J (tái cực sớm)
-  if (cov) v += sm((x - 0.07) / 0.005) * cov * Math.exp(-Math.max(0, x - 0.085) / 0.16) * (1 - sm((x - 0.3) / 0.02)) + gs(x, 0.33, 0.05, -0.25 * cov / 0.4);
-  if (sad) v += gs(x, 0.085, 0.014, sad) + 0.09 * sm((x - 0.08) / 0.006) * (1 - sm((x - 0.34) / 0.03)) + gs(x, 0.29, 0.05, 0.12);
+  v += gs(x, J + 0.006, 0.009, notch);                                       // khấc J (tái cực sớm)
+  if (cov) v += sm((x - 0.07) / 0.005) * cov * Math.exp(-Math.max(0, x - 0.085) / 0.2) * (1 - sm((x - 0.28) / 0.04)) + gs(x, 0.34, 0.06, -0.22);
+  if (sad) v += gs(x, 0.085, 0.016, sad) + 0.12 * sm((x - 0.08) / 0.006) * (1 - sm((x - 0.36) / 0.03)) + gs(x, 0.3, 0.055, 0.34);
   v += gs(x, 0.085, 0.012, rp);                                              // r′
   v += gs(x, tp, tw, t);
   return v;
@@ -161,7 +161,7 @@ const Checks: React.FC = () => {
       ))}
       <div style={{position: 'absolute', left: 930, top: 132, fontFamily: FONT, fontSize: 28, fontWeight: 900, color: '#FCA5A5', opacity: ap(t, 2)}}>TẮC THẬT: theo vùng + soi gương</div>
       <Frame x={930} y={176} a={ap(t, 2)} c={RD}>{trio([['V2', STEMI_V2], ['V3', STEMI_V3], ['II', RECIP_II]], RD)}</Frame>
-      <Lbl x={1580} y={180} a={ap(t, 4)} c={OR} size={30}>soi gương ↓</Lbl>
+      <Lbl x={1560} y={385} a={ap(t, 4)} c={OR} size={30}>↑ II: soi gương</Lbl>
       <div style={{position: 'absolute', left: 930, top: 420, fontFamily: FONT, fontSize: 28, fontWeight: 900, color: '#FDE047', opacity: ap(t, 3)}}>GIẢ DẠNG: lan toả, lõm, không soi gương</div>
       <Frame x={930} y={464} a={ap(t, 3)} c={YE}>{trio([['II', PERI.II], ['V3', PERI.V3], ['V5', PERI.V5]], YE)}</Frame>
       <Banner y={720} a={ap(t, 10)} c={RD}>Còn nghi ngờ → coi như TẮC · ECG lại sau 15 – 30 phút · men tim · siêu âm tim</Banner>
@@ -196,9 +196,9 @@ const Peri: React.FC = () => {
 };
 
 // ================= 3 · TÁI CỰC SỚM =================
-const ER_V4: B = {r: 1.3, s: -0.3, j: 0.1, notch: 0.22, t: 0.6, tp: 0.29, tw: 0.065};
-const ER_V6: B = {r: 1.0, s: -0.15, j: 0.05, notch: 0.12, t: 0.45, tw: 0.06};
-const PE_V6: B = {r: 0.9, s: -0.15, j: 0.12, pr: -0.05, t: 0.35};
+const ER_V4: B = {r: 1.3, s: -0.15, j: 0.12, notch: 0.32, t: 0.6, tp: 0.3, tw: 0.065};
+const ER_V6: B = {r: 1.0, s: -0.1, j: 0.05, notch: 0.15, t: 0.5, tw: 0.06};
+const PE_V6: B = {r: 0.9, s: -0.15, j: 0.15, pr: -0.05, t: 0.38};
 const Early: React.FC = () => {
   const t = useT();
   const q = 12, pxs = 25 * q, pxmv = 10 * q;
@@ -206,8 +206,8 @@ const Early: React.FC = () => {
     <g opacity={op}>
       <line x1={X(0.3 + 0.9 + 0.12)} x2={X(0.3 + 0.9 + 0.12)} y1={Y(0)} y2={Y(b.j!)} stroke={c} strokeWidth={5} />
       <line x1={X(0.3 + 0.9 + 0.3)} x2={X(0.3 + 0.9 + 0.3)} y1={Y(0)} y2={Y(b.t! + b.j!)} stroke={c} strokeWidth={5} strokeDasharray="8 6" />
-      <line x1={X(0.9)} x2={X(1.75)} y1={Y(0)} y2={Y(0)} stroke="#475569" strokeWidth={2} strokeDasharray="6 6" />
-      <text x={X(1.62)} y={Y(b.t! + b.j!) - 6} fontFamily={FONT} fontSize={26} fontWeight={900} fill={c}>{txt}</text>
+      <line x1={X(1.0)} x2={X(1.65)} y1={Y(0)} y2={Y(0)} stroke="#475569" strokeWidth={2} strokeDasharray="6 6" />
+      <text x={X(1.55)} y={Y(b.t! + b.j!) - 6} fontFamily={FONT} fontSize={26} fontWeight={900} fill={c}>{txt}</text>
     </g>
   );
   void pxs; void pxmv;
@@ -217,8 +217,8 @@ const Early: React.FC = () => {
       <Frame x={60} y={125} a={ap(t, -1)} c={TE}>
         <Strip L={train(ER_V4, 0.9, 0.3)} w={1150} h={340} q={q} base={0.66} t0={0} label="V4" stroke={4}>
           {(X, Y) => <g>
-            <g opacity={ap(t, 0.4)}><path d={`M${X(1.2 + 0.08) + 60},${Y(0.9)} L${X(1.2 + 0.08) + 8},${Y(0.35)}`} stroke={TE} strokeWidth={6} markerEnd="url(#arT)" /><text x={X(1.28) + 66} y={Y(0.95)} fontFamily={HAND} fontSize={34} fill="#0E7490">khấc J</text></g>
-            <g opacity={ap(t, 2)}><text x={X(1.55)} y={Y(0.85)} fontFamily={HAND} fontSize={32} fill="#0E7490">T cao</text><text x={X(0.62)} y={Y(-0.35)} fontFamily={HAND} fontSize={30} fill="#0E7490">ST lõm</text></g>
+            <g opacity={ap(t, 0.4)}><circle cx={X(1.295)} cy={Y(0.3)} r={22} fill="none" stroke={TE} strokeWidth={5} /><path d={`M${X(1.0)},${Y(0.9)} L${X(1.27)},${Y(0.42)}`} stroke={TE} strokeWidth={5} markerEnd="url(#arT)" /><text x={X(1.0) - 8} y={Y(0.95)} textAnchor="end" fontFamily={HAND} fontSize={34} fill="#0E7490">khấc J</text></g>
+            <g opacity={ap(t, 2)}><text x={X(1.6)} y={Y(0.8)} fontFamily={HAND} fontSize={32} fill="#0E7490">T cao</text><text x={X(1.36)} y={Y(-0.3)} fontFamily={HAND} fontSize={30} fill="#0E7490">ST lõm</text></g>
             <defs><marker id="arT" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill={TE} /></marker></defs>
           </g>}
         </Strip>
@@ -228,10 +228,10 @@ const Early: React.FC = () => {
       <Card x={1250} y={380} w={610} a={ap(t, 4)} c={GR} title="Người trẻ · vận động viên">RẤT hay gặp ở tuổi vị thành niên</Card>
       <div style={{position: 'absolute', left: 60, top: 505, fontFamily: FONT, fontSize: 28, fontWeight: 900, color: '#A5F3FC', opacity: ap(t, 6)}}>Đo ở V6: ST ÷ T</div>
       <Frame x={60} y={548} a={ap(t, 6)} c={TE}>
-        <Strip L={train(ER_V6, 0.9, 0.3)} w={560} h={250} q={10} base={0.7} t0={0.6} label="V6" stroke={3.5}>{ratio(ER_V6, '#0E7490', '< 0,25', ap(t, 6.4))}</Strip>
+        <Strip L={train(ER_V6, 0.9, 0.3)} w={560} h={250} q={13} base={0.74} t0={0.95} label="V6" stroke={3.5}>{ratio(ER_V6, '#0E7490', '< 0,25', ap(t, 6.4))}</Strip>
       </Frame>
       <Frame x={650} y={548} a={ap(t, 6)} c={YE}>
-        <Strip L={train(PE_V6, 0.9, 0.3)} w={560} h={250} q={10} base={0.7} t0={0.6} label="V6" stroke={3.5}>{ratio(PE_V6, '#A16207', '≥ 0,25', ap(t, 6.4))}</Strip>
+        <Strip L={train(PE_V6, 0.9, 0.3)} w={560} h={250} q={13} base={0.74} t0={0.95} label="V6" stroke={3.5}>{ratio(PE_V6, '#A16207', '≥ 0,25', ap(t, 6.4))}</Strip>
       </Frame>
       <div style={{position: 'absolute', left: 60, top: 808, width: 560, textAlign: 'center', fontFamily: FONT, fontSize: 26, fontWeight: 900, color: '#67E8F9', opacity: ap(t, 6.6)}}>→ TÁI CỰC SỚM</div>
       <div style={{position: 'absolute', left: 650, top: 808, width: 560, textAlign: 'center', fontFamily: FONT, fontSize: 26, fontWeight: 900, color: '#FDE047', opacity: ap(t, 6.6)}}>→ VIÊM MÀNG NGOÀI TIM</div>
@@ -259,8 +259,8 @@ const Secondary: React.FC = () => {
           <Frame x={60} y={125 + i * 232} a={ap(t, st)} c={c}>
             <Strip L={train(b, 1.0, 0.3)} w={1150} h={210} q={7} base={i === 0 ? 0.3 : 0.45} t0={0} label={lab} stroke={3.2}>
               {(X, Y) => <g opacity={ap(t, st + 0.6)}>
-                <path d={`M${X(1.3 + (i === 0 ? 0.06 : 0.07))},${Y(0) - 6} L${X(1.3 + (i === 0 ? 0.06 : 0.07))},${Y(i === 0 ? -1.6 : -0.9)}`} stroke={RD} strokeWidth={5} markerEnd="url(#arDn)" />
-                <path d={`M${X(1.3 + 0.24)},${Y(0) + 4} L${X(1.3 + 0.24)},${Y(0.5)}`} stroke={GR} strokeWidth={5} markerEnd="url(#arUp)" />
+                <path d={`M${X(2.3 + (i === 0 ? 0.06 : 0.07))},${Y(0) - 6} L${X(2.3 + (i === 0 ? 0.06 : 0.07))},${Y(i === 0 ? -1.6 : -0.9)}`} stroke={RD} strokeWidth={5} markerEnd="url(#arDn)" />
+                <path d={`M${X(2.3 + 0.24)},${Y(0) + 4} L${X(2.3 + 0.24)},${Y(0.5)}`} stroke={GR} strokeWidth={5} markerEnd="url(#arUp)" />
                 <defs><marker id="arDn" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill={RD} /></marker>
                   <marker id="arUp" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill={GR} /></marker></defs>
               </g>}
@@ -275,8 +275,8 @@ const Secondary: React.FC = () => {
 };
 
 // ================= 5 · BRUGADA: 2 TÍP =================
-const BR1: B = {r: 0.25, s: -0.55, cov: 0.42, t: 0, tp: 0.33};
-const BR2: B = {r: 0.25, s: -0.55, sad: 0.32, t: 0, tp: 0.3};
+const BR1: B = {r: 0.25, s: -0.55, cov: 0.5, t: 0, tp: 0.33};
+const BR2: B = {r: 0.25, s: -0.55, sad: 0.38, t: 0, tp: 0.3};
 const BrugadaTypes: React.FC = () => {
   const t = useT();
   return (
@@ -327,7 +327,7 @@ const Unmask: React.FC = () => {
           <path d="M120,150 Q340,110 560,150 L600,760 Q340,800 80,760 Z" fill="#E7D2C0" stroke="#A8876D" strokeWidth={4} />
           <rect x={322} y={150} width={36} height={520} rx={14} fill="#F5E9DC" stroke="#A8876D" strokeWidth={3} />
           {ics.map((k) => <g key={k}><path d={`M140,${yOf(k) + 30} Q340,${yOf(k) - 10} 540,${yOf(k) + 30}`} fill="none" stroke="#C4A68A" strokeWidth={6} />
-            <text x={560} y={yOf(k) + 74} fontFamily={FONT} fontSize={22} fontWeight={800} fill="#7C5E45">{k + 1 < 5 ? `KLS ${k + 1}` : ''}</text></g>)}
+            <text x={612} y={yOf(k) + 40} fontFamily={FONT} fontSize={22} fontWeight={800} fill="#7C5E45">{k + 1 < 5 ? `KLS ${k + 1}` : ''}</text></g>)}
           <circle cx={300} cy={ey} r={22} fill={PU} stroke="#fff" strokeWidth={5} /><circle cx={380} cy={ey} r={22} fill={PU} stroke="#fff" strokeWidth={5} />
           <text x={300} y={ey + 8} textAnchor="middle" fontFamily={FONT} fontSize={16} fontWeight={900} fill="#fff">V1</text>
           <text x={380} y={ey + 8} textAnchor="middle" fontFamily={FONT} fontSize={16} fontWeight={900} fill="#fff">V2</text>
