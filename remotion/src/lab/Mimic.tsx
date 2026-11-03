@@ -289,7 +289,7 @@ const BrugadaTypes: React.FC = () => {
           {(X, Y) => <g opacity={ap(t, 2.5)}>
             <line x1={X(1.3 + 0.09)} x2={X(1.3 + 0.09)} y1={Y(0)} y2={Y(0.42)} stroke={RD} strokeWidth={5} />
             <text x={X(1.3 + 0.09) + 14} y={Y(0.5)} fontFamily={HAND} fontSize={34} fill={RD}>≥ 2 mm</text>
-            <text x={X(1.3 + 0.2)} y={Y(0.05) + 14} fontFamily={HAND} fontSize={32} fill={RD}>đi xuống</text>
+            <text x={X(1.3 + 0.24)} y={Y(0.42)} fontFamily={HAND} fontSize={32} fill={RD}>đi xuống ↘</text>
             <text x={X(1.3 + 0.3)} y={Y(-0.3) + 40} fontFamily={HAND} fontSize={32} fill={RD}>T âm</text>
           </g>}
         </Strip>
@@ -300,7 +300,7 @@ const BrugadaTypes: React.FC = () => {
           {(X, Y) => <g opacity={ap(t, 4.5)}>
             <text x={X(1.3 + 0.06)} y={Y(0.45)} fontFamily={HAND} fontSize={32} fill={OR}>r′</text>
             <text x={X(1.3 + 0.16)} y={Y(0.0) + 40} fontFamily={HAND} fontSize={32} fill={OR}>võng xuống</text>
-            <text x={X(1.3 + 0.27)} y={Y(0.3)} fontFamily={HAND} fontSize={32} fill={OR}>T dương</text>
+            <text x={X(1.3 + 0.3)} y={Y(0.62)} fontFamily={HAND} fontSize={32} fill={OR}>T dương</text>
           </g>}
         </Strip>
       </Frame>
