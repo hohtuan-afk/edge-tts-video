@@ -1,0 +1,83 @@
+{
+ "fps": 30,
+ "total": 1158,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 149,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.263,
+     "text": "Nhát đến SỚM hay nhát đến CỨU? 3 câu hỏi đọc ngoại tâm thu"
+    }
+   ]
+  },
+  {
+   "from": 149,
+   "dur": 175,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 5.14,
+     "text": "① SỚM → ngoại tâm thu · MUỘN → nhịp thoát"
+    }
+   ]
+  },
+  {
+   "from": 324,
+   "dur": 259,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 7.952,
+     "text": "② P′ sớm + QRS HẸP → NHĨ · không P + QRS RỘNG kỳ dị → THẤT"
+    }
+   ]
+  },
+  {
+   "from": 583,
+   "dur": 179,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 5.254,
+     "text": "③ NGHỈ BÙ: đủ 2 × RR → THẤT · thiếu → NHĨ"
+    }
+   ]
+  },
+  {
+   "from": 762,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.562,
+     "text": "④ Nhịp thoát là CỨU — ĐỪNG XOÁ"
+    }
+   ]
+  },
+  {
+   "from": 894,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.502,
+     "text": "SỚM hay MUỘN – HẸP hay RỘNG – NGHỈ BÙ ĐỦ hay THIẾU"
+    }
+   ]
+  },
+  {
+   "from": 1026,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.475,
+     "text": "Lưu lại để ôn · xem bài đầy đủ trên kênh!"
+    }
+   ]
+  }
+ ]
+}
