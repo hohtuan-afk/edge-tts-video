@@ -1,0 +1,162 @@
+# BÀI 11 · NHỮNG KẺ GIẢ DẠNG ST CHÊNH LÊN — CHÊNH KHÔNG PHẢI LÀ TẮC
+# Thần chú: CHÊNH ≠ TẮC · 4 câu kiểm tra: LAN TOẢ? – SOI GƯƠNG? – HÌNH DẠNG? – BỐI CẢNH?
+# Khung 7 trạm: 4 CÂU KIỂM TRA → MÀNG NGOÀI TIM → TÁI CỰC SỚM → THỨ PHÁT → BRUGADA → PHÌNH THẤT · PHỔI → ÔN TẬP
+# Vị trí học: sau bài 6 (khép cụm nhồi máu cơ tim).
+# Nguồn: 2025 ESC Myocarditis & Pericarditis; 2015 ESC Pericardial Diseases (tiêu chuẩn chẩn đoán);
+#        2022 ESC Ventricular Arrhythmias & SCD (Brugada); Bayés de Luna 2012 (đồng thuận 2 típ Brugada);
+#        2026 AHA/ACC Acute Pulmonary Embolism; 2023 ESC ACS; 5th UDMI; Ginzton 1982 (ST/T V6); LITFL.
+NARR = [
+  # 0 · Bìa
+  [("Những kẻ giả dạng ST chênh lên — Chênh không phải là tắc",
+    "Những kẻ giả dạng ST chênh lên: chênh, không phải lúc nào cũng là tắc."),
+   ("Bài 6: KHÔNG CHÊNH vẫn có thể TẮC · Hôm nay: CHÊNH chưa chắc đã TẮC.",
+    "Ở bài sáu, ta thấy không chênh vẫn có thể đang tắc. Hôm nay là chiều ngược lại: chênh chưa chắc đã tắc."),
+   ("Thần chú: CHÊNH ≠ TẮC",
+    "Thần chú: chênh không đồng nghĩa với tắc.")],
+  # 1 · 4 câu kiểm tra
+  [("Trạm 1 · 4 CÂU KIỂM TRA trước khi gọi là tắc.",
+    "Trạm một, bốn câu kiểm tra trước khi gọi là tắc mạch vành."),
+   ("① LAN TOẢ? Theo 1 vùng mạch vành, hay chênh khắp nơi?",
+    "Một, lan toả? ST chênh theo một vùng mạch vành, hay chênh ở khắp nơi?"),
+   ("② SOI GƯƠNG? Có ST chênh xuống đối diện → nghĩ TẮC thật.",
+    "Hai, soi gương? Nếu có ST chênh xuống ở vùng đối diện, hãy nghĩ đến tắc thật."),
+   ("③ HÌNH DẠNG? Lõm hay lồi · có Q không · T ra sao.",
+    "Ba, hình dạng? ST lõm hay lồi, có sóng Q không, và sóng T ra sao."),
+   ("④ BỐI CẢNH? Tuổi, triệu chứng, sốt · và ECG CŨ.",
+    "Bốn, bối cảnh? Tuổi, triệu chứng, có sốt không, và luôn so với điện tâm đồ cũ."),
+   ("Còn nghi ngờ → coi như TẮC · làm lại ECG sau 15 – 30 phút, men tim, siêu âm tim.",
+    "Còn nghi ngờ thì coi như tắc. Làm lại điện tâm đồ sau mười lăm đến ba mươi phút, xét nghiệm men tim, và siêu âm tim.")],
+  # 2 · Viêm màng ngoài tim
+  [("Trạm 2 · VIÊM MÀNG NGOÀI TIM: ST chênh LÕM, LAN TOẢ nhiều chuyển đạo.",
+    "Trạm hai, viêm màng ngoài tim. ST chênh lõm, lan toả ở nhiều chuyển đạo, không theo một vùng mạch vành nào."),
+   ("PR chênh XUỐNG (rõ ở II) · aVR ngược lại: ST chênh xuống, PR chênh lên.",
+    "Đoạn PR chênh xuống, rõ nhất ở chuyển đạo hai. Riêng a-vê-rờ thì ngược lại: ST chênh xuống, PR chênh lên."),
+   ("KHÔNG soi gương (trừ aVR, V1) · KHÔNG có sóng Q.",
+    "Không có soi gương, trừ a-vê-rờ và vê một. Và không có sóng Q."),
+   ("Chẩn đoán: ≥ 2 trong 4 · đau ngực kiểu màng ngoài tim · tiếng cọ · ECG điển hình · tràn dịch.",
+    "Chẩn đoán cần ít nhất hai trong bốn tiêu chuẩn: đau ngực kiểu màng ngoài tim, tiếng cọ màng ngoài tim, điện tâm đồ điển hình, và tràn dịch màng ngoài tim.")],
+  # 3 · Tái cực sớm
+  [("Trạm 3 · TÁI CỰC SỚM: điểm J chênh, có KHẤC hoặc TRÁT cuối QRS.",
+    "Trạm ba, tái cực sớm. Điểm J chênh lên, có khấc hoặc trát ở cuối QRS."),
+   ("ST lõm, T cao, hay ở V2 – V5 · ổn định theo thời gian.",
+    "ST lõm, sóng T cao, hay gặp ở vê hai đến vê năm, và ổn định theo thời gian."),
+   ("Người trẻ, vận động viên · RẤT hay gặp ở tuổi vị thành niên.",
+    "Thường gặp ở người trẻ, vận động viên, và rất hay gặp ở tuổi vị thành niên."),
+   ("Tách với viêm màng ngoài tim: V6 · ST / T ≥ 0,25 → nghiêng VIÊM MÀNG NGOÀI TIM.",
+    "Để tách với viêm màng ngoài tim, đo ở vê sáu: nếu biên độ ST chia cho biên độ T từ không phẩy hai lăm trở lên, nghiêng về viêm màng ngoài tim."),
+   ("Cẩn thận: tắc động mạch liên thất trước sớm cũng có T cao, ST lõm → so ECG cũ, làm lại.",
+    "Cẩn thận: tắc động mạch liên thất trước giai đoạn sớm cũng có sóng T cao và ST lõm. Hãy so điện tâm đồ cũ và làm lại.")],
+  # 4 · Thứ phát
+  [("Trạm 4 · ST chênh THỨ PHÁT: do QRS bất thường kéo theo.",
+    "Trạm bốn, ST chênh thứ phát, do QRS bất thường kéo theo."),
+   ("DÀY THẤT TRÁI: S sâu ở V1 – V3 → ST chênh lên ở V1 – V3.",
+    "Dày thất trái: sóng S rất sâu ở vê một đến vê ba, kéo theo ST chênh lên ở các chuyển đạo này."),
+   ("BLOCK NHÁNH TRÁI · nhịp máy tạo nhịp thất: ST ngược chiều QRS.",
+    "Block nhánh trái, và nhịp máy tạo nhịp thất, cũng làm ST đi ngược chiều QRS."),
+   ("Nhớ bài 6: NGƯỢC chiều là bình thường · CÙNG chiều là bệnh.",
+    "Nhớ lại bài sáu: ST ngược chiều QRS là bình thường, cùng chiều là bệnh.")],
+  # 5 · Brugada: 2 típ
+  [("Trạm 5 · BRUGADA: ST chênh ở V1 – V2, nguy cơ rung thất, đột tử.",
+    "Trạm năm, hội chứng Bru-ga-đa. ST chênh ở vê một và vê hai, kèm nguy cơ rung thất và đột tử."),
+   ("TÍP 1 · “VÒM”: ST chênh ≥ 2 mm, đi xuống dần, T ÂM.",
+    "Típ một, dạng vòm: ST chênh từ hai mi li mét trở lên, đi xuống dần, và sóng T âm."),
+   ("TÍP 2 · “YÊN NGỰA”: ST võng xuống rồi đi lên, T DƯƠNG ở V2.",
+    "Típ hai, dạng yên ngựa: ST võng xuống rồi đi lên, sóng T dương ở vê hai."),
+   ("Chỉ TÍP 1 mới CHẨN ĐOÁN · típ 2 chỉ GỢI Ý.",
+    "Chỉ típ một mới đủ để chẩn đoán. Típ hai chỉ là gợi ý."),
+   ("Cách chia cũ có 3 típ — típ 3 đã gộp vào típ 2 (đồng thuận 2012).",
+    "Cách chia cũ có ba típ. Típ ba nay đã được gộp vào típ hai, theo đồng thuận năm hai nghìn không trăm mười hai.")],
+  # 6 · Brugada: làm lộ & sốt
+  [("Gặp típ 2: đặt V1 – V2 CAO lên khoang liên sườn 2 – 3.",
+    "Gặp típ hai, hãy đặt lại điện cực vê một và vê hai cao lên khoang liên sườn hai hoặc ba."),
+   ("Hoặc test thuốc chẹn kênh natri tại chuyên khoa → xem có lộ típ 1.",
+    "Hoặc làm test thuốc chẹn kênh na-tri tại chuyên khoa, để xem có lộ ra típ một không."),
+   ("SỐT có thể làm LỘ típ 1 → hạ sốt TÍCH CỰC, nhất là ở trẻ em.",
+    "Sốt có thể làm lộ ra típ một. Khi đó cần hạ sốt tích cực, nhất là ở trẻ em."),
+   ("Tránh thuốc làm nặng Brugada · chuyển chuyên khoa nhịp tim.",
+    "Tránh các thuốc làm nặng Bru-ga-đa, và chuyển chuyên khoa nhịp tim.")],
+  # 7 · Phình thất & thuyên tắc phổi
+  [("Trạm 6 · PHÌNH THẤT: sau nhồi máu thành trước rộng.",
+    "Trạm sáu, phình thất, gặp sau nhồi máu thành trước diện rộng."),
+   ("Q sâu + ST chênh KÉO DÀI nhiều tuần · T nhỏ · so ECG cũ.",
+    "Có sóng Q sâu, ST chênh kéo dài nhiều tuần, sóng T nhỏ. Hãy so với điện tâm đồ cũ."),
+   ("THUYÊN TẮC PHỔI: hay gặp nhất là NHỊP NHANH XOANG.",
+    "Thuyên tắc phổi: dấu hiệu hay gặp nhất là nhịp nhanh xoang."),
+   ("Gánh thất phải: T âm V1 – V4 · block nhánh phải mới · có thể ST chênh V1, aVR.",
+    "Dấu hiệu gánh thất phải gồm sóng T âm từ vê một đến vê bốn, block nhánh phải mới xuất hiện, và có thể có ST chênh ở vê một hoặc a-vê-rờ."),
+   ("S1Q3T3: ÍT nhạy, ít đặc hiệu → KHÔNG dùng để loại trừ · chẩn đoán bằng CT mạch phổi.",
+    "Dấu hiệu S một Q ba T ba ít nhạy và ít đặc hiệu, không dùng để loại trừ. Chẩn đoán thuyên tắc phổi bằng chụp cắt lớp mạch phổi.")],
+  # 8 · Kẻ giả dạng khác
+  [("2 kẻ giả dạng khác · nhắc nhanh.",
+    "Hai kẻ giả dạng khác, nhắc nhanh."),
+   ("TĂNG KALI: T cao nhọn, QRS rộng → có thể giả ST chênh (bài sau).",
+    "Tăng kali: sóng T cao nhọn, QRS rộng, có thể giả ST chênh lên. Ta sẽ học kỹ ở bài điện giải."),
+   ("TAKOTSUBO: ST chênh giống hệt nhồi máu thành trước, sau stress → cần CHỤP MẠCH VÀNH.",
+    "Bệnh cơ tim do stress ta-cô-sư-bô: ST chênh giống hệt nhồi máu thành trước, thường sau một biến cố căng thẳng. Điện tâm đồ không phân biệt được, cần chụp mạch vành.")],
+  # 9 · Ôn tập
+  [("Ôn tập · ai là ai?",
+    "Ôn tập: ai là ai?"),
+   ("LÕM + LAN TOẢ + PR chênh xuống → VIÊM MÀNG NGOÀI TIM",
+    "ST lõm, lan toả, PR chênh xuống: viêm màng ngoài tim."),
+   ("Khấc J + người trẻ + ổn định → TÁI CỰC SỚM",
+    "Khấc J, người trẻ, ổn định theo thời gian: tái cực sớm."),
+   ("ST ngược chiều QRS rộng / S sâu → THỨ PHÁT",
+    "ST ngược chiều QRS rộng hoặc sóng S sâu: thứ phát."),
+   ("V1 – V2 vòm + T âm → BRUGADA típ 1",
+    "Vê một, vê hai dạng vòm kèm T âm: Bru-ga-đa típ một."),
+   ("Theo vùng + SOI GƯƠNG → TẮC THẬT",
+    "Theo một vùng mạch vành kèm soi gương: tắc thật.")],
+  # 10 · Luyện đọc
+  [("Luyện đọc · 3 ca",
+    "Luyện đọc ba ca."),
+   ("Ca 1: nam 17 tuổi, khám sức khoẻ · ST lõm V2 – V5, khấc J · ECG cũ giống hệt.",
+    "Ca một: nam mười bảy tuổi, khám sức khoẻ. ST lõm ở vê hai đến vê năm, có khấc J, điện tâm đồ cũ giống hệt."),
+   ("→ TÁI CỰC SỚM ✓",
+    "Kết luận: tái cực sớm."),
+   ("Ca 2: sau cảm, đau ngực khi nằm · ST lõm lan toả, PR chênh xuống, aVR ngược lại.",
+    "Ca hai: sau một đợt cảm, đau ngực tăng khi nằm. ST lõm lan toả, PR chênh xuống, a-vê-rờ ngược lại."),
+   ("→ VIÊM MÀNG NGOÀI TIM ✓",
+    "Kết luận: viêm màng ngoài tim."),
+   ("Ca 3: trẻ sốt 39,5 °C · V1 – V2: ST vòm ≥ 2 mm, T âm.",
+    "Ca ba: trẻ sốt ba mươi chín độ rưỡi. Vê một, vê hai có ST dạng vòm trên hai mi li mét, sóng T âm."),
+   ("→ BRUGADA TÍP 1 lộ do sốt → hạ sốt, chuyển chuyên khoa ✓",
+    "Kết luận: Bru-ga-đa típ một lộ ra do sốt. Hạ sốt tích cực và chuyển chuyên khoa.")],
+  # 11 · 5 điều cần nhớ
+  [("5 điều cần nhớ",
+    "Năm điều cần nhớ."),
+   ("① CHÊNH ≠ TẮC · hỏi: LAN TOẢ? SOI GƯƠNG? HÌNH DẠNG? BỐI CẢNH?",
+    "Một, chênh không đồng nghĩa với tắc. Hỏi bốn câu: lan toả, soi gương, hình dạng, bối cảnh."),
+   ("② Viêm màng ngoài tim: lõm, lan toả, PR chênh xuống",
+    "Hai, viêm màng ngoài tim: ST lõm, lan toả, PR chênh xuống."),
+   ("③ Tái cực sớm: khấc J, người trẻ, ổn định",
+    "Ba, tái cực sớm: khấc J, người trẻ, ổn định theo thời gian."),
+   ("④ Brugada: chỉ TÍP 1 chẩn đoán · sốt làm lộ · đặt V1 – V2 cao",
+    "Bốn, Bru-ga-đa: chỉ típ một mới chẩn đoán. Sốt có thể làm lộ ra. Nhớ đặt vê một, vê hai cao."),
+   ("⑤ Còn nghi ngờ → coi như TẮC, làm lại ECG",
+    "Năm, còn nghi ngờ thì coi như tắc, và làm lại điện tâm đồ."),
+   ("Cảm ơn bạn đã theo dõi!",
+    "Cảm ơn bạn đã theo dõi.")],
+]
+STATION = [0, 1, 2, 3, 4, 5, 5, 6, 6, 7, 7, 7]
+assert len(STATION) == len(NARR)
+KEYS = [[2 * j for j in range(len(sc))] for sc in NARR]
+STEP = 3.0
+SCENE_DUR = [STEP * len(sc) + 3 for sc in NARR]
+
+TITLES = ["Bìa", "4 câu kiểm tra", "Viêm màng ngoài tim", "Tái cực sớm", "ST chênh thứ phát", "Brugada: típ 1 và típ 2",
+          "Brugada: làm lộ và sốt", "Phình thất · thuyên tắc phổi", "Tăng kali · Takotsubo", "Ôn tập", "Luyện đọc", "5 điều cần nhớ"]
+VIS = [
+  "Bìa: ECG 12 chuyển đạo có ST chênh; kính lúp soi; chip ‘CHÊNH ≠ TẮC’; dòng nối ‘Bài 6: KHÔNG CHÊNH ≠ KHÔNG TẮC’.",
+  "4 thẻ câu hỏi lật dần (LAN TOẢ · SOI GƯƠNG · HÌNH DẠNG · BỐI CẢNH), cạnh là sơ đồ 12 chuyển đạo: một bên ST chênh theo vùng có soi gương (đỏ), một bên chênh lan toả (vàng); thẻ đỏ ‘còn nghi ngờ → coi như TẮC’.",
+  "Lưới 12 chuyển đạo: ST lõm lan toả tô vàng, PR chênh xuống khoanh ở II, aVR khoanh tím (ngược chiều); tim minh hoạ có màng ngoài tim đỏ viêm; bảng 2/4 tiêu chuẩn.",
+  "Phóng to V4: khấc J (mũi tên), ST lõm, T cao; thước đo ST/T ở V6 với 2 ví dụ (0,15 → tái cực sớm · 0,3 → viêm màng ngoài tim); thẻ cảnh báo tắc động mạch liên thất trước sớm.",
+  "3 dải: dày thất trái (S sâu V2 + ST chênh), block nhánh trái (V1), máy tạo nhịp (gai + QRS rộng); mũi tên ngược chiều QRS – ST; chip ‘NGƯỢC = bình thường · CÙNG = bệnh’.",
+  "V1 – V2 đặt cạnh nhau: típ 1 vòm (đỏ) và típ 2 yên ngựa (cam); thẻ ‘chỉ típ 1 chẩn đoán’; dòng chú thích 3 típ cũ → 2 típ.",
+  "Hình ngực với vị trí điện cực V1 – V2 dời lên khoang liên sườn 2 – 3 (mũi tên); nhiệt kế 39,5 °C làm dải V1 chuyển từ típ 2 sang típ 1; thẻ hạ sốt, tránh thuốc.",
+  "Trái: dải V2 phình thất (Q sâu + ST chênh + T nhỏ), lịch ‘nhiều tuần’; phải: dải thuyên tắc phổi (nhịp nhanh, T âm V1 – V4), ô S1Q3T3 có dấu ‘ít nhạy’.",
+  "2 thẻ: tăng kali (T nhọn, QRS rộng) và Takotsubo (hình thất trái phình mỏm kiểu ‘bình bẫy bạch tuộc’ vẽ đơn giản) + dấu ‘cần chụp mạch vành’.",
+  "Bảng ôn 5 dòng tô màu theo trạm, mỗi dòng có mini-ECG.",
+  "3 ca lần lượt: câu hỏi + dải ECG, đáp án bật sau với dấu ✓.",
+  "5 thẻ ghi nhớ; thẻ 1 viền đỏ ‘CHÊNH ≠ TẮC’.",
+]
+assert len(VIS) == len(NARR) == len(TITLES)
