@@ -1,387 +1,81 @@
 {
  "fps": 30,
- "total": 10115,
+ "total": 1158,
  "scenes": [
   {
    "from": 0,
-   "dur": 473,
+   "dur": 149,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 3.52,
-     "text": "Ngoại tâm thu & nhịp thoát — Nhát đến sớm, nhát đến cứu"
-    },
-    {
-     "start": 4.37,
-     "dur": 5.637,
-     "text": "Bài 3: nhát bóp bị RƠI · Hôm nay: nhát đến SỚM và nhát đến CỨU."
-    },
-    {
-     "start": 10.357,
-     "dur": 4.412,
-     "text": "Thần chú: SỚM hay MUỘN – HẸP hay RỘNG – NGHỈ BÙ ĐỦ hay THIẾU"
+     "start": 0.25,
+     "dur": 4.263,
+     "text": "Nhát đến SỚM hay nhát đến CỨU? 3 câu hỏi đọc ngoại tâm thu"
     }
    ]
   },
   {
-   "from": 473,
-   "dur": 635,
+   "from": 149,
+   "dur": 175,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 5.115,
-     "text": "Trạm 1 · SỚM hay MUỘN — so với khoảng RR cơ bản."
-    },
-    {
-     "start": 5.965,
-     "dur": 3.861,
-     "text": "Đến SỚM hơn dự kiến → NGOẠI TÂM THU: một ổ khác “chen ngang”."
-    },
-    {
-     "start": 10.176,
-     "dur": 4.457,
-     "text": "Đến MUỘN, sau một khoảng nghỉ dài → NHỊP THOÁT: ổ dưới “ra cứu”."
-    },
-    {
-     "start": 14.984,
-     "dur": 5.194,
-     "text": "Dùng compa hoặc thước: đặt RR cơ bản, dời sang nhát kế tiếp."
-    }
-   ]
-  },
-  {
-   "from": 1108,
-   "dur": 594,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 3.905,
-     "text": "Trạm 2 · HẸP hay RỘNG — ngoại tâm thu NHĨ."
-    },
-    {
-     "start": 4.755,
-     "dur": 3.305,
-     "text": "P′ đến sớm, hình dạng KHÁC sóng P xoang."
-    },
-    {
-     "start": 8.41,
-     "dur": 5.522,
-     "text": "QRS thường HẸP, giống QRS nền — vì vẫn đi đường dẫn truyền bình thường."
-    },
-    {
-     "start": 14.283,
-     "dur": 4.532,
-     "text": "P′ càng sớm càng dễ lẫn vào sóng T trước → T “có bướu”."
-    }
-   ]
-  },
-  {
-   "from": 1702,
-   "dur": 511,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 2.837,
-     "text": "Ngoại tâm thu BỘ NỐI: QRS hẹp, đến sớm."
-    },
-    {
-     "start": 3.687,
-     "dur": 8.481,
-     "text": "P âm ở II, III, aVF — ngay trước (PR < 0,12 s), lẫn trong, hoặc ngay sau QRS."
-    },
-    {
-     "start": 12.518,
-     "dur": 3.537,
-     "text": "Lý do: xung đi NGƯỢC lên nhĩ, đồng thời đi XUÔI xuống thất."
-    }
-   ]
-  },
-  {
-   "from": 2213,
-   "dur": 995,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 7.606,
-     "text": "BẪY 1 · Ngoại tâm thu nhĩ BỊ BLOCK: P′ rất sớm, KHÔNG có QRS theo sau."
-    },
-    {
-     "start": 8.456,
-     "dur": 6.798,
-     "text": "Trông như ngưng xoang hay block nhĩ thất độ II — nhưng P′ nằm trong T trước khoảng nghỉ."
-    },
-    {
-     "start": 15.604,
-     "dur": 2.366,
-     "text": "Là nguyên nhân hay gặp nhất của một khoảng nghỉ bất ngờ."
-    },
-    {
-     "start": 18.319,
-     "dur": 8.347,
-     "text": "BẪY 2 · DẪN TRUYỀN LỆCH HƯỚNG: ngoại tâm thu nhĩ nhưng QRS RỘNG (hay dạng block nhánh phải)."
-    },
-    {
-     "start": 27.017,
-     "dur": 5.142,
-     "text": "Manh mối: có P′ sớm đi trước QRS rộng → vẫn là ngoại tâm thu NHĨ."
-    }
-   ]
-  },
-  {
-   "from": 3208,
-   "dur": 532,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 6.019,
-     "text": "Trạm 3 · Ngoại tâm thu THẤT: QRS RỘNG ≥ 0,12 s, dạng “kỳ dị”."
-    },
-    {
-     "start": 6.869,
-     "dur": 1.276,
-     "text": "KHÔNG có P′ đi trước."
-    },
-    {
-     "start": 8.495,
-     "dur": 2.327,
-     "text": "ST – T NGƯỢC chiều với QRS."
-    },
-    {
-     "start": 11.172,
-     "dur": 5.588,
-     "text": "Vì xung xuất phát trong thất, lan chậm qua cơ tim — không đi đường dẫn truyền nhanh."
-    }
-   ]
-  },
-  {
-   "from": 3740,
-   "dur": 1054,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 6.163,
-     "text": "Trạm 4 · NGHỈ BÙ ĐỦ hay THIẾU — đo từ R trước đến R sau nhát sớm."
-    },
-    {
-     "start": 7.013,
-     "dur": 8.526,
-     "text": "ĐỦ (hoàn toàn): = 2 × RR → nút xoang KHÔNG bị chạm → hay gặp ở ngoại tâm thu THẤT."
-    },
-    {
-     "start": 15.889,
-     "dur": 7.855,
-     "text": "THIẾU (không hoàn toàn): < 2 × RR → nút xoang bị “cài lại” → hay gặp ở ngoại tâm thu NHĨ."
-    },
-    {
-     "start": 24.093,
-     "dur": 4.398,
-     "text": "Ngoại tâm thu thất XEN KẼ: chen giữa 2 nhát thường, KHÔNG có nghỉ bù."
-    },
-    {
-     "start": 28.841,
-     "dur": 5.284,
-     "text": "Đây là gợi ý, không tuyệt đối — hình dạng QRS và P′ vẫn quyết định."
-    }
-   ]
-  },
-  {
-   "from": 4794,
-   "dur": 1391,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 3.624,
-     "text": "Trạm 5 · KIỂU GHÉP — đếm nhát sớm."
-    },
-    {
-     "start": 4.474,
-     "dur": 6.536,
-     "text": "Nhịp ĐÔI: 1 nhát thường – 1 nhát sớm · Nhịp BA: 2 nhát thường – 1 nhát sớm."
-    },
-    {
-     "start": 11.36,
-     "dur": 8.567,
-     "text": "CẶP ĐÔI: 2 nhát sớm liền nhau · ≥ 3 nhát thất liền, > 100/phút, < 30 s → nhịp nhanh thất KHÔNG BỀN BỈ."
-    },
-    {
-     "start": 20.277,
-     "dur": 6.547,
-     "text": "ĐƠN DẠNG: cùng một hình · ĐA DẠNG: nhiều hình → nhiều ổ, bệnh nặng hơn."
-    },
-    {
-     "start": 27.174,
-     "dur": 8.962,
-     "text": "R TRÊN T: nhát thất rơi trúng sóng T → có thể khởi phát nhịp nhanh thất đa hình, rung thất."
-    },
-    {
-     "start": 36.486,
-     "dur": 8.881,
-     "text": "Ngoại tâm thu thất NHIỀU (> ~10% số nhát / 24 giờ) có thể gây bệnh cơ tim → cần Holter."
-    }
-   ]
-  },
-  {
-   "from": 6185,
-   "dur": 680,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 4.934,
-     "text": "Trạm 6 · NHỊP THOÁT — ổ dưới ra cứu khi ổ trên im lặng."
-    },
-    {
-     "start": 5.784,
-     "dur": 4.363,
-     "text": "Thoát BỘ NỐI: QRS HẸP, 40 – 60/phút (người lớn)."
-    },
-    {
-     "start": 10.497,
-     "dur": 4.076,
-     "text": "Thoát THẤT: QRS RỘNG, 20 – 40/phút (người lớn)."
-    },
-    {
-     "start": 14.923,
-     "dur": 6.766,
-     "text": "Nhịp thoát là CỨU — ĐỪNG XOÁ bằng thuốc chống loạn nhịp → xử trí NHỊP CHẬM bên dưới."
-    }
-   ]
-  },
-  {
-   "from": 6865,
-   "dur": 874,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 6.205,
-     "text": "Khi nút xoang NGHỈ: ngưng xoang — mất P và QRS, khoảng nghỉ KHÔNG là bội số PP."
-    },
-    {
-     "start": 7.055,
-     "dur": 2.715,
-     "text": "Ngưng > 3 giây khi thức: đáng chú ý."
-    },
-    {
-     "start": 10.119,
-     "dur": 6.847,
-     "text": "Suy nút xoang: nhịp chậm xoang · ngưng xoang · hội chứng nhịp nhanh – nhịp chậm."
-    },
-    {
-     "start": 17.316,
-     "dur": 5.235,
-     "text": "NHỊP TỰ THẤT GIA TỐC: QRS rộng, đều, ~50 – 110/phút."
-    },
-    {
-     "start": 22.902,
-     "dur": 5.236,
-     "text": "Hay gặp sau tái tưới máu, ngộ độc digoxin · thường lành tính, tự hết."
-    }
-   ]
-  },
-  {
-   "from": 7739,
-   "dur": 573,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 1.323,
-     "text": "Ôn tập · 3 câu hỏi"
-    },
-    {
-     "start": 2.173,
-     "dur": 4.875,
-     "text": "SỚM + P′ khác + QRS hẹp + nghỉ bù thiếu → ngoại tâm thu NHĨ"
-    },
-    {
-     "start": 7.398,
-     "dur": 5.172,
-     "text": "SỚM + không P + QRS rộng kỳ dị + nghỉ bù đủ → ngoại tâm thu THẤT"
-    },
-    {
-     "start": 12.92,
-     "dur": 5.203,
-     "text": "MUỘN sau khoảng nghỉ: hẹp → thoát BỘ NỐI · rộng → thoát THẤT"
-    }
-   ]
-  },
-  {
-   "from": 8312,
-   "dur": 946,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 1.82,
-     "text": "Luyện đọc · 3 dải nhịp DII"
-    },
-    {
-     "start": 2.67,
-     "dur": 5.311,
-     "text": "Dải 1: cứ 1 nhát thường lại 1 nhát rộng, sớm, không P, T ngược chiều."
-    },
-    {
-     "start": 8.331,
-     "dur": 1.95,
-     "text": "→ Ngoại tâm thu thất nhịp ĐÔI ✓"
-    },
-    {
-     "start": 10.631,
-     "dur": 6.129,
-     "text": "Dải 2: nhịp xoang đều, bỗng một khoảng nghỉ · sóng T trước khoảng nghỉ nhọn hơn các T khác."
-    },
-    {
-     "start": 17.11,
-     "dur": 3.347,
-     "text": "→ Ngoại tâm thu nhĩ BỊ BLOCK — không phải block nhĩ thất ✓"
-    },
-    {
-     "start": 20.807,
-     "dur": 4.909,
-     "text": "Dải 3: block nhĩ thất hoàn toàn · QRS hẹp, đều, 45/phút."
-    },
-    {
-     "start": 26.066,
-     "dur": 4.446,
-     "text": "→ Nhịp thoát BỘ NỐI — đừng xoá, xử trí block ✓"
-    }
-   ]
-  },
-  {
-   "from": 9258,
-   "dur": 857,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 0.965,
-     "text": "5 điều cần nhớ"
-    },
-    {
-     "start": 1.815,
-     "dur": 3.138,
+     "start": 0.25,
+     "dur": 5.14,
      "text": "① SỚM → ngoại tâm thu · MUỘN → nhịp thoát"
-    },
+    }
+   ]
+  },
+  {
+   "from": 324,
+   "dur": 259,
+   "sents": [
     {
-     "start": 5.303,
-     "dur": 7.464,
-     "text": "② P′ sớm + QRS hẹp → NHĨ · không P + QRS rộng kỳ dị → THẤT"
-    },
+     "start": 0.25,
+     "dur": 7.952,
+     "text": "② P′ sớm + QRS HẸP → NHĨ · không P + QRS RỘNG kỳ dị → THẤT"
+    }
+   ]
+  },
+  {
+   "from": 583,
+   "dur": 179,
+   "sents": [
     {
-     "start": 13.117,
-     "dur": 3.871,
-     "text": "③ Khoảng nghỉ bất ngờ → soi sóng T tìm P′ bị block"
-    },
+     "start": 0.25,
+     "dur": 5.254,
+     "text": "③ NGHỈ BÙ: đủ 2 × RR → THẤT · thiếu → NHĨ"
+    }
+   ]
+  },
+  {
+   "from": 762,
+   "dur": 132,
+   "sents": [
     {
-     "start": 17.338,
-     "dur": 5.682,
-     "text": "④ Cặp đôi · đa dạng · R trên T · ≥ 3 nhát liền → báo động"
-    },
+     "start": 0.25,
+     "dur": 3.562,
+     "text": "④ Nhịp thoát là CỨU — ĐỪNG XOÁ"
+    }
+   ]
+  },
+  {
+   "from": 894,
+   "dur": 132,
+   "sents": [
     {
-     "start": 23.37,
-     "dur": 2.641,
-     "text": "⑤ Nhịp thoát là CỨU — đừng xoá"
-    },
+     "start": 0.25,
+     "dur": 3.502,
+     "text": "SỚM hay MUỘN – HẸP hay RỘNG – NGHỈ BÙ ĐỦ hay THIẾU"
+    }
+   ]
+  },
+  {
+   "from": 1026,
+   "dur": 132,
+   "sents": [
     {
-     "start": 26.362,
-     "dur": 1.187,
-     "text": "Cảm ơn bạn đã theo dõi!"
+     "start": 0.25,
+     "dur": 2.475,
+     "text": "Lưu lại để ôn · xem bài đầy đủ trên kênh!"
     }
    ]
   }
