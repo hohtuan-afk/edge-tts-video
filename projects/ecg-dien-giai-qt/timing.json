@@ -1,0 +1,364 @@
+[
+ {
+  "orig": 12.0,
+  "dur": 15.48,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.439,
+    "text": "Điện giải & QT — Kali, Canxi, QT dài, xoắn đỉnh"
+   },
+   {
+    "start": 5.289,
+    "dur": 5.302,
+    "text": "Bài 11: tăng kali có thể giả ST chênh · Hôm nay học kỹ."
+   },
+   {
+    "start": 10.941,
+    "dur": 3.541,
+    "text": "Thần chú: NHÌN T – TÌM U – ĐO QT"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 16.2,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.6,
+    "text": "Trạm 1 · NHÌN T — điện giải đổi TÁI CỰC trước tiên."
+   },
+   {
+    "start": 5.45,
+    "dur": 3.892,
+    "text": "T CAO, NHỌN, hẹp đáy, cân đối → nghĩ TĂNG KALI."
+   },
+   {
+    "start": 9.691,
+    "dur": 2.286,
+    "text": "T DẸT, thấp → nghĩ HẠ KALI."
+   },
+   {
+    "start": 12.327,
+    "dur": 2.88,
+    "text": "So sánh với ECG cũ · theo dõi nối tiếp."
+   }
+  ]
+ },
+ {
+  "orig": 21.0,
+  "dur": 22.28,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.657,
+    "text": "Trạm 2 · TĂNG KALI: tiến triển trên cùng một dải."
+   },
+   {
+    "start": 5.507,
+    "dur": 2.248,
+    "text": "① T cao nhọn, hẹp đáy."
+   },
+   {
+    "start": 8.105,
+    "dur": 3.893,
+    "text": "② P dẹt dần, PR dài ra · P có thể mất."
+   },
+   {
+    "start": 12.348,
+    "dur": 3.18,
+    "text": "③ QRS giãn rộng · nhịp chậm, block."
+   },
+   {
+    "start": 15.878,
+    "dur": 3.219,
+    "text": "④ QRS hoà vào T → HÌNH SIN."
+   },
+   {
+    "start": 19.447,
+    "dur": 1.835,
+    "text": "⑤ Rung thất hoặc vô tâm thu."
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 22.0,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.046,
+    "text": "Thứ tự trên chỉ GẦN ĐÚNG — không phải lúc nào cũng đi đủ từng bậc."
+   },
+   {
+    "start": 4.896,
+    "dur": 8.934,
+    "text": "AHA 2025: dấu hiệu ECG có độ nhạy, độ đặc hiệu THẤP → ECG bình thường KHÔNG loại trừ."
+   },
+   {
+    "start": 14.18,
+    "dur": 6.835,
+    "text": "Kẻ giả dạng: ST chênh · block nhánh · nhịp chậm · QRS rộng như nhịp nhanh thất."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 21.28,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.5,
+    "text": "Trạm 3 · TÌM U — HẠ KALI."
+   },
+   {
+    "start": 3.35,
+    "dur": 5.05,
+    "text": "T dẹt hoặc đảo · sóng U nổi rõ sau T (rõ ở V2 – V3)."
+   },
+   {
+    "start": 8.751,
+    "dur": 1.397,
+    "text": "ST chênh xuống nhẹ."
+   },
+   {
+    "start": 10.498,
+    "dur": 4.0,
+    "text": "T và U nhập nhau → trông như QT dài (thực ra là QU)."
+   },
+   {
+    "start": 14.847,
+    "dur": 5.42,
+    "text": "HẠ MAGIE: hình ảnh giống hệt, hay đi kèm hạ kali · cả hai dễ gây XOẮN ĐỈNH."
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 17.76,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.862,
+    "text": "Trạm 4 · CANXI đổi đoạn ST."
+   },
+   {
+    "start": 4.712,
+    "dur": 3.205,
+    "text": "TĂNG canxi: ST NGẮN → QT ngắn."
+   },
+   {
+    "start": 8.267,
+    "dur": 4.729,
+    "text": "HẠ canxi: ST KÉO DÀI → QT dài · sóng T vẫn bình thường."
+   },
+   {
+    "start": 13.346,
+    "dur": 3.407,
+    "text": "Mẹo: KALI đổi sóng T · CANXI đổi đoạn ST."
+   }
+  ]
+ },
+ {
+  "orig": 21.0,
+  "dur": 43.28,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.994,
+    "text": "Trạm 5 · ĐO QT: từ ĐẦU QRS đến CUỐI T · đo ở II hoặc V5."
+   },
+   {
+    "start": 5.844,
+    "dur": 6.064,
+    "text": "Cuối T: kẻ tiếp tuyến ở sườn xuống dốc nhất, cắt đường đẳng điện · không tính sóng U."
+   },
+   {
+    "start": 12.258,
+    "dur": 8.088,
+    "text": "Tim nhanh → QT ngắn lại → hiệu chỉnh: QTc = QT ÷ √RR (Bazett)."
+   },
+   {
+    "start": 20.697,
+    "dur": 7.222,
+    "text": "Tim nhanh: Bazett ước quá cao → dùng Fridericia (÷ căn bậc ba RR)."
+   },
+   {
+    "start": 28.269,
+    "dur": 5.576,
+    "text": "Mẹo nhanh: QT > ½ RR → nghi QT dài (khi tần số bình thường)."
+   },
+   {
+    "start": 34.195,
+    "dur": 8.079,
+    "text": "QTc dài: ≥ 450 ms (nam) · ≥ 460 ms (nữ) · > 500 ms → NGUY CƠ CAO."
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 28.04,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.637,
+    "text": "QT dài MẮC PHẢI: thuốc + hạ kali, hạ magie, nhịp chậm."
+   },
+   {
+    "start": 5.487,
+    "dur": 6.259,
+    "text": "Thuốc hay gặp: macrolid, quinolon · chống loạn thần · ondansetron · amiodaron."
+   },
+   {
+    "start": 12.096,
+    "dur": 3.859,
+    "text": "QTc tăng > 60 ms so với trước dùng thuốc → cũng nguy cơ cao."
+   },
+   {
+    "start": 16.304,
+    "dur": 10.743,
+    "text": "QT dài BẨM SINH: QTc ≥ 480 ms (ESC 2022) · ngất khi gắng sức, gia đình đột tử."
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 20.36,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.553,
+    "text": "Trạm 6 · XOẮN ĐỈNH: nhịp nhanh thất ĐA HÌNH trên nền QT dài."
+   },
+   {
+    "start": 5.403,
+    "dur": 4.99,
+    "text": "QRS “xoắn” quanh đường đẳng điện · biên độ to – nhỏ – to."
+   },
+   {
+    "start": 10.743,
+    "dur": 6.191,
+    "text": "Khởi phát kiểu NGẮN – DÀI – NGẮN: nhát sớm, nghỉ dài, nhát sớm rơi vào T."
+   },
+   {
+    "start": 17.284,
+    "dur": 2.073,
+    "text": "Có thể tự hết · hoặc chuyển RUNG THẤT."
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 22.56,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.935,
+    "text": "Ôn tập · NHÌN T – TÌM U – ĐO QT"
+   },
+   {
+    "start": 3.785,
+    "dur": 6.165,
+    "text": "T cao nhọn → TĂNG KALI · P mất, QRS rộng, hình sin → NẶNG"
+   },
+   {
+    "start": 10.299,
+    "dur": 2.904,
+    "text": "T dẹt + sóng U → HẠ KALI / HẠ MAGIE"
+   },
+   {
+    "start": 13.553,
+    "dur": 4.703,
+    "text": "ST ngắn → TĂNG canxi · ST dài → HẠ canxi"
+   },
+   {
+    "start": 18.606,
+    "dur": 2.951,
+    "text": "QTc > 500 ms → nguy cơ XOẮN ĐỈNH"
+   }
+  ]
+ },
+ {
+  "orig": 24.0,
+  "dur": 32.68,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 0.89,
+    "text": "Luyện đọc · 3 ca"
+   },
+   {
+    "start": 1.74,
+    "dur": 5.96,
+    "text": "Ca 1: trẻ suy thận, mệt lả · T cao nhọn, P mất, QRS rộng."
+   },
+   {
+    "start": 8.05,
+    "dur": 1.534,
+    "text": "→ TĂNG KALI NẶNG ✓"
+   },
+   {
+    "start": 9.933,
+    "dur": 6.605,
+    "text": "Ca 2: tiêu chảy nhiều ngày · T dẹt, sóng U rõ ở V2 – V3, ST chênh xuống nhẹ."
+   },
+   {
+    "start": 16.889,
+    "dur": 2.909,
+    "text": "→ HẠ KALI (kiểm tra cả magie) ✓"
+   },
+   {
+    "start": 20.148,
+    "dur": 5.12,
+    "text": "Ca 3: đang dùng thuốc kéo dài QT · QT 0,52 s, RR 1,0 s."
+   },
+   {
+    "start": 25.618,
+    "dur": 6.051,
+    "text": "→ QTc = 0,52 ÷ √1,0 = 520 ms → NGUY CƠ XOẮN ĐỈNH ✓"
+   }
+  ]
+ },
+ {
+  "orig": 24.0,
+  "dur": 26.24,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 0.965,
+    "text": "5 điều cần nhớ"
+   },
+   {
+    "start": 1.815,
+    "dur": 2.755,
+    "text": "① NHÌN T – TÌM U – ĐO QT"
+   },
+   {
+    "start": 4.92,
+    "dur": 5.164,
+    "text": "② Tăng kali: T nhọn → P mất → QRS rộng → hình sin"
+   },
+   {
+    "start": 10.434,
+    "dur": 2.617,
+    "text": "③ ECG bình thường KHÔNG loại trừ tăng kali"
+   },
+   {
+    "start": 13.402,
+    "dur": 3.133,
+    "text": "④ Kali đổi sóng T · Canxi đổi đoạn ST"
+   },
+   {
+    "start": 16.884,
+    "dur": 5.23,
+    "text": "⑤ QTc > 500 ms hoặc tăng > 60 ms → nguy cơ xoắn đỉnh"
+   },
+   {
+    "start": 22.464,
+    "dur": 2.782,
+    "text": "Cảm ơn bạn đã theo dõi chuỗi Tiếp cận điện tâm đồ cơ bản!"
+   }
+  ]
+ }
+]
