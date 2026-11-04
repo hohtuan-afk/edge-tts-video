@@ -372,7 +372,7 @@ const AnPE: React.FC = () => {
         </Strip>
       </Frame>
       <Memo x={60} y={580} w={880} a={ap(t, 2)}>Q sâu + ST chênh KÉO DÀI nhiều tuần + T nhỏ → <span style={{color: PEN}}>so ECG cũ</span></Memo>
-      <Card x={980} y={125} w={880} a={ap(t, 4)} c={BL} title="THUYÊN TẮC PHỔI · hay gặp nhất: NHỊP NHANH XOANG" />
+      <Card x={980} y={125} w={880} a={ap(t, 4)} c={BL} title="THUYÊN TẮC PHỔI · nhịp nhanh xoang hay gặp nhất" />
       <Frame x={980} y={228} a={ap(t, 4)} c={BL}>{mini('II · 110/phút', PE_II, 880, 0.55)}</Frame>
       <div style={{position: 'absolute', left: 980, top: 418, fontFamily: FONT, fontSize: 24, fontWeight: 900, color: '#93C5FD', opacity: ap(t, 6)}}>Gánh thất phải: T âm V1 – V4 · block nhánh phải mới · ST chênh V1 / aVR</div>
       <Frame x={980} y={455} a={ap(t, 6)} c={BL}><div style={{display: 'flex'}}>{['V1', 'V2', 'V3', 'V4'].map((l, i) => mini(l, PE_TINV(i), 220, 0.55))}</div></Frame>
