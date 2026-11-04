@@ -1,35 +1,239 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+12%",
+ "rate": "+8%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "ét tê chênh lên có phải luôn là tắc mạch vành? Chưa chắc! Bốn câu hỏi để nhận ra kẻ giả dạng."
+   "text": "Điện giải và Q T: kali, canxi, Q T dài, và xoắn đỉnh."
+  },
+  {
+   "id": "00-1",
+   "text": "Ở bài mười một, ta đã thấy tăng kali có thể giả ét tê chênh lên. Hôm nay ta học kỹ."
+  },
+  {
+   "id": "00-2",
+   "text": "Thần chú gồm ba bước: nhìn T, tìm U, đo Q T."
   },
   {
    "id": "01-0",
-   "text": "Một, lan toả? Chênh ở khắp nơi, không theo một vùng mạch vành, hãy nghĩ đến kẻ giả dạng như viêm màng ngoài tim."
+   "text": "Trạm một, nhìn T. Rối loạn điện giải làm thay đổi tái cực trước tiên, nên hãy nhìn sóng T."
+  },
+  {
+   "id": "01-1",
+   "text": "Sóng T cao, nhọn, hẹp đáy và cân đối: nghĩ đến tăng kali."
+  },
+  {
+   "id": "01-2",
+   "text": "Sóng T dẹt và thấp: nghĩ đến hạ kali."
+  },
+  {
+   "id": "01-3",
+   "text": "Luôn so sánh với điện tâm đồ cũ, và theo dõi nối tiếp."
   },
   {
    "id": "02-0",
-   "text": "Hai, soi gương? Có ét tê chênh xuống ở vùng đối diện, hãy nghĩ đến tắc thật."
+   "text": "Trạm hai, tăng kali. Hãy xem sự tiến triển trên cùng một dải điện tâm đồ."
+  },
+  {
+   "id": "02-1",
+   "text": "Một, sóng T cao nhọn, hẹp đáy."
+  },
+  {
+   "id": "02-2",
+   "text": "Hai, sóng P dẹt dần, PR dài ra, và P có thể mất hẳn."
+  },
+  {
+   "id": "02-3",
+   "text": "Ba, QRS giãn rộng, kèm nhịp chậm hoặc block."
+  },
+  {
+   "id": "02-4",
+   "text": "Bốn, QRS hoà vào sóng T, tạo thành hình sin."
+  },
+  {
+   "id": "02-5",
+   "text": "Năm, rung thất hoặc vô tâm thu."
   },
   {
    "id": "03-0",
-   "text": "Ba, hình dạng? ét tê lõm kèm PR chênh xuống, khấc J ở người trẻ, hay dạng vòm ở vê một của Bru-ga-đa."
+   "text": "Thứ tự trên chỉ gần đúng. Không phải lúc nào tim cũng đi đủ từng bậc."
+  },
+  {
+   "id": "03-1",
+   "text": "Theo hướng dẫn của Hội Tim mạch Hoa Kỳ năm hai nghìn không trăm hai mươi lăm, các dấu hiệu điện tâm đồ có độ nhạy và độ đặc hiệu thấp. Điện tâm đồ bình thường không loại trừ tăng kali."
+  },
+  {
+   "id": "03-2",
+   "text": "Tăng kali còn là kẻ giả dạng: giả ét tê chênh lên, giả block nhánh, gây nhịp chậm, hoặc QRS rộng như nhịp nhanh thất."
   },
   {
    "id": "04-0",
-   "text": "Bốn, bối cảnh? Tuổi, sốt, và điện tâm đồ cũ. Còn nghi ngờ thì coi như tắc, và làm lại điện tâm đồ."
+   "text": "Trạm ba, tìm U, gặp trong hạ kali."
+  },
+  {
+   "id": "04-1",
+   "text": "Sóng T dẹt hoặc đảo ngược, và sóng U nổi rõ ngay sau T, rõ nhất ở vê hai, vê ba."
+  },
+  {
+   "id": "04-2",
+   "text": "Đoạn ét tê chênh xuống nhẹ."
+  },
+  {
+   "id": "04-3",
+   "text": "Khi T và U nhập vào nhau, trông như Q T dài, thực ra là khoảng Q U."
+  },
+  {
+   "id": "04-4",
+   "text": "Hạ ma-giê cho hình ảnh giống hệt, và hay đi kèm hạ kali. Cả hai đều dễ gây xoắn đỉnh."
   },
   {
    "id": "05-0",
-   "text": "Nhắc lại: chênh không đồng nghĩa với tắc. Lan toả, soi gương, hình dạng, bối cảnh."
+   "text": "Trạm bốn, canxi. Canxi làm thay đổi đoạn ét tê."
+  },
+  {
+   "id": "05-1",
+   "text": "Tăng canxi: đoạn ét tê ngắn lại, nên Q T ngắn."
+  },
+  {
+   "id": "05-2",
+   "text": "Hạ canxi: đoạn ét tê kéo dài, nên Q T dài, trong khi sóng T vẫn bình thường."
+  },
+  {
+   "id": "05-3",
+   "text": "Mẹo nhớ: kali đổi sóng T, canxi đổi đoạn ét tê."
   },
   {
    "id": "06-0",
-   "text": "Lưu lại để ôn, và xem bài đầy đủ trên kênh nhé."
+   "text": "Trạm năm, đo Q T. Đo từ đầu QRS đến cuối sóng T, ở chuyển đạo hai hoặc vê năm."
+  },
+  {
+   "id": "06-1",
+   "text": "Để tìm cuối sóng T, kẻ đường tiếp tuyến ở sườn xuống dốc nhất, cắt đường đẳng điện. Không tính sóng U."
+  },
+  {
+   "id": "06-2",
+   "text": "Tim càng nhanh, Q T càng ngắn, nên phải hiệu chỉnh. Q T c bằng Q T chia căn bậc hai của R R, theo công thức Ba-dét."
+  },
+  {
+   "id": "06-3",
+   "text": "Khi tim nhanh, công thức Ba-dét ước quá cao. Lúc đó dùng công thức Phri-đơ-ri-xi-a, chia cho căn bậc ba của R R."
+  },
+  {
+   "id": "06-4",
+   "text": "Mẹo nhanh: nếu Q T dài hơn một nửa khoảng R R, hãy nghi Q T dài, khi tần số tim bình thường."
+  },
+  {
+   "id": "06-5",
+   "text": "Q T c được coi là dài khi từ bốn trăm năm mươi mi li giây ở nam, và bốn trăm sáu mươi mi li giây ở nữ. Trên năm trăm mi li giây là nguy cơ cao."
+  },
+  {
+   "id": "07-0",
+   "text": "Q T dài mắc phải thường do thuốc, cộng thêm hạ kali, hạ ma-giê, hoặc nhịp chậm."
+  },
+  {
+   "id": "07-1",
+   "text": "Các thuốc hay gặp: kháng sinh nhóm ma-cờ-rô-lít và quy-nô-lôn, thuốc chống loạn thần, on-đan-xê-tron, và a-mi-ô-đa-rôn."
+  },
+  {
+   "id": "07-2",
+   "text": "Q T c tăng hơn sáu mươi mi li giây so với trước khi dùng thuốc cũng là nguy cơ cao."
+  },
+  {
+   "id": "07-3",
+   "text": "Q T dài bẩm sinh được chẩn đoán khi Q T c từ bốn trăm tám mươi mi li giây trở lên, theo hướng dẫn châu Âu năm hai nghìn không trăm hai mươi hai. Gợi ý khi ngất lúc gắng sức, hoặc gia đình có người đột tử."
+  },
+  {
+   "id": "08-0",
+   "text": "Trạm sáu, xoắn đỉnh. Đây là nhịp nhanh thất đa hình trên nền Q T dài."
+  },
+  {
+   "id": "08-1",
+   "text": "Các QRS như xoắn quanh đường đẳng điện, biên độ to, rồi nhỏ, rồi lại to."
+  },
+  {
+   "id": "08-2",
+   "text": "Thường khởi phát kiểu ngắn, dài, ngắn: một nhát sớm, một khoảng nghỉ dài, rồi nhát sớm rơi đúng vào sóng T."
+  },
+  {
+   "id": "08-3",
+   "text": "Cơn có thể tự hết, hoặc chuyển thành rung thất."
+  },
+  {
+   "id": "09-0",
+   "text": "Ôn tập: nhìn T, tìm U, đo Q T."
+  },
+  {
+   "id": "09-1",
+   "text": "Sóng T cao nhọn: tăng kali. P mất, QRS rộng, hình sin: tăng kali nặng."
+  },
+  {
+   "id": "09-2",
+   "text": "Sóng T dẹt kèm sóng U: hạ kali hoặc hạ ma-giê."
+  },
+  {
+   "id": "09-3",
+   "text": "Đoạn ét tê ngắn: tăng canxi. Đoạn ét tê dài: hạ canxi."
+  },
+  {
+   "id": "09-4",
+   "text": "Q T c trên năm trăm mi li giây: nguy cơ xoắn đỉnh."
+  },
+  {
+   "id": "10-0",
+   "text": "Luyện đọc ba ca."
+  },
+  {
+   "id": "10-1",
+   "text": "Ca một: trẻ suy thận, mệt lả. Sóng T cao nhọn, P mất, QRS rộng."
+  },
+  {
+   "id": "10-2",
+   "text": "Kết luận: tăng kali nặng."
+  },
+  {
+   "id": "10-3",
+   "text": "Ca hai: tiêu chảy nhiều ngày. Sóng T dẹt, sóng U rõ ở vê hai, vê ba, ét tê chênh xuống nhẹ."
+  },
+  {
+   "id": "10-4",
+   "text": "Kết luận: hạ kali, và nhớ kiểm tra cả ma-giê."
+  },
+  {
+   "id": "10-5",
+   "text": "Ca ba: đang dùng thuốc kéo dài Q T. Q T không phẩy năm mươi hai giây, R R một giây."
+  },
+  {
+   "id": "10-6",
+   "text": "Q T c bằng không phẩy năm mươi hai chia căn của một, bằng năm trăm hai mươi mi li giây. Nguy cơ xoắn đỉnh."
+  },
+  {
+   "id": "11-0",
+   "text": "Năm điều cần nhớ."
+  },
+  {
+   "id": "11-1",
+   "text": "Một, nhìn T, tìm U, đo Q T."
+  },
+  {
+   "id": "11-2",
+   "text": "Hai, tăng kali: T nhọn, rồi P mất, rồi QRS rộng, rồi hình sin."
+  },
+  {
+   "id": "11-3",
+   "text": "Ba, điện tâm đồ bình thường không loại trừ tăng kali."
+  },
+  {
+   "id": "11-4",
+   "text": "Bốn, kali đổi sóng T, canxi đổi đoạn ét tê."
+  },
+  {
+   "id": "11-5",
+   "text": "Năm, Q T c trên năm trăm mi li giây, hoặc tăng hơn sáu mươi mi li giây, là nguy cơ xoắn đỉnh."
+  },
+  {
+   "id": "11-6",
+   "text": "Cảm ơn bạn đã theo dõi chuỗi Tiếp cận điện tâm đồ cơ bản."
   }
  ]
 }
