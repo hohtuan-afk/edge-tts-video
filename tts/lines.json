@@ -1,251 +1,35 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+8%",
+ "rate": "+12%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Những kẻ giả dạng ét tê chênh lên: chênh, không phải lúc nào cũng là tắc."
-  },
-  {
-   "id": "00-1",
-   "text": "Ở bài sáu, ta thấy không chênh vẫn có thể đang tắc. Hôm nay là chiều ngược lại: chênh chưa chắc đã tắc."
-  },
-  {
-   "id": "00-2",
-   "text": "Thần chú: chênh không đồng nghĩa với tắc."
+   "text": "ét tê chênh lên có phải luôn là tắc mạch vành? Chưa chắc! Bốn câu hỏi để nhận ra kẻ giả dạng."
   },
   {
    "id": "01-0",
-   "text": "Trạm một, bốn câu kiểm tra trước khi gọi là tắc mạch vành."
-  },
-  {
-   "id": "01-1",
-   "text": "Một, lan toả? ét tê chênh theo một vùng mạch vành, hay chênh ở khắp nơi?"
-  },
-  {
-   "id": "01-2",
-   "text": "Hai, soi gương? Nếu có ét tê chênh xuống ở vùng đối diện, hãy nghĩ đến tắc thật."
-  },
-  {
-   "id": "01-3",
-   "text": "Ba, hình dạng? ét tê lõm hay lồi, có sóng Q không, và sóng T ra sao."
-  },
-  {
-   "id": "01-4",
-   "text": "Bốn, bối cảnh? Tuổi, triệu chứng, có sốt không, và luôn so với điện tâm đồ cũ."
-  },
-  {
-   "id": "01-5",
-   "text": "Còn nghi ngờ thì coi như tắc. Làm lại điện tâm đồ sau mười lăm đến ba mươi phút, xét nghiệm men tim, và siêu âm tim."
+   "text": "Một, lan toả? Chênh ở khắp nơi, không theo một vùng mạch vành, hãy nghĩ đến kẻ giả dạng như viêm màng ngoài tim."
   },
   {
    "id": "02-0",
-   "text": "Trạm hai, viêm màng ngoài tim. ét tê chênh lõm, lan toả ở nhiều chuyển đạo, không theo một vùng mạch vành nào."
-  },
-  {
-   "id": "02-1",
-   "text": "Đoạn PR chênh xuống, rõ nhất ở chuyển đạo hai. Riêng a-vê-rờ thì ngược lại: ét tê chênh xuống, PR chênh lên."
-  },
-  {
-   "id": "02-2",
-   "text": "Không có soi gương, trừ a-vê-rờ và vê một. Và không có sóng Q."
-  },
-  {
-   "id": "02-3",
-   "text": "Theo hướng dẫn châu Âu năm hai nghìn không trăm hai mươi lăm, chẩn đoán xác định khi có đau ngực kèm hơn một tiêu chuẩn thêm: tiếng cọ màng ngoài tim, điện tâm đồ có PR chênh xuống hoặc ét tê chênh lan toả, protein phản ứng C tăng, hoặc tràn dịch màng ngoài tim mới hay nặng thêm."
-  },
-  {
-   "id": "02-4",
-   "text": "Điện tâm đồ thay đổi theo giờ đến ngày, và điện tâm đồ bình thường lúc đầu không loại trừ chẩn đoán."
-  },
-  {
-   "id": "02-5",
-   "text": "Lưu ý: viêm cơ tim cũng có thể gây ét tê chênh và troponin tăng, trong khi mạch vành bình thường. Khi điện tâm đồ thay đổi, luôn nghĩ đến viêm cơ tim."
+   "text": "Hai, soi gương? Có ét tê chênh xuống ở vùng đối diện, hãy nghĩ đến tắc thật."
   },
   {
    "id": "03-0",
-   "text": "Trạm ba, tái cực sớm. Điểm J chênh lên, có khấc hoặc trát ở cuối QRS."
-  },
-  {
-   "id": "03-1",
-   "text": "ét tê lõm, sóng T cao, hay gặp ở vê hai đến vê năm, và ổn định theo thời gian."
-  },
-  {
-   "id": "03-2",
-   "text": "Thường gặp ở người trẻ, vận động viên, và rất hay gặp ở tuổi vị thành niên."
-  },
-  {
-   "id": "03-3",
-   "text": "Để tách với viêm màng ngoài tim, đo ở vê sáu: nếu biên độ ét tê chia cho biên độ T từ không phẩy hai lăm trở lên, nghiêng về viêm màng ngoài tim."
-  },
-  {
-   "id": "03-4",
-   "text": "Cẩn thận: tắc động mạch liên thất trước giai đoạn sớm cũng có sóng T cao và ét tê lõm. Hãy so điện tâm đồ cũ và làm lại."
+   "text": "Ba, hình dạng? ét tê lõm kèm PR chênh xuống, khấc J ở người trẻ, hay dạng vòm ở vê một của Bru-ga-đa."
   },
   {
    "id": "04-0",
-   "text": "Trạm bốn, ét tê chênh thứ phát, do QRS bất thường kéo theo."
-  },
-  {
-   "id": "04-1",
-   "text": "Dày thất trái: sóng S rất sâu ở vê một đến vê ba, kéo theo ét tê chênh lên ở các chuyển đạo này."
-  },
-  {
-   "id": "04-2",
-   "text": "Block nhánh trái, và nhịp máy tạo nhịp thất, cũng làm ét tê đi ngược chiều QRS."
-  },
-  {
-   "id": "04-3",
-   "text": "Nhớ lại bài sáu: ét tê ngược chiều QRS là bình thường, cùng chiều là bệnh."
+   "text": "Bốn, bối cảnh? Tuổi, sốt, và điện tâm đồ cũ. Còn nghi ngờ thì coi như tắc, và làm lại điện tâm đồ."
   },
   {
    "id": "05-0",
-   "text": "Trạm năm, hội chứng Bru-ga-đa. ét tê chênh ở vê một và vê hai, kèm nguy cơ rung thất và đột tử."
-  },
-  {
-   "id": "05-1",
-   "text": "Típ một, dạng vòm: ét tê chênh từ hai mi li mét trở lên, đi xuống dần, và sóng T âm."
-  },
-  {
-   "id": "05-2",
-   "text": "Típ hai, dạng yên ngựa: ét tê võng xuống rồi đi lên, sóng T dương ở vê hai."
-  },
-  {
-   "id": "05-3",
-   "text": "Chỉ típ một mới đủ để chẩn đoán. Típ hai chỉ là gợi ý."
-  },
-  {
-   "id": "05-4",
-   "text": "Cách chia cũ có ba típ. Típ ba nay đã được gộp vào típ hai, theo đồng thuận năm hai nghìn không trăm mười hai."
+   "text": "Nhắc lại: chênh không đồng nghĩa với tắc. Lan toả, soi gương, hình dạng, bối cảnh."
   },
   {
    "id": "06-0",
-   "text": "Gặp típ hai, hãy đặt lại điện cực vê một và vê hai cao lên khoang liên sườn hai hoặc ba."
-  },
-  {
-   "id": "06-1",
-   "text": "Hoặc làm test thuốc chẹn kênh na-tri tại chuyên khoa, để xem có lộ ra típ một không."
-  },
-  {
-   "id": "06-2",
-   "text": "Sốt có thể làm lộ ra típ một. Khi đó cần hạ sốt tích cực, nhất là ở trẻ em."
-  },
-  {
-   "id": "06-3",
-   "text": "Tránh các thuốc làm nặng Bru-ga-đa, và chuyển chuyên khoa nhịp tim."
-  },
-  {
-   "id": "07-0",
-   "text": "Trạm sáu, phình thất, gặp sau nhồi máu thành trước diện rộng."
-  },
-  {
-   "id": "07-1",
-   "text": "Có sóng Q sâu, ét tê chênh kéo dài nhiều tuần, sóng T nhỏ. Hãy so với điện tâm đồ cũ."
-  },
-  {
-   "id": "07-2",
-   "text": "Thuyên tắc phổi: dấu hiệu hay gặp nhất là nhịp nhanh xoang."
-  },
-  {
-   "id": "07-3",
-   "text": "Dấu hiệu gánh thất phải gồm sóng T âm từ vê một đến vê bốn, block nhánh phải mới xuất hiện, và có thể có ét tê chênh ở vê một hoặc a-vê-rờ."
-  },
-  {
-   "id": "07-4",
-   "text": "Dấu hiệu S một Q ba T ba ít nhạy và ít đặc hiệu, không dùng để loại trừ. Chẩn đoán thuyên tắc phổi bằng chụp cắt lớp mạch phổi."
-  },
-  {
-   "id": "08-0",
-   "text": "Hai kẻ giả dạng khác, nhắc nhanh."
-  },
-  {
-   "id": "08-1",
-   "text": "Tăng kali: sóng T cao nhọn, QRS rộng, có thể giả ét tê chênh lên. Ta sẽ học kỹ ở bài điện giải."
-  },
-  {
-   "id": "08-2",
-   "text": "Bệnh cơ tim do stress ta-cô-sư-bô: ét tê chênh giống hệt nhồi máu thành trước, thường sau một biến cố căng thẳng. Điện tâm đồ không phân biệt được, cần chụp mạch vành."
-  },
-  {
-   "id": "09-0",
-   "text": "Ôn tập: ai là ai?"
-  },
-  {
-   "id": "09-1",
-   "text": "ét tê lõm, lan toả, PR chênh xuống: viêm màng ngoài tim."
-  },
-  {
-   "id": "09-2",
-   "text": "Khấc J, người trẻ, ổn định theo thời gian: tái cực sớm."
-  },
-  {
-   "id": "09-3",
-   "text": "ét tê ngược chiều QRS rộng hoặc sóng S sâu: thứ phát."
-  },
-  {
-   "id": "09-4",
-   "text": "Vê một, vê hai dạng vòm kèm T âm: Bru-ga-đa típ một."
-  },
-  {
-   "id": "09-5",
-   "text": "Theo một vùng mạch vành kèm soi gương: tắc thật."
-  },
-  {
-   "id": "10-0",
-   "text": "Luyện đọc ba ca."
-  },
-  {
-   "id": "10-1",
-   "text": "Ca một: nam mười bảy tuổi, khám sức khoẻ. ét tê lõm ở vê hai đến vê năm, có khấc J, điện tâm đồ cũ giống hệt."
-  },
-  {
-   "id": "10-2",
-   "text": "Kết luận: tái cực sớm."
-  },
-  {
-   "id": "10-3",
-   "text": "Ca hai: sau một đợt cảm, đau ngực tăng khi nằm. ét tê lõm lan toả, PR chênh xuống, a-vê-rờ ngược lại."
-  },
-  {
-   "id": "10-4",
-   "text": "Kết luận: viêm màng ngoài tim."
-  },
-  {
-   "id": "10-5",
-   "text": "Ca ba: trẻ sốt ba mươi chín độ rưỡi. Vê một, vê hai có ét tê dạng vòm trên hai mi li mét, sóng T âm."
-  },
-  {
-   "id": "10-6",
-   "text": "Kết luận: Bru-ga-đa típ một lộ ra do sốt. Hạ sốt tích cực và chuyển chuyên khoa."
-  },
-  {
-   "id": "11-0",
-   "text": "Năm điều cần nhớ."
-  },
-  {
-   "id": "11-1",
-   "text": "Một, chênh không đồng nghĩa với tắc. Hỏi bốn câu: lan toả, soi gương, hình dạng, bối cảnh."
-  },
-  {
-   "id": "11-2",
-   "text": "Hai, viêm màng ngoài tim: ét tê lõm, lan toả, PR chênh xuống."
-  },
-  {
-   "id": "11-3",
-   "text": "Ba, tái cực sớm: khấc J, người trẻ, ổn định theo thời gian."
-  },
-  {
-   "id": "11-4",
-   "text": "Bốn, Bru-ga-đa: chỉ típ một mới chẩn đoán. Sốt có thể làm lộ ra. Nhớ đặt vê một, vê hai cao."
-  },
-  {
-   "id": "11-5",
-   "text": "Năm, còn nghi ngờ thì coi như tắc, và làm lại điện tâm đồ."
-  },
-  {
-   "id": "11-6",
-   "text": "Cảm ơn bạn đã theo dõi."
+   "text": "Lưu lại để ôn, và xem bài đầy đủ trên kênh nhé."
   }
  ]
 }
