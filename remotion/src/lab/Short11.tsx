@@ -89,8 +89,8 @@ const S2: React.FC = () => {
   return (
     <AbsoluteFill><StepHead i={1} />
       <Lead t={t} f={train(STEMI_V3, 0.9, 0.3)} label="V3" x={60} w={470} q={11} base={340} t0={0} />
-      <Lead t={t} f={train(RECIP_II, 0.9, 0.3)} label="II" x={550} w={470} q={11} base={300} t0={0} delay={0.8}>
-        {(X, Y) => <g opacity={ap(t, 1.6)}><ellipse cx={X(0.3 + 0.2)} cy={Y(-0.12)} rx={70} ry={34} fill="none" stroke={COR} strokeWidth={6} /><text x={X(0.3 + 0.2)} y={Y(-0.12) + 80} textAnchor="middle" fontFamily={HAND} fontSize={44} fill={COR}>soi gương ↓</text></g>}
+      <Lead t={t} f={train({...RECIP_II, j: -0.25}, 0.9, 0.3)} label="II" x={550} w={470} q={11} base={300} t0={0} delay={0.8}>
+        {(X, Y) => <g opacity={ap(t, 1.6)}><ellipse cx={X(1.2 + 0.2)} cy={Y(-0.25)} rx={70} ry={34} fill="none" stroke={COR} strokeWidth={6} /><text x={X(1.2 + 0.2)} y={Y(-0.25) + 80} textAnchor="middle" fontFamily={HAND} fontSize={44} fill={COR}>soi gương ↓</text></g>}
       </Lead>
       <Badge s={usePop(2.4)} c={CRD}>có soi gương → nghĩ TẮC</Badge>
     </AbsoluteFill>
