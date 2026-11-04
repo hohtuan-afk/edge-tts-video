@@ -351,7 +351,145 @@ const Unmask: React.FC = () => {
   );
 };
 
-const SCN: React.FC[] = [Cover, Checks, Peri, Early, Secondary, BrugadaTypes, Unmask];
+// ================= 7 · PHÌNH THẤT · THUYÊN TẮC PHỔI =================
+const ANEU: B = {r: 0.08, s: -1.0, sw: 0.022, j: 0.18, conv: 0.06, t: 0.12, tp: 0.3};
+const PE_II: B = {r: 1.0, s: -0.2, t: 0.25};
+const PE_TINV = (k: number): B => ({r: 0.3 + 0.2 * k, s: -0.8 + 0.12 * k, t: -0.3 + 0.03 * k, tp: 0.3, tw: 0.06});
+const AnPE: React.FC = () => {
+  const t = useT();
+  const mini = (lab: string, b: B, w: number, rr = 0.9) => <div key={lab} style={{borderRight: '2px solid #EC9A8E'}}><Strip L={train(b, rr, 0.25)} w={w} h={170} q={6} base={0.55} t0={0} label={lab} stroke={2.6} /></div>;
+  return (
+    <DeskBg>
+      <Head t={t}>Phình thất · Thuyên tắc phổi</Head>
+      <Card x={60} y={125} w={880} a={ap(t, 0)} c={OR} title="PHÌNH THẤT · sau nhồi máu thành trước rộng" />
+      <Frame x={60} y={228} a={ap(t, 0.3)} c={OR}>
+        <Strip L={train(ANEU, 0.9, 0.3)} w={880} h={320} q={11} base={0.5} t0={0} label="V2" stroke={4}>
+          {(X, Y) => <g opacity={ap(t, 2)}>
+            <text x={X(1.2 + 0.05)} y={Y(-1.05) + 36} textAnchor="middle" fontFamily={HAND} fontSize={30} fill={OR}>Q sâu</text>
+            <text x={X(1.2 + 0.2)} y={Y(0.5)} fontFamily={HAND} fontSize={30} fill={OR}>ST chênh</text>
+            <text x={X(1.2 + 0.34)} y={Y(0.05) + 44} fontFamily={HAND} fontSize={30} fill={OR}>T nhỏ</text>
+          </g>}
+        </Strip>
+      </Frame>
+      <Memo x={60} y={580} w={880} a={ap(t, 2)}>Q sâu + ST chênh KÉO DÀI nhiều tuần + T nhỏ → <span style={{color: PEN}}>so ECG cũ</span></Memo>
+      <Card x={980} y={125} w={880} a={ap(t, 4)} c={BL} title="THUYÊN TẮC PHỔI · hay gặp nhất: NHỊP NHANH XOANG" />
+      <Frame x={980} y={228} a={ap(t, 4)} c={BL}>{mini('II · 110/phút', PE_II, 880, 0.55)}</Frame>
+      <div style={{position: 'absolute', left: 980, top: 418, fontFamily: FONT, fontSize: 24, fontWeight: 900, color: '#93C5FD', opacity: ap(t, 6)}}>Gánh thất phải: T âm V1 – V4 · block nhánh phải mới · ST chênh V1 / aVR</div>
+      <Frame x={980} y={455} a={ap(t, 6)} c={BL}><div style={{display: 'flex'}}>{['V1', 'V2', 'V3', 'V4'].map((l, i) => mini(l, PE_TINV(i), 220, 0.55))}</div></Frame>
+      <Frame x={980} y={650} a={ap(t, 8)} c="#64748B"><div style={{display: 'flex'}}>{mini('I · S1', {r: 0.5, s: -0.6, t: 0.2}, 260, 0.55)}{mini('III · Q3 T3', {q: -0.35, r: 0.5, s: -0.1, t: -0.25}, 260, 0.55)}</div></Frame>
+      <div style={{position: 'absolute', left: 1520, top: 655, width: 340, fontFamily: FONT, opacity: ap(t, 8)}}>
+        <div style={{display: 'inline-block', padding: '4px 14px', borderRadius: 10, background: '#64748B', color: '#fff', fontSize: 24, fontWeight: 900}}>S1Q3T3 · ÍT nhạy</div>
+        <div style={{fontSize: 24, fontWeight: 800, color: '#E2E8F0', marginTop: 10, lineHeight: 1.3}}>KHÔNG dùng để loại trừ</div>
+        <div style={{display: 'inline-block', marginTop: 10, padding: '6px 14px', borderRadius: 10, background: BL, color: '#fff', fontSize: 24, fontWeight: 900}}>→ CT mạch phổi</div>
+      </div>
+    </DeskBg>
+  );
+};
+
+// ================= 8 · TĂNG KALI · TAKOTSUBO =================
+const HYPERK: B = {r: 0.8, s: -0.45, sw: 0.028, j: 0.12, t: 1.0, tp: 0.27, tw: 0.04};
+const Others: React.FC = () => {
+  const t = useT();
+  return (
+    <DeskBg>
+      <Head t={t}>2 kẻ giả dạng khác · nhắc nhanh</Head>
+      <div style={{position: 'absolute', left: 60, top: 130, fontFamily: FONT, fontSize: 36, fontWeight: 900, color: '#C4B5FD', opacity: ap(t, 2)}}>TĂNG KALI</div>
+      <Frame x={60} y={185} a={ap(t, 2)} c={PU}>
+        <Strip L={train(HYPERK, 0.9, 0.3)} w={880} h={380} q={11} base={0.6} t0={0} label="V3" stroke={4}>
+          {(X, Y) => <g opacity={ap(t, 2.6)}><text x={X(1.2 + 0.3)} y={Y(1.15)} fontFamily={HAND} fontSize={32} fill={PU}>T cao nhọn</text><text x={X(1.2 + 0.0)} y={Y(-0.6) + 30} fontFamily={HAND} fontSize={30} fill={PU}>QRS rộng</text></g>}
+        </Strip>
+      </Frame>
+      <Card x={60} y={600} w={880} a={ap(t, 2.4)} c={PU} title="Có thể giả ST chênh">→ học kỹ ở bài Điện giải</Card>
+      <div style={{position: 'absolute', left: 980, top: 130, fontFamily: FONT, fontSize: 36, fontWeight: 900, color: '#FCA5A5', opacity: ap(t, 4)}}>TAKOTSUBO · bệnh cơ tim do stress</div>
+      <Frame x={980} y={185} a={ap(t, 4)} c={RD}>
+        <Strip L={train(STEMI_V3, 0.9, 0.3)} w={540} h={380} q={11} base={0.62} t0={0} label="V3" stroke={4} />
+      </Frame>
+      <svg viewBox="0 0 320 380" width={320} height={380} style={{position: 'absolute', left: 1540, top: 185, opacity: ap(t, 4.4)}}>
+        <path d="M120,40 L200,40 L210,90 Q300,170 260,290 Q160,370 60,290 Q20,170 110,90 Z" fill="#7F1D1D" stroke="#FCA5A5" strokeWidth={5} />
+        <path d="M128,60 L192,60 L198,100 Q270,170 236,272 Q160,336 84,272 Q50,170 122,100 Z" fill="#FCA5A5" opacity={0.85} />
+        <text x={160} y={210} textAnchor="middle" fontFamily={FONT} fontSize={24} fontWeight={900} fill="#7F1D1D">mỏm phình</text>
+        <text x={160} y={30} textAnchor="middle" fontFamily={FONT} fontSize={20} fontWeight={800} fill="#FCA5A5">đáy co tốt</text>
+      </svg>
+      <Card x={980} y={600} w={880} a={ap(t, 4.6)} c={RD} title="ST chênh giống hệt nhồi máu thành trước">sau biến cố căng thẳng · ECG KHÔNG phân biệt được</Card>
+      <Pill x={980} y={760} a={ap(t, 5)} c={RD} size={30}>→ cần CHỤP MẠCH VÀNH</Pill>
+    </DeskBg>
+  );
+};
+
+// ================= 9 · ÔN TẬP =================
+const Review11: React.FC = () => {
+  const t = useT();
+  const rows: [string, string, string, B, number][] = [
+    ['LÕM + LAN TOẢ + PR chênh xuống', 'VIÊM MÀNG NGOÀI TIM', YE, PERI.II, 2],
+    ['Khấc J + người trẻ + ổn định', 'TÁI CỰC SỚM', TE, ER_V4, 4],
+    ['ST ngược chiều QRS rộng / S sâu', 'THỨ PHÁT', BL, LBBB, 6],
+    ['V1 – V2 vòm + T âm', 'BRUGADA TÍP 1', PU, BR1, 8],
+    ['Theo vùng + SOI GƯƠNG', 'TẮC THẬT', RD, STEMI_V3, 10],
+  ];
+  return (
+    <DeskBg>
+      <Head t={t}>Ôn tập · ai là ai?</Head>
+      {rows.map(([q, a, c, b, st], i) => (
+        <div key={a} style={{position: 'absolute', left: 60, top: 125 + i * 150, width: 1800, height: 136, borderRadius: 16, background: '#FCFAF4', borderLeft: `14px solid ${c}`, boxSizing: 'border-box', display: 'flex', alignItems: 'center', gap: 26, padding: '0 18px', opacity: ap(t, st), transform: `translateX(${(1 - ap(t, st)) * 50}px)`, boxShadow: '0 10px 22px rgba(0,0,0,0.35)', fontFamily: FONT}}>
+          <div style={{flex: 'none', borderRadius: 8, overflow: 'hidden'}}><Strip L={train(b, 1.0, 0.25)} w={520} h={118} q={5} base={0.6} t0={0} stroke={2.6} /></div>
+          <div style={{fontSize: 32, fontWeight: 700, color: '#334155', width: 640}}>{q}</div>
+          <div style={{fontSize: 40, fontWeight: 900, color: c === YE ? '#A16207' : c}}>→ {a}</div>
+        </div>
+      ))}
+    </DeskBg>
+  );
+};
+
+// ================= 10 · LUYỆN ĐỌC =================
+const Practice11: React.FC = () => {
+  const t = useT();
+  const cases: [string, React.ReactNode, number, string, string, string][] = [
+    ['Ca 1 · nam 17 tuổi, khám sức khoẻ · ST lõm V2 – V5, khấc J · ECG cũ giống hệt', <Strip L={train(ER_V4, 0.9, 0.3)} w={1100} h={220} q={8} base={0.66} t0={0} label="V4" stroke={3.2} />, 2, 'TÁI CỰC SỚM ✓', TE, ''],
+    ['Ca 2 · sau cảm, đau ngực tăng khi nằm · ST lõm lan toả, PR ↓, aVR ngược lại', <div style={{display: 'flex'}}>{(['II', 'V5', 'aVR'] as const).map((l) => <div key={l} style={{borderRight: '2px solid #EC9A8E'}}><Strip L={train(PERI[l], 0.9, 0.3)} w={366} h={220} q={8} base={0.6} t0={0} label={l} stroke={3} /></div>)}</div>, 6, 'VIÊM MÀNG NGOÀI TIM ✓', YE, ''],
+    ['Ca 3 · trẻ sốt 39,5 °C · V1 – V2: ST vòm ≥ 2 mm, T âm', <Strip L={train(BR1, 1.0, 0.3)} w={1100} h={220} q={8} base={0.6} t0={0} label="V1" stroke={3.2} />, 10, 'BRUGADA TÍP 1 lộ do sốt → hạ sốt, chuyển chuyên khoa ✓', PU, ''],
+  ];
+  return (
+    <DeskBg>
+      <Head t={t}>Luyện đọc · 3 ca</Head>
+      {cases.map(([q, strip, st, ans, c], i) => (
+        <div key={i} style={{opacity: ap(t, st)}}>
+          <Frame x={60} y={125 + i * 262} a={1} c={c}>{strip}</Frame>
+          <div style={{position: 'absolute', left: 1200, top: 128 + i * 262, width: 660, fontFamily: FONT, fontSize: 26, fontWeight: 700, color: '#E2E8F0', lineHeight: 1.3}}>{q}</div>
+          <div style={{position: 'absolute', left: 1200, top: 240 + i * 262, maxWidth: 660, padding: '8px 18px', borderRadius: 14, background: c, color: '#fff', fontFamily: FONT, fontSize: 28, fontWeight: 900, opacity: ap(t, st + 2), transform: `scale(${0.9 + 0.1 * ap(t, st + 2)})`, transformOrigin: 'left center'}}>{ans}</div>
+        </div>
+      ))}
+    </DeskBg>
+  );
+};
+
+// ================= 11 · 5 ĐIỀU CẦN NHỚ =================
+const Takeaways11: React.FC = () => {
+  const t = useT();
+  const items: [React.ReactNode, string][] = [
+    [<><b>CHÊNH ≠ TẮC</b> · hỏi: LAN TOẢ? SOI GƯƠNG? HÌNH DẠNG? BỐI CẢNH?</>, RD],
+    [<>Viêm màng ngoài tim: <b>lõm, lan toả, PR chênh xuống</b></>, YE],
+    [<>Tái cực sớm: <b>khấc J, người trẻ, ổn định</b></>, TE],
+    [<>Brugada: chỉ <b>TÍP 1</b> chẩn đoán · <b>sốt</b> làm lộ · đặt V1 – V2 cao</>, PU],
+    [<>Còn nghi ngờ → <b>coi như TẮC</b>, làm lại ECG</>, OR],
+  ];
+  return (
+    <DeskBg>
+      <Head t={t}>5 điều cần nhớ</Head>
+      {items.map(([s2, c], i) => {
+        const a = ap(t, 2 + i * 2);
+        return (
+          <div key={i} style={{position: 'absolute', left: 100, top: 140 + i * 128, width: 1720, height: 108, display: 'flex', alignItems: 'center', gap: 24, padding: '0 26px', borderRadius: 18, background: '#FCFAF4', borderLeft: `14px solid ${c}`, boxSizing: 'border-box', opacity: a, transform: `translateX(${(1 - a) * 50}px)`, boxShadow: '0 12px 26px rgba(0,0,0,0.35)', fontFamily: FONT}}>
+            <span style={{flex: 'none', width: 60, height: 60, borderRadius: 30, background: c, color: '#fff', fontSize: 34, fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{i + 1}</span>
+            <span style={{fontSize: 34, fontWeight: 700, color: '#1F2937'}}>{s2}</span>
+          </div>
+        );
+      })}
+      <div style={{position: 'absolute', left: 0, right: 0, top: 820, textAlign: 'center', fontFamily: FONT, fontSize: 40, fontWeight: 800, color: '#5EEAD4', opacity: ap(t, 12)}}>Cảm ơn bạn đã theo dõi!</div>
+    </DeskBg>
+  );
+};
+
+const SCN: React.FC[] = [Cover, Checks, Peri, Early, Secondary, BrugadaTypes, Unmask, AnPE, Others, Review11, Practice11, Takeaways11];
 export const MIMIC_N = 7;
 export const Mimic: React.FC = () => (
   <AbsoluteFill style={{background: '#0E1116', fontFamily: FONT}}>
