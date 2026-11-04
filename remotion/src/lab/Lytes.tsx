@@ -52,7 +52,7 @@ const CALO: E = {tp: 0.44, tw: 0.055};
 const STG: E[] = [
   {}, {t: 0.95, tw: 0.034, tp: 0.27},
   {p: 0.04, pp: -0.2, t: 0.9, tw: 0.036, tp: 0.3},
-  {p: 0, pp: -0.2, r: 0.75, s: -0.35, wq: 2.6, t: 0.7, tw: 0.06, tp: 0.42},
+  {p: 0, pp: -0.2, r: 0.7, s: -0.4, wq: 3.4, t: 0.7, tw: 0.065, tp: 0.46},
 ];
 const mixE = (a: E, b: E, k: number): E => {
   const A = {...N0, ...a}, B = {...N0, ...b};
@@ -103,10 +103,10 @@ const Pill: React.FC<{x: number; y: number; a: number; c: string; size?: number;
 const Banner: React.FC<{y: number; a: number; c: string; children: React.ReactNode}> = ({y, a, c, children}) => (
   <div style={{position: 'absolute', left: 60, top: y, width: 1800, padding: '18px 28px', borderRadius: 18, background: c, color: '#fff', fontFamily: FONT, fontSize: 36, fontWeight: 900, boxSizing: 'border-box', textAlign: 'center', opacity: a, transform: `scale(${0.94 + 0.06 * a})`, boxShadow: '0 14px 30px rgba(0,0,0,0.4)'}}>{children}</div>
 );
-const Ruler: React.FC<{X: (T: number) => number; a: number; b: number; y: number; c: string; txt: string; op: number}> = ({X, a, b, y, c, txt, op}) => (
+const Ruler: React.FC<{X: (T: number) => number; a: number; b: number; y: number; c: string; txt: string; op: number; below?: boolean}> = ({X, a, b, y, c, txt, op, below}) => (
   <g opacity={op}>
     <path d={`M${X(a)},${y - 12} L${X(a)},${y + 12} M${X(a)},${y} L${X(b)},${y} M${X(b)},${y - 12} L${X(b)},${y + 12}`} stroke={c} strokeWidth={4} fill="none" />
-    <text x={(X(a) + X(b)) / 2} y={y - 12} textAnchor="middle" fontFamily={FONT} fontSize={24} fontWeight={900} fill={c}>{txt}</text>
+    <text x={(X(a) + X(b)) / 2} y={below ? y + 36 : y - 12} textAnchor="middle" fontFamily={FONT} fontSize={24} fontWeight={900} fill={c}>{txt}</text>
   </g>
 );
 
@@ -165,7 +165,7 @@ const LookT: React.FC = () => {
 // ================= 2 · TĂNG KALI: TIẾN TRIỂN =================
 const HKProg: React.FC = () => {
   const t = useT();
-  const st = Math.max(0, Math.min(5, (t - 1.6) / 2));
+  const st = Math.max(0, Math.min(5, (t - 1.0) / 2));
   const cur = Math.round(st);
   const labs = ['T cao nhọn', 'P dẹt · PR dài', 'QRS rộng', 'HÌNH SIN', 'RUNG THẤT'];
   const col = (k: number) => [YE, AM, OR, RD, '#7F1D1D'][k];
@@ -227,14 +227,14 @@ const LookU: React.FC = () => {
     <DeskBg>
       <Head t={t}>Tìm U: hạ kali</Head>
       <Frame x={60} y={130} a={ap(t, -1)} c={PU}>
-        <Strip L={trainE(HYPOK, 1.0, 0.3)} w={1180} h={520} q={16} base={0.6} t0={0} label="V2" stroke={4.5}>
+        <Strip L={trainE(HYPOK, 1.0, 0.3)} w={1180} h={520} q={22} base={0.6} t0={0.1} label="V2" stroke={5}>
           {(X, Y) => <g>
-            <g opacity={ap(t, 2)}><circle cx={X(1.3 + 0.3)} cy={Y(0.06)} r={30} fill="none" stroke={PU} strokeWidth={5} /><text x={X(1.3 + 0.3)} y={Y(0.06) - 44} textAnchor="middle" fontFamily={HAND} fontSize={34} fill={PU}>T dẹt</text>
-              <circle cx={X(1.3 + 0.47)} cy={Y(0.17)} r={34} fill="none" stroke={RD} strokeWidth={6} /><text x={X(1.3 + 0.47)} y={Y(0.17) - 48} textAnchor="middle" fontFamily={HAND} fontSize={38} fill={RD}>sóng U</text></g>
-            <g opacity={ap(t, 4)}><path d={`M${X(1.3 + 0.12)},${Y(0) + 6} L${X(1.3 + 0.12)},${Y(-0.2)}`} stroke={BL} strokeWidth={5} markerEnd="url(#arL)" /><text x={X(1.3 + 0.15)} y={Y(-0.25)} fontFamily={HAND} fontSize={32} fill={BL}>ST chênh xuống</text></g>
+            <g opacity={ap(t, 2)}><circle cx={X(1.3 + 0.3)} cy={Y(0.04)} r={30} fill="none" stroke={PU} strokeWidth={5} /><text x={X(1.3 + 0.27)} y={Y(0.3)} textAnchor="end" fontFamily={HAND} fontSize={36} fill={PU}>T dẹt</text>
+              <circle cx={X(1.3 + 0.47)} cy={Y(0.19)} r={36} fill="none" stroke={RD} strokeWidth={6} /><text x={X(1.3 + 0.52)} y={Y(0.48)} fontFamily={HAND} fontSize={40} fill={RD}>sóng U</text></g>
+            <g opacity={ap(t, 4)}><path d={`M${X(1.3 + 0.16)},${Y(-0.32)} L${X(1.3 + 0.16)},${Y(-0.1)}`} stroke={BL} strokeWidth={5} markerEnd="url(#arL)" /><text x={X(1.3 + 0.16)} y={Y(-0.32) + 34} textAnchor="middle" fontFamily={HAND} fontSize={32} fill={BL}>ST chênh xuống</text></g>
             <g opacity={ap(t, 6)}>
-              <Ruler X={X} a={0.3} b={0.3 + 0.36} y={Y(-0.55)} c="#64748B" txt="QT" op={1} />
-              <Ruler X={X} a={1.3} b={1.3 + 0.55} y={Y(-0.55)} c={RD} txt="QU (dễ nhầm QT dài)" op={1} />
+              <Ruler X={X} a={0.3} b={0.3 + 0.38} y={Y(-0.75)} c="#475569" txt="QT" op={1} />
+              <Ruler X={X} a={1.3} b={1.3 + 0.55} y={Y(-0.75)} c={RD} txt="QU — dễ nhầm QT dài" op={1} />
             </g>
             <defs><marker id="arL" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill={BL} /></marker></defs>
           </g>}
@@ -265,7 +265,7 @@ const Calcium: React.FC = () => {
           <Frame x={0} y={0} a={1} c={c}>
             <Strip L={trainE(b, 1.0, 0.3)} w={1180} h={205} q={10} base={0.62} t0={0} label="II" stroke={3.6}>
               {(X, Y) => <g>
-                <Ruler X={X} a={1.3} b={1.3 + qt} y={Y(-0.35)} c={c === '#64748B' ? '#334155' : c} txt={`QT ${qt.toFixed(2).replace('.', ',')} s`} op={ap(t, st + 0.5)} />
+                <Ruler X={X} a={1.3} b={1.3 + qt} y={Y(-0.3)} c={c === '#64748B' ? '#334155' : c} txt={`QT ${qt.toFixed(2).replace('.', ',')} s`} op={ap(t, st + 0.5)} below />
                 {i !== 1 && <rect x={X(1.3 + 0.09)} y={Y(0.08)} width={X(1.3 + b.tp! - 0.06) - X(1.3 + 0.09)} height={Y(-0.08) - Y(0.08)} rx={6} fill={c + '33'} opacity={ap(t, st + 0.5)} />}
               </g>}
             </Strip>
