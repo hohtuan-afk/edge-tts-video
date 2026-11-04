@@ -1,20 +1,20 @@
 [
  {
   "orig": 12.0,
-  "dur": 13.76,
+  "dur": 13.6,
   "sents": [
    {
     "start": 0.5,
-    "dur": 3.799,
+    "dur": 3.667,
     "text": "Những kẻ giả dạng ST chênh lên — Chênh không phải là tắc"
    },
    {
-    "start": 4.649,
+    "start": 4.517,
     "dur": 5.913,
     "text": "Bài 6: KHÔNG CHÊNH vẫn có thể TẮC · Hôm nay: CHÊNH chưa chắc đã TẮC."
    },
    {
-    "start": 10.912,
+    "start": 10.78,
     "dur": 1.838,
     "text": "Thần chú: CHÊNH ≠ TẮC"
    }
@@ -22,7 +22,7 @@
  },
  {
   "orig": 21.0,
-  "dur": 34.16,
+  "dur": 33.48,
   "sents": [
    {
     "start": 0.5,
@@ -31,26 +31,26 @@
    },
    {
     "start": 3.591,
-    "dur": 4.812,
+    "dur": 4.559,
     "text": "① LAN TOẢ? Theo 1 vùng mạch vành, hay chênh khắp nơi?"
    },
    {
-    "start": 8.753,
-    "dur": 5.345,
+    "start": 8.5,
+    "dur": 5.145,
     "text": "② SOI GƯƠNG? Có ST chênh xuống đối diện → nghĩ TẮC thật."
    },
    {
-    "start": 14.448,
-    "dur": 5.41,
+    "start": 13.995,
+    "dur": 5.2,
     "text": "③ HÌNH DẠNG? Lõm hay lồi · có Q không · T ra sao."
    },
    {
-    "start": 20.208,
+    "start": 19.545,
     "dur": 5.667,
     "text": "④ BỐI CẢNH? Tuổi, triệu chứng, sốt · và ECG CŨ."
    },
    {
-    "start": 26.225,
+    "start": 25.562,
     "dur": 6.928,
     "text": "Còn nghi ngờ → coi như TẮC · làm lại ECG sau 15 – 30 phút, men tim, siêu âm tim."
    }
@@ -62,39 +62,39 @@
   "sents": [
    {
     "start": 0.5,
-    "dur": 6.699,
+    "dur": 6.514,
     "text": "Trạm 2 · VIÊM MÀNG NGOÀI TIM: ST chênh LÕM, LAN TOẢ nhiều chuyển đạo."
    },
    {
-    "start": 7.549,
-    "dur": 7.293,
+    "start": 7.364,
+    "dur": 7.113,
     "text": "PR chênh XUỐNG (rõ ở II) · aVR ngược lại: ST chênh xuống, PR chênh lên."
    },
    {
-    "start": 15.193,
+    "start": 14.827,
     "dur": 4.377,
     "text": "KHÔNG soi gương (trừ aVR, V1) · KHÔNG có sóng Q."
    },
    {
-    "start": 19.92,
-    "dur": 12.917,
+    "start": 19.554,
+    "dur": 13.405,
     "text": "Chẩn đoán (ESC 2025): đau ngực + > 1 tiêu chuẩn thêm · tiếng cọ · ECG · CRP tăng · tràn dịch mới."
    },
    {
-    "start": 33.187,
+    "start": 33.309,
     "dur": 4.364,
     "text": "ECG thay đổi theo giờ – ngày · ECG bình thường lúc đầu KHÔNG loại trừ."
    },
    {
-    "start": 37.901,
-    "dur": 8.609,
+    "start": 38.023,
+    "dur": 8.501,
     "text": "Lưu ý: VIÊM CƠ TIM cũng có thể ST chênh + troponin tăng, mạch vành bình thường → luôn nghĩ tới."
    }
   ]
  },
  {
   "orig": 18.0,
-  "dur": 31.44,
+  "dur": 30.84,
   "sents": [
    {
     "start": 0.5,
@@ -103,78 +103,78 @@
    },
    {
     "start": 6.058,
-    "dur": 4.903,
+    "dur": 4.674,
     "text": "ST lõm, T cao, hay ở V2 – V5 · ổn định theo thời gian."
    },
    {
-    "start": 11.311,
+    "start": 11.082,
     "dur": 3.809,
     "text": "Người trẻ, vận động viên · RẤT hay gặp ở tuổi vị thành niên."
    },
    {
-    "start": 15.47,
-    "dur": 7.512,
+    "start": 15.241,
+    "dur": 7.309,
     "text": "Tách với viêm màng ngoài tim: V6 · ST / T ≥ 0,25 → nghiêng VIÊM MÀNG NGOÀI TIM."
    },
    {
-    "start": 23.332,
-    "dur": 7.094,
+    "start": 22.9,
+    "dur": 6.93,
     "text": "Cẩn thận: tắc động mạch liên thất trước sớm cũng có T cao, ST lõm → so ECG cũ, làm lại."
    }
   ]
  },
  {
   "orig": 15.0,
-  "dur": 20.36,
+  "dur": 19.64,
   "sents": [
    {
     "start": 0.5,
-    "dur": 3.752,
+    "dur": 3.562,
     "text": "Trạm 4 · ST chênh THỨ PHÁT: do QRS bất thường kéo theo."
    },
    {
-    "start": 4.602,
-    "dur": 5.253,
+    "start": 4.412,
+    "dur": 5.058,
     "text": "DÀY THẤT TRÁI: S sâu ở V1 – V3 → ST chênh lên ở V1 – V3."
    },
    {
-    "start": 10.205,
-    "dur": 4.35,
+    "start": 9.82,
+    "dur": 4.188,
     "text": "BLOCK NHÁNH TRÁI · nhịp máy tạo nhịp thất: ST ngược chiều QRS."
    },
    {
-    "start": 14.905,
-    "dur": 4.455,
+    "start": 14.358,
+    "dur": 4.284,
     "text": "Nhớ bài 6: NGƯỢC chiều là bình thường · CÙNG chiều là bệnh."
    }
   ]
  },
  {
   "orig": 18.0,
-  "dur": 29.12,
+  "dur": 28.6,
   "sents": [
    {
     "start": 0.5,
-    "dur": 6.415,
+    "dur": 6.239,
     "text": "Trạm 5 · BRUGADA: ST chênh ở V1 – V2, nguy cơ rung thất, đột tử."
    },
    {
-    "start": 7.265,
-    "dur": 5.475,
+    "start": 7.089,
+    "dur": 5.27,
     "text": "TÍP 1 · “VÒM”: ST chênh ≥ 2 mm, đi xuống dần, T ÂM."
    },
    {
-    "start": 13.09,
-    "dur": 4.566,
+    "start": 12.709,
+    "dur": 4.438,
     "text": "TÍP 2 · “YÊN NGỰA”: ST võng xuống rồi đi lên, T DƯƠNG ở V2."
    },
    {
-    "start": 18.006,
+    "start": 17.497,
     "dur": 3.804,
     "text": "Chỉ TÍP 1 mới CHẨN ĐOÁN · típ 2 chỉ GỢI Ý."
    },
    {
-    "start": 22.159,
+    "start": 21.65,
     "dur": 5.95,
     "text": "Cách chia cũ có 3 típ — típ 3 đã gộp vào típ 2 (đồng thuận 2012)."
    }
@@ -182,7 +182,7 @@
  },
  {
   "orig": 15.0,
-  "dur": 18.92,
+  "dur": 18.96,
   "sents": [
    {
     "start": 0.5,
@@ -196,11 +196,11 @@
    },
    {
     "start": 9.411,
-    "dur": 5.067,
+    "dur": 5.07,
     "text": "SỐT có thể làm LỘ típ 1 → hạ sốt TÍCH CỰC, nhất là ở trẻ em."
    },
    {
-    "start": 14.827,
+    "start": 14.83,
     "dur": 3.112,
     "text": "Tránh thuốc làm nặng Brugada · chuyển chuyên khoa nhịp tim."
    }
@@ -208,7 +208,7 @@
  },
  {
   "orig": 18.0,
-  "dur": 29.4,
+  "dur": 29.08,
   "sents": [
    {
     "start": 0.5,
@@ -217,21 +217,21 @@
    },
    {
     "start": 4.062,
-    "dur": 6.044,
+    "dur": 5.88,
     "text": "Q sâu + ST chênh KÉO DÀI nhiều tuần · T nhỏ · so ECG cũ."
    },
    {
-    "start": 10.455,
+    "start": 10.291,
     "dur": 2.853,
     "text": "THUYÊN TẮC PHỔI: hay gặp nhất là NHỊP NHANH XOANG."
    },
    {
-    "start": 13.658,
-    "dur": 7.214,
+    "start": 13.495,
+    "dur": 7.054,
     "text": "Gánh thất phải: T âm V1 – V4 · block nhánh phải mới · có thể ST chênh V1, aVR."
    },
    {
-    "start": 21.222,
+    "start": 20.899,
     "dur": 7.189,
     "text": "S1Q3T3: ÍT nhạy, ít đặc hiệu → KHÔNG dùng để loại trừ · chẩn đoán bằng CT mạch phổi."
    }
@@ -239,7 +239,7 @@
  },
  {
   "orig": 12.0,
-  "dur": 20.36,
+  "dur": 20.04,
   "sents": [
    {
     "start": 0.5,
@@ -248,19 +248,19 @@
    },
    {
     "start": 2.695,
-    "dur": 7.245,
+    "dur": 7.059,
     "text": "TĂNG KALI: T cao nhọn, QRS rộng → có thể giả ST chênh (bài sau)."
    },
    {
-    "start": 10.29,
-    "dur": 9.056,
+    "start": 10.104,
+    "dur": 8.951,
     "text": "TAKOTSUBO: ST chênh giống hệt nhồi máu thành trước, sau stress → cần CHỤP MẠCH VÀNH."
    }
   ]
  },
  {
   "orig": 21.0,
-  "dur": 21.08,
+  "dur": 20.72,
   "sents": [
    {
     "start": 0.5,
@@ -269,26 +269,26 @@
    },
    {
     "start": 2.133,
-    "dur": 3.968,
+    "dur": 3.794,
     "text": "LÕM + LAN TOẢ + PR chênh xuống → VIÊM MÀNG NGOÀI TIM"
    },
    {
-    "start": 6.452,
+    "start": 6.278,
     "dur": 3.514,
     "text": "Khấc J + người trẻ + ổn định → TÁI CỰC SỚM"
    },
    {
-    "start": 10.316,
-    "dur": 3.343,
+    "start": 10.142,
+    "dur": 3.15,
     "text": "ST ngược chiều QRS rộng / S sâu → THỨ PHÁT"
    },
    {
-    "start": 14.009,
+    "start": 13.642,
     "dur": 3.534,
     "text": "V1 – V2 vòm + T âm → BRUGADA típ 1"
    },
    {
-    "start": 17.893,
+    "start": 17.526,
     "dur": 2.18,
     "text": "Theo vùng + SOI GƯƠNG → TẮC THẬT"
    }
@@ -296,48 +296,48 @@
  },
  {
   "orig": 24.0,
-  "dur": 34.64,
+  "dur": 34.0,
   "sents": [
    {
     "start": 0.5,
-    "dur": 0.89,
+    "dur": 0.891,
     "text": "Luyện đọc · 3 ca"
    },
    {
-    "start": 1.74,
-    "dur": 7.647,
+    "start": 1.741,
+    "dur": 7.46,
     "text": "Ca 1: nam 17 tuổi, khám sức khoẻ · ST lõm V2 – V5, khấc J · ECG cũ giống hệt."
    },
    {
-    "start": 9.737,
+    "start": 9.551,
     "dur": 1.426,
     "text": "→ TÁI CỰC SỚM ✓"
    },
    {
-    "start": 11.513,
-    "dur": 7.382,
+    "start": 11.327,
+    "dur": 7.148,
     "text": "Ca 2: sau cảm, đau ngực khi nằm · ST lõm lan toả, PR chênh xuống, aVR ngược lại."
    },
    {
-    "start": 19.245,
+    "start": 18.825,
     "dur": 1.592,
     "text": "→ VIÊM MÀNG NGOÀI TIM ✓"
    },
    {
-    "start": 21.187,
-    "dur": 7.046,
+    "start": 20.767,
+    "dur": 6.838,
     "text": "Ca 3: trẻ sốt 39,5 °C · V1 – V2: ST vòm ≥ 2 mm, T âm."
    },
    {
-    "start": 28.583,
-    "dur": 5.057,
+    "start": 27.955,
+    "dur": 5.056,
     "text": "→ BRUGADA TÍP 1 lộ do sốt → hạ sốt, chuyển chuyên khoa ✓"
    }
   ]
  },
  {
   "orig": 24.0,
-  "dur": 31.56,
+  "dur": 31.48,
   "sents": [
    {
     "start": 0.5,
@@ -351,27 +351,27 @@
    },
    {
     "start": 8.605,
-    "dur": 4.386,
+    "dur": 4.289,
     "text": "② Viêm màng ngoài tim: lõm, lan toả, PR chênh xuống"
    },
    {
-    "start": 13.341,
+    "start": 13.244,
     "dur": 4.159,
     "text": "③ Tái cực sớm: khấc J, người trẻ, ổn định"
    },
    {
-    "start": 17.851,
+    "start": 17.753,
     "dur": 7.585,
     "text": "④ Brugada: chỉ TÍP 1 chẩn đoán · sốt làm lộ · đặt V1 – V2 cao"
    },
    {
-    "start": 25.786,
+    "start": 25.688,
     "dur": 3.25,
     "text": "⑤ Còn nghi ngờ → coi như TẮC, làm lại ECG"
    },
    {
-    "start": 29.385,
-    "dur": 1.188,
+    "start": 29.288,
+    "dur": 1.189,
     "text": "Cảm ơn bạn đã theo dõi!"
    }
   ]
