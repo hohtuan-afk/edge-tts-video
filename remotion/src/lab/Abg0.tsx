@@ -32,7 +32,7 @@ const chem = (s: string) => {
   return out;
 };
 const Tx: React.FC<{x: number; y: number; w?: number; size?: number; c?: string; a?: number; al?: 'left' | 'center' | 'right'; b?: number; lh?: number; children: string}> = ({x, y, w, size = 34, c = K.ink, a = 1, al = 'left', b = 0, lh = 1.15, children}) => (
-  <div style={{position: 'absolute', left: x, top: y, width: w, textAlign: al, fontFamily: HAND, fontSize: size, color: c, opacity: a, lineHeight: lh, fontWeight: b ? 700 : 400, letterSpacing: 0.3, transform: `translateY(${(1 - a) * 12}px)`}}>
+  <div style={{position: 'absolute', left: x, top: y, width: w, textAlign: al, fontFamily: HAND, fontSize: size, color: c, opacity: a, lineHeight: lh, fontWeight: b ? 700 : 400, letterSpacing: 0.3, textWrap: 'balance' as any, transform: `translateY(${(1 - a) * 12}px)`}}>
     {chem(children)}
   </div>
 );
@@ -86,7 +86,7 @@ const Syringe: React.FC<{x: number; y: number; s?: number; prog: number; bubble?
   const f = useCurrentFrame();
   return (
     <g transform={`translate(${x},${y}) scale(${s})`}>
-      <RRect x={70} y={-42} w={300 * Math.max(0.02, prog)} h={84} stroke="none" fill={K.blood} fillStyle="solid" seed={seed} sw={0} />
+      {prog > 0.05 && <RRect x={70} y={-42} w={300 * prog} h={84} stroke="none" fill={K.blood} fillStyle="solid" seed={seed} sw={0} />}
       <RRect x={40} y={-48} w={350} h={96} stroke={K.chalk} sw={4} seed={seed + 1} prog={prog} fill="none" />
       <RLine x1={390} y1={0} x2={520} y2={0} stroke={K.chalk} sw={5} seed={seed + 2} prog={prog} />
       <RLine x1={-70} y1={0} x2={40} y2={0} stroke={K.chalk} sw={7} seed={seed + 3} prog={prog} />
@@ -214,7 +214,7 @@ const Sc1: React.FC<{S: number[]}> = ({S}) => {
         <RArrow x1={868} y1={270} x2={610} y2={315} stroke={K.chalk} sw={4} curve={-0.1} seed={3} prog={dp(t, S[0] + 1, 0.8)} />
         <RArrow x1={1052} y1={270} x2={1310} y2={315} stroke={K.chalk} sw={4} curve={0.1} seed={4} prog={dp(t, S[0] + 1.3, 0.8)} />
         <Syringe x={740} y={560} s={0.86} prog={dp(t, S[1], 0.9)} bubble={ap(t, S[1] + 0.7, 0.6)} />
-        <RArrow x1={1040} y1={600} x2={1312} y2={560} stroke={K.ph} sw={5} curve={0.08} seed={8} prog={dp(t, S[1] + 1, 0.7)} />
+        <RArrow x1={1196} y1={566} x2={1316} y2={520} stroke={K.ph} sw={5} curve={0.08} seed={8} prog={dp(t, S[1] + 1, 0.7)} />
       </Svg>
       <Tx x={700} y={650} w={520} al="center" size={36} c={K.ph} a={ap(t, S[1] + 0.9)}>Chỉ vài bọt khí trong ống tiêm</Tx>
       <Memo x={660} y={750} w={600} s0={S[2] + 0.4} size={46}>Mẫu sai thì đọc giỏi cũng sai</Memo>
@@ -239,14 +239,21 @@ const Q: React.FC<{y: number; s0: number; n: string; text: string; c: string; ch
 };
 const Row: React.FC<{y: number; label: string; meaning: string; c: string; s0: number}> = ({y, label, meaning, c, s0}) => {
   const t = useSec();
-  const a = ap(t, s0);
+  const on = ap(t, s0);
+  const a = Math.max(ap(t, 0.8) * 0.28, on);
   return (
     <>
-      <Svg><RRect x={130} y={y} w={540} h={94} seed={80 + y % 9} stroke={c} sw={3.5} fill={c} fillStyle="hachure" hachureGap={10} prog={a} fillA={a * 0.32} /></Svg>
+      <Svg><g opacity={a}><RRect x={130} y={y} w={540} h={94} seed={80 + y % 9} stroke={c} sw={3.5} fill={c} fillStyle="hachure" hachureGap={10} fillA={on * 0.32} /></g></Svg>
       <Tx x={156} y={y + 16} size={58} c={K.ink} a={a}>{label}</Tx>
       <Tx x={380} y={y + 28} w={275} al="right" size={34} c={K.muted} a={a}>{meaning}</Tx>
     </>
   );
+};
+const Glow: React.FC<{y: number; c: string; on: number[]; span: number}> = ({y, c, on, span}) => {
+  const t = useSec();
+  const a = Math.max(...on.map((s) => Math.min(ap(t, s, 0.25), 1 - ap(t, s + span, 0.3))));
+  if (a <= 0) return null;
+  return <rect x={992} y={y - 8} width={846} height={216} rx={8} fill="none" stroke={c} strokeWidth={10} opacity={a} style={{filter: `drop-shadow(0 0 14px ${c})`}} />;
 };
 const Sc2: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
   const t = useSec();
@@ -265,9 +272,9 @@ const Sc2: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
       <Q y={380} s0={S[2]} n="CÂU 2 · THÔNG KHÍ" text="Phổi có thải CO₂ phù hợp không?" c={K.co2}>{(p) => <Lungs x={1120} y={480} prog={p} />}</Q>
       <Q y={600} s0={S[3]} n="CÂU 3 · TOAN KIỀM" text="Cơ thể đang toan hay kiềm?" c={K.hco3}>{(p) => <Scale x={1120} y={700} prog={p} />}</Q>
       <Svg>
-        <RArrow x1={690} y1={639} x2={990} y2={270} stroke={K.o2} sw={4} curve={0.1} seed={91} prog={dp(t, r + 3 * gap + 0.2, 0.7)} />
-        <RArrow x1={690} y1={419} x2={990} y2={480} stroke={K.co2} sw={4} curve={-0.06} seed={92} prog={dp(t, r + gap + 0.2, 0.7)} />
-        <RArrow x1={690} y1={309} x2={990} y2={680} stroke={K.ph} sw={4} curve={-0.12} seed={93} prog={dp(t, r + 0.2, 0.7)} />
+        <Glow y={600} c={K.hco3} on={[r, r + 2 * gap]} span={gap} />
+        <Glow y={380} c={K.co2} on={[r + gap]} span={gap} />
+        <Glow y={160} c={K.o2} on={[r + 3 * gap]} span={gap} />
       </Svg>
       <Memo x={150} y={762} w={500} s0={S[4] + D[4] * 0.8} size={38}>Ô XY · THÔNG KHÍ · TOAN KIỀM</Memo>
     </>
@@ -283,7 +290,7 @@ const Sc3: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
   const artery = dp(t, S[0] + 0.5, 0.9);
   const press = ap(t, S[2], 0.5);
   const clock = interpolate(t, [S[2] + 0.4, S[2] + D[2] * 0.75], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-  const px = 590, py = 396;
+  const px = 540, py = 392;
   return (
     <>
       <Top idx={2} title="Lấy máu động mạch" />
@@ -294,14 +301,14 @@ const Sc3: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
         <RPath d="M575,380 C580,420 580,480 575,520" stroke={K.skin} sw={8} seed={102} prog={armP} rough={0.2} />
         <RPath d="M575,388 C568,430 568,470 575,512" stroke={K.skinD} sw={2.5} seed={103} prog={armP} />
         {/* động mạch quay */}
-        <RPath d={`M90,372 C240,380 420,386 ${px + 40},${py + 4}`} stroke={K.o2} sw={9} seed={104} prog={artery} rough={0.5} />
+        <RPath d={`M90,366 C240,374 420,382 ${px + 28},${py + 2}`} stroke={K.o2} sw={9} seed={104} prog={artery} rough={0.5} />
         {artery >= 1 && press < 1 && (
           <g opacity={1 - press}>
             <circle cx={px} cy={py} r={13 * pulse} fill="none" stroke={K.o2} strokeWidth={3} opacity={1.5 - pulse} />
             <circle cx={px} cy={py} r={8} fill={K.o2} />
           </g>
         )}
-        <RArrow x1={360} y1={240} x2={px - 14} y2={py - 18} stroke={K.ph} sw={4} curve={0.14} seed={105} prog={dp(t, S[0] + 0.9, 0.7)} />
+        <RArrow x1={430} y1={232} x2={px - 12} y2={py - 18} stroke={K.ph} sw={4} curve={0.14} seed={105} prog={dp(t, S[0] + 0.9, 0.7)} />
         {/* ngón tay đè */}
         {press > 0 && (
           <g opacity={press} transform={`translate(${px},${py - 140 + 60 * press})`}>
@@ -359,7 +366,7 @@ const Sc4: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
       <Flip x={80} s0={S[0]} c={K.co2} n="KẺ THỨ NHẤT" title="Bọt khí">
         {inner(
           <>
-            <rect x={70} y={150} width={420} height={136} rx={10} fill="#2A3A40" />
+            <rect x={20} y={146} width={516} height={144} rx={12} fill="#2A3A40" />
             <g><Syringe x={90} y={218} s={0.82} prog={dp(t, S[0] + 0.3, 0.7)} bubble={ap(t, S[0] + 0.7)} seed={124} /></g>
             <Vert dir="down" x={190} y={348} c={K.co2} prog={dp(t, S[0] + D[0] * 0.6, 0.5)} />
             <Vert dir="up" x={400} y={348} c={K.o2} prog={dp(t, S[0] + D[0] * 0.75, 0.5)} />
@@ -372,7 +379,7 @@ const Sc4: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
       <Flip x={680} s0={S[1]} c={K.green} n="KẺ THỨ HAI" title="Heparin thừa">
         {inner(
           <>
-            <rect x={70} y={150} width={420} height={136} rx={10} fill="#2A3A40" />
+            <rect x={20} y={146} width={516} height={144} rx={12} fill="#2A3A40" />
             <Syringe x={90} y={218} s={0.82} prog={dp(t, S[1] + 0.3, 0.7)} seed={130} />
             <Drop x={500} y={330} s={0.42 + 0.1 * Math.sin(t * 3)} prog={dp(t, S[1] + D[1] * 0.45, 0.4)} fill={K.green} />
             <RArrow x1={200} y1={330} x2={420} y2={330} stroke={K.green} sw={6} seed={131} prog={dp(t, S[1] + D[1] * 0.45, 0.6)} />
