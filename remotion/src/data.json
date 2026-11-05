@@ -1,81 +1,98 @@
 {
  "fps": 30,
- "total": 1296,
+ "total": 2072,
  "scenes": [
   {
    "from": 0,
-   "dur": 223,
+   "dur": 436,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 6.741,
-     "text": "Kali lên hay xuống? Nhìn ECG là biết! · NHÌN T – TÌM U – ĐO QT"
+     "start": 0.5,
+     "dur": 4.383,
+     "text": "Cùng một bệnh nhân, cùng thời điểm, nhưng hai phiếu khí máu lại khác nhau"
+    },
+    {
+     "start": 5.233,
+     "dur": 4.084,
+     "text": "Bệnh nhân không đổi. Thứ thay đổi là cách lấy và xử lý mẫu"
+    },
+    {
+     "start": 9.667,
+     "dur": 3.35,
+     "text": "Muốn đọc đúng khí máu, trước hết phải có một mẫu đáng tin"
     }
    ]
   },
   {
-   "from": 223,
-   "dur": 251,
+   "from": 436,
+   "dur": 530,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 7.646,
-     "text": "① NHÌN T: T cao nhọn → TĂNG KALI · nặng: QRS rộng, hình sin"
+     "start": 0.5,
+     "dur": 2.194,
+     "text": "Khí máu động mạch trả lời ba câu hỏi lớn"
+    },
+    {
+     "start": 3.044,
+     "dur": 1.655,
+     "text": "① Máu có đủ O₂ không?"
+    },
+    {
+     "start": 5.049,
+     "dur": 2.167,
+     "text": "② Phổi có thải CO₂ phù hợp không?"
+    },
+    {
+     "start": 7.566,
+     "dur": 1.729,
+     "text": "③ Cơ thể đang toan hay kiềm?"
+    },
+    {
+     "start": 9.645,
+     "dur": 6.53,
+     "text": "Đọc phiếu: pH · PaCO₂ · HCO₃⁻ · PaO₂"
     }
    ]
   },
   {
-   "from": 474,
-   "dur": 157,
+   "from": 966,
+   "dur": 476,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 4.557,
-     "text": "② TÌM U: T dẹt + sóng U → HẠ KALI / hạ magie"
+     "start": 0.5,
+     "dur": 2.457,
+     "text": "Vị trí thường dùng nhất: động mạch quay ở cổ tay"
+    },
+    {
+     "start": 3.307,
+     "dur": 3.839,
+     "text": "Trước khi chọc: kiểm tra tuần hoàn bàn tay, ví dụ nghiệm pháp Allen"
+    },
+    {
+     "start": 7.496,
+     "dur": 6.897,
+     "text": "Rút kim: đè chặt ít nhất 2 phút; lâu hơn nếu dùng chống đông, kháng tiểu cầu"
     }
    ]
   },
   {
-   "from": 631,
-   "dur": 173,
+   "from": 1442,
+   "dur": 630,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 5.046,
-     "text": "③ ĐO QT, hiệu chỉnh · QTc > 500 ms → NGUY CƠ CAO"
-    }
-   ]
-  },
-  {
-   "from": 804,
-   "dur": 169,
-   "sents": [
+     "start": 0.5,
+     "dur": 6.149,
+     "text": "① Bọt khí: trao đổi khí với máu → CO₂ giảm, O₂ tăng giả"
+    },
     {
-     "start": 0.25,
-     "dur": 4.933,
-     "text": "④ QT dài → XOẮN ĐỈNH · có thể chuyển rung thất"
-    }
-   ]
-  },
-  {
-   "from": 973,
-   "dur": 167,
-   "sents": [
+     "start": 6.999,
+     "dur": 5.706,
+     "text": "② Heparin thừa: đẩy bớt heparin lỏng và bọt khí khỏi ống tiêm"
+    },
     {
-     "start": 0.25,
-     "dur": 4.866,
-     "text": "NHÌN T – TÌM U – ĐO QT · ECG bình thường ≠ loại trừ tăng kali"
-    }
-   ]
-  },
-  {
-   "from": 1140,
-   "dur": 156,
-   "sents": [
-    {
-     "start": 0.25,
-     "dur": 4.49,
-     "text": "Bài cuối chuỗi · lưu lại để ôn, xem trọn bộ trên kênh!"
+     "start": 13.055,
+     "dur": 6.457,
+     "text": "③ Thời gian: tế bào máu vẫn chuyển hoá trong ống"
     }
    ]
   }
