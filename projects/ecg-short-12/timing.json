@@ -1,0 +1,79 @@
+[
+ {
+  "orig": 6.0,
+  "dur": 7.44,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 6.741,
+    "text": "Kali lên hay xuống? Nhìn ECG là biết! · NHÌN T – TÌM U – ĐO QT"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 8.36,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 7.646,
+    "text": "① NHÌN T: T cao nhọn → TĂNG KALI · nặng: QRS rộng, hình sin"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 5.24,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 4.557,
+    "text": "② TÌM U: T dẹt + sóng U → HẠ KALI / hạ magie"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 5.76,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 5.046,
+    "text": "③ ĐO QT, hiệu chỉnh · QTc > 500 ms → NGUY CƠ CAO"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 5.64,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 4.933,
+    "text": "④ QT dài → XOẮN ĐỈNH · có thể chuyển rung thất"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 5.56,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 4.866,
+    "text": "NHÌN T – TÌM U – ĐO QT · ECG bình thường ≠ loại trừ tăng kali"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 5.2,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 4.49,
+    "text": "Bài cuối chuỗi · lưu lại để ôn, xem trọn bộ trên kênh!"
+   }
+  ]
+ }
+]

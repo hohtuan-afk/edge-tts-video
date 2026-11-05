@@ -505,6 +505,6 @@ export const Lytes: React.FC = () => (
     <Progress />
   </AbsoluteFill>
 );
-export {beatE, trainE, hk, PEAK, HYPOK, FLAT, CAHI, CALO, STG, Pill, Banner, Ruler, StationBar12};
+export {beatE, trainE, hk, PEAK, HYPOK, FLAT, CAHI, CALO, STG, LQT, tdpSig, Pill, Banner, Ruler, StationBar12};
 export type {E};
 void TE; void lerp;

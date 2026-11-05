@@ -21,6 +21,7 @@ import {Short8} from './lab/Short8';
 import {Short9} from './lab/Short9';
 import {Short10} from './lab/Short10';
 import {Short11} from './lab/Short11';
+import {Short12} from './lab/Short12';
 import {Block, BLOCK_N} from './lab/Block';
 import {Bundle, BUNDLE_N} from './lab/Bundle';
 import {Infarct, INFARCT_N} from './lab/Infarct';
@@ -66,6 +67,7 @@ export const Root: React.FC = () => (
     <Composition id="BundleDemo" component={Bundle} durationInFrames={Math.max(30, data.scenes[Math.min(BUNDLE_N, data.scenes.length) - 1].from + data.scenes[Math.min(BUNDLE_N, data.scenes.length) - 1].dur)} fps={data.fps} width={1920} height={1080} />
     <Composition id="BundleFull" component={Bundle} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />
     <Composition id="BlockFull" component={Block} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />
+    <Composition id="Short12" component={Short12} durationInFrames={data.total} fps={data.fps} width={1080} height={1920} />
     <Composition id="Short11" component={Short11} durationInFrames={data.total} fps={data.fps} width={1080} height={1920} />
     <Composition id="Short10" component={Short10} durationInFrames={data.total} fps={data.fps} width={1080} height={1920} />
     <Composition id="Short9" component={Short9} durationInFrames={data.total} fps={data.fps} width={1080} height={1920} />
