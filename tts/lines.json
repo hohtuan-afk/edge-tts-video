@@ -1,35 +1,63 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+12%",
+ "rate": "+8%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Kali lên hay xuống? Nhìn điện tâm đồ là biết! Ba bước: nhìn T, tìm U, đo Q T."
+   "text": "Cùng một bệnh nhân, cùng một thời điểm, nhưng hai phiếu khí máu lại cho hai kết quả khác nhau."
+  },
+  {
+   "id": "00-1",
+   "text": "Bệnh nhân không thay đổi. Thứ thay đổi là cách lấy và xử lý mẫu máu."
+  },
+  {
+   "id": "00-2",
+   "text": "Vì vậy, muốn đọc đúng khí máu, trước hết phải có một mẫu đáng tin."
   },
   {
    "id": "01-0",
-   "text": "Một, nhìn T. Sóng T cao nhọn, hẹp đáy: nghĩ tăng kali. Nặng hơn, QRS rộng ra, rồi thành hình sin."
+   "text": "Khí máu động mạch giúp trả lời ba câu hỏi lớn."
+  },
+  {
+   "id": "01-1",
+   "text": "Một, máu có đủ ô xy không?"
+  },
+  {
+   "id": "01-2",
+   "text": "Hai, phổi có thải cê ô hai phù hợp không?"
+  },
+  {
+   "id": "01-3",
+   "text": "Ba, cơ thể đang toan hay kiềm?"
+  },
+  {
+   "id": "01-4",
+   "text": "Khi đọc phiếu, ta thường nhìn vào pê hát, áp suất riêng phần của cê ô hai, bi các bô nát, và áp suất riêng phần của ô xy."
   },
   {
    "id": "02-0",
-   "text": "Hai, tìm U. Sóng T dẹt, có sóng U ngay sau T: nghĩ hạ kali hoặc hạ ma-giê."
+   "text": "Vị trí thường dùng nhất là động mạch quay ở cổ tay."
+  },
+  {
+   "id": "02-1",
+   "text": "Trước khi chọc, ta kiểm tra tuần hoàn bàn tay, ví dụ bằng nghiệm pháp A-len."
+  },
+  {
+   "id": "02-2",
+   "text": "Sau khi rút kim, đè chặt ít nhất hai phút. Nếu bệnh nhân đang dùng thuốc chống đông hoặc kháng tiểu cầu, cần đè lâu hơn."
   },
   {
    "id": "03-0",
-   "text": "Ba, đo Q T rồi hiệu chỉnh. Q T c trên năm trăm mi li giây là nguy cơ cao."
+   "text": "Kẻ thứ nhất là bọt khí. Bọt khí trao đổi khí với máu, làm cê ô hai giảm và ô xy tăng giả."
   },
   {
-   "id": "04-0",
-   "text": "Q T dài dễ gây xoắn đỉnh: Q R S xoắn quanh đường đẳng điện, và có thể chuyển thành rung thất."
+   "id": "03-1",
+   "text": "Kẻ thứ hai là hê pa rin thừa. Vì vậy, cần đẩy bớt hê pa rin lỏng và bọt khí khỏi ống tiêm."
   },
   {
-   "id": "05-0",
-   "text": "Nhắc lại: nhìn T, tìm U, đo Q T. Và điện tâm đồ bình thường không loại trừ tăng kali."
-  },
-  {
-   "id": "06-0",
-   "text": "Đây là bài cuối của chuỗi. Lưu lại để ôn, và xem trọn bộ trên kênh nhé."
+   "id": "03-2",
+   "text": "Kẻ thứ ba là thời gian. Tế bào máu vẫn chuyển hoá trong ống, nên mẫu để lâu sẽ không còn phản ánh đúng bệnh nhân."
   }
  ]
 }
