@@ -362,6 +362,7 @@ const LongQT: React.FC = () => {
 // ================= 8 · XOẮN ĐỈNH =================
 const pvcE = (x: number) => gs(x, 0.05, 0.035, 1.3) + gs(x, 0.13, 0.035, -0.45) + gs(x, 0.34, 0.065, -0.5);
 const TDP0 = 2.72;
+const tdpEnv = (u: number) => 0.12 + 1.05 * Math.abs(Math.sin(Math.PI * (u + 0.7) / 1.4));
 const tdpSig = (T: number) => {
   const sinusB = beatE(LQT);
   let v = sinusB(T - 0.3) + sinusB(T - 2.0);
@@ -369,8 +370,7 @@ const tdpSig = (T: number) => {
   if (T < TDP0) v += pvcE(T - 2.57) * (T < 2.72 ? 1 : 0);
   if (T >= 2.55) {
     const u = T - 2.6;
-    const env = Math.min(1, Math.max(0, u / 0.08)) * (0.35 + 0.75 * Math.abs(Math.sin(Math.PI * u / 1.7)));
-    v += u > 0 ? env * Math.sin(2 * Math.PI * 4.2 * u) : 0;
+    v += u > 0 ? Math.min(1, u / 0.08) * tdpEnv(u) * Math.sin(2 * Math.PI * 3.8 * u) : 0;
   }
   return v;
 };
@@ -382,9 +382,8 @@ const Torsades: React.FC = () => {
       <Frame x={60} y={125} a={ap(t, -1)} c={OR}>
         <Strip L={tdpSig} w={1800} h={440} q={10} base={0.52} t0={0} label="II" stroke={4}>
           {(X, Y) => <g>
-            <g opacity={ap(t, 2)}><path d={`M${X(3.0)},${Y(1.55)} Q${X(3.85)},${Y(0.35)} ${X(4.7)},${Y(1.55)}`} fill="none" stroke={PU} strokeWidth={4} strokeDasharray="10 8" />
-              <path d={`M${X(3.0)},${Y(-1.55)} Q${X(3.85)},${Y(-0.35)} ${X(4.7)},${Y(-1.55)}`} fill="none" stroke={PU} strokeWidth={4} strokeDasharray="10 8" />
-              <text x={X(3.85)} y={Y(1.75)} textAnchor="middle" fontFamily={HAND} fontSize={34} fill={PU}>to – nhỏ – to</text></g>
+            <g opacity={ap(t, 2)}>{[1, -1].map((sg) => <polyline key={sg} points={Array.from({length: 220}, (_, k) => 2.75 + k * 0.02).map((T) => `${X(T)},${Y(sg * (tdpEnv(T - 2.6) + 0.12))}`).join(' ')} fill="none" stroke={PU} strokeWidth={4} strokeDasharray="10 8" />)}
+              <text x={X(4.0)} y={Y(1.55)} textAnchor="middle" fontFamily={HAND} fontSize={34} fill={PU}>to – nhỏ – to</text></g>
             <g opacity={ap(t, 4)}>
               <Ruler X={X} a={0.3} b={0.86} y={Y(-1.25)} c={AM} txt="NGẮN" op={1} below />
               <Ruler X={X} a={0.86} b={2.0} y={Y(-1.25)} c={BL} txt="DÀI" op={1} below />
@@ -441,7 +440,7 @@ const Practice12: React.FC = () => {
         <div key={i} style={{opacity: ap(t, st)}}>
           <Frame x={60} y={125 + i * 262} a={1} c={c}>
             <Strip L={f} w={1100} h={225} q={8} base={0.6} t0={0} label={i === 1 ? 'V2' : 'II'} stroke={3.2}>
-              {i === 2 ? (X, Y) => <g opacity={ap(t, 11)}><Ruler X={X} a={1.3} b={1.82} y={Y(-0.4)} c={RD} txt="QT 0,52 s" op={1} below /><Ruler X={X} a={1.3} b={2.3} y={Y(1.35)} c={GR} txt="RR 1,0 s" op={1} /></g> : undefined}
+              {i === 2 ? (X, Y) => <g opacity={ap(t, 11)}><Ruler X={X} a={1.3} b={1.82} y={Y(-0.4)} c={RD} txt="QT 0,52 s" op={1} below /><Ruler X={X} a={1.3} b={2.3} y={Y(1.15)} c={GR} txt="RR 1,0 s" op={1} /></g> : undefined}
             </Strip>
           </Frame>
           <div style={{position: 'absolute', left: 1200, top: 128 + i * 262, width: 660, fontFamily: FONT, fontSize: 26, fontWeight: 700, color: '#E2E8F0', lineHeight: 1.3}}>{q}</div>
