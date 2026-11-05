@@ -325,7 +325,164 @@ const MeasureQT: React.FC = () => {
   );
 };
 
-const SCN: React.FC[] = [Cover, LookT, HKProg, HKTraps, LookU, Calcium, MeasureQT];
+// ================= 7 · QT DÀI =================
+const LQT: E = {tp: 0.47, tw: 0.075, t: 0.3};
+const LongQT: React.FC = () => {
+  const t = useT();
+  const drugs: [string, string][] = [['Kháng sinh', 'macrolid · quinolon'], ['Chống loạn thần', ''], ['Chống nôn', 'ondansetron'], ['Chống loạn nhịp', 'amiodaron']];
+  return (
+    <DeskBg>
+      <Head t={t}>QT dài: mắc phải và bẩm sinh</Head>
+      <Frame x={60} y={125} a={ap(t, -1)} c={BL}>
+        <Strip L={trainE(LQT, 1.0, 0.3)} w={1180} h={330} q={12} base={0.62} t0={0} label="II" stroke={4}>
+          {(X, Y) => <Ruler X={X} a={1.3} b={1.3 + 0.56} y={Y(-0.35)} c={RD} txt="QT dài" op={ap(t, 0.4)} below />}
+        </Strip>
+      </Frame>
+      <Card x={1280} y={125} w={580} a={ap(t, 0)} c={BL} title="QT dài MẮC PHẢI">thuốc + hạ kali, hạ magie, nhịp chậm</Card>
+      <div style={{position: 'absolute', left: 60, top: 490, width: 1180, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14}}>
+        {drugs.map(([k, v], i) => (
+          <div key={k} style={{padding: '14px 20px', borderRadius: 14, background: '#FCFAF4', borderLeft: `10px solid ${OR}`, fontFamily: FONT, opacity: ap(t, 2 + i * 0.3), transform: `translateY(${(1 - ap(t, 2 + i * 0.3)) * 20}px)`, boxShadow: '0 10px 22px rgba(0,0,0,0.3)'}}>
+            <span style={{fontSize: 30, fontWeight: 900, color: '#9A3412'}}>💊 {k}</span>{v && <span style={{fontSize: 26, fontWeight: 700, color: '#334155'}}> · {v}</span>}
+          </div>
+        ))}
+      </div>
+      <div style={{position: 'absolute', left: 1280, top: 300, width: 580, padding: '18px 22px', borderRadius: 18, background: AM, color: '#fff', fontFamily: FONT, boxSizing: 'border-box', opacity: ap(t, 4), transform: `scale(${0.92 + 0.08 * ap(t, 4)})`, boxShadow: '0 14px 30px rgba(0,0,0,0.4)'}}>
+        <div style={{fontSize: 56, fontWeight: 900}}>⏱ + 60 ms</div>
+        <div style={{fontSize: 26, fontWeight: 800}}>so với trước dùng thuốc → nguy cơ cao</div>
+      </div>
+      <div style={{position: 'absolute', left: 1280, top: 500, width: 580, padding: '18px 22px', borderRadius: 18, background: '#FCFAF4', border: `4px solid ${PU}`, boxSizing: 'border-box', fontFamily: FONT, opacity: ap(t, 6), boxShadow: '0 14px 30px rgba(0,0,0,0.35)'}}>
+        <div style={{fontSize: 30, fontWeight: 900, color: PU}}>QT dài BẨM SINH</div>
+        <div style={{fontSize: 44, fontWeight: 900, color: '#4C1D95'}}>QTc ≥ 480 ms</div>
+        <div style={{fontSize: 24, fontWeight: 700, color: '#334155', marginTop: 4}}>ESC 2022 · ngất khi gắng sức · gia đình đột tử</div>
+      </div>
+    </DeskBg>
+  );
+};
+
+// ================= 8 · XOẮN ĐỈNH =================
+const pvcE = (x: number) => gs(x, 0.05, 0.035, 1.3) + gs(x, 0.13, 0.035, -0.45) + gs(x, 0.34, 0.065, -0.5);
+const TDP0 = 2.72;
+const tdpSig = (T: number) => {
+  const sinusB = beatE(LQT);
+  let v = sinusB(T - 0.3) + sinusB(T - 2.0);
+  v += pvcE(T - 0.86);
+  if (T < TDP0) v += pvcE(T - 2.57) * (T < 2.72 ? 1 : 0);
+  if (T >= 2.55) {
+    const u = T - 2.6;
+    const env = Math.min(1, Math.max(0, u / 0.08)) * (0.35 + 0.75 * Math.abs(Math.sin(Math.PI * u / 1.7)));
+    v += u > 0 ? env * Math.sin(2 * Math.PI * 4.2 * u) : 0;
+  }
+  return v;
+};
+const Torsades: React.FC = () => {
+  const t = useT();
+  return (
+    <DeskBg>
+      <Head t={t}>Xoắn đỉnh</Head>
+      <Frame x={60} y={125} a={ap(t, -1)} c={OR}>
+        <Strip L={tdpSig} w={1800} h={440} q={10} base={0.52} t0={0} label="II" stroke={4}>
+          {(X, Y) => <g>
+            <g opacity={ap(t, 2)}><path d={`M${X(3.0)},${Y(1.55)} Q${X(3.85)},${Y(0.35)} ${X(4.7)},${Y(1.55)}`} fill="none" stroke={PU} strokeWidth={4} strokeDasharray="10 8" />
+              <path d={`M${X(3.0)},${Y(-1.55)} Q${X(3.85)},${Y(-0.35)} ${X(4.7)},${Y(-1.55)}`} fill="none" stroke={PU} strokeWidth={4} strokeDasharray="10 8" />
+              <text x={X(3.85)} y={Y(1.75)} textAnchor="middle" fontFamily={HAND} fontSize={34} fill={PU}>to – nhỏ – to</text></g>
+            <g opacity={ap(t, 4)}>
+              <Ruler X={X} a={0.3} b={0.86} y={Y(-1.25)} c={AM} txt="NGẮN" op={1} below />
+              <Ruler X={X} a={0.86} b={2.0} y={Y(-1.25)} c={BL} txt="DÀI" op={1} below />
+              <Ruler X={X} a={2.0} b={2.57} y={Y(-1.25)} c={RD} txt="NGẮN" op={1} below />
+              <circle cx={X(2.62)} cy={Y(0.6)} r={44} fill="none" stroke={RD} strokeWidth={5} /><text x={X(2.62)} y={Y(1.45)} textAnchor="middle" fontFamily={HAND} fontSize={30} fill={RD}>rơi vào T</text>
+            </g>
+          </g>}
+        </Strip>
+      </Frame>
+      <Card x={60} y={600} w={880} a={ap(t, 0)} c={OR} title="Nhịp nhanh thất ĐA HÌNH trên nền QT DÀI" />
+      <Card x={980} y={600} w={880} a={ap(t, 2)} c={PU} title="QRS “xoắn” quanh đường đẳng điện" />
+      <Card x={60} y={710} w={880} a={ap(t, 4)} c={RD} title="Khởi phát NGẮN – DÀI – NGẮN">nhát sớm · nghỉ dài · nhát sớm rơi vào T</Card>
+      <Card x={980} y={710} w={880} a={ap(t, 6)} c="#7F1D1D" title="Tự hết · hoặc → RUNG THẤT" />
+    </DeskBg>
+  );
+};
+
+// ================= 9 · ÔN TẬP =================
+const Review12: React.FC = () => {
+  const t = useT();
+  const rows: [string, string, string, (T: number) => number, number][] = [
+    ['T cao nhọn · P mất, QRS rộng, hình sin', 'TĂNG KALI', RD, hk(1), 2],
+    ['T dẹt + sóng U', 'HẠ KALI / HẠ MAGIE', PU, trainE(HYPOK, 1.0, 0.25), 4],
+    ['ST ngắn ↔ ST dài', 'TĂNG / HẠ CANXI', TE, trainE(CALO, 1.0, 0.25), 6],
+    ['QTc > 500 ms', 'NGUY CƠ XOẮN ĐỈNH', OR, trainE(LQT, 1.0, 0.25), 8],
+  ];
+  return (
+    <DeskBg>
+      <Head t={t}>Ôn tập · NHÌN T – TÌM U – ĐO QT</Head>
+      {rows.map(([q, a, c, f, st], i) => (
+        <div key={a} style={{position: 'absolute', left: 60, top: 130 + i * 180, width: 1800, height: 160, borderRadius: 16, background: '#FCFAF4', borderLeft: `14px solid ${c}`, boxSizing: 'border-box', display: 'flex', alignItems: 'center', gap: 26, padding: '0 18px', opacity: ap(t, st), transform: `translateX(${(1 - ap(t, st)) * 50}px)`, boxShadow: '0 10px 22px rgba(0,0,0,0.35)', fontFamily: FONT}}>
+          <div style={{flex: 'none', borderRadius: 8, overflow: 'hidden'}}><Strip L={f} w={560} h={140} q={6} base={0.6} t0={0} stroke={2.6} /></div>
+          <div style={{fontSize: 32, fontWeight: 700, color: '#334155', width: 560}}>{q}</div>
+          <div style={{fontSize: 42, fontWeight: 900, color: c}}>→ {a}</div>
+        </div>
+      ))}
+    </DeskBg>
+  );
+};
+
+// ================= 10 · LUYỆN ĐỌC =================
+const QT52: E = {tp: 0.44, tw: 0.075, t: 0.3};
+const Practice12: React.FC = () => {
+  const t = useT();
+  const cases: [string, (T: number) => number, number, string, string][] = [
+    ['Ca 1 · trẻ suy thận, mệt lả · T cao nhọn, P mất, QRS rộng', hk(2.8), 2, 'TĂNG KALI NẶNG ✓', RD],
+    ['Ca 2 · tiêu chảy nhiều ngày · T dẹt, U rõ ở V2 – V3, ST chênh xuống nhẹ', trainE(HYPOK, 1.0, 0.3), 6, 'HẠ KALI (kiểm tra cả magie) ✓', PU],
+    ['Ca 3 · dùng thuốc kéo dài QT · QT 0,52 s · RR 1,0 s', trainE(QT52, 1.0, 0.3), 10, 'QTc = 0,52 ÷ √1,0 = 520 ms → NGUY CƠ XOẮN ĐỈNH ✓', OR],
+  ];
+  return (
+    <DeskBg>
+      <Head t={t}>Luyện đọc · 3 ca</Head>
+      {cases.map(([q, f, st, ans, c], i) => (
+        <div key={i} style={{opacity: ap(t, st)}}>
+          <Frame x={60} y={125 + i * 262} a={1} c={c}>
+            <Strip L={f} w={1100} h={225} q={8} base={0.6} t0={0} label={i === 1 ? 'V2' : 'II'} stroke={3.2}>
+              {i === 2 ? (X, Y) => <g opacity={ap(t, 11)}><Ruler X={X} a={1.3} b={1.82} y={Y(-0.4)} c={RD} txt="QT 0,52 s" op={1} below /><Ruler X={X} a={1.3} b={2.3} y={Y(1.35)} c={GR} txt="RR 1,0 s" op={1} /></g> : undefined}
+            </Strip>
+          </Frame>
+          <div style={{position: 'absolute', left: 1200, top: 128 + i * 262, width: 660, fontFamily: FONT, fontSize: 26, fontWeight: 700, color: '#E2E8F0', lineHeight: 1.3}}>{q}</div>
+          <div style={{position: 'absolute', left: 1200, top: 240 + i * 262, maxWidth: 660, padding: '8px 18px', borderRadius: 14, background: c, color: '#fff', fontFamily: FONT, fontSize: 28, fontWeight: 900, opacity: ap(t, st + 2), transform: `scale(${0.9 + 0.1 * ap(t, st + 2)})`, transformOrigin: 'left center'}}>{ans}</div>
+        </div>
+      ))}
+    </DeskBg>
+  );
+};
+
+// ================= 11 · 5 ĐIỀU CẦN NHỚ =================
+const Takeaways12: React.FC = () => {
+  const t = useT();
+  const items: [React.ReactNode, string][] = [
+    [<><b>NHÌN T – TÌM U – ĐO QT</b></>, YE],
+    [<>Tăng kali: <b>T nhọn → P mất → QRS rộng → hình sin</b></>, RD],
+    [<>ECG bình thường <b>KHÔNG loại trừ</b> tăng kali</>, AM],
+    [<><b>Kali</b> đổi sóng T · <b>Canxi</b> đổi đoạn ST</>, TE],
+    [<>QTc <b>&gt; 500 ms</b> hoặc tăng <b>&gt; 60 ms</b> → nguy cơ xoắn đỉnh</>, OR],
+  ];
+  return (
+    <DeskBg>
+      <Head t={t}>5 điều cần nhớ</Head>
+      {items.map(([s2, c], i) => {
+        const a = ap(t, 2 + i * 2);
+        return (
+          <div key={i} style={{position: 'absolute', left: 100, top: 130 + i * 122, width: 1720, height: 104, display: 'flex', alignItems: 'center', gap: 24, padding: '0 26px', borderRadius: 18, background: '#FCFAF4', borderLeft: `14px solid ${c}`, boxSizing: 'border-box', opacity: a, transform: `translateX(${(1 - a) * 50}px)`, boxShadow: '0 12px 26px rgba(0,0,0,0.35)', fontFamily: FONT}}>
+            <span style={{flex: 'none', width: 60, height: 60, borderRadius: 30, background: c, color: '#fff', fontSize: 34, fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{i + 1}</span>
+            <span style={{fontSize: 34, fontWeight: 700, color: '#1F2937'}}>{s2}</span>
+          </div>
+        );
+      })}
+      <div style={{position: 'absolute', left: 0, right: 0, top: 770, textAlign: 'center', fontFamily: FONT, opacity: ap(t, 12)}}>
+        <div style={{fontSize: 40, fontWeight: 800, color: '#5EEAD4'}}>Cảm ơn bạn đã theo dõi chuỗi</div>
+        <div style={{fontSize: 46, fontWeight: 900, color: '#F8FAFC', marginTop: 6}}>TIẾP CẬN ĐIỆN TÂM ĐỒ CƠ BẢN</div>
+      </div>
+    </DeskBg>
+  );
+};
+
+const SCN: React.FC[] = [Cover, LookT, HKProg, HKTraps, LookU, Calcium, MeasureQT, LongQT, Torsades, Review12, Practice12, Takeaways12];
 export const LYTES_N = 7;
 export const Lytes: React.FC = () => (
   <AbsoluteFill style={{background: '#0E1116', fontFamily: FONT}}>
