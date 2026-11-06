@@ -152,7 +152,7 @@ const Sc1: React.FC<{S: number[]}> = ({S}) => {
         <Curve d="M1120,632 C1200,640 1270,620 1324,560" p={ap(t, S[1] + 1.1, 0.7)} />
       </Svg>
       <Tx x={645} y={606} w={480} al="center" size={36} c={K.amber} b={700} a={ap(t, S[1] + 0.9)}>Chỉ vài bọt khí trong ống tiêm</Tx>
-      <Memo x={650} y={740} w={620} s0={S[2] + 0.4} size={44}>Mẫu sai thì đọc giỏi cũng sai</Memo>
+      <Memo x={560} y={740} w={800} s0={S[2] + 0.4} size={44}>Mẫu sai thì đọc giỏi cũng sai</Memo>
     </>
   );
 };
@@ -215,6 +215,7 @@ const Sc2: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
 };
 
 // ---------- Cảnh 3 ----------
+const MS = 0.285;
 const WS = 0.98, WX = -4, WY = 112; // hệ toạ độ bàn tay trên màn hình
 const wx = (x: number) => WX + x * WS;
 const wy = (y: number) => WY + y * WS;
@@ -269,7 +270,7 @@ const Sc3: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
           <g opacity={needleOn} transform={`translate(${sx + dx},${sy + dy}) rotate(${RAD}) scale(${-SYR},${SYR}) translate(-706,-85)`} dangerouslySetInnerHTML={{__html: syr}} />
         )}
         {press > 0.01 && (
-          <g opacity={Math.min(1, press * 1.6)} transform={`translate(${sx},${sy - (1 - press) * 80}) scale(${0.72 + (f % 2) * 0})`} dangerouslySetInnerHTML={{__html: glove}} />
+          <g opacity={Math.min(1, press * 1.6)} transform={`translate(${sx},${sy - (1 - press) * 80}) rotate(14) scale(0.78)`} dangerouslySetInnerHTML={{__html: glove}} />
         )}
       </Svg>
       <Callout x={130} y={186} a={lbl} c="#FF8E92">Động mạch quay</Callout>
@@ -280,14 +281,14 @@ const Sc3: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
       <Tx x={1158} y={156} size={36} b={800} a={Math.min(1, allenA)}>Nghiệm pháp Allen</Tx>
       <Svg>
         <g opacity={Math.min(1, allenA * 1.5)}>
-          <Art html={miniPale} x={1168} y={196} s={0.3} />
-          <circle cx={1168 + 0.3 * 500} cy={196 + 0.3 * 300} r={13} fill="#3D6DE0" stroke="#fff" strokeWidth={3} />
-          <circle cx={1168 + 0.3 * 500} cy={196 + 0.3 * 470} r={13} fill="#3D6DE0" stroke="#fff" strokeWidth={3} />
+          <Art html={miniPale} x={1172} y={200} s={MS} />
+          <circle cx={1172 + MS * 500} cy={200 + MS * 300} r={13} fill="#3D6DE0" stroke="#fff" strokeWidth={3} />
+          <circle cx={1172 + MS * 500} cy={200 + MS * 470} r={13} fill="#3D6DE0" stroke="#fff" strokeWidth={3} />
         </g>
-        <Curve d="M1498,312 L1536,312" c={K.txt} w={4} p={ap(t, S[1] + 1.6, 0.3)} />
+        <Curve d="M1486,306 L1526,306" c={K.txt} w={4} p={ap(t, S[1] + 1.6, 0.3)} />
         <g opacity={pink}>
-          <Art html={mini} x={1544} y={196} s={0.3} />
-          <circle cx={1544 + 0.3 * 500} cy={196 + 0.3 * 300} r={13} fill="#3D6DE0" stroke="#fff" strokeWidth={3} />
+          <Art html={mini} x={1550} y={200} s={MS} />
+          <circle cx={1550 + MS * 500} cy={200 + MS * 300} r={13} fill="#3D6DE0" stroke="#fff" strokeWidth={3} />
         </g>
       </Svg>
       <Tx x={1158} y={398} w={340} al="center" size={25} c={K.dim} lh={1.2} a={Math.min(1, allenA)}>Đè hai động mạch: bàn tay nhợt</Tx>
@@ -305,7 +306,7 @@ const Sc3: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
       </Svg>
       <Tx x={1410} y={550} w={450} size={62} b={800} c={K.amber} a={ap(t, S[2] + 0.5)}>≥ 2 phút</Tx>
       <Tx x={1410} y={640} w={450} size={32} c={K.txt} lh={1.2} a={ap(t, S[2] + D[2] * 0.5)}>Lâu hơn nếu dùng thuốc chống đông, kháng tiểu cầu</Tx>
-      <Memo x={360} y={770} w={560} s0={S[2] + D[2] * 0.72} size={40}>Rút kim xong, đè đủ lâu</Memo>
+      <Memo x={450} y={770} w={560} s0={S[2] + D[2] * 0.72} size={40}>Rút kim xong, đè đủ lâu</Memo>
     </>
   );
 };
@@ -361,7 +362,7 @@ const Sc4: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
           </>
         )}
         <Tx x={28} y={370} w={514} al="center" size={40} b={700} a={ap(t, S[1] + D[1] * 0.45)}>Đẩy bớt khỏi ống tiêm</Tx>
-        <Tx x={28} y={480} w={514} al="center" size={28} c={K.dim} a={ap(t, S[1] + D[1] * 0.6)}>heparin lỏng và bọt khí</Tx>
+        <Tx x={28} y={436} w={514} al="center" size={28} c={K.dim} a={ap(t, S[1] + D[1] * 0.6)}>heparin lỏng và bọt khí</Tx>
       </Flip>
       <Flip x={1290} s0={S[2]} c={K.hco3} n="KẺ THỨ BA" title="Thời gian">
         {inner(

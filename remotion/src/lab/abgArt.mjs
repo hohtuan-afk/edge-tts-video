@@ -89,11 +89,15 @@ export const anatomy = (p = 'a') => `
 
 export const gloveFinger = (p = 'g') => `
   <defs><linearGradient id="${p}n" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3D5DB8"/><stop offset=".35" stop-color="#8FB0F0"/><stop offset=".62" stop-color="#6287DE"/><stop offset="1" stop-color="#2F4A9E"/></linearGradient>
-  <filter id="${p}b"><feGaussianBlur stdDeviation="7"/></filter></defs>
+  <filter id="${p}b"><feGaussianBlur stdDeviation="7"/></filter>
+  <linearGradient id="${p}fade" gradientUnits="userSpaceOnUse" x1="0" y1="-240" x2="0" y2="-120"><stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#fff"/></linearGradient>
+  <mask id="${p}m" maskUnits="userSpaceOnUse" x="-80" y="-260" width="160" height="300"><rect x="-80" y="-260" width="160" height="300" fill="url(#${p}fade)"/></mask></defs>
   <ellipse cx="6" cy="10" rx="44" ry="20" fill="#000" opacity=".35" filter="url(#${p}b)"/>
+  <g mask="url(#${p}m)">
   <path d="M-46,-240 C-48,-140 -46,-50 -38,-14 C-28,20 26,20 36,-14 C46,-50 48,-140 46,-240 Z" fill="url(#${p}n)" stroke="#223A85" stroke-width="2"/>
   <path d="M-42,-84 Q0,-70 42,-84 M-44,-150 Q0,-136 44,-150" stroke="#223A85" stroke-opacity=".4" stroke-width="2.5" fill="none"/>
   <path d="M-20,-220 C-22,-140 -20,-70 -14,-24" stroke="#D8E5FF" stroke-opacity=".55" stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
 `;
 
 // ---------- Ống tiêm khí máu (khung 700×170, mũi kim về bên phải) ----------
