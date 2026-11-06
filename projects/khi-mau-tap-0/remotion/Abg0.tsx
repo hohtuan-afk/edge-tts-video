@@ -1,61 +1,77 @@
-// Giải mã khí máu · Tập 0 (bản thử 4 cảnh): bảng tối + giấy kem + nét vẽ tay kiểu minh hoạ
-import React from 'react';
+// Giải mã khí máu · Tập 0 (bản thử 4 cảnh): minh hoạ y khoa có khối, bóng và lớp giải phẫu
+import React, {useMemo} from 'react';
 import {AbsoluteFill, Audio, Sequence, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import data from '../data.json';
 import {Caption, Progress} from '../Main';
+import {FONT} from '../lib';
 import {Fade} from './Demo';
-import {HAND, RArrow, REllipse, RLine, RPath, RRect, ap, dp} from '../wb/wb';
+import {ap} from '../wb/wb';
+import * as A from './abgArt.mjs';
 
 const K = {
-  board: '#14252B', board2: '#1E353C', chalk: '#F4F1E6', dim: '#A9BDBE',
-  paper: '#FBF5E6', paper2: '#F3E8CF', ink: '#25343D', muted: '#6B7A80',
-  ph: '#F2B632', co2: '#2F9FD0', hco3: '#F07F3C', o2: '#D94F5C', green: '#3FA374', blood: '#B92F3C', skin: '#F2C6A5', skinD: '#B47A5C',
-  sticky: '#FFD95A',
+  txt: '#F2F7F9', dim: '#A7BAC4', ink: '#22303A', muted: '#60707A', amber: '#F5B83D',
+  ph: '#F2B632', co2: '#38A7DD', hco3: '#F2813D', o2: '#E5484D', green: '#3FB27F', line: 'rgba(190,220,235,.2)',
 };
 const NAMES = ['VÌ SAO', 'ĐỌC GÌ', 'LẤY MÁU', 'PHÁ MẪU'];
 
 const useSec = () => useCurrentFrame() / 30;
-const usePop = (s0: number, damping = 13) => {
+const usePop = (s0: number, damping = 14) => {
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
-  return spring({frame: f - s0 * fps, fps, config: {damping, stiffness: 140, mass: 0.8}});
+  return spring({frame: f - s0 * fps, fps, config: {damping, stiffness: 130, mass: 0.8}});
 };
+const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
-// Chỉ số dưới/trên viết đúng trong HTML để font tay không bị vỡ
 const chem = (s: string) => {
   const out: React.ReactNode[] = [];
   s.split(/(₂|₃⁻)/).forEach((p, i) => {
-    if (p === '₂') out.push(<sub key={i} style={{fontSize: '.62em'}}>2</sub>);
-    else if (p === '₃⁻') out.push(<span key={i}><sub style={{fontSize: '.62em'}}>3</sub><sup style={{fontSize: '.62em', marginLeft: -2}}>−</sup></span>);
+    if (p === '₂') out.push(<sub key={i} style={{fontSize: '.62em', lineHeight: 0}}>2</sub>);
+    else if (p === '₃⁻') out.push(<span key={i}><sub style={{fontSize: '.62em', lineHeight: 0}}>3</sub><sup style={{fontSize: '.62em', lineHeight: 0, marginLeft: -2}}>−</sup></span>);
     else out.push(p);
   });
   return out;
 };
-const Tx: React.FC<{x: number; y: number; w?: number; size?: number; c?: string; a?: number; al?: 'left' | 'center' | 'right'; b?: number; lh?: number; children: string}> = ({x, y, w, size = 34, c = K.ink, a = 1, al = 'left', b = 0, lh = 1.15, children}) => (
-  <div style={{position: 'absolute', left: x, top: y, width: w, textAlign: al, fontFamily: HAND, fontSize: size, color: c, opacity: a, lineHeight: lh, fontWeight: b ? 700 : 400, letterSpacing: 0.3, textWrap: 'balance' as any, transform: `translateY(${(1 - a) * 12}px)`}}>
+const Tx: React.FC<{x: number; y: number; w?: number; size?: number; c?: string; a?: number; al?: 'left' | 'center' | 'right'; b?: number; lh?: number; children: string}> = ({x, y, w, size = 34, c = K.txt, a = 1, al = 'left', b = 600, lh = 1.2, children}) => (
+  <div style={{position: 'absolute', left: x, top: y, width: w, textAlign: al, fontFamily: FONT, fontSize: size, color: c, opacity: a, lineHeight: lh, fontWeight: b, textWrap: 'balance' as any, transform: `translateY(${(1 - a) * 10}px)`}}>
     {chem(children)}
   </div>
 );
-const Svg: React.FC<{children: React.ReactNode}> = ({children}) => (
-  <svg viewBox="0 0 1920 1080" style={{position: 'absolute', inset: 0, width: 1920, height: 1080}}>{children}</svg>
+const Svg: React.FC<{children: React.ReactNode; style?: React.CSSProperties}> = ({children, style}) => (
+  <svg viewBox="0 0 1920 1080" style={{position: 'absolute', inset: 0, width: 1920, height: 1080, overflow: 'visible', ...style}}>{children}</svg>
 );
+const Art: React.FC<{html: string; x?: number; y?: number; s?: number; sx?: number; rot?: number; a?: number}> = ({html, x = 0, y = 0, s = 1, sx, rot = 0, a = 1}) => (
+  <g opacity={a} transform={`translate(${x},${y}) rotate(${rot}) scale(${sx ?? s},${s})`} dangerouslySetInnerHTML={{__html: html}} />
+);
+const Curve: React.FC<{d: string; c?: string; w?: number; p: number; head?: boolean}> = ({d, c = K.amber, w = 4, p, head = true}) => {
+  const id = `h${c.replace('#', '')}`;
+  return (
+    <g opacity={p > 0 ? 1 : 0}>
+      <defs><marker id={id} markerWidth="9" markerHeight="9" refX="6.5" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,4 L0,8 Z" fill={c} /></marker></defs>
+      <path d={d} pathLength={1} strokeDasharray={1} strokeDashoffset={1 - p} fill="none" stroke={c} strokeWidth={w} strokeLinecap="round" markerEnd={head && p > 0.96 ? `url(#${id})` : undefined} />
+    </g>
+  );
+};
 
-const Board: React.FC = () => (
-  <AbsoluteFill style={{background: `radial-gradient(circle at 28% 22%, ${K.board2}, transparent 52%), radial-gradient(circle at 80% 76%, #1A3036, transparent 46%), ${K.board}`}}>
-    <AbsoluteFill style={{background: 'radial-gradient(ellipse at 50% 50%, transparent 58%, rgba(0,0,0,.42))'}} />
-  </AbsoluteFill>
-);
+const Studio: React.FC = () => {
+  const f = useCurrentFrame();
+  return (
+    <AbsoluteFill style={{background: 'linear-gradient(135deg,#0D1B24 0%,#10262F 55%,#0A161E 100%)'}}>
+      <div style={{position: 'absolute', left: 150 + Math.sin(f / 90) * 50, top: -180, width: 1100, height: 900, background: 'radial-gradient(closest-side,rgba(60,145,170,.28),transparent)'}} />
+      <div style={{position: 'absolute', right: 40 + Math.cos(f / 110) * 50, bottom: -240, width: 900, height: 800, background: 'radial-gradient(closest-side,rgba(190,60,80,.15),transparent)'}} />
+    </AbsoluteFill>
+  );
+};
 
 const Top: React.FC<{idx: number; title: string}> = ({idx, title}) => {
   const t = useSec();
+  const a = ap(t, 0.1);
   return (
     <>
-      <Tx x={40} y={16} size={28} c={K.dim}>GIẢI MÃ KHÍ MÁU · TẬP 0</Tx>
-      <Tx x={40} y={54} size={62} c={K.chalk} a={ap(t, 0.1)}>{title}</Tx>
-      <Svg><RLine x1={42} y1={130} x2={interpolate(ap(t, 0.2, 0.9), [0, 1], [42, 42 + Math.min(760, title.length * 27)])} y2={130} stroke={K.ph} sw={4} seed={idx + 3} /></Svg>
-      <div style={{position: 'absolute', right: 34, top: 20, display: 'flex', gap: 10, fontFamily: HAND}}>
+      <Tx x={44} y={22} size={24} c={K.dim} b={600}>GIẢI MÃ KHÍ MÁU · TẬP 0</Tx>
+      <Tx x={44} y={56} size={54} b={800} a={a}>{title}</Tx>
+      <div style={{position: 'absolute', right: 36, top: 24, display: 'flex', gap: 10, fontFamily: FONT}}>
         {NAMES.map((n, i) => (
-          <div key={n} style={{padding: i === idx ? '4px 18px' : '4px 12px', borderRadius: 18, fontSize: i === idx ? 30 : 24, background: i === idx ? K.ph : 'rgba(255,255,255,.07)', color: i === idx ? K.ink : i < idx ? K.chalk : K.dim, border: '1.5px solid rgba(255,255,255,.16)'}}>
+          <div key={n} style={{padding: i === idx ? '5px 20px' : '5px 14px', borderRadius: 20, fontSize: i === idx ? 26 : 22, fontWeight: 700, background: i === idx ? K.amber : 'rgba(255,255,255,.07)', color: i === idx ? K.ink : i < idx ? K.txt : K.dim, border: `1.5px solid ${K.line}`}}>
             {i === idx ? n : i + 1}
           </div>
         ))}
@@ -64,278 +80,233 @@ const Top: React.FC<{idx: number; title: string}> = ({idx, title}) => {
   );
 };
 
-const Memo: React.FC<{x: number; y: number; w: number; s0: number; rot?: number; size?: number; children: string}> = ({x, y, w, s0, rot = -1.6, size = 42, children}) => {
+const Memo: React.FC<{x: number; y: number; w: number; s0: number; size?: number; children: string}> = ({x, y, w, s0, size = 42, children}) => {
   const p = usePop(s0);
   if (p <= 0.01) return null;
   return (
-    <div style={{position: 'absolute', left: x, top: y, width: w, padding: '10px 24px 14px', background: K.sticky, color: K.ink, fontFamily: HAND, textAlign: 'center', boxShadow: '0 12px 28px rgba(0,0,0,.42)', transform: `rotate(${rot}deg) scale(${p})`, opacity: Math.min(1, p * 1.5), borderRadius: 4}}>
-      <div style={{fontSize: 24, color: '#8A6410', letterSpacing: 3}}>GHI NHỚ</div>
-      <div style={{fontSize: size, lineHeight: 1.12}}>{chem(children)}</div>
+    <div style={{position: 'absolute', left: x, top: y, width: w, padding: '10px 26px 14px', borderRadius: 16, background: 'linear-gradient(135deg,#FFD46B,#F5B83D)', color: K.ink, fontFamily: FONT, textAlign: 'center', boxShadow: '0 16px 40px rgba(0,0,0,.5)', transform: `scale(${p})`, opacity: Math.min(1, p * 1.5)}}>
+      <div style={{fontSize: 20, fontWeight: 800, letterSpacing: 3, color: '#7A5608'}}>GHI NHỚ</div>
+      <div style={{fontSize: size, fontWeight: 800, lineHeight: 1.15}}>{chem(children)}</div>
     </div>
   );
 };
 
-// Phiếu giấy vẽ tay
-const Paper: React.FC<{x: number; y: number; w: number; h: number; s0: number; seed?: number}> = ({x, y, w, h, s0, seed = 4}) => {
-  const t = useSec();
-  return <RRect x={x} y={y} w={w} h={h} seed={seed} stroke={K.ink} sw={3.5} fill={K.paper} fillStyle="solid" prog={dp(t, s0, 0.8)} fillA={ap(t, s0, 0.45)} />;
-};
-
-// ---------- Hình vẽ dùng chung ----------
-const Syringe: React.FC<{x: number; y: number; s?: number; prog: number; bubble?: number; seed?: number}> = ({x, y, s = 1, prog, bubble = 0, seed = 2}) => {
-  const f = useCurrentFrame();
-  return (
-    <g transform={`translate(${x},${y}) scale(${s})`}>
-      {prog > 0.05 && <RRect x={70} y={-42} w={300 * prog} h={84} stroke="none" fill={K.blood} fillStyle="solid" seed={seed} sw={0} />}
-      <RRect x={40} y={-48} w={350} h={96} stroke={K.chalk} sw={4} seed={seed + 1} prog={prog} fill="none" />
-      <RLine x1={390} y1={0} x2={520} y2={0} stroke={K.chalk} sw={5} seed={seed + 2} prog={prog} />
-      <RLine x1={-70} y1={0} x2={40} y2={0} stroke={K.chalk} sw={7} seed={seed + 3} prog={prog} />
-      <RLine x1={-70} y1={-34} x2={-70} y2={34} stroke={K.chalk} sw={7} seed={seed + 4} prog={prog} />
-      <RLine x1={40} y1={-66} x2={40} y2={66} stroke={K.chalk} sw={5} seed={seed + 5} prog={prog} />
-      {bubble > 0 && [[220, -10, 44], [292, 12, 30], [160, 14, 24]].map(([bx, by, r], i) => (
-        <g key={i} opacity={bubble}>
-          <circle cx={bx} cy={by + Math.sin(f / 9 + i) * 3} r={(r / 2) * bubble} fill="rgba(255,255,255,.9)" stroke={K.chalk} strokeWidth={2.5} />
-          <circle cx={bx - r / 8} cy={by - r / 8 + Math.sin(f / 9 + i) * 3} r={r / 9} fill={K.co2} />
-        </g>
-      ))}
-    </g>
-  );
-};
-
-const handOpen = (o: number) => {
-  // Lòng bàn tay ngửa, ngón hướng sang phải, ngón cái ở trên. Toạ độ gốc: cổ tay tại (0, 0)
-  void o;
-  return {
-    palm: 'M0,-72 C40,-90 110,-96 190,-92 C225,-88 238,-40 238,10 C238,60 222,92 186,96 C110,102 40,92 0,72 Z',
-    thumb: 'M56,-82 C86,-122 112,-160 158,-186 C182,-198 202,-176 188,-154 C170,-122 152,-104 138,-86 Z',
-    fingers: [
-      'M226,-88 C270,-100 340,-104 368,-96 C392,-88 390,-58 366,-54 C320,-48 270,-48 232,-50 Z',
-      'M238,-44 C290,-52 372,-54 402,-46 C426,-38 424,-8 400,-4 C350,0 290,0 240,-4 Z',
-      'M238,2 C290,-2 362,0 392,8 C416,16 414,46 390,48 C344,52 286,50 238,46 Z',
-      'M232,50 C276,50 326,54 350,62 C372,70 370,96 348,98 C310,102 262,100 222,92 Z',
-    ],
-  };
-};
-const OpenHand: React.FC<{x: number; y: number; s?: number; fill?: string; prog?: number}> = ({x, y, s = 1, fill = K.skin, prog = 1}) => {
-  const H = handOpen(1);
-  return (
-    <g transform={`translate(${x},${y}) scale(${s})`}>
-      {[H.thumb, ...H.fingers].map((d, i) => <RPath key={i} d={d} stroke={K.skinD} sw={3 / s} fill={fill} fillStyle="solid" seed={11 + i} prog={prog} fillA={prog} rough={0.7} />)}
-      <RPath d={H.palm} stroke={K.skinD} sw={3 / s} fill={fill} fillStyle="solid" seed={9} prog={prog} fillA={prog} rough={0.7} />
-    </g>
-  );
-};
-const Fist: React.FC<{x: number; y: number; s?: number; fill?: string; prog?: number}> = ({x, y, s = 1, fill = '#E8D9CC', prog = 1}) => (
-  <g transform={`translate(${x},${y}) scale(${s})`}>
-    <RPath d="M0,-70 C60,-96 150,-98 210,-76 C248,-58 252,58 214,78 C150,102 60,96 0,70 Z" stroke={K.skinD} sw={3 / s} fill={fill} fillStyle="solid" seed={21} prog={prog} fillA={prog} rough={0.7} />
-    {[-44, -6, 32].map((yy, i) => <RPath key={i} d={`M116,${yy} C160,${yy - 8} 208,${yy - 4} 226,${yy + 6}`} stroke={K.skinD} sw={3 / s} seed={23 + i} prog={prog} rough={0.5} />)}
-    <RPath d="M30,-34 C70,-52 120,-48 150,-30 C160,-20 148,-8 134,-12 C100,-22 64,-20 36,-10 Z" stroke={K.skinD} sw={3 / s} fill={fill} fillStyle="solid" seed={27} prog={prog} fillA={prog} rough={0.5} />
-  </g>
-);
-
-const Lungs: React.FC<{x: number; y: number; s?: number; prog: number}> = ({x, y, s = 1, prog}) => {
-  const f = useCurrentFrame();
-  const br = 1 + Math.sin(f / 18) * 0.03 * prog;
-  return (
-    <g transform={`translate(${x},${y}) scale(${s * br})`}>
-      <RPath d="M-12,-40 C-40,-40 -74,-10 -80,40 C-84,70 -46,74 -22,58 C-12,50 -10,10 -12,-40 Z" stroke={K.ink} sw={3} fill="#EE9F9A" fillStyle="hachure" hachureGap={7} seed={31} prog={prog} fillA={prog} />
-      <RPath d="M12,-40 C40,-40 74,-10 80,40 C84,70 46,74 22,58 C12,50 10,10 12,-40 Z" stroke={K.ink} sw={3} fill="#EE9F9A" fillStyle="hachure" hachureGap={7} seed={32} prog={prog} fillA={prog} />
-      <RPath d="M0,-78 L0,-34 M0,-34 L-22,-14 M0,-34 L22,-14" stroke={K.ink} sw={4} seed={33} prog={prog} />
-    </g>
-  );
-};
-const Drop: React.FC<{x: number; y: number; s?: number; prog: number; fill?: string}> = ({x, y, s = 1, prog, fill = K.o2}) => (
-  <g transform={`translate(${x},${y}) scale(${s})`}>
-    <RPath d="M0,-68 C22,-34 52,-6 52,24 C52,54 28,72 0,72 C-28,72 -52,54 -52,24 C-52,-6 -22,-34 0,-68 Z" stroke={K.ink} sw={3} fill={fill} fillStyle="solid" seed={35} prog={prog} fillA={prog} />
-  </g>
-);
-const Scale: React.FC<{x: number; y: number; prog: number}> = ({x, y, prog}) => {
-  const f = useCurrentFrame();
-  const a = Math.sin(f / 22) * 8 * prog;
-  return (
-    <g transform={`translate(${x},${y})`}>
-      <RLine x1={0} y1={-56} x2={0} y2={62} stroke={K.ink} sw={5} seed={41} prog={prog} />
-      <RLine x1={-42} y1={64} x2={42} y2={64} stroke={K.ink} sw={5} seed={42} prog={prog} />
-      <g transform={`rotate(${a} 0 -50)`}>
-        <RLine x1={-72} y1={-50} x2={72} y2={-50} stroke={K.ink} sw={5} seed={43} prog={prog} />
-        <RPath d="M-100,0 Q-72,28 -44,0 Z M-72,-50 L-100,0 M-72,-50 L-44,0" stroke={K.o2} sw={3.5} seed={44} prog={prog} />
-        <RPath d="M44,0 Q72,28 100,0 Z M72,-50 L44,0 M72,-50 L100,0" stroke={K.co2} sw={3.5} seed={45} prog={prog} />
-      </g>
-    </g>
-  );
-};
-const Hourglass: React.FC<{x: number; y: number; prog: number; sand: number}> = ({x, y, prog, sand}) => (
-  <g transform={`translate(${x},${y})`}>
-    <RPath d={`M-34,${-54 + 46 * sand} L34,${-54 + 46 * sand} L4,-4 L-4,-4 Z`} stroke="none" fill={K.ph} fillStyle="solid" seed={51} />
-    <RPath d={`M${-40 * sand},70 L${40 * sand},70 L${6},${70 - 44 * sand} L${-6},${70 - 44 * sand} Z`} stroke="none" fill={K.ph} fillStyle="solid" seed={52} />
-    <RPath d="M-50,-78 L50,-78 M-50,78 L50,78 M-42,-78 C-42,-30 -8,-16 -8,0 C-8,16 -42,30 -42,78 M42,-78 C42,-30 8,-16 8,0 C8,16 42,30 42,78" stroke={K.ink} sw={4} seed={53} prog={prog} />
-  </g>
+const Callout: React.FC<{x: number; y: number; a: number; c?: string; size?: number; children: string}> = ({x, y, a, c = K.txt, size = 28, children}) => (
+  <div style={{position: 'absolute', left: x, top: y, opacity: a, padding: '6px 16px', borderRadius: 12, background: 'rgba(8,18,25,.86)', border: `2px solid ${c}`, color: K.txt, fontFamily: FONT, fontSize: size, fontWeight: 700, whiteSpace: 'nowrap', transform: `translateY(${(1 - a) * 8}px)`}}>
+    {chem(children)}
+  </div>
 );
 
 // ---------- Cảnh 1 ----------
-const Slip: React.FC<{x: number; y: number; name: string; s0: number; o2: number; co2: number; alert?: number; c: string}> = ({x, y, name, s0, o2, co2, alert = 0, c}) => {
-  const t = useSec();
-  const a = ap(t, s0 + 0.25);
+const Slip: React.FC<{x: number; y: number; id: string; name: string; s0: number; o2: number; co2: number; alert?: number; c: string; rot: number}> = ({x, y, id, name, s0, o2, co2, alert = 0, c, rot}) => {
+  const p = usePop(s0);
+  const art = useMemo(() => A.slip(id, 480, 520), [id]);
   const f = useCurrentFrame();
-  const shake = alert > 0 && alert < 1 ? Math.sin(f * 1.4) * 3 : 0;
+  const shake = alert > 0 && alert < 1 ? Math.sin(f * 1.5) * 3 : 0;
+  const hot = alert > 0.1;
+  const Row = ({y: ry, label, v}: {y: number; label: string; v: number}) => (
+    <>
+      {hot && <div style={{position: 'absolute', left: 190, top: ry - 6, width: 262, height: 104, borderRadius: 14, background: `rgba(229,72,77,${0.14 * alert})`, border: `3px solid rgba(229,72,77,${alert})`}} />}
+      <Tx x={30} y={ry + 30} size={38} c={K.muted} b={700}>{label}</Tx>
+      <div style={{position: 'absolute', left: 190, top: ry - 6, width: 262, height: 104, fontFamily: FONT, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, color: hot ? K.o2 : K.ink}}>
+        <span style={{fontSize: 78, fontWeight: 800, fontVariantNumeric: 'tabular-nums'}}>{Math.round(v)}</span>
+      </div>
+    </>
+  );
   return (
-    <div style={{position: 'absolute', inset: 0, transform: `translateX(${shake}px)`}}>
-      <Svg>
-        <Paper x={x} y={y} w={500} h={510} s0={s0} seed={c === K.co2 ? 6 : 8} />
-        <RLine x1={x + 28} y1={y + 94} x2={x + 472} y2={y + 94} stroke={K.ink} sw={2.5} seed={5} prog={a} />
-        {alert > 0 && <REllipse cx={x + 300} cy={y + 180} w={260} h={112} stroke={K.o2} sw={5} seed={7} prog={alert} />}
-        {alert > 0 && <REllipse cx={x + 300} cy={y + 320} w={260} h={112} stroke={K.o2} sw={5} seed={9} prog={alert} />}
-      </Svg>
-      <Tx x={x + 30} y={y + 22} size={50} c={c} a={a}>{name}</Tx>
-      <Tx x={x + 30} y={y + 142} size={44} c={K.muted} a={a}>PaO₂</Tx>
-      <Tx x={x + 200} y={y + 122} w={200} al="center" size={84} c={alert > 0 ? K.o2 : K.ink} a={a}>{String(Math.round(o2))}</Tx>
-      <Tx x={x + 30} y={y + 282} size={44} c={K.muted} a={a}>PaCO₂</Tx>
-      <Tx x={x + 200} y={y + 262} w={200} al="center" size={84} c={alert > 0 ? K.o2 : K.ink} a={a}>{String(Math.round(co2))}</Tx>
-      <Tx x={x + 30} y={y + 432} size={30} c={K.muted} a={a}>mmHg · số minh hoạ</Tx>
+    <div style={{position: 'absolute', left: x, top: y, width: 480, height: 540, opacity: Math.min(1, p * 1.5), transform: `translate(${shake}px,${(1 - p) * 60}px) rotate(${rot}deg)`}}>
+      <svg viewBox="0 0 480 540" style={{position: 'absolute', inset: 0, overflow: 'visible'}} dangerouslySetInnerHTML={{__html: art}} />
+      <Tx x={30} y={22} size={46} c={c} b={800}>{name}</Tx>
+      <div style={{position: 'absolute', left: 30, right: 30, top: 92, height: 2, background: 'rgba(0,0,0,.2)'}} />
+      <Row y={132} label="PaO₂" v={o2} />
+      <Row y={278} label="PaCO₂" v={co2} />
+      <Tx x={30} y={438} size={26} c={K.muted} b={500}>mmHg · số minh hoạ</Tx>
     </div>
   );
 };
-const Person: React.FC<{x: number; y: number; prog: number}> = ({x, y, prog}) => (
-  <g transform={`translate(${x},${y})`}>
-    <REllipse cx={0} cy={-34} w={72} h={72} stroke={K.chalk} sw={4} fill="#3A5A63" fillStyle="solid" seed={61} prog={prog} fillA={prog} />
-    <RPath d="M-66,66 C-62,16 -34,8 0,8 C34,8 62,16 66,66 Z" stroke={K.chalk} sw={4} fill="#3A5A63" fillStyle="solid" seed={62} prog={prog} fillA={prog} />
-  </g>
-);
 const Sc1: React.FC<{S: number[]}> = ({S}) => {
   const t = useSec();
-  const ch = ap(t, S[1] + 0.8, 0.9);
+  const f = useCurrentFrame();
+  const ch = ap(t, S[1] + 0.9, 0.9);
+  const sp = usePop(S[1]);
+  const bub = ap(t, S[1] + 0.6, 0.6);
+  const clean = useMemo(() => A.syringe('s1a', {bubbles: 0}), []);
+  const dirty = useMemo(() => A.syringe('s1b', {bubbles: 5}), []);
+  const ecg = Array.from({length: 96}, (_, i) => {
+    const u = ((i + f * 0.9) % 48) / 48;
+    const y = u > 0.44 && u < 0.47 ? -30 : u > 0.47 && u < 0.5 ? 12 : u > 0.6 && u < 0.7 ? -7 : 0;
+    return `${660 + i * 6.2},${300 + y}`;
+  }).join(' ');
   return (
     <>
       <Top idx={0} title="Một bệnh nhân, hai kết quả" />
-      <Slip x={90} y={200} name="MẪU A" s0={0.5} o2={72} co2={40} c={K.co2} />
-      <Slip x={1330} y={200} name="MẪU B" s0={0.9} o2={interpolate(ch, [0, 1], [72, 95])} co2={interpolate(ch, [0, 1], [40, 34])} alert={ap(t, S[1] + 1.5, 0.7)} c={K.hco3} />
+      <Slip x={100} y={185} id="pa" name="MẪU A" s0={0.4} o2={72} co2={40} c="#1477AB" rot={-1.4} />
+      <Slip x={1340} y={185} id="pb" name="MẪU B" s0={0.8} o2={interpolate(ch, [0, 1], [72, 95])} co2={interpolate(ch, [0, 1], [40, 34])} alert={ap(t, S[1] + 1.5, 0.7)} c="#D3601F" rot={1.4} />
+      <Tx x={640} y={206} w={640} al="center" size={36} b={700} a={ap(t, S[0] + 1)}>Cùng bệnh nhân · cùng thời điểm</Tx>
       <Svg>
-        <Person x={960} y={270} prog={dp(t, 0.2, 0.8)} />
-        <RArrow x1={868} y1={270} x2={610} y2={315} stroke={K.chalk} sw={4} curve={-0.1} seed={3} prog={dp(t, S[0] + 1, 0.8)} />
-        <RArrow x1={1052} y1={270} x2={1310} y2={315} stroke={K.chalk} sw={4} curve={0.1} seed={4} prog={dp(t, S[0] + 1.3, 0.8)} />
-        <Syringe x={740} y={560} s={0.86} prog={dp(t, S[1], 0.9)} bubble={ap(t, S[1] + 0.7, 0.6)} />
-        <RArrow x1={1196} y1={566} x2={1316} y2={520} stroke={K.ph} sw={5} curve={0.08} seed={8} prog={dp(t, S[1] + 1, 0.7)} />
+        <polyline points={ecg} fill="none" stroke={K.green} strokeWidth={3.5} opacity={ap(t, S[0] + 1) * 0.9} style={{filter: `drop-shadow(0 0 6px ${K.green})`}} />
+        <g opacity={sp} transform={`translate(${(1 - sp) * -50},0)`}>
+          <Art html={clean} x={645} y={410} s={0.9} a={1 - bub} />
+          <Art html={dirty} x={645} y={410} s={0.9} a={bub} />
+        </g>
+        <Curve d="M1120,632 C1200,640 1270,620 1324,560" p={ap(t, S[1] + 1.1, 0.7)} />
       </Svg>
-      <Tx x={700} y={650} w={520} al="center" size={36} c={K.ph} a={ap(t, S[1] + 0.9)}>Chỉ vài bọt khí trong ống tiêm</Tx>
-      <Memo x={660} y={750} w={600} s0={S[2] + 0.4} size={46}>Mẫu sai thì đọc giỏi cũng sai</Memo>
+      <Tx x={645} y={606} w={480} al="center" size={36} c={K.amber} b={700} a={ap(t, S[1] + 0.9)}>Chỉ vài bọt khí trong ống tiêm</Tx>
+      <Memo x={560} y={740} w={800} s0={S[2] + 0.4} size={44}>Mẫu sai thì đọc giỏi cũng sai</Memo>
     </>
   );
 };
 
 // ---------- Cảnh 2 ----------
-const Q: React.FC<{y: number; s0: number; n: string; text: string; c: string; children: (p: number) => React.ReactNode}> = ({y, s0, n, text, c, children}) => {
-  const t = useSec();
-  const a = ap(t, s0);
-  return (
-    <>
-      <Svg>
-        <RRect x={1000} y={y} w={830} h={200} seed={70 + y % 7} stroke={c} sw={4} fill={K.paper} fillStyle="solid" prog={dp(t, s0, 0.6)} fillA={ap(t, s0, 0.35)} />
-        {children(dp(t, s0 + 0.15, 0.8))}
-      </Svg>
-      <Tx x={1240} y={y + 28} size={32} c={c} a={a}>{n}</Tx>
-      <Tx x={1240} y={y + 70} w={570} size={46} a={a}>{text}</Tx>
-    </>
-  );
-};
 const Row: React.FC<{y: number; label: string; meaning: string; c: string; s0: number}> = ({y, label, meaning, c, s0}) => {
   const t = useSec();
-  const on = ap(t, s0);
-  const a = Math.max(ap(t, 0.8) * 0.28, on);
+  const on = ap(t, s0, 0.35);
   return (
-    <>
-      <Svg><g opacity={a}><RRect x={130} y={y} w={540} h={94} seed={80 + y % 9} stroke={c} sw={3.5} fill={c} fillStyle="hachure" hachureGap={10} fillA={on * 0.32} /></g></Svg>
-      <Tx x={156} y={y + 16} size={58} c={K.ink} a={a}>{label}</Tx>
-      <Tx x={380} y={y + 28} w={275} al="right" size={34} c={K.muted} a={a}>{meaning}</Tx>
-    </>
+    <div style={{position: 'absolute', left: 124, top: y, width: 532, height: 102, borderRadius: 12, opacity: 0.3 + 0.7 * on, background: on > 0 ? `${c}${Math.round(on * 38).toString(16).padStart(2, '0')}` : 'transparent', borderLeft: `12px solid ${c}`, fontFamily: FONT, transform: `scale(${1 + 0.02 * on})`}}>
+      <Tx x={24} y={22} size={50} c={K.ink} b={800}>{label}</Tx>
+      <Tx x={210} y={32} w={296} al="right" size={30} c={K.muted} b={600}>{meaning}</Tx>
+    </div>
   );
 };
-const Glow: React.FC<{y: number; c: string; on: number[]; span: number}> = ({y, c, on, span}) => {
-  const t = useSec();
-  const a = Math.max(...on.map((s) => Math.min(ap(t, s, 0.25), 1 - ap(t, s + span, 0.3))));
-  if (a <= 0) return null;
-  return <rect x={992} y={y - 8} width={846} height={216} rx={8} fill="none" stroke={c} strokeWidth={10} opacity={a} style={{filter: `drop-shadow(0 0 14px ${c})`}} />;
+const Q: React.FC<{y: number; s0: number; n: string; text: string; c: string; hot: number; art: React.ReactNode}> = ({y, s0, n, text, c, hot, art}) => {
+  const p = usePop(s0);
+  return (
+    <div style={{position: 'absolute', left: 0, top: 0, width: 1920, height: 1080, opacity: Math.min(1, p * 1.5), transform: `translateX(${(1 - p) * 70}px)`}}>
+      <div style={{position: 'absolute', left: 1000, top: y, width: 830, height: 204, borderRadius: 22, background: 'linear-gradient(120deg,rgba(255,255,255,.1),rgba(255,255,255,.03))', border: `3px solid ${c}`, boxShadow: `0 0 ${10 + 34 * hot}px ${c}${hot > 0.05 ? 'CC' : '00'}`}} />
+      <Svg>{art}</Svg>
+      <Tx x={1250} y={y + 28} size={26} c={c} b={800}>{n}</Tx>
+      <Tx x={1250} y={y + 66} w={560} size={42} b={700}>{text}</Tx>
+    </div>
+  );
 };
 const Sc2: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
   const t = useSec();
+  const f = useCurrentFrame();
   const r = S[4];
   const gap = D[4] / 4;
+  const win = (s: number) => Math.min(ap(t, s, 0.25), 1 - ap(t, s + gap, 0.3));
+  const slipArt = useMemo(() => A.slip('p2', 600, 590), []);
+  const dropA = useMemo(() => A.drop('d2'), []);
+  const lungA = useMemo(() => A.lungs('l2'), []);
+  const gaugeA = useMemo(() => A.gaugeBase('x2'), []);
+  const br = 0.66 + Math.sin(f / 20) * 0.014;
+  const nd = Math.sin(f / 24) * 42;
   return (
     <>
       <Top idx={1} title="Khí máu cho biết gì?" />
-      <Svg><Paper x={90} y={170} w={620} h={560} s0={0.3} seed={3} /></Svg>
-      <Tx x={130} y={188} size={44} a={ap(t, 0.6)}>PHIẾU KHÍ MÁU</Tx>
-      <Row y={262} label="pH" meaning="toan hay kiềm" c={K.ph} s0={r} />
-      <Row y={372} label="PaCO₂" meaning="thông khí" c={K.co2} s0={r + gap} />
-      <Row y={482} label="HCO₃⁻" meaning="chuyển hoá" c={K.hco3} s0={r + 2 * gap} />
-      <Row y={592} label="PaO₂" meaning="oxy hoá" c={K.o2} s0={r + 3 * gap} />
-      <Q y={160} s0={S[1]} n="CÂU 1 · Ô XY" text="Máu có đủ O₂ không?" c={K.o2}>{(p) => <Drop x={1120} y={258} prog={p} />}</Q>
-      <Q y={380} s0={S[2]} n="CÂU 2 · THÔNG KHÍ" text="Phổi có thải CO₂ phù hợp không?" c={K.co2}>{(p) => <Lungs x={1120} y={480} prog={p} />}</Q>
-      <Q y={600} s0={S[3]} n="CÂU 3 · TOAN KIỀM" text="Cơ thể đang toan hay kiềm?" c={K.hco3}>{(p) => <Scale x={1120} y={700} prog={p} />}</Q>
-      <Svg>
-        <Glow y={600} c={K.hco3} on={[r, r + 2 * gap]} span={gap} />
-        <Glow y={380} c={K.co2} on={[r + gap]} span={gap} />
-        <Glow y={160} c={K.o2} on={[r + 3 * gap]} span={gap} />
-      </Svg>
-      <Memo x={150} y={762} w={500} s0={S[4] + D[4] * 0.8} size={38}>Ô XY · THÔNG KHÍ · TOAN KIỀM</Memo>
+      <Svg><Art html={slipArt} x={90} y={160} a={ap(t, 0.2, 0.4)} /></Svg>
+      <Tx x={124} y={182} size={40} c={K.ink} b={800} a={ap(t, 0.4)}>PHIẾU KHÍ MÁU</Tx>
+      <Row y={254} label="pH" meaning="toan hay kiềm" c={K.ph} s0={r} />
+      <Row y={366} label="PaCO₂" meaning="thông khí" c={K.co2} s0={r + gap} />
+      <Row y={478} label="HCO₃⁻" meaning="chuyển hoá" c={K.hco3} s0={r + 2 * gap} />
+      <Row y={590} label="PaO₂" meaning="oxy hoá" c={K.o2} s0={r + 3 * gap} />
+      <Q y={146} s0={S[1]} n="CÂU 1 · Ô XY" text="Máu có đủ O₂ không?" c={K.o2} hot={win(r + 3 * gap)} art={<Art html={dropA} x={1122} y={244} s={0.8 + Math.sin(f / 14) * 0.012} />} />
+      <Q y={368} s0={S[2]} n="CÂU 2 · THÔNG KHÍ" text="Phổi có thải CO₂ phù hợp không?" c={K.co2} hot={win(r + gap)} art={<Art html={lungA} x={1122} y={478} s={br} />} />
+      <Q y={590} s0={S[3]} n="CÂU 3 · TOAN KIỀM" text="Cơ thể đang toan hay kiềm?" c={K.hco3} hot={Math.max(win(r), win(r + 2 * gap))} art={
+        <g>
+          <Art html={gaugeA} x={1122} y={732} s={0.72} />
+          <line x1={1122} y1={732} x2={1122 + 62 * Math.sin((nd * Math.PI) / 180)} y2={732 - 62 * Math.cos((nd * Math.PI) / 180)} stroke="#F2F7F9" strokeWidth={6} strokeLinecap="round" />
+          <circle cx={1122} cy={732} r={10} fill="#F2F7F9" />
+        </g>
+      } />
+      <Memo x={110} y={780} w={560} s0={S[4] + D[4] * 0.85} size={32}>Ô XY · THÔNG KHÍ · TOAN KIỀM</Memo>
     </>
   );
 };
 
 // ---------- Cảnh 3 ----------
+const MS = 0.285;
+const WS = 0.98, WX = -4, WY = 112; // hệ toạ độ bàn tay trên màn hình
+const wx = (x: number) => WX + x * WS;
+const wy = (y: number) => WY + y * WS;
 const Sc3: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
   const t = useSec();
   const f = useCurrentFrame();
-  const pulse = 1 + 0.5 * Math.max(0, Math.sin(f / 5));
-  const armP = dp(t, 0.2, 1);
-  const artery = dp(t, S[0] + 0.5, 0.9);
-  const press = ap(t, S[2], 0.5);
-  const clock = interpolate(t, [S[2] + 0.4, S[2] + D[2] * 0.75], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-  const px = 540, py = 392;
+  const skin = useMemo(() => A.handSkin('w3'), []);
+  const anat = useMemo(() => A.anatomy('a3'), []);
+  const mini = useMemo(() => A.handSkin('w4'), []);
+  const miniPale = useMemo(() => A.handSkin('w5', 0.62), []);
+  const syr = useMemo(() => A.syringe('s3', {fill: 0.6}), []);
+  const glove = useMemo(() => A.gloveFinger('g3'), []);
+  const handP = usePop(0.1, 18);
+  const reveal = ap(t, S[0] + 0.4, 0.9);
+  const lbl = ap(t, S[0] + 1.1);
+  const lbl2 = ap(t, S[0] + 2.2);
+  const beat = Math.pow(Math.max(0, Math.sin(f / 7.2)), 6);
+  // Rút kim dọc trục 0–1, ngón tay đè sau đó
+  const needleOn = Math.min(ap(t, S[2] - 0.7, 0.4), 1 - ap(t, S[2] + 0.9, 0.3));
+  const withdraw = interpolate(t, [S[2] + 0.1, S[2] + 1.1], [0, 1], clamp);
+  const press = usePop(S[2] + 1.0, 16);
+  const clock = interpolate(t, [S[2] + 1.2, S[2] + D[2]], [0, 1], clamp);
+  const allenA = usePop(S[1]);
+  const pink = ap(t, S[1] + 2, 0.5);
+  const sx = wx(A.SITE.x), sy = wy(A.SITE.y);
+  // Mũi kim: toạ độ (706, 85) trong khung ống tiêm
+  const dist = withdraw * 190;
+  const RAD = -24;
+  const dx = Math.cos((RAD * Math.PI) / 180) * dist, dy = Math.sin((RAD * Math.PI) / 180) * dist;
+  const SYR = 0.62;
   return (
     <>
-      <Top idx={2} title="Lấy máu động mạch" />
+      <Top idx={2} title="Lấy máu động mạch quay" />
       <Svg>
-        {/* cẳng tay + bàn tay */}
-        <RPath d="M60,340 C200,352 400,362 575,380 L575,520 C400,540 200,552 60,566 Z" stroke={K.skinD} sw={4} fill={K.skin} fillStyle="solid" seed={101} prog={armP} fillA={armP} rough={0.7} />
-        <OpenHand x={575} y={450} s={1} prog={armP} />
-        <RPath d="M575,380 C580,420 580,480 575,520" stroke={K.skin} sw={8} seed={102} prog={armP} rough={0.2} />
-        <RPath d="M575,388 C568,430 568,470 575,512" stroke={K.skinD} sw={2.5} seed={103} prog={armP} />
-        {/* động mạch quay */}
-        <RPath d={`M90,366 C240,374 420,382 ${px + 28},${py + 2}`} stroke={K.o2} sw={9} seed={104} prog={artery} rough={0.5} />
-        {artery >= 1 && press < 1 && (
-          <g opacity={1 - press}>
-            <circle cx={px} cy={py} r={13 * pulse} fill="none" stroke={K.o2} strokeWidth={3} opacity={1.5 - pulse} />
-            <circle cx={px} cy={py} r={8} fill={K.o2} />
+        <g opacity={Math.min(1, handP * 1.4)} transform={`translate(${(1 - handP) * -60},0)`}>
+          <Art html={skin} x={WX} y={WY} s={WS} />
+          <Art html={anat} x={WX} y={WY} s={WS} a={reveal} />
+          <g transform={`translate(${WX},${WY}) scale(${WS})`} opacity={reveal}>
+            <path d={A.ARTERY} fill="none" stroke="#FF5A63" strokeWidth={16 + beat * 8} strokeOpacity={0.18 + beat * 0.55} strokeLinecap="round" style={{filter: 'blur(3px)'}} />
           </g>
+          {press < 0.5 && needleOn <= 0 && reveal > 0.5 && (
+            <g>
+              <circle cx={sx} cy={sy} r={16 + beat * 12} fill="none" stroke="#FFE27A" strokeWidth={4} opacity={0.95 - beat * 0.5} />
+              <circle cx={sx} cy={sy} r={6} fill="#FFE27A" />
+            </g>
+          )}
+        </g>
+        <Curve d={`M300,250 C340,280 350,330 362,${wy(298) - 14}`} c="#FF8E92" p={ap(t, S[0] + 1.1, 0.5)} />
+        <Curve d={`M240,730 C250,690 262,640 280,${wy(352) + 14}`} c="#F4E9C7" p={ap(t, S[0] + 2.2, 0.5)} />
+        {/* Kim rút ra */}
+        {needleOn > 0 && (
+          <g opacity={needleOn} transform={`translate(${sx + dx},${sy + dy}) rotate(${RAD}) scale(${-SYR},${SYR}) translate(-706,-85)`} dangerouslySetInnerHTML={{__html: syr}} />
         )}
-        <RArrow x1={430} y1={232} x2={px - 12} y2={py - 18} stroke={K.ph} sw={4} curve={0.14} seed={105} prog={dp(t, S[0] + 0.9, 0.7)} />
-        {/* ngón tay đè */}
-        {press > 0 && (
-          <g opacity={press} transform={`translate(${px},${py - 140 + 60 * press})`}>
-            <RPath d="M-30,-90 C-34,-40 -34,20 -24,48 C-14,70 14,70 24,48 C34,20 34,-40 30,-90 Z" stroke="#7E5137" sw={3.5} fill="#E3AE89" fillStyle="solid" seed={106} rough={0.6} />
-            <RPath d="M-15,40 C-10,56 10,56 15,40 C10,30 -10,30 -15,40 Z" stroke="#7E5137" sw={2.5} fill="#F8E4D6" fillStyle="solid" seed={107} rough={0.4} />
-          </g>
+        {press > 0.01 && (
+          <g opacity={Math.min(1, press * 1.6)} transform={`translate(${sx},${sy - (1 - press) * 80}) rotate(14) scale(0.78)`} dangerouslySetInnerHTML={{__html: glove}} />
         )}
-        {/* khung Allen */}
-        <RRect x={1110} y={160} w={730} h={330} seed={108} stroke={K.green} sw={4} fill={K.paper} fillStyle="solid" prog={dp(t, S[1], 0.6)} fillA={ap(t, S[1], 0.35)} />
-        <Fist x={1160} y={325} s={0.62} prog={dp(t, S[1] + 0.3, 0.7)} />
-        <RArrow x1={1346} y1={325} x2={1450} y2={325} stroke={K.ink} sw={4} seed={109} prog={dp(t, S[1] + 1.1, 0.5)} />
-        <OpenHand x={1480} y={325} s={0.62} fill="#F4AE9B" prog={dp(t, S[1] + 1.3, 0.7)} />
-        {/* đồng hồ */}
-        <RRect x={1110} y={520} w={730} h={300} seed={110} stroke={K.ph} sw={4} fill={K.paper} fillStyle="solid" prog={dp(t, S[2], 0.6)} fillA={ap(t, S[2], 0.35)} />
-        <REllipse cx={1250} cy={668} w={208} h={208} stroke={K.ink} sw={4} seed={111} prog={dp(t, S[2] + 0.2, 0.6)} fill="#FFF" fillStyle="solid" fillA={ap(t, S[2], 0.4)} />
-        {clock > 0 && (
-          <path d={`M1250,668 L1250,576 A92,92 0 ${clock > 0.5 ? 1 : 0} 1 ${1250 + 92 * Math.sin(clock * Math.PI * 2 * 0.999)},${668 - 92 * Math.cos(clock * Math.PI * 2 * 0.999)} Z`} fill={K.ph} opacity={0.75} />
-        )}
-        <line x1={1250} y1={668} x2={1250 + 76 * Math.sin(clock * 6.28)} y2={668 - 76 * Math.cos(clock * 6.28)} stroke={K.ink} strokeWidth={5} strokeLinecap="round" opacity={ap(t, S[2] + 0.2)} />
       </Svg>
-      <Tx x={150} y={190} size={44} c={K.ph} a={ap(t, S[0] + 0.9)}>Động mạch quay</Tx>
-      <Tx x={1135} y={176} size={42} a={ap(t, S[1] + 0.2)}>Nghiệm pháp Allen</Tx>
-      <Tx x={1150} y={420} w={230} al="center" size={32} c={K.muted} a={ap(t, S[1] + 0.8)}>nắm chặt</Tx>
-      <Tx x={1470} y={420} w={330} al="center" size={32} c={K.muted} a={ap(t, S[1] + 1.8)}>xoè ra, xem hồng lại</Tx>
-      <Tx x={1385} y={560} w={430} size={60} a={ap(t, S[2] + 0.4)}>≥ 2 phút</Tx>
-      <Tx x={1385} y={640} w={430} size={36} c={K.muted} lh={1.1} a={ap(t, S[2] + D[2] * 0.5)}>Lâu hơn nếu dùng thuốc chống đông, kháng tiểu cầu</Tx>
-      <Memo x={250} y={700} w={560} s0={S[2] + D[2] * 0.7} size={46}>Rút kim xong, đè đủ lâu</Memo>
+      <Callout x={130} y={186} a={lbl} c="#FF8E92">Động mạch quay</Callout>
+      <Callout x={90} y={726} a={lbl2} c="#F4E9C7" size={26}>Gân gấp cổ tay quay</Callout>
+
+      {/* Allen */}
+      <div style={{position: 'absolute', left: 1130, top: 140, width: 750, height: 350, borderRadius: 22, background: 'linear-gradient(120deg,rgba(255,255,255,.11),rgba(255,255,255,.03))', border: `3px solid ${K.green}`, opacity: Math.min(1, allenA * 1.5), transform: `translateX(${(1 - allenA) * 70}px)`}} />
+      <Tx x={1158} y={156} size={36} b={800} a={Math.min(1, allenA)}>Nghiệm pháp Allen</Tx>
+      <Svg>
+        <g opacity={Math.min(1, allenA * 1.5)}>
+          <Art html={miniPale} x={1172} y={200} s={MS} />
+          <circle cx={1172 + MS * 500} cy={200 + MS * 300} r={13} fill="#3D6DE0" stroke="#fff" strokeWidth={3} />
+          <circle cx={1172 + MS * 500} cy={200 + MS * 470} r={13} fill="#3D6DE0" stroke="#fff" strokeWidth={3} />
+        </g>
+        <Curve d="M1486,306 L1526,306" c={K.txt} w={4} p={ap(t, S[1] + 1.6, 0.3)} />
+        <g opacity={pink}>
+          <Art html={mini} x={1550} y={200} s={MS} />
+          <circle cx={1550 + MS * 500} cy={200 + MS * 300} r={13} fill="#3D6DE0" stroke="#fff" strokeWidth={3} />
+        </g>
+      </Svg>
+      <Tx x={1158} y={398} w={340} al="center" size={25} c={K.dim} lh={1.2} a={Math.min(1, allenA)}>Đè hai động mạch: bàn tay nhợt</Tx>
+      <Tx x={1534} y={398} w={330} al="center" size={25} c={K.dim} lh={1.2} a={pink}>Thả động mạch trụ: hồng lại</Tx>
+
+      {/* Đồng hồ */}
+      <div style={{position: 'absolute', left: 1130, top: 510, width: 750, height: 310, borderRadius: 22, background: 'linear-gradient(120deg,rgba(255,255,255,.11),rgba(255,255,255,.03))', border: `3px solid ${K.amber}`, opacity: ap(t, S[2], 0.4)}} />
+      <Svg>
+        <g opacity={ap(t, S[2], 0.4)}>
+          <circle cx={1272} cy={665} r={104} fill="#0C1A22" stroke="#C8D5DC" strokeWidth={6} />
+          {clock > 0 && <path d={`M1272,665 L1272,571 A94,94 0 ${clock > 0.5 ? 1 : 0} 1 ${1272 + 94 * Math.sin(clock * Math.PI * 2 * 0.9999)},${665 - 94 * Math.cos(clock * Math.PI * 2 * 0.9999)} Z`} fill={K.amber} />}
+          {Array.from({length: 12}, (_, i) => <line key={i} x1={1272 + 92 * Math.sin((i * Math.PI) / 6)} y1={665 - 92 * Math.cos((i * Math.PI) / 6)} x2={1272 + 100 * Math.sin((i * Math.PI) / 6)} y2={665 - 100 * Math.cos((i * Math.PI) / 6)} stroke="#C8D5DC" strokeWidth={3} />)}
+          <circle cx={1272} cy={665} r={9} fill="#F2F7F9" />
+        </g>
+      </Svg>
+      <Tx x={1410} y={550} w={450} size={62} b={800} c={K.amber} a={ap(t, S[2] + 0.5)}>≥ 2 phút</Tx>
+      <Tx x={1410} y={640} w={450} size={32} c={K.txt} lh={1.2} a={ap(t, S[2] + D[2] * 0.5)}>Lâu hơn nếu dùng thuốc chống đông, kháng tiểu cầu</Tx>
+      <Memo x={450} y={770} w={560} s0={S[2] + D[2] * 0.72} size={40}>Rút kim xong, đè đủ lâu</Memo>
     </>
   );
 };
@@ -345,59 +316,68 @@ const Flip: React.FC<{x: number; s0: number; c: string; n: string; title: string
   const p = usePop(s0, 15);
   if (p <= 0.01) return null;
   return (
-    <div style={{position: 'absolute', left: x, top: 165, width: 560, height: 540, perspective: 1400}}>
-      <div style={{position: 'absolute', inset: 0, background: K.paper, borderRadius: 14, border: `5px solid ${c}`, boxShadow: '0 14px 30px rgba(0,0,0,.4)', transform: `rotateY(${(1 - p) * 90}deg)`, transformOrigin: 'left center', opacity: Math.min(1, p * 1.6)}}>
-        <div style={{position: 'absolute', left: 22, top: 12, fontFamily: HAND, fontSize: 34, color: c}}>{n}</div>
-        <div style={{position: 'absolute', left: 22, top: 48, fontFamily: HAND, fontSize: 58, color: K.ink}}>{title}</div>
-        {children}
+    <div style={{position: 'absolute', left: x, top: 150, width: 570, height: 570, perspective: 1500}}>
+      <div style={{position: 'absolute', inset: 0, borderRadius: 24, background: 'linear-gradient(160deg,#20363F,#111F27)', border: `3px solid ${c}`, boxShadow: `0 18px 44px rgba(0,0,0,.5), 0 0 30px ${c}33`, transform: `rotateY(${(1 - p) * 88}deg)`, transformOrigin: 'left center', opacity: Math.min(1, p * 1.6)}}>
+        <Tx x={28} y={18} size={24} c={c} b={800}>{n}</Tx>
+        <Tx x={28} y={50} size={50} b={800}>{title}</Tx>
+        <div style={{position: 'absolute', left: 0, top: 0}}>{children}</div>
       </div>
     </div>
   );
 };
-const Vert: React.FC<{dir: 'up' | 'down'; x: number; y: number; c: string; prog: number}> = ({dir, x, y, c, prog}) => (
-  <RArrow x1={x} y1={dir === 'up' ? y + 52 : y} x2={x} y2={dir === 'up' ? y : y + 52} stroke={c} sw={6} seed={dir === 'up' ? 121 : 122} head={22} prog={prog} />
+const Stat: React.FC<{x: number; w: number; dir: string; label: string; c: string; a: number}> = ({x, w, dir, label, c, a}) => (
+  <div style={{position: 'absolute', left: x, top: 360, width: w, height: 112, borderRadius: 16, background: `${c}26`, border: `2px solid ${c}`, opacity: a, fontFamily: FONT, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 12, color: K.txt, transform: `translateY(${(1 - a) * 12}px)`}}>
+    <span style={{fontSize: 50, fontWeight: 800, color: c}}>{dir}</span>
+    <span style={{fontSize: 32, fontWeight: 700}}>{chem(label)}</span>
+  </div>
 );
 const Sc4: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
   const t = useSec();
-  const inner = (w: React.ReactNode) => <svg viewBox="0 0 560 540" style={{position: 'absolute', inset: 0, width: 560, height: 540}}>{w}</svg>;
+  const f = useCurrentFrame();
+  const s1 = useMemo(() => A.syringe('s4a', {bubbles: 5}), []);
+  const s2 = useMemo(() => A.syringe('s4b', {liquid: 'hep', fill: 0.3}), []);
+  const rb = useMemo(() => A.rbc('r4'), []);
+  const wb = useMemo(() => A.wbc('b4'), []);
+  const sand = interpolate(t, [S[2] + 0.5, S[2] + D[2]], [0.04, 0.96], clamp);
+  const inner = (w: React.ReactNode) => <svg viewBox="0 0 570 570" style={{position: 'absolute', left: 0, top: 0, width: 570, height: 570, overflow: 'visible'}}>{w}</svg>;
+  const dropT = interpolate(t, [S[1] + D[1] * 0.45, S[1] + D[1] * 0.95], [0, 1], clamp);
   return (
     <>
       <Top idx={3} title="Ba kẻ phá mẫu" />
-      <Flip x={80} s0={S[0]} c={K.co2} n="KẺ THỨ NHẤT" title="Bọt khí">
+      <Flip x={60} s0={S[0]} c={K.co2} n="KẺ THỨ NHẤT" title="Bọt khí">
+        {inner(<Art html={s1} x={24} y={160} s={0.74} />)}
+        <Stat x={28} w={252} dir="↓" label="CO₂ giảm" c={K.co2} a={ap(t, S[0] + D[0] * 0.55)} />
+        <Stat x={292} w={252} dir="↑" label="O₂ tăng giả" c={K.o2} a={ap(t, S[0] + D[0] * 0.72)} />
+        <Tx x={28} y={490} w={516} al="center" size={28} c={K.dim} a={ap(t, S[0] + D[0] * 0.35)}>Trao đổi khí với máu</Tx>
+      </Flip>
+      <Flip x={675} s0={S[1]} c={K.green} n="KẺ THỨ HAI" title="Heparin thừa">
         {inner(
           <>
-            <rect x={20} y={146} width={516} height={144} rx={12} fill="#2A3A40" />
-            <g><Syringe x={90} y={218} s={0.82} prog={dp(t, S[0] + 0.3, 0.7)} bubble={ap(t, S[0] + 0.7)} seed={124} /></g>
-            <Vert dir="down" x={190} y={348} c={K.co2} prog={dp(t, S[0] + D[0] * 0.6, 0.5)} />
-            <Vert dir="up" x={400} y={348} c={K.o2} prog={dp(t, S[0] + D[0] * 0.75, 0.5)} />
+            <Art html={s2} x={24} y={160} s={0.74} />
+            {[0, 0.33, 0.66].map((o, i) => {
+              const u = (dropT * 1.6 + o) % 1;
+              if (dropT <= 0) return null;
+              return <circle key={i} cx={540} cy={228 + u * 110} r={8 - u * 3} fill="#FBEFB5" opacity={1 - u} />;
+            })}
           </>
         )}
-        <Tx x={100} y={408} w={190} al="center" size={44} a={ap(t, S[0] + D[0] * 0.6)}>CO₂ giảm</Tx>
-        <Tx x={310} y={408} w={190} al="center" size={44} a={ap(t, S[0] + D[0] * 0.75)}>O₂ tăng giả</Tx>
-        <Tx x={40} y={470} w={480} al="center" size={30} c={K.muted} a={ap(t, S[0] + D[0] * 0.8)}>Trao đổi khí với máu</Tx>
+        <Tx x={28} y={370} w={514} al="center" size={40} b={700} a={ap(t, S[1] + D[1] * 0.45)}>Đẩy bớt khỏi ống tiêm</Tx>
+        <Tx x={28} y={436} w={514} al="center" size={28} c={K.dim} a={ap(t, S[1] + D[1] * 0.6)}>heparin lỏng và bọt khí</Tx>
       </Flip>
-      <Flip x={680} s0={S[1]} c={K.green} n="KẺ THỨ HAI" title="Heparin thừa">
+      <Flip x={1290} s0={S[2]} c={K.hco3} n="KẺ THỨ BA" title="Thời gian">
         {inner(
           <>
-            <rect x={20} y={146} width={516} height={144} rx={12} fill="#2A3A40" />
-            <Syringe x={90} y={218} s={0.82} prog={dp(t, S[1] + 0.3, 0.7)} seed={130} />
-            <Drop x={500} y={330} s={0.42 + 0.1 * Math.sin(t * 3)} prog={dp(t, S[1] + D[1] * 0.45, 0.4)} fill={K.green} />
-            <RArrow x1={200} y1={330} x2={420} y2={330} stroke={K.green} sw={6} seed={131} prog={dp(t, S[1] + D[1] * 0.45, 0.6)} />
+            <Art html={A.hourglass('h4', sand)} x={285} y={260} s={0.72} />
+            <g opacity={ap(t, S[2] + D[2] * 0.3)}>
+              <Art html={rb} x={120 + Math.sin(f / 26) * 8} y={240 + Math.cos(f / 22) * 8} s={1} />
+              <Art html={wb} x={450 + Math.cos(f / 28) * 8} y={270 + Math.sin(f / 20) * 8} s={1} />
+            </g>
           </>
         )}
-        <Tx x={40} y={390} w={480} al="center" size={44} a={ap(t, S[1] + D[1] * 0.5)}>Đẩy bớt khỏi ống tiêm</Tx>
-        <Tx x={40} y={450} w={480} al="center" size={30} c={K.muted} a={ap(t, S[1] + D[1] * 0.6)}>heparin lỏng và bọt khí</Tx>
+        <Tx x={28} y={378} w={514} al="center" size={38} b={700} a={ap(t, S[2] + D[2] * 0.3)}>Tế bào vẫn chuyển hoá</Tx>
+        <Tx x={28} y={456} w={514} al="center" size={28} c={K.dim} a={ap(t, S[2] + D[2] * 0.55)}>Để lâu: không còn phản ánh đúng bệnh nhân</Tx>
       </Flip>
-      <Flip x={1280} s0={S[2]} c={K.hco3} n="KẺ THỨ BA" title="Thời gian">
-        {inner(
-          <>
-            <Hourglass x={280} y={245} prog={dp(t, S[2] + 0.3, 0.7)} sand={interpolate(t, [S[2] + 0.6, S[2] + D[2]], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})} />
-          </>
-        )}
-        <Tx x={40} y={350} w={480} al="center" size={44} a={ap(t, S[2] + D[2] * 0.3)}>Tế bào vẫn chuyển hoá</Tx>
-        <Tx x={40} y={415} w={480} al="center" size={34} c={K.muted} lh={1.1} a={ap(t, S[2] + D[2] * 0.55)}>Để lâu: không còn phản ánh đúng bệnh nhân</Tx>
-      </Flip>
-      <Memo x={530} y={745} w={860} s0={S[2] + D[2] * 0.7} rot={-1} size={56}>BỌT · HEPARIN · THỜI GIAN</Memo>
+      <Memo x={530} y={745} w={860} s0={S[2] + D[2] * 0.72} size={50}>BỌT · HEPARIN · THỜI GIAN</Memo>
     </>
   );
 };
@@ -405,9 +385,9 @@ const Sc4: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
 const SC: React.FC<{S: number[]; D: number[]}>[] = [Sc1, Sc2, Sc3, Sc4];
 
 export const Abg0: React.FC = () => (
-  <AbsoluteFill style={{background: K.board}}>
+  <AbsoluteFill style={{background: '#0D1B24'}}>
     <Audio src={staticFile('narration.m4a')} />
-    <Board />
+    <Studio />
     {data.scenes.map((s, i) => {
       const C = SC[i];
       if (!C) return null;
