@@ -1,284 +1,81 @@
 {
  "fps": 30,
- "total": 6221,
+ "total": 977,
  "scenes": [
   {
    "from": 0,
-   "dur": 391,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 3.704,
-     "text": "pH 7,40 và 7,10 chỉ chênh nhau 0,3"
-    },
-    {
-     "start": 4.554,
-     "dur": 2.225,
-     "text": "Nhưng lượng H⁺ trong máu đã gần gấp đôi"
-    },
-    {
-     "start": 7.129,
-     "dur": 4.43,
-     "text": "Cơ thể giữ pH trong một khoảng rất hẹp. Bằng cách nào?"
+     "start": 0.25,
+     "dur": 2.304,
+     "text": "Vì sao thở quá nhanh lại làm máu bị kiềm?"
     }
    ]
   },
   {
-   "from": 391,
-   "dur": 850,
+   "from": 132,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 4.977,
-     "text": "pH đo nồng độ H⁺ theo thang log: H⁺ càng nhiều, pH càng thấp"
-    },
-    {
-     "start": 5.827,
-     "dur": 6.657,
-     "text": "pH 7,40 ≈ H⁺ 40 nmol/L · pH 7,10 ≈ 80 nmol/L"
-    },
-    {
-     "start": 12.834,
-     "dur": 3.249,
-     "text": "pH bình thường khoảng 7,35–7,45"
-    },
-    {
-     "start": 16.433,
-     "dur": 4.503,
-     "text": "Dưới 7,35: toan máu · Trên 7,45: kiềm máu"
-    },
-    {
-     "start": 21.287,
-     "dur": 5.53,
-     "text": "Enzyme và protein chỉ hoạt động tốt trong khoảng pH hẹp này"
+     "start": 0.25,
+     "dur": 3.236,
+     "text": "CO₂ là một acid, được thải qua phổi"
     }
    ]
   },
   {
-   "from": 1241,
-   "dur": 620,
+   "from": 264,
+   "dur": 151,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 2.585,
-     "text": "Chuyển hoá mỗi ngày sinh ra hai loại acid"
-    },
-    {
-     "start": 3.435,
-     "dur": 5.375,
-     "text": "Acid bay hơi là CO₂: khoảng 15 mol/ngày, thải qua phổi"
-    },
-    {
-     "start": 9.16,
-     "dur": 6.824,
-     "text": "Acid không bay hơi: ~1 mEq/kg/ngày, ~70 mEq ở người 70 kg"
-    },
-    {
-     "start": 16.334,
-     "dur": 2.858,
-     "text": "Acid không bay hơi phải thải qua thận"
+     "start": 0.25,
+     "dur": 4.352,
+     "text": "Thở nhanh, sâu → thải nhiều CO₂ → PaCO₂ giảm"
     }
    ]
   },
   {
-   "from": 1861,
-   "dur": 429,
+   "from": 415,
+   "dur": 145,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 3.305,
-     "text": "Cơ thể có ba tuyến bảo vệ pH"
-    },
-    {
-     "start": 4.155,
-     "dur": 2.493,
-     "text": "Tuyến 1 · Hệ đệm: tác dụng tức thì"
-    },
-    {
-     "start": 6.998,
-     "dur": 2.903,
-     "text": "Tuyến 2 · Phổi: vài phút đến vài giờ"
-    },
-    {
-     "start": 10.252,
-     "dur": 2.529,
-     "text": "Tuyến 3 · Thận: vài ngày"
+     "start": 0.25,
+     "dur": 4.154,
+     "text": "pH theo tỉ số HCO₃⁻ / CO₂ · bình thường 20 : 1"
     }
    ]
   },
   {
-   "from": 2290,
-   "dur": 738,
+   "from": 560,
+   "dur": 153,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 5.215,
-     "text": "Hệ đệm như miếng bọt biển: hút H⁺ khi dư, nhả H⁺ khi thiếu"
-    },
-    {
-     "start": 6.065,
-     "dur": 2.226,
-     "text": "Quan trọng nhất: hệ đệm bicarbonate"
-    },
-    {
-     "start": 8.64,
-     "dur": 4.759,
-     "text": "CO₂ + H₂O ⇌ H₂CO₃ ⇌ H⁺ + HCO₃⁻"
-    },
-    {
-     "start": 13.75,
-     "dur": 4.757,
-     "text": "Khi H⁺ tăng: HCO₃⁻ bắt lấy H⁺ → tạo CO₂"
-    },
-    {
-     "start": 18.857,
-     "dur": 4.262,
-     "text": "CO₂ được phổi thải đi → hệ đệm này rất mạnh"
+     "start": 0.25,
+     "dur": 4.398,
+     "text": "CO₂ giảm → tỉ số tăng → pH tăng: kiềm hô hấp"
     }
    ]
   },
   {
-   "from": 3028,
-   "dur": 800,
+   "from": 713,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 4.567,
-     "text": "pH = 6,1 + log (HCO₃⁻ / 0,03 × PaCO₂)"
-    },
-    {
-     "start": 5.417,
-     "dur": 6.322,
-     "text": "Bình thường: 24 ÷ (0,03 × 40 = 1,2) = 20"
-    },
-    {
-     "start": 12.089,
-     "dur": 2.708,
-     "text": "Tỉ số 20 : 1 ↔ pH 7,40"
-    },
-    {
-     "start": 15.147,
-     "dur": 4.641,
-     "text": "HCO₃⁻ giảm hoặc CO₂ tăng → tỉ số giảm → toan máu"
-    },
-    {
-     "start": 20.138,
-     "dur": 5.044,
-     "text": "HCO₃⁻ tăng hoặc CO₂ giảm → tỉ số tăng → kiềm máu"
+     "start": 0.25,
+     "dur": 3.575,
+     "text": "Gặp khi: lo âu, đau, sốt, thở máy quá nhanh"
     }
    ]
   },
   {
-   "from": 3828,
-   "dur": 594,
+   "from": 845,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 3.003,
-     "text": "Trung tâm hô hấp cảm nhận H⁺ và CO₂"
-    },
-    {
-     "start": 3.853,
-     "dur": 3.456,
-     "text": "Toan máu → thở nhanh, sâu để thải CO₂"
-    },
-    {
-     "start": 7.658,
-     "dur": 3.012,
-     "text": "Ví dụ: kiểu thở Kussmaul trong nhiễm toan ceton"
-    },
-    {
-     "start": 11.02,
-     "dur": 3.02,
-     "text": "Kiềm máu → thở chậm lại để giữ CO₂"
-    },
-    {
-     "start": 14.39,
-     "dur": 3.906,
-     "text": "Bắt đầu trong vài phút · bù đầy đủ sau 12–24 giờ"
-    }
-   ]
-  },
-  {
-   "from": 4422,
-   "dur": 857,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 3.43,
-     "text": "Mỗi ngày thận lọc ~4.500 mEq HCO₃⁻"
-    },
-    {
-     "start": 4.28,
-     "dur": 6.099,
-     "text": "Việc 1: giữ lại HCO₃⁻ đã lọc (ống lượn gần: 70–80%)"
-    },
-    {
-     "start": 10.729,
-     "dur": 3.699,
-     "text": "Việc 2: tạo HCO₃⁻ mới bằng cách thải H⁺"
-    },
-    {
-     "start": 14.778,
-     "dur": 5.442,
-     "text": "H⁺ thải dưới dạng amoni (½–⅔) và acid chuẩn độ"
-    },
-    {
-     "start": 20.57,
-     "dur": 2.827,
-     "text": "Thận cần 3–5 ngày để bù tối đa"
-    },
-    {
-     "start": 23.747,
-     "dur": 3.315,
-     "text": "→ Rối loạn hô hấp cấp và mạn khác nhau ở HCO₃⁻"
-    }
-   ]
-  },
-  {
-   "from": 5279,
-   "dur": 387,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 4.527,
-     "text": "Hemoglobin, protein và xương cũng tham gia đệm"
-    },
-    {
-     "start": 5.377,
-     "dur": 2.01,
-     "text": "Phosphate: hệ đệm chính trong nước tiểu"
-    },
-    {
-     "start": 7.737,
-     "dur": 3.699,
-     "text": "Toan máu kéo dài → xương đệm liên tục → mất khoáng xương"
-    }
-   ]
-  },
-  {
-   "from": 5666,
-   "dur": 555,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 3.651,
-     "text": "Ba tuyến: ĐỆM → PHỔI → THẬN"
-    },
-    {
-     "start": 4.501,
-     "dur": 4.299,
-     "text": "pH theo tỉ số HCO₃⁻ / CO₂ = 20 : 1"
-    },
-    {
-     "start": 9.15,
-     "dur": 4.259,
-     "text": "PHỔI lo CO₂, nhanh · THẬN lo HCO₃⁻, chậm"
-    },
-    {
-     "start": 13.758,
-     "dur": 3.239,
-     "text": "Bài 3: Đánh giá oxy hoá — PaO₂, P/F và chênh lệch A–a"
+     "start": 0.25,
+     "dur": 2.579,
+     "text": "Lưu lại để ôn · xem Bài 2 đầy đủ trên kênh!"
     }
    ]
   }
