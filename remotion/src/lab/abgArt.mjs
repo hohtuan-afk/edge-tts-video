@@ -104,7 +104,9 @@ export const gloveFinger = (p = 'g') => `
 export const syringe = (p = 's', {fill = 0.72, liquid = 'blood', bubbles = 0, needle = true} = {}) => {
   const bx = 150, bw = 370, by = 42, bh = 86;
   const fw = bw * fill;
-  const lq = liquid === 'blood'
+  const lq = liquid === 'venous'
+    ? `<linearGradient id="${p}l" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2E0710"/><stop offset=".3" stop-color="#6A1424"/><stop offset=".7" stop-color="#55101D"/><stop offset="1" stop-color="#26050C"/></linearGradient>`
+    : liquid === 'blood'
     ? `<linearGradient id="${p}l" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6E0C18"/><stop offset=".3" stop-color="#C9202F"/><stop offset=".7" stop-color="#A31424"/><stop offset="1" stop-color="#5E0813"/></linearGradient>`
     : `<linearGradient id="${p}l" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D9C678"/><stop offset=".5" stop-color="#FBEFB5"/><stop offset="1" stop-color="#C9B56B"/></linearGradient>`;
   const bb = [[0.86, 0.34, 15], [0.74, 0.62, 10], [0.92, 0.7, 8], [0.66, 0.32, 7], [0.81, 0.78, 6]].slice(0, bubbles);

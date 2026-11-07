@@ -1,0 +1,221 @@
+[
+ {
+  "orig": 12.0,
+  "dur": 14.52,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.383,
+    "text": "Cùng một bệnh nhân, cùng thời điểm, nhưng hai phiếu khí máu lại khác nhau"
+   },
+   {
+    "start": 5.233,
+    "dur": 4.084,
+    "text": "Bệnh nhân không đổi. Thứ thay đổi là cách lấy và xử lý mẫu"
+   },
+   {
+    "start": 9.667,
+    "dur": 3.35,
+    "text": "Muốn đọc đúng khí máu, trước hết phải có một mẫu đáng tin"
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 17.68,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.194,
+    "text": "Khí máu động mạch trả lời ba câu hỏi lớn"
+   },
+   {
+    "start": 3.044,
+    "dur": 1.66,
+    "text": "① Máu có đủ O₂ không?"
+   },
+   {
+    "start": 5.054,
+    "dur": 2.167,
+    "text": "② Phổi có thải CO₂ phù hợp không?"
+   },
+   {
+    "start": 7.571,
+    "dur": 1.729,
+    "text": "③ Cơ thể đang toan hay kiềm?"
+   },
+   {
+    "start": 9.65,
+    "dur": 6.53,
+    "text": "Đọc phiếu: pH · PaCO₂ · HCO₃⁻ · PaO₂"
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 21.96,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 1.827,
+    "text": "Khi nào cần làm khí máu động mạch?"
+   },
+   {
+    "start": 2.677,
+    "dur": 3.475,
+    "text": "① Suy hô hấp: cần biết oxy hoá và thông khí"
+   },
+   {
+    "start": 6.502,
+    "dur": 4.577,
+    "text": "② Rối loạn toan kiềm nặng: sốc, nhiễm toan ceton, ngộ độc"
+   },
+   {
+    "start": 11.43,
+    "dur": 2.094,
+    "text": "③ Theo dõi và chỉnh máy thở"
+   },
+   {
+    "start": 13.874,
+    "dur": 6.592,
+    "text": "Nghi ngộ độc CO: đo bão hoà oxy trực tiếp trên mẫu máu"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 15.88,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.457,
+    "text": "Vị trí thường dùng nhất: động mạch quay ở cổ tay"
+   },
+   {
+    "start": 3.307,
+    "dur": 3.839,
+    "text": "Trước khi chọc: kiểm tra tuần hoàn bàn tay, ví dụ nghiệm pháp Allen"
+   },
+   {
+    "start": 7.496,
+    "dur": 6.897,
+    "text": "Rút kim: đè chặt ít nhất 2 phút; lâu hơn nếu dùng chống đông, kháng tiểu cầu"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 21.0,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 6.149,
+    "text": "① Bọt khí: trao đổi khí với máu → CO₂ giảm, O₂ tăng giả"
+   },
+   {
+    "start": 6.999,
+    "dur": 5.706,
+    "text": "② Heparin thừa: đẩy bớt heparin lỏng và bọt khí khỏi ống tiêm"
+   },
+   {
+    "start": 13.055,
+    "dur": 6.457,
+    "text": "③ Thời gian: tế bào máu vẫn chuyển hoá trong ống"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 16.24,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.528,
+    "text": "Lấy xong: đuổi hết bọt khí, đậy nắp, lăn nhẹ ống để trộn đều"
+   },
+   {
+    "start": 5.378,
+    "dur": 4.637,
+    "text": "Ghi FiO₂, chế độ thở và nhiệt độ lên phiếu"
+   },
+   {
+    "start": 10.365,
+    "dur": 4.357,
+    "text": "Ống nhựa: để nhiệt độ phòng, phân tích trong vòng 30 phút"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 19.32,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 1.692,
+    "text": "Không phải lúc nào cũng cần máu động mạch"
+   },
+   {
+    "start": 2.542,
+    "dur": 5.784,
+    "text": "Chủ yếu cần pH và HCO₃⁻? Khí máu tĩnh mạch thường đủ dùng"
+   },
+   {
+    "start": 8.676,
+    "dur": 4.232,
+    "text": "pH tĩnh mạch thấp hơn động mạch khoảng 0,03–0,04"
+   },
+   {
+    "start": 13.258,
+    "dur": 4.565,
+    "text": "Nhưng PCO₂ dao động rộng; PO₂ không dùng để đánh giá oxy hoá"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 17.84,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.159,
+    "text": "Làm sao biết mẫu lấy nhầm máu tĩnh mạch?"
+   },
+   {
+    "start": 3.009,
+    "dur": 2.324,
+    "text": "Máu động mạch thường tự dâng vào ống theo nhịp mạch"
+   },
+   {
+    "start": 5.683,
+    "dur": 7.572,
+    "text": "So SaO₂ trên phiếu với SpO₂ trên monitor: lệch nhiều → nghi mẫu tĩnh mạch"
+   },
+   {
+    "start": 13.606,
+    "dur": 2.754,
+    "text": "Màu máu không đủ tin cậy để phân biệt"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 15.6,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.55,
+    "text": "Biết khi nào làm · lấy đúng động mạch quay · đè đủ lâu"
+   },
+   {
+    "start": 5.4,
+    "dur": 4.371,
+    "text": "Tránh bọt khí, heparin thừa, chờ lâu · kiểm tra mẫu"
+   },
+   {
+    "start": 10.121,
+    "dur": 3.966,
+    "text": "Bài sau: cơ thể giữ pH 7,40 bằng cách nào?"
+   }
+  ]
+ }
+]
