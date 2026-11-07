@@ -8,9 +8,9 @@ NARR = [
   [  # 2 Đọc gì
     ("Khí máu động mạch trả lời ba câu hỏi lớn", "Khí máu động mạch giúp trả lời ba câu hỏi lớn."),
     ("① Máu có đủ O₂ không?", "Một, máu có đủ ô xy không?"),
-    ("② Phổi có thải CO₂ phù hợp không?", "Hai, phổi có thải cê ô hai phù hợp không?"),
+    ("② Phổi có thải CO₂ phù hợp không?", "Hai, phổi có thải xê ô hai phù hợp không?"),
     ("③ Cơ thể đang toan hay kiềm?", "Ba, cơ thể đang toan hay kiềm?"),
-    ("Đọc phiếu: pH · PaCO₂ · HCO₃⁻ · PaO₂", "Khi đọc phiếu, ta thường nhìn vào pê hát, áp suất riêng phần của cê ô hai, bi các bô nát, và áp suất riêng phần của ô xy."),
+    ("Đọc phiếu: pH · PaCO₂ · HCO₃⁻ · PaO₂", "Khi đọc phiếu, ta thường nhìn vào pê hát, áp suất riêng phần của xê ô hai, bi các bô nát, và áp suất riêng phần của ô xy."),
   ],
   [  # 3 Khi nào
     ("Khi nào cần làm khí máu động mạch?", "Vậy khi nào cần làm khí máu động mạch?"),
@@ -25,7 +25,7 @@ NARR = [
     ("Rút kim: đè chặt ít nhất 2 phút; lâu hơn nếu dùng chống đông, kháng tiểu cầu", "Sau khi rút kim, đè chặt ít nhất hai phút. Nếu bệnh nhân đang dùng thuốc chống đông hoặc kháng tiểu cầu, cần đè lâu hơn."),
   ],
   [  # 5 Phá mẫu
-    ("① Bọt khí: trao đổi khí với máu → CO₂ giảm, O₂ tăng giả", "Kẻ thứ nhất là bọt khí. Bọt khí trao đổi khí với máu, làm cê ô hai giảm và ô xy tăng giả."),
+    ("① Bọt khí: trao đổi khí với máu → CO₂ giảm, O₂ tăng giả", "Kẻ thứ nhất là bọt khí. Bọt khí trao đổi khí với máu, làm xê ô hai giảm và ô xy tăng giả."),
     ("② Heparin thừa: đẩy bớt heparin lỏng và bọt khí khỏi ống tiêm", "Kẻ thứ hai là hê pa rin thừa. Vì vậy, cần đẩy bớt hê pa rin lỏng và bọt khí khỏi ống tiêm."),
     ("③ Thời gian: tế bào máu vẫn chuyển hoá trong ống", "Kẻ thứ ba là thời gian. Tế bào máu vẫn chuyển hoá trong ống, nên mẫu để lâu sẽ không còn phản ánh đúng bệnh nhân."),
   ],
@@ -38,7 +38,7 @@ NARR = [
     ("Không phải lúc nào cũng cần máu động mạch", "Không phải lúc nào cũng cần máu động mạch."),
     ("Chủ yếu cần pH và HCO₃⁻? Khí máu tĩnh mạch thường đủ dùng", "Nếu chủ yếu cần pê hát và bi các bô nát, ví dụ khi theo dõi nhiễm toan xê tôn, khí máu tĩnh mạch thường đủ dùng."),
     ("pH tĩnh mạch thấp hơn động mạch khoảng 0,03–0,04", "Pê hát tĩnh mạch chỉ thấp hơn động mạch một chút, khoảng không phẩy không ba đến không phẩy không bốn."),
-    ("Nhưng PCO₂ dao động rộng; PO₂ không dùng để đánh giá oxy hoá", "Nhưng cê ô hai tĩnh mạch dao động rộng, còn ô xy tĩnh mạch không dùng để đánh giá ô xy hoá."),
+    ("Nhưng PCO₂ dao động rộng; PO₂ không dùng để đánh giá oxy hoá", "Nhưng xê ô hai tĩnh mạch dao động rộng, còn ô xy tĩnh mạch không dùng để đánh giá ô xy hoá."),
   ],
   [  # 8 Lẫn mẫu
     ("Làm sao biết mẫu lấy nhầm máu tĩnh mạch?", "Làm sao biết mẫu vô tình lấy phải máu tĩnh mạch?"),
