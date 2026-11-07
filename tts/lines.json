@@ -1,183 +1,35 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+8%",
+ "rate": "+12%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Pê hát bảy phẩy bốn mươi, và bảy phẩy mười, chỉ chênh nhau không phẩy ba."
-  },
-  {
-   "id": "00-1",
-   "text": "Nhưng lượng hát cộng trong máu đã tăng gần gấp đôi."
-  },
-  {
-   "id": "00-2",
-   "text": "Cơ thể luôn giữ pê hát trong một khoảng rất hẹp. Vậy nó làm điều đó bằng cách nào?"
+   "text": "Vì sao thở quá nhanh lại có thể làm máu bị kiềm?"
   },
   {
    "id": "01-0",
-   "text": "Pê hát đo nồng độ hát cộng theo thang lô ga rít. Hát cộng càng nhiều, pê hát càng thấp."
-  },
-  {
-   "id": "01-1",
-   "text": "Ở pê hát bảy phẩy bốn mươi, hát cộng khoảng bốn mươi na nô mol trên lít. Ở bảy phẩy mười, con số này khoảng tám mươi."
-  },
-  {
-   "id": "01-2",
-   "text": "Pê hát bình thường nằm trong khoảng bảy phẩy ba lăm đến bảy phẩy bốn lăm."
-  },
-  {
-   "id": "01-3",
-   "text": "Dưới bảy phẩy ba lăm là toan máu. Trên bảy phẩy bốn lăm là kiềm máu."
-  },
-  {
-   "id": "01-4",
-   "text": "Vì sao phải giữ chặt như vậy? Vì en zim và protein chỉ hoạt động tốt trong khoảng pê hát hẹp này."
+   "text": "Xê ô hai trong máu là một a xít, và nó được thải ra qua phổi."
   },
   {
    "id": "02-0",
-   "text": "Mỗi ngày, quá trình chuyển hoá sinh ra hai loại a xít."
-  },
-  {
-   "id": "02-1",
-   "text": "Loại thứ nhất là a xít bay hơi, chính là xê ô hai, khoảng mười lăm mol mỗi ngày, được thải qua phổi."
-  },
-  {
-   "id": "02-2",
-   "text": "Loại thứ hai là a xít không bay hơi, khoảng một mi li đương lượng cho mỗi ký cân nặng mỗi ngày, tức khoảng bảy mươi mi li đương lượng ở người bảy mươi ký."
-  },
-  {
-   "id": "02-3",
-   "text": "Lượng a xít này không thở ra được, mà phải thải qua thận."
+   "text": "Khi thở nhanh và sâu, phổi thải ra nhiều xê ô hai, nên pê a xê ô hai giảm."
   },
   {
    "id": "03-0",
-   "text": "Để chống lại lượng a xít đó, cơ thể có ba tuyến bảo vệ pê hát."
-  },
-  {
-   "id": "03-1",
-   "text": "Tuyến thứ nhất là hệ đệm, tác dụng ngay tức thì."
-  },
-  {
-   "id": "03-2",
-   "text": "Tuyến thứ hai là phổi, điều chỉnh trong vài phút đến vài giờ."
-  },
-  {
-   "id": "03-3",
-   "text": "Tuyến thứ ba là thận, chậm nhất, cần vài ngày."
-  },
-  {
-   "id": "04-0",
-   "text": "Hệ đệm giống như một miếng bọt biển. Khi dư hát cộng thì hút vào, khi thiếu thì nhả ra."
-  },
-  {
-   "id": "04-1",
-   "text": "Hệ đệm quan trọng nhất là hệ bi các bô nát."
-  },
-  {
-   "id": "04-2",
-   "text": "Xê ô hai kết hợp với nước tạo a xít các bô níc, rồi phân ly thành hát cộng và bi các bô nát."
-  },
-  {
-   "id": "04-3",
-   "text": "Khi hát cộng tăng, bi các bô nát bắt lấy hát cộng, và phản ứng chạy ngược về phía xê ô hai."
-  },
-  {
-   "id": "04-4",
-   "text": "Xê ô hai sinh ra được phổi thải đi ngay, nên hệ đệm này mạnh hơn hẳn các hệ đệm khác."
-  },
-  {
-   "id": "05-0",
-   "text": "Mối liên hệ này được viết thành một phương trình. Nhưng điều cần nhớ chỉ là một tỉ số."
-  },
-  {
-   "id": "05-1",
-   "text": "Với số bình thường, bi các bô nát hai mươi tư, chia cho không phẩy không ba nhân bốn mươi, tức một phẩy hai, ta được hai mươi."
-  },
-  {
-   "id": "05-2",
-   "text": "Tỉ số hai mươi trên một tương ứng với pê hát bảy phẩy bốn mươi."
-  },
-  {
-   "id": "05-3",
-   "text": "Nếu bi các bô nát giảm, hoặc xê ô hai tăng, tỉ số giảm, và máu bị toan."
-  },
-  {
-   "id": "05-4",
-   "text": "Ngược lại, bi các bô nát tăng, hoặc xê ô hai giảm, tỉ số tăng, và máu bị kiềm."
-  },
-  {
-   "id": "06-0",
-   "text": "Trung tâm hô hấp ở thân não luôn cảm nhận hát cộng và xê ô hai."
-  },
-  {
-   "id": "06-1",
-   "text": "Khi máu bị toan, cơ thể thở nhanh và sâu để thải bớt xê ô hai."
-  },
-  {
-   "id": "06-2",
-   "text": "Ví dụ điển hình là kiểu thở Kút-xmao trong nhiễm toan xê tôn."
-  },
-  {
-   "id": "06-3",
-   "text": "Khi máu bị kiềm, cơ thể thở chậm lại để giữ xê ô hai."
-  },
-  {
-   "id": "06-4",
-   "text": "Phổi bắt đầu điều chỉnh trong vài phút, và bù đầy đủ sau mười hai đến hai mươi tư giờ."
-  },
-  {
-   "id": "07-0",
-   "text": "Mỗi ngày, thận lọc khoảng bốn nghìn năm trăm mi li đương lượng bi các bô nát."
-  },
-  {
-   "id": "07-1",
-   "text": "Việc thứ nhất là giữ lại lượng bi các bô nát đã lọc. Riêng ống lượn gần tái hấp thu bảy mươi đến tám mươi phần trăm."
-  },
-  {
-   "id": "07-2",
-   "text": "Việc thứ hai là tạo bi các bô nát mới, bằng cách thải hát cộng ra nước tiểu."
-  },
-  {
-   "id": "07-3",
-   "text": "Hát cộng được thải chủ yếu dưới dạng a mô ni, chiếm một nửa đến hai phần ba, phần còn lại là a xít chuẩn độ."
-  },
-  {
-   "id": "07-4",
-   "text": "Thận làm việc chậm, cần ba đến năm ngày để bù tối đa."
-  },
-  {
-   "id": "07-5",
-   "text": "Vì vậy, rối loạn hô hấp cấp và mạn khác nhau ở mức bi các bô nát."
-  },
-  {
-   "id": "08-0",
-   "text": "Ngoài bi các bô nát, hê mô glô bin trong hồng cầu, protein và xương cũng tham gia đệm."
-  },
-  {
-   "id": "08-1",
-   "text": "Phốt phát là hệ đệm chính trong nước tiểu."
-  },
-  {
-   "id": "08-2",
-   "text": "Khi toan máu kéo dài, xương phải đệm liên tục, và dần bị mất khoáng."
-  },
-  {
-   "id": "09-0",
-   "text": "Tóm lại, có ba tuyến bảo vệ pê hát: hệ đệm, phổi và thận."
-  },
-  {
-   "id": "09-1",
    "text": "Pê hát phụ thuộc vào tỉ số bi các bô nát trên xê ô hai, bình thường là hai mươi trên một."
   },
   {
-   "id": "09-2",
-   "text": "Phổi lo xê ô hai, nhanh. Thận lo bi các bô nát, chậm."
+   "id": "04-0",
+   "text": "Xê ô hai giảm làm tỉ số tăng, pê hát tăng. Đó là kiềm hô hấp."
   },
   {
-   "id": "09-3",
-   "text": "Bài sau, ta sẽ học cách đánh giá ô xy hoá trên phiếu khí máu."
+   "id": "05-0",
+   "text": "Hay gặp khi lo âu, đau, sốt, hoặc khi cài máy thở quá nhanh."
+  },
+  {
+   "id": "06-0",
+   "text": "Lưu lại để ôn, và xem bài hai đầy đủ trên kênh nhé!"
   }
  ]
 }
