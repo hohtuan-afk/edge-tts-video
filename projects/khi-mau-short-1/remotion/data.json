@@ -1,0 +1,83 @@
+{
+ "fps": 30,
+ "total": 937,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.696,
+     "text": "Một bọt khí nhỏ có thể làm sai cả phiếu khí máu!"
+    }
+   ]
+  },
+  {
+   "from": 132,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.175,
+     "text": "① Lấy ở động mạch quay, rút kim đè ≥ 2 phút"
+    }
+   ]
+  },
+  {
+   "from": 264,
+   "dur": 144,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.116,
+     "text": "② Đuổi hết bọt khí: CO₂ giảm, O₂ tăng giả"
+    }
+   ]
+  },
+  {
+   "from": 408,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.434,
+     "text": "③ Đẩy bớt heparin thừa khỏi ống tiêm"
+    }
+   ]
+  },
+  {
+   "from": 540,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.922,
+     "text": "④ Phân tích sớm, trong vòng 30 phút"
+    }
+   ]
+  },
+  {
+   "from": 672,
+   "dur": 133,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.721,
+     "text": "Nhớ: BỌT · HEPARIN · THỜI GIAN"
+    }
+   ]
+  },
+  {
+   "from": 805,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.435,
+     "text": "Lưu lại để ôn · xem bài đầy đủ trên kênh!"
+    }
+   ]
+  }
+ ]
+}
