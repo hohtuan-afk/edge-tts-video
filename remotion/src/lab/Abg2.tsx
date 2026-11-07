@@ -118,6 +118,17 @@ const Ico: React.FC<{w: number; h: number; vb: string; html: string; style?: Rea
 );
 
 
+// Ảnh tạng (Canva, đã tách nền). Đặt tâm tại (x,y).
+const LUNG_AR = 738 / 673, KID_AR = 1170 / 786;
+const Organ: React.FC<{src: string; x: number; y: number; w: number; ar: number}> = ({src, x, y, w, ar}) => (
+  <image href={staticFile(src)} x={x - w / 2} y={y - (w * ar) / 2} width={w} height={w * ar} style={{filter: 'drop-shadow(0 18px 30px rgba(0,0,0,.35))'}} />
+);
+const Lung: React.FC<{x: number; y: number; w: number}> = (p) => <Organ src="abg_phoi.png" ar={LUNG_AR} {...p} />;
+const Kid: React.FC<{x: number; y: number; h: number}> = ({x, y, h}) => <Organ src="abg_than.png" ar={KID_AR} x={x} y={y} w={h / KID_AR} />;
+const OrganIco: React.FC<{src: string; w: number; h: number}> = ({src, w, h}) => (
+  <img src={staticFile(src)} style={{width: w, height: h, objectFit: 'contain', flex: 'none', filter: 'drop-shadow(0 10px 18px rgba(0,0,0,.3))'}} />
+);
+
 // ---------- Tiện ích bài 2 ----------
 const rnd = (i: number) => {
   const x = Math.sin(i * 127.1 + 311.7) * 43758.5453;
@@ -202,8 +213,6 @@ const B2: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
 const B3: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
   const t = useSec();
   const f = useCurrentFrame();
-  const lungA = useMemo(() => A.lungs('l2b'), []);
-  const kidA = useMemo(() => A.kidney('k2b'), []);
   const cellP = usePop(S[0]);
   return (
     <>
@@ -212,8 +221,8 @@ const B3: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
       <Svg>
         <Curve d="M820,420 C700,380 560,360 470,380" c={K.co2} w={6} p={ap(t, S[1], 0.7)} />
         <Curve d="M1100,420 C1220,380 1360,360 1450,380" c={K.hco3} w={6} p={ap(t, S[2], 0.7)} />
-        <g opacity={ap(t, S[1] + 0.4)}><Art html={lungA} x={330} y={420} s={1.05} /></g>
-        <g opacity={ap(t, S[3])}><Art html={kidA} x={1590} y={440} s={0.75} /></g>
+        <g opacity={ap(t, S[1] + 0.4)}><Lung x={330} y={405} w={330} /></g>
+        <g opacity={ap(t, S[3])}><Kid x={1580} y={455} h={320} /></g>
         {Array.from({length: 6}, (_, i) => {
           const u = ((f / 50 + i / 6) % 1);
           return <circle key={i} cx={800 - u * 320} cy={415 - Math.sin(u * Math.PI) * 40} r={11} fill={K.co2} opacity={ap(t, S[1] + 0.5) * (1 - u)} />;
@@ -253,14 +262,12 @@ const Sponge: React.FC<{s?: number}> = ({s = 1}) => {
 };
 const B4: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   const t = useSec();
-  const lungA = useMemo(() => A.lungs('l4b'), []);
-  const kidA = useMemo(() => A.kidney('k4b'), []);
   return (
     <>
       <Top idx={3} title="Ba tuyến bảo vệ pH" />
       <Line3 x={110} s0={S[1]} c={K.amber} n="1" name="HỆ ĐỆM" time="tức thì" art={<Sponge />} />
-      <Line3 x={700} s0={S[2]} c={K.co2} n="2" name="PHỔI" time="phút → giờ" art={<Ico w={220} h={210} vb="-140 -150 280 270" html={lungA} />} />
-      <Line3 x={1290} s0={S[3]} c={K.hco3} n="3" name="THẬN" time="vài ngày" art={<Ico w={170} h={210} vb="-180 -170 320 380" html={kidA} />} />
+      <Line3 x={700} s0={S[2]} c={K.co2} n="2" name="PHỔI" time="phút → giờ" art={<OrganIco src="abg_phoi.png" w={220} h={210} />} />
+      <Line3 x={1290} s0={S[3]} c={K.hco3} n="3" name="THẬN" time="vài ngày" art={<OrganIco src="abg_than.png" w={170} h={210} />} />
       <div style={{position: 'absolute', left: 110, top: 690, width: 1700, height: 10, borderRadius: 5, background: `linear-gradient(90deg,${K.amber},${K.co2},${K.hco3})`, opacity: ap(t, S[0] + 0.2), transformOrigin: 'left', transform: `scaleX(${ap(t, S[0] + 0.2, 1.2)})`}} />
       <Tx x={110} y={712} w={1700} al="right" size={28} c={K.dim} a={ap(t, S[3])}>thời gian tác dụng →</Tx>
       <Memo x={610} y={770} w={700} s0={S[3] + 1.2} size={48}>ĐỆM → PHỔI → THẬN</Memo>
@@ -276,7 +283,6 @@ const B5: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
   const t = useSec();
   const f = useCurrentFrame();
   const back = interpolate(t, [S[3] + 0.3, S[3] + D[3]], [0, 1], clamp);
-  const lungA = useMemo(() => A.lungs('l5b'), []);
   const hl = (s: number) => Math.min(ap(t, s, 0.3), 1);
   return (
     <>
@@ -304,7 +310,7 @@ const B5: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
           })}
         </g>
         <Curve d="M820,560 C700,600 600,620 470,640" c={K.co2} w={6} p={ap(t, S[4], 0.7)} />
-        <g opacity={ap(t, S[4] + 0.4)}><Art html={lungA} x={320} y={660} s={0.75} /></g>
+        <g opacity={ap(t, S[4] + 0.4)}><Lung x={320} y={650} w={230} /></g>
       </Svg>
       <Tx x={940} y={420} w={700} al="center" size={34} c={K.txt} b={700} a={ap(t, S[3] + 0.2)}>H⁺ tăng → HCO₃⁻ bắt lấy → tạo CO₂</Tx>
       <Panel x={720} y={640} w={1090} h={150} c={K.co2} s0={S[4] + 0.3}>
@@ -359,7 +365,6 @@ const B6: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
 const B7: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
   const t = useSec();
   const f = useCurrentFrame();
-  const lungA = useMemo(() => A.lungs('l7b'), []);
   const fast = t >= S[1] && t < S[3];
   const slow = t >= S[3];
   const rate = fast ? 5 : slow ? 30 : 16;
@@ -370,7 +375,7 @@ const B7: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
     <>
       <Top idx={6} title="Phổi: điều chỉnh nhanh" />
       <Svg>
-        <g opacity={ap(t, S[0])}><Art html={lungA} x={560} y={500} s={2.1 * br} /></g>
+        <g opacity={ap(t, S[0])}><Lung x={560} y={500} w={600 * br} /></g>
         {Array.from({length: out}, (_, i) => {
           const u = ((f / (fast ? 18 : 40) + i / out) % 1);
           return (
@@ -406,12 +411,11 @@ const B7: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
 const B8: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
   const t = useSec();
   const f = useCurrentFrame();
-  const kidA = useMemo(() => A.kidney('k8b'), []);
   const day = Math.min(5, Math.floor(interpolate(t, [S[4], S[4] + D[4] * 0.9], [0, 5.99], clamp)));
   return (
     <>
       <Top idx={7} title="Thận: điều chỉnh chậm" />
-      <Svg><g opacity={ap(t, S[0])}><Art html={kidA} x={330} y={470} s={1.35 + Math.sin(f / 30) * 0.01} /></g></Svg>
+      <Svg><g opacity={ap(t, S[0])}><Kid x={330} y={480} h={540 * (1 + Math.sin(f / 30) * 0.01)} /></g></Svg>
       <Callout x={110} y={170} a={ap(t, S[0] + 0.4)} c={K.hco3} size={32}>Lọc ~4.500 mEq HCO₃⁻ mỗi ngày</Callout>
       <Panel x={720} y={170} w={1100} h={150} c={K.green} s0={S[1]}>
         <div style={{position: 'absolute', left: 30, top: 40}}><Mark c={K.green} ch="1" s0={S[1] + 0.2} size={70} /></div>
