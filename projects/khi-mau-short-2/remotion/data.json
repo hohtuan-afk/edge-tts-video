@@ -1,0 +1,83 @@
+{
+ "fps": 30,
+ "total": 977,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.304,
+     "text": "Vì sao thở quá nhanh lại làm máu bị kiềm?"
+    }
+   ]
+  },
+  {
+   "from": 132,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.236,
+     "text": "CO₂ là một acid, được thải qua phổi"
+    }
+   ]
+  },
+  {
+   "from": 264,
+   "dur": 151,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.352,
+     "text": "Thở nhanh, sâu → thải nhiều CO₂ → PaCO₂ giảm"
+    }
+   ]
+  },
+  {
+   "from": 415,
+   "dur": 145,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.154,
+     "text": "pH theo tỉ số HCO₃⁻ / CO₂ · bình thường 20 : 1"
+    }
+   ]
+  },
+  {
+   "from": 560,
+   "dur": 153,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.398,
+     "text": "CO₂ giảm → tỉ số tăng → pH tăng: kiềm hô hấp"
+    }
+   ]
+  },
+  {
+   "from": 713,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.575,
+     "text": "Gặp khi: lo âu, đau, sốt, thở máy quá nhanh"
+    }
+   ]
+  },
+  {
+   "from": 845,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.579,
+     "text": "Lưu lại để ôn · xem Bài 2 đầy đủ trên kênh!"
+    }
+   ]
+  }
+ ]
+}
