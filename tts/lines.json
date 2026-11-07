@@ -1,35 +1,171 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+12%",
+ "rate": "+8%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Vì sao thở quá nhanh lại có thể làm máu bị kiềm?"
+   "text": "Hai bệnh nhân, cùng có pê a ô hai năm mươi lăm mi li mét thuỷ ngân."
+  },
+  {
+   "id": "00-1",
+   "text": "Một người có phổi bị tổn thương, người kia chỉ đơn giản là thở yếu."
+  },
+  {
+   "id": "00-2",
+   "text": "Làm sao phân biệt hai người này, chỉ bằng một phiếu khí máu?"
   },
   {
    "id": "01-0",
-   "text": "Xê ô hai trong máu là một a xít, và nó được thải ra qua phổi."
+   "text": "Pê a ô hai là áp lực của ô xy hoà tan trong máu động mạch."
+  },
+  {
+   "id": "01-1",
+   "text": "Ô xy đi từ phế nang, qua một lớp màng rất mỏng, rồi vào máu."
+  },
+  {
+   "id": "01-2",
+   "text": "Khi thở khí trời, pê a ô hai bình thường khoảng tám mươi đến một trăm."
+  },
+  {
+   "id": "01-3",
+   "text": "Con số này giảm dần theo tuổi, nên người cao tuổi có pê a ô hai thấp hơn một chút vẫn có thể là bình thường."
   },
   {
    "id": "02-0",
-   "text": "Khi thở nhanh và sâu, phổi thải ra nhiều xê ô hai, nên pê a xê ô hai giảm."
+   "text": "Phần lớn ô xy trong máu được chở bởi hê mô glô bin. Tỉ lệ bão hoà đó gọi là ét a ô hai."
+  },
+  {
+   "id": "02-1",
+   "text": "Pê a ô hai và ét a ô hai liên hệ với nhau theo một đường cong hình chữ S."
+  },
+  {
+   "id": "02-2",
+   "text": "Mốc cần nhớ: pê a ô hai sáu mươi, tương ứng ét a ô hai khoảng chín mươi phần trăm."
+  },
+  {
+   "id": "02-3",
+   "text": "Dưới mốc này, đường cong dốc xuống, độ bão hoà tụt rất nhanh. Hãy nhớ: sáu mươi, chín mươi là mép vực."
   },
   {
    "id": "03-0",
-   "text": "Pê hát phụ thuộc vào tỉ số bi các bô nát trên xê ô hai, bình thường là hai mươi trên một."
+   "text": "Khi thở khí trời, pê a ô hai dưới tám mươi là giảm ô xy máu."
+  },
+  {
+   "id": "03-1",
+   "text": "Dưới sáu mươi là giảm ô xy máu đáng kể, cần nghĩ đến suy hô hấp."
   },
   {
    "id": "04-0",
-   "text": "Xê ô hai giảm làm tỉ số tăng, pê hát tăng. Đó là kiềm hô hấp."
+   "text": "Nhưng pê a ô hai phải luôn đọc cùng ép i ô hai, tức là nồng độ ô xy bệnh nhân đang thở."
+  },
+  {
+   "id": "04-1",
+   "text": "Khí trời có ép i ô hai là hai mươi mốt phần trăm, tức không phẩy hai mốt."
+  },
+  {
+   "id": "04-2",
+   "text": "Tỉ số pê trên ép bằng pê a ô hai chia cho ép i ô hai."
+  },
+  {
+   "id": "04-3",
+   "text": "Pê a ô hai chín mươi khi thở khí trời, pê trên ép khoảng bốn trăm ba mươi. Bình thường."
+  },
+  {
+   "id": "04-4",
+   "text": "Cũng pê a ô hai chín mươi, nhưng đang thở ô xy một trăm phần trăm, pê trên ép chỉ còn chín mươi. Rất nặng."
   },
   {
    "id": "05-0",
-   "text": "Hay gặp khi lo âu, đau, sốt, hoặc khi cài máy thở quá nhanh."
+   "text": "Tỉ số pê trên ép bình thường khoảng bốn trăm đến năm trăm."
+  },
+  {
+   "id": "05-1",
+   "text": "Trong hội chứng suy hô hấp cấp tiến triển, pê trên ép từ hai trăm đến ba trăm là nhẹ, từ một trăm đến hai trăm là vừa, dưới một trăm là nặng."
+  },
+  {
+   "id": "05-2",
+   "text": "Ở bệnh nhân thở máy, tỉ số này được tính khi bíp ít nhất là năm xen ti mét nước."
+  },
+  {
+   "id": "05-3",
+   "text": "Định nghĩa toàn cầu năm hai nghìn không trăm hai mươi tư cho phép dùng ét pê ô hai chia ép i ô hai khi chưa có khí máu."
   },
   {
    "id": "06-0",
-   "text": "Lưu lại để ôn, và xem bài hai đầy đủ trên kênh nhé!"
+   "text": "Tiếp theo, ta cần biết trong phế nang có bao nhiêu ô xy. Gọi là ô xy phế nang, viết tắt pê A ô hai."
+  },
+  {
+   "id": "06-1",
+   "text": "Khi thở khí trời ở mặt nước biển, ô xy phế nang xấp xỉ một trăm năm mươi, trừ một phẩy hai lăm lần pê a xê ô hai."
+  },
+  {
+   "id": "06-2",
+   "text": "Xê ô hai trong phế nang càng nhiều, chỗ dành cho ô xy càng ít."
+  },
+  {
+   "id": "06-3",
+   "text": "Ví dụ pê a xê ô hai bốn mươi, ô xy phế nang khoảng một trăm."
+  },
+  {
+   "id": "07-0",
+   "text": "Chênh lệch A a bằng ô xy trong phế nang, trừ ô xy trong máu động mạch."
+  },
+  {
+   "id": "07-1",
+   "text": "Ở người trẻ, chênh lệch này thường dưới mười đến mười lăm."
+  },
+  {
+   "id": "07-2",
+   "text": "Có thể ước tính giới hạn trên theo tuổi: lấy tuổi chia bốn, cộng bốn."
+  },
+  {
+   "id": "07-3",
+   "text": "Chênh lệch A a tăng nghĩa là ô xy có trong phế nang, nhưng không đi được vào máu. Vấn đề nằm ở phổi."
+  },
+  {
+   "id": "08-0",
+   "text": "Có năm cơ chế gây giảm ô xy máu."
+  },
+  {
+   "id": "08-1",
+   "text": "Chênh lệch A a bình thường gặp ở hai cơ chế: khí thở thiếu ô xy, như khi lên vùng cao, và giảm thông khí."
+  },
+  {
+   "id": "08-2",
+   "text": "Chênh lệch A a tăng gặp ở ba cơ chế: bất xứng thông khí tưới máu, shunt, và rối loạn khuếch tán."
+  },
+  {
+   "id": "08-3",
+   "text": "Bất xứng thông khí tưới máu là cơ chế thường gặp nhất, và đáp ứng tốt với ô xy."
+  },
+  {
+   "id": "08-4",
+   "text": "Shunt là máu đi qua vùng phổi không có khí, nên thở thêm ô xy cải thiện rất ít."
+  },
+  {
+   "id": "09-0",
+   "text": "Quay lại câu đố. Bệnh nhân một: pê a ô hai năm mươi lăm, pê a xê ô hai bảy mươi. Pê A ô hai khoảng sáu mươi hai, chênh lệch A a chỉ khoảng tám."
+  },
+  {
+   "id": "09-1",
+   "text": "Chênh lệch bình thường, vậy đây là giảm thông khí, ví dụ quá liều thuốc an thần."
+  },
+  {
+   "id": "09-2",
+   "text": "Bệnh nhân hai: pê a ô hai năm mươi lăm, pê a xê ô hai ba mươi. Pê A ô hai khoảng một trăm mười hai, chênh lệch A a khoảng năm mươi tám."
+  },
+  {
+   "id": "09-3",
+   "text": "Chênh lệch tăng, vậy vấn đề nằm ở phổi, ví dụ viêm phổi hay thuyên tắc phổi."
+  },
+  {
+   "id": "09-4",
+   "text": "Tóm lại, đánh giá ô xy hoá qua ba câu hỏi: pê a ô hai bao nhiêu, pê trên ép bao nhiêu, và chênh lệch A a bình thường hay tăng."
+  },
+  {
+   "id": "09-5",
+   "text": "Bài sau, ta sẽ ghép tất cả lại thành quy trình đọc khí máu sáu bước."
   }
  ]
 }
