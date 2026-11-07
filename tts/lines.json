@@ -37,27 +37,103 @@
   },
   {
    "id": "02-0",
-   "text": "Vị trí thường dùng nhất là động mạch quay ở cổ tay."
+   "text": "Vậy khi nào cần làm khí máu động mạch?"
   },
   {
    "id": "02-1",
-   "text": "Trước khi chọc, ta kiểm tra tuần hoàn bàn tay, ví dụ bằng nghiệm pháp A-len."
+   "text": "Một, khi bệnh nhân suy hô hấp, cần biết cả ô xy hoá lẫn thông khí."
   },
   {
    "id": "02-2",
-   "text": "Sau khi rút kim, đè chặt ít nhất hai phút. Nếu bệnh nhân đang dùng thuốc chống đông hoặc kháng tiểu cầu, cần đè lâu hơn."
+   "text": "Hai, khi nghi rối loạn toan kiềm nặng, như sốc, nhiễm toan xê tôn, hay ngộ độc."
+  },
+  {
+   "id": "02-3",
+   "text": "Ba, khi theo dõi và điều chỉnh máy thở."
+  },
+  {
+   "id": "02-4",
+   "text": "Và khi nghi ngộ độc khí các bon mô nô xít, cần đo độ bão hoà ô xy trực tiếp trên mẫu máu, vì máy đo kẹp ngón có thể báo cao giả."
   },
   {
    "id": "03-0",
-   "text": "Kẻ thứ nhất là bọt khí. Bọt khí trao đổi khí với máu, làm cê ô hai giảm và ô xy tăng giả."
+   "text": "Vị trí thường dùng nhất là động mạch quay ở cổ tay."
   },
   {
    "id": "03-1",
-   "text": "Kẻ thứ hai là hê pa rin thừa. Vì vậy, cần đẩy bớt hê pa rin lỏng và bọt khí khỏi ống tiêm."
+   "text": "Trước khi chọc, ta kiểm tra tuần hoàn bàn tay, ví dụ bằng nghiệm pháp A-len."
   },
   {
    "id": "03-2",
+   "text": "Sau khi rút kim, đè chặt ít nhất hai phút. Nếu bệnh nhân đang dùng thuốc chống đông hoặc kháng tiểu cầu, cần đè lâu hơn."
+  },
+  {
+   "id": "04-0",
+   "text": "Kẻ thứ nhất là bọt khí. Bọt khí trao đổi khí với máu, làm cê ô hai giảm và ô xy tăng giả."
+  },
+  {
+   "id": "04-1",
+   "text": "Kẻ thứ hai là hê pa rin thừa. Vì vậy, cần đẩy bớt hê pa rin lỏng và bọt khí khỏi ống tiêm."
+  },
+  {
+   "id": "04-2",
    "text": "Kẻ thứ ba là thời gian. Tế bào máu vẫn chuyển hoá trong ống, nên mẫu để lâu sẽ không còn phản ánh đúng bệnh nhân."
+  },
+  {
+   "id": "05-0",
+   "text": "Lấy máu xong, đuổi hết bọt khí, đậy nắp kín, rồi lăn nhẹ ống để máu trộn đều."
+  },
+  {
+   "id": "05-1",
+   "text": "Ghi rõ nồng độ ô xy khí thở vào, chế độ thở, và nhiệt độ bệnh nhân lên phiếu xét nghiệm."
+  },
+  {
+   "id": "05-2",
+   "text": "Ống tiêm nhựa để ở nhiệt độ phòng, và phân tích càng sớm càng tốt, trong vòng ba mươi phút."
+  },
+  {
+   "id": "06-0",
+   "text": "Không phải lúc nào cũng cần máu động mạch."
+  },
+  {
+   "id": "06-1",
+   "text": "Nếu chủ yếu cần pê hát và bi các bô nát, ví dụ khi theo dõi nhiễm toan xê tôn, khí máu tĩnh mạch thường đủ dùng."
+  },
+  {
+   "id": "06-2",
+   "text": "Pê hát tĩnh mạch chỉ thấp hơn động mạch một chút, khoảng không phẩy không ba đến không phẩy không bốn."
+  },
+  {
+   "id": "06-3",
+   "text": "Nhưng cê ô hai tĩnh mạch dao động rộng, còn ô xy tĩnh mạch không dùng để đánh giá ô xy hoá."
+  },
+  {
+   "id": "07-0",
+   "text": "Làm sao biết mẫu vô tình lấy phải máu tĩnh mạch?"
+  },
+  {
+   "id": "07-1",
+   "text": "Máu động mạch thường tự dâng vào ống theo từng nhịp mạch."
+  },
+  {
+   "id": "07-2",
+   "text": "Hãy so độ bão hoà ô xy trên phiếu với chỉ số trên máy đo kẹp ngón cùng lúc. Nếu số trên phiếu thấp hơn hẳn, hãy nghĩ tới mẫu tĩnh mạch."
+  },
+  {
+   "id": "07-3",
+   "text": "Còn màu máu đỏ tươi hay sẫm thì không đủ tin cậy để phân biệt."
+  },
+  {
+   "id": "08-0",
+   "text": "Tóm lại, biết khi nào cần làm khí máu, lấy đúng ở động mạch quay, và đè đủ lâu."
+  },
+  {
+   "id": "08-1",
+   "text": "Tránh bọt khí, hê pa rin thừa và chờ lâu, rồi kiểm tra mẫu có thật là máu động mạch."
+  },
+  {
+   "id": "08-2",
+   "text": "Bài sau, ta cùng tìm hiểu, cơ thể giữ pê hát bảy phẩy bốn mươi bằng cách nào."
   }
  ]
 }
