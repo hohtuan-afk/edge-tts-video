@@ -5,7 +5,7 @@ NARR = [
   [("P/F = PaO₂ ÷ FiO₂", "Hãy tính tỉ số pê trên ép, bằng pê a ô hai chia cho ép i ô hai.")],
   [("Thở khí trời (0,21): P/F ≈ 430 · bình thường", "Thở khí trời, ép i ô hai không phẩy hai mốt, pê trên ép khoảng bốn trăm ba mươi. Bình thường.")],
   [("Thở oxy 100% (1,0): P/F = 90 · rất nặng", "Thở ô xy một trăm phần trăm, pê trên ép chỉ còn chín mươi. Rất nặng.")],
-  [("P/F ≤ 100: ARDS nặng", "Pê trên ép từ một trăm trở xuống, là suy hô hấp cấp tiến triển mức nặng.")],
+  [("Nếu là ARDS: P/F ≤ 100 là mức nặng", "Nếu là suy hô hấp cấp tiến triển, pê trên ép từ một trăm trở xuống là mức nặng.")],
   [("Lưu lại để ôn · xem Bài 3 đầy đủ trên kênh!", "Lưu lại để ôn, và xem bài ba đầy đủ trên kênh nhé!")],
 ]
 KEYS = [[0] for _ in NARR]
