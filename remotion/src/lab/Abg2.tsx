@@ -375,19 +375,19 @@ const B7: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
     <>
       <Top idx={6} title="Phổi: điều chỉnh nhanh" />
       <Svg>
-        <g opacity={ap(t, S[0])}><Lung x={560} y={500} w={600 * br} /></g>
+        <g opacity={ap(t, S[0])}><Lung x={600} y={545} w={560 * br} /></g>
         {Array.from({length: out}, (_, i) => {
           const u = ((f / (fast ? 18 : 40) + i / out) % 1);
           return (
-            <g key={i} transform={`translate(${560 + Math.sin(i * 2.1) * 40},${230 - u * 120})`} opacity={(1 - u) * ap(t, S[1])}>
+            <g key={i} transform={`translate(${600 + Math.sin(i * 2.1) * 40},${245 - u * 120})`} opacity={(1 - u) * ap(t, S[1])}>
               <circle r={20} fill={K.co2} /><text y={7} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={16} fill="#fff">CO₂</text>
             </g>
           );
         })}
       </Svg>
-      <Panel x={100} y={170} w={340} h={150} c={K.dim} s0={S[0] + 0.3}>
-        <Tx x={0} y={24} w={340} al="center" size={26} c={K.dim} b={700}>Trung tâm hô hấp</Tx>
-        <Tx x={0} y={70} w={340} al="center" size={32} b={800}>cảm nhận H⁺, CO₂</Tx>
+      <Panel x={40} y={150} w={330} h={150} c={K.dim} s0={S[0] + 0.3}>
+        <Tx x={0} y={24} w={330} al="center" size={26} c={K.dim} b={700}>Trung tâm hô hấp</Tx>
+        <Tx x={0} y={70} w={330} al="center" size={32} b={800}>cảm nhận H⁺, CO₂</Tx>
       </Panel>
       <Panel x={1060} y={180} w={760} h={190} c={K.o2} s0={S[1]} glow={fast ? 1 : 0}>
         <Tx x={30} y={20} size={30} c={K.o2} b={800}>TOAN MÁU</Tx>
@@ -402,7 +402,7 @@ const B7: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
         <Tx x={30} y={24} w={700} size={36} b={800}>Bắt đầu: vài phút</Tx>
         <Tx x={30} y={76} w={700} size={36} b={800} c={K.amber}>Bù đầy đủ: 12–24 giờ</Tx>
       </Panel>
-      <Tx x={360} y={760} w={420} al="center" size={36} b={800} c={fast ? K.o2 : slow ? '#6E9BEA' : K.dim} a={ap(t, S[1])}>{fast ? 'thở nhanh, sâu' : slow ? 'thở chậm' : ''}</Tx>
+      <Tx x={390} y={872} w={420} al="center" size={36} b={800} c={fast ? K.o2 : slow ? '#6E9BEA' : K.dim} a={ap(t, S[1])}>{fast ? 'thở nhanh, sâu' : slow ? 'thở chậm' : ''}</Tx>
     </>
   );
 };
