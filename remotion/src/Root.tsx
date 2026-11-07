@@ -26,6 +26,7 @@ import {Abg0} from './lab/Abg0';
 import {Abg1} from './lab/Abg1';
 import {AbgShort1} from './lab/AbgShort1';
 import {AbgShort2} from './lab/AbgShort2';
+import {Abg3} from './lab/Abg3';
 import {Abg2} from './lab/Abg2';
 import {Block, BLOCK_N} from './lab/Block';
 import {Bundle, BUNDLE_N} from './lab/Bundle';
@@ -46,6 +47,7 @@ import data from './data.json';
 export const Root: React.FC = () => (
   <>
     <Composition id="Abg2" component={Abg2} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />
+    <Composition id="Abg3" component={Abg3} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />
     <Composition id="AbgShort2" component={AbgShort2} durationInFrames={data.total} fps={data.fps} width={1080} height={1920} />
     <Composition id="AbgShort1" component={AbgShort1} durationInFrames={data.total} fps={data.fps} width={1080} height={1920} />
     <Composition id="Abg1" component={Abg1} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />
