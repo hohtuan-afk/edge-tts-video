@@ -25,7 +25,7 @@
   },
   {
    "from": 436,
-   "dur": 530,
+   "dur": 531,
    "sents": [
     {
      "start": 0.5,
@@ -39,23 +39,23 @@
     },
     {
      "start": 5.054,
-     "dur": 2.167,
+     "dur": 2.188,
      "text": "② Phổi có thải CO₂ phù hợp không?"
     },
     {
-     "start": 7.571,
+     "start": 7.593,
      "dur": 1.729,
      "text": "③ Cơ thể đang toan hay kiềm?"
     },
     {
-     "start": 9.65,
-     "dur": 6.53,
+     "start": 9.671,
+     "dur": 6.546,
      "text": "Đọc phiếu: pH · PaCO₂ · HCO₃⁻ · PaO₂"
     }
    ]
   },
   {
-   "from": 966,
+   "from": 967,
    "dur": 659,
    "sents": [
     {
@@ -86,7 +86,7 @@
    ]
   },
   {
-   "from": 1625,
+   "from": 1626,
    "dur": 476,
    "sents": [
     {
@@ -107,21 +107,21 @@
    ]
   },
   {
-   "from": 2101,
-   "dur": 630,
+   "from": 2102,
+   "dur": 629,
    "sents": [
     {
      "start": 0.5,
-     "dur": 6.149,
+     "dur": 6.09,
      "text": "① Bọt khí: trao đổi khí với máu → CO₂ giảm, O₂ tăng giả"
     },
     {
-     "start": 6.999,
+     "start": 6.94,
      "dur": 5.706,
      "text": "② Heparin thừa: đẩy bớt heparin lỏng và bọt khí khỏi ống tiêm"
     },
     {
-     "start": 13.055,
+     "start": 12.996,
      "dur": 6.457,
      "text": "③ Thời gian: tế bào máu vẫn chuyển hoá trong ống"
     }
@@ -169,7 +169,7 @@
     },
     {
      "start": 13.258,
-     "dur": 4.565,
+     "dur": 4.57,
      "text": "Nhưng PCO₂ dao động rộng; PO₂ không dùng để đánh giá oxy hoá"
     }
    ]
