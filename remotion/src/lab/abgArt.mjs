@@ -204,3 +204,25 @@ export const slip = (p = 'p', w = 480, h = 520) => {
   ${Array.from({length: 26}, (_, i) => `<rect x="${w - 140 + i * 4.6}" y="24" width="${[2, 3, 1.5][i % 3]}" height="30" fill="#25343D"/>`).join('')}
 `;
 };
+
+// ---------- Thận (gốc giữa, ~260×320) ----------
+export const kidney = (p = 'k') => `
+  <defs>
+    <radialGradient id="${p}c" cx=".38" cy=".35" r=".8"><stop offset="0" stop-color="#E9897A"/><stop offset=".6" stop-color="#B9484A"/><stop offset="1" stop-color="#7C2433"/></radialGradient>
+    <radialGradient id="${p}m" cx=".5" cy=".5" r=".6"><stop offset="0" stop-color="#8E2C3A"/><stop offset="1" stop-color="#5E1726"/></radialGradient>
+    <linearGradient id="${p}u" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E8D9B0"/><stop offset=".5" stop-color="#FFF5D8"/><stop offset="1" stop-color="#C9B88A"/></linearGradient>
+  </defs>
+  <path d="M10,-150 C90,-160 128,-90 120,-10 C112,80 70,150 0,150 C-60,150 -100,100 -104,40 C-106,10 -72,-6 -60,-22 C-48,-38 -84,-56 -86,-86 C-90,-130 -50,-146 10,-150 Z" fill="url(#${p}c)" stroke="#5E1726" stroke-width="3"/>
+  ${[[-10, -90, -20], [30, -60, 10], [50, -6, 30], [36, 56, 50], [0, 100, 80]].map(([x, y, r]) => `<path d="M${x - 22},${y - 14} C${x},${y - 30} ${x + 26},${y - 10} ${x + 18},${y + 14} C${x + 6},${y + 26} ${x - 18},${y + 20} ${x - 22},${y - 14} Z" transform="rotate(${r} ${x} ${y})" fill="url(#${p}m)" opacity=".85"/>`).join('')}
+  <path d="M-62,-20 C-40,-10 -30,10 -40,30 C-50,40 -66,34 -80,40" fill="none" stroke="#F3D9A8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M-80,40 C-96,90 -96,140 -86,200" fill="none" stroke="url(#${p}u)" stroke-width="16" stroke-linecap="round"/>
+  <path d="M-70,-30 C-110,-34 -140,-26 -170,-30" fill="none" stroke="#D5202F" stroke-width="12" stroke-linecap="round"/>
+  <path d="M-70,-6 C-110,-4 -140,2 -170,0" fill="none" stroke="#3E5AA8" stroke-width="12" stroke-linecap="round"/>
+  <path d="M40,-120 C80,-110 100,-70 100,-30" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="8" stroke-linecap="round"/>
+`;
+
+// Xương (đoạn xương dài)
+export const bone = (p = 'o') => `
+  <defs><linearGradient id="${p}g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF8E6"/><stop offset="1" stop-color="#D6C39A"/></linearGradient></defs>
+  <path d="M-70,-14 L70,-14 C78,-40 112,-40 112,-16 C126,-16 126,16 112,16 C112,40 78,40 70,14 L-70,14 C-78,40 -112,40 -112,16 C-126,16 -126,-16 -112,-16 C-112,-40 -78,-40 -70,-14 Z" fill="url(#${p}g)" stroke="#A98F63" stroke-width="3"/>
+`;
