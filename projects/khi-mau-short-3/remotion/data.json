@@ -1,0 +1,83 @@
+{
+ "fps": 30,
+ "total": 1012,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.416,
+     "text": "PaO₂ 90: bình thường hay nguy kịch?"
+    }
+   ]
+  },
+  {
+   "from": 132,
+   "dur": 133,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.742,
+     "text": "Câu trả lời: còn tuỳ FiO₂, oxy bệnh nhân đang thở"
+    }
+   ]
+  },
+  {
+   "from": 265,
+   "dur": 137,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.845,
+     "text": "P/F = PaO₂ ÷ FiO₂"
+    }
+   ]
+  },
+  {
+   "from": 402,
+   "dur": 186,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 5.502,
+     "text": "Thở khí trời (0,21): P/F ≈ 430 · bình thường"
+    }
+   ]
+  },
+  {
+   "from": 588,
+   "dur": 154,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.432,
+     "text": "Thở oxy 100% (1,0): P/F = 90 · rất nặng"
+    }
+   ]
+  },
+  {
+   "from": 742,
+   "dur": 138,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.911,
+     "text": "Nếu là ARDS: P/F ≤ 100 là mức nặng"
+    }
+   ]
+  },
+  {
+   "from": 880,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.596,
+     "text": "Lưu lại để ôn · xem Bài 3 đầy đủ trên kênh!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,271 @@
+{
+ "fps": 30,
+ "total": 6616,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 364,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.455,
+     "text": "Hai bệnh nhân, cùng PaO₂ 55 mmHg"
+    },
+    {
+     "start": 4.305,
+     "dur": 3.181,
+     "text": "Một người phổi bị tổn thương, một người chỉ thở yếu"
+    },
+    {
+     "start": 7.837,
+     "dur": 2.764,
+     "text": "Làm sao phân biệt chỉ bằng một phiếu khí máu?"
+    }
+   ]
+  },
+  {
+   "from": 364,
+   "dur": 550,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.032,
+     "text": "PaO₂: áp lực oxy hoà tan trong máu động mạch"
+    },
+    {
+     "start": 3.882,
+     "dur": 3.638,
+     "text": "Oxy đi từ phế nang, qua màng mỏng, vào máu"
+    },
+    {
+     "start": 7.87,
+     "dur": 3.461,
+     "text": "Bình thường 80–100 mmHg khi thở khí trời"
+    },
+    {
+     "start": 11.68,
+     "dur": 5.189,
+     "text": "PaO₂ giảm dần theo tuổi"
+    }
+   ]
+  },
+  {
+   "from": 914,
+   "dur": 718,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 5.662,
+     "text": "Phần lớn oxy được chở bởi hemoglobin: SaO₂"
+    },
+    {
+     "start": 6.512,
+     "dur": 3.913,
+     "text": "PaO₂ và SaO₂ liên hệ theo đường cong hình chữ S"
+    },
+    {
+     "start": 10.775,
+     "dur": 4.801,
+     "text": "PaO₂ 60 ≈ SaO₂ 90%"
+    },
+    {
+     "start": 15.926,
+     "dur": 6.508,
+     "text": "Dưới mốc này, SaO₂ tụt rất nhanh: \"mép vực\""
+    }
+   ]
+  },
+  {
+   "from": 1632,
+   "dur": 271,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.391,
+     "text": "PaO₂ < 80 mmHg: giảm oxy máu"
+    },
+    {
+     "start": 4.241,
+     "dur": 3.295,
+     "text": "PaO₂ < 60 mmHg: giảm oxy máu đáng kể, nghĩ suy hô hấp"
+    }
+   ]
+  },
+  {
+   "from": 1903,
+   "dur": 808,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.731,
+     "text": "PaO₂ phải đọc cùng FiO₂: oxy bệnh nhân đang thở"
+    },
+    {
+     "start": 5.581,
+     "dur": 3.597,
+     "text": "Khí trời: FiO₂ = 21% (0,21)"
+    },
+    {
+     "start": 9.528,
+     "dur": 3.233,
+     "text": "Tỉ số P/F = PaO₂ ÷ FiO₂"
+    },
+    {
+     "start": 13.111,
+     "dur": 5.375,
+     "text": "PaO₂ 90, khí trời: P/F ≈ 430 · bình thường"
+    },
+    {
+     "start": 18.835,
+     "dur": 6.59,
+     "text": "PaO₂ 90, oxy 100%: P/F = 90 · rất nặng"
+    }
+   ]
+  },
+  {
+   "from": 2711,
+   "dur": 685,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.65,
+     "text": "P/F bình thường khoảng 400–500"
+    },
+    {
+     "start": 3.5,
+     "dur": 7.32,
+     "text": "ARDS: nhẹ 200–300 · vừa 100–200 · nặng ≤ 100"
+    },
+    {
+     "start": 11.17,
+     "dur": 4.025,
+     "text": "Khi thở máy: tính với PEEP ≥ 5 cmH₂O"
+    },
+    {
+     "start": 15.545,
+     "dur": 5.789,
+     "text": "Định nghĩa toàn cầu 2024: dùng được SpO₂/FiO₂ khi chưa có khí máu"
+    }
+   ]
+  },
+  {
+   "from": 3396,
+   "dur": 680,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 6.693,
+     "text": "PAO₂: lượng oxy trong phế nang"
+    },
+    {
+     "start": 7.543,
+     "dur": 6.126,
+     "text": "Thở khí trời: PAO₂ ≈ 150 − 1,25 × PaCO₂"
+    },
+    {
+     "start": 14.018,
+     "dur": 3.187,
+     "text": "CO₂ trong phế nang càng nhiều, chỗ cho oxy càng ít"
+    },
+    {
+     "start": 17.556,
+     "dur": 3.62,
+     "text": "PaCO₂ 40 → PAO₂ ≈ 100"
+    }
+   ]
+  },
+  {
+   "from": 4076,
+   "dur": 569,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.524,
+     "text": "Chênh lệch A–a = PAO₂ − PaO₂"
+    },
+    {
+     "start": 4.374,
+     "dur": 2.729,
+     "text": "Người trẻ: A–a < 10–15 mmHg"
+    },
+    {
+     "start": 7.453,
+     "dur": 3.737,
+     "text": "Ước tính theo tuổi: tuổi ÷ 4 + 4"
+    },
+    {
+     "start": 11.54,
+     "dur": 5.913,
+     "text": "A–a tăng: oxy không qua được phổi vào máu"
+    }
+   ]
+  },
+  {
+   "from": 4645,
+   "dur": 738,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 1.852,
+     "text": "5 cơ chế gây giảm oxy máu"
+    },
+    {
+     "start": 2.702,
+     "dur": 5.948,
+     "text": "A–a bình thường: thiếu oxy khí thở (độ cao) · giảm thông khí"
+    },
+    {
+     "start": 9.0,
+     "dur": 5.385,
+     "text": "A–a tăng: bất xứng V/Q · shunt · rối loạn khuếch tán"
+    },
+    {
+     "start": 14.736,
+     "dur": 4.072,
+     "text": "Bất xứng V/Q: thường gặp nhất, đáp ứng tốt với oxy"
+    },
+    {
+     "start": 19.158,
+     "dur": 3.954,
+     "text": "Shunt: máu đi qua vùng phổi không có khí, thở oxy ít cải thiện"
+    }
+   ]
+  },
+  {
+   "from": 5383,
+   "dur": 1233,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 10.141,
+     "text": "BN 1: PaO₂ 55, PaCO₂ 70 → PAO₂ ≈ 62 → A–a ≈ 8"
+    },
+    {
+     "start": 10.991,
+     "dur": 3.821,
+     "text": "A–a bình thường → giảm thông khí (vd: quá liều thuốc an thần)"
+    },
+    {
+     "start": 15.162,
+     "dur": 8.719,
+     "text": "BN 2: PaO₂ 55, PaCO₂ 30 → PAO₂ ≈ 112 → A–a ≈ 58"
+    },
+    {
+     "start": 24.231,
+     "dur": 4.017,
+     "text": "A–a tăng → bệnh tại phổi (vd: viêm phổi, thuyên tắc phổi)"
+    },
+    {
+     "start": 28.599,
+     "dur": 7.342,
+     "text": "Ôn tập: PaO₂ bao nhiêu? · P/F bao nhiêu? · A–a bình thường hay tăng?"
+    },
+    {
+     "start": 36.291,
+     "dur": 3.3,
+     "text": "Bài 4: Quy trình đọc khí máu 6 bước"
+    }
+   ]
+  }
+ ]
+}
