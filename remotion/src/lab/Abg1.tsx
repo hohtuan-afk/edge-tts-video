@@ -427,7 +427,9 @@ const ScKhi: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
   return (
     <>
       <Top idx={2} title="Khi nào cần làm khí máu?" />
-      <Tx x={100} y={168} w={1720} al="center" size={34} c={K.dim} a={Math.min(ap(t, S[0] + 0.2), 1 - ap(t, S[1], 0.3))}>Bốn tình huống thường gặp</Tx>
+      {[[100, 170], [990, 170], [100, 448], [990, 448]].map(([x, y], i) => (
+        <div key={i} style={{position: 'absolute', left: x, top: y, width: 830, height: 250, boxSizing: 'border-box', borderRadius: 22, border: `3px dashed ${K.line}`, opacity: ap(t, S[0] + 0.2 + i * 0.15, 0.3) * (1 - ap(t, S[i + 1], 0.2)), display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT, fontSize: 90, fontWeight: 800, color: 'rgba(167,186,196,.35)'}}>?</div>
+      ))}
       <Need x={100} y={170} s0={S[1]} c={K.co2} n="MỘT" title="Suy hô hấp" sub="Cần biết oxy hoá và thông khí" glow={on(1)}
         art={<Ico w={180} h={174} vb="-140 -150 280 270" html={lungA} style={{transform: `scale(${1 + Math.sin(f / 18) * 0.025})`}} />} />
       <Need x={990} y={170} s0={S[2]} c={K.hco3} n="HAI" title="Toan kiềm nặng" sub="Sốc · nhiễm toan ceton · ngộ độc" glow={on(2)}
@@ -493,7 +495,7 @@ const ScGui: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
           <div style={{fontSize: 32, textAlign: 'center', lineHeight: 1.25, padding: '0 30px'}}>Ống nhựa · nhiệt độ phòng · phân tích càng sớm càng tốt</div>
         </div>
       </Panel>
-      <Memo x={1140} y={742} w={680} s0={S[2] + D[2] * 0.7} size={38}>HẾT BỌT · ĐẬY · TRỘN · ĐO NGAY</Memo>
+      <Memo x={1140} y={742} w={680} s0={S[2] + D[2] * 0.7} size={33}>HẾT BỌT · ĐẬY · TRỘN · ĐO NGAY</Memo>
     </>
   );
 };
@@ -542,7 +544,7 @@ const ScLan: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
   const beats = Math.floor(fillA * 6);
   const fill = 0.12 + beats * 0.1 + (fillA * 6 - beats > 0.7 ? 0.1 * ((fillA * 6 - beats - 0.7) / 0.3) : 0);
   const syr = A.syringe('s8', {fill: Math.min(0.72, fill)});
-  const showSyr = Math.min(ap(t, S[1] - 0.2, 0.4), 1 - ap(t, S[2] - 0.2, 0.4));
+  const showSyr = Math.min(ap(t, S[0] + 0.3, 0.4), 1 - ap(t, S[2] - 0.2, 0.4));
   const pulse = Math.pow(Math.max(0, Math.sin(f / 4.8)), 8);
   const mon = usePop(S[2]);
   const slipP = usePop(S[2] + 0.5);
@@ -601,7 +603,7 @@ const Recap: React.FC<{x: number; y: number; s0: number; c: string; n: string; h
   <Panel x={x} y={y} w={845} h={190} c={c} s0={s0}>
     <div style={{position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', gap: 26, padding: '0 30px', fontFamily: FONT, color: K.txt}}>
       <Mark c={c} ch={n} s0={s0 + 0.15} size={76} />
-      <div><div style={{fontSize: 26, fontWeight: 800, color: c}}>{head}</div><div style={{fontSize: 38, fontWeight: 700, lineHeight: 1.2}}>{chem(txt)}</div></div>
+      <div><div style={{fontSize: 26, fontWeight: 800, color: c}}>{head}</div><div style={{fontSize: 34, fontWeight: 700, lineHeight: 1.2, whiteSpace: 'nowrap'}}>{chem(txt)}</div></div>
     </div>
   </Panel>
 );
