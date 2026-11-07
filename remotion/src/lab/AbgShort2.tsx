@@ -98,7 +98,7 @@ const Co2Up: React.FC<{x: number; y: number; n: number; speed: number; a: number
       {Array.from({length: n}, (_, i) => {
         const u = (f / speed + i / n) % 1;
         return (
-          <g key={i} transform={`translate(${x + Math.sin(i * 2.3 + u * 3) * spread * u},${y - u * 260})`} opacity={a * (1 - u)}>
+          <g key={i} transform={`translate(${x + Math.sin(i * 2.3 + u * 3) * spread * u},${y - u * 170})`} opacity={a * (1 - u)}>
             <circle r={30} fill={K.co2} /><text y={10} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={24} fill="#fff">CO₂</text>
           </g>
         );
@@ -124,8 +124,8 @@ const S0: React.FC = () => {
   return (
     <>
       <Title sub="có thể làm máu bị KIỀM?">THỞ QUÁ NHANH</Title>
-      <LungImg x={260} y={450} w={560} s={br} o={ap(t, 0.2)} />
-      <Co2Up x={540} y={480} n={8} speed={22} a={ap(t, 0.5)} />
+      <LungImg x={290} y={500} w={500} s={br} o={ap(t, 0.2)} />
+      <Co2Up x={540} y={530} n={8} speed={22} a={ap(t, 0.5)} />
       <Badge s0={1.4} c="#7DA8F0">pH ↑ ?</Badge>
     </>
   );
@@ -139,8 +139,8 @@ const S1: React.FC = () => {
   return (
     <>
       <Title sub="acid bay hơi">CO₂ LÀ MỘT ACID</Title>
-      <LungImg x={270} y={450} w={540} s={br} o={ap(t, 0.2)} />
-      <Co2Up x={540} y={480} n={4} speed={45} a={ap(t, 0.6)} />
+      <LungImg x={290} y={500} w={500} s={br} o={ap(t, 0.2)} />
+      <Co2Up x={540} y={530} n={4} speed={45} a={ap(t, 0.6)} />
       <Badge s0={1.6} c={K.co2}>Thải ra qua phổi</Badge>
     </>
   );
@@ -155,8 +155,8 @@ const S2: React.FC = () => {
   return (
     <>
       <Title sub="phổi thải nhiều CO₂">THỞ NHANH, SÂU</Title>
-      <LungImg x={60} y={520} w={520} s={br} o={ap(t, 0.2)} />
-      <Co2Up x={315} y={545} n={10} speed={20} a={ap(t, 0.4)} spread={80} />
+      <LungImg x={70} y={560} w={500} s={br} o={ap(t, 0.2)} />
+      <Co2Up x={320} y={590} n={10} speed={20} a={ap(t, 0.4)} spread={80} />
       <div style={{position: 'absolute', left: 620, top: 620, width: 400, height: 380, borderRadius: 34, background: 'rgba(56,167,221,.14)', border: `4px solid ${K.co2}`, fontFamily: FONT, textAlign: 'center', opacity: ap(t, 0.8)}}>
         <div style={{fontSize: 52, fontWeight: 800, color: K.co2, marginTop: 40}}>PaCO<sub style={{fontSize: '.6em'}}>2</sub></div>
         <div style={{fontSize: 150, fontWeight: 900, color: K.txt, lineHeight: 1.1}}>{v}</div>
@@ -224,7 +224,7 @@ const Chip: React.FC<{w: string; c: string; s0: number; n: number}> = ({w, c, s0
   return (
     <div style={{height: 170, borderRadius: 30, background: `${c}22`, border: `4px solid ${c}`, display: 'flex', alignItems: 'center', gap: 34, padding: '0 40px', fontFamily: FONT, transform: `scale(${p})`, opacity: Math.min(1, p * 1.5)}}>
       <div style={{width: 104, height: 104, borderRadius: '50%', background: c, color: '#0D1B24', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 62, fontWeight: 800, flex: 'none'}}>{n}</div>
-      <div style={{fontSize: 74, fontWeight: 800, color: K.txt}}>{w}</div>
+      <div style={{fontSize: 66, fontWeight: 800, color: K.txt, whiteSpace: 'nowrap'}}>{w}</div>
     </div>
   );
 };
