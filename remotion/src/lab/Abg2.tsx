@@ -221,8 +221,8 @@ const B3: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
       <Svg>
         <Curve d="M820,420 C700,380 560,360 470,380" c={K.co2} w={6} p={ap(t, S[1], 0.7)} />
         <Curve d="M1100,420 C1220,380 1360,360 1450,380" c={K.hco3} w={6} p={ap(t, S[2], 0.7)} />
-        <g opacity={ap(t, S[1] + 0.4)}><Lung x={330} y={405} w={330} /></g>
-        <g opacity={ap(t, S[3])}><Kid x={1580} y={455} h={320} /></g>
+        <g opacity={ap(t, S[0] + 0.3)}><Lung x={330} y={405} w={330} /></g>
+        <g opacity={ap(t, S[0] + 0.3)}><Kid x={1580} y={455} h={320} /></g>
         {Array.from({length: 6}, (_, i) => {
           const u = ((f / 50 + i / 6) % 1);
           return <circle key={i} cx={800 - u * 320} cy={415 - Math.sin(u * Math.PI) * 40} r={11} fill={K.co2} opacity={ap(t, S[1] + 0.5) * (1 - u)} />;
