@@ -179,14 +179,14 @@ const B2: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
   return (
     <>
       <Top idx={1} title="pH và H⁺" />
-      <Tx x={160} y={160} w={1600} al="center" size={44} b={800} a={ap(t, S[0])}>H⁺ càng nhiều → pH càng thấp</Tx>
+      <Tx x={160} y={150} w={1600} al="center" size={44} b={800} a={ap(t, S[0])}>H⁺ càng nhiều → pH càng thấp</Tx>
       <div style={{position: 'absolute', left: X0, top: 300, width: W, height: 70, borderRadius: 35, background: 'linear-gradient(90deg,#C8323B 0%,#E5484D 30%,#3FB27F 45%,#3FB27F 55%,#3A7BE0 70%,#2B4FB0 100%)', opacity: ap(t, S[0] + 0.3)}} />
       <div style={{position: 'absolute', left: px(7.35), top: 290, width: px(7.45) - px(7.35), height: 90, borderRadius: 14, border: `5px solid ${K.txt}`, opacity: zone, boxShadow: '0 0 30px rgba(255,255,255,.5)'}} />
       {([[6.9, '6,9'], [7.1, '7,10'], [7.35, '7,35'], [7.4, '7,40'], [7.45, '7,45'], [7.7, '7,7'], [7.9, '7,9']] as [number, string][]).map(([v, l]) => (
         <Tx key={l} x={px(v) - 60} y={390} w={120} al="center" size={v === 7.4 ? 34 : 26} c={v === 7.4 ? K.txt : K.dim} a={ap(t, S[0] + 0.5)}>{l}</Tx>
       ))}
-      <div style={{position: 'absolute', left: px(mk) - 4, top: 240, width: 8, height: 190, background: K.amber, borderRadius: 4, opacity: ap(t, S[1])}} />
-      <div style={{position: 'absolute', left: px(mk) - 150, top: 170, width: 300, textAlign: 'center', fontFamily: FONT, fontSize: 38, fontWeight: 800, color: K.amber, opacity: ap(t, S[1])}}>H⁺ ≈ {mk > 7.25 ? 40 : 80} nmol/L</div>
+      <div style={{position: 'absolute', left: px(mk) - 4, top: 272, width: 8, height: 158, background: K.amber, borderRadius: 4, opacity: ap(t, S[1])}} />
+      <div style={{position: 'absolute', left: px(mk) - 150, top: 222, width: 300, textAlign: 'center', fontFamily: FONT, fontSize: 38, fontWeight: 800, color: K.amber, opacity: ap(t, S[1])}}>H⁺ ≈ {mk > 7.25 ? 40 : 80} nmol/L</div>
       <Tx x={X0} y={460} w={520} size={40} c={K.o2} b={800} a={lab}>◀ TOAN MÁU  dưới 7,35</Tx>
       <Tx x={X0 + W - 520} y={460} w={520} al="right" size={40} c="#6E9BEA" b={800} a={lab}>trên 7,45  KIỀM MÁU ▶</Tx>
       <Tx x={px(7.4) - 200} y={460} w={400} al="center" size={36} c={K.green} b={800} a={zone}>bình thường</Tx>
@@ -228,7 +228,7 @@ const B3: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
         <Tx x={26} y={62} size={40} b={800}>~1 mEq/kg/ngày → THẬN</Tx>
       </Panel>
       <Tx x={1250} y={762} w={600} al="center" size={28} c={K.dim} a={ap(t, S[2] + D[2] * 0.6)}>≈ 70 mEq/ngày ở người 70 kg</Tx>
-      <Memo x={610} y={800} w={700} s0={S[3] + D[3] * 0.4} size={38}>CO₂ → PHỔI · Acid còn lại → THẬN</Memo>
+      <Memo x={500} y={800} w={920} s0={S[3] + D[3] * 0.4} size={38}>CO₂ → PHỔI · Acid còn lại → THẬN</Memo>
     </>
   );
 };
@@ -296,9 +296,9 @@ const B5: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
           {Array.from({length: 5}, (_, i) => {
             const u = Math.min(1, Math.max(0, back * 1.4 - i * 0.1));
             return (
-              <g key={i} transform={`translate(${1500 - u * 650},${470 + i * 26})`} opacity={1 - u * 0.2}>
-                <circle r={18} fill={u > 0.95 ? K.co2 : K.o2} />
-                <text y={7} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={18} fill="#fff">{u > 0.95 ? 'CO₂' : 'H⁺'}</text>
+              <g key={i} transform={`translate(${1500 - u * (600 - i * 40)},${480 + (i % 3) * 56})`} opacity={1 - u * 0.2}>
+                <circle r={28} fill={u > 0.95 ? K.co2 : K.o2} />
+                <text y={8} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={22} fill="#fff">{u > 0.95 ? 'CO₂' : 'H⁺'}</text>
               </g>
             );
           })}
@@ -317,7 +317,7 @@ const B5: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
 // ---------- 6 Tỉ số 20:1 ----------
 const B6: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
   const t = useSec();
-  const tilt = interpolate(t, [S[3], S[3] + 0.6, S[4], S[4] + 0.6], [0, -9, -9, 9], clamp);
+  const tilt = interpolate(t, [S[3], S[3] + 0.6, S[4], S[4] + 0.6], [0, 9, 9, -9], clamp);
   const sc = usePop(S[1]);
   const res = t < S[3] ? 'pH 7,40' : t < S[4] ? 'TOAN MÁU' : 'KIỀM MÁU';
   const rc = t < S[3] ? K.green : t < S[4] ? K.o2 : '#6E9BEA';
@@ -325,7 +325,7 @@ const B6: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
     <>
       <Top idx={5} title="Tỉ số 20 : 1" />
       <Panel x={360} y={160} w={1200} h={110} c={K.line} s0={S[0]}>
-        <div style={{position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT, fontSize: 48, fontWeight: 800, color: K.txt}}>pH = 6,1 + log (HCO<sub style={{fontSize: '.6em'}}>3</sub><sup style={{fontSize: '.6em'}}>−</sup> / 0,03 × PaCO<sub style={{fontSize: '.6em'}}>2</sub>)</div>
+        <div style={{position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT, fontSize: 48, fontWeight: 800, color: K.txt}}><span>{chem('pH = 6,1 + log (HCO₃⁻ / 0,03 × PaCO₂)')}</span></div>
       </Panel>
       <div style={{position: 'absolute', left: 460, top: 300, width: 1000, height: 420, opacity: Math.min(1, sc * 1.4)}}>
         <svg width={1000} height={420} viewBox="0 0 1000 420" style={{overflow: 'visible'}}>
@@ -347,7 +347,7 @@ const B6: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
       <div style={{position: 'absolute', left: 760, top: 330, width: 400, textAlign: 'center', fontFamily: FONT, opacity: ap(t, S[1] + D[1] * 0.7)}}>
         <div style={{fontSize: 80, fontWeight: 900, color: K.amber}}>20 : 1</div>
       </div>
-      <div style={{position: 'absolute', left: 710, top: 730, width: 500, height: 90, borderRadius: 45, background: rc, color: '#0D1B24', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT, fontSize: 50, fontWeight: 900, opacity: ap(t, S[2])}}>{res}</div>
+      <div style={{position: 'absolute', left: 1480, top: 440, width: 380, height: 90, borderRadius: 45, background: rc, color: '#0D1B24', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT, fontSize: 50, fontWeight: 900, opacity: ap(t, S[2])}}>{res}</div>
       <Tx x={100} y={740} w={560} size={32} c={K.o2} b={700} a={ap(t, S[3] + 0.4)}>HCO₃⁻ ↓ hoặc CO₂ ↑ → tỉ số ↓</Tx>
       <Tx x={1260} y={740} w={560} al="right" size={32} c="#6E9BEA" b={700} a={ap(t, S[4] + 0.4)}>HCO₃⁻ ↑ hoặc CO₂ ↓ → tỉ số ↑</Tx>
       <Memo x={560} y={830} w={800} s0={S[4] + D[4] * 0.75} size={36}>pH theo TỈ SỐ, không theo một con số</Memo>
@@ -380,9 +380,9 @@ const B7: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
           );
         })}
       </Svg>
-      <Panel x={120} y={170} w={290} h={150} c={K.dim} s0={S[0] + 0.3}>
-        <Tx x={0} y={24} w={290} al="center" size={28} c={K.dim} b={700}>Trung tâm hô hấp</Tx>
-        <Tx x={0} y={70} w={290} al="center" size={36} b={800}>cảm nhận H⁺, CO₂</Tx>
+      <Panel x={100} y={170} w={340} h={150} c={K.dim} s0={S[0] + 0.3}>
+        <Tx x={0} y={24} w={340} al="center" size={26} c={K.dim} b={700}>Trung tâm hô hấp</Tx>
+        <Tx x={0} y={70} w={340} al="center" size={32} b={800}>cảm nhận H⁺, CO₂</Tx>
       </Panel>
       <Panel x={1060} y={180} w={760} h={190} c={K.o2} s0={S[1]} glow={fast ? 1 : 0}>
         <Tx x={30} y={20} size={30} c={K.o2} b={800}>TOAN MÁU</Tx>
@@ -424,17 +424,17 @@ const B8: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
         <Tx x={130} y={88} w={940} size={32} a={ap(t, S[3])}>Dạng amoni (NH₄⁺): ½ – ⅔</Tx>
         <Tx x={130} y={136} w={940} size={32} a={ap(t, S[3] + D[3] * 0.5)}>Phần còn lại: acid chuẩn độ (phosphate)</Tx>
       </Panel>
-      <Panel x={720} y={580} w={520} h={190} c={K.amber} s0={S[4]}>
+      <Panel x={720} y={580} w={520} h={205} c={K.amber} s0={S[4]}>
         <Tx x={0} y={18} w={520} al="center" size={30} c={K.amber} b={800}>BÙ TỐI ĐA</Tx>
         <div style={{position: 'absolute', left: 40, right: 40, top: 76, display: 'flex', gap: 10}}>
           {[1, 2, 3, 4, 5].map((d) => <div key={d} style={{flex: 1, height: 80, borderRadius: 12, background: d <= day ? K.amber : 'rgba(255,255,255,.08)', color: d <= day ? K.ink : K.dim, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT, fontSize: 34, fontWeight: 800}}>{d}</div>)}
         </div>
-        <Tx x={0} y={160} w={520} al="center" size={24} c={K.dim}>ngày</Tx>
+        <Tx x={0} y={164} w={520} al="center" size={24} c={K.dim}>ngày</Tx>
       </Panel>
       <Panel x={1270} y={580} w={550} h={190} c={K.line} s0={S[5]}>
         <Tx x={26} y={30} w={500} size={34} b={800} lh={1.25}>Hô hấp cấp ≠ mạn ở mức HCO₃⁻</Tx>
       </Panel>
-      <Memo x={360} y={800} w={1200} s0={S[5] + D[5] * 0.5} size={40}>PHỔI lo CO₂, nhanh · THẬN lo HCO₃⁻, chậm</Memo>
+      <Memo x={360} y={808} w={1200} s0={S[5] + D[5] * 0.5} size={40}>PHỔI lo CO₂, nhanh · THẬN lo HCO₃⁻, chậm</Memo>
     </>
   );
 };
