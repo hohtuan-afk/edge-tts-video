@@ -1,35 +1,159 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+12%",
+ "rate": "+8%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Pê a ô hai chín mươi. Bình thường, hay nguy kịch?"
+   "text": "Một phiếu khí máu đầy những con số. Nên đọc từ đâu?"
+  },
+  {
+   "id": "00-1",
+   "text": "Hãy cùng giải một ca bệnh: người bệnh đái tháo đường, nôn ói, thở nhanh và sâu."
+  },
+  {
+   "id": "00-2",
+   "text": "Pê hát bảy phẩy hai tám, pê a xê ô hai hai mươi sáu, bi các bô nát mười hai, na tri một trăm ba mươi lăm, clo chín mươi tám."
+  },
+  {
+   "id": "00-3",
+   "text": "Ta sẽ đọc theo sáu bước, mỗi bước trả lời một câu hỏi."
   },
   {
    "id": "01-0",
-   "text": "Câu trả lời là còn tuỳ ép i ô hai, tức nồng độ ô xy bệnh nhân đang thở."
+   "text": "Bước một: phiếu này có đáng tin không?"
+  },
+  {
+   "id": "01-1",
+   "text": "pê hát, pê a xê ô hai và bi các bô nát phải khớp nhau theo công thức: hát cộng bằng hai mươi tư nhân pê a xê ô hai, chia bi các bô nát."
+  },
+  {
+   "id": "01-2",
+   "text": "Mẹo nhanh, khi pê hát từ bảy phẩy hai đến bảy phẩy năm: hát cộng xấp xỉ tám mươi, trừ hai số lẻ của pê hát."
+  },
+  {
+   "id": "01-3",
+   "text": "Ở ca này, hai mươi tư nhân hai mươi sáu chia mười hai bằng năm mươi hai. Pê hát bảy phẩy hai tám cho tám mươi trừ hai mươi tám, cũng là năm mươi hai. Khớp, phiếu đáng tin."
   },
   {
    "id": "02-0",
-   "text": "Hãy tính tỉ số pê trên ép, bằng pê a ô hai chia cho ép i ô hai."
+   "text": "Bước hai: toan máu hay kiềm máu?"
+  },
+  {
+   "id": "02-1",
+   "text": "Pê hát dưới bảy phẩy ba lăm là toan máu, trên bảy phẩy bốn lăm là kiềm máu."
+  },
+  {
+   "id": "02-2",
+   "text": "Pê hát bảy phẩy hai tám, đây là toan máu."
   },
   {
    "id": "03-0",
-   "text": "Thở khí trời, ép i ô hai không phẩy hai mốt, pê trên ép khoảng bốn trăm ba mươi. Bình thường."
+   "text": "Bước ba: nguyên nhân do hô hấp hay chuyển hoá?"
+  },
+  {
+   "id": "03-1",
+   "text": "Hãy tìm chỉ số giải thích được hướng thay đổi của pê hát."
+  },
+  {
+   "id": "03-2",
+   "text": "Toan máu do pê a xê ô hai tăng là toan hô hấp, do bi các bô nát giảm là toan chuyển hoá."
+  },
+  {
+   "id": "03-3",
+   "text": "Ở ca này, bi các bô nát giảm còn mười hai. Đây là toan chuyển hoá."
   },
   {
    "id": "04-0",
-   "text": "Thở ô xy một trăm phần trăm, pê trên ép chỉ còn chín mươi. Rất nặng."
+   "text": "Bước bốn: cơ thể bù trừ có đủ không?"
+  },
+  {
+   "id": "04-1",
+   "text": "Với toan chuyển hoá, dùng công thức Uyn-tơ."
+  },
+  {
+   "id": "04-2",
+   "text": "Pê a xê ô hai dự kiến bằng một phẩy năm nhân bi các bô nát, cộng tám, cộng trừ hai."
+  },
+  {
+   "id": "04-3",
+   "text": "Một phẩy năm nhân mười hai, cộng tám, bằng hai mươi sáu. Pê a xê ô hai thật cũng là hai mươi sáu. Bù đủ."
+  },
+  {
+   "id": "04-4",
+   "text": "Nếu pê a xê ô hai lệch khỏi khoảng dự kiến, bệnh nhân có thêm một rối loạn hô hấp đi kèm."
   },
   {
    "id": "05-0",
-   "text": "Nếu là suy hô hấp cấp tiến triển, pê trên ép từ một trăm trở xuống là mức nặng."
+   "text": "Các rối loạn khác cũng có công thức bù riêng."
+  },
+  {
+   "id": "05-1",
+   "text": "Kiềm chuyển hoá: bi các bô nát tăng một, pê a xê ô hai tăng khoảng không phẩy bảy."
+  },
+  {
+   "id": "05-2",
+   "text": "Toan hô hấp: pê a xê ô hai tăng mười, bi các bô nát tăng một nếu cấp, ba phẩy năm đến bốn nếu mạn."
+  },
+  {
+   "id": "05-3",
+   "text": "Kiềm hô hấp: pê a xê ô hai giảm mười, bi các bô nát giảm hai nếu cấp, bốn đến năm nếu mạn."
   },
   {
    "id": "06-0",
-   "text": "Lưu lại để ôn, và xem bài ba đầy đủ trên kênh nhé!"
+   "text": "Bước năm: tính khoảng trống an i on."
+  },
+  {
+   "id": "06-1",
+   "text": "Khoảng trống an i on bằng na tri trừ tổng clo và bi các bô nát. Bình thường khoảng mười hai, tuỳ phòng xét nghiệm."
+  },
+  {
+   "id": "06-2",
+   "text": "Ở ca này: một trăm ba mươi lăm trừ một trăm mười, bằng hai mươi lăm. Khoảng trống an i on tăng."
+  },
+  {
+   "id": "06-3",
+   "text": "Lưu ý: an bu min thấp làm khoảng trống an i on thấp giả. Mỗi gam trên đề xi lít an bu min giảm, cộng thêm khoảng hai phẩy năm."
+  },
+  {
+   "id": "07-0",
+   "text": "Bước sáu: tỉ số đen ta đen ta, khi khoảng trống an i on tăng."
+  },
+  {
+   "id": "07-1",
+   "text": "Lấy phần khoảng trống an i on tăng thêm, chia cho phần bi các bô nát giảm đi."
+  },
+  {
+   "id": "07-2",
+   "text": "Dưới một: có thêm toan chuyển hoá khoảng trống an i on bình thường. Từ một đến hai: đơn thuần. Trên hai: có thêm kiềm chuyển hoá."
+  },
+  {
+   "id": "07-3",
+   "text": "Ở ca này, mười ba chia mười hai, khoảng một phẩy một. Toan tăng khoảng trống an i on đơn thuần."
+  },
+  {
+   "id": "08-0",
+   "text": "Kết luận: toan chuyển hoá tăng khoảng trống an i on, bù hô hấp đủ."
+  },
+  {
+   "id": "08-1",
+   "text": "Bệnh cảnh này phù hợp với nhiễm toan xê tôn do đái tháo đường."
+  },
+  {
+   "id": "08-2",
+   "text": "Và đừng quên đánh giá ô xy hoá như ở bài ba."
+  },
+  {
+   "id": "09-0",
+   "text": "Ôn lại sáu câu hỏi: tin được không, toan hay kiềm, hô hấp hay chuyển hoá,"
+  },
+  {
+   "id": "09-1",
+   "text": "bù có đủ không, khoảng trống an i on bao nhiêu, và tỉ số đen ta đen ta."
+  },
+  {
+   "id": "09-2",
+   "text": "Bài sau, ta đi sâu vào toan chuyển hoá tăng khoảng trống an i on."
   }
  ]
 }
