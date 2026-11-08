@@ -130,7 +130,7 @@ const Chip: React.FC<{w: string; c: string; s0: number; n: number}> = ({w, c, s0
 
 
 const Col: React.FC<{cl: number; hco3: number; a: number; hi?: boolean}> = ({cl, hco3, a, hi}) => {
-  const na = 138, ag = na - cl - hco3, k = 4.2, base = 1180;
+  const na = 138, ag = na - cl - hco3, k = 3.6, base = 1080;
   const blk = (y: number, h: number, bg: string, l: string, dash?: boolean) => (
     <div style={{position: 'absolute', left: 0, top: y, width: 300, height: Math.max(0, h - 5), borderRadius: 14, background: bg, border: dash ? `5px dashed ${K.txt}` : 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: h > 70 ? 44 : 30, fontWeight: 900, whiteSpace: 'nowrap', overflow: 'hidden'}}>{chem(l)}</div>
   );
@@ -198,7 +198,7 @@ const S4: React.FC = () => (<><Title c={K.green} sub="toan tăng Clo">AG GIỮ N
 const S5: React.FC = () => {
   const t = useSec();
   const u = interpolate(t, [0.8, 2.8], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-  return (<><Title c={K.o2} sub="sốc · nhiễm toan ceton">NGƯỢC LẠI: THÊM ACID</Title><Col cl={102} hco3={24 - 12 * u} a={1} hi={u > 0.5} /><Badge s0={2.8} c={K.o2}>AG TĂNG</Badge></>);
+  return (<><Title c={K.o2} sub="ngược lại: sốc · toan ceton">THÊM ACID</Title><Col cl={102} hco3={24 - 12 * u} a={1} hi={u > 0.5} /><Badge s0={2.8} c={K.o2}>AG TĂNG</Badge></>);
 };
 
 // 6 CTA
