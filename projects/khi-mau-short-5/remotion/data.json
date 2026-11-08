@@ -1,0 +1,83 @@
+{
+ "fps": 30,
+ "total": 983,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 158,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.576,
+     "text": "Tiêu chảy gây toan, mà AG lại bình thường?"
+    }
+   ]
+  },
+  {
+   "from": 158,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 1.736,
+     "text": "Dịch ruột chứa nhiều HCO₃⁻"
+    }
+   ]
+  },
+  {
+   "from": 290,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.579,
+     "text": "Tiêu chảy → mất HCO₃⁻ → toan máu"
+    }
+   ]
+  },
+  {
+   "from": 422,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.681,
+     "text": "Không có acid lạ · Cl⁻ tăng bù chỗ trống"
+    }
+   ]
+  },
+  {
+   "from": 554,
+   "dur": 141,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.962,
+     "text": "AG giữ nguyên → toan tăng Clo"
+    }
+   ]
+  },
+  {
+   "from": 695,
+   "dur": 156,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.487,
+     "text": "Ngược lại: sốc, toan ceton → thêm acid → AG tăng"
+    }
+   ]
+  },
+  {
+   "from": 851,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.669,
+     "text": "Lưu lại để ôn · xem Bài 5 đầy đủ trên kênh!"
+    }
+   ]
+  }
+ ]
+}
