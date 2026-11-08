@@ -200,7 +200,7 @@ const D1: React.FC<{S: number[]; D: number[]}> = ({S}) => {
           return (
             <div key={q} style={{height: 150, borderRadius: 20, background: 'rgba(245,184,61,.1)', border: `3px solid ${K.amber}`, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', opacity: p, transform: `scale(${0.8 + 0.2 * p})`}}>
               <div style={{fontSize: 26, fontWeight: 800, color: K.amber}}>BƯỚC {i + 1}</div>
-              <div style={{fontSize: 38, fontWeight: 800, color: K.txt}}>{q}</div>
+              <div style={{fontSize: q.length > 14 ? 30 : 38, fontWeight: 800, color: K.txt, whiteSpace: 'nowrap'}}>{q}</div>
             </div>
           );
         })}
@@ -296,13 +296,13 @@ const D5: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
       <Slip s0={0} hl={t > S[3] ? ['co2', 'hco3'] : ['hco3']} />
       <StepHead n="4" q="Bù trừ có đủ không?" s0={S[0]} />
       <Pill x={900} y={258} a={ap(t, S[1])} c={K.o2} size={32} dark={false}>Toan chuyển hoá → Winter</Pill>
-      <Gold x={680} y={340} a={ap(t, S[2])} size={50}>PaCO₂ dự kiến = 1,5 × HCO₃⁻ + 8 ± 2</Gold>
-      <Tx x={680} y={470} w={1140} size={44} b={800} a={ap(t, S[3])}>1,5 × 12 + 8 = 26 → khoảng 24–28</Tx>
+      <Gold x={680} y={325} a={ap(t, S[2])} size={50}>PaCO₂ dự kiến = 1,5 × HCO₃⁻ + 8 ± 2</Gold>
+      <Tx x={680} y={428} w={1140} size={42} b={800} a={ap(t, S[3])}>1,5 × 12 + 8 = 26 → khoảng 24–28</Tx>
       <div style={{position: 'absolute', left: X0, top: 600, width: W, height: 14, borderRadius: 7, background: 'rgba(255,255,255,.15)', opacity: ap(t, S[3])}} />
       <div style={{position: 'absolute', left: px(24), top: 580, width: px(28) - px(24), height: 54, borderRadius: 14, background: 'rgba(63,178,127,.45)', border: `3px solid ${K.green}`, opacity: ap(t, S[3] + 0.6)}} />
       {[18, 22, 26, 30, 34].map((v) => <Tx key={v} x={px(v) - 40} y={650} w={80} al="center" size={28} c={K.dim} a={ap(t, S[3])}>{String(v)}</Tx>)}
       <div style={{position: 'absolute', left: px(26) - 22, top: 585, width: 44, height: 44, borderRadius: '50%', background: K.txt, border: `6px solid ${K.green}`, opacity: ap(t, S[3] + D[3] * 0.5)}} />
-      <Pill x={px(26)} y={500} a={ap(t, S[3] + D[3] * 0.5)} c={K.green} size={30}>PaCO₂ thật 26</Pill>
+      <Pill x={px(26)} y={512} a={ap(t, S[3] + D[3] * 0.5)} c={K.green} size={30}>PaCO₂ thật 26</Pill>
       <Res x={680} y={720} s0={S[3] + D[3] * 0.75} c={K.green}>Bù đủ ✓</Res>
       <Panel x={1080} y={710} w={740} h={130} c={K.amber} s0={S[4]}>
         <Tx x={30} y={22} w={680} al="center" size={34} b={800}>Ngoài khoảng dự kiến → có thêm rối loạn hô hấp</Tx>
@@ -386,8 +386,8 @@ const D8: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
       <Tx x={px(1)} y={570} w={px(2) - px(1)} al="center" size={30} c={K.green} b={800} a={ap(t, S[2] + 0.8)}>1–2: đơn thuần</Tx>
       <Tx x={px(2)} y={570} w={px(3) - px(2)} al="center" size={30} c={K.hco3} b={800} a={ap(t, S[2] + 1.6)}>{'> 2: thêm kiềm chuyển hoá'}</Tx>
       <div style={{position: 'absolute', left: px(mk) - 5, top: 395, width: 10, height: 130, borderRadius: 5, background: K.txt, boxShadow: '0 0 20px #fff', opacity: ap(t, S[3])}} />
-      <Tx x={680} y={680} w={700} size={44} b={800} a={ap(t, S[3])}>(25 − 12) ÷ (24 − 12) = 13 ÷ 12 ≈ 1,1</Tx>
-      <Res x={1400} y={670} s0={S[3] + D[3] * 0.6} c={K.green}>Đơn thuần</Res>
+      <Tx x={680} y={685} w={820} size={40} b={800} a={ap(t, S[3])}>(25 − 12) ÷ (24 − 12) ≈ 1,1</Tx>
+      <Res x={1420} y={665} s0={S[3] + D[3] * 0.6} c={K.green}>Đơn thuần</Res>
     </>
   );
 };
@@ -432,7 +432,7 @@ const D10: React.FC<{S: number[]; D: number[]}> = ({S}) => {
           return (
             <div key={q} style={{height: 200, borderRadius: 24, background: 'rgba(245,184,61,.1)', border: `4px solid ${K.amber}`, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', opacity: p, transform: `scale(${0.8 + 0.2 * p})`}}>
               <div style={{fontSize: 30, fontWeight: 800, color: K.amber}}>BƯỚC {i + 1}</div>
-              <div style={{fontSize: 46, fontWeight: 900, color: K.txt}}>{q}</div>
+              <div style={{fontSize: q.length > 14 ? 40 : 46, fontWeight: 900, color: K.txt, whiteSpace: 'nowrap'}}>{q}</div>
             </div>
           );
         })}
