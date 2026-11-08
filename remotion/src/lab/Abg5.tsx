@@ -263,7 +263,7 @@ const E3: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   const f = useCurrentFrame();
   return (
     <>
-      <Top idx={2} title="Nhánh 1 · Thêm acid → AG tăng" />
+      <Top idx={2} title="Nhánh 1 · Thêm acid" />
       <Ions x={200} cl={100} hco3={hco3} a={ap(t, S[0])} agHi={u > 0.5} />
       <Panel x={800} y={190} w={960} h={180} c={K.o2} s0={S[0]}>
         <Tx x={30} y={30} w={900} al="center" size={42} b={800}>{'H⁺A⁻ + HCO₃⁻ → CO₂ + H₂O + A⁻'}</Tx>
@@ -288,7 +288,7 @@ const E4: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
   const grp: [string, string][] = [['Lactic', K.o2], ['Ceton', K.amber], ['Suy thận', K.hco3], ['Ngộ độc', '#B07CF0']];
   return (
     <>
-      <Top idx={3} title="Nguyên nhân tăng AG: GOLDMARK" />
+      <Top idx={3} title="GOLDMARK" />
       <div style={{position: 'absolute', left: 160, top: 170, width: 1600, display: 'grid', gridTemplateColumns: 'repeat(8,1fr)', gap: 14, fontFamily: FONT}}>
         {GM.map(([l, w, n], i) => {
           const s0 = i < 4 ? S[1] + (i * D[1]) / 4 : S[2] + ((i - 4) * D[2]) / 4;
@@ -331,7 +331,7 @@ const E5: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
   const t = useSec();
   return (
     <>
-      <Top idx={4} title="Toan lactic và nhiễm toan ceton" />
+      <Top idx={4} title="Lactic và ceton" />
       <Pill x={960} y={160} a={ap(t, S[0])} c={K.o2} size={36} dark={false}>TOAN LACTIC · hay gặp nhất ở hồi sức</Pill>
       <Chain items={['Sốc', 'Tưới máu mô kém', 'Chuyển hoá yếm khí', 'Lactate ↑']} s0={S[1]} step={D[1] / 4} y={270} c={K.o2} />
       <GoldC y={400} a={ap(t, S[2])} size={50}>Lactate &gt; 2 mmol/L: tăng</GoldC>
@@ -349,7 +349,7 @@ const E6: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   const t = useSec();
   return (
     <>
-      <Top idx={5} title="Khoảng trống áp lực thẩm thấu" />
+      <Top idx={5} title="Khoảng trống thẩm thấu" />
       <Tx x={160} y={170} w={1600} al="center" size={42} b={700} a={ap(t, S[0])}>Nghi ngộ độc rượu độc?</Tx>
       <GoldC y={270} a={ap(t, S[1])} size={50}>ALTT tính = 2 × Na⁺ + glucose + urê</GoldC>
       <Tx x={160} y={370} w={1600} al="center" size={28} c={K.dim} a={ap(t, S[1] + 0.5)}>đơn vị mmol/L</Tx>
@@ -365,7 +365,7 @@ const E7: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   const u = interpolate(t, [S[1], S[1] + 2.2], [0, 1], clamp);
   return (
     <>
-      <Top idx={6} title="Nhánh 2 · Mất HCO₃⁻ → AG bình thường" />
+      <Top idx={6} title="Nhánh 2 · Mất HCO₃⁻" />
       <Ions x={200} cl={102 + 12 * u} hco3={24 - 12 * u} a={ap(t, S[0])} />
       <Card x={800} y={190} w={960} h={180} c={K.green} s0={S[0]} head="KHÔNG CÓ ACID LẠ" body="Không thêm anion không đo được" />
       <Card x={800} y={410} w={960} h={180} c={K.co2} s0={S[1]} head="CƠ THỂ MẤT HCO₃⁻" body="Cl⁻ tăng lên bù chỗ trống" />
@@ -377,10 +377,10 @@ const E7: React.FC<{S: number[]; D: number[]}> = ({S}) => {
 // ---------- 8 Nguyên nhân AG bình thường ----------
 const E8: React.FC<{S: number[]; D: number[]}> = ({S}) => (
   <>
-    <Top idx={7} title="Nguyên nhân toan AG bình thường" />
-    <Card x={140} y={220} w={520} h={420} c={K.amber} s0={S[0]} head="MẤT QUA RUỘT" body="Tiêu chảy · dò tiêu hoá" size={46} />
-    <Card x={700} y={220} w={520} h={420} c={K.hco3} s0={S[1]} head="MẤT QUA THẬN" body="Toan hoá ống thận" size={46} />
-    <Card x={1260} y={220} w={520} h={420} c={K.co2} s0={S[2]} head="DO ĐIỀU TRỊ" body="Truyền nhiều NaCl 0,9%" size={46} />
+    <Top idx={7} title="Nguyên nhân AG bình thường" />
+    <Card x={140} y={300} w={520} h={260} c={K.amber} s0={S[0]} head="MẤT QUA RUỘT" body="Tiêu chảy · dò tiêu hoá" size={46} />
+    <Card x={700} y={300} w={520} h={260} c={K.hco3} s0={S[1]} head="MẤT QUA THẬN" body="Toan hoá ống thận" size={46} />
+    <Card x={1260} y={300} w={520} h={260} c={K.co2} s0={S[2]} head="DO ĐIỀU TRỊ" body="Truyền nhiều NaCl 0,9%" size={46} />
   </>
 );
 
@@ -404,8 +404,8 @@ const E10: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   return (
     <>
       <Top idx={9} title="Giải hai ca toan" />
-      <Card x={160} y={170} w={760} h={330} c={K.o2} s0={S[0]} head="BỆNH NHÂN A · AG 26" body="Thêm acid → toan lactic do sốc" size={46} glow={0.3} />
-      <Card x={1000} y={170} w={760} h={330} c={K.green} s0={S[1]} head="BỆNH NHÂN B · AG 12" body="Mất HCO₃⁻ qua tiêu chảy" size={46} glow={0.3} />
+      <Card x={160} y={200} w={760} h={250} c={K.o2} s0={S[0]} head="BỆNH NHÂN A · AG 26" body="Thêm acid → toan lactic do sốc" size={46} glow={0.3} />
+      <Card x={1000} y={200} w={760} h={250} c={K.green} s0={S[1]} head="BỆNH NHÂN B · AG 12" body="Mất HCO₃⁻ qua tiêu chảy" size={46} glow={0.3} />
       <Chain items={['Toan chuyển hoá', 'Tính AG', 'Tăng: thêm acid', 'Bình thường: mất HCO₃⁻']} s0={S[2]} step={0.6} y={580} c={K.amber} />
     </>
   );
@@ -434,7 +434,7 @@ const E12: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
   const px = (v: number) => X0 + ((v - 36) / (56 - 36)) * W;
   return (
     <>
-      <Top idx={11} title="Bệnh nhân C: nôn ói nhiều ngày" />
+      <Top idx={11} title="Bệnh nhân C · nôn ói" />
       <Slip s0={S[0]} rows={ROWS_C} hl={t > S[2] ? ['hco3', 'co2'] : t > S[1] ? ['ph', 'co2', 'hco3'] : []} title="BỆNH NHÂN C" y={190} />
       <Res x={720} y={190} s0={S[1] + 1.5} c={K.hco3}>KIỀM CHUYỂN HOÁ</Res>
       <Gold x={720} y={330} a={ap(t, S[2])} size={42}>HCO₃⁻ ↑ 12 → PaCO₂ ↑ ≈ 0,7 × 12 ≈ 8</Gold>
@@ -455,7 +455,7 @@ const E13: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   const c = ap(t, S[4]);
   return (
     <>
-      <Top idx={12} title="Clo niệu: phân loại kiềm chuyển hoá" />
+      <Top idx={12} title="Clo niệu" />
       <Tx x={160} y={160} w={1600} al="center" size={40} b={700} a={ap(t, S[0])}>Tìm nguyên nhân: đo Clo niệu</Tx>
       <Panel x={140} y={240} w={800} h={560} c={K.green} s0={S[1]} glow={c}>
         <Tx x={0} y={26} w={800} al="center" size={30} c={K.green} b={800}>CLO NIỆU &lt; 20 mmol/L</Tx>
@@ -479,8 +479,8 @@ const E14: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   return (
     <>
       <Top idx={13} title="Ôn tập" />
-      <Card x={160} y={190} w={760} h={420} c={K.o2} s0={S[0]} head="HCO₃⁻ GIẢM ↓ · TOAN" body="Tính AG → thêm acid hay mất HCO₃⁻?" size={46} />
-      <Card x={1000} y={190} w={760} h={420} c={K.hco3} s0={S[1]} head="HCO₃⁻ TĂNG ↑ · KIỀM" body="Đo Clo niệu → đáp ứng muối hay không?" size={46} />
+      <Card x={160} y={260} w={760} h={280} c={K.o2} s0={S[0]} head="HCO₃⁻ GIẢM ↓ · TOAN" body="Tính AG → thêm acid hay mất HCO₃⁻?" size={46} />
+      <Card x={1000} y={260} w={760} h={280} c={K.hco3} s0={S[1]} head="HCO₃⁻ TĂNG ↑ · KIỀM" body="Đo Clo niệu → đáp ứng muối hay không?" size={46} />
       {nx > 0.01 && (
         <div style={{position: 'absolute', left: 560, top: 690, width: 800, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 18, padding: '16px 0', borderRadius: 999, border: `2px solid ${K.amber}`, background: 'rgba(245,184,61,.08)', fontFamily: FONT, opacity: Math.min(1, nx * 1.5)}}>
           <span style={{fontSize: 28, fontWeight: 800, color: K.amber, letterSpacing: 1}}>BÀI 6</span>
