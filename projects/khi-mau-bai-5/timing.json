@@ -1,0 +1,341 @@
+[
+ {
+  "orig": 15.0,
+  "dur": 24.56,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 5.634,
+    "text": "Toan chuyển hoá: HCO₃⁻ giảm · Kiềm chuyển hoá: HCO₃⁻ tăng"
+   },
+   {
+    "start": 6.484,
+    "dur": 6.185,
+    "text": "Phần 1 · Toan: hai bệnh nhân, cùng pH 7,24, HCO₃⁻ 12"
+   },
+   {
+    "start": 13.019,
+    "dur": 3.876,
+    "text": "A: sốc nhiễm khuẩn · B: tiêu chảy nhiều ngày"
+   },
+   {
+    "start": 17.246,
+    "dur": 5.829,
+    "text": "Cùng toan chuyển hoá, nguyên nhân khác hẳn"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 24.76,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 5.056,
+    "text": "AG = Na⁺ − (Cl⁻ + HCO₃⁻) · bình thường ≈ 12"
+   },
+   {
+    "start": 5.906,
+    "dur": 4.988,
+    "text": "A: 138 − (100 + 12) = 26 → AG TĂNG"
+   },
+   {
+    "start": 11.245,
+    "dur": 5.218,
+    "text": "B: 138 − (114 + 12) = 12 → AG BÌNH THƯỜNG"
+   },
+   {
+    "start": 16.812,
+    "dur": 6.449,
+    "text": "AG tăng: THÊM ACID · AG bình thường: MẤT BICARBONATE"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 13.04,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.681,
+    "text": "Acid lạ vào máu → HCO₃⁻ bị dùng để đệm"
+   },
+   {
+    "start": 5.531,
+    "dur": 3.774,
+    "text": "Gốc acid ở lại: anion không đo được"
+   },
+   {
+    "start": 9.655,
+    "dur": 1.873,
+    "text": "→ khoảng trống anion tăng"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 27.64,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.875,
+    "text": "Nguyên nhân tăng AG: nhớ GOLDMARK"
+   },
+   {
+    "start": 3.725,
+    "dur": 9.223,
+    "text": "Glycol · Oxoproline · L-lactate · D-lactate"
+   },
+   {
+    "start": 13.298,
+    "dur": 7.403,
+    "text": "Methanol · Aspirin · Renal (suy thận) · Ketoacidosis"
+   },
+   {
+    "start": 21.051,
+    "dur": 5.073,
+    "text": "Hay gặp: lactic · ceton · suy thận · ngộ độc"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 18.4,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.178,
+    "text": "Toan lactic: hay gặp nhất ở hồi sức"
+   },
+   {
+    "start": 3.028,
+    "dur": 4.418,
+    "text": "Sốc → tưới máu mô kém → chuyển hoá yếm khí"
+   },
+   {
+    "start": 7.796,
+    "dur": 2.199,
+    "text": "Lactate > 2 mmol/L: tăng"
+   },
+   {
+    "start": 10.345,
+    "dur": 6.555,
+    "text": "Nhiễm toan ceton: ĐTĐ · nhịn đói · rượu · đo β-hydroxybutyrate"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 17.72,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.086,
+    "text": "Nghi ngộ độc rượu độc? Tính khoảng trống thẩm thấu"
+   },
+   {
+    "start": 3.936,
+    "dur": 5.332,
+    "text": "ALTT tính = 2 × Na⁺ + glucose + urê (mmol/L)"
+   },
+   {
+    "start": 9.618,
+    "dur": 6.606,
+    "text": "Đo − tính > 10 → nghi methanol, ethylene glycol"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 13.88,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.604,
+    "text": "Nhánh 2: AG bình thường · không có acid lạ"
+   },
+   {
+    "start": 5.454,
+    "dur": 3.323,
+    "text": "Cơ thể MẤT HCO₃⁻ · Cl⁻ tăng lên bù chỗ"
+   },
+   {
+    "start": 9.127,
+    "dur": 3.245,
+    "text": "AG giữ nguyên → gọi là toan tăng Clo"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 13.56,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.061,
+    "text": "Mất qua ruột: tiêu chảy, dò tiêu hoá"
+   },
+   {
+    "start": 4.911,
+    "dur": 2.906,
+    "text": "Mất qua thận: toan hoá ống thận"
+   },
+   {
+    "start": 8.167,
+    "dur": 3.88,
+    "text": "Do điều trị: truyền nhiều NaCl 0,9%"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 17.48,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.768,
+    "text": "Ruột hay thận? Tính AG niệu"
+   },
+   {
+    "start": 4.618,
+    "dur": 3.708,
+    "text": "AG niệu = Na⁺ niệu + K⁺ niệu − Cl⁻ niệu"
+   },
+   {
+    "start": 8.675,
+    "dur": 3.641,
+    "text": "ÂM → mất qua ruột (thận vẫn thải acid tốt)"
+   },
+   {
+    "start": 12.667,
+    "dur": 3.332,
+    "text": "DƯƠNG → toan hoá ống thận"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 20.04,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 6.465,
+    "text": "A: AG 26 → thêm acid → toan lactic do sốc"
+   },
+   {
+    "start": 7.315,
+    "dur": 3.953,
+    "text": "B: AG 12 → mất HCO₃⁻ qua tiêu chảy"
+   },
+   {
+    "start": 11.618,
+    "dur": 6.917,
+    "text": "Toan chuyển hoá → tính AG: tăng = thêm acid · bình thường = mất HCO₃⁻"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 18.6,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.963,
+    "text": "Phần 2 · Kiềm chuyển hoá: HCO₃⁻ tăng"
+   },
+   {
+    "start": 3.813,
+    "dur": 4.872,
+    "text": "Khởi phát: mất H⁺ (nôn, lợi tiểu) hoặc thêm kiềm"
+   },
+   {
+    "start": 9.035,
+    "dur": 2.672,
+    "text": "Thận khoẻ thải HCO₃⁻ dư rất nhanh"
+   },
+   {
+    "start": 12.057,
+    "dur": 5.025,
+    "text": "Kiềm kéo dài khi thiếu dịch · thiếu Clo · thiếu Kali"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 20.04,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 1.45,
+    "text": "Bệnh nhân C: nôn ói nhiều ngày"
+   },
+   {
+    "start": 2.3,
+    "dur": 4.652,
+    "text": "pH 7,50 · PaCO₂ 47 · HCO₃⁻ 36"
+   },
+   {
+    "start": 7.302,
+    "dur": 7.254,
+    "text": "Bù: HCO₃⁻ ↑ 12 → PaCO₂ ↑ ≈ 0,7 × 12 ≈ 8 → ≈ 48"
+   },
+   {
+    "start": 14.906,
+    "dur": 3.62,
+    "text": "PaCO₂ 47 ✓ phổi bù đủ (thở chậm lại)"
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 23.44,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.671,
+    "text": "Phân loại kiềm chuyển hoá: đo Clo niệu"
+   },
+   {
+    "start": 3.521,
+    "dur": 5.444,
+    "text": "Clo niệu < 20: ĐÁP ỨNG MUỐI · nôn, hút dạ dày, sau lợi tiểu"
+   },
+   {
+    "start": 9.315,
+    "dur": 3.308,
+    "text": "→ truyền NaCl 0,9% · bù Kali"
+   },
+   {
+    "start": 12.973,
+    "dur": 5.776,
+    "text": "Clo niệu > 20: KHÔNG ĐÁP ỨNG MUỐI · cường aldosterone, đang dùng lợi tiểu, hạ Kali nặng"
+   },
+   {
+    "start": 19.099,
+    "dur": 2.852,
+    "text": "Bệnh nhân C: Clo niệu thấp → đáp ứng muối"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 14.08,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 5.944,
+    "text": "HCO₃⁻ ↓ → tính AG: thêm acid hay mất HCO₃⁻"
+   },
+   {
+    "start": 6.794,
+    "dur": 3.764,
+    "text": "HCO₃⁻ ↑ → đo Clo niệu: đáp ứng muối hay không"
+   },
+   {
+    "start": 10.908,
+    "dur": 1.679,
+    "text": "Bài 6: Toan và kiềm hô hấp"
+   }
+  ]
+ }
+]
