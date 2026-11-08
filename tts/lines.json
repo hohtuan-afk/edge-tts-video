@@ -1,35 +1,211 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+12%",
+ "rate": "+8%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Toan chuyển hoá. Phổi đã bù đủ chưa? Chỉ cần mười giây."
+   "text": "Rối loạn chuyển hoá xoay quanh bi các bô nát. Giảm là toan chuyển hoá, tăng là kiềm chuyển hoá."
+  },
+  {
+   "id": "00-1",
+   "text": "Phần một: toan chuyển hoá. Hai bệnh nhân, cùng pê hát bảy phẩy hai tư, cùng bi các bô nát mười hai."
+  },
+  {
+   "id": "00-2",
+   "text": "Người A bị sốc nhiễm khuẩn. Người B bị tiêu chảy nhiều ngày."
+  },
+  {
+   "id": "00-3",
+   "text": "Cả hai cùng toan chuyển hoá, nhưng nguyên nhân hoàn toàn khác nhau. Chìa khoá nằm ở khoảng trống a ni on."
   },
   {
    "id": "01-0",
-   "text": "Dùng công thức Uyn-tơ: pê a xê ô hai dự kiến bằng một phẩy năm nhân bi các bô nát, cộng tám, cộng trừ hai."
+   "text": "Nhắc lại: khoảng trống a ni on bằng na tri trừ tổng clo và bi các bô nát, bình thường khoảng mười hai."
+  },
+  {
+   "id": "01-1",
+   "text": "Người A: một trăm ba mươi tám trừ một trăm mười hai, bằng hai mươi sáu. Tăng."
+  },
+  {
+   "id": "01-2",
+   "text": "Người B: một trăm ba mươi tám trừ một trăm hai mươi sáu, bằng mười hai. Bình thường."
+  },
+  {
+   "id": "01-3",
+   "text": "Từ đây chia hai nhánh. Khoảng trống a ni on tăng là thêm a xít. Bình thường là mất bi các bô nát."
   },
   {
    "id": "02-0",
-   "text": "Ví dụ bi các bô nát mười hai: một phẩy năm nhân mười hai, cộng tám, bằng hai mươi sáu. Khoảng dự kiến từ hai mươi bốn đến hai mươi tám."
+   "text": "Nhánh một. Khi có a xít lạ vào máu, bi các bô nát bị tiêu hao để đệm."
+  },
+  {
+   "id": "02-1",
+   "text": "Phần gốc a xít ở lại trong máu, là a ni on mà phiếu xét nghiệm không đo."
+  },
+  {
+   "id": "02-2",
+   "text": "Vì vậy khoảng trống a ni on tăng lên."
   },
   {
    "id": "03-0",
-   "text": "Pê a xê ô hai nằm trong khoảng này: bù đủ."
+   "text": "Nguyên nhân tăng khoảng trống a ni on có thể nhớ bằng chữ gôn mác."
+  },
+  {
+   "id": "03-1",
+   "text": "Gờ là gly côn. Ô là ô xô prô lin, gặp khi dùng pa ra xê ta mon kéo dài. Lờ là lắc tát. Đê là đê lắc tát."
+  },
+  {
+   "id": "03-2",
+   "text": "Mờ là mê ta nôn. A là át pi rin. Rờ là suy thận. Ca là nhiễm toan xê tôn."
+  },
+  {
+   "id": "03-3",
+   "text": "Trên lâm sàng, hay gặp nhất là bốn nhóm: lắc tát, xê tôn, suy thận, và ngộ độc."
   },
   {
    "id": "04-0",
-   "text": "Cao hơn khoảng dự kiến: có thêm toan hô hấp."
+   "text": "Toan lắc tát là nguyên nhân hay gặp nhất ở hồi sức."
+  },
+  {
+   "id": "04-1",
+   "text": "Khi sốc, mô thiếu tưới máu, tế bào chuyển sang chuyển hoá yếm khí và sinh ra lắc tát."
+  },
+  {
+   "id": "04-2",
+   "text": "Lắc tát trên hai mi li mol trên lít là tăng."
+  },
+  {
+   "id": "04-3",
+   "text": "Nhiễm toan xê tôn gặp trong đái tháo đường, nhịn đói hoặc do rượu. Nên đo bê ta hy đrô xy bu ty rát trong máu."
   },
   {
    "id": "05-0",
-   "text": "Thấp hơn khoảng dự kiến: có thêm kiềm hô hấp."
+   "text": "Khi nghi ngộ độc rượu độc, hãy tính khoảng trống áp lực thẩm thấu."
+  },
+  {
+   "id": "05-1",
+   "text": "Áp lực thẩm thấu tính bằng hai lần na tri, cộng glu cô, cộng u rê, đơn vị mi li mol trên lít."
+  },
+  {
+   "id": "05-2",
+   "text": "Lấy áp lực thẩm thấu đo được trừ áp lực tính. Chênh trên mười, nghi ngộ độc mê ta nôn hoặc ê ty len gly côn."
   },
   {
    "id": "06-0",
-   "text": "Lưu lại để ôn, và xem bài bốn đầy đủ trên kênh nhé!"
+   "text": "Nhánh hai: khoảng trống a ni on bình thường. Không có a xít lạ nào cả."
+  },
+  {
+   "id": "06-1",
+   "text": "Cơ thể mất bi các bô nát, và clo tăng lên để bù vào chỗ trống."
+  },
+  {
+   "id": "06-2",
+   "text": "Khoảng trống a ni on giữ nguyên, nên còn gọi là toan tăng clo."
+  },
+  {
+   "id": "07-0",
+   "text": "Nguyên nhân thứ nhất: mất bi các bô nát qua ruột, như tiêu chảy hay dò tiêu hoá."
+  },
+  {
+   "id": "07-1",
+   "text": "Thứ hai: mất qua thận, gọi là toan hoá ống thận."
+  },
+  {
+   "id": "07-2",
+   "text": "Thứ ba: do điều trị, khi truyền nhiều na tri clo rua không phẩy chín phần trăm."
+  },
+  {
+   "id": "08-0",
+   "text": "Mất qua ruột hay qua thận? Hãy tính khoảng trống a ni on niệu."
+  },
+  {
+   "id": "08-1",
+   "text": "Khoảng trống a ni on niệu bằng na tri niệu cộng ka li niệu, trừ clo niệu."
+  },
+  {
+   "id": "08-2",
+   "text": "Nếu âm, thận vẫn thải a xít tốt, vậy bi các bô nát mất qua ruột."
+  },
+  {
+   "id": "08-3",
+   "text": "Nếu dương, thận không thải được a xít, nghĩ toan hoá ống thận."
+  },
+  {
+   "id": "09-0",
+   "text": "Quay lại hai bệnh nhân. Người A, khoảng trống a ni on hai mươi sáu: thêm a xít, toan lắc tát do sốc."
+  },
+  {
+   "id": "09-1",
+   "text": "Người B, khoảng trống a ni on mười hai: mất bi các bô nát qua tiêu chảy."
+  },
+  {
+   "id": "09-2",
+   "text": "Tóm lại: gặp toan chuyển hoá, hãy tính khoảng trống a ni on. Tăng là thêm a xít, bình thường là mất bi các bô nát."
+  },
+  {
+   "id": "10-0",
+   "text": "Phần hai: kiềm chuyển hoá, khi bi các bô nát tăng."
+  },
+  {
+   "id": "10-1",
+   "text": "Khởi phát do mất hát cộng, như nôn ói hay dùng lợi tiểu, hoặc do đưa thêm kiềm vào cơ thể."
+  },
+  {
+   "id": "10-2",
+   "text": "Bình thường, thận khoẻ thải bi các bô nát dư rất nhanh."
+  },
+  {
+   "id": "10-3",
+   "text": "Kiềm chỉ kéo dài khi thận buộc phải giữ bi các bô nát lại: thiếu dịch, thiếu clo, hoặc thiếu ka li."
+  },
+  {
+   "id": "11-0",
+   "text": "Bệnh nhân C nôn ói nhiều ngày."
+  },
+  {
+   "id": "11-1",
+   "text": "Pê hát bảy phẩy năm mươi, pê a xê ô hai bốn mươi bảy, bi các bô nát ba mươi sáu."
+  },
+  {
+   "id": "11-2",
+   "text": "Kiểm tra bù: bi các bô nát tăng mười hai, pê a xê ô hai dự kiến tăng khoảng không phẩy bảy nhân mười hai, tức tám, lên khoảng bốn mươi tám."
+  },
+  {
+   "id": "11-3",
+   "text": "Pê a xê ô hai bốn mươi bảy, phổi đã bù đủ bằng cách thở chậm lại."
+  },
+  {
+   "id": "12-0",
+   "text": "Để tìm nguyên nhân kiềm chuyển hoá, hãy đo clo niệu."
+  },
+  {
+   "id": "12-1",
+   "text": "Clo niệu dưới hai mươi là nhóm đáp ứng với muối: nôn ói, hút dịch dạ dày, hoặc sau khi ngưng lợi tiểu."
+  },
+  {
+   "id": "12-2",
+   "text": "Điều trị bằng truyền na tri clo rua không phẩy chín phần trăm và bù ka li."
+  },
+  {
+   "id": "12-3",
+   "text": "Clo niệu trên hai mươi là nhóm không đáp ứng muối: cường an đô xtê rôn, đang dùng lợi tiểu, hoặc hạ ka li nặng."
+  },
+  {
+   "id": "12-4",
+   "text": "Bệnh nhân C có clo niệu thấp, thuộc nhóm đáp ứng muối."
+  },
+  {
+   "id": "13-0",
+   "text": "Ôn tập. Bi các bô nát giảm: tính khoảng trống a ni on, để biết thêm a xít hay mất bi các bô nát."
+  },
+  {
+   "id": "13-1",
+   "text": "Bi các bô nát tăng: đo clo niệu, để biết có đáp ứng muối hay không."
+  },
+  {
+   "id": "13-2",
+   "text": "Bài sau: toan và kiềm hô hấp."
   }
  ]
 }
