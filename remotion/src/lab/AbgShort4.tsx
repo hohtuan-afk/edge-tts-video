@@ -165,7 +165,7 @@ const S1: React.FC = () => {
   const t = useSec();
   return (
     <>
-      <Title>CÔNG THỨC WINTER</Title>
+      <Title>WINTER</Title>
       <div style={{position: 'absolute', left: 60, right: 60, top: 430, textAlign: 'center', fontFamily: FONT}}>
         <div style={{fontSize: 70, fontWeight: 800, color: K.co2, opacity: ap(t, 0.3)}}>PaCO<sub style={{fontSize: '.6em'}}>2</sub> dự kiến =</div>
         <div style={{display: 'inline-block', marginTop: 40, padding: '24px 46px', borderRadius: 30, background: 'linear-gradient(135deg,#FFD46B,#F5B83D)', color: K.ink, fontSize: 104, fontWeight: 900, opacity: ap(t, 1.2), transform: `scale(${0.85 + 0.15 * ap(t, 1.2)})`}}>1,5 × {chem('HCO₃⁻')} + 8</div>
