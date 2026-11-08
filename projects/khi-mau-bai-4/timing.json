@@ -157,52 +157,52 @@
  },
  {
   "orig": 15.0,
-  "dur": 25.08,
+  "dur": 24.96,
   "sents": [
    {
     "start": 0.5,
-    "dur": 2.031,
+    "dur": 1.997,
     "text": "Bước 5: khoảng trống anion (AG)"
    },
    {
-    "start": 2.881,
-    "dur": 6.329,
+    "start": 2.847,
+    "dur": 6.282,
     "text": "AG = Na⁺ − (Cl⁻ + HCO₃⁻) · bình thường ≈ 12"
    },
    {
-    "start": 9.56,
-    "dur": 5.696,
+    "start": 9.479,
+    "dur": 5.65,
     "text": "135 − (98 + 12) = 25 → AG TĂNG"
    },
    {
-    "start": 15.607,
-    "dur": 7.968,
+    "start": 15.479,
+    "dur": 7.98,
     "text": "Albumin giảm 1 g/dL → cộng thêm ≈ 2,5"
    }
   ]
  },
  {
   "orig": 15.0,
-  "dur": 24.84,
+  "dur": 24.72,
   "sents": [
    {
     "start": 0.5,
-    "dur": 3.776,
+    "dur": 3.734,
     "text": "Bước 6: delta–delta"
    },
    {
-    "start": 4.626,
-    "dur": 3.845,
+    "start": 4.584,
+    "dur": 3.843,
     "text": "Δ/Δ = (AG − 12) ÷ (24 − HCO₃⁻)"
    },
    {
-    "start": 8.821,
-    "dur": 8.51,
+    "start": 8.777,
+    "dur": 8.464,
     "text": "< 1: thêm toan AG bình thường · 1–2: đơn thuần · > 2: thêm kiềm chuyển hoá"
    },
    {
-    "start": 17.681,
-    "dur": 5.674,
+    "start": 17.591,
+    "dur": 5.633,
     "text": "(25 − 12) ÷ (24 − 12) = 13 ÷ 12 ≈ 1,1 → đơn thuần"
    }
   ]
@@ -213,11 +213,11 @@
   "sents": [
    {
     "start": 0.5,
-    "dur": 3.703,
+    "dur": 3.702,
     "text": "Kết luận: toan chuyển hoá tăng AG, bù hô hấp đủ"
    },
    {
-    "start": 4.553,
+    "start": 4.552,
     "dur": 2.794,
     "text": "Phù hợp: nhiễm toan ceton đái tháo đường"
    },
@@ -239,12 +239,12 @@
    },
    {
     "start": 4.915,
-    "dur": 4.082,
+    "dur": 4.044,
     "text": "4 Bù đủ? · 5 AG? · 6 Delta–delta?"
    },
    {
-    "start": 9.347,
-    "dur": 3.236,
+    "start": 9.308,
+    "dur": 3.277,
     "text": "Bài 5: Toan chuyển hoá tăng AG"
    }
   ]
