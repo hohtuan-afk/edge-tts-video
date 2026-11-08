@@ -1,0 +1,256 @@
+{
+ "fps": 30,
+ "total": 5904,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 622,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.561,
+     "text": "Một phiếu khí máu đầy số: đọc từ đâu?"
+    },
+    {
+     "start": 4.411,
+     "dur": 4.255,
+     "text": "Ca bệnh: ĐTĐ, nôn ói, thở nhanh sâu"
+    },
+    {
+     "start": 9.016,
+     "dur": 7.117,
+     "text": "pH 7,28 · PaCO₂ 26 · HCO₃⁻ 12 · Na⁺ 135 · Cl⁻ 98"
+    },
+    {
+     "start": 16.483,
+     "dur": 2.747,
+     "text": "6 bước · mỗi bước trả lời một câu hỏi"
+    }
+   ]
+  },
+  {
+   "from": 622,
+   "dur": 836,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 1.806,
+     "text": "Bước 1: phiếu có đáng tin không?"
+    },
+    {
+     "start": 2.656,
+     "dur": 7.219,
+     "text": "H⁺ = 24 × PaCO₂ ÷ HCO₃⁻"
+    },
+    {
+     "start": 10.225,
+     "dur": 5.744,
+     "text": "Mẹo (pH 7,2–7,5): H⁺ ≈ 80 − hai số lẻ của pH"
+    },
+    {
+     "start": 16.319,
+     "dur": 10.063,
+     "text": "24 × 26 ÷ 12 = 52 · pH 7,28 → 80 − 28 = 52 ✓"
+    }
+   ]
+  },
+  {
+   "from": 1458,
+   "dur": 322,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 1.716,
+     "text": "Bước 2: toan máu hay kiềm máu?"
+    },
+    {
+     "start": 2.566,
+     "dur": 3.956,
+     "text": "pH < 7,35: toan máu · pH > 7,45: kiềm máu"
+    },
+    {
+     "start": 6.872,
+     "dur": 2.343,
+     "text": "pH 7,28 → TOAN MÁU"
+    }
+   ]
+  },
+  {
+   "from": 1780,
+   "dur": 508,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.314,
+     "text": "Bước 3: hô hấp hay chuyển hoá?"
+    },
+    {
+     "start": 3.164,
+     "dur": 2.353,
+     "text": "Tìm chỉ số giải thích được hướng của pH"
+    },
+    {
+     "start": 5.867,
+     "dur": 4.74,
+     "text": "Toan: PaCO₂ ↑ (hô hấp) hoặc HCO₃⁻ ↓ (chuyển hoá)"
+    },
+    {
+     "start": 10.957,
+     "dur": 4.487,
+     "text": "HCO₃⁻ 12 ↓ → TOAN CHUYỂN HOÁ"
+    }
+   ]
+  },
+  {
+   "from": 2288,
+   "dur": 737,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.044,
+     "text": "Bước 4: bù trừ có đủ không?"
+    },
+    {
+     "start": 2.894,
+     "dur": 2.315,
+     "text": "Toan chuyển hoá: công thức Winter"
+    },
+    {
+     "start": 5.559,
+     "dur": 4.63,
+     "text": "PaCO₂ dự kiến = 1,5 × HCO₃⁻ + 8 ± 2"
+    },
+    {
+     "start": 10.539,
+     "dur": 7.712,
+     "text": "1,5 × 12 + 8 = 26 · PaCO₂ thật 26 ✓ bù đủ"
+    },
+    {
+     "start": 18.601,
+     "dur": 4.466,
+     "text": "Lệch khỏi dự kiến → có thêm rối loạn hô hấp"
+    }
+   ]
+  },
+  {
+   "from": 3025,
+   "dur": 621,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 1.96,
+     "text": "Các rối loạn khác cũng có công thức bù"
+    },
+    {
+     "start": 2.81,
+     "dur": 4.46,
+     "text": "Kiềm chuyển hoá: HCO₃⁻ ↑ 1 → PaCO₂ ↑ ≈ 0,7"
+    },
+    {
+     "start": 7.62,
+     "dur": 5.758,
+     "text": "Toan hô hấp: PaCO₂ ↑ 10 → HCO₃⁻ ↑ 1 (cấp) · 3,5–4 (mạn)"
+    },
+    {
+     "start": 13.728,
+     "dur": 5.448,
+     "text": "Kiềm hô hấp: PaCO₂ ↓ 10 → HCO₃⁻ ↓ 2 (cấp) · 4–5 (mạn)"
+    }
+   ]
+  },
+  {
+   "from": 3646,
+   "dur": 748,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 1.997,
+     "text": "Bước 5: khoảng trống anion (AG)"
+    },
+    {
+     "start": 2.847,
+     "dur": 6.282,
+     "text": "AG = Na⁺ − (Cl⁻ + HCO₃⁻) · bình thường ≈ 12"
+    },
+    {
+     "start": 9.479,
+     "dur": 5.65,
+     "text": "135 − (98 + 12) = 25 → AG TĂNG"
+    },
+    {
+     "start": 15.479,
+     "dur": 7.98,
+     "text": "Albumin giảm 1 g/dL → cộng thêm ≈ 2,5"
+    }
+   ]
+  },
+  {
+   "from": 4394,
+   "dur": 742,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.734,
+     "text": "Bước 6: delta–delta"
+    },
+    {
+     "start": 4.584,
+     "dur": 3.843,
+     "text": "Δ/Δ = (AG − 12) ÷ (24 − HCO₃⁻)"
+    },
+    {
+     "start": 8.777,
+     "dur": 8.464,
+     "text": "< 1: thêm toan AG bình thường · 1–2: đơn thuần · > 2: thêm kiềm chuyển hoá"
+    },
+    {
+     "start": 17.591,
+     "dur": 5.633,
+     "text": "(25 − 12) ÷ (24 − 12) = 13 ÷ 12 ≈ 1,1 → đơn thuần"
+    }
+   ]
+  },
+  {
+   "from": 5136,
+   "dur": 346,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.702,
+     "text": "Kết luận: toan chuyển hoá tăng AG, bù hô hấp đủ"
+    },
+    {
+     "start": 4.552,
+     "dur": 2.794,
+     "text": "Phù hợp: nhiễm toan ceton đái tháo đường"
+    },
+    {
+     "start": 7.697,
+     "dur": 2.308,
+     "text": "Đừng quên đánh giá oxy hoá (Bài 3)"
+    }
+   ]
+  },
+  {
+   "from": 5482,
+   "dur": 422,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.065,
+     "text": "1 Tin được? · 2 Toan/kiềm? · 3 Hô hấp/chuyển hoá?"
+    },
+    {
+     "start": 4.915,
+     "dur": 4.044,
+     "text": "4 Bù đủ? · 5 AG? · 6 Delta–delta?"
+    },
+    {
+     "start": 9.308,
+     "dur": 3.277,
+     "text": "Bài 5: Toan chuyển hoá tăng AG"
+    }
+   ]
+  }
+ ]
+}

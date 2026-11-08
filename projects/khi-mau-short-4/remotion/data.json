@@ -1,0 +1,83 @@
+{
+ "fps": 30,
+ "total": 1123,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 151,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.355,
+     "text": "Toan chuyển hoá: phổi đã bù đủ chưa?"
+    }
+   ]
+  },
+  {
+   "from": 151,
+   "dur": 192,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 5.72,
+     "text": "Winter: PaCO₂ dự kiến = 1,5 × HCO₃⁻ + 8 ± 2"
+    }
+   ]
+  },
+  {
+   "from": 343,
+   "dur": 252,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 7.71,
+     "text": "HCO₃⁻ 12 → 1,5 × 12 + 8 = 26 → khoảng 24–28"
+    }
+   ]
+  },
+  {
+   "from": 595,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.482,
+     "text": "PaCO₂ trong khoảng → bù đủ"
+    }
+   ]
+  },
+  {
+   "from": 727,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.159,
+     "text": "PaCO₂ cao hơn → có thêm toan hô hấp"
+    }
+   ]
+  },
+  {
+   "from": 859,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.19,
+     "text": "PaCO₂ thấp hơn → có thêm kiềm hô hấp"
+    }
+   ]
+  },
+  {
+   "from": 991,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.636,
+     "text": "Lưu lại để ôn · xem Bài 4 đầy đủ trên kênh!"
+    }
+   ]
+  }
+ ]
+}
