@@ -37,26 +37,26 @@ NARR = [
     ("Kiềm hô hấp: PaCO₂ ↓ 10 → HCO₃⁻ ↓ 2 (cấp) · 4–5 (mạn)", "Kiềm hô hấp: pê a xê ô hai giảm mười, bi các bô nát giảm hai nếu cấp, bốn đến năm nếu mạn."),
   ],
   [  # 7 Bước 5
-    ("Bước 5: khoảng trống anion (AG)", "Bước năm: tính khoảng trống an i on."),
-    ("AG = Na⁺ − (Cl⁻ + HCO₃⁻) · bình thường ≈ 12", "Khoảng trống an i on bằng na tri trừ tổng clo và bi các bô nát. Bình thường khoảng mười hai, tuỳ phòng xét nghiệm."),
-    ("135 − (98 + 12) = 25 → AG TĂNG", "Ở ca này: một trăm ba mươi lăm trừ một trăm mười, bằng hai mươi lăm. Khoảng trống an i on tăng."),
-    ("Albumin giảm 1 g/dL → cộng thêm ≈ 2,5", "Lưu ý: an bu min thấp làm khoảng trống an i on thấp giả. Mỗi gam trên đề xi lít an bu min giảm, cộng thêm khoảng hai phẩy năm."),
+    ("Bước 5: khoảng trống anion (AG)", "Bước năm: tính khoảng trống a ni on."),
+    ("AG = Na⁺ − (Cl⁻ + HCO₃⁻) · bình thường ≈ 12", "Khoảng trống a ni on bằng na tri trừ tổng clo và bi các bô nát. Bình thường khoảng mười hai, tuỳ phòng xét nghiệm."),
+    ("135 − (98 + 12) = 25 → AG TĂNG", "Ở ca này: một trăm ba mươi lăm trừ một trăm mười, bằng hai mươi lăm. Khoảng trống a ni on tăng."),
+    ("Albumin giảm 1 g/dL → cộng thêm ≈ 2,5", "Lưu ý: an bu min thấp làm khoảng trống a ni on thấp giả. Mỗi gam trên đề xi lít an bu min giảm, cộng thêm khoảng hai phẩy năm."),
   ],
   [  # 8 Bước 6
-    ("Bước 6: delta–delta", "Bước sáu: tỉ số đen ta đen ta, khi khoảng trống an i on tăng."),
-    ("Δ/Δ = (AG − 12) ÷ (24 − HCO₃⁻)", "Lấy phần khoảng trống an i on tăng thêm, chia cho phần bi các bô nát giảm đi."),
-    ("< 1: thêm toan AG bình thường · 1–2: đơn thuần · > 2: thêm kiềm chuyển hoá", "Dưới một: có thêm toan chuyển hoá khoảng trống an i on bình thường. Từ một đến hai: đơn thuần. Trên hai: có thêm kiềm chuyển hoá."),
-    ("(25 − 12) ÷ (24 − 12) = 13 ÷ 12 ≈ 1,1 → đơn thuần", "Ở ca này, mười ba chia mười hai, khoảng một phẩy một. Toan tăng khoảng trống an i on đơn thuần."),
+    ("Bước 6: delta–delta", "Bước sáu: tỉ số đen ta đen ta, khi khoảng trống a ni on tăng."),
+    ("Δ/Δ = (AG − 12) ÷ (24 − HCO₃⁻)", "Lấy phần khoảng trống a ni on tăng thêm, chia cho phần bi các bô nát giảm đi."),
+    ("< 1: thêm toan AG bình thường · 1–2: đơn thuần · > 2: thêm kiềm chuyển hoá", "Dưới một: có thêm toan chuyển hoá khoảng trống a ni on bình thường. Từ một đến hai: đơn thuần. Trên hai: có thêm kiềm chuyển hoá."),
+    ("(25 − 12) ÷ (24 − 12) = 13 ÷ 12 ≈ 1,1 → đơn thuần", "Ở ca này, mười ba chia mười hai, khoảng một phẩy một. Toan tăng khoảng trống a ni on đơn thuần."),
   ],
   [  # 9 Kết luận
-    ("Kết luận: toan chuyển hoá tăng AG, bù hô hấp đủ", "Kết luận: toan chuyển hoá tăng khoảng trống an i on, bù hô hấp đủ."),
+    ("Kết luận: toan chuyển hoá tăng AG, bù hô hấp đủ", "Kết luận: toan chuyển hoá tăng khoảng trống a ni on, bù hô hấp đủ."),
     ("Phù hợp: nhiễm toan ceton đái tháo đường", "Bệnh cảnh này phù hợp với nhiễm toan xê tôn do đái tháo đường."),
     ("Đừng quên đánh giá oxy hoá (Bài 3)", "Và đừng quên đánh giá ô xy hoá như ở bài ba."),
   ],
   [  # 10 Ôn tập
     ("1 Tin được? · 2 Toan/kiềm? · 3 Hô hấp/chuyển hoá?", "Ôn lại sáu câu hỏi: tin được không, toan hay kiềm, hô hấp hay chuyển hoá,"),
-    ("4 Bù đủ? · 5 AG? · 6 Delta–delta?", "bù có đủ không, khoảng trống an i on bao nhiêu, và tỉ số đen ta đen ta."),
-    ("Bài 5: Toan chuyển hoá tăng AG", "Bài sau, ta đi sâu vào toan chuyển hoá tăng khoảng trống an i on."),
+    ("4 Bù đủ? · 5 AG? · 6 Delta–delta?", "bù có đủ không, khoảng trống a ni on bao nhiêu, và tỉ số đen ta đen ta."),
+    ("Bài 5: Toan chuyển hoá tăng AG", "Bài sau, ta đi sâu vào toan chuyển hoá tăng khoảng trống a ni on."),
   ],
 ]
 STEP = 3.0
