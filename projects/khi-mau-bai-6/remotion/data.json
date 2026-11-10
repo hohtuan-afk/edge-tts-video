@@ -1,0 +1,267 @@
+{
+ "fps": 30,
+ "total": 5596,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 422,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.561,
+     "text": "Rối loạn hô hấp xoay quanh PaCO₂"
+    },
+    {
+     "start": 4.411,
+     "dur": 4.978,
+     "text": "PaCO₂ > 45: toan hô hấp · PaCO₂ < 35: kiềm hô hấp"
+    },
+    {
+     "start": 9.739,
+     "dur": 2.859,
+     "text": "PaCO₂ là \"nhiệt kế\" của thông khí"
+    }
+   ]
+  },
+  {
+   "from": 422,
+   "dur": 528,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.479,
+     "text": "PaCO₂ tỉ lệ nghịch với thông khí phế nang"
+    },
+    {
+     "start": 3.329,
+     "dur": 3.298,
+     "text": "Thở ít → CO₂ ứ lại → PaCO₂ ↑"
+    },
+    {
+     "start": 6.977,
+     "dur": 3.589,
+     "text": "Thở nhiều → thải nhiều CO₂ → PaCO₂ ↓"
+    },
+    {
+     "start": 10.916,
+     "dur": 5.188,
+     "text": "Thở nhanh nông vẫn có thể giảm thông khí phế nang"
+    }
+   ]
+  },
+  {
+   "from": 950,
+   "dur": 681,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.341,
+     "text": "Toan hô hấp: tìm chỗ hỏng trên đường thở"
+    },
+    {
+     "start": 5.191,
+     "dur": 4.57,
+     "text": "Trung tâm hô hấp: thuốc an thần, opioid, tổn thương thân não"
+    },
+    {
+     "start": 10.111,
+     "dur": 4.044,
+     "text": "Thần kinh – cơ: Guillain-Barré, nhược cơ, tổn thương tuỷ cổ"
+    },
+    {
+     "start": 14.505,
+     "dur": 2.707,
+     "text": "Thành ngực: béo phì nặng, gù vẹo cột sống"
+    },
+    {
+     "start": 17.562,
+     "dur": 3.614,
+     "text": "Đường thở – phổi: COPD, hen nặng"
+    }
+   ]
+  },
+  {
+   "from": 1631,
+   "dur": 433,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.645,
+     "text": "Thận bù bằng cách giữ HCO₃⁻ · cần 3–5 ngày"
+    },
+    {
+     "start": 4.495,
+     "dur": 4.983,
+     "text": "PaCO₂ ↑ 10 → HCO₃⁻ ↑ 1 (cấp) · ↑ 3,5–4 (mạn)"
+    },
+    {
+     "start": 9.828,
+     "dur": 3.097,
+     "text": "Nhìn HCO₃⁻ để biết cấp hay mạn"
+    }
+   ]
+  },
+  {
+   "from": 2064,
+   "dur": 763,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.661,
+     "text": "Hai bệnh nhân, cùng PaCO₂ 60"
+    },
+    {
+     "start": 3.511,
+     "dur": 4.65,
+     "text": "D: quá liều opioid · HCO₃⁻ 26 · pH 7,26"
+    },
+    {
+     "start": 8.512,
+     "dur": 5.334,
+     "text": "HCO₃⁻ ↑ 2 cho PaCO₂ ↑ 20 → CẤP"
+    },
+    {
+     "start": 14.196,
+     "dur": 5.122,
+     "text": "E: COPD ổn định · HCO₃⁻ 31 · pH 7,34"
+    },
+    {
+     "start": 19.667,
+     "dur": 4.257,
+     "text": "HCO₃⁻ ↑ 7 → MẠN · thận đã bù"
+    }
+   ]
+  },
+  {
+   "from": 2827,
+   "dur": 393,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.106,
+     "text": "COPD giữ CO₂: cẩn thận khi cho oxy"
+    },
+    {
+     "start": 4.956,
+     "dur": 2.928,
+     "text": "Oxy quá mức → PaCO₂ tăng thêm"
+    },
+    {
+     "start": 8.233,
+     "dur": 3.338,
+     "text": "Mục tiêu SpO₂ 88–92%"
+    }
+   ]
+  },
+  {
+   "from": 3220,
+   "dur": 610,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.673,
+     "text": "Kiềm hô hấp: PaCO₂ < 35 · tăng thông khí"
+    },
+    {
+     "start": 5.523,
+     "dur": 3.858,
+     "text": "Thiếu oxy: thuyên tắc phổi, viêm phổi, độ cao"
+    },
+    {
+     "start": 9.731,
+     "dur": 5.647,
+     "text": "Kích thích trung tâm: sốt, nhiễm khuẩn huyết, xơ gan, thai kỳ, salicylate"
+    },
+    {
+     "start": 15.728,
+     "dur": 3.118,
+     "text": "Đau, lo âu · thở máy quá mức"
+    }
+   ]
+  },
+  {
+   "from": 3830,
+   "dur": 288,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.426,
+     "text": "Thận bù bằng cách thải HCO₃⁻"
+    },
+    {
+     "start": 3.276,
+     "dur": 4.84,
+     "text": "PaCO₂ ↓ 10 → HCO₃⁻ ↓ 2 (cấp) · ↓ 4–5 (mạn)"
+    }
+   ]
+  },
+  {
+   "from": 4118,
+   "dur": 664,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 1.918,
+     "text": "F: khó thở đột ngột sau mổ"
+    },
+    {
+     "start": 2.768,
+     "dur": 6.184,
+     "text": "pH 7,49 · PaCO₂ 30 · HCO₃⁻ 22 · PaO₂ 62"
+    },
+    {
+     "start": 9.302,
+     "dur": 5.037,
+     "text": "PaCO₂ ↓ 10 → HCO₃⁻ ↓ 2 → kiềm hô hấp cấp"
+    },
+    {
+     "start": 14.689,
+     "dur": 3.641,
+     "text": "A–a ≈ 150 − 1,25 × 30 − 62 ≈ 50 → tăng"
+    },
+    {
+     "start": 18.68,
+     "dur": 1.947,
+     "text": "Nghĩ thuyên tắc phổi"
+    }
+   ]
+  },
+  {
+   "from": 4782,
+   "dur": 318,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.252,
+     "text": "Đừng vội kết luận \"do lo âu\""
+    },
+    {
+     "start": 4.102,
+     "dur": 4.995,
+     "text": "Loại trừ trước: thuyên tắc phổi, nhiễm khuẩn huyết, salicylate"
+    }
+   ]
+  },
+  {
+   "from": 5100,
+   "dur": 496,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 6.669,
+     "text": "PaCO₂ ↑ → toan hô hấp → tìm chỗ giảm thông khí · HCO₃⁻ cho biết cấp/mạn"
+    },
+    {
+     "start": 7.519,
+     "dur": 5.12,
+     "text": "PaCO₂ ↓ → kiềm hô hấp → tìm nguyên nhân tăng thông khí"
+    },
+    {
+     "start": 12.989,
+     "dur": 2.016,
+     "text": "Bài 7: Rối loạn toan kiềm hỗn hợp"
+    }
+   ]
+  }
+ ]
+}

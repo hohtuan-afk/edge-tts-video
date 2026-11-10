@@ -1,0 +1,83 @@
+{
+ "fps": 30,
+ "total": 1000,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 145,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.12,
+     "text": "Cùng PaCO₂ 60, sao pH lại khác nhau?"
+    }
+   ]
+  },
+  {
+   "from": 145,
+   "dur": 156,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.496,
+     "text": "D: quá liều opioid · pH 7,26 · HCO₃⁻ 26"
+    }
+   ]
+  },
+  {
+   "from": 301,
+   "dur": 159,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.574,
+     "text": "E: COPD ổn định · pH 7,34 · HCO₃⁻ 31"
+    }
+   ]
+  },
+  {
+   "from": 460,
+   "dur": 144,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.091,
+     "text": "Thận bù bằng cách giữ HCO₃⁻ · cần 3–5 ngày"
+    }
+   ]
+  },
+  {
+   "from": 604,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.006,
+     "text": "D: cấp, thận chưa kịp bù → pH thấp"
+    }
+   ]
+  },
+  {
+   "from": 736,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.122,
+     "text": "E: mạn, thận đã bù → pH gần bình thường"
+    }
+   ]
+  },
+  {
+   "from": 868,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.626,
+     "text": "Lưu lại để ôn · xem Bài 6 đầy đủ trên kênh!"
+    }
+   ]
+  }
+ ]
+}
