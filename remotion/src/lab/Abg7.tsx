@@ -253,13 +253,13 @@ const Step: React.FC<{x?: number; y: number; s0: number; c?: string; size?: numb
 const G1: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   const t = useSec();
   const f = useCurrentFrame();
-  const L: [string, string, number, number][] = [['Toan chuyển hoá', K.o2, -260, 0], ['Toan hô hấp', '#E5848D', 0, 0.5], ['Kiềm chuyển hoá', K.hco3, 260, 1]];
+  const L: [string, string, number, number][] = [['Toan chuyển hoá', K.o2, -520, 0], ['Toan hô hấp', '#E5848D', 0, 0.5], ['Kiềm chuyển hoá', K.hco3, 520, 1]];
   return (
     <>
       <Top idx={0} title="Rối loạn toan kiềm hỗn hợp" />
       {L.map(([w, c, dx, d], i) => {
         const a = ap(t, S[0] + d);
-        return <div key={w} style={{position: 'absolute', left: 960 + dx - 230, top: 260 + i * 40 + Math.sin(f / 20 + i) * 8, width: 460, padding: '40px 0', textAlign: 'center', borderRadius: 30, background: `${c}30`, border: `4px solid ${c}`, fontFamily: FONT, fontSize: 44, fontWeight: 900, color: K.txt, opacity: a, transform: `rotate(${(i - 1) * 4}deg)`, boxShadow: '0 20px 40px rgba(0,0,0,.4)'}}>{w}</div>;
+        return <div key={w} style={{position: 'absolute', left: 960 + dx - 230, top: 280 + Math.sin(f / 20 + i * 2) * 10, width: 460, padding: '40px 0', textAlign: 'center', borderRadius: 30, background: `${c}30`, border: `4px solid ${c}`, fontFamily: FONT, fontSize: 44, fontWeight: 900, color: K.txt, opacity: a, transform: `rotate(${(i - 1) * 4}deg)`, boxShadow: '0 20px 40px rgba(0,0,0,.4)'}}>{w}</div>;
       })}
       <Res x={620} y={560} s0={S[1]} c={K.amber}>pH bình thường ≠ không rối loạn</Res>
       <Memo x={660} y={720} w={600} s0={S[2] + 0.3} size={44}>4 manh mối · 3 ca bệnh</Memo>
@@ -401,8 +401,8 @@ const G8: React.FC<{S: number[]; D: number[]}> = ({S}) => {
 const G9: React.FC<{S: number[]; D: number[]}> = ({S}) => (
   <>
     <Top idx={8} title="Cộng dồn hay triệt tiêu?" />
-    <Card x={160} y={200} w={760} h={330} c={K.o2} s0={S[0]} head="CA G · CỘNG DỒN" body="Toan + toan → pH 7,04" size={52} glow={0.3} />
-    <Card x={1000} y={200} w={760} h={330} c={K.green} s0={S[1]} head="CA H · CA I · TRIỆT TIÊU" body="Toan + kiềm → pH bình thường" size={48} glow={0.3} />
+    <Card x={160} y={240} w={760} h={250} c={K.o2} s0={S[0]} head="CA G · CỘNG DỒN" body="Toan + toan → pH 7,04" size={52} glow={0.3} />
+    <Card x={1000} y={240} w={760} h={250} c={K.green} s0={S[1]} head="CA H · CA I · TRIỆT TIÊU" body="Toan + kiềm → pH bình thường" size={48} glow={0.3} />
     <Memo x={460} y={640} w={1000} s0={S[2] + 0.3} size={46}>pH bình thường vẫn đọc đủ 6 bước</Memo>
   </>
 );
@@ -421,7 +421,7 @@ const G10: React.FC<{S: number[]; D: number[]}> = ({S}) => {
           return (
             <div key={q} style={{height: 170, borderRadius: 24, background: 'rgba(245,184,61,.1)', border: `4px solid ${K.amber}`, display: 'flex', alignItems: 'center', gap: 30, padding: '0 40px', opacity: p, transform: `scale(${0.85 + 0.15 * p})`}}>
               <div style={{width: 90, height: 90, borderRadius: '50%', background: K.amber, color: K.ink, fontSize: 54, fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center', flex: 'none'}}>{i + 1}</div>
-              <div style={{fontSize: 46, fontWeight: 900, color: K.txt}}>{chem(q)}</div>
+              <div style={{fontSize: 42, fontWeight: 900, color: K.txt, whiteSpace: 'nowrap'}}>{chem(q)}</div>
             </div>
           );
         })}
