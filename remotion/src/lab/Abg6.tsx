@@ -285,9 +285,9 @@ const F2: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
       <Pill x={vx(v)} y={py(curve(v)) - 90} a={ap(t, S[0] + 0.6)} c={curve(v) > 45 ? K.o2 : curve(v) < 35 ? BLUE : K.green} size={32} dark={false}>{`PaCO₂ ${Math.round(curve(v))}`}</Pill>
       <Tx x={1100} y={300} w={640} al="right" size={36} c={K.o2} b={800} a={ap(t, S[1] + 0.8) * (1 - ap(t, S[2]))}>Thở ít → CO₂ ứ lại</Tx>
       <Tx x={1100} y={300} w={640} al="right" size={36} c={BLUE} b={800} a={ap(t, S[2] + 0.8)}>Thở nhiều → thải CO₂</Tx>
-      <Panel x={160} y={760} w={600} h={130} c={K.amber} s0={S[3]}>
-        <Tx x={20} y={20} w={560} al="center" size={30} b={800}>Thở nhanh nông: khí đi qua khoảng chết</Tx>
-        <Tx x={20} y={70} w={560} al="center" size={26} c={K.dim}>thông khí phế nang vẫn có thể giảm</Tx>
+      <Panel x={90} y={790} w={700} h={140} c={K.amber} s0={S[3]}>
+        <Tx x={20} y={22} w={660} al="center" size={30} b={800}>Thở nhanh nông: khí qua khoảng chết</Tx>
+        <Tx x={20} y={80} w={660} al="center" size={26} c={K.dim}>thông khí phế nang vẫn có thể giảm</Tx>
       </Panel>
     </>
   );
@@ -344,9 +344,10 @@ const F5: React.FC<{S: number[]; D: number[]}> = ({S}) => {
       <Slip s0={S[0]} rows={ROWS_D} hl={t > S[2] ? ['hco3'] : t > S[1] ? ['co2', 'hco3', 'ph'] : ['co2']} x={160} y={170} title="D · QUÁ LIỀU OPIOID" />
       <Slip s0={S[0] + 0.4} rows={ROWS_E} hl={t > S[4] ? ['hco3'] : t > S[3] ? ['co2', 'hco3', 'ph'] : ['co2']} x={1000} y={170} title="E · COPD ỔN ĐỊNH" />
       <Tx x={160} y={560} w={760} al="center" size={36} b={800} a={ap(t, S[2])}>PaCO₂ ↑ 20 · HCO₃⁻ chỉ ↑ 2</Tx>
-      <Res x={300} y={630} s0={S[2] + 1} c={K.o2}>TOAN HH CẤP</Res>
+      <Res x={360} y={630} s0={S[2] + 1} c={K.o2}>TOAN HH CẤP</Res>
       <Tx x={1000} y={560} w={760} al="center" size={36} b={800} a={ap(t, S[4])}>PaCO₂ ↑ 20 · HCO₃⁻ ↑ 7</Tx>
-      <Res x={1120} y={630} s0={S[4] + 1} c={K.amber}>TOAN HH MẠN · thận đã bù</Res>
+      <Res x={1200} y={630} s0={S[4] + 1} c={K.amber}>TOAN HH MẠN</Res>
+      <Tx x={1000} y={740} w={760} al="center" size={34} c={K.amber} b={800} a={ap(t, S[4] + 1.4)}>thận đã bù</Tx>
     </>
   );
 };
@@ -376,9 +377,9 @@ const F7: React.FC<{S: number[]; D: number[]}> = ({S}) => {
     <>
       <Top idx={6} title="Kiềm hô hấp: tăng thông khí" />
       <Pill x={960} y={160} a={ap(t, S[0])} c={BLUE} size={34}>PHẦN 2 · PaCO₂ &lt; 35</Pill>
-      <Card x={120} y={260} w={540} h={420} c={K.o2} s0={S[1]} head="THIẾU OXY" body="Thuyên tắc phổi · viêm phổi · lên vùng cao" size={40} />
-      <Card x={690} y={260} w={540} h={420} c={K.amber} s0={S[2]} head="KÍCH THÍCH TRUNG TÂM" body="Sốt · nhiễm khuẩn huyết · xơ gan · thai kỳ · salicylate" size={40} />
-      <Card x={1260} y={260} w={540} h={420} c={BLUE} s0={S[3]} head="KHÁC" body="Đau · lo âu · thở máy quá mức" size={40} />
+      <Card x={120} y={300} w={540} h={280} c={K.o2} s0={S[1]} head="THIẾU OXY" body="Thuyên tắc phổi · viêm phổi · lên vùng cao" size={40} />
+      <Card x={690} y={300} w={540} h={280} c={K.amber} s0={S[2]} head="KÍCH THÍCH TRUNG TÂM" body="Sốt · nhiễm khuẩn huyết · xơ gan · thai kỳ · salicylate" size={40} />
+      <Card x={1260} y={300} w={540} h={280} c={BLUE} s0={S[3]} head="KHÁC" body="Đau · lo âu · thở máy quá mức" size={40} />
     </>
   );
 };
@@ -444,8 +445,8 @@ const F11: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   return (
     <>
       <Top idx={10} title="Ôn tập" />
-      <Card x={160} y={220} w={760} h={360} c={K.o2} s0={S[0]} head="PaCO₂ ↑ · TOAN HÔ HẤP" body="Tìm chỗ giảm thông khí · HCO₃⁻ cho biết cấp hay mạn" size={42} />
-      <Card x={1000} y={220} w={760} h={360} c={BLUE} s0={S[1]} head="PaCO₂ ↓ · KIỀM HÔ HẤP" body="Tìm nguyên nhân tăng thông khí · loại trừ bệnh nguy hiểm" size={42} />
+      <Card x={160} y={260} w={760} h={270} c={K.o2} s0={S[0]} head="PaCO₂ ↑ · TOAN HÔ HẤP" body="Tìm chỗ giảm thông khí · HCO₃⁻ cho biết cấp hay mạn" size={42} />
+      <Card x={1000} y={260} w={760} h={270} c={BLUE} s0={S[1]} head="PaCO₂ ↓ · KIỀM HÔ HẤP" body="Tìm nguyên nhân tăng thông khí · loại trừ bệnh nguy hiểm" size={42} />
       {nx > 0.01 && (
         <div style={{position: 'absolute', left: 560, top: 680, width: 800, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 18, padding: '16px 0', borderRadius: 999, border: `2px solid ${K.amber}`, background: 'rgba(245,184,61,.08)', fontFamily: FONT, opacity: Math.min(1, nx * 1.5)}}>
           <span style={{fontSize: 28, fontWeight: 800, color: K.amber, letterSpacing: 1}}>BÀI 7</span>
