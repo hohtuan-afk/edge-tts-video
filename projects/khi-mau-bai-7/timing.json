@@ -1,0 +1,247 @@
+[
+ {
+  "orig": 12.0,
+  "dur": 11.44,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.377,
+    "text": "Một bệnh nhân · có thể nhiều rối loạn cùng lúc"
+   },
+   {
+    "start": 4.227,
+    "dur": 2.575,
+    "text": "pH bình thường ≠ không có rối loạn"
+   },
+   {
+    "start": 7.152,
+    "dur": 2.803,
+    "text": "Bài này: 4 manh mối · 3 ca bệnh"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 11.6,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.765,
+    "text": "Manh mối 1: bù trừ không đúng dự kiến"
+   },
+   {
+    "start": 3.615,
+    "dur": 3.568,
+    "text": "Bù ít hơn hoặc nhiều hơn → có rối loạn thứ hai"
+   },
+   {
+    "start": 7.533,
+    "dur": 2.552,
+    "text": "Bù trừ hiếm khi đưa pH về hẳn bình thường"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 17.44,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.573,
+    "text": "Manh mối 2: PaCO₂ và HCO₃⁻ đi ngược chiều"
+   },
+   {
+    "start": 4.423,
+    "dur": 2.407,
+    "text": "Bù trừ luôn đi CÙNG chiều"
+   },
+   {
+    "start": 7.18,
+    "dur": 4.242,
+    "text": "PaCO₂ ↑ + HCO₃⁻ ↓ → toan hô hấp + toan chuyển hoá"
+   },
+   {
+    "start": 11.772,
+    "dur": 4.152,
+    "text": "PaCO₂ ↓ + HCO₃⁻ ↑ → kiềm hô hấp + kiềm chuyển hoá"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 15.84,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.845,
+    "text": "Manh mối 3: luôn tính AG, kể cả khi pH bình thường"
+   },
+   {
+    "start": 4.695,
+    "dur": 3.746,
+    "text": "Manh mối 4: delta–delta khi AG tăng"
+   },
+   {
+    "start": 8.791,
+    "dur": 5.536,
+    "text": "< 1: thêm toan AG bình thường · > 2: thêm kiềm chuyển hoá"
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 26.6,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.288,
+    "text": "Ca G: vừa hồi sức ngưng tim"
+   },
+   {
+    "start": 3.138,
+    "dur": 4.364,
+    "text": "pH 7,04 · PaCO₂ 50 · HCO₃⁻ 13"
+   },
+   {
+    "start": 7.852,
+    "dur": 4.849,
+    "text": "PaCO₂ ↑ và HCO₃⁻ ↓ → ngược chiều!"
+   },
+   {
+    "start": 13.052,
+    "dur": 6.312,
+    "text": "Winter: 1,5 × 13 + 8 ≈ 27,5 ± 2 · PaCO₂ thật 50"
+   },
+   {
+    "start": 19.714,
+    "dur": 5.399,
+    "text": "→ toan chuyển hoá + toan hô hấp"
+   }
+  ]
+ },
+ {
+  "orig": 21.0,
+  "dur": 29.12,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.62,
+    "text": "Ca H: sốt, lơ mơ, thở nhanh"
+   },
+   {
+    "start": 3.47,
+    "dur": 6.086,
+    "text": "pH 7,44 · PaCO₂ 20 · HCO₃⁻ 13 · AG 23"
+   },
+   {
+    "start": 9.906,
+    "dur": 3.631,
+    "text": "pH bình thường, nhưng HCO₃⁻ và PaCO₂ đều rất thấp"
+   },
+   {
+    "start": 13.886,
+    "dur": 3.838,
+    "text": "AG 23 → toan chuyển hoá tăng AG"
+   },
+   {
+    "start": 18.074,
+    "dur": 5.948,
+    "text": "Winter ≈ 27,5 ± 2 · PaCO₂ thật 20 → thêm kiềm hô hấp"
+   },
+   {
+    "start": 24.372,
+    "dur": 3.246,
+    "text": "Nghĩ: nhiễm khuẩn huyết, ngộ độc salicylate"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 17.32,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.54,
+    "text": "Ca I: đái tháo đường, nôn ói nhiều ngày"
+   },
+   {
+    "start": 3.39,
+    "dur": 4.311,
+    "text": "pH 7,40 · PaCO₂ 40 · HCO₃⁻ 24"
+   },
+   {
+    "start": 8.051,
+    "dur": 1.703,
+    "text": "Khí máu \"hoàn hảo\"?"
+   },
+   {
+    "start": 10.104,
+    "dur": 5.727,
+    "text": "Na⁺ 140 · Cl⁻ 90 → AG = 140 − (90 + 24) = 26"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 19.4,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 6.481,
+    "text": "Δ/Δ = (26 − 12) ÷ (24 − 24) → rất lớn"
+   },
+   {
+    "start": 7.331,
+    "dur": 6.769,
+    "text": "→ toan ceton + kiềm chuyển hoá do nôn"
+   },
+   {
+    "start": 14.449,
+    "dur": 3.442,
+    "text": "Không tính AG → bỏ sót cả hai"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 12.96,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.007,
+    "text": "G: hai rối loạn CỘNG DỒN → pH rất thấp"
+   },
+   {
+    "start": 4.857,
+    "dur": 3.703,
+    "text": "H, I: hai rối loạn TRIỆT TIÊU → pH bình thường"
+   },
+   {
+    "start": 8.91,
+    "dur": 2.566,
+    "text": "pH bình thường vẫn phải đọc đủ 6 bước"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 13.4,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 5.655,
+    "text": "Bù trừ đúng dự kiến? · PaCO₂ và HCO₃⁻ ngược chiều?"
+   },
+   {
+    "start": 6.505,
+    "dur": 3.316,
+    "text": "Luôn tính AG · delta–delta"
+   },
+   {
+    "start": 10.171,
+    "dur": 1.733,
+    "text": "Bài 8: Khí máu trong hồi sức"
+   }
+  ]
+ }
+]
