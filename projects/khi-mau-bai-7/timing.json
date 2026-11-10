@@ -83,73 +83,73 @@
    },
    {
     "start": 8.791,
-    "dur": 5.536,
+    "dur": 5.538,
     "text": "< 1: thêm toan AG bình thường · > 2: thêm kiềm chuyển hoá"
    }
   ]
  },
  {
   "orig": 18.0,
-  "dur": 26.6,
+  "dur": 26.72,
   "sents": [
    {
     "start": 0.5,
-    "dur": 2.288,
-    "text": "Ca G: vừa hồi sức ngưng tim"
+    "dur": 2.389,
+    "text": "Ca số 1: vừa hồi sức ngưng tim"
    },
    {
-    "start": 3.138,
+    "start": 3.239,
     "dur": 4.364,
     "text": "pH 7,04 · PaCO₂ 50 · HCO₃⁻ 13"
    },
    {
-    "start": 7.852,
+    "start": 7.953,
     "dur": 4.849,
     "text": "PaCO₂ ↑ và HCO₃⁻ ↓ → ngược chiều!"
    },
    {
-    "start": 13.052,
+    "start": 13.152,
     "dur": 6.312,
     "text": "Winter: 1,5 × 13 + 8 ≈ 27,5 ± 2 · PaCO₂ thật 50"
    },
    {
-    "start": 19.714,
-    "dur": 5.399,
+    "start": 19.814,
+    "dur": 5.402,
     "text": "→ toan chuyển hoá + toan hô hấp"
    }
   ]
  },
  {
   "orig": 21.0,
-  "dur": 29.12,
+  "dur": 29.32,
   "sents": [
    {
     "start": 0.5,
-    "dur": 2.62,
-    "text": "Ca H: sốt, lơ mơ, thở nhanh"
+    "dur": 2.822,
+    "text": "Ca số 2: sốt, lơ mơ, thở nhanh"
    },
    {
-    "start": 3.47,
+    "start": 3.672,
     "dur": 6.086,
     "text": "pH 7,44 · PaCO₂ 20 · HCO₃⁻ 13 · AG 23"
    },
    {
-    "start": 9.906,
+    "start": 10.108,
     "dur": 3.631,
     "text": "pH bình thường, nhưng HCO₃⁻ và PaCO₂ đều rất thấp"
    },
    {
-    "start": 13.886,
+    "start": 14.088,
     "dur": 3.838,
     "text": "AG 23 → toan chuyển hoá tăng AG"
    },
    {
-    "start": 18.074,
+    "start": 18.276,
     "dur": 5.948,
     "text": "Winter ≈ 27,5 ± 2 · PaCO₂ thật 20 → thêm kiềm hô hấp"
    },
    {
-    "start": 24.372,
+    "start": 24.574,
     "dur": 3.246,
     "text": "Nghĩ: nhiễm khuẩn huyết, ngộ độc salicylate"
    }
@@ -157,25 +157,25 @@
  },
  {
   "orig": 15.0,
-  "dur": 17.32,
+  "dur": 17.48,
   "sents": [
    {
     "start": 0.5,
-    "dur": 2.54,
-    "text": "Ca I: đái tháo đường, nôn ói nhiều ngày"
+    "dur": 2.672,
+    "text": "Ca số 3: đái tháo đường, nôn ói nhiều ngày"
    },
    {
-    "start": 3.39,
+    "start": 3.522,
     "dur": 4.311,
     "text": "pH 7,40 · PaCO₂ 40 · HCO₃⁻ 24"
    },
    {
-    "start": 8.051,
+    "start": 8.183,
     "dur": 1.703,
     "text": "Khí máu \"hoàn hảo\"?"
    },
    {
-    "start": 10.104,
+    "start": 10.236,
     "dur": 5.727,
     "text": "Na⁺ 140 · Cl⁻ 90 → AG = 140 − (90 + 24) = 26"
    }
@@ -204,20 +204,20 @@
  },
  {
   "orig": 12.0,
-  "dur": 12.96,
+  "dur": 13.4,
   "sents": [
    {
     "start": 0.5,
-    "dur": 4.007,
-    "text": "G: hai rối loạn CỘNG DỒN → pH rất thấp"
+    "dur": 4.169,
+    "text": "Ca 1: hai rối loạn CỘNG DỒN → pH rất thấp"
    },
    {
-    "start": 4.857,
-    "dur": 3.703,
-    "text": "H, I: hai rối loạn TRIỆT TIÊU → pH bình thường"
+    "start": 5.019,
+    "dur": 3.946,
+    "text": "Ca 2, ca 3: hai rối loạn TRIỆT TIÊU → pH bình thường"
    },
    {
-    "start": 8.91,
+    "start": 9.315,
     "dur": 2.566,
     "text": "pH bình thường vẫn phải đọc đủ 6 bước"
    }
