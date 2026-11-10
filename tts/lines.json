@@ -1,163 +1,35 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+8%",
+ "rate": "+12%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Rối loạn toan kiềm hô hấp xoay quanh một con số: pê a xê ô hai."
-  },
-  {
-   "id": "00-1",
-   "text": "Pê a xê ô hai trên bốn mươi lăm là toan hô hấp. Dưới ba mươi lăm là kiềm hô hấp."
-  },
-  {
-   "id": "00-2",
-   "text": "Pê a xê ô hai chính là nhiệt kế đo thông khí của phổi."
+   "text": "Hai người cùng pê a xê ô hai sáu mươi. Sao pê hát lại khác nhau?"
   },
   {
    "id": "01-0",
-   "text": "Pê a xê ô hai tỉ lệ nghịch với thông khí phế nang."
-  },
-  {
-   "id": "01-1",
-   "text": "Thở ít, xê ô hai ứ lại, pê a xê ô hai tăng."
-  },
-  {
-   "id": "01-2",
-   "text": "Thở nhiều, xê ô hai bị thải ra nhiều, pê a xê ô hai giảm."
-  },
-  {
-   "id": "01-3",
-   "text": "Lưu ý: thở nhanh mà nông, khí chủ yếu đi qua khoảng chết, nên thông khí phế nang vẫn có thể giảm."
+   "text": "Người D quá liều ô pi ô ít: pê hát bảy phẩy hai sáu, bi các bô nát hai mươi sáu."
   },
   {
    "id": "02-0",
-   "text": "Phần một: toan hô hấp. Hãy tìm chỗ hỏng trên đường đi của một nhịp thở."
-  },
-  {
-   "id": "02-1",
-   "text": "Ở trung tâm hô hấp: thuốc an thần, thuốc nhóm ô pi ô ít, tổn thương thân não."
-  },
-  {
-   "id": "02-2",
-   "text": "Ở thần kinh và cơ: Ghi-lanh Ba-rê, nhược cơ, tổn thương tuỷ cổ."
-  },
-  {
-   "id": "02-3",
-   "text": "Ở thành ngực: béo phì nặng, gù vẹo cột sống."
-  },
-  {
-   "id": "02-4",
-   "text": "Ở đường thở và phổi: bệnh phổi tắc nghẽn mạn tính, hen phế quản nặng."
+   "text": "Người E bị bệnh phổi tắc nghẽn mạn tính: pê hát bảy phẩy ba tư, bi các bô nát ba mươi mốt."
   },
   {
    "id": "03-0",
-   "text": "Thận bù toan hô hấp bằng cách giữ bi các bô nát, nhưng cần ba đến năm ngày."
-  },
-  {
-   "id": "03-1",
-   "text": "Pê a xê ô hai tăng mười: bi các bô nát tăng một nếu cấp, tăng ba phẩy năm đến bốn nếu mạn."
-  },
-  {
-   "id": "03-2",
-   "text": "Vì vậy, nhìn bi các bô nát sẽ biết toan hô hấp cấp hay mạn."
+   "text": "Bí mật nằm ở thận: thận giữ bi các bô nát để bù, nhưng cần ba đến năm ngày."
   },
   {
    "id": "04-0",
-   "text": "Hai bệnh nhân, cùng pê a xê ô hai sáu mươi."
-  },
-  {
-   "id": "04-1",
-   "text": "Người D quá liều ô pi ô ít: bi các bô nát hai mươi sáu, pê hát bảy phẩy hai sáu."
-  },
-  {
-   "id": "04-2",
-   "text": "Pê a xê ô hai tăng hai mươi, bi các bô nát chỉ tăng hai. Đây là toan hô hấp cấp."
-  },
-  {
-   "id": "04-3",
-   "text": "Người E bị bệnh phổi tắc nghẽn mạn tính ổn định: bi các bô nát ba mươi mốt, pê hát bảy phẩy ba tư."
-  },
-  {
-   "id": "04-4",
-   "text": "Bi các bô nát tăng bảy. Đây là toan hô hấp mạn, thận đã bù."
+   "text": "Người D bị cấp, thận chưa kịp bù, nên pê hát rất thấp."
   },
   {
    "id": "05-0",
-   "text": "Ở người bệnh phổi tắc nghẽn mạn tính có giữ xê ô hai, cần cẩn thận khi cho ô xy."
-  },
-  {
-   "id": "05-1",
-   "text": "Cho ô xy quá mức có thể làm pê a xê ô hai tăng thêm."
-  },
-  {
-   "id": "05-2",
-   "text": "Mục tiêu ét pê ô hai thường là tám mươi tám đến chín mươi hai phần trăm."
+   "text": "Người E bị mạn, thận đã bù, nên pê hát gần bình thường."
   },
   {
    "id": "06-0",
-   "text": "Phần hai: kiềm hô hấp, khi pê a xê ô hai dưới ba mươi lăm, do tăng thông khí."
-  },
-  {
-   "id": "06-1",
-   "text": "Do thiếu ô xy: thuyên tắc phổi, viêm phổi, lên vùng cao."
-  },
-  {
-   "id": "06-2",
-   "text": "Do kích thích trung tâm hô hấp: sốt, nhiễm khuẩn huyết, xơ gan, thai kỳ, ngộ độc sa li xy lát."
-  },
-  {
-   "id": "06-3",
-   "text": "Ngoài ra còn do đau, lo âu, hoặc cài máy thở quá mức."
-  },
-  {
-   "id": "07-0",
-   "text": "Thận bù kiềm hô hấp bằng cách thải bớt bi các bô nát."
-  },
-  {
-   "id": "07-1",
-   "text": "Pê a xê ô hai giảm mười: bi các bô nát giảm hai nếu cấp, giảm bốn đến năm nếu mạn."
-  },
-  {
-   "id": "08-0",
-   "text": "Người F khó thở đột ngột sau phẫu thuật."
-  },
-  {
-   "id": "08-1",
-   "text": "Pê hát bảy phẩy bốn chín, pê a xê ô hai ba mươi, bi các bô nát hai mươi hai, pê a ô hai sáu mươi hai."
-  },
-  {
-   "id": "08-2",
-   "text": "Pê a xê ô hai giảm mười, bi các bô nát giảm hai. Đây là kiềm hô hấp cấp."
-  },
-  {
-   "id": "08-3",
-   "text": "Chênh lệch A a khoảng năm mươi, tăng. Phổi có vấn đề."
-  },
-  {
-   "id": "08-4",
-   "text": "Bệnh cảnh này cần nghĩ đến thuyên tắc phổi."
-  },
-  {
-   "id": "09-0",
-   "text": "Bài học: gặp kiềm hô hấp, đừng vội kết luận là do lo âu."
-  },
-  {
-   "id": "09-1",
-   "text": "Phải loại trừ trước các nguyên nhân nguy hiểm: thuyên tắc phổi, nhiễm khuẩn huyết, ngộ độc sa li xy lát."
-  },
-  {
-   "id": "10-0",
-   "text": "Ôn tập. Pê a xê ô hai tăng là toan hô hấp: tìm chỗ giảm thông khí, nhìn bi các bô nát để biết cấp hay mạn."
-  },
-  {
-   "id": "10-1",
-   "text": "Pê a xê ô hai giảm là kiềm hô hấp: tìm nguyên nhân tăng thông khí, và loại trừ bệnh nguy hiểm trước."
-  },
-  {
-   "id": "10-2",
-   "text": "Bài sau: rối loạn toan kiềm hỗn hợp."
+   "text": "Lưu lại để ôn, và xem bài sáu đầy đủ trên kênh nhé!"
   }
  ]
 }
