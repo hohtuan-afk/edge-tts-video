@@ -25,9 +25,9 @@ NARR = [
   ],
   [  # 5 Hai ca D, E
     ("Hai bệnh nhân, cùng PaCO₂ 60", "Hai bệnh nhân, cùng pê a xê ô hai sáu mươi."),
-    ("D: quá liều opioid · HCO₃⁻ 26 · pH 7,25", "Người D quá liều ô pi ô ít: bi các bô nát hai mươi sáu, pê hát bảy phẩy hai lăm."),
+    ("D: quá liều opioid · HCO₃⁻ 26 · pH 7,26", "Người D quá liều ô pi ô ít: bi các bô nát hai mươi sáu, pê hát bảy phẩy hai sáu."),
     ("HCO₃⁻ ↑ 2 cho PaCO₂ ↑ 20 → CẤP", "Pê a xê ô hai tăng hai mươi, bi các bô nát chỉ tăng hai. Đây là toan hô hấp cấp."),
-    ("E: COPD ổn định · HCO₃⁻ 31 · pH 7,33", "Người E bị bệnh phổi tắc nghẽn mạn tính ổn định: bi các bô nát ba mươi mốt, pê hát bảy phẩy ba ba."),
+    ("E: COPD ổn định · HCO₃⁻ 31 · pH 7,34", "Người E bị bệnh phổi tắc nghẽn mạn tính ổn định: bi các bô nát ba mươi mốt, pê hát bảy phẩy ba tư."),
     ("HCO₃⁻ ↑ 7 → MẠN · thận đã bù", "Bi các bô nát tăng bảy. Đây là toan hô hấp mạn, thận đã bù."),
   ],
   [  # 6 COPD và oxy
