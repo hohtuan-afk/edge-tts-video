@@ -1,0 +1,83 @@
+{
+ "fps": 30,
+ "total": 1091,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.109,
+     "text": "Khí máu \"hoàn hảo\" mà vẫn có 2 rối loạn?"
+    }
+   ]
+  },
+  {
+   "from": 132,
+   "dur": 204,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 6.104,
+     "text": "pH 7,40 · PaCO₂ 40 · HCO₃⁻ 24"
+    }
+   ]
+  },
+  {
+   "from": 336,
+   "dur": 187,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 5.527,
+     "text": "Nhưng Na⁺ 140 · Cl⁻ 90 → AG = 26"
+    }
+   ]
+  },
+  {
+   "from": 523,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.523,
+     "text": "AG tăng → có nhiễm toan ceton"
+    }
+   ]
+  },
+  {
+   "from": 655,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.615,
+     "text": "HCO₃⁻ không giảm → thêm kiềm chuyển hoá do nôn"
+    }
+   ]
+  },
+  {
+   "from": 787,
+   "dur": 172,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 5.005,
+     "text": "Triệt tiêu nhau → pH bình thường · luôn tính AG!"
+    }
+   ]
+  },
+  {
+   "from": 959,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.605,
+     "text": "Lưu lại để ôn · xem Bài 7 đầy đủ trên kênh!"
+    }
+   ]
+  }
+ ]
+}
