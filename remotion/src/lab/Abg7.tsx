@@ -12,7 +12,7 @@ const K = {
   txt: '#F2F7F9', dim: '#A7BAC4', ink: '#22303A', muted: '#60707A', amber: '#F5B83D',
   ph: '#F2B632', co2: '#38A7DD', hco3: '#F2813D', o2: '#E5484D', green: '#3FB27F', line: 'rgba(190,220,235,.2)',
 };
-const NAMES = ['MỞ ĐẦU', 'MANH MỐI 1', 'MANH MỐI 2', 'MANH MỐI 3–4', 'CA G', 'CA H', 'CA I', 'GIẢI CA I', 'TỔNG KẾT', 'ÔN TẬP'];
+const NAMES = ['MỞ ĐẦU', 'MANH MỐI 1', 'MANH MỐI 2', 'MANH MỐI 3–4', 'CA 1', 'CA 2', 'CA 3', 'GIẢI CA 3', 'TỔNG KẾT', 'ÔN TẬP'];
 
 const useSec = () => useCurrentFrame() / 30;
 const usePop = (s0: number, damping = 14) => {
@@ -335,8 +335,8 @@ const G5: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   const t = useSec();
   return (
     <>
-      <Top idx={4} title="Ca G · vừa hồi sức ngưng tim" />
-      <Slip s0={S[0]} rows={ROWS_G} hl={t > S[3] ? ['co2', 'hco3'] : t > S[2] ? ['co2', 'hco3'] : t > S[1] ? ['ph', 'co2', 'hco3'] : []} title="CA G" y={190} />
+      <Top idx={4} title="Ca số 1 · vừa hồi sức ngưng tim" />
+      <Slip s0={S[0]} rows={ROWS_G} hl={t > S[3] ? ['co2', 'hco3'] : t > S[2] ? ['co2', 'hco3'] : t > S[1] ? ['ph', 'co2', 'hco3'] : []} title="CA SỐ 1" y={190} />
       <Step y={200} s0={S[2]} c={K.o2}>PaCO₂ ↑ · HCO₃⁻ ↓ → NGƯỢC CHIỀU!</Step>
       <Gold x={680} y={290} a={ap(t, S[3])} size={40}>Winter: 1,5 × 13 + 8 ≈ 27,5 ± 2</Gold>
       <Step y={400} s0={S[3] + 1.2}>PaCO₂ thật 50 ≫ 27,5</Step>
@@ -351,8 +351,8 @@ const G6: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   const t = useSec();
   return (
     <>
-      <Top idx={5} title="Ca H · sốt, lơ mơ, thở nhanh" />
-      <Slip s0={S[0]} rows={ROWS_H} hl={t > S[4] ? ['co2'] : t > S[3] ? ['ag'] : t > S[2] ? ['ph', 'co2', 'hco3'] : []} title="CA H" y={190} />
+      <Top idx={5} title="Ca số 2 · sốt, lơ mơ, thở nhanh" />
+      <Slip s0={S[0]} rows={ROWS_H} hl={t > S[4] ? ['co2'] : t > S[3] ? ['ag'] : t > S[2] ? ['ph', 'co2', 'hco3'] : []} title="CA SỐ 2" y={190} />
       <Step y={200} s0={S[2]} c={K.green}>pH bình thường… nhưng HCO₃⁻, PaCO₂ rất thấp</Step>
       <Res x={680} y={280} s0={S[3]} c={K.o2}>AG 23 → toan CH tăng AG</Res>
       <Step y={420} s0={S[4]}>Winter ≈ 27,5 ± 2 · PaCO₂ thật 20</Step>
@@ -370,8 +370,8 @@ const G7: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   const f = useCurrentFrame();
   return (
     <>
-      <Top idx={6} title="Ca I · đái tháo đường, nôn ói" />
-      <Slip s0={S[0]} rows={t > S[3] ? ROWS_I : ROWS_I.slice(0, 3)} hl={t > S[3] ? ['na', 'cl', 'hco3'] : t > S[1] ? ['ph', 'co2', 'hco3'] : []} title="CA I" y={170} />
+      <Top idx={6} title="Ca số 3 · đái tháo đường, nôn ói" />
+      <Slip s0={S[0]} rows={t > S[3] ? ROWS_I : ROWS_I.slice(0, 3)} hl={t > S[3] ? ['na', 'cl', 'hco3'] : t > S[1] ? ['ph', 'co2', 'hco3'] : []} title="CA SỐ 3" y={170} />
       <div style={{position: 'absolute', left: 720, top: 230, fontFamily: FONT, opacity: ap(t, S[2]) * (1 - ap(t, S[3]) * 0.6)}}>
         <div style={{fontSize: 90, fontWeight: 900, color: K.green, transform: `rotate(${Math.sin(f / 10) * 2}deg)`}}>✓ ✓ ✓ hoàn hảo?</div>
       </div>
@@ -386,7 +386,7 @@ const G8: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   const t = useSec();
   return (
     <>
-      <Top idx={7} title="Giải ca I" />
+      <Top idx={7} title="Giải ca số 3" />
       <GoldC y={180} a={ap(t, S[0])} size={46}>Δ/Δ = (26 − 12) ÷ (24 − 24) → rất lớn</GoldC>
       <Card x={160} y={340} w={760} h={240} c={K.o2} s0={S[1]} head="AG TĂNG" body="Nhiễm toan ceton" size={52} />
       <Big x={880} y={380} w={160} a={ap(t, S[1] + 0.5)} size={110} c={K.amber}>+</Big>
@@ -401,8 +401,8 @@ const G8: React.FC<{S: number[]; D: number[]}> = ({S}) => {
 const G9: React.FC<{S: number[]; D: number[]}> = ({S}) => (
   <>
     <Top idx={8} title="Cộng dồn hay triệt tiêu?" />
-    <Card x={160} y={240} w={760} h={250} c={K.o2} s0={S[0]} head="CA G · CỘNG DỒN" body="Toan + toan → pH 7,04" size={52} glow={0.3} />
-    <Card x={1000} y={240} w={760} h={250} c={K.green} s0={S[1]} head="CA H · CA I · TRIỆT TIÊU" body="Toan + kiềm → pH bình thường" size={48} glow={0.3} />
+    <Card x={160} y={240} w={760} h={250} c={K.o2} s0={S[0]} head="CA SỐ 1 · CỘNG DỒN" body="Toan + toan → pH 7,04" size={52} glow={0.3} />
+    <Card x={1000} y={240} w={760} h={250} c={K.green} s0={S[1]} head="CA SỐ 2 · SỐ 3 · TRIỆT TIÊU" body="Toan + kiềm → pH bình thường" size={48} glow={0.3} />
     <Memo x={460} y={640} w={1000} s0={S[2] + 0.3} size={46}>pH bình thường vẫn đọc đủ 6 bước</Memo>
   </>
 );
