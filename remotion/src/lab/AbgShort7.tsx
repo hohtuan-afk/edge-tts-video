@@ -137,7 +137,7 @@ const VSlip: React.FC<{s0: number; full?: boolean; agOn?: boolean}> = ({s0, full
   const rows: [string, string, boolean][] = [['pH', '7,40', true], ['PaCO₂', '40', true], ['HCO₃⁻', '24', true]];
   const ext: [string, string][] = [['Na⁺', '140'], ['Cl⁻', '90']];
   return (
-    <div style={{position: 'absolute', left: 140, right: 140, top: 400, padding: '30px 44px', borderRadius: 30, background: '#F4F1EA', boxShadow: '0 30px 60px rgba(0,0,0,.5)', fontFamily: FONT, color: K.ink, opacity: Math.min(1, p * 1.4), transform: `rotate(-1.5deg) scale(${0.9 + 0.1 * p})`}}>
+    <div style={{position: 'absolute', left: 140, right: 140, top: 360, padding: '30px 44px', borderRadius: 30, background: '#F4F1EA', boxShadow: '0 30px 60px rgba(0,0,0,.5)', fontFamily: FONT, color: K.ink, opacity: Math.min(1, p * 1.4), transform: `rotate(-1.5deg) scale(${0.9 + 0.1 * p})`}}>
       <div style={{fontSize: 34, fontWeight: 800, letterSpacing: 4, color: '#6B5A3A'}}>CA SỐ 3</div>
       <div style={{height: 4, background: '#CDBFA5', margin: '12px 0'}} />
       {rows.map(([n, v, ok]) => (
@@ -168,9 +168,9 @@ const Big2: React.FC<{c: string; head: string; body: string; s0?: number}> = ({c
     </div>
   );
 };
-const S0: React.FC = () => (<><Title c={K.green} sub="mà vẫn có 2 rối loạn?">KHÍ MÁU HOÀN HẢO</Title><VSlip s0={0.6} /></>);
-const S1: React.FC = () => (<><Title c={K.green}>TẤT CẢ BÌNH THƯỜNG?</Title><VSlip s0={0} /></>);
-const S2: React.FC = () => (<><Title c={K.o2}>NHƯNG…</Title><VSlip s0={0} full agOn /><Badge s0={2.2} c={K.o2}>AG = 140 − (90 + 24) = 26</Badge></>);
+const S0: React.FC = () => (<><Title c={K.green} sub="mà vẫn có 2 rối loạn?">HOÀN HẢO?</Title><VSlip s0={0.6} /></>);
+const S1: React.FC = () => (<><Title c={K.green}>BÌNH THƯỜNG?</Title><VSlip s0={0} /></>);
+const S2: React.FC = () => (<><Title c={K.o2}>NHƯNG…</Title><VSlip s0={0} full agOn /></>);
 const S3: React.FC = () => <Big2 c={K.o2} head="AG TĂNG" body="Nhiễm toan ceton" />;
 const S4: React.FC = () => <Big2 c={K.hco3} head="HCO₃⁻ không giảm" body="+ Kiềm chuyển hoá do nôn" />;
 const S5: React.FC = () => (<><Big2 c={K.green} head="TRIỆT TIÊU NHAU" body="pH vẫn 7,40" /><Badge s0={1.6} c={K.amber}>Luôn tính AG!</Badge></>);
