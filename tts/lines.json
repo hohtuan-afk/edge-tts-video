@@ -1,35 +1,155 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+12%",
+ "rate": "+8%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Hai người cùng pê a xê ô hai sáu mươi. Sao pê hát lại khác nhau?"
+   "text": "Một bệnh nhân có thể mang hai, thậm chí ba rối loạn toan kiềm cùng lúc."
+  },
+  {
+   "id": "00-1",
+   "text": "Và pê hát bình thường không có nghĩa là không có rối loạn."
+  },
+  {
+   "id": "00-2",
+   "text": "Bài này sẽ cho bạn bốn manh mối, và giải ba ca bệnh."
   },
   {
    "id": "01-0",
-   "text": "Người D quá liều ô pi ô ít: pê hát bảy phẩy hai sáu, bi các bô nát hai mươi sáu."
+   "text": "Manh mối một: bù trừ không khớp với công thức dự kiến."
+  },
+  {
+   "id": "01-1",
+   "text": "Bù ít hơn hay nhiều hơn dự kiến đều có nghĩa là có thêm một rối loạn thứ hai."
+  },
+  {
+   "id": "01-2",
+   "text": "Nhớ rằng bù trừ hiếm khi đưa pê hát về hẳn bình thường."
   },
   {
    "id": "02-0",
-   "text": "Người E bị bệnh phổi tắc nghẽn mạn tính: pê hát bảy phẩy ba tư, bi các bô nát ba mươi mốt."
+   "text": "Manh mối hai: pê a xê ô hai và bi các bô nát đi ngược chiều nhau."
+  },
+  {
+   "id": "02-1",
+   "text": "Bù trừ bình thường luôn làm hai chỉ số đi cùng chiều."
+  },
+  {
+   "id": "02-2",
+   "text": "Pê a xê ô hai tăng mà bi các bô nát giảm: toan hô hấp cộng toan chuyển hoá."
+  },
+  {
+   "id": "02-3",
+   "text": "Pê a xê ô hai giảm mà bi các bô nát tăng: kiềm hô hấp cộng kiềm chuyển hoá."
   },
   {
    "id": "03-0",
-   "text": "Bí mật nằm ở thận: thận giữ bi các bô nát để bù, nhưng cần ba đến năm ngày."
+   "text": "Manh mối ba: luôn tính khoảng trống a ni on, kể cả khi pê hát bình thường."
+  },
+  {
+   "id": "03-1",
+   "text": "Manh mối bốn: tính tỉ số đen ta đen ta khi khoảng trống a ni on tăng."
+  },
+  {
+   "id": "03-2",
+   "text": "Dưới một: có thêm toan khoảng trống a ni on bình thường. Trên hai: có thêm kiềm chuyển hoá."
   },
   {
    "id": "04-0",
-   "text": "Người D bị cấp, thận chưa kịp bù, nên pê hát rất thấp."
+   "text": "Ca G: bệnh nhân vừa được hồi sức ngưng tim."
+  },
+  {
+   "id": "04-1",
+   "text": "Pê hát bảy phẩy không bốn, pê a xê ô hai năm mươi, bi các bô nát mười ba."
+  },
+  {
+   "id": "04-2",
+   "text": "Pê a xê ô hai tăng, bi các bô nát giảm. Hai chỉ số đi ngược chiều."
+  },
+  {
+   "id": "04-3",
+   "text": "Theo công thức Uyn-tơ, pê a xê ô hai dự kiến khoảng hai mươi bảy. Pê a xê ô hai thật là năm mươi."
+  },
+  {
+   "id": "04-4",
+   "text": "Kết luận: toan chuyển hoá cộng toan hô hấp. Hai rối loạn cộng dồn, nên pê hát rất thấp."
   },
   {
    "id": "05-0",
-   "text": "Người E bị mạn, thận đã bù, nên pê hát gần bình thường."
+   "text": "Ca H: sốt, lơ mơ, thở rất nhanh."
+  },
+  {
+   "id": "05-1",
+   "text": "Pê hát bảy phẩy bốn bốn, pê a xê ô hai hai mươi, bi các bô nát mười ba, khoảng trống a ni on hai mươi ba."
+  },
+  {
+   "id": "05-2",
+   "text": "Pê hát bình thường, nhưng bi các bô nát và pê a xê ô hai đều rất thấp."
+  },
+  {
+   "id": "05-3",
+   "text": "Khoảng trống a ni on hai mươi ba: có toan chuyển hoá tăng khoảng trống a ni on."
+  },
+  {
+   "id": "05-4",
+   "text": "Pê a xê ô hai dự kiến khoảng hai mươi bảy, thật là hai mươi, thấp hơn nhiều. Có thêm kiềm hô hấp."
+  },
+  {
+   "id": "05-5",
+   "text": "Bệnh cảnh này gợi ý nhiễm khuẩn huyết, hoặc ngộ độc sa li xy lát."
   },
   {
    "id": "06-0",
-   "text": "Lưu lại để ôn, và xem bài sáu đầy đủ trên kênh nhé!"
+   "text": "Ca I: đái tháo đường, nôn ói nhiều ngày."
+  },
+  {
+   "id": "06-1",
+   "text": "Pê hát bảy phẩy bốn, pê a xê ô hai bốn mươi, bi các bô nát hai mươi tư."
+  },
+  {
+   "id": "06-2",
+   "text": "Một phiếu khí máu tưởng như hoàn hảo."
+  },
+  {
+   "id": "06-3",
+   "text": "Nhưng na tri một trăm bốn mươi, clo chín mươi. Khoảng trống a ni on bằng hai mươi sáu, tăng."
+  },
+  {
+   "id": "07-0",
+   "text": "Tỉ số đen ta đen ta: khoảng trống a ni on tăng mười bốn, mà bi các bô nát không giảm. Tỉ số rất lớn."
+  },
+  {
+   "id": "07-1",
+   "text": "Kết luận: nhiễm toan xê tôn, cộng kiềm chuyển hoá do nôn. Hai rối loạn triệt tiêu nhau, nên pê hát bình thường."
+  },
+  {
+   "id": "07-2",
+   "text": "Nếu không tính khoảng trống a ni on, ta đã bỏ sót cả hai rối loạn."
+  },
+  {
+   "id": "08-0",
+   "text": "Tổng kết. Ca G: hai rối loạn cộng dồn, pê hát rất thấp."
+  },
+  {
+   "id": "08-1",
+   "text": "Ca H và ca I: hai rối loạn triệt tiêu nhau, pê hát lại bình thường."
+  },
+  {
+   "id": "08-2",
+   "text": "Vì vậy, pê hát bình thường vẫn phải đọc đủ sáu bước."
+  },
+  {
+   "id": "09-0",
+   "text": "Ôn lại bốn manh mối: bù trừ có đúng dự kiến không, pê a xê ô hai và bi các bô nát có đi ngược chiều không,"
+  },
+  {
+   "id": "09-1",
+   "text": "luôn tính khoảng trống a ni on, và tính tỉ số đen ta đen ta."
+  },
+  {
+   "id": "09-2",
+   "text": "Bài sau: khí máu trong hồi sức."
   }
  ]
 }
