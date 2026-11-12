@@ -260,7 +260,7 @@ const Trend: React.FC<{x: number; y: number; w: number; h: number; a: number; dr
   return (
     <svg style={{position: 'absolute', left: 0, top: 0, width: 1920, height: 1080, overflow: 'visible', opacity: a}}>
       <line x1={x + 40} y1={py(2)} x2={x + w - 20} y2={py(2)} stroke={K.amber} strokeWidth={3} strokeDasharray="10 8" />
-      <text x={x + w - 20} y={py(2) - 12} textAnchor="end" fontFamily={FONT} fontSize={26} fontWeight={800} fill={K.amber}>2 mmol/L</text>
+      <text x={x + 50} y={py(2) + 36} textAnchor="start" fontFamily={FONT} fontSize={26} fontWeight={800} fill={K.amber}>ngưỡng 2 mmol/L</text>
       {pts.slice(0, Math.floor(n) + 1).map(([l, v], i) => (
         <g key={l}>
           {i > 0 ? <line x1={px(i - 1)} y1={py(pts[i - 1][1])} x2={px(i)} y2={py(v)} stroke={K.green} strokeWidth={7} /> : null}
@@ -317,8 +317,8 @@ const H2: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
       <Tx x={160} y={160} w={1600} al="center" size={40} b={800} a={ap(t, S[0])}>Lactate: dấu hiệu sớm của giảm tưới máu mô</Tx>
       <Panel x={160} y={250} w={760} h={330} c={K.o2} s0={S[1]}>
         <Tx x={0} y={24} w={760} al="center" size={28} c={K.o2} b={800}>SỐC NHIỄM KHUẨN · SEPSIS-3</Tx>
-        <Tx x={40} y={90} w={680} size={38} b={800}>① Cần vận mạch giữ HATB ≥ 65 mmHg</Tx>
-        <Tx x={40} y={170} w={680} size={38} b={800}>② Lactate &gt; 2 mmol/L</Tx>
+        <Tx x={40} y={86} w={690} size={33} b={800}>① Cần vận mạch giữ HATB ≥ 65 mmHg</Tx>
+        <Tx x={40} y={160} w={690} size={33} b={800}>② Lactate &gt; 2 mmol/L</Tx>
         <Tx x={40} y={250} w={680} size={28} c={K.dim}>dù đã bù đủ dịch</Tx>
       </Panel>
       <Trend x={980} y={250} w={800} h={420} a={ap(t, S[2])} draw={interpolate(t, [S[2], S[2] + D[2] * 0.8], [0, 1], clamp)} />
@@ -334,8 +334,8 @@ const H3: React.FC<{S: number[]; D: number[]}> = ({S}) => {
     <>
       <Top idx={2} title="Khí máu tĩnh mạch trung tâm" />
       <Tx x={160} y={170} w={1600} al="center" size={40} b={800} a={ap(t, S[0])}>Có catheter tĩnh mạch trung tâm? Lấy thêm khí máu tĩnh mạch</Tx>
-      <Card x={160} y={300} w={760} h={330} c={K.hco3} s0={S[1]} head="ScvO₂" body="< 70% → cung cấp oxy chưa đủ" size={46} />
-      <Card x={1000} y={300} w={760} h={330} c={K.co2} s0={S[2]} head="PCO₂ TĨNH MẠCH − ĐỘNG MẠCH" body="> 6 mmHg → dòng máu chưa đủ" sub="chưa rửa đủ CO₂ khỏi mô" size={46} />
+      <Card x={160} y={300} w={760} h={230} c={K.hco3} s0={S[1]} head="ScvO₂" body="< 70% → cung cấp oxy chưa đủ" size={46} />
+      <Card x={1000} y={300} w={760} h={230} c={K.co2} s0={S[2]} head="PCO₂ TĨNH MẠCH − ĐỘNG MẠCH" body="> 6 mmHg → dòng máu chưa đủ" sub="chưa rửa đủ CO₂ khỏi mô" size={46} />
     </>
   );
 };
@@ -396,8 +396,8 @@ const H6: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
 const H7: React.FC<{S: number[]; D: number[]}> = ({S}) => (
   <>
     <Top idx={6} title="Lưu ý khi truyền bicarbonate" />
-    <Card x={160} y={240} w={760} h={280} c={K.co2} s0={S[0]} head="SINH THÊM CO₂" body="Cần đủ thông khí để thải" size={46} />
-    <Card x={1000} y={240} w={760} h={280} c={K.amber} s0={S[1]} head="THEO DÕI" body="Canxi ion hoá · natri · quá tải dịch" size={44} />
+    <Card x={160} y={280} w={760} h={200} c={K.co2} s0={S[0]} head="SINH THÊM CO₂" body="Cần đủ thông khí để thải" size={46} />
+    <Card x={1000} y={280} w={760} h={200} c={K.amber} s0={S[1]} head="THEO DÕI" body="Canxi ion hoá · natri · quá tải dịch" size={44} />
   </>
 );
 
@@ -405,8 +405,8 @@ const H7: React.FC<{S: number[]; D: number[]}> = ({S}) => (
 const H8: React.FC<{S: number[]; D: number[]}> = ({S}) => (
   <>
     <Top idx={7} title="Dịch truyền và toan kiềm" />
-    <Card x={160} y={240} w={760} h={280} c={K.o2} s0={S[0]} head="NaCl 0,9% TRUYỀN NHIỀU" body="Toan tăng Clo" size={52} />
-    <Card x={1000} y={240} w={760} h={280} c={K.green} s0={S[1]} head="DỊCH CÂN BẰNG · SMART 2018" body="Ít biến chứng thận hơn" size={48} />
+    <Card x={160} y={280} w={760} h={200} c={K.o2} s0={S[0]} head="NaCl 0,9% TRUYỀN NHIỀU" body="Toan tăng Clo" size={52} />
+    <Card x={1000} y={280} w={760} h={200} c={K.green} s0={S[1]} head="DỊCH CÂN BẰNG · SMART 2018" body="Ít biến chứng thận hơn" size={48} />
   </>
 );
 
@@ -440,9 +440,9 @@ const H11: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   return (
     <>
       <Top idx={10} title="Ôn tập" />
-      <Card x={120} y={200} w={540} h={300} c={K.o2} s0={S[0]} head="LACTATE" body="Chẩn đoán sốc · theo dõi đáp ứng" size={40} />
-      <Card x={690} y={200} w={540} h={300} c={K.hco3} s0={S[1]} head="ScvO₂ · CHÊNH CO₂" body="Đánh giá tưới máu" size={40} />
-      <Card x={1260} y={200} w={540} h={300} c={K.co2} s0={S[2]} head="MÁY THỞ" body="CO₂: thông khí phút · O₂: FiO₂, PEEP" size={38} />
+      <Card x={120} y={240} w={540} h={220} c={K.o2} s0={S[0]} head="LACTATE" body="Chẩn đoán sốc · theo dõi đáp ứng" size={40} />
+      <Card x={690} y={240} w={540} h={220} c={K.hco3} s0={S[1]} head="ScvO₂ · CHÊNH CO₂" body="Đánh giá tưới máu" size={40} />
+      <Card x={1260} y={240} w={540} h={220} c={K.co2} s0={S[2]} head="MÁY THỞ" body="CO₂: thông khí phút · O₂: FiO₂, PEEP" size={38} />
       {nx > 0.01 && (
         <div style={{position: 'absolute', left: 560, top: 620, width: 800, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 18, padding: '16px 0', borderRadius: 999, border: `2px solid ${K.amber}`, background: 'rgba(245,184,61,.08)', fontFamily: FONT, opacity: Math.min(1, nx * 1.5)}}>
           <span style={{fontSize: 28, fontWeight: 800, color: K.amber, letterSpacing: 1}}>BÀI 9</span>
