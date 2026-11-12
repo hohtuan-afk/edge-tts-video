@@ -28,9 +28,9 @@ NARR = [
   [  # 6 Bicarbonate
     ("Toan chuyển hoá nặng: có nên truyền bicarbonate?", "Toan chuyển hoá nặng: có nên truyền bi các bô nát không?"),
     ("Điều trị NGUYÊN NHÂN là chính", "Nguyên tắc: điều trị nguyên nhân là chính."),
-    ("BICAR-ICU (2018): không giảm tử vong chung", "Nghiên cứu bi ca i xi u năm hai nghìn không trăm mười tám: truyền bi các bô nát không giảm tử vong chung."),
-    ("Nhóm tổn thương thận cấp vừa–nặng: có lợi", "Nhưng ở nhóm tổn thương thận cấp mức vừa đến nặng, bi các bô nát giúp cải thiện sống còn."),
-    ("pH ≤ 7,20 + tổn thương thận cấp → cân nhắc NaHCO₃", "Vì vậy, khi pê hát từ bảy phẩy hai trở xuống kèm tổn thương thận cấp, hãy cân nhắc truyền na tri bi các bô nát."),
+    ("BICAR-ICU (2018): không giảm tử vong chung · gợi ý lợi ích khi có tổn thương thận cấp", "Nghiên cứu bi ca i xi u năm hai nghìn không trăm mười tám: không giảm tử vong chung, nhưng gợi ý có lợi ở nhóm tổn thương thận cấp."),
+    ("BICARICU-2 (2025): không giảm tử vong 90 ngày · giảm nhu cầu lọc máu (35% so với 50%)", "Nghiên cứu bi ca i xi u hai năm hai nghìn không trăm hai mươi lăm, trên nhóm tổn thương thận cấp vừa đến nặng: không giảm tử vong chín mươi ngày, nhưng giảm nhu cầu lọc máu, ba mươi lăm so với năm mươi phần trăm."),
+    ("pH ≤ 7,20 + tổn thương thận cấp → có thể cân nhắc NaHCO₃", "Vì vậy, khi pê hát từ bảy phẩy hai trở xuống kèm tổn thương thận cấp, có thể cân nhắc truyền na tri bi các bô nát, chủ yếu để giảm nhu cầu lọc máu."),
   ],
   [  # 7 Lưu ý khi truyền bicarbonate
     ("Bicarbonate sinh thêm CO₂ → cần tăng thông khí", "Lưu ý: bi các bô nát sinh thêm xê ô hai, nên cần đủ thông khí để thải ra."),
@@ -49,7 +49,7 @@ NARR = [
   [  # 10 Xử trí ca
     ("1 · Hồi sức tưới máu, kiểm soát nhiễm khuẩn", "Xử trí: một, hồi sức tưới máu và kiểm soát nguồn nhiễm khuẩn."),
     ("2 · Tăng tần số máy thở: × 38 ÷ 29", "Hai, tăng tần số máy thở, theo tỉ lệ ba mươi tám chia hai mươi chín."),
-    ("3 · pH ≤ 7,20 + thận tổn thương → cân nhắc bicarbonate", "Ba, pê hát dưới bảy phẩy hai kèm tổn thương thận cấp: cân nhắc truyền bi các bô nát."),
+    ("3 · pH ≤ 7,20 + tổn thương thận cấp → có thể cân nhắc bicarbonate", "Ba, pê hát dưới bảy phẩy hai kèm tổn thương thận cấp: có thể cân nhắc truyền bi các bô nát."),
     ("4 · Đo lại khí máu và lactate sau 2–4 giờ", "Bốn, đo lại khí máu và lắc tát sau hai đến bốn giờ."),
   ],
   [  # 11 Ôn tập
