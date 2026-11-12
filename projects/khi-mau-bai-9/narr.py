@@ -11,14 +11,14 @@ NARR = [
     ("3 biến ĐỘC LẬP: PaCO₂ · SID · A_TOT", "Có ba biến độc lập quyết định pê hát: pê a xê ô hai, hiệu số i on mạnh, và tổng a xít yếu."),
   ],
   [  # 3 SID
-    ("SID: hiệu số ion mạnh", "Hiệu số i on mạnh, viết tắt ét i đê, là tổng cation mạnh trừ tổng anion mạnh."),
+    ("SID: hiệu số ion mạnh", "Hiệu số i on mạnh, viết tắt ét ai đi, là tổng cation mạnh trừ tổng anion mạnh."),
     ("Tại giường: SID ≈ Na⁺ − Cl⁻ · bình thường ≈ 35", "Tại giường, có thể ước tính đơn giản bằng na tri trừ clo. Bình thường khoảng ba mươi lăm."),
-    ("SID giảm → toan · SID tăng → kiềm", "Ét i đê giảm gây toan. Ét i đê tăng gây kiềm."),
+    ("SID giảm → toan · SID tăng → kiềm", "Ét ai đi giảm gây toan. Ét ai đi tăng gây kiềm."),
   ],
   [  # 4 Dịch truyền
-    ("NaCl 0,9%: Na⁺ 154 · Cl⁻ 154 → SID = 0", "Na tri clo rua không phẩy chín phần trăm có na tri và clo đều một trăm năm mươi tư, nên ét i đê bằng không."),
-    ("Truyền nhiều → kéo SID máu giảm → toan tăng Clo", "Truyền nhiều sẽ kéo ét i đê của máu giảm xuống, gây toan tăng clo."),
-    ("Ringer lactat: SID hiệu dụng ≈ 28 → ít gây toan hơn", "Ring gơ lắc tát có ét i đê hiệu dụng khoảng hai mươi tám, nên ít gây toan hơn."),
+    ("NaCl 0,9%: Na⁺ 154 · Cl⁻ 154 → SID = 0", "Na tri clo rua không phẩy chín phần trăm có na tri và clo đều một trăm năm mươi tư, nên ét ai đi bằng không."),
+    ("Truyền nhiều → kéo SID máu giảm → toan tăng Clo", "Truyền nhiều sẽ kéo ét ai đi của máu giảm xuống, gây toan tăng clo."),
+    ("Ringer lactat: SID hiệu dụng ≈ 28 → ít gây toan hơn", "Ring gơ lắc tát có ét ai đi hiệu dụng khoảng hai mươi tám, nên ít gây toan hơn."),
   ],
   [  # 5 A_TOT, albumin
     ("A_TOT: tổng acid yếu · chủ yếu là albumin", "Tổng a xít yếu, chủ yếu là an bu min và phốt phát."),
@@ -50,7 +50,7 @@ NARR = [
     ("Stewart: giúp hiểu dịch truyền, albumin ở hồi sức", "Cách xtiu vớt giúp hiểu rõ ảnh hưởng của dịch truyền và an bu min ở hồi sức."),
   ],
   [  # 10 Kết chuỗi
-    ("Stewart: PaCO₂ · SID · A_TOT", "Ôn tập: theo xtiu vớt, pê hát do ba yếu tố quyết định: pê a xê ô hai, ét i đê, và tổng a xít yếu."),
+    ("Stewart: PaCO₂ · SID · A_TOT", "Ôn tập: theo xtiu vớt, pê hát do ba yếu tố quyết định: pê a xê ô hai, ét ai đi, và tổng a xít yếu."),
     ("Hết chuỗi \"Giải mã khí máu\" · 9 bài", "Đây là bài cuối của chuỗi Giải mã khí máu."),
     ("Cảm ơn bạn đã theo dõi! Lưu lại để ôn tập", "Cảm ơn bạn đã theo dõi. Hãy lưu lại cả chuỗi để ôn tập nhé!"),
   ],

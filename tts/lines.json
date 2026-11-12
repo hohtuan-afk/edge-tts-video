@@ -1,35 +1,143 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+12%",
+ "rate": "+8%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Bệnh nhân thở máy, pê a xê ô hai sáu mươi. Muốn về bốn mươi, tăng tần số lên bao nhiêu?"
+   "text": "Có hai cách nhìn rối loạn toan kiềm."
+  },
+  {
+   "id": "00-1",
+   "text": "Cách truyền thống dựa vào bi các bô nát và khoảng trống a ni on. Cách của xtiu vớt dựa vào hoá lý."
+  },
+  {
+   "id": "00-2",
+   "text": "Cách xtiu vớt đặc biệt hữu ích để hiểu toan do dịch truyền, và vai trò của an bu min."
   },
   {
    "id": "01-0",
-   "text": "Pê a xê ô hai tỉ lệ nghịch với thông khí phút."
+   "text": "Nguyên lý: mọi dung dịch trong cơ thể luôn trung hoà điện tích."
+  },
+  {
+   "id": "01-1",
+   "text": "Theo xtiu vớt, hát cộng và bi các bô nát chỉ là biến phụ thuộc. Chúng thay đổi theo các yếu tố khác."
+  },
+  {
+   "id": "01-2",
+   "text": "Có ba biến độc lập quyết định pê hát: pê a xê ô hai, hiệu số i on mạnh, và tổng a xít yếu."
   },
   {
    "id": "02-0",
-   "text": "Công thức: tần số mới xấp xỉ tần số cũ, nhân pê a xê ô hai hiện tại, chia pê a xê ô hai mục tiêu."
+   "text": "Hiệu số i on mạnh, viết tắt ét ai đi, là tổng cation mạnh trừ tổng anion mạnh."
+  },
+  {
+   "id": "02-1",
+   "text": "Tại giường, có thể ước tính đơn giản bằng na tri trừ clo. Bình thường khoảng ba mươi lăm."
+  },
+  {
+   "id": "02-2",
+   "text": "Ét ai đi giảm gây toan. Ét ai đi tăng gây kiềm."
   },
   {
    "id": "03-0",
-   "text": "Ví dụ đang thở mười sáu lần: mười sáu nhân sáu mươi chia bốn mươi, bằng hai mươi tư lần mỗi phút."
+   "text": "Na tri clo rua không phẩy chín phần trăm có na tri và clo đều một trăm năm mươi tư, nên ét ai đi bằng không."
+  },
+  {
+   "id": "03-1",
+   "text": "Truyền nhiều sẽ kéo ét ai đi của máu giảm xuống, gây toan tăng clo."
+  },
+  {
+   "id": "03-2",
+   "text": "Ring gơ lắc tát có ét ai đi hiệu dụng khoảng hai mươi tám, nên ít gây toan hơn."
   },
   {
    "id": "04-0",
-   "text": "Sau khi chỉnh, hãy đo lại khí máu để kiểm tra."
+   "text": "Tổng a xít yếu, chủ yếu là an bu min và phốt phát."
+  },
+  {
+   "id": "04-1",
+   "text": "An bu min là một a xít yếu. Khi an bu min giảm, máu có xu hướng kiềm."
+  },
+  {
+   "id": "04-2",
+   "text": "Vì vậy, an bu min thấp có thể che giấu một toan chuyển hoá. Rất hay gặp ở hồi sức."
   },
   {
    "id": "05-0",
-   "text": "Lưu ý: tần số quá cao có thể gây bẫy khí và bíp nội sinh, nhất là ở bệnh phổi tắc nghẽn."
+   "text": "Phương pháp đơn giản của Xtô ri tách kiềm dư thành từng phần."
+  },
+  {
+   "id": "05-1",
+   "text": "Phần na tri clo bằng na tri trừ clo, trừ ba mươi lăm."
+  },
+  {
+   "id": "05-2",
+   "text": "Phần an bu min bằng không phẩy hai lăm nhân bốn mươi hai trừ an bu min tính bằng gam trên lít."
+  },
+  {
+   "id": "05-3",
+   "text": "Phần lắc tát bằng một trừ lắc tát."
+  },
+  {
+   "id": "05-4",
+   "text": "Phần còn lại chính là a ni on không đo được."
   },
   {
    "id": "06-0",
-   "text": "Lưu lại để ôn, và xem bài tám đầy đủ trên kênh nhé!"
+   "text": "Ca số một: bệnh nhân hồi sức, đã truyền nhiều na tri clo rua không phẩy chín phần trăm."
+  },
+  {
+   "id": "06-1",
+   "text": "Pê hát bảy phẩy ba hai, pê a xê ô hai ba mươi, bi các bô nát mười lăm, kiềm dư trừ mười."
+  },
+  {
+   "id": "06-2",
+   "text": "Na tri một trăm bốn mươi, clo một trăm mười lăm, an bu min hai mươi hai, lắc tát ba."
+  },
+  {
+   "id": "07-0",
+   "text": "Phần na tri clo: một trăm bốn mươi trừ một trăm mười lăm trừ ba mươi lăm, bằng trừ mười."
+  },
+  {
+   "id": "07-1",
+   "text": "Phần an bu min: không phẩy hai lăm nhân hai mươi, bằng cộng năm."
+  },
+  {
+   "id": "07-2",
+   "text": "Phần lắc tát: một trừ ba, bằng trừ hai."
+  },
+  {
+   "id": "07-3",
+   "text": "Phần còn lại: trừ mười, trừ đi tổng trừ bảy, bằng trừ ba."
+  },
+  {
+   "id": "07-4",
+   "text": "Kết luận: toan chủ yếu do tăng clo từ dịch truyền, an bu min thấp đã che bớt một phần."
+  },
+  {
+   "id": "08-0",
+   "text": "So sánh: cách truyền thống đơn giản, đủ dùng trong phần lớn tình huống."
+  },
+  {
+   "id": "08-1",
+   "text": "Khoảng trống a ni on có hiệu chỉnh an bu min đã bổ sung phần lớn điểm mạnh của xtiu vớt."
+  },
+  {
+   "id": "08-2",
+   "text": "Cách xtiu vớt giúp hiểu rõ ảnh hưởng của dịch truyền và an bu min ở hồi sức."
+  },
+  {
+   "id": "09-0",
+   "text": "Ôn tập: theo xtiu vớt, pê hát do ba yếu tố quyết định: pê a xê ô hai, ét ai đi, và tổng a xít yếu."
+  },
+  {
+   "id": "09-1",
+   "text": "Đây là bài cuối của chuỗi Giải mã khí máu."
+  },
+  {
+   "id": "09-2",
+   "text": "Cảm ơn bạn đã theo dõi. Hãy lưu lại cả chuỗi để ôn tập nhé!"
   }
  ]
 }
