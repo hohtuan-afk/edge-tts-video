@@ -144,7 +144,7 @@ const Big2: React.FC<{c: string; head: string; body: string; s0?: number}> = ({c
 
 const Cols: React.FC<{na: number; cl: number; s0?: number; c?: string}> = ({na, cl, s0 = 0.2, c = K.amber}) => {
   const t = useSec();
-  const a = ap(t, s0), k = 3.6, base = 1180, sid = na - cl;
+  const a = ap(t, s0), k = 3.2, base = 1080, sid = na - cl;
   return (
     <div style={{position: 'absolute', left: 0, top: 0, width: 1080, height: 1920, fontFamily: FONT, opacity: a}}>
       <div style={{position: 'absolute', left: 200, top: base - na * k, width: 300, height: na * k, borderRadius: 18, background: '#C9822E', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 64, fontWeight: 900}}>{chem(`Na⁺ ${na}`)}</div>
