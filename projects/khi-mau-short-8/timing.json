@@ -1,0 +1,79 @@
+[
+ {
+  "orig": 6.0,
+  "dur": 6.32,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 5.611,
+    "text": "PaCO₂ 60, muốn về 40: tăng tần số bao nhiêu?"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.4,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 2.052,
+    "text": "PaCO₂ tỉ lệ nghịch với thông khí phút"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 6.48,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 5.798,
+    "text": "Tần số mới ≈ tần số cũ × PaCO₂ hiện tại ÷ PaCO₂ mục tiêu"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 5.36,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 4.68,
+    "text": "Ví dụ: 16 × 60 ÷ 40 = 24 lần/phút"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.4,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 2.327,
+    "text": "Chỉnh xong → đo lại khí máu"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 5.4,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 4.713,
+    "text": "Lưu ý: tần số quá cao → bẫy khí, auto-PEEP (COPD)"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.4,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 2.658,
+    "text": "Lưu lại để ôn · xem Bài 8 đầy đủ trên kênh!"
+   }
+  ]
+ }
+]

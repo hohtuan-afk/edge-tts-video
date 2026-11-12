@@ -1,250 +1,81 @@
 {
  "fps": 30,
- "total": 5609,
+ "total": 1103,
  "scenes": [
   {
    "from": 0,
-   "dur": 437,
+   "dur": 190,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 3.796,
-     "text": "Ở hồi sức: khí máu để RA QUYẾT ĐỊNH"
-    },
-    {
-     "start": 4.646,
-     "dur": 3.04,
-     "text": "Theo dõi XU HƯỚNG quan trọng hơn một con số"
-    },
-    {
-     "start": 8.036,
-     "dur": 5.021,
-     "text": "4 chủ đề: lactate · tưới máu · máy thở · bicarbonate"
+     "start": 0.25,
+     "dur": 5.611,
+     "text": "PaCO₂ 60, muốn về 40: tăng tần số bao nhiêu?"
     }
    ]
   },
   {
-   "from": 437,
-   "dur": 537,
+   "from": 190,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 2.429,
-     "text": "Lactate: dấu hiệu giảm tưới máu mô"
-    },
-    {
-     "start": 3.279,
-     "dur": 7.956,
-     "text": "Sốc nhiễm khuẩn: cần vận mạch giữ HATB ≥ 65 + lactate > 2 mmol/L"
-    },
-    {
-     "start": 11.585,
-     "dur": 4.853,
-     "text": "Đo lại sau 2–4 giờ: lactate giảm = đáp ứng điều trị"
+     "start": 0.25,
+     "dur": 2.052,
+     "text": "PaCO₂ tỉ lệ nghịch với thông khí phút"
     }
    ]
   },
   {
-   "from": 974,
-   "dur": 474,
+   "from": 322,
+   "dur": 194,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 3.709,
-     "text": "Thêm khí máu tĩnh mạch trung tâm"
-    },
-    {
-     "start": 4.559,
-     "dur": 4.285,
-     "text": "ScvO₂ < 70%: cung cấp oxy chưa đủ"
-    },
-    {
-     "start": 9.195,
-     "dur": 5.106,
-     "text": "PCO₂ tĩnh mạch − PCO₂ động mạch > 6 mmHg: dòng máu chưa đủ"
-    }
-   ]
-  },
-  {
-   "from": 1448,
-   "dur": 485,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 3.422,
-     "text": "Máy thở: PaCO₂ do thông khí phút quyết định"
-    },
-    {
-     "start": 4.272,
-     "dur": 3.77,
-     "text": "PaCO₂ cao → tăng tần số hoặc thể tích khí lưu thông"
-    },
-    {
-     "start": 8.392,
-     "dur": 6.267,
+     "start": 0.25,
+     "dur": 5.798,
      "text": "Tần số mới ≈ tần số cũ × PaCO₂ hiện tại ÷ PaCO₂ mục tiêu"
     }
    ]
   },
   {
-   "from": 1933,
-   "dur": 509,
+   "from": 516,
+   "dur": 161,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 2.964,
-     "text": "PaO₂ thấp → tăng FiO₂ hoặc PEEP"
-    },
-    {
-     "start": 3.814,
-     "dur": 5.945,
-     "text": "Thông khí bảo vệ phổi: Vt 6 mL/kg cân nặng lý tưởng"
-    },
-    {
-     "start": 10.109,
-     "dur": 5.349,
-     "text": "Chấp nhận tăng CO₂ nếu pH không quá thấp (≈ ≥ 7,20)"
+     "start": 0.25,
+     "dur": 4.68,
+     "text": "Ví dụ: 16 × 60 ÷ 40 = 24 lần/phút"
     }
    ]
   },
   {
-   "from": 2442,
-   "dur": 947,
+   "from": 677,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 2.579,
-     "text": "Toan chuyển hoá nặng: có nên truyền bicarbonate?"
-    },
-    {
-     "start": 3.429,
-     "dur": 1.94,
-     "text": "Điều trị NGUYÊN NHÂN là chính"
-    },
-    {
-     "start": 5.718,
-     "dur": 6.439,
-     "text": "BICAR-ICU (2018): không giảm tử vong chung · gợi ý lợi ích khi có tổn thương thận cấp"
-    },
-    {
-     "start": 12.507,
-     "dur": 9.948,
-     "text": "BICARICU-2 (2025): không giảm tử vong 90 ngày · giảm nhu cầu lọc máu (35% so với 50%)"
-    },
-    {
-     "start": 22.805,
-     "dur": 7.253,
-     "text": "pH ≤ 7,20 + tổn thương thận cấp → có thể cân nhắc NaHCO₃"
+     "start": 0.25,
+     "dur": 2.327,
+     "text": "Chỉnh xong → đo lại khí máu"
     }
    ]
   },
   {
-   "from": 3389,
-   "dur": 299,
+   "from": 809,
+   "dur": 162,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 4.386,
-     "text": "Bicarbonate sinh thêm CO₂ → cần tăng thông khí"
-    },
-    {
-     "start": 5.236,
-     "dur": 3.214,
-     "text": "Theo dõi canxi ion hoá, natri, quá tải dịch"
+     "start": 0.25,
+     "dur": 4.713,
+     "text": "Lưu ý: tần số quá cao → bẫy khí, auto-PEEP (COPD)"
     }
    ]
   },
   {
-   "from": 3688,
-   "dur": 291,
+   "from": 971,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 3.055,
-     "text": "Truyền nhiều NaCl 0,9% → toan tăng Clo"
-    },
-    {
-     "start": 3.905,
-     "dur": 4.328,
-     "text": "Dịch cân bằng: ít biến chứng thận hơn (SMART 2018)"
-    }
-   ]
-  },
-  {
-   "from": 3979,
-   "dur": 598,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 3.215,
-     "text": "Ca số 1: sốc nhiễm khuẩn, đang thở máy, thiểu niệu"
-    },
-    {
-     "start": 4.065,
-     "dur": 5.457,
-     "text": "pH 7,19 · PaCO₂ 38 · HCO₃⁻ 14 · lactate 6"
-    },
-    {
-     "start": 9.872,
-     "dur": 2.422,
-     "text": "Toan chuyển hoá tăng AG do lactate"
-    },
-    {
-     "start": 12.644,
-     "dur": 5.793,
-     "text": "Winter: 1,5 × 14 + 8 = 29 ± 2 · PaCO₂ 38 → bù chưa đủ"
-    }
-   ]
-  },
-  {
-   "from": 4577,
-   "dur": 530,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 3.428,
-     "text": "1 · Hồi sức tưới máu, kiểm soát nhiễm khuẩn"
-    },
-    {
-     "start": 4.278,
-     "dur": 3.714,
-     "text": "2 · Tăng tần số máy thở: × 38 ÷ 29"
-    },
-    {
-     "start": 8.342,
-     "dur": 4.601,
-     "text": "3 · pH ≤ 7,20 + tổn thương thận cấp → có thể cân nhắc bicarbonate"
-    },
-    {
-     "start": 13.293,
-     "dur": 2.892,
-     "text": "4 · Đo lại khí máu và lactate sau 2–4 giờ"
-    }
-   ]
-  },
-  {
-   "from": 5107,
-   "dur": 502,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 3.558,
-     "text": "Lactate: chẩn đoán sốc, theo dõi xu hướng"
-    },
-    {
-     "start": 4.408,
-     "dur": 3.985,
-     "text": "ScvO₂, chênh CO₂: đánh giá tưới máu"
-    },
-    {
-     "start": 8.743,
-     "dur": 4.547,
-     "text": "Máy thở: CO₂ theo thông khí phút · O₂ theo FiO₂, PEEP"
-    },
-    {
-     "start": 13.639,
-     "dur": 1.575,
-     "text": "Bài 9: Tiếp cận Stewart"
+     "start": 0.25,
+     "dur": 2.658,
+     "text": "Lưu lại để ôn · xem Bài 8 đầy đủ trên kênh!"
     }
    ]
   }
