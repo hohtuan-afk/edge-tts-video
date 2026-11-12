@@ -56,7 +56,7 @@ NARR = [
     ("Lactate: chẩn đoán sốc, theo dõi xu hướng", "Ôn tập. Lắc tát để chẩn đoán sốc và theo dõi đáp ứng."),
     ("ScvO₂, chênh CO₂: đánh giá tưới máu", "Độ bão hoà ô xy tĩnh mạch trung tâm và chênh lệch xê ô hai để đánh giá tưới máu."),
     ("Máy thở: CO₂ theo thông khí phút · O₂ theo FiO₂, PEEP", "Máy thở: xê ô hai chỉnh bằng thông khí phút, ô xy chỉnh bằng ép i ô hai và bíp."),
-    ("Bài 9: Tiếp cận Stewart", "Bài cuối: tiếp cận Xtiu-ớt."),
+    ("Bài 9: Tiếp cận Stewart", "Bài cuối: tiếp cận xtiu vớt."),
   ],
 ]
 STEP = 3.0

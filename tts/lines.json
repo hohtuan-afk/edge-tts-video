@@ -1,35 +1,151 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+12%",
+ "rate": "+8%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Một phiếu khí máu hoàn hảo, mà bệnh nhân lại có tới hai rối loạn?"
+   "text": "Ở hồi sức, khí máu không chỉ để chẩn đoán, mà để ra quyết định điều trị."
+  },
+  {
+   "id": "00-1",
+   "text": "Và xu hướng qua nhiều lần đo quan trọng hơn một con số đơn lẻ."
+  },
+  {
+   "id": "00-2",
+   "text": "Bài này gồm bốn chủ đề: lắc tát, tưới máu mô, chỉnh máy thở, và bi các bô nát."
   },
   {
    "id": "01-0",
-   "text": "Pê hát bảy phẩy bốn, pê a xê ô hai bốn mươi, bi các bô nát hai mươi tư. Tất cả đều bình thường."
+   "text": "Lắc tát là dấu hiệu sớm của giảm tưới máu mô."
+  },
+  {
+   "id": "01-1",
+   "text": "Theo định nghĩa sép xít ba, sốc nhiễm khuẩn là cần thuốc vận mạch để giữ huyết áp trung bình từ sáu mươi lăm, kèm lắc tát trên hai mi li mol trên lít, dù đã bù đủ dịch."
+  },
+  {
+   "id": "01-2",
+   "text": "Hãy đo lại sau hai đến bốn giờ. Lắc tát giảm dần là dấu hiệu đáp ứng điều trị."
   },
   {
    "id": "02-0",
-   "text": "Nhưng na tri một trăm bốn mươi, clo chín mươi. Khoảng trống a ni on bằng hai mươi sáu, tăng."
+   "text": "Khi có ca te te tĩnh mạch trung tâm, hãy lấy thêm khí máu tĩnh mạch trung tâm."
+  },
+  {
+   "id": "02-1",
+   "text": "Độ bão hoà ô xy tĩnh mạch trung tâm dưới bảy mươi phần trăm gợi ý cung cấp ô xy chưa đủ."
+  },
+  {
+   "id": "02-2",
+   "text": "Chênh lệch pê xê ô hai tĩnh mạch trừ động mạch trên sáu gợi ý cung lượng tim chưa đủ để rửa xê ô hai khỏi mô."
   },
   {
    "id": "03-0",
-   "text": "Khoảng trống a ni on tăng: có nhiễm toan xê tôn."
+   "text": "Với bệnh nhân thở máy, pê a xê ô hai do thông khí phút quyết định."
+  },
+  {
+   "id": "03-1",
+   "text": "Pê a xê ô hai cao: tăng tần số thở hoặc tăng thể tích khí lưu thông."
+  },
+  {
+   "id": "03-2",
+   "text": "Công thức nhanh: tần số mới xấp xỉ tần số cũ, nhân pê a xê ô hai hiện tại, chia pê a xê ô hai mục tiêu."
   },
   {
    "id": "04-0",
-   "text": "Nhưng bi các bô nát không giảm, nghĩa là có thêm kiềm chuyển hoá do nôn ói."
+   "text": "Pê a ô hai thấp: tăng ép i ô hai hoặc tăng bíp."
+  },
+  {
+   "id": "04-1",
+   "text": "Trong suy hô hấp cấp tiến triển, thông khí bảo vệ phổi với thể tích khí lưu thông sáu mi li lít trên ki lô gam cân nặng lý tưởng."
+  },
+  {
+   "id": "04-2",
+   "text": "Khi đó có thể chấp nhận pê a xê ô hai tăng, miễn pê hát không quá thấp, thường từ bảy phẩy hai trở lên."
   },
   {
    "id": "05-0",
-   "text": "Hai rối loạn triệt tiêu nhau, nên pê hát vẫn bình thường. Luôn tính khoảng trống a ni on!"
+   "text": "Toan chuyển hoá nặng: có nên truyền bi các bô nát không?"
+  },
+  {
+   "id": "05-1",
+   "text": "Nguyên tắc: điều trị nguyên nhân là chính."
+  },
+  {
+   "id": "05-2",
+   "text": "Nghiên cứu bi ca i xi u năm hai nghìn không trăm mười tám: không giảm tử vong chung, nhưng gợi ý có lợi ở nhóm tổn thương thận cấp."
+  },
+  {
+   "id": "05-3",
+   "text": "Nghiên cứu bi ca i xi u hai năm hai nghìn không trăm hai mươi lăm, trên nhóm tổn thương thận cấp vừa đến nặng: không giảm tử vong chín mươi ngày, nhưng giảm nhu cầu lọc máu, ba mươi lăm so với năm mươi phần trăm."
+  },
+  {
+   "id": "05-4",
+   "text": "Vì vậy, khi pê hát từ bảy phẩy hai trở xuống kèm tổn thương thận cấp, có thể cân nhắc truyền na tri bi các bô nát, chủ yếu để giảm nhu cầu lọc máu."
   },
   {
    "id": "06-0",
-   "text": "Lưu lại để ôn, và xem bài bảy đầy đủ trên kênh nhé!"
+   "text": "Lưu ý: bi các bô nát sinh thêm xê ô hai, nên cần đủ thông khí để thải ra."
+  },
+  {
+   "id": "06-1",
+   "text": "Theo dõi can xi ion hoá, na tri và nguy cơ quá tải dịch."
+  },
+  {
+   "id": "07-0",
+   "text": "Truyền nhiều na tri clo rua không phẩy chín phần trăm gây toan tăng clo."
+  },
+  {
+   "id": "07-1",
+   "text": "Nghiên cứu smát năm hai nghìn không trăm mười tám cho thấy dịch tinh thể cân bằng ít biến chứng thận hơn."
+  },
+  {
+   "id": "08-0",
+   "text": "Ca số một: sốc nhiễm khuẩn, đang thở máy, thiểu niệu."
+  },
+  {
+   "id": "08-1",
+   "text": "Pê hát bảy phẩy một chín, pê a xê ô hai ba mươi tám, bi các bô nát mười bốn, lắc tát sáu."
+  },
+  {
+   "id": "08-2",
+   "text": "Toan chuyển hoá tăng khoảng trống a ni on do lắc tát."
+  },
+  {
+   "id": "08-3",
+   "text": "Pê a xê ô hai dự kiến khoảng hai mươi chín. Thực tế ba mươi tám, nghĩa là máy thở chưa bù đủ."
+  },
+  {
+   "id": "09-0",
+   "text": "Xử trí: một, hồi sức tưới máu và kiểm soát nguồn nhiễm khuẩn."
+  },
+  {
+   "id": "09-1",
+   "text": "Hai, tăng tần số máy thở, theo tỉ lệ ba mươi tám chia hai mươi chín."
+  },
+  {
+   "id": "09-2",
+   "text": "Ba, pê hát dưới bảy phẩy hai kèm tổn thương thận cấp: có thể cân nhắc truyền bi các bô nát."
+  },
+  {
+   "id": "09-3",
+   "text": "Bốn, đo lại khí máu và lắc tát sau hai đến bốn giờ."
+  },
+  {
+   "id": "10-0",
+   "text": "Ôn tập. Lắc tát để chẩn đoán sốc và theo dõi đáp ứng."
+  },
+  {
+   "id": "10-1",
+   "text": "Độ bão hoà ô xy tĩnh mạch trung tâm và chênh lệch xê ô hai để đánh giá tưới máu."
+  },
+  {
+   "id": "10-2",
+   "text": "Máy thở: xê ô hai chỉnh bằng thông khí phút, ô xy chỉnh bằng ép i ô hai và bíp."
+  },
+  {
+   "id": "10-3",
+   "text": "Bài cuối: tiếp cận xtiu vớt."
   }
  ]
 }
