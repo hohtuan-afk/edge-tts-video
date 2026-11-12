@@ -445,7 +445,8 @@ const K8: React.FC<{S: number[]; D: number[]}> = ({S}) => {
       <div style={{position: 'absolute', left: X0 - 10 * k, top: y0 + 4 * rowH, width: 10 * k * ap(t, S[3] + 1), height: 80, borderRadius: 12, background: K.txt, opacity: 0.9}} />
       <Tx x={160} y={y0 + 4 * rowH + 14} w={420} size={44} b={900} a={ap(t, S[3] + 1)}>BE tổng</Tx>
       <Tx x={X0 - 10 * k - 170} y={y0 + 4 * rowH + 14} w={150} al="right" size={44} b={900} a={ap(t, S[3] + 1)}>−10</Tx>
-      <Res x={1180} y={y0 + 4 * rowH - 10} s0={S[4]} c={K.o2}>Toan tăng Clo là chính</Res>
+      <Res x={1150} y={y0 + 1 * rowH} s0={S[4]} c={K.o2}>Toan tăng Clo là chính</Res>
+      <Tx x={1150} y={y0 + 2 * rowH + 10} w={700} size={36} c={K.green} b={800} a={ap(t, S[4] + 1)}>albumin thấp che bớt +5</Tx>
     </>
   );
 };
@@ -456,7 +457,7 @@ const K9: React.FC<{S: number[]; D: number[]}> = ({S}) => (
     <Top idx={8} title="Truyền thống hay Stewart?" />
     <Card x={160} y={200} w={760} h={260} c={K.co2} s0={S[0]} head="TRUYỀN THỐNG" body="Đơn giản, đủ dùng hằng ngày" size={46} />
     <Card x={1000} y={200} w={760} h={260} c={K.amber} s0={S[2]} head="STEWART" body="Hiểu rõ dịch truyền, albumin ở hồi sức" size={44} />
-    <Memo x={360} y={560} w={1200} s0={S[1] + 0.3} size={40}>AG hiệu chỉnh albumin ≈ bổ sung phần lớn điểm mạnh của Stewart</Memo>
+    <Memo x={210} y={560} w={1500} s0={S[1] + 0.3} size={38}>AG hiệu chỉnh albumin ≈ bổ sung phần lớn điểm mạnh của Stewart</Memo>
   </>
 );
 
