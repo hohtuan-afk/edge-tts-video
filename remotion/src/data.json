@@ -1,234 +1,81 @@
 {
  "fps": 30,
- "total": 4848,
+ "total": 954,
  "scenes": [
   {
    "from": 0,
-   "dur": 420,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 1.65,
-     "text": "Hai cách nhìn toan kiềm"
-    },
-    {
-     "start": 2.5,
-     "dur": 5.586,
-     "text": "Truyền thống: HCO₃⁻, AG · Stewart: hoá lý"
-    },
-    {
-     "start": 8.436,
-     "dur": 4.082,
-     "text": "Stewart giải thích rõ: dịch truyền, albumin"
+     "start": 0.25,
+     "dur": 3.222,
+     "text": "Truyền nhiều NaCl 0,9% sao lại toan máu?"
     }
    ]
   },
   {
-   "from": 420,
-   "dur": 503,
+   "from": 132,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 2.763,
-     "text": "Dung dịch luôn trung hoà điện tích"
-    },
-    {
-     "start": 3.613,
-     "dur": 5.568,
-     "text": "H⁺ và HCO₃⁻ là biến PHỤ THUỘC"
-    },
-    {
-     "start": 9.532,
-     "dur": 5.711,
-     "text": "3 biến ĐỘC LẬP: PaCO₂ · SID · A_TOT"
+     "start": 0.25,
+     "dur": 2.871,
+     "text": "Stewart: nhìn hiệu số ion mạnh (SID)"
     }
    ]
   },
   {
-   "from": 923,
-   "dur": 481,
+   "from": 264,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 4.868,
-     "text": "SID: hiệu số ion mạnh"
-    },
-    {
-     "start": 5.718,
-     "dur": 5.141,
-     "text": "Tại giường: SID ≈ Na⁺ − Cl⁻ · bình thường ≈ 35"
-    },
-    {
-     "start": 11.209,
-     "dur": 3.314,
-     "text": "SID giảm → toan · SID tăng → kiềm"
+     "start": 0.25,
+     "dur": 3.414,
+     "text": "Máu: SID ≈ Na⁺ − Cl⁻ ≈ 35"
     }
    ]
   },
   {
-   "from": 1404,
-   "dur": 461,
+   "from": 396,
+   "dur": 155,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 5.241,
+     "start": 0.25,
+     "dur": 4.467,
      "text": "NaCl 0,9%: Na⁺ 154 · Cl⁻ 154 → SID = 0"
-    },
-    {
-     "start": 6.091,
-     "dur": 3.329,
-     "text": "Truyền nhiều → kéo SID máu giảm → toan tăng Clo"
-    },
-    {
-     "start": 9.77,
-     "dur": 4.086,
-     "text": "Ringer lactat: SID hiệu dụng ≈ 28 → ít gây toan hơn"
     }
    ]
   },
   {
-   "from": 1865,
-   "dur": 463,
+   "from": 551,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 2.792,
-     "text": "A_TOT: tổng acid yếu · chủ yếu là albumin"
-    },
-    {
-     "start": 3.642,
-     "dur": 4.918,
-     "text": "Albumin giảm → KIỀM"
-    },
-    {
-     "start": 8.91,
-     "dur": 5.024,
-     "text": "Albumin thấp có thể CHE GIẤU toan chuyển hoá"
+     "start": 0.25,
+     "dur": 3.049,
+     "text": "Truyền nhiều → SID máu giảm → toan tăng Clo"
     }
    ]
   },
   {
-   "from": 2328,
-   "dur": 505,
+   "from": 683,
+   "dur": 139,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 2.663,
-     "text": "Phương pháp Story: tách kiềm dư (BE) thành từng phần"
-    },
-    {
-     "start": 3.513,
-     "dur": 3.057,
-     "text": "Na–Cl: (Na⁺ − Cl⁻) − 35"
-    },
-    {
-     "start": 6.92,
-     "dur": 4.156,
-     "text": "Albumin: 0,25 × (42 − albumin g/L)"
-    },
-    {
-     "start": 11.426,
-     "dur": 1.573,
-     "text": "Lactate: 1 − lactate"
-    },
-    {
-     "start": 13.349,
-     "dur": 2.001,
-     "text": "Còn lại = anion không đo được"
+     "start": 0.25,
+     "dur": 3.931,
+     "text": "Ringer lactat: SID hiệu dụng ≈ 28 → ít toan hơn"
     }
    ]
   },
   {
-   "from": 2833,
-   "dur": 505,
+   "from": 822,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 4.092,
-     "text": "Ca số 1: hồi sức, đã truyền nhiều NaCl 0,9%"
-    },
-    {
-     "start": 4.942,
-     "dur": 5.289,
-     "text": "pH 7,32 · PaCO₂ 30 · HCO₃⁻ 15 · BE −10"
-    },
-    {
-     "start": 10.581,
-     "dur": 4.759,
-     "text": "Na⁺ 140 · Cl⁻ 115 · albumin 22 g/L · lactate 3"
-    }
-   ]
-  },
-  {
-   "from": 3338,
-   "dur": 654,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 4.446,
-     "text": "Na–Cl: 140 − 115 − 35 = −10"
-    },
-    {
-     "start": 5.296,
-     "dur": 3.4,
-     "text": "Albumin: 0,25 × (42 − 22) = +5"
-    },
-    {
-     "start": 9.046,
-     "dur": 2.513,
-     "text": "Lactate: 1 − 3 = −2"
-    },
-    {
-     "start": 11.909,
-     "dur": 3.605,
-     "text": "Còn lại: −10 − (−10 + 5 − 2) = −3"
-    },
-    {
-     "start": 15.863,
-     "dur": 4.436,
-     "text": "Toan tăng Clo là chính · albumin thấp che bớt"
-    }
-   ]
-  },
-  {
-   "from": 3992,
-   "dur": 407,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 3.563,
-     "text": "Truyền thống: đơn giản, đủ dùng hằng ngày"
-    },
-    {
-     "start": 4.413,
-     "dur": 4.06,
-     "text": "AG hiệu chỉnh albumin ≈ bổ sung phần lớn điểm mạnh của Stewart"
-    },
-    {
-     "start": 8.823,
-     "dur": 3.248,
-     "text": "Stewart: giúp hiểu dịch truyền, albumin ở hồi sức"
-    }
-   ]
-  },
-  {
-   "from": 4399,
-   "dur": 449,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 6.598,
-     "text": "Stewart: PaCO₂ · SID · A_TOT"
-    },
-    {
-     "start": 7.448,
-     "dur": 1.934,
-     "text": "Hết chuỗi \"Giải mã khí máu\" · 9 bài"
-    },
-    {
-     "start": 9.731,
-     "dur": 3.722,
-     "text": "Cảm ơn bạn đã theo dõi! Lưu lại để ôn tập"
+     "start": 0.25,
+     "dur": 2.67,
+     "text": "Lưu lại để ôn · xem trọn chuỗi 9 bài trên kênh!"
     }
    ]
   }

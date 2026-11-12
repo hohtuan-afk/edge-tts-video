@@ -1,0 +1,79 @@
+[
+ {
+  "orig": 6.0,
+  "dur": 4.4,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 3.222,
+    "text": "Truyền nhiều NaCl 0,9% sao lại toan máu?"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.4,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 2.871,
+    "text": "Stewart: nhìn hiệu số ion mạnh (SID)"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.4,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 3.414,
+    "text": "Máu: SID ≈ Na⁺ − Cl⁻ ≈ 35"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 5.16,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 4.467,
+    "text": "NaCl 0,9%: Na⁺ 154 · Cl⁻ 154 → SID = 0"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.4,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 3.049,
+    "text": "Truyền nhiều → SID máu giảm → toan tăng Clo"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.64,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 3.931,
+    "text": "Ringer lactat: SID hiệu dụng ≈ 28 → ít toan hơn"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.4,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 2.67,
+    "text": "Lưu lại để ôn · xem trọn chuỗi 9 bài trên kênh!"
+   }
+  ]
+ }
+]
