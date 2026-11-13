@@ -152,19 +152,19 @@ const GoldC: React.FC<{y: number; a: number; size?: number; children: string}> =
   </div>
 );
 type Row = [string, string, string, string];
-const Slip: React.FC<{s0: number; rows: Row[]; hl?: string[]; x?: number; y?: number; title?: string}> = ({s0, rows, hl = [], x = 80, y = 170, title = 'PHIẾU KHÍ MÁU'}) => {
+const Slip: React.FC<{s0: number; rows: Row[]; hl?: string[]; x?: number; y?: number; title?: string; sw?: number; nw?: number}> = ({s0, rows, hl = [], x = 80, y = 170, title = 'PHIẾU KHÍ MÁU', sw = 460, nw = 170}) => {
   const p = usePop(s0);
   const f = useCurrentFrame();
   if (p <= 0.01) return null;
   return (
-    <div style={{position: 'absolute', left: x, top: y, width: 460, padding: '20px 24px', borderRadius: 18, background: '#F4F1EA', boxShadow: '0 20px 50px rgba(0,0,0,.5)', fontFamily: FONT, opacity: Math.min(1, p * 1.5), transform: `translateY(${(1 - p) * 40}px) rotate(-1deg)`}}>
+    <div style={{position: 'absolute', left: x, top: y, width: sw, padding: '20px 24px', borderRadius: 18, background: '#F4F1EA', boxShadow: '0 20px 50px rgba(0,0,0,.5)', fontFamily: FONT, opacity: Math.min(1, p * 1.5), transform: `translateY(${(1 - p) * 40}px) rotate(-1deg)`}}>
       <div style={{fontSize: 22, fontWeight: 800, letterSpacing: 3, color: '#6B5A3A'}}>{title}</div>
       <div style={{height: 3, background: '#CDBFA5', margin: '8px 0 6px'}} />
       {rows.map(([k, n, v, u]) => {
         const on = hl.includes(k);
         return (
           <div key={k} style={{display: 'flex', alignItems: 'baseline', padding: '6px 12px', borderRadius: 12, background: on ? `rgba(245,184,61,${0.35 + 0.1 * Math.sin(f / 6)})` : 'transparent', border: on ? '3px solid #E09A10' : '3px solid transparent'}}>
-            <span style={{width: 170, fontSize: 34, fontWeight: 700, color: K.ink}}>{chem(n)}</span>
+            <span style={{width: nw, whiteSpace: 'nowrap', fontSize: 34, fontWeight: 700, color: K.ink}}>{chem(n)}</span>
             <span style={{fontSize: 46, fontWeight: 900, color: K.ink, width: 130}}>{v}</span>
             <span style={{fontSize: 22, color: '#6B5A3A'}}>{u}</span>
           </div>
@@ -533,21 +533,21 @@ const D10: React.FC<{S: number[]; D: number[]}> = ({S}) => {
     <>
       <Top idx={9} title={a2 > 0.5 ? 'Ca số 2: xơ gan' : 'Ca số 1: cụ bà 78 tuổi'} />
       <div style={{position: 'absolute', inset: 0, opacity: a1}}>
-        <Slip s0={S[0]} x={90} y={170} title="CA SỐ 1" rows={[['na', 'Na⁺', '121', ''], ['sosm', 'ALTT máu', '255', ''], ['glu', 'Glucose', '6,0', ''], ['uosm', 'ALTT niệu', '420', ''], ['una', 'Na⁺ niệu', '48', '']]} hl={t > S[1] ? ['uosm', 'una'] : ['na', 'sosm']} />
-        <Step x={640} y={190} s0={S[0] + 1.2} c={K.green}>① ALTT máu 255 → hạ natri thật</Step>
-        <Step x={640} y={270} s0={S[1] + 0.4}>② ALTT niệu 420 → ADH đang bật</Step>
-        <Step x={640} y={350} s0={S[1] + 1.4}>③ Na⁺ niệu 48 → &gt; 30</Step>
-        <Step x={640} y={430} s0={S[1] + 2.4}>④ Không phù · không lợi tiểu</Step>
-        <Step x={640} y={530} s0={S[2]} c={K.amber}>💊 Đang dùng sertraline (SSRI)</Step>
-        <Res x={640} y={620} s0={S[2] + 1.8} c={K.amber}>SIAD do thuốc</Res>
-        <Tx x={640} y={730} w={1140} size={30} c={K.dim} b={700} a={ap(t, S[2] + 2.6)}>sau khi kiểm tra chức năng giáp, cortisol</Tx>
+        <Slip s0={S[0]} x={60} y={170} sw={540} nw={240} title="CA SỐ 1" rows={[['na', 'Na⁺', '121', ''], ['sosm', 'ALTT máu', '255', ''], ['glu', 'Glucose', '6,0', ''], ['uosm', 'ALTT niệu', '420', ''], ['una', 'Na⁺ niệu', '48', '']]} hl={t > S[1] ? ['uosm', 'una'] : ['na', 'sosm']} />
+        <Step x={660} y={190} s0={S[0] + 1.2} c={K.green}>① ALTT máu 255 → hạ natri thật</Step>
+        <Step x={660} y={270} s0={S[1] + 0.4}>② ALTT niệu 420 → ADH đang bật</Step>
+        <Step x={660} y={350} s0={S[1] + 1.4}>③ Na⁺ niệu 48 → &gt; 30</Step>
+        <Step x={660} y={430} s0={S[1] + 2.4}>④ Không phù · không lợi tiểu</Step>
+        <Step x={660} y={530} s0={S[2]} c={K.amber}>💊 Đang dùng sertraline (SSRI)</Step>
+        <Res x={660} y={620} s0={S[2] + 1.8} c={K.amber}>SIAD do thuốc</Res>
+        <Tx x={660} y={730} w={1140} size={30} c={K.dim} b={700} a={ap(t, S[2] + 2.6)}>sau khi kiểm tra chức năng giáp, cortisol</Tx>
       </div>
       <div style={{position: 'absolute', inset: 0, opacity: a2}}>
-        {a2 > 0.01 ? <Slip s0={S[3]} x={90} y={170} title="CA SỐ 2 · XƠ GAN, BÁNG BỤNG" rows={[['na', 'Na⁺', '126', ''], ['una', 'Na⁺ niệu', '10', '']]} hl={['una']} /> : null}
-        <Step x={640} y={200} s0={S[3] + 0.8}>③ Na⁺ niệu 10 → ≤ 30: thận giữ muối</Step>
-        <Step x={640} y={280} s0={S[3] + 1.8}>④ Phù, báng bụng → thể tích TĂNG</Step>
-        <Res x={640} y={400} s0={S[4]} c={WATER}>Hạ natri thừa dịch</Res>
-        <Tx x={640} y={510} w={1140} size={38} c={K.txt} b={800} a={ap(t, S[4] + 1)}>…nhưng thể tích tuần hoàn hiệu dụng THẤP</Tx>
+        {a2 > 0.01 ? <Slip s0={S[3]} x={60} y={170} sw={540} nw={240} title="CA SỐ 2 · XƠ GAN, BÁNG BỤNG" rows={[['na', 'Na⁺', '126', ''], ['una', 'Na⁺ niệu', '10', '']]} hl={['una']} /> : null}
+        <Step x={660} y={200} s0={S[3] + 0.8}>③ Na⁺ niệu 10 → ≤ 30: thận giữ muối</Step>
+        <Step x={660} y={280} s0={S[3] + 1.8}>④ Phù, báng bụng → thể tích TĂNG</Step>
+        <Res x={660} y={400} s0={S[4]} c={WATER}>Hạ natri thừa dịch</Res>
+        <Tx x={660} y={510} w={1140} size={38} c={K.txt} b={800} a={ap(t, S[4] + 1)}>…nhưng thể tích tuần hoàn hiệu dụng THẤP</Tx>
       </div>
     </>
   );
