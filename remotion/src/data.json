@@ -1,214 +1,81 @@
 {
  "fps": 30,
- "total": 3857,
+ "total": 935,
  "scenes": [
   {
    "from": 0,
-   "dur": 349,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 4.229,
-     "text": "Natri máu 125: thiếu muối hay thừa nước?"
-    },
-    {
-     "start": 5.079,
-     "dur": 2.439,
-     "text": "Hiểu sai câu này → điều trị sai"
-    },
-    {
-     "start": 7.868,
-     "dur": 2.261,
-     "text": "Bài 1: hiểu đúng nước và natri từ gốc"
+     "start": 0.25,
+     "dur": 2.548,
+     "text": "Natri máu 125: thiếu muối?"
     }
    ]
   },
   {
-   "from": 349,
-   "dur": 346,
+   "from": 132,
+   "dur": 143,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 2.359,
-     "text": "Nước ≈ 60% cân nặng"
-    },
-    {
-     "start": 3.209,
-     "dur": 2.955,
-     "text": "2/3 trong tế bào · 1/3 ngoài tế bào"
-    },
-    {
-     "start": 6.513,
-     "dur": 3.504,
-     "text": "Na⁺ chủ yếu NGOÀI tế bào · K⁺ chủ yếu TRONG tế bào"
+     "start": 0.25,
+     "dur": 4.04,
+     "text": "Na⁺ máu là NỒNG ĐỘ = muối ÷ nước"
     }
    ]
   },
   {
-   "from": 695,
-   "dur": 306,
+   "from": 275,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 4.225,
-     "text": "Bơm Na⁺/K⁺-ATPase: 3 Na⁺ ra · 2 K⁺ vào"
-    },
-    {
-     "start": 5.075,
-     "dur": 3.614,
-     "text": "Giữ Na⁺ ở ngoài → Na⁺ quyết định nước ngoài tế bào"
+     "start": 0.25,
+     "dur": 3.319,
+     "text": "Hạ natri thường do THỪA NƯỚC"
     }
    ]
   },
   {
-   "from": 1001,
-   "dur": 315,
+   "from": 407,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 4.079,
-     "text": "Natri máu là NỒNG ĐỘ = muối ÷ nước"
-    },
-    {
-     "start": 4.929,
-     "dur": 1.979,
-     "text": "Hạ natri ≈ thừa nước so với muối"
-    },
-    {
-     "start": 7.258,
-     "dur": 1.771,
-     "text": "Tăng natri ≈ thiếu nước so với muối"
+     "start": 0.25,
+     "dur": 3.011,
+     "text": "Thủ phạm thường gặp: ADH giữ nước ở thận"
     }
    ]
   },
   {
-   "from": 1316,
-   "dur": 591,
+   "from": 539,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 5.729,
-     "text": "Áp lực thẩm thấu (ALTT) = 2 × Na⁺ + glucose + urê"
-    },
-    {
-     "start": 6.579,
-     "dur": 2.787,
-     "text": "Bình thường ≈ 275–295 mOsm/kg"
-    },
-    {
-     "start": 9.716,
-     "dur": 2.094,
-     "text": "Nước đi từ nơi loãng → nơi đặc"
-    },
-    {
-     "start": 12.16,
-     "dur": 6.01,
-     "text": "Na⁺ máu giảm → nước vào tế bào → tế bào sưng (phù não)"
-    }
-   ]
-  },
-  {
-   "from": 1907,
-   "dur": 395,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 2.897,
-     "text": "ADH: hormone giữ nước"
-    },
-    {
-     "start": 3.747,
-     "dur": 3.679,
-     "text": "Vùng dưới đồi sản xuất · tuyến yên sau phóng thích"
-    },
-    {
-     "start": 7.776,
-     "dur": 3.897,
-     "text": "Kích thích: ALTT tăng · thể tích tuần hoàn giảm"
-    }
-   ]
-  },
-  {
-   "from": 2302,
-   "dur": 438,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 5.005,
-     "text": "ADH gắn ống góp → mở kênh aquaporin → hấp thu nước"
-    },
-    {
-     "start": 5.855,
-     "dur": 3.383,
-     "text": "Có ADH: nước tiểu đặc (tới ~1200 mOsm/kg)"
-    },
-    {
-     "start": 9.588,
-     "dur": 3.531,
-     "text": "Không ADH: nước tiểu loãng (tới ~50–100 mOsm/kg)"
-    }
-   ]
-  },
-  {
-   "from": 2740,
-   "dur": 318,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 1.249,
-     "text": "Van thứ hai: cơn KHÁT"
-    },
-    {
-     "start": 2.099,
-     "dur": 2.171,
-     "text": "ALTT tăng → khát → uống nước"
-    },
-    {
-     "start": 4.62,
-     "dur": 4.467,
-     "text": "Không tự uống được (người già, hôn mê) → dễ tăng natri"
-    }
-   ]
-  },
-  {
-   "from": 3058,
-   "dur": 447,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 4.292,
-     "text": "Nồng độ Na⁺: do NƯỚC (ADH, khát)"
-    },
-    {
-     "start": 5.142,
-     "dur": 3.661,
-     "text": "Thể tích dịch: do MUỐI (renin – aldosterone)"
-    },
-    {
-     "start": 9.153,
-     "dur": 4.281,
+     "start": 0.25,
+     "dur": 3.566,
      "text": "Cùng Na⁺ 125: có thể phù, có thể mất nước"
     }
    ]
   },
   {
-   "from": 3505,
-   "dur": 352,
+   "from": 671,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 3.941,
-     "text": "Na⁺ máu = muối ÷ nước · nói về NƯỚC"
-    },
+     "start": 0.25,
+     "dur": 2.696,
+     "text": "Thể tích do MUỐI · nồng độ do NƯỚC"
+    }
+   ]
+  },
+  {
+   "from": 803,
+   "dur": 132,
+   "sents": [
     {
-     "start": 4.791,
-     "dur": 2.597,
-     "text": "ADH và khát giữ ALTT ổn định"
-    },
-    {
-     "start": 7.738,
-     "dur": 2.488,
-     "text": "Bài 2: Hạ natri máu, chẩn đoán"
+     "start": 0.25,
+     "dur": 2.604,
+     "text": "Lưu lại để ôn · xem Bài 1 đầy đủ trên kênh!"
     }
    ]
   }
