@@ -1,35 +1,179 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+12%",
+ "rate": "+8%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Na tri máu một trăm hai mươi lăm, có phải là thiếu muối?"
+   "text": "Cụ bà bảy mươi tám tuổi, lơ mơ, na tri máu một trăm hai mươi mốt."
+  },
+  {
+   "id": "00-1",
+   "text": "Nguyên nhân là gì?"
+  },
+  {
+   "id": "00-2",
+   "text": "Ta sẽ trả lời bằng bốn câu hỏi, theo đúng thứ tự."
   },
   {
    "id": "01-0",
-   "text": "Chưa chắc. Na tri máu là nồng độ, bằng lượng muối chia cho lượng nước."
+   "text": "Hạ na tri là na tri máu dưới một trăm ba mươi lăm mi li mol trên lít."
+  },
+  {
+   "id": "01-1",
+   "text": "Nhẹ từ một trăm ba mươi đến một trăm ba mươi lăm, vừa từ một trăm hai mươi lăm đến một trăm hai mươi chín, nặng khi dưới một trăm hai mươi lăm."
+  },
+  {
+   "id": "01-2",
+   "text": "Cấp tính khi xuất hiện dưới bốn mươi tám giờ, mạn tính khi từ bốn mươi tám giờ trở lên."
+  },
+  {
+   "id": "01-3",
+   "text": "Nếu có triệu chứng nặng như nôn, co giật, hôn mê, phải xử trí ngay, chẩn đoán sau."
   },
   {
    "id": "02-0",
-   "text": "Vì vậy, hạ na tri thường là do thừa nước, chứ không phải thiếu muối."
+   "text": "Câu hỏi một: áp lực thẩm thấu máu có thấp không?"
+  },
+  {
+   "id": "02-1",
+   "text": "Nếu bình thường, có thể là giả hạ na tri, do mỡ máu hoặc protein máu rất cao."
+  },
+  {
+   "id": "02-2",
+   "text": "Nếu tăng, nghĩ đến đường máu cao hoặc truyền ma ni tôn."
+  },
+  {
+   "id": "02-3",
+   "text": "Cứ đường máu tăng năm phẩy năm mi li mol trên lít, na tri giảm khoảng một phẩy sáu đến hai phẩy bốn."
   },
   {
    "id": "03-0",
-   "text": "Thủ phạm thường gặp là a đê hát, hóc môn giữ nước ở thận."
+   "text": "Câu hỏi hai: áp lực thẩm thấu niệu, để biết a đê hát đang bật hay tắt."
+  },
+  {
+   "id": "03-1",
+   "text": "Dưới một trăm: a đê hát đang tắt, thận đang thải nước tối đa."
+  },
+  {
+   "id": "03-2",
+   "text": "Gặp khi uống quá nhiều nước, uống nhiều bia, hoặc ăn quá ít đạm."
+  },
+  {
+   "id": "03-3",
+   "text": "Trên một trăm: a đê hát đang hoạt động, hỏi tiếp câu ba."
   },
   {
    "id": "04-0",
-   "text": "Cùng na tri một trăm hai mươi lăm, bệnh nhân có thể phù, cũng có thể mất nước."
+   "text": "Câu hỏi ba: na tri niệu."
+  },
+  {
+   "id": "04-1",
+   "text": "Từ ba mươi trở xuống: thể tích tuần hoàn hiệu dụng thấp, thận đang cố giữ muối."
+  },
+  {
+   "id": "04-2",
+   "text": "Gặp khi mất dịch qua tiêu hoá, hoặc suy tim, xơ gan, hội chứng thận hư."
+  },
+  {
+   "id": "04-3",
+   "text": "Trên ba mươi: thận đang mất muối, hoặc hội chứng tiết a đê hát không thích hợp."
   },
   {
    "id": "05-0",
-   "text": "Vì thể tích dịch do muối quyết định, còn nồng độ do nước."
+   "text": "Câu hỏi bốn: đánh giá thể tích dịch ngoại bào."
+  },
+  {
+   "id": "05-1",
+   "text": "Giảm, bình thường, hay tăng với phù và báng bụng."
+  },
+  {
+   "id": "05-2",
+   "text": "Lưu ý: khám lâm sàng đánh giá thể tích kém chính xác."
+  },
+  {
+   "id": "05-3",
+   "text": "Vì vậy, hướng dẫn châu Âu xét na tri niệu trước, rồi mới đến thể tích."
   },
   {
    "id": "06-0",
-   "text": "Lưu lại để ôn, và xem bài một đầy đủ trên kênh nhé!"
+   "text": "Na tri niệu trên ba mươi, nghĩ đến gì?"
+  },
+  {
+   "id": "06-1",
+   "text": "Thuốc lợi tiểu, đặc biệt là thi a dít, rất hay gặp ở người già."
+  },
+  {
+   "id": "06-2",
+   "text": "Suy thượng thận, nôn ói, bệnh thận mất muối."
+  },
+  {
+   "id": "06-3",
+   "text": "Nếu không có các nguyên nhân trên, nghĩ đến hội chứng tiết a đê hát không thích hợp."
+  },
+  {
+   "id": "07-0",
+   "text": "Hội chứng tiết a đê hát không thích hợp: a đê hát vẫn tiết dù máu đang loãng."
+  },
+  {
+   "id": "07-1",
+   "text": "Tiêu chuẩn: áp lực thẩm thấu máu dưới hai trăm bảy mươi lăm, niệu trên một trăm, na tri niệu trên ba mươi."
+  },
+  {
+   "id": "07-2",
+   "text": "Và thể tích dịch bình thường."
+  },
+  {
+   "id": "07-3",
+   "text": "Phải loại trừ suy giáp, suy thượng thận, và thuốc lợi tiểu."
+  },
+  {
+   "id": "08-0",
+   "text": "Nguyên nhân của hội chứng này."
+  },
+  {
+   "id": "08-1",
+   "text": "Bệnh phổi như viêm phổi, bệnh não như đột quỵ hay chấn thương."
+  },
+  {
+   "id": "08-2",
+   "text": "Thuốc như nhóm ét ét a i, các ba ma de pin, và ung thư phổi tế bào nhỏ."
+  },
+  {
+   "id": "08-3",
+   "text": "Cả đau, nôn và giai đoạn sau phẫu thuật cũng kích thích tiết a đê hát."
+  },
+  {
+   "id": "09-0",
+   "text": "Ca số một: na tri một trăm hai mươi mốt, áp lực thẩm thấu máu hai trăm năm mươi lăm, đường máu bình thường."
+  },
+  {
+   "id": "09-1",
+   "text": "Áp lực thẩm thấu niệu bốn trăm hai mươi, na tri niệu bốn mươi tám, không phù, không dùng lợi tiểu."
+  },
+  {
+   "id": "09-2",
+   "text": "Đang dùng xéc tra lin. Nghĩ đến hội chứng tiết a đê hát không thích hợp do thuốc, sau khi kiểm tra chức năng giáp và cortisol."
+  },
+  {
+   "id": "09-3",
+   "text": "Ca số hai: xơ gan báng bụng, na tri một trăm hai mươi sáu, na tri niệu mười."
+  },
+  {
+   "id": "09-4",
+   "text": "Đây là hạ na tri thừa dịch, nhưng thể tích tuần hoàn hiệu dụng thấp."
+  },
+  {
+   "id": "10-0",
+   "text": "Ôn tập bốn câu hỏi: một, áp lực thẩm thấu máu. Hai, áp lực thẩm thấu niệu."
+  },
+  {
+   "id": "10-1",
+   "text": "Ba, na tri niệu. Bốn, thể tích dịch."
+  },
+  {
+   "id": "10-2",
+   "text": "Bài sau: hạ na tri, xử trí an toàn."
   }
  ]
 }
