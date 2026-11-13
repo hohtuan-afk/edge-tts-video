@@ -150,7 +150,7 @@ const Cup: React.FC<{x: number; bottom: number; level: number; n: number; label:
     <div style={{position: 'absolute', left: x, top: bottom - H, width: W, height: H, opacity: a, fontFamily: FONT}}>
       <div style={{position: 'absolute', left: 0, bottom: 0, width: W, height: level, borderRadius: '0 0 34px 34px', background: `linear-gradient(180deg,${WATER}99,${WATER}55)`}} />
       {Array.from({length: n}, (_, i) => {
-        const cx = 50 + ((i * 97) % 200), cy = 40 + ((i * 61) % Math.max(60, level - 80));
+        const cx = 60 + (i % 3) * 90, cy = 30 + Math.floor(i / 3) * Math.max(90, (level - 110) * 0.7) + (i % 3) * 22;
         return <div key={i} style={{position: 'absolute', left: cx - 26, bottom: cy + Math.sin(f / 12 + i) * 6, width: 52, height: 52, borderRadius: '50%', background: NA, color: '#2A1A05', fontSize: 22, fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 10px rgba(0,0,0,.4)'}}>Na⁺</div>;
       })}
       <div style={{position: 'absolute', inset: 0, border: '6px solid rgba(220,240,250,.75)', borderTop: 'none', borderRadius: '0 0 40px 40px'}} />
@@ -215,7 +215,7 @@ const Box: React.FC<{x: number; c: string; head: string; sub: string; s0: number
 };
 const S4: React.FC = () => (
   <>
-    <Title c={K.txt}>CÙNG MỘT CON SỐ</Title>
+    <Title c={K.txt}>HAI BỆNH NHÂN</Title>
     <Box x={70} c={WATER} head="PHÙ" sub="suy tim, xơ gan" s0={0.3} />
     <Box x={570} c={NA} head="MẤT NƯỚC" sub="nôn, tiêu chảy, lợi tiểu" s0={1.0} />
   </>
