@@ -1,127 +1,35 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+8%",
+ "rate": "+12%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Natri máu một trăm hai mươi lăm. Bệnh nhân thiếu muối, hay thừa nước?"
-  },
-  {
-   "id": "00-1",
-   "text": "Trả lời sai câu hỏi này, điều trị sẽ sai theo."
-  },
-  {
-   "id": "00-2",
-   "text": "Bài một: hiểu đúng nước và na tri từ gốc."
+   "text": "Na tri máu một trăm hai mươi lăm, có phải là thiếu muối?"
   },
   {
    "id": "01-0",
-   "text": "Nước chiếm khoảng sáu mươi phần trăm cân nặng cơ thể."
-  },
-  {
-   "id": "01-1",
-   "text": "Hai phần ba nằm trong tế bào, một phần ba nằm ngoài tế bào."
-  },
-  {
-   "id": "01-2",
-   "text": "Na tri chủ yếu ở ngoài tế bào, còn ka li chủ yếu ở trong tế bào."
+   "text": "Chưa chắc. Na tri máu là nồng độ, bằng lượng muối chia cho lượng nước."
   },
   {
    "id": "02-0",
-   "text": "Bơm na tri ka li trên màng tế bào liên tục đẩy ba na tri ra, đưa hai ka li vào."
-  },
-  {
-   "id": "02-1",
-   "text": "Vì na tri bị giữ ở ngoài, nó quyết định lượng nước ở khoang ngoài tế bào."
+   "text": "Vì vậy, hạ na tri thường là do thừa nước, chứ không phải thiếu muối."
   },
   {
    "id": "03-0",
-   "text": "Điều quan trọng nhất: na tri máu là một nồng độ, tức là lượng muối chia cho lượng nước."
-  },
-  {
-   "id": "03-1",
-   "text": "Hạ na tri thường là thừa nước so với muối."
-  },
-  {
-   "id": "03-2",
-   "text": "Tăng na tri là thiếu nước so với muối."
+   "text": "Thủ phạm thường gặp là a đê hát, hóc môn giữ nước ở thận."
   },
   {
    "id": "04-0",
-   "text": "Áp lực thẩm thấu máu ước tính bằng hai lần na tri, cộng glu cô, cộng u rê, đơn vị mi li mol trên lít."
-  },
-  {
-   "id": "04-1",
-   "text": "Bình thường khoảng hai trăm bảy mươi lăm đến hai trăm chín mươi lăm."
-  },
-  {
-   "id": "04-2",
-   "text": "Nước luôn di chuyển từ nơi loãng sang nơi đặc."
-  },
-  {
-   "id": "04-3",
-   "text": "Khi na tri máu giảm, nước tràn vào tế bào, tế bào sưng lên. Ở não, đó là phù não."
+   "text": "Cùng na tri một trăm hai mươi lăm, bệnh nhân có thể phù, cũng có thể mất nước."
   },
   {
    "id": "05-0",
-   "text": "Cơ thể điều chỉnh nước bằng a đê hát, hóc môn chống bài niệu."
-  },
-  {
-   "id": "05-1",
-   "text": "A đê hát được sản xuất ở vùng dưới đồi, và phóng thích từ thuỳ sau tuyến yên."
-  },
-  {
-   "id": "05-2",
-   "text": "A đê hát tiết ra khi áp lực thẩm thấu tăng, hoặc khi thể tích tuần hoàn giảm."
+   "text": "Vì thể tích dịch do muối quyết định, còn nồng độ do nước."
   },
   {
    "id": "06-0",
-   "text": "Ở thận, a đê hát gắn vào ống góp, mở các kênh a qua po rin, giúp hấp thu nước trở lại."
-  },
-  {
-   "id": "06-1",
-   "text": "Có a đê hát, nước tiểu đặc lại, có thể tới một nghìn hai trăm."
-  },
-  {
-   "id": "06-2",
-   "text": "Không có a đê hát, nước tiểu loãng, xuống còn năm mươi đến một trăm."
-  },
-  {
-   "id": "07-0",
-   "text": "Van thứ hai là cơn khát."
-  },
-  {
-   "id": "07-1",
-   "text": "Áp lực thẩm thấu tăng làm ta khát và uống nước."
-  },
-  {
-   "id": "07-2",
-   "text": "Vì vậy, người không tự uống được, như người già hay hôn mê, rất dễ bị tăng na tri."
-  },
-  {
-   "id": "08-0",
-   "text": "Tóm lại hai hệ thống: nồng độ na tri do nước quyết định, qua a đê hát và cơn khát."
-  },
-  {
-   "id": "08-1",
-   "text": "Còn thể tích dịch do tổng lượng muối quyết định, qua hệ rê nin an đô xtê rôn."
-  },
-  {
-   "id": "08-2",
-   "text": "Vì vậy, cùng na tri một trăm hai mươi lăm, bệnh nhân có thể phù, cũng có thể mất nước."
-  },
-  {
-   "id": "09-0",
-   "text": "Ôn tập. Na tri máu là tỉ lệ muối trên nước, phản ánh nước."
-  },
-  {
-   "id": "09-1",
-   "text": "A đê hát và cơn khát giữ áp lực thẩm thấu ổn định."
-  },
-  {
-   "id": "09-2",
-   "text": "Bài sau: hạ na tri máu, cách chẩn đoán."
+   "text": "Lưu lại để ôn, và xem bài một đầy đủ trên kênh nhé!"
   }
  ]
 }
