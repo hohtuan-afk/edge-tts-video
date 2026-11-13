@@ -1,0 +1,79 @@
+[
+ {
+  "orig": 6.0,
+  "dur": 4.4,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 3.047,
+    "text": "Hạ natri: 4 câu hỏi chẩn đoán"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.88,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 4.174,
+    "text": "① ALTT máu thấp? → hạ natri THẬT"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.76,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 4.062,
+    "text": "② ALTT niệu < 100 → uống quá nhiều nước"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.72,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 4.038,
+    "text": "③ Na⁺ niệu ≤ 30 → thận đang giữ muối"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.4,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 3.382,
+    "text": "④ Thể tích: giảm · bình thường · tăng"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.96,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 4.261,
+    "text": "Na⁺ niệu > 30 + thể tích bình thường → nghĩ SIAD"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.4,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 2.579,
+    "text": "Lưu lại để ôn · xem Bài 2 đầy đủ trên kênh!"
+   }
+  ]
+ }
+]
