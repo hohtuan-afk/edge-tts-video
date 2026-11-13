@@ -1,0 +1,283 @@
+[
+ {
+  "orig": 12.0,
+  "dur": 9.96,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.77,
+    "text": "Cụ bà 78 tuổi, lơ mơ · Na⁺ 121"
+   },
+   {
+    "start": 4.62,
+    "dur": 0.814,
+    "text": "Nguyên nhân là gì?"
+   },
+   {
+    "start": 5.784,
+    "dur": 2.69,
+    "text": "Trả lời bằng 4 câu hỏi theo thứ tự"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 21.72,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.223,
+    "text": "Hạ natri: Na⁺ < 135 mmol/L"
+   },
+   {
+    "start": 4.073,
+    "dur": 6.519,
+    "text": "Nhẹ 130–135 · vừa 125–129 · nặng < 125"
+   },
+   {
+    "start": 10.942,
+    "dur": 4.227,
+    "text": "Cấp < 48 giờ · mạn ≥ 48 giờ"
+   },
+   {
+    "start": 15.518,
+    "dur": 4.693,
+    "text": "Triệu chứng nặng (nôn, co giật, hôn mê) → xử trí trước"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 17.12,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.356,
+    "text": "Câu 1: ALTT máu có thấp không?"
+   },
+   {
+    "start": 3.206,
+    "dur": 4.257,
+    "text": "ALTT bình thường → giả hạ natri (mỡ máu, protein rất cao)"
+   },
+   {
+    "start": 7.814,
+    "dur": 2.801,
+    "text": "ALTT tăng → đường máu cao, mannitol"
+   },
+   {
+    "start": 10.965,
+    "dur": 4.64,
+    "text": "Đường máu tăng 5,5 mmol/L → Na⁺ giảm ≈ 1,6–2,4"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 16.4,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.594,
+    "text": "Câu 2: ALTT niệu (ADH đang bật hay tắt?)"
+   },
+   {
+    "start": 4.444,
+    "dur": 3.343,
+    "text": "< 100 → ADH TẮT, thận đang thải nước tối đa"
+   },
+   {
+    "start": 8.138,
+    "dur": 3.372,
+    "text": "Uống quá nhiều nước · uống nhiều bia · ăn quá ít đạm"
+   },
+   {
+    "start": 11.86,
+    "dur": 3.04,
+    "text": "> 100 → ADH đang hoạt động → hỏi tiếp"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 16.6,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 1.556,
+    "text": "Câu 3: Na⁺ niệu"
+   },
+   {
+    "start": 2.406,
+    "dur": 3.959,
+    "text": "≤ 30 → thể tích tuần hoàn hiệu dụng THẤP, thận giữ muối"
+   },
+   {
+    "start": 6.715,
+    "dur": 4.235,
+    "text": "Mất qua tiêu hoá · suy tim · xơ gan · hội chứng thận hư"
+   },
+   {
+    "start": 11.3,
+    "dur": 3.786,
+    "text": "> 30 → thận đang mất muối, hoặc SIAD"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 14.6,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.387,
+    "text": "Câu 4: thể tích dịch ngoại bào"
+   },
+   {
+    "start": 3.237,
+    "dur": 2.698,
+    "text": "Giảm · bình thường · tăng (phù, báng)"
+   },
+   {
+    "start": 6.285,
+    "dur": 2.842,
+    "text": "Khám lâm sàng đánh giá thể tích KÉM chính xác"
+   },
+   {
+    "start": 9.477,
+    "dur": 3.61,
+    "text": "Vì vậy hướng dẫn châu Âu xét Na⁺ niệu TRƯỚC"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 14.96,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.126,
+    "text": "Na⁺ niệu > 30: nghĩ gì?"
+   },
+   {
+    "start": 2.976,
+    "dur": 3.521,
+    "text": "Thuốc lợi tiểu (thiazide, hay gặp ở người già)"
+   },
+   {
+    "start": 6.847,
+    "dur": 2.679,
+    "text": "Suy thượng thận · nôn ói · bệnh thận mất muối"
+   },
+   {
+    "start": 9.876,
+    "dur": 3.59,
+    "text": "Không có các nguyên nhân trên → SIAD"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 16.4,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.649,
+    "text": "SIAD: tiết ADH không thích hợp"
+   },
+   {
+    "start": 4.499,
+    "dur": 5.351,
+    "text": "ALTT máu < 275 · ALTT niệu > 100 · Na⁺ niệu > 30"
+   },
+   {
+    "start": 10.2,
+    "dur": 1.312,
+    "text": "Thể tích BÌNH THƯỜNG"
+   },
+   {
+    "start": 11.862,
+    "dur": 3.048,
+    "text": "Loại trừ: suy giáp · suy thượng thận · lợi tiểu"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 14.92,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 1.176,
+    "text": "Nguyên nhân SIAD"
+   },
+   {
+    "start": 2.026,
+    "dur": 3.017,
+    "text": "Phổi (viêm phổi) · não (đột quỵ, chấn thương)"
+   },
+   {
+    "start": 5.393,
+    "dur": 4.432,
+    "text": "Thuốc: SSRI, carbamazepine · ung thư phổi tế bào nhỏ"
+   },
+   {
+    "start": 10.175,
+    "dur": 3.24,
+    "text": "Đau · nôn · sau phẫu thuật"
+   }
+  ]
+ },
+ {
+  "orig": 18.0,
+  "dur": 28.36,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 5.254,
+    "text": "Ca số 1: Na⁺ 121 · ALTT máu 255 · đường máu bình thường"
+   },
+   {
+    "start": 6.104,
+    "dur": 5.086,
+    "text": "ALTT niệu 420 · Na⁺ niệu 48 · không phù · không lợi tiểu"
+   },
+   {
+    "start": 11.539,
+    "dur": 6.929,
+    "text": "Đang dùng sertraline → SIAD do thuốc (kiểm tra TSH, cortisol)"
+   },
+   {
+    "start": 18.818,
+    "dur": 4.599,
+    "text": "Ca số 2: xơ gan báng bụng · Na⁺ 126 · Na⁺ niệu 10"
+   },
+   {
+    "start": 23.767,
+    "dur": 3.087,
+    "text": "→ Hạ natri thừa dịch, thể tích tuần hoàn hiệu dụng thấp"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 13.96,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 5.477,
+    "text": "① ALTT máu · ② ALTT niệu"
+   },
+   {
+    "start": 6.327,
+    "dur": 3.244,
+    "text": "③ Na⁺ niệu · ④ thể tích"
+   },
+   {
+    "start": 9.921,
+    "dur": 2.539,
+    "text": "Bài 3: Hạ natri, xử trí an toàn"
+   }
+  ]
+ }
+]
