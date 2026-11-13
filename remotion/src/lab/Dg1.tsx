@@ -396,7 +396,7 @@ const Glass: React.FC<{x: number; level: number; salt: number; a: number; c: str
           {Array.from({length: salt}, (_, i) => <circle key={i} cx={30 + ((i * 53) % (W - 60))} cy={H - 20 - ((i * 37) % Math.max(20, H * level - 40)) + Math.sin(f / 20 + i) * 4} r={11} fill={NA} />)}
         </svg>
       </div>
-      <div style={{position: 'absolute', left: 0, top: H + 14, width: W, textAlign: 'center', fontSize: 34, fontWeight: 900, color: c}}>{label}</div>
+      <div style={{position: 'absolute', left: -80, top: H + 14, width: W + 160, textAlign: 'center', fontSize: 34, fontWeight: 900, color: c, whiteSpace: 'nowrap'}}>{chem(label)}</div>
     </div>
   );
 };
@@ -428,14 +428,14 @@ const D5: React.FC<{S: number[]; D: number[]}> = ({S, D}) => {
       <Svg>
         {Array.from({length: 8}, (_, i) => {
           const u = (f / 45 + i / 8) % 1, ang = (i / 8) * Math.PI * 2;
-          const rr = 330 - u * 150;
+          const rr = 250 - u * 110;
           return <g key={i} opacity={ap(t, S[3] + 0.3) * Math.sin(u * Math.PI)} transform={`translate(${540 + Math.cos(ang) * rr},${650 + Math.sin(ang) * rr})`}><path d="M0,-20 C12,-4 14,6 0,14 C-14,6 -12,-4 0,-20Z" fill={WATER} /></g>;
         })}
       </Svg>
-      <Panel x={960} y={500} w={800} h={240} c={K.o2} s0={S[3]} glow={ap(t, S[3] + 2)}>
+      <Panel x={960} y={480} w={800} h={290} c={K.o2} s0={S[3]} glow={ap(t, S[3] + 2)}>
         <Tx x={0} y={28} w={800} al="center" size={32} c={K.o2} b={800}>Na⁺ MÁU GIẢM</Tx>
-        <Tx x={30} y={84} w={740} al="center" size={42} b={800}>Nước tràn vào tế bào → tế bào sưng</Tx>
-        <Tx x={0} y={180} w={800} al="center" size={34} c={K.amber} b={900}>Ở não: PHÙ NÃO</Tx>
+        <Tx x={30} y={80} w={740} al="center" size={38} b={800}>Nước tràn vào tế bào → tế bào sưng</Tx>
+        <Tx x={0} y={210} w={800} al="center" size={40} c={K.amber} b={900}>Ở não: PHÙ NÃO</Tx>
       </Panel>
     </>
   );
@@ -479,8 +479,8 @@ const D7: React.FC<{S: number[]; D: number[]}> = ({S}) => {
       </Svg>
       <Tx x={ductX - 120} y={y0 + h + 4} w={240} al="center" size={28} c={WATER} b={800} a={ap(t, S[0] + 0.4)}>ống góp</Tx>
       <Card x={1000} y={190} w={780} h={200} c={WATER} s0={S[0]} head="ADH + ỐNG GÓP" body="Mở kênh aquaporin → hấp thu nước" size={40} />
-      <Card x={1000} y={420} w={380} h={300} c={K.amber} s0={S[1]} head="CÓ ADH" body="Nước tiểu ĐẶC · tới ~1200" size={40} />
-      <Card x={1400} y={420} w={380} h={300} c={WATER} s0={S[2]} head="KHÔNG ADH" body="Nước tiểu LOÃNG · ~50–100" size={40} />
+      <Card x={1000} y={420} w={380} h={300} c={K.amber} s0={S[1]} head="CÓ ADH" body="Nước tiểu ĐẶC · tới ~1200" size={36} />
+      <Card x={1400} y={420} w={380} h={300} c={WATER} s0={S[2]} head="KHÔNG ADH" body="Nước tiểu LOÃNG · ~50–100" size={36} />
     </>
   );
 };
