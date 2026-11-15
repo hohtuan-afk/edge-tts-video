@@ -12,7 +12,7 @@ const K = {
   txt: '#F2F7F9', dim: '#A7BAC4', ink: '#22303A', muted: '#60707A', amber: '#F5B83D',
   ph: '#F2B632', co2: '#38A7DD', hco3: '#F2813D', o2: '#E5484D', green: '#3FB27F', line: 'rgba(190,220,235,.2)',
 };
-const NAMES = ['MỞ ĐẦU', 'ĐỊNH NGHĨA', 'NÃO', 'NGUYÊN NHÂN', 'ALTT NIỆU', 'DESMOPRESSIN', 'ĐÁI THÁO NHẠT', 'NƯỚC THIẾU', 'BÙ GÌ', 'TỐC ĐỘ', 'CA const NAMES = ['HAI BỜ VỰC', 'VÌ SAO CHẬM', 'TRIỆU CHỨNG', 'NaCl 3%', 'GIỚI HẠN', 'BẰNG CHỨNG', 'BẪY', 'HẠ LẠI', 'NGUYÊN NHÂN', 'CA BỆNH', 'ÔN TẬP']; ÔN TẬP'];
+const NAMES = ['MỞ ĐẦU', 'ĐỊNH NGHĨA', 'NÃO', 'NGUYÊN NHÂN', 'ALTT NIỆU', 'DESMOPRESSIN', 'ĐÁI THÁO NHẠT', 'NƯỚC THIẾU', 'BÙ GÌ', 'TỐC ĐỘ', 'CA & ÔN TẬP'];
 
 const useSec = () => useCurrentFrame() / 30;
 const usePop = (s0: number, damping = 14) => {
