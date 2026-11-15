@@ -1,285 +1,81 @@
 {
  "fps": 30,
- "total": 5802,
+ "total": 947,
  "scenes": [
   {
    "from": 0,
-   "dur": 349,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 2.24,
-     "text": "Xử trí hạ natri: đi giữa hai bờ vực"
-    },
-    {
-     "start": 3.09,
-     "dur": 2.826,
-     "text": "Để natri thấp → PHÙ NÃO"
-    },
-    {
-     "start": 6.266,
-     "dur": 3.88,
-     "text": "Nâng natri quá nhanh → HUỶ MYELIN"
+     "start": 0.25,
+     "dur": 3.327,
+     "text": "Hạ natri: quy tắc 5 · 10 · 8"
     }
    ]
   },
   {
-   "from": 349,
-   "dur": 556,
+   "from": 132,
+   "dur": 155,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 3.608,
-     "text": "Máu loãng → nước vào tế bào não → sưng"
-    },
-    {
-     "start": 4.458,
-     "dur": 4.856,
-     "text": "Sau ~48 giờ: não đẩy bớt chất thẩm thấu ra → hết sưng"
-    },
-    {
-     "start": 9.664,
-     "dur": 4.271,
-     "text": "Nâng natri quá nhanh → nước rút ra → tế bào TEO"
-    },
-    {
-     "start": 14.285,
-     "dur": 2.744,
-     "text": "→ Bao myelin tổn thương, hay gặp ở cầu não"
+     "start": 0.25,
+     "dur": 4.469,
+     "text": "5 · triệu chứng nặng: NaCl 3%, tăng ~5"
     }
    ]
   },
   {
-   "from": 905,
-   "dur": 315,
+   "from": 287,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 1.985,
-     "text": "Câu hỏi đầu tiên: có triệu chứng NẶNG không?"
-    },
-    {
-     "start": 2.835,
-     "dur": 2.731,
-     "text": "Nôn · co giật · lơ mơ · hôn mê"
-    },
-    {
-     "start": 5.917,
-     "dur": 3.119,
-     "text": "Có → cấp cứu: nâng natri ngay, chưa cần biết nguyên nhân"
+     "start": 0.25,
+     "dur": 2.402,
+     "text": "10 · không quá 10 trong 24 giờ đầu"
     }
    ]
   },
   {
-   "from": 1220,
-   "dur": 567,
+   "from": 419,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 3.627,
-     "text": "NaCl 3% · 150 mL trong 20 phút"
-    },
-    {
-     "start": 4.477,
-     "dur": 3.262,
-     "text": "Thử Na⁺ sau mỗi liều · lặp lại tối đa 2–3 lần"
-    },
-    {
-     "start": 8.088,
-     "dur": 3.651,
-     "text": "Mục tiêu: tăng ~5 mmol/L → triệu chứng thường cải thiện"
-    },
-    {
-     "start": 12.089,
-     "dur": 5.279,
-     "text": "SALSA: bolus ngắt quãng an toàn như truyền liên tục"
+     "start": 0.25,
+     "dur": 2.64,
+     "text": "8 · không quá 8 mỗi 24 giờ sau"
     }
    ]
   },
   {
-   "from": 1787,
-   "dur": 531,
+   "from": 551,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
+     "start": 0.25,
+     "dur": 2.864,
+     "text": "Nâng quá nhanh → huỷ myelin thẩm thấu"
+    }
+   ]
+  },
+  {
+   "from": 683,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
      "dur": 3.686,
-     "text": "Giới hạn: ≤ 10 trong 24 giờ đầu"
-    },
-    {
-     "start": 4.536,
-     "dur": 2.461,
-     "text": "≤ 8 cho mỗi 24 giờ tiếp theo"
-    },
-    {
-     "start": 7.347,
-     "dur": 2.879,
-     "text": "Nguy cơ cao → ≤ 8 ngay ngày đầu"
-    },
-    {
-     "start": 10.576,
-     "dur": 5.655,
-     "text": "Na⁺ ≤ 105 · hạ kali · nghiện rượu · suy dinh dưỡng · bệnh gan"
+     "text": "Nước tiểu > 100 mL/giờ → thử lại Na⁺ ngay!"
     }
    ]
   },
   {
-   "from": 2318,
-   "dur": 650,
+   "from": 815,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 5.522,
-     "text": "Huỷ myelin thẩm thấu: HIẾM (~0,05–0,2%)"
-    },
-    {
-     "start": 6.372,
-     "dur": 3.565,
-     "text": "Nhiều ca xảy ra dù nâng ≤ 8 · liên quan yếu tố nguy cơ"
-    },
-    {
-     "start": 10.287,
-     "dur": 6.065,
-     "text": "Nâng QUÁ CHẬM (< 6/24 giờ) liên quan tử vong cao hơn"
-    },
-    {
-     "start": 16.702,
-     "dur": 3.419,
-     "text": "Giữ giới hạn · nhưng đừng nâng quá chậm"
-    }
-   ]
-  },
-  {
-   "from": 2968,
-   "dur": 538,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 2.218,
-     "text": "BẪY: natri tự tăng vọt"
-    },
-    {
-     "start": 3.068,
-     "dur": 2.457,
-     "text": "Nguyên nhân được giải quyết → ADH TẮT"
-    },
-    {
-     "start": 5.874,
-     "dur": 4.516,
-     "text": "Bù đủ dịch · ngưng thiazide · cho cortisol · hết nôn"
-    },
-    {
-     "start": 10.74,
-     "dur": 5.703,
-     "text": "Nước tiểu > 100 mL/giờ, loãng → BÁO ĐỘNG"
-    }
-   ]
-  },
-  {
-   "from": 3506,
-   "dur": 413,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 2.748,
-     "text": "Vượt giới hạn → hạ natri LẠI"
-    },
-    {
-     "start": 3.598,
-     "dur": 1.122,
-     "text": "Ngưng dịch ưu trương"
-    },
-    {
-     "start": 5.07,
-     "dur": 3.149,
-     "text": "Glucose 5% · 10 mL/kg trong 1 giờ"
-    },
-    {
-     "start": 8.569,
-     "dur": 3.7,
-     "text": "± Desmopressin 2 µg tĩnh mạch"
-    }
-   ]
-  },
-  {
-   "from": 3919,
-   "dur": 558,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 3.301,
-     "text": "Không triệu chứng nặng → điều trị theo nguyên nhân"
-    },
-    {
-     "start": 4.151,
-     "dur": 3.947,
-     "text": "Giảm thể tích → NaCl 0,9% hoặc dịch cân bằng"
-    },
-    {
-     "start": 8.448,
-     "dur": 3.238,
-     "text": "Thừa dịch → hạn chế nước · điều trị bệnh nền"
-    },
-    {
-     "start": 12.036,
-     "dur": 5.058,
-     "text": "SIAD → hạn chế nước · ure uống · ngưng thuốc gây"
-    }
-   ]
-  },
-  {
-   "from": 4477,
-   "dur": 869,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 5.285,
-     "text": "Ca số 1: cụ bà Na⁺ 121, lơ mơ (SIAD do sertraline)"
-    },
-    {
-     "start": 6.135,
-     "dur": 6.13,
-     "text": "NaCl 3% × 2 liều → Na⁺ 125, tỉnh hơn → ngưng bolus"
-    },
-    {
-     "start": 12.615,
-     "dur": 5.21,
-     "text": "Ngưng sertraline · hạn chế nước · mục tiêu ngày 1 ≤ 131"
-    },
-    {
-     "start": 18.175,
-     "dur": 4.435,
-     "text": "Giờ 18: nước tiểu 200 mL/giờ · Na⁺ 130"
-    },
-    {
-     "start": 22.96,
-     "dur": 4.49,
-     "text": "→ Glucose 5% + desmopressin, giữ Na⁺ không vượt 131"
-    }
-   ]
-  },
-  {
-   "from": 5346,
-   "dur": 456,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 4.065,
-     "text": "5 · tăng ~5 để cứu não"
-    },
-    {
-     "start": 4.915,
-     "dur": 5.147,
-     "text": "10 · không quá 10 trong 24 giờ đầu · 8 · mỗi 24 giờ sau"
-    },
-    {
-     "start": 10.411,
-     "dur": 1.319,
-     "text": "Luôn theo dõi nước tiểu!"
-    },
-    {
-     "start": 12.08,
-     "dur": 1.622,
-     "text": "Bài 4: Tăng natri máu"
+     "start": 0.25,
+     "dur": 2.596,
+     "text": "Lưu lại để ôn · xem Bài 3 đầy đủ trên kênh!"
     }
    ]
   }
