@@ -1,179 +1,35 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+8%",
+ "rate": "+12%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Xử trí hạ na tri giống như đi giữa hai bờ vực."
-  },
-  {
-   "id": "00-1",
-   "text": "Một bên: để na tri thấp quá lâu, não sẽ phù."
-  },
-  {
-   "id": "00-2",
-   "text": "Bên kia: nâng na tri quá nhanh, gây hội chứng huỷ mi ê lin thẩm thấu."
+   "text": "Xử trí hạ na tri, nhớ quy tắc năm, mười, tám."
   },
   {
    "id": "01-0",
-   "text": "Khi máu loãng, nước tràn vào tế bào não, làm tế bào sưng lên."
-  },
-  {
-   "id": "01-1",
-   "text": "Sau khoảng bốn mươi tám giờ, não thích nghi, đẩy bớt chất thẩm thấu ra ngoài, tế bào hết sưng."
-  },
-  {
-   "id": "01-2",
-   "text": "Lúc này nếu nâng na tri quá nhanh, nước bị rút ra khỏi tế bào, tế bào teo lại."
-  },
-  {
-   "id": "01-3",
-   "text": "Bao mi ê lin bị tổn thương, hay gặp ở cầu não."
+   "text": "Năm: có triệu chứng nặng, truyền na tri clo rua ba phần trăm, tăng khoảng năm để cứu não."
   },
   {
    "id": "02-0",
-   "text": "Câu hỏi đầu tiên: có triệu chứng nặng không?"
-  },
-  {
-   "id": "02-1",
-   "text": "Nôn ói, co giật, lơ mơ, hôn mê."
-  },
-  {
-   "id": "02-2",
-   "text": "Nếu có, phải nâng na tri ngay, chưa cần biết nguyên nhân."
+   "text": "Mười: không tăng quá mười trong hai mươi bốn giờ đầu."
   },
   {
    "id": "03-0",
-   "text": "Truyền na tri clo rua ba phần trăm, một trăm năm mươi mi li lít trong hai mươi phút."
-  },
-  {
-   "id": "03-1",
-   "text": "Thử lại na tri sau mỗi liều, lặp lại tối đa hai đến ba lần."
-  },
-  {
-   "id": "03-2",
-   "text": "Mục tiêu là tăng khoảng năm mi li mol trên lít, đủ để triệu chứng thường cải thiện."
-  },
-  {
-   "id": "03-3",
-   "text": "Thử nghiệm xan xa cho thấy bolus ngắt quãng an toàn tương đương truyền liên tục, lại ít phải hạ na tri lại hơn."
+   "text": "Tám: không quá tám cho mỗi hai mươi bốn giờ tiếp theo."
   },
   {
    "id": "04-0",
-   "text": "Giới hạn tốc độ: không quá mười mi li mol trên lít trong hai mươi bốn giờ đầu."
-  },
-  {
-   "id": "04-1",
-   "text": "Và không quá tám cho mỗi hai mươi bốn giờ tiếp theo."
-  },
-  {
-   "id": "04-2",
-   "text": "Bệnh nhân nguy cơ cao, giữ không quá tám ngay từ ngày đầu."
-  },
-  {
-   "id": "04-3",
-   "text": "Gồm: na tri từ một trăm lẻ năm trở xuống, hạ ka li, nghiện rượu, suy dinh dưỡng, bệnh gan."
+   "text": "Vì nâng quá nhanh có thể gây hội chứng huỷ mi ê lin thẩm thấu."
   },
   {
    "id": "05-0",
-   "text": "Các nghiên cứu lớn gần đây cho thấy huỷ mi ê lin thẩm thấu khá hiếm, khoảng không phẩy không năm đến không phẩy hai phần trăm."
-  },
-  {
-   "id": "05-1",
-   "text": "Nhiều ca xảy ra dù nâng không quá tám, thường ở người có yếu tố nguy cơ."
-  },
-  {
-   "id": "05-2",
-   "text": "Ngược lại, nâng quá chậm, dưới sáu trong hai mươi bốn giờ, liên quan tử vong cao hơn, dù chỉ là nghiên cứu quan sát."
-  },
-  {
-   "id": "05-3",
-   "text": "Thông điệp: vẫn giữ giới hạn, nhưng đừng sợ đến mức nâng quá chậm."
+   "text": "Nước tiểu trên một trăm mi li lít mỗi giờ? Thử lại na tri ngay!"
   },
   {
    "id": "06-0",
-   "text": "Cái bẫy lớn nhất: na tri tự tăng vọt."
-  },
-  {
-   "id": "06-1",
-   "text": "Khi nguyên nhân được giải quyết, a đê hát đột ngột tắt."
-  },
-  {
-   "id": "06-2",
-   "text": "Ví dụ: đã bù đủ dịch, ngưng thi a dít, cho co ti sôn, hay hết nôn."
-  },
-  {
-   "id": "06-3",
-   "text": "Dấu hiệu báo động: nước tiểu trên một trăm mi li lít mỗi giờ, rất loãng. Phải thử na tri ngay."
-  },
-  {
-   "id": "07-0",
-   "text": "Nếu na tri tăng vượt giới hạn, phải chủ động hạ lại."
-  },
-  {
-   "id": "07-1",
-   "text": "Ngưng ngay dịch ưu trương."
-  },
-  {
-   "id": "07-2",
-   "text": "Truyền glu cô năm phần trăm, mười mi li lít mỗi ký trong một giờ."
-  },
-  {
-   "id": "07-3",
-   "text": "Có thể kèm đét mô prét xin hai mi crô gam tĩnh mạch, để thận ngừng thải nước."
-  },
-  {
-   "id": "08-0",
-   "text": "Nếu không có triệu chứng nặng, điều trị theo nguyên nhân đã tìm ở bài hai."
-  },
-  {
-   "id": "08-1",
-   "text": "Giảm thể tích: truyền na tri clo rua không phẩy chín phần trăm, hoặc dịch cân bằng."
-  },
-  {
-   "id": "08-2",
-   "text": "Thừa dịch: hạn chế nước, điều trị suy tim, xơ gan."
-  },
-  {
-   "id": "08-3",
-   "text": "Hội chứng tiết a đê hát không thích hợp: hạn chế nước, có thể dùng u rê uống, ngưng thuốc gây bệnh."
-  },
-  {
-   "id": "09-0",
-   "text": "Ca số một: cụ bà ở bài hai, na tri một trăm hai mươi mốt, lơ mơ, do xéc tra lin."
-  },
-  {
-   "id": "09-1",
-   "text": "Truyền hai liều na tri clo rua ba phần trăm, na tri lên một trăm hai mươi lăm, bà tỉnh hơn. Ngưng bolus."
-  },
-  {
-   "id": "09-2",
-   "text": "Ngưng xéc tra lin, hạn chế nước. Mục tiêu ngày đầu: không quá một trăm ba mươi mốt."
-  },
-  {
-   "id": "09-3",
-   "text": "Giờ thứ mười tám: nước tiểu hai trăm mi li lít mỗi giờ, na tri đã một trăm ba mươi."
-  },
-  {
-   "id": "09-4",
-   "text": "Truyền glu cô năm phần trăm, kèm đét mô prét xin, giữ na tri không vượt một trăm ba mươi mốt."
-  },
-  {
-   "id": "10-0",
-   "text": "Ôn tập ba con số. Năm: tăng khoảng năm để cứu não."
-  },
-  {
-   "id": "10-1",
-   "text": "Mười: không quá mười trong hai mươi bốn giờ đầu. Tám: cho mỗi hai mươi bốn giờ sau."
-  },
-  {
-   "id": "10-2",
-   "text": "Và luôn theo dõi nước tiểu."
-  },
-  {
-   "id": "10-3",
-   "text": "Bài sau: tăng na tri máu."
+   "text": "Lưu lại để ôn, và xem bài ba đầy đủ trên kênh nhé!"
   }
  ]
 }
