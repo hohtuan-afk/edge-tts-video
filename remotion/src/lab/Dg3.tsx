@@ -463,10 +463,10 @@ const D6: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   return (
     <>
       <Top idx={5} title="Bằng chứng mới (2023)" />
-      <Card x={140} y={190} w={520} h={300} c={K.green} s0={S[0]} head="HUỶ MYELIN" body="HIẾM · ~0,05–0,2%" size={44} />
-      <Card x={700} y={190} w={520} h={300} c={WATER} s0={S[1]} head="NHIỀU CA" body="xảy ra dù nâng ≤ 8" sub="thường có yếu tố nguy cơ" size={42} />
-      <Card x={1260} y={190} w={520} h={300} c={K.o2} s0={S[2]} head="NÂNG QUÁ CHẬM" body="< 6/24 giờ → tử vong ↑" sub="nghiên cứu quan sát" size={40} glow={ap(t, S[2] + 1)} />
-      <GoldC y={600} a={ap(t, S[3])} size={52}>Giữ giới hạn · nhưng đừng nâng quá chậm</GoldC>
+      <Card x={140} y={190} w={520} h={230} c={K.green} s0={S[0]} head="HUỶ MYELIN" body="HIẾM · ~0,05–0,2%" size={44} />
+      <Card x={700} y={190} w={520} h={230} c={WATER} s0={S[1]} head="NHIỀU CA" body="xảy ra dù nâng ≤ 8" sub="thường có yếu tố nguy cơ" size={42} />
+      <Card x={1260} y={190} w={520} h={230} c={K.o2} s0={S[2]} head="NÂNG QUÁ CHẬM" body="< 6/24 giờ → tử vong ↑" sub="nghiên cứu quan sát" size={40} glow={ap(t, S[2] + 1)} />
+      <GoldC y={500} a={ap(t, S[3])} size={52}>Giữ giới hạn · nhưng đừng nâng quá chậm</GoldC>
     </>
   );
 };
@@ -502,10 +502,10 @@ const D9: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   return (
     <>
       <Top idx={8} title="Không triệu chứng nặng: theo nguyên nhân" />
-      <Card x={140} y={200} w={520} h={400} c={NA} s0={S[1]} head="GIẢM THỂ TÍCH" body="NaCl 0,9% hoặc dịch cân bằng" size={40} />
-      <Card x={700} y={200} w={520} h={400} c={WATER} s0={S[2]} head="THỪA DỊCH" body="Hạn chế nước · điều trị suy tim, xơ gan" size={40} />
-      <Card x={1260} y={200} w={520} h={400} c={K.amber} s0={S[3]} head="SIAD" body="Hạn chế nước · ure uống · ngưng thuốc gây" size={40} />
-      <Tx x={140} y={660} w={1640} al="center" size={32} c={K.dim} b={700} a={ap(t, S[0] + 0.5)}>Dựa vào 4 câu hỏi chẩn đoán ở Bài 2</Tx>
+      <Card x={140} y={200} w={520} h={270} c={NA} s0={S[1]} head="GIẢM THỂ TÍCH" body="NaCl 0,9% hoặc dịch cân bằng" size={40} />
+      <Card x={700} y={200} w={520} h={270} c={WATER} s0={S[2]} head="THỪA DỊCH" body="Hạn chế nước · điều trị suy tim, xơ gan" size={40} />
+      <Card x={1260} y={200} w={520} h={270} c={K.amber} s0={S[3]} head="SIAD" body="Hạn chế nước · ure uống · ngưng thuốc gây" size={40} />
+      <Tx x={140} y={530} w={1640} al="center" size={32} c={K.dim} b={700} a={ap(t, S[0] + 0.5)}>Dựa vào 4 câu hỏi chẩn đoán ở Bài 2</Tx>
     </>
   );
 };
@@ -513,7 +513,7 @@ const D9: React.FC<{S: number[]; D: number[]}> = ({S}) => {
 // ---------- 10 Ca số 1: biểu đồ Na ----------
 const D10: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   const t = useSec();
-  const X0 = 140, X1 = 1000, Y0 = 760, Y1 = 220; // trục
+  const X0 = 140, X1 = 860, Y0 = 760, Y1 = 220; // trục
   const hx = (h: number) => X0 + (h / 24) * (X1 - X0);
   const ny = (n: number) => Y0 - ((n - 119) / (133 - 119)) * (Y0 - Y1);
   const pts: [number, number, number][] = [[0, 121, S[0]], [1, 125, S[1] + 1], [18, 130, S[3] + 0.6], [24, 131, S[4] + 1]];
@@ -526,19 +526,19 @@ const D10: React.FC<{S: number[]; D: number[]}> = ({S}) => {
         <line x1={X0} y1={Y0} x2={X1} y2={Y0} stroke={K.dim} strokeWidth={3} />
         <line x1={X0} y1={Y0} x2={X0} y2={Y1 - 20} stroke={K.dim} strokeWidth={3} />
         {[0, 6, 12, 18, 24].map((h) => <text key={h} x={hx(h)} y={Y0 + 44} fill={K.dim} fontSize={28} fontFamily={FONT} textAnchor="middle">{h}h</text>)}
-        {[121, 125, 131].map((n) => <text key={n} x={X0 - 16} y={ny(n) + 10} fill={K.dim} fontSize={28} fontFamily={FONT} textAnchor="end">{n}</text>)}
+        {[131].map((n) => <text key={n} x={X0 - 16} y={ny(n) + 10} fill={K.dim} fontSize={28} fontFamily={FONT} textAnchor="end">{n}</text>)}
         <line x1={X0} y1={ny(131)} x2={X1} y2={ny(131)} stroke={K.o2} strokeWidth={4} strokeDasharray="14 10" opacity={ap(t, S[2])} />
         <text x={X1} y={ny(131) - 14} fill={K.o2} fontSize={30} fontWeight={800} fontFamily={FONT} textAnchor="end" opacity={ap(t, S[2])}>giới hạn ngày 1: 131</text>
         <path d={d} fill="none" stroke={K.amber} strokeWidth={7} strokeLinejoin="round" />
         {shown.map((p) => <circle key={p[0]} cx={hx(p[0])} cy={ny(p[1])} r={14} fill={p[0] === 18 ? K.o2 : K.amber} stroke="#fff" strokeWidth={4} />)}
-        {shown.map((p) => <text key={'t' + p[0]} x={hx(p[0]) + (p[0] === 0 ? 24 : -10)} y={ny(p[1]) + (p[0] === 0 ? 10 : 50)} fill={K.txt} fontSize={32} fontWeight={900} fontFamily={FONT} textAnchor={p[0] === 0 ? 'start' : 'end'}>{p[1]}</text>)}
+        {shown.map((p) => { const lo = p[0] <= 1; return <text key={'t' + p[0]} x={hx(p[0]) + (lo ? 26 : -6)} y={ny(p[1]) + (lo ? 12 : 52)} fill={K.txt} fontSize={34} fontWeight={900} fontFamily={FONT} textAnchor={lo ? 'start' : 'end'}>{p[1]}</text>; })}
       </svg>
-      <Step x={1080} y={200} s0={S[1]} size={34}>NaCl 3% × 2 liều → 125, tỉnh hơn</Step>
-      <Step x={1080} y={275} s0={S[1] + 2} size={34} c={K.green}>→ Ngưng bolus</Step>
-      <Step x={1080} y={360} s0={S[2]} size={34}>Ngưng sertraline · hạn chế nước</Step>
-      <Step x={1080} y={445} s0={S[3]} size={34} c={K.o2}>Giờ 18: nước tiểu 200 mL/giờ!</Step>
-      <Res x={1080} y={540} s0={S[4]} c={K.amber}>Glucose 5% + desmopressin</Res>
-      <Tx x={1080} y={650} w={780} size={32} c={K.dim} b={700} a={ap(t, S[4] + 1.2)}>→ giữ Na⁺ không vượt 131</Tx>
+      <Step x={940} y={200} s0={S[1]} size={34}>NaCl 3% × 2 liều → 125, tỉnh hơn</Step>
+      <Step x={940} y={275} s0={S[1] + 2} size={34} c={K.green}>→ Ngưng bolus</Step>
+      <Step x={940} y={360} s0={S[2]} size={34}>Ngưng sertraline · hạn chế nước</Step>
+      <Step x={940} y={445} s0={S[3]} size={34} c={K.o2}>Giờ 18: nước tiểu 200 mL/giờ!</Step>
+      <Res x={940} y={540} s0={S[4]} c={K.amber}>Glucose 5% + desmopressin</Res>
+      <Tx x={940} y={650} w={900} size={32} c={K.dim} b={700} a={ap(t, S[4] + 1.2)}>→ giữ Na⁺ không vượt 131</Tx>
     </>
   );
 };
