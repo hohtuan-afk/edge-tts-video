@@ -1,35 +1,167 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+12%",
+ "rate": "+8%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Xử trí hạ na tri, nhớ quy tắc năm, mười, tám."
+   "text": "Cụ ông tám mươi lăm tuổi ở viện dưỡng lão, sốt do viêm phổi ba ngày, nay lơ mơ."
+  },
+  {
+   "id": "00-1",
+   "text": "Na tri máu một trăm sáu mươi hai."
+  },
+  {
+   "id": "00-2",
+   "text": "Tăng na tri gần như luôn là thiếu nước, cộng với không uống được."
   },
   {
    "id": "01-0",
-   "text": "Năm: có triệu chứng nặng, truyền na tri clo rua ba phần trăm, tăng khoảng năm để cứu não."
+   "text": "Tăng na tri là na tri máu trên một trăm bốn mươi lăm, nặng khi trên một trăm năm mươi lăm."
+  },
+  {
+   "id": "01-1",
+   "text": "Bình thường, cơn khát là hàng rào bảo vệ mạnh nhất."
+  },
+  {
+   "id": "01-2",
+   "text": "Nên người dễ bị là người già, trẻ nhỏ, người rối loạn ý thức, bệnh nhân thở máy hay an thần."
+  },
+  {
+   "id": "01-3",
+   "text": "Những người không tự khát, hoặc không tự uống được."
   },
   {
    "id": "02-0",
-   "text": "Mười: không tăng quá mười trong hai mươi bốn giờ đầu."
+   "text": "Khi máu đặc, nước rút khỏi tế bào não, tế bào teo lại."
+  },
+  {
+   "id": "02-1",
+   "text": "Gây lơ mơ, kích thích, co giật."
+  },
+  {
+   "id": "02-2",
+   "text": "Sau khoảng bốn mươi tám giờ, não thích nghi bằng cách giữ lại chất thẩm thấu."
+  },
+  {
+   "id": "02-3",
+   "text": "Vì vậy ở thể mạn, bù nước quá nhanh có thể gây phù não."
   },
   {
    "id": "03-0",
-   "text": "Tám: không quá tám cho mỗi hai mươi bốn giờ tiếp theo."
+   "text": "Nguyên nhân thứ nhất, chiếm đa số: mất nước."
+  },
+  {
+   "id": "03-1",
+   "text": "Qua da và hô hấp khi sốt, thở nhanh. Qua tiêu hoá khi tiêu chảy thẩm thấu."
+  },
+  {
+   "id": "03-2",
+   "text": "Qua thận khi lợi tiểu thẩm thấu do glu cô, u rê, ma ni tôn, hoặc đái tháo nhạt."
+  },
+  {
+   "id": "03-3",
+   "text": "Nguyên nhân thứ hai, ít gặp hơn: thừa muối, do truyền na tri clo rua ba phần trăm, na tri bi các bô nát, hoặc uống nước biển."
   },
   {
    "id": "04-0",
-   "text": "Vì nâng quá nhanh có thể gây hội chứng huỷ mi ê lin thẩm thấu."
+   "text": "Chẩn đoán dựa vào áp lực thẩm thấu niệu."
+  },
+  {
+   "id": "04-1",
+   "text": "Trên sáu trăm: thận đang giữ nước tốt, vậy nước mất ngoài thận, hoặc không được uống."
+  },
+  {
+   "id": "04-2",
+   "text": "Dưới ba trăm: nước tiểu vẫn loãng dù máu đặc, nghĩ đến đái tháo nhạt."
+  },
+  {
+   "id": "04-3",
+   "text": "Từ ba trăm đến sáu trăm: lợi tiểu thẩm thấu, hoặc đái tháo nhạt một phần."
   },
   {
    "id": "05-0",
-   "text": "Nước tiểu trên một trăm mi li lít mỗi giờ? Thử lại na tri ngay!"
+   "text": "Để phân biệt, làm nghiệm pháp đét mô prét xin."
+  },
+  {
+   "id": "05-1",
+   "text": "Áp lực thẩm thấu niệu tăng rõ: cơ thể thiếu a đê hát, đái tháo nhạt trung ương."
+  },
+  {
+   "id": "05-2",
+   "text": "Không thay đổi: thận không đáp ứng, đái tháo nhạt do thận."
   },
   {
    "id": "06-0",
-   "text": "Lưu lại để ôn, và xem bài ba đầy đủ trên kênh nhé!"
+   "text": "Đái tháo nhạt trung ương: do chấn thương, phẫu thuật vùng tuyến yên, hoặc khối u."
+  },
+  {
+   "id": "06-1",
+   "text": "Đái tháo nhạt do thận: do li ti, tăng can xi, hoặc hạ ka li máu."
+  },
+  {
+   "id": "06-2",
+   "text": "Từ năm hai nghìn không trăm hai mươi hai, đái tháo nhạt được đổi tên thành thiếu hụt a vê pê và kháng a vê pê."
+  },
+  {
+   "id": "07-0",
+   "text": "Tính lượng nước thiếu: bằng nước cơ thể nhân với, na tri chia một trăm bốn mươi, trừ một."
+  },
+  {
+   "id": "07-1",
+   "text": "Nước cơ thể ở người già chiếm khoảng năm mươi phần trăm cân nặng."
+  },
+  {
+   "id": "07-2",
+   "text": "Cụ ông sáu mươi ký: ba mươi lít nhân với, một trăm sáu mươi hai chia một trăm bốn mươi, trừ một, khoảng bốn phẩy bảy lít."
+  },
+  {
+   "id": "07-3",
+   "text": "Cộng thêm lượng nước đang tiếp tục mất do sốt, thở nhanh, nước tiểu."
+  },
+  {
+   "id": "08-0",
+   "text": "Nếu có sốc, bù na tri clo rua không phẩy chín phần trăm trước để ổn định huyết động."
+  },
+  {
+   "id": "08-1",
+   "text": "Sau đó bù nước tự do, ưu tiên nước lọc qua đường uống hoặc ống thông dạ dày."
+  },
+  {
+   "id": "08-2",
+   "text": "Đường tĩnh mạch: truyền glu cô năm phần trăm, nhớ theo dõi đường máu."
+  },
+  {
+   "id": "09-0",
+   "text": "Tốc độ: thể mạn, trên bốn mươi tám giờ, hạ khoảng mười mi li mol trên lít trong hai mươi bốn giờ."
+  },
+  {
+   "id": "09-1",
+   "text": "Thể cấp, dưới bốn mươi tám giờ, có thể hạ nhanh, khoảng một mi li mol mỗi giờ."
+  },
+  {
+   "id": "09-2",
+   "text": "Bằng chứng mới: ở người lớn, hạ nhanh hơn không làm tăng phù não."
+  },
+  {
+   "id": "09-3",
+   "text": "Còn hạ quá chậm liên quan tử vong cao hơn. Vậy đừng quá rụt rè."
+  },
+  {
+   "id": "10-0",
+   "text": "Quay lại cụ ông: áp lực thẩm thấu niệu bảy trăm năm mươi, mất nước ngoài thận và không uống được."
+  },
+  {
+   "id": "10-1",
+   "text": "Thiếu khoảng bốn phẩy bảy lít, bù dần trong khoảng bốn mươi tám giờ, qua ống thông dạ dày và glu cô năm phần trăm, cộng lượng đang mất."
+  },
+  {
+   "id": "10-2",
+   "text": "Mục tiêu sau hai mươi bốn giờ khoảng một trăm năm mươi hai, thử na tri mỗi bốn đến sáu giờ."
+  },
+  {
+   "id": "10-3",
+   "text": "Bài sau: hạ ka li máu."
   }
  ]
 }
