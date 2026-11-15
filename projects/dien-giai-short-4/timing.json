@@ -1,0 +1,79 @@
+[
+ {
+  "orig": 6.0,
+  "dur": 4.4,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 2.905,
+    "text": "Na⁺ 162: thiếu bao nhiêu lít nước?"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.52,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 3.807,
+    "text": "Nước thiếu = nước cơ thể × (Na⁺ ÷ 140 − 1)"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.4,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 2.496,
+    "text": "Người già 60 kg → nước cơ thể ≈ 30 L"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.92,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 4.206,
+    "text": "30 × (162 ÷ 140 − 1) ≈ 4,7 L"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.4,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 3.338,
+    "text": "Bù dần ~48 giờ · ưu tiên nước lọc qua đường tiêu hoá"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.4,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 2.893,
+    "text": "Mạn tính: hạ ~10 mmol/L mỗi 24 giờ"
+   }
+  ]
+ },
+ {
+  "orig": 6.0,
+  "dur": 4.4,
+  "sents": [
+   {
+    "start": 0.25,
+    "dur": 2.638,
+    "text": "Lưu lại để ôn · xem Bài 4 đầy đủ trên kênh!"
+   }
+  ]
+ }
+]

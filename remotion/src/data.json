@@ -1,270 +1,81 @@
 {
  "fps": 30,
- "total": 5521,
+ "total": 943,
  "scenes": [
   {
    "from": 0,
-   "dur": 349,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 4.405,
-     "text": "Cụ ông 85 tuổi · sốt, viêm phổi 3 ngày · lơ mơ"
-    },
-    {
-     "start": 5.255,
-     "dur": 1.668,
-     "text": "Na⁺ 162 mmol/L"
-    },
-    {
-     "start": 7.273,
-     "dur": 2.858,
-     "text": "Tăng natri = THIẾU NƯỚC + không uống được"
+     "start": 0.25,
+     "dur": 2.905,
+     "text": "Na⁺ 162: thiếu bao nhiêu lít nước?"
     }
    ]
   },
   {
-   "from": 349,
-   "dur": 510,
+   "from": 132,
+   "dur": 136,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 4.213,
-     "text": "Tăng natri: Na⁺ > 145 · nặng > 155"
-    },
-    {
-     "start": 5.063,
-     "dur": 2.377,
-     "text": "Khát là hàng rào bảo vệ mạnh nhất"
-    },
-    {
-     "start": 7.79,
-     "dur": 5.053,
-     "text": "Người già · trẻ nhỏ · rối loạn ý thức · thở máy"
-    },
-    {
-     "start": 13.192,
-     "dur": 2.322,
-     "text": "Không tự khát, không tự uống được"
+     "start": 0.25,
+     "dur": 3.807,
+     "text": "Nước thiếu = nước cơ thể × (Na⁺ ÷ 140 − 1)"
     }
    ]
   },
   {
-   "from": 859,
-   "dur": 441,
+   "from": 268,
+   "dur": 132,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 3.306,
-     "text": "Máu đặc → nước rút khỏi tế bào não → TEO"
-    },
-    {
-     "start": 4.156,
-     "dur": 1.884,
-     "text": "Lơ mơ · kích thích · co giật"
-    },
-    {
-     "start": 6.39,
-     "dur": 3.468,
-     "text": "~48 giờ: não thích nghi, giữ lại chất thẩm thấu"
-    },
-    {
-     "start": 10.208,
-     "dur": 2.973,
-     "text": "Mạn tính: bù nước quá nhanh → có thể PHÙ NÃO"
+     "start": 0.25,
+     "dur": 2.496,
+     "text": "Người già 60 kg → nước cơ thể ≈ 30 L"
     }
    ]
   },
   {
-   "from": 1300,
-   "dur": 649,
+   "from": 400,
+   "dur": 147,
    "sents": [
     {
-     "start": 0.5,
-     "dur": 2.397,
-     "text": "MẤT NƯỚC (đa số)"
-    },
-    {
-     "start": 3.247,
-     "dur": 4.663,
-     "text": "Da, hô hấp: sốt, thở nhanh · tiêu hoá: tiêu chảy thẩm thấu"
-    },
-    {
-     "start": 8.26,
-     "dur": 4.647,
-     "text": "Thận: lợi tiểu thẩm thấu (glucose, urê, mannitol) · đái tháo nhạt"
-    },
-    {
-     "start": 13.257,
-     "dur": 6.885,
-     "text": "THỪA MUỐI: NaCl 3%, natri bicarbonat, nước biển"
-    }
-   ]
-  },
-  {
-   "from": 1949,
-   "dur": 504,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 1.901,
-     "text": "Chẩn đoán: ALTT niệu"
-    },
-    {
-     "start": 2.751,
-     "dur": 4.294,
-     "text": "> 600 → thận giữ nước tốt → mất ngoài thận / không uống"
-    },
-    {
-     "start": 7.395,
-     "dur": 3.625,
-     "text": "< 300 → nước tiểu loãng dù máu đặc → ĐÁI THÁO NHẠT"
-    },
-    {
-     "start": 11.37,
-     "dur": 3.925,
-     "text": "300–600 → lợi tiểu thẩm thấu hoặc đái tháo nhạt một phần"
-    }
-   ]
-  },
-  {
-   "from": 2453,
-   "dur": 369,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 2.334,
-     "text": "Nghiệm pháp desmopressin"
-    },
-    {
-     "start": 3.184,
-     "dur": 4.28,
-     "text": "ALTT niệu TĂNG rõ → thiếu ADH → trung ương"
-    },
-    {
-     "start": 7.814,
-     "dur": 3.024,
-     "text": "KHÔNG đổi → thận không đáp ứng → do thận"
-    }
-   ]
-  },
-  {
-   "from": 2822,
-   "dur": 483,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 4.194,
-     "text": "Trung ương: chấn thương, phẫu thuật tuyến yên, u"
-    },
-    {
-     "start": 5.044,
-     "dur": 4.151,
-     "text": "Do thận: lithium · tăng canxi · hạ kali"
-    },
-    {
-     "start": 9.546,
-     "dur": 5.043,
-     "text": "Tên mới (2022): thiếu hụt AVP · kháng AVP"
-    }
-   ]
-  },
-  {
-   "from": 3305,
-   "dur": 605,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 4.587,
-     "text": "Lượng nước thiếu = nước cơ thể × (Na⁺ ÷ 140 − 1)"
-    },
-    {
-     "start": 5.437,
-     "dur": 2.686,
-     "text": "Nước cơ thể ≈ 50% cân nặng (người già)"
-    },
-    {
-     "start": 8.472,
-     "dur": 6.321,
-     "text": "60 kg → 30 L × (162 ÷ 140 − 1) ≈ 4,7 L"
-    },
-    {
-     "start": 15.143,
-     "dur": 3.519,
-     "text": "+ lượng đang mất (sốt, thở nhanh, tiểu)"
-    }
-   ]
-  },
-  {
-   "from": 3910,
-   "dur": 420,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 3.856,
-     "text": "Sốc → NaCl 0,9% trước"
-    },
-    {
-     "start": 4.706,
-     "dur": 3.814,
-     "text": "Ưu tiên nước lọc: uống / qua ống thông dạ dày"
-    },
-    {
-     "start": 8.87,
-     "dur": 3.619,
-     "text": "Tĩnh mạch: glucose 5% · theo dõi đường máu"
-    }
-   ]
-  },
-  {
-   "from": 4330,
-   "dur": 602,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 5.031,
-     "text": "Mạn (> 48 giờ): hạ ~10 mmol/L trong 24 giờ"
-    },
-    {
-     "start": 5.881,
-     "dur": 4.254,
-     "text": "Cấp (< 48 giờ): có thể hạ nhanh ~1 mmol/L/giờ"
-    },
-    {
-     "start": 10.485,
-     "dur": 3.598,
-     "text": "Bằng chứng mới: hạ nhanh hơn không tăng phù não ở người lớn"
-    },
-    {
-     "start": 14.433,
-     "dur": 4.161,
-     "text": "Hạ quá chậm → tử vong cao hơn → đừng quá rụt rè"
-    }
-   ]
-  },
-  {
-   "from": 4932,
-   "dur": 589,
-   "sents": [
-    {
-     "start": 0.5,
-     "dur": 4.569,
-     "text": "Cụ ông: ALTT niệu 750 → mất ngoài thận + không uống"
-    },
-    {
-     "start": 5.419,
-     "dur": 6.244,
-     "text": "Thiếu ~4,7 L → bù dần trong ~48 giờ (ống thông + glucose 5%)"
-    },
-    {
-     "start": 12.013,
+     "start": 0.25,
      "dur": 4.206,
-     "text": "Mục tiêu 24 giờ: 162 → ~152 · thử Na⁺ mỗi 4–6 giờ"
-    },
+     "text": "30 × (162 ÷ 140 − 1) ≈ 4,7 L"
+    }
+   ]
+  },
+  {
+   "from": 547,
+   "dur": 132,
+   "sents": [
     {
-     "start": 16.568,
-     "dur": 1.59,
-     "text": "Bài 5: Hạ kali máu"
+     "start": 0.25,
+     "dur": 3.338,
+     "text": "Bù dần ~48 giờ · ưu tiên nước lọc qua đường tiêu hoá"
+    }
+   ]
+  },
+  {
+   "from": 679,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.893,
+     "text": "Mạn tính: hạ ~10 mmol/L mỗi 24 giờ"
+    }
+   ]
+  },
+  {
+   "from": 811,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.638,
+     "text": "Lưu lại để ôn · xem Bài 4 đầy đủ trên kênh!"
     }
    ]
   }
