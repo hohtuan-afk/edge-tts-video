@@ -448,7 +448,7 @@ const D5: React.FC<{S: number[]; D: number[]}> = ({S}) => {
           </React.Fragment>
         );
       })}
-      <div style={{position: 'absolute', left: 1700, top: 390, fontFamily: FONT, fontSize: 26, color: K.dim, opacity: ap(t, S[0])}}>mOsm/kg</div>
+      <div style={{position: 'absolute', left: 1560, top: 250, width: 200, textAlign: 'right', fontFamily: FONT, fontSize: 26, color: K.dim, opacity: ap(t, S[0])}}>mOsm/kg</div>
     </>
   );
 };
