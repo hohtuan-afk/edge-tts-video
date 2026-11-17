@@ -1,35 +1,171 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+12%",
+ "rate": "+8%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Na tri một trăm sáu mươi hai, cơ thể thiếu bao nhiêu lít nước?"
+   "text": "Cụ bà bảy mươi tuổi, đang uống thuốc lợi tiểu, tiêu chảy ba ngày, nay yếu hai chân."
+  },
+  {
+   "id": "00-1",
+   "text": "Ka li máu hai phẩy sáu."
+  },
+  {
+   "id": "00-2",
+   "text": "Hãy nhớ: ka li máu chỉ là phần nổi của tảng băng."
   },
   {
    "id": "01-0",
-   "text": "Công thức: nước cơ thể nhân với, na tri chia một trăm bốn mươi, trừ một."
+   "text": "Khoảng chín mươi tám phần trăm ka li nằm trong tế bào."
+  },
+  {
+   "id": "01-1",
+   "text": "Nhờ bơm na tri ka li, kéo ka li vào và đẩy na tri ra."
+  },
+  {
+   "id": "01-2",
+   "text": "Máu chỉ chứa khoảng hai phần trăm, nên con số nhỏ, nhưng kho chứa rất lớn."
+  },
+  {
+   "id": "01-3",
+   "text": "Ka li máu giảm một mi li mol trên lít, cơ thể đã thiếu khoảng hai trăm đến bốn trăm mi li mol."
   },
   {
    "id": "02-0",
-   "text": "Người già sáu mươi ký, nước cơ thể khoảng ba mươi lít."
+   "text": "Hạ ka li là ka li máu dưới ba phẩy năm."
+  },
+  {
+   "id": "02-1",
+   "text": "Nặng khi dưới hai phẩy năm,"
+  },
+  {
+   "id": "02-2",
+   "text": "hoặc khi có triệu chứng, hay thay đổi trên điện tâm đồ."
   },
   {
    "id": "03-0",
-   "text": "Ba mươi nhân với, một trăm sáu mươi hai chia một trăm bốn mươi trừ một, khoảng bốn phẩy bảy lít."
+   "text": "Ka li thấp làm tế bào cơ và tim khó hoạt động bình thường."
+  },
+  {
+   "id": "03-1",
+   "text": "Cơ vân: yếu cơ, có thể liệt, thậm chí tiêu cơ vân."
+  },
+  {
+   "id": "03-2",
+   "text": "Cơ trơn: liệt ruột, táo bón, chướng bụng."
+  },
+  {
+   "id": "03-3",
+   "text": "Nguy hiểm nhất là tim: rối loạn nhịp, đặc biệt khi dùng đi gô xin hoặc có bệnh tim."
   },
   {
    "id": "04-0",
-   "text": "Bù dần trong khoảng bốn mươi tám giờ, ưu tiên nước lọc qua đường tiêu hoá."
+   "text": "Điện tâm đồ hạ ka li."
+  },
+  {
+   "id": "04-1",
+   "text": "Sóng tê dẹt, đoạn ét tê chênh xuống."
+  },
+  {
+   "id": "04-2",
+   "text": "Sóng u nổi rõ sau sóng tê."
+  },
+  {
+   "id": "04-3",
+   "text": "Khoảng qui tê kéo dài, nguy cơ xoắn đỉnh."
   },
   {
    "id": "05-0",
-   "text": "Thể mạn, hạ khoảng mười mi li mol trên lít mỗi hai mươi bốn giờ."
+   "text": "Nguyên nhân thứ nhất: ka li chui vào tế bào, tổng lượng không đổi."
+  },
+  {
+   "id": "05-1",
+   "text": "Do in su lin, xan bu ta mon, hoặc kiềm máu."
+  },
+  {
+   "id": "05-2",
+   "text": "Hoặc liệt chu kỳ hạ ka li, có thể do cường giáp."
   },
   {
    "id": "06-0",
-   "text": "Lưu lại để ôn, và xem bài bốn đầy đủ trên kênh nhé!"
+   "text": "Nguyên nhân thứ hai: mất ka li thật sự."
+  },
+  {
+   "id": "06-1",
+   "text": "Qua tiêu hoá: tiêu chảy."
+  },
+  {
+   "id": "06-2",
+   "text": "Qua thận: thuốc lợi tiểu, cường an đô xtê rôn, hạ ma giê."
+  },
+  {
+   "id": "06-3",
+   "text": "Nôn ói cũng gây mất ka li, nhưng chủ yếu qua thận, do kiềm chuyển hoá."
+  },
+  {
+   "id": "06-4",
+   "text": "Cộng thêm ăn uống kém."
+  },
+  {
+   "id": "07-0",
+   "text": "Tìm nguyên nhân: đo ka li niệu, dùng tỉ số ka li trên cờ rê a ti nin niệu."
+  },
+  {
+   "id": "07-1",
+   "text": "Thấp: mất ngoài thận. Cao: mất qua thận."
+  },
+  {
+   "id": "07-2",
+   "text": "Nếu mất qua thận kèm tăng huyết áp, nghĩ cường an đô xtê rôn."
+  },
+  {
+   "id": "07-3",
+   "text": "Kèm kiềm chuyển hoá: lợi tiểu, nôn, hội chứng Bác tơ, Ghi tơ man. Kèm toan: toan hoá ống thận, nhiễm toan xê tôn."
+  },
+  {
+   "id": "08-0",
+   "text": "Bù ka li: ưu tiên đường uống nếu được."
+  },
+  {
+   "id": "08-1",
+   "text": "Đường tĩnh mạch: ngoại vi tối đa mười mi li mol mỗi giờ, trung tâm tối đa hai mươi, kèm theo dõi mô ni tơ."
+  },
+  {
+   "id": "08-2",
+   "text": "Pha trong na tri clo rua không phẩy chín phần trăm, không pha trong glu cô, vì glu cô kéo ka li vào tế bào."
+  },
+  {
+   "id": "08-3",
+   "text": "Và tuyệt đối không tiêm ka li clo rua tĩnh mạch trực tiếp, có thể gây ngừng tim."
+  },
+  {
+   "id": "09-0",
+   "text": "Ka li bù mãi không lên? Hãy kiểm tra ma giê."
+  },
+  {
+   "id": "09-1",
+   "text": "Hạ ma giê làm thận tiếp tục thải ka li."
+  },
+  {
+   "id": "09-2",
+   "text": "Bù ma giê trước, hoặc cùng lúc với ka li."
+  },
+  {
+   "id": "10-0",
+   "text": "Quay lại cụ bà: mất ka li qua tiêu chảy và thuốc lợi tiểu, ma giê cũng thấp."
+  },
+  {
+   "id": "10-1",
+   "text": "Truyền ka li clo rua ngoại vi mười mi li mol mỗi giờ, kèm bù ma giê, chuyển sang đường uống khi được."
+  },
+  {
+   "id": "10-2",
+   "text": "Theo dõi ka li và điện tâm đồ, tạm ngưng thuốc lợi tiểu."
+  },
+  {
+   "id": "10-3",
+   "text": "Bài sau: tăng ka li máu, xử trí cấp cứu."
   }
  ]
 }
