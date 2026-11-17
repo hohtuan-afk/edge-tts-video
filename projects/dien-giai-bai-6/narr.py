@@ -11,7 +11,7 @@ NARR = [
     ("ECG đã thay đổi → xử trí NGAY, không chờ thử lại", "Nhưng nếu điện tâm đồ đã thay đổi, phải xử trí ngay, không chờ thử lại."),
   ],
   [  # 3 Mức độ
-    ("Nhẹ 5,5–5,9 · vừa 6,0–6,4 · nặng ≥ 6,5", "Theo hướng dẫn U K K A: nhẹ từ năm phẩy năm đến năm phẩy chín, vừa từ sáu đến sáu phẩy bốn, nặng từ sáu phẩy năm trở lên."),
+    ("Nhẹ 5,5–5,9 · vừa 6,0–6,4 · nặng ≥ 6,5", "Theo hướng dẫn u ka ka a của Anh: nhẹ từ năm phẩy năm đến năm phẩy chín, vừa từ sáu đến sáu phẩy bốn, nặng từ sáu phẩy năm trở lên."),
     ("K⁺ ≥ 6,0 → ECG 12 chuyển đạo", "Từ sáu trở lên: làm điện tâm đồ mười hai chuyển đạo."),
     ("K⁺ ≥ 6,5 → monitor liên tục", "Từ sáu phẩy năm: gắn mô ni tơ liên tục."),
   ],
