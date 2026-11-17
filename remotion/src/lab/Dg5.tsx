@@ -454,7 +454,7 @@ const D1: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   return (
     <>
       <Top idx={0} title="Hạ kali máu" />
-      <Slip s0={S[0]} x={120} y={220} sw={620} nw={260} title="CỤ BÀ 70 TUỔI · YẾU HAI CHÂN" rows={[['diu', 'Lợi tiểu', 'đang dùng', ''], ['dia', 'Tiêu chảy', '3 ngày', ''], ['k', 'K⁺', '2,6', 'mmol/L']]} hl={t > S[1] ? ['k'] : []} />
+      <Slip s0={S[0]} x={120} y={220} sw={660} nw={330} title="CỤ BÀ 70 TUỔI · YẾU HAI CHÂN" rows={[['diu', 'Lợi tiểu', '✓', ''], ['dia', 'Tiêu chảy (ngày)', '3', ''], ['k', 'K⁺', '2,6', 'mmol/L']]} hl={t > S[1] ? ['k'] : []} />
       <Iceberg x={820} y={170} s={0.92} a={ap(t, S[2])} full={false} />
       <GoldC y={850} a={ap(t, S[2] + 0.8)} size={44}>Kali máu = phần nổi của tảng băng</GoldC>
     </>
@@ -471,7 +471,6 @@ const D2: React.FC<{S: number[]; D: number[]}> = ({S}) => {
       <Top idx={1} title="Kali ở đâu?" />
       <Pic src="dg_tebao.png" x={40} y={210} w={600} a={ap(t, S[0])} />
       {ins.map(([x, y], i) => <KDot key={i} x={x + Math.sin(f / 15 + i) * 6} y={y + Math.cos(f / 13 + i) * 6} a={ap(t, S[0] + 0.3 + i * 0.05)} r={22} />)}
-      <KDot x={700} y={300} a={ap(t, S[0] + 1)} r={22} />
       <Tx x={40} y={850} w={600} al="center" size={34} c={K.dim} b={800} a={ap(t, S[1])}>Bơm Na/K: kéo K⁺ vào · đẩy Na⁺ ra</Tx>
       <Iceberg x={740} y={170} s={0.98} a={ap(t, S[2])} t0={S[2]} />
       <div style={{position: 'absolute', left: 1330, top: 830, width: 540, padding: '18px 0', borderRadius: 24, border: `4px solid ${K.amber}`, background: 'rgba(245,184,61,.15)', textAlign: 'center', fontFamily: FONT, opacity: ap(t, S[3])}}>
