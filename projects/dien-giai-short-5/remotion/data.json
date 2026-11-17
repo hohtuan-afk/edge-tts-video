@@ -1,0 +1,72 @@
+{
+ "fps": 30,
+ "total": 848,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 1.934,
+     "text": "Bù kali: 3 điều KHÔNG được quên"
+    }
+   ]
+  },
+  {
+   "from": 132,
+   "dur": 134,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.778,
+     "text": "① KHÔNG tiêm KCl tĩnh mạch trực tiếp"
+    }
+   ]
+  },
+  {
+   "from": 266,
+   "dur": 186,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 5.514,
+     "text": "② Pha NaCl 0,9% · KHÔNG pha glucose"
+    }
+   ]
+  },
+  {
+   "from": 452,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.484,
+     "text": "③ Kiểm tra và bù MAGIE"
+    }
+   ]
+  },
+  {
+   "from": 584,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.108,
+     "text": "Nhớ tốc độ: ngoại vi ≤ 10 mmol/giờ"
+    }
+   ]
+  },
+  {
+   "from": 716,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.669,
+     "text": "Lưu lại để ôn · xem Bài 5 đầy đủ trên kênh!"
+    }
+   ]
+  }
+ ]
+}
