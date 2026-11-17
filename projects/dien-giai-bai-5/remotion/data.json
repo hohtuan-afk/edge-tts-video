@@ -1,0 +1,277 @@
+{
+ "fps": 30,
+ "total": 4806,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 334,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.536,
+     "text": "Cụ bà 70 tuổi · lợi tiểu · tiêu chảy 3 ngày · yếu hai chân"
+    },
+    {
+     "start": 5.386,
+     "dur": 1.27,
+     "text": "K⁺ 2,6 mmol/L"
+    },
+    {
+     "start": 7.006,
+     "dur": 2.628,
+     "text": "Kali máu chỉ là phần nổi của tảng băng"
+    }
+   ]
+  },
+  {
+   "from": 334,
+   "dur": 516,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.347,
+     "text": "~98% kali nằm TRONG tế bào"
+    },
+    {
+     "start": 3.197,
+     "dur": 3.173,
+     "text": "Bơm Na/K kéo kali vào, đẩy natri ra"
+    },
+    {
+     "start": 6.72,
+     "dur": 4.089,
+     "text": "Máu chỉ ~2% → con số nhỏ, kho rất lớn"
+    },
+    {
+     "start": 11.159,
+     "dur": 4.543,
+     "text": "K⁺ giảm 1 mmol/L ≈ thiếu 200–400 mmol"
+    }
+   ]
+  },
+  {
+   "from": 850,
+   "dur": 255,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.04,
+     "text": "Hạ kali: K⁺ < 3,5 mmol/L"
+    },
+    {
+     "start": 2.89,
+     "dur": 1.237,
+     "text": "Nặng: K⁺ < 2,5"
+    },
+    {
+     "start": 4.478,
+     "dur": 2.557,
+     "text": "hoặc có triệu chứng · thay đổi ECG"
+    }
+   ]
+  },
+  {
+   "from": 1105,
+   "dur": 483,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.836,
+     "text": "Kali thấp → cơ và tim khó hoạt động"
+    },
+    {
+     "start": 3.686,
+     "dur": 3.318,
+     "text": "Cơ vân: yếu cơ · liệt · tiêu cơ vân"
+    },
+    {
+     "start": 7.354,
+     "dur": 2.752,
+     "text": "Cơ trơn: liệt ruột · táo bón · chướng bụng"
+    },
+    {
+     "start": 10.456,
+     "dur": 4.122,
+     "text": "Tim: rối loạn nhịp (digoxin, bệnh tim)"
+    }
+   ]
+  },
+  {
+   "from": 1588,
+   "dur": 312,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 1.298,
+     "text": "ECG hạ kali"
+    },
+    {
+     "start": 2.148,
+     "dur": 2.111,
+     "text": "Sóng T dẹt · ST chênh xuống"
+    },
+    {
+     "start": 4.609,
+     "dur": 1.565,
+     "text": "Sóng U nổi rõ"
+    },
+    {
+     "start": 6.524,
+     "dur": 2.363,
+     "text": "QT (QU) kéo dài → nguy cơ xoắn đỉnh"
+    }
+   ]
+  },
+  {
+   "from": 1900,
+   "dur": 346,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.424,
+     "text": "Nguyên nhân 1: kali CHUI VÀO tế bào"
+    },
+    {
+     "start": 4.274,
+     "dur": 2.979,
+     "text": "Insulin · salbutamol · kiềm máu"
+    },
+    {
+     "start": 7.603,
+     "dur": 2.47,
+     "text": "Liệt chu kỳ hạ kali (có thể do cường giáp)"
+    }
+   ]
+  },
+  {
+   "from": 2246,
+   "dur": 473,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.068,
+     "text": "Nguyên nhân 2: MẤT kali"
+    },
+    {
+     "start": 2.918,
+     "dur": 1.519,
+     "text": "Tiêu hoá: tiêu chảy"
+    },
+    {
+     "start": 4.787,
+     "dur": 3.553,
+     "text": "Thận: lợi tiểu · cường aldosterone · hạ magie"
+    },
+    {
+     "start": 8.69,
+     "dur": 4.012,
+     "text": "Nôn: mất kali chủ yếu qua THẬN (do kiềm)"
+    },
+    {
+     "start": 13.052,
+     "dur": 1.189,
+     "text": "+ ăn uống kém"
+    }
+   ]
+  },
+  {
+   "from": 2719,
+   "dur": 663,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.191,
+     "text": "Đo kali niệu: tỉ số K/creatinin niệu"
+    },
+    {
+     "start": 5.041,
+     "dur": 3.376,
+     "text": "Thấp → mất ngoài thận · Cao → mất qua thận"
+    },
+    {
+     "start": 8.767,
+     "dur": 3.109,
+     "text": "Qua thận + tăng huyết áp → cường aldosterone"
+    },
+    {
+     "start": 12.225,
+     "dur": 8.372,
+     "text": "+ kiềm: lợi tiểu, nôn, Bartter, Gitelman · + toan: toan hoá ống thận, DKA"
+    }
+   ]
+  },
+  {
+   "from": 3382,
+   "dur": 600,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.055,
+     "text": "Ưu tiên đường UỐNG nếu được"
+    },
+    {
+     "start": 2.905,
+     "dur": 5.7,
+     "text": "TM ngoại vi ≤ 10 mmol/giờ · trung tâm ≤ 20 mmol/giờ + monitor"
+    },
+    {
+     "start": 8.954,
+     "dur": 5.486,
+     "text": "Pha trong NaCl 0,9% · KHÔNG pha glucose"
+    },
+    {
+     "start": 14.791,
+     "dur": 3.707,
+     "text": "TUYỆT ĐỐI không tiêm KCl tĩnh mạch trực tiếp"
+    }
+   ]
+  },
+  {
+   "from": 3982,
+   "dur": 302,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.217,
+     "text": "Kali bù mãi không lên? → kiểm tra MAGIE"
+    },
+    {
+     "start": 4.067,
+     "dur": 1.923,
+     "text": "Hạ magie → thận tiếp tục thải kali"
+    },
+    {
+     "start": 6.34,
+     "dur": 2.249,
+     "text": "Bù magie trước hoặc cùng lúc"
+    }
+   ]
+  },
+  {
+   "from": 4284,
+   "dur": 522,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.836,
+     "text": "Cụ bà: tiêu chảy + lợi tiểu · Mg²⁺ 0,5 thấp"
+    },
+    {
+     "start": 4.686,
+     "dur": 4.94,
+     "text": "KCl ngoại vi 10 mmol/giờ + magie → chuyển uống khi được"
+    },
+    {
+     "start": 9.977,
+     "dur": 2.839,
+     "text": "Theo dõi K⁺ và ECG · tạm ngưng lợi tiểu"
+    },
+    {
+     "start": 13.165,
+     "dur": 2.739,
+     "text": "Bài 6: Tăng kali, xử trí cấp cứu"
+    }
+   ]
+  }
+ ]
+}
