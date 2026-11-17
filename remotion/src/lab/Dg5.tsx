@@ -376,7 +376,7 @@ const Iceberg: React.FC<{x: number; y: number; s?: number; a: number; full?: boo
 };
 // sóng ECG
 const ecgPath = (kind: 'n' | 'h', x0: number, y0: number, W: number, H: number, beats = 2) => {
-  const g = (ph: number, a: number, m: number, s: number) => a * Math.exp(-(((ph - m) / s) ** 2) / 2);
+  const g = (ph: number, a: number, m: number, s: number) => a * Math.exp(-Math.pow((ph - m) / s, 2) / 2);
   let d = '';
   for (let i = 0; i <= 600; i++) {
     const tt = (i / 600) * beats, ph = tt % 1;
@@ -392,7 +392,7 @@ const Paper: React.FC<{x: number; y: number; w: number; h: number; a: number}> =
 const Heart: React.FC<{x: number; y: number; w: number; a: number; danger?: boolean}> = ({x, y, w, a, danger}) => {
   const f = useCurrentFrame();
   const ph = (f % 24) / 24;
-  const beat = 1 + 0.045 * Math.exp(-((ph - 0.1) / 0.06) ** 2) + 0.025 * Math.exp(-((ph - 0.3) / 0.06) ** 2);
+  const beat = 1 + 0.045 * Math.exp(-Math.pow((ph - 0.1) / 0.06, 2)) + 0.025 * Math.exp(-Math.pow((ph - 0.3) / 0.06, 2));
   return <Pic src="dg_tim.png" x={x} y={y} w={w} a={a} s={beat} glow={danger ? 'rgba(229,72,77,.6)' : 'rgba(229,72,77,.3)'} />;
 };
 const Muscle: React.FC<{x: number; y: number; a: number; weak: number}> = ({x, y, a, weak}) => (
