@@ -1,70 +1,265 @@
 {
  "fps": 30,
- "total": 848,
+ "total": 5479,
  "scenes": [
   {
    "from": 0,
-   "dur": 132,
+   "dur": 445,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 1.934,
-     "text": "Bù kali: 3 điều KHÔNG được quên"
+     "start": 0.5,
+     "dur": 5.123,
+     "text": "Ông 68 tuổi · bệnh thận mạn · ức chế men chuyển + spironolactone"
+    },
+    {
+     "start": 5.973,
+     "dur": 2.895,
+     "text": "Mệt · nhịp chậm · K⁺ 7,1"
+    },
+    {
+     "start": 9.218,
+     "dur": 4.133,
+     "text": "Tăng kali: kẻ giết người thầm lặng"
     }
    ]
   },
   {
-   "from": 132,
-   "dur": 134,
+   "from": 445,
+   "dur": 426,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 3.778,
-     "text": "① KHÔNG tiêm KCl tĩnh mạch trực tiếp"
+     "start": 0.5,
+     "dur": 2.469,
+     "text": "Trước tiên: có phải GIẢ tăng kali?"
+    },
+    {
+     "start": 3.319,
+     "dur": 5.362,
+     "text": "Mẫu tan huyết · garô lâu · nắm tay khi lấy máu"
+    },
+    {
+     "start": 9.031,
+     "dur": 3.681,
+     "text": "ECG đã thay đổi → xử trí NGAY, không chờ thử lại"
     }
    ]
   },
   {
-   "from": 266,
-   "dur": 186,
+   "from": 871,
+   "dur": 444,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 5.514,
-     "text": "② Pha NaCl 0,9% · KHÔNG pha glucose"
+     "start": 0.5,
+     "dur": 7.072,
+     "text": "Nhẹ 5,5–5,9 · vừa 6,0–6,4 · nặng ≥ 6,5"
+    },
+    {
+     "start": 7.922,
+     "dur": 2.765,
+     "text": "K⁺ ≥ 6,0 → ECG 12 chuyển đạo"
+    },
+    {
+     "start": 11.037,
+     "dur": 2.258,
+     "text": "K⁺ ≥ 6,5 → monitor liên tục"
     }
    ]
   },
   {
-   "from": 452,
-   "dur": 132,
+   "from": 1315,
+   "dur": 567,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 3.484,
-     "text": "③ Kiểm tra và bù MAGIE"
+     "start": 0.5,
+     "dur": 4.711,
+     "text": "① T cao nhọn"
+    },
+    {
+     "start": 5.561,
+     "dur": 2.566,
+     "text": "② P dẹt · PR kéo dài"
+    },
+    {
+     "start": 8.477,
+     "dur": 2.031,
+     "text": "③ QRS giãn rộng"
+    },
+    {
+     "start": 10.858,
+     "dur": 2.994,
+     "text": "④ Sóng hình sin → rung thất / vô tâm thu"
+    },
+    {
+     "start": 14.202,
+     "dur": 3.165,
+     "text": "ECG KHÔNG song song chặt với con số K⁺"
     }
    ]
   },
   {
-   "from": 584,
-   "dur": 132,
+   "from": 1882,
+   "dur": 361,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 3.108,
-     "text": "Nhớ tốc độ: ngoại vi ≤ 10 mmol/giờ"
+     "start": 0.5,
+     "dur": 1.055,
+     "text": "4 bước xử trí"
+    },
+    {
+     "start": 1.905,
+     "dur": 3.842,
+     "text": "① Bảo vệ tim · ② Đẩy kali vào tế bào"
+    },
+    {
+     "start": 6.097,
+     "dur": 4.427,
+     "text": "③ Thải kali ra · ④ Theo dõi & phòng ngừa"
     }
    ]
   },
   {
-   "from": 716,
-   "dur": 132,
+   "from": 2243,
+   "dur": 552,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 2.669,
-     "text": "Lưu lại để ôn · xem Bài 5 đầy đủ trên kênh!"
+     "start": 0.5,
+     "dur": 3.541,
+     "text": "① Bảo vệ tim: CANXI (khi ECG thay đổi)"
+    },
+    {
+     "start": 4.391,
+     "dur": 3.677,
+     "text": "Canxi gluconat 10% · 30 mL trong 10 phút"
+    },
+    {
+     "start": 8.418,
+     "dur": 4.806,
+     "text": "Ngừng tim: canxi clorua 10% · 10 mL trong 5 phút"
+    },
+    {
+     "start": 13.574,
+     "dur": 3.308,
+     "text": "Ổn định màng tim · KHÔNG hạ kali"
+    }
+   ]
+  },
+  {
+   "from": 2795,
+   "dur": 642,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 5.191,
+     "text": "② Insulin 10 đơn vị + 25 g glucose tĩnh mạch"
+    },
+    {
+     "start": 6.041,
+     "dur": 5.698,
+     "text": "Đường máu < 7 → glucose 10% · 50 mL/giờ × 5 giờ"
+    },
+    {
+     "start": 12.088,
+     "dur": 2.929,
+     "text": "Theo dõi đường máu trong 6 giờ"
+    },
+    {
+     "start": 15.367,
+     "dur": 4.525,
+     "text": "Salbutamol khí dung 10–20 mg: chỉ HỖ TRỢ"
+    }
+   ]
+  },
+  {
+   "from": 3437,
+   "dur": 534,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.858,
+     "text": "③ Chất gắn kali: SZC 10 g × 3 lần/ngày"
+    },
+    {
+     "start": 5.708,
+     "dur": 4.081,
+     "text": "hoặc patiromer · resin cũ không còn khuyến cáo"
+    },
+    {
+     "start": 10.139,
+     "dur": 2.1,
+     "text": "Lợi tiểu quai nếu còn nước tiểu"
+    },
+    {
+     "start": 12.59,
+     "dur": 3.698,
+     "text": "Lọc máu: kháng trị · BN chạy thận K⁺ ≥ 6,5"
+    }
+   ]
+  },
+  {
+   "from": 3971,
+   "dur": 554,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.847,
+     "text": "④ Thử K⁺ sau 1 · 2 · 4 · 6 · 24 giờ"
+    },
+    {
+     "start": 5.697,
+     "dur": 4.221,
+     "text": "Tổn thương thận · toan máu · tiêu cơ vân · ly giải u"
+    },
+    {
+     "start": 10.268,
+     "dur": 6.696,
+     "text": "Thuốc: ƯCMC/CTTA · spironolactone · NSAID · trimethoprim"
+    }
+   ]
+  },
+  {
+   "from": 4525,
+   "dur": 613,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.926,
+     "text": "ECG: T cao nhọn + QRS giãn → canxi gluconat"
+    },
+    {
+     "start": 5.776,
+     "dur": 5.498,
+     "text": "Insulin + glucose · đường máu 5,8 → thêm glucose 10%"
+    },
+    {
+     "start": 11.624,
+     "dur": 3.505,
+     "text": "+ salbutamol + SZC · ngưng spironolactone"
+    },
+    {
+     "start": 15.479,
+     "dur": 3.455,
+     "text": "Sau 2 giờ: K⁺ 5,8 · ECG cải thiện"
+    }
+   ]
+  },
+  {
+   "from": 5138,
+   "dur": 341,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.32,
+     "text": "Bảo vệ → Đẩy vào → Thải ra → Theo dõi"
+    },
+    {
+     "start": 5.17,
+     "dur": 1.829,
+     "text": "Canxi KHÔNG hạ kali!"
+    },
+    {
+     "start": 7.349,
+     "dur": 2.501,
+     "text": "Bài 7: Canxi, magie, phosphate"
     }
    ]
   }
