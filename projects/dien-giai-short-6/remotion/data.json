@@ -1,0 +1,72 @@
+{
+ "fps": 30,
+ "total": 792,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 1.906,
+     "text": "Tăng kali: 3 bước cứu tim"
+    }
+   ]
+  },
+  {
+   "from": 132,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.427,
+     "text": "① Canxi: bảo vệ tim (KHÔNG hạ kali)"
+    }
+   ]
+  },
+  {
+   "from": 264,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.124,
+     "text": "② Insulin + glucose: đẩy kali vào tế bào"
+    }
+   ]
+  },
+  {
+   "from": 396,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.337,
+     "text": "③ Chất gắn kali · lọc máu: thải kali ra"
+    }
+   ]
+  },
+  {
+   "from": 528,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 1.813,
+     "text": "Nhớ: theo dõi đường máu 6 giờ!"
+    }
+   ]
+  },
+  {
+   "from": 660,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.626,
+     "text": "Lưu lại để ôn · xem Bài 6 đầy đủ trên kênh!"
+    }
+   ]
+  }
+ ]
+}
