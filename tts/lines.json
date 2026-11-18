@@ -1,31 +1,163 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+12%",
+ "rate": "+8%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Bù ka li, có ba điều không được quên."
+   "text": "Ông sáu mươi tám tuổi, bệnh thận mạn, đang dùng thuốc ức chế men chuyển và xpi rô nô lắc tôn."
+  },
+  {
+   "id": "00-1",
+   "text": "Nay mệt, nhịp tim chậm, ka li máu bảy phẩy một."
+  },
+  {
+   "id": "00-2",
+   "text": "Tăng ka li là kẻ giết người thầm lặng: có thể gây ngừng tim mà gần như không báo trước."
   },
   {
    "id": "01-0",
-   "text": "Một: không bao giờ tiêm ka li clo rua tĩnh mạch trực tiếp, có thể gây ngừng tim."
+   "text": "Trước tiên, hỏi: có phải giả tăng ka li không?"
+  },
+  {
+   "id": "01-1",
+   "text": "Mẫu máu bị tan huyết, garô quá lâu, hay bệnh nhân nắm tay khi lấy máu, đều làm ka li tăng giả."
+  },
+  {
+   "id": "01-2",
+   "text": "Nhưng nếu điện tâm đồ đã thay đổi, phải xử trí ngay, không chờ thử lại."
   },
   {
    "id": "02-0",
-   "text": "Hai: pha trong na tri clo rua không phẩy chín phần trăm, không pha glu cô, vì glu cô kéo ka li vào tế bào."
+   "text": "Theo hướng dẫn u ka ka a của Anh: nhẹ từ năm phẩy năm đến năm phẩy chín, vừa từ sáu đến sáu phẩy bốn, nặng từ sáu phẩy năm trở lên."
+  },
+  {
+   "id": "02-1",
+   "text": "Từ sáu trở lên: làm điện tâm đồ mười hai chuyển đạo."
+  },
+  {
+   "id": "02-2",
+   "text": "Từ sáu phẩy năm: gắn mô ni tơ liên tục."
   },
   {
    "id": "03-0",
-   "text": "Ba: kiểm tra và bù ma giê, nếu không ka li bù mãi không lên."
+   "text": "Điện tâm đồ tăng ka li thay đổi theo thứ tự. Một: sóng tê cao nhọn."
+  },
+  {
+   "id": "03-1",
+   "text": "Hai: sóng pê dẹt, khoảng pê rờ kéo dài."
+  },
+  {
+   "id": "03-2",
+   "text": "Ba: phức bộ qui rờ ét giãn rộng."
+  },
+  {
+   "id": "03-3",
+   "text": "Bốn: sóng hình sin, rồi rung thất hoặc vô tâm thu."
+  },
+  {
+   "id": "03-4",
+   "text": "Lưu ý: điện tâm đồ không đi song song chặt với con số ka li."
   },
   {
    "id": "04-0",
-   "text": "Và nhớ tốc độ: đường ngoại vi tối đa mười mi li mol mỗi giờ."
+   "text": "Xử trí theo bốn bước."
+  },
+  {
+   "id": "04-1",
+   "text": "Một: bảo vệ tim. Hai: đẩy ka li vào tế bào."
+  },
+  {
+   "id": "04-2",
+   "text": "Ba: thải ka li ra khỏi cơ thể. Bốn: theo dõi và phòng ngừa."
   },
   {
    "id": "05-0",
-   "text": "Lưu lại để ôn, và xem bài năm đầy đủ trên kênh nhé!"
+   "text": "Bước một, bảo vệ tim bằng can xi, khi điện tâm đồ có thay đổi."
+  },
+  {
+   "id": "05-1",
+   "text": "Can xi glu cô nát mười phần trăm, ba mươi mi li lít, truyền trong mười phút."
+  },
+  {
+   "id": "05-2",
+   "text": "Khi ngừng tim hoặc dọa ngừng tim, dùng can xi clo rua mười phần trăm, mười mi li lít trong năm phút."
+  },
+  {
+   "id": "05-3",
+   "text": "Can xi ổn định màng tế bào cơ tim, nhưng không làm hạ ka li."
+  },
+  {
+   "id": "06-0",
+   "text": "Bước hai, đẩy ka li vào tế bào: in su lin mười đơn vị, kèm hai mươi lăm gam glu cô tĩnh mạch."
+  },
+  {
+   "id": "06-1",
+   "text": "Nếu đường máu trước điều trị dưới bảy, truyền thêm glu cô mười phần trăm, năm mươi mi li lít mỗi giờ, trong năm giờ."
+  },
+  {
+   "id": "06-2",
+   "text": "Theo dõi đường máu trong sáu giờ, vì hạ đường huyết rất hay gặp."
+  },
+  {
+   "id": "06-3",
+   "text": "Xan bu ta mon khí dung mười đến hai mươi mi li gam, chỉ để hỗ trợ, không dùng đơn độc."
+  },
+  {
+   "id": "07-0",
+   "text": "Bước ba, thải ka li ra: chất gắn ka li ét dét xê, mười gam, ba lần mỗi ngày."
+  },
+  {
+   "id": "07-1",
+   "text": "Hoặc pa ti rô me. Các loại nhựa trao đổi cũ không còn được khuyến cáo."
+  },
+  {
+   "id": "07-2",
+   "text": "Dùng lợi tiểu quai nếu bệnh nhân còn nước tiểu."
+  },
+  {
+   "id": "07-3",
+   "text": "Lọc máu khi kháng trị, hoặc bệnh nhân chạy thận có ka li từ sáu phẩy năm."
+  },
+  {
+   "id": "08-0",
+   "text": "Bước bốn: thử lại ka li sau một, hai, bốn, sáu, và hai mươi bốn giờ."
+  },
+  {
+   "id": "08-1",
+   "text": "Tìm nguyên nhân: tổn thương thận, toan máu, tiêu cơ vân, ly giải u."
+  },
+  {
+   "id": "08-2",
+   "text": "Và thuốc: ức chế men chuyển, chẹn thụ thể, xpi rô nô lắc tôn, thuốc kháng viêm không steroid, tri mê tô prim."
+  },
+  {
+   "id": "09-0",
+   "text": "Quay lại ca bệnh: điện tâm đồ có sóng tê cao nhọn và qui rờ ét giãn, cho can xi glu cô nát."
+  },
+  {
+   "id": "09-1",
+   "text": "Cho in su lin cộng glu cô. Đường máu năm phẩy tám, nên truyền thêm glu cô mười phần trăm."
+  },
+  {
+   "id": "09-2",
+   "text": "Thêm xan bu ta mon và ét dét xê, ngưng xpi rô nô lắc tôn."
+  },
+  {
+   "id": "09-3",
+   "text": "Sau hai giờ, ka li còn năm phẩy tám, điện tâm đồ cải thiện."
+  },
+  {
+   "id": "10-0",
+   "text": "Ôn tập bốn bước: bảo vệ tim, đẩy vào tế bào, thải ra, theo dõi."
+  },
+  {
+   "id": "10-1",
+   "text": "Nhớ: can xi không hạ ka li."
+  },
+  {
+   "id": "10-2",
+   "text": "Bài sau: can xi, ma giê và phốt phát."
   }
  ]
 }
