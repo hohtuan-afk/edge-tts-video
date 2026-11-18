@@ -194,7 +194,7 @@ const S0: React.FC = () => {
 };
 const S1: React.FC = () => (
   <Rule n="1" c={K.green} head="CANXI" body="Bảo vệ tim · KHÔNG hạ kali">
-    <Beat x={330} y={800} w={420} />
+    <Beat x={370} y={760} w={340} />
   </Rule>
 );
 const S2: React.FC = () => {
@@ -211,7 +211,11 @@ const S2: React.FC = () => {
     </Rule>
   );
 };
-const S3: React.FC = () => <Rule n="3" c={K.amber} head="Thải kali ra" body="Chất gắn kali · lọc máu" />;
+const S3: React.FC = () => (
+  <Rule n="3" c={K.amber} head="Thải kali ra" body="Chất gắn kali · lọc máu">
+    <img src={staticFile('dg_nephron.png')} style={{position: 'absolute', left: 400, top: 780, width: 280}} />
+  </Rule>
+);
 const S4: React.FC = () => (<><Title c={K.amber}>LƯU Ý</Title><Big2 c={K.amber} head="Theo dõi đường máu" body="trong 6 giờ" s0={0.3} /></>);
 const S5: React.FC = () => {
   const t = useSec();
