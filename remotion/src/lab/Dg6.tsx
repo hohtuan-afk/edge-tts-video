@@ -510,8 +510,8 @@ const D1: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   return (
     <>
       <Top idx={0} title="Tăng kali máu: xử trí cấp cứu" />
-      <Slip s0={S[0]} x={120} y={200} sw={700} nw={300} title="ÔNG 68 TUỔI · BỆNH THẬN MẠN" rows={[['acei', 'Ức chế men chuyển', '✓', ''], ['spi', 'Spironolactone', '✓', ''], ['k', 'K⁺', '7,1', 'mmol/L']]} hl={t > S[1] ? ['k'] : []} />
-      <Heart x={1150} y={170} w={520} a={ap(t, S[0] + 0.6)} danger={t > S[1]} />
+      <Slip s0={S[0]} x={120} y={200} sw={800} nw={420} title="ÔNG 68 TUỔI · BỆNH THẬN MẠN" rows={[['acei', 'Ức chế men chuyển', '✓', ''], ['spi', 'Spironolactone', '✓', ''], ['k', 'K⁺', '7,1', 'mmol/L']]} hl={t > S[1] ? ['k'] : []} />
+      <Heart x={1250} y={160} w={440} a={ap(t, S[0] + 0.6)} danger={t > S[1]} />
       <GoldC y={860} a={ap(t, S[2])} size={46}>Tăng kali: kẻ giết người thầm lặng</GoldC>
     </>
   );
@@ -586,8 +586,8 @@ const D5: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   return (
     <>
       <Top idx={4} title="4 bước xử trí" />
-      {STEPS.map(([n, c, h, b], i) => <Tile key={n} x={110 + i * 435} y={240} w={400} h={420} n={n} c={c} head={h} body={b} a={ap(t, s0[i])} />)}
-      {[0, 1, 2].map((i) => <div key={i} style={{position: 'absolute', left: 500 + i * 435, top: 410, fontFamily: FONT, fontSize: 60, color: K.dim, opacity: ap(t, s0[i + 1])}}>→</div>)}
+      {STEPS.map(([n, c, h, b], i) => <Tile key={n} x={110 + i * 435} y={260} w={400} h={330} n={n} c={c} head={h} body={b} a={ap(t, s0[i])} />)}
+      {[0, 1, 2].map((i) => <div key={i} style={{position: 'absolute', left: 500 + i * 435, top: 380, fontFamily: FONT, fontSize: 60, color: K.dim, opacity: ap(t, s0[i + 1])}}>→</div>)}
     </>
   );
 };
