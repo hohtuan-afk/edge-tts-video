@@ -1,0 +1,277 @@
+{
+ "fps": 30,
+ "total": 5308,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 419,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.654,
+     "text": "Canxi · magie · phosphate: ba chất hay bị bỏ quên"
+    },
+    {
+     "start": 4.504,
+     "dur": 3.275,
+     "text": "Nhưng có thể gây co giật · xoắn đỉnh · suy hô hấp"
+    },
+    {
+     "start": 8.13,
+     "dur": 4.345,
+     "text": "Chị 45 tuổi · sau mổ tuyến giáp 2 ngày · tê môi, co quắp bàn tay"
+    }
+   ]
+  },
+  {
+   "from": 419,
+   "dur": 645,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.019,
+     "text": "99% canxi nằm trong xương"
+    },
+    {
+     "start": 2.869,
+     "dur": 4.672,
+     "text": "Trong máu: ~50% ion (có tác dụng) · ~40% gắn albumin"
+    },
+    {
+     "start": 7.891,
+     "dur": 4.473,
+     "text": "Albumin thấp → canxi toàn phần 'giả thấp'"
+    },
+    {
+     "start": 12.715,
+     "dur": 7.313,
+     "text": "Ca hiệu chỉnh = Ca + 0,02 × (40 − albumin g/L) · tốt nhất: đo Ca ion"
+    }
+   ]
+  },
+  {
+   "from": 1064,
+   "dur": 596,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.282,
+     "text": "Hạ canxi: thần kinh cơ bị kích thích"
+    },
+    {
+     "start": 3.132,
+     "dur": 4.408,
+     "text": "Tê quanh môi · co cứng · dấu Chvostek · dấu Trousseau"
+    },
+    {
+     "start": 7.89,
+     "dur": 2.883,
+     "text": "QT kéo dài · co giật · co thắt thanh quản"
+    },
+    {
+     "start": 11.123,
+     "dur": 7.214,
+     "text": "Mổ tuyến giáp/cận giáp · thiếu vitamin D · bệnh thận · viêm tụy · truyền máu nhiều · hạ magie"
+    }
+   ]
+  },
+  {
+   "from": 1660,
+   "dur": 458,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.43,
+     "text": "Có triệu chứng → canxi gluconat 10% · 10–20 mL"
+    },
+    {
+     "start": 5.28,
+     "dur": 1.968,
+     "text": "Pha loãng · truyền trong 10 phút"
+    },
+    {
+     "start": 7.599,
+     "dur": 2.383,
+     "text": "Sau đó truyền duy trì · theo dõi Ca"
+    },
+    {
+     "start": 10.331,
+     "dur": 3.443,
+     "text": "Luôn kiểm tra và bù MAGIE"
+    }
+   ]
+  },
+  {
+   "from": 2118,
+   "dur": 409,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.325,
+     "text": "~90% do cường cận giáp hoặc ung thư"
+    },
+    {
+     "start": 4.175,
+     "dur": 4.137,
+     "text": "Sỏi thận · đau xương · đau bụng, táo bón · lú lẫn"
+    },
+    {
+     "start": 8.662,
+     "dur": 3.49,
+     "text": "Tiểu nhiều → mất nước · QT ngắn"
+    }
+   ]
+  },
+  {
+   "from": 2527,
+   "dur": 507,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.627,
+     "text": "① Truyền NaCl 0,9% · bù nước"
+    },
+    {
+     "start": 4.477,
+     "dur": 3.89,
+     "text": "② Bisphosphonat (zoledronic) hoặc denosumab"
+    },
+    {
+     "start": 8.717,
+     "dur": 2.178,
+     "text": "Calcitonin: nhanh nhưng ngắn"
+    },
+    {
+     "start": 11.245,
+     "dur": 4.153,
+     "text": "Không furosemide thường quy · lọc máu khi nặng + suy thận"
+    }
+   ]
+  },
+  {
+   "from": 3034,
+   "dur": 433,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.935,
+     "text": "Magie bình thường: 0,7–1,0 mmol/L"
+    },
+    {
+     "start": 3.785,
+     "dur": 4.709,
+     "text": "Hạ magie: ức chế bơm proton · lợi tiểu · rượu · tiêu chảy"
+    },
+    {
+     "start": 8.845,
+     "dur": 2.565,
+     "text": "Kali, canxi bù mãi không lên"
+    },
+    {
+     "start": 11.759,
+     "dur": 1.196,
+     "text": "Nguy cơ xoắn đỉnh"
+    }
+   ]
+  },
+  {
+   "from": 3467,
+   "dur": 479,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.333,
+     "text": "Xoắn đỉnh → magie sulfat 2 g tĩnh mạch"
+    },
+    {
+     "start": 3.183,
+     "dur": 2.982,
+     "text": "Tăng magie: suy thận · điều trị tiền sản giật"
+    },
+    {
+     "start": 6.514,
+     "dur": 3.82,
+     "text": "Mất phản xạ gân xương → hạ huyết áp → ức chế hô hấp"
+    },
+    {
+     "start": 10.684,
+     "dur": 3.795,
+     "text": "→ Canxi gluconat · ngưng magie · lọc máu nếu cần"
+    }
+   ]
+  },
+  {
+   "from": 3946,
+   "dur": 501,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.575,
+     "text": "Phosphate bình thường: 0,8–1,5 mmol/L"
+    },
+    {
+     "start": 3.425,
+     "dur": 4.937,
+     "text": "Hạ phosphate: nuôi ăn lại · điều trị DKA · nghiện rượu"
+    },
+    {
+     "start": 8.712,
+     "dur": 2.765,
+     "text": "Yếu cơ · khó cai máy thở · tan máu"
+    },
+    {
+     "start": 11.826,
+     "dur": 3.391,
+     "text": "Bù phosphate · cho ăn tăng dần"
+    }
+   ]
+  },
+  {
+   "from": 4447,
+   "dur": 340,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.526,
+     "text": "Tăng phosphate: suy thận · ly giải u"
+    },
+    {
+     "start": 3.376,
+     "dur": 3.455,
+     "text": "Phosphate kéo canxi xuống → hạ canxi"
+    },
+    {
+     "start": 7.18,
+     "dur": 2.638,
+     "text": "Thuốc gắn phosphate · lọc máu"
+    }
+   ]
+  },
+  {
+   "from": 4787,
+   "dur": 521,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.326,
+     "text": "Chị 45 tuổi: suy cận giáp sau mổ · Ca ion thấp · Mg thấp"
+    },
+    {
+     "start": 5.176,
+     "dur": 2.951,
+     "text": "Canxi gluconat + bù magie → hết co quắp"
+    },
+    {
+     "start": 8.477,
+     "dur": 3.557,
+     "text": "Ca · Mg · K: luôn kiểm tra cùng nhau"
+    },
+    {
+     "start": 12.384,
+     "dur": 3.468,
+     "text": "Bài 8: Điện giải trong hồi sức · ca DKA"
+    }
+   ]
+  }
+ ]
+}
