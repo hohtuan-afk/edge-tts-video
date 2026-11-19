@@ -1,171 +1,31 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+8%",
+ "rate": "+12%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Can xi, ma giê và phốt phát: ba chất điện giải hay bị bỏ quên."
-  },
-  {
-   "id": "00-1",
-   "text": "Nhưng chúng có thể gây co giật, xoắn đỉnh, thậm chí suy hô hấp."
-  },
-  {
-   "id": "00-2",
-   "text": "Chị bốn mươi lăm tuổi, sau mổ cắt tuyến giáp hai ngày, tê quanh môi và co quắp bàn tay."
+   "text": "Bù ka li mãi mà ka li không lên?"
   },
   {
    "id": "01-0",
-   "text": "Chín mươi chín phần trăm can xi nằm trong xương."
-  },
-  {
-   "id": "01-1",
-   "text": "Trong máu, khoảng một nửa ở dạng ion có tác dụng, khoảng bốn mươi phần trăm gắn với an bu min."
-  },
-  {
-   "id": "01-2",
-   "text": "Nên khi an bu min thấp, can xi toàn phần trông thấp, dù can xi ion vẫn bình thường."
-  },
-  {
-   "id": "01-3",
-   "text": "Có công thức hiệu chỉnh: can xi cộng không phẩy không hai nhân với, bốn mươi trừ an bu min. Nhưng tốt nhất là đo can xi ion."
+   "text": "Thủ phạm thường là ma giê thấp."
   },
   {
    "id": "02-0",
-   "text": "Hạ can xi làm thần kinh cơ bị kích thích quá mức."
-  },
-  {
-   "id": "02-1",
-   "text": "Tê quanh môi và đầu ngón, co cứng cơ, dấu Sờ vốt tếch, dấu Tru xô."
-  },
-  {
-   "id": "02-2",
-   "text": "Khoảng qui tê kéo dài, co giật, co thắt thanh quản."
-  },
-  {
-   "id": "02-3",
-   "text": "Nguyên nhân: sau mổ tuyến giáp hoặc cận giáp, thiếu vi ta min Đê, bệnh thận, viêm tụy, truyền máu khối lượng lớn, và hạ ma giê."
+   "text": "Thiếu ma giê, thận tiếp tục thải ka li ra nước tiểu."
   },
   {
    "id": "03-0",
-   "text": "Hạ can xi có triệu chứng: can xi glu cô nát mười phần trăm, mười đến hai mươi mi li lít."
-  },
-  {
-   "id": "03-1",
-   "text": "Pha loãng, truyền tĩnh mạch trong mười phút."
-  },
-  {
-   "id": "03-2",
-   "text": "Sau đó truyền duy trì, và theo dõi can xi."
-  },
-  {
-   "id": "03-3",
-   "text": "Luôn kiểm tra và bù ma giê, vì thiếu ma giê thì can xi không lên."
+   "text": "Can xi cũng vậy, bù mãi không lên."
   },
   {
    "id": "04-0",
-   "text": "Tăng can xi: khoảng chín mươi phần trăm do cường cận giáp hoặc ung thư."
-  },
-  {
-   "id": "04-1",
-   "text": "Triệu chứng: sỏi thận, đau xương, đau bụng táo bón, và lú lẫn."
-  },
-  {
-   "id": "04-2",
-   "text": "Tăng can xi còn gây tiểu nhiều, mất nước, và khoảng qui tê ngắn."
+   "text": "Hãy kiểm tra và bù ma giê cùng lúc."
   },
   {
    "id": "05-0",
-   "text": "Xử trí: trước tiên truyền na tri clo rua không phẩy chín phần trăm để bù nước."
-  },
-  {
-   "id": "05-1",
-   "text": "Sau đó dùng bít phốt phô nát như a xít dô lê đrô níc, hoặc đê nô xu máp."
-  },
-  {
-   "id": "05-2",
-   "text": "Can xi tô nin tác dụng nhanh, nhưng ngắn."
-  },
-  {
-   "id": "05-3",
-   "text": "Không dùng phu rô xê mít thường quy. Lọc máu khi nặng kèm suy thận."
-  },
-  {
-   "id": "06-0",
-   "text": "Ma giê máu bình thường từ không phẩy bảy đến một mi li mol trên lít."
-  },
-  {
-   "id": "06-1",
-   "text": "Hạ ma giê hay gặp do thuốc ức chế bơm prô tôn, lợi tiểu, rượu, tiêu chảy."
-  },
-  {
-   "id": "06-2",
-   "text": "Hậu quả: ka li và can xi bù mãi không lên."
-  },
-  {
-   "id": "06-3",
-   "text": "Và nguy cơ xoắn đỉnh."
-  },
-  {
-   "id": "07-0",
-   "text": "Xoắn đỉnh: ma giê sun phát hai gam tĩnh mạch."
-  },
-  {
-   "id": "07-1",
-   "text": "Tăng ma giê thường do suy thận, hoặc khi điều trị tiền sản giật."
-  },
-  {
-   "id": "07-2",
-   "text": "Dấu hiệu: mất phản xạ gân xương, rồi hạ huyết áp, ức chế hô hấp."
-  },
-  {
-   "id": "07-3",
-   "text": "Xử trí: can xi glu cô nát, ngưng ma giê, lọc máu nếu cần."
-  },
-  {
-   "id": "08-0",
-   "text": "Phốt phát máu bình thường từ không phẩy tám đến một phẩy năm."
-  },
-  {
-   "id": "08-1",
-   "text": "Hạ phốt phát gặp trong hội chứng nuôi ăn lại, khi điều trị nhiễm toan xê tôn, và ở người nghiện rượu."
-  },
-  {
-   "id": "08-2",
-   "text": "Gây yếu cơ, khó cai máy thở, tan máu."
-  },
-  {
-   "id": "08-3",
-   "text": "Xử trí: bù phốt phát, và cho ăn tăng dần ở người suy kiệt."
-  },
-  {
-   "id": "09-0",
-   "text": "Tăng phốt phát gặp trong suy thận và hội chứng ly giải u."
-  },
-  {
-   "id": "09-1",
-   "text": "Phốt phát gắn với can xi, kéo can xi xuống, gây hạ can xi."
-  },
-  {
-   "id": "09-2",
-   "text": "Xử trí: thuốc gắn phốt phát, hoặc lọc máu."
-  },
-  {
-   "id": "10-0",
-   "text": "Quay lại ca bệnh: suy cận giáp sau mổ, can xi ion thấp, ma giê cũng thấp."
-  },
-  {
-   "id": "10-1",
-   "text": "Truyền can xi glu cô nát và bù ma giê, chị hết co quắp."
-  },
-  {
-   "id": "10-2",
-   "text": "Nhớ: can xi, ma giê, ka li luôn kiểm tra cùng nhau."
-  },
-  {
-   "id": "10-3",
-   "text": "Bài cuối: điện giải trong hồi sức, qua một ca nhiễm toan xê tôn."
+   "text": "Lưu lại để ôn, và xem bài bảy đầy đủ trên kênh nhé!"
   }
  ]
 }
