@@ -637,10 +637,10 @@ const D2: React.FC<{S: number[]; D: number[]}> = ({S}) => {
       <Bone x={40} y={190} s={0.38} a={ap(t, S[0])} release={ap(t, S[0] + 0.5)} />
       <Tx x={40} y={470} w={600} al="center" size={34} c={K.amber} b={900} a={ap(t, S[0] + 0.5)}>99% canxi trong xương</Tx>
       <AlbScene x={700} y={170} a={ap(t, S[1])} drop={ap(t, S[2], 1.2)} />
-      <div style={{position: 'absolute', left: 80, top: 560, width: 560, fontFamily: FONT, opacity: ap(t, S[1] + 0.5)}}>
+      <div style={{position: 'absolute', left: 40, top: 560, width: 660, fontFamily: FONT, opacity: ap(t, S[1] + 0.5)}}>
         <div style={{fontSize: 36, fontWeight: 900, color: CA}}>● Ca²⁺ ion ~50%: có tác dụng</div>
         <div style={{fontSize: 36, fontWeight: 900, color: K.amber, marginTop: 12}}>● gắn albumin ~40%</div>
-        <div style={{fontSize: 34, fontWeight: 800, color: K.o2, marginTop: 22, opacity: ap(t, S[2])}}>Albumin ↓ → Ca toàn phần “giả thấp”</div>
+        <div style={{fontSize: 31, fontWeight: 800, color: K.o2, marginTop: 22, opacity: ap(t, S[2]), whiteSpace: 'nowrap'}}>Albumin ↓ → Ca toàn phần “giả thấp”</div>
       </div>
       <Panel x={160} y={770} w={1600} h={130} c={K.amber} s0={S[3]}>
         <Tx x={0} y={22} w={1600} al="center" size={40} b={900}>Ca hiệu chỉnh = Ca + 0,02 × (40 − albumin g/L)</Tx>
@@ -687,8 +687,8 @@ const D5: React.FC<{S: number[]; D: number[]}> = ({S}) => {
     <>
       <Top idx={4} title="Tăng canxi" />
       <Bone x={40} y={230} s={0.5} a={ap(t, S[0])} release={1} />
-      <Card x={880} y={190} w={460} h={200} c={K.amber} s0={S[0] + 0.5} head="CƯỜNG CẬN GIÁP" body="" size={38} />
-      <Card x={1380} y={190} w={460} h={200} c={K.o2} s0={S[0] + 1.2} head="UNG THƯ" body="" size={38} />
+      <Card x={880} y={190} w={460} h={200} c={K.amber} s0={S[0] + 0.5} head="" body="CƯỜNG CẬN GIÁP" size={44} />
+      <Card x={1380} y={190} w={460} h={200} c={K.o2} s0={S[0] + 1.2} head="" body="UNG THƯ" size={44} />
       <Tx x={880} y={400} w={960} al="center" size={32} c={K.dim} b={800} a={ap(t, S[0] + 1.5)}>~90% các trường hợp</Tx>
       <Bullets x={120} y={600} w={1700} items={['Sỏi thận', 'Đau xương', 'Đau bụng · táo bón', 'Lú lẫn']} s0={[S[1], S[1] + 0.6, S[1] + 1.2, S[1] + 2]} c={K.amber} size={44} />
       <Bullets x={120} y={720} w={1700} items={['Tiểu nhiều → mất nước', 'QT ngắn']} s0={[S[2], S[2] + 1.6]} c={K.o2} size={44} />
@@ -702,7 +702,7 @@ const D6: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   return (
     <>
       <Top idx={5} title="Xử trí tăng canxi" />
-      <Check x={160} y={180} w={1000} items={['① NaCl 0,9% · bù nước', '② Bisphosphonat (zoledronic) hoặc denosumab', 'Calcitonin: nhanh nhưng ngắn']} s0={[S[0], S[1], S[2]]} />
+      <Check x={160} y={180} w={1000} items={['NaCl 0,9% · bù nước', 'Bisphosphonat (zoledronic) hoặc denosumab', 'Calcitonin: nhanh nhưng ngắn']} s0={[S[0], S[1], S[2]]} />
       <div style={{position: 'absolute', left: 1220, top: 190, width: 560, height: 200, borderRadius: 30, border: `4px dashed ${K.dim}`, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', fontFamily: FONT, opacity: ap(t, S[3])}}>
         <div style={{fontSize: 46, fontWeight: 900, color: K.dim, textDecoration: 'line-through', textDecorationColor: K.o2, textDecorationThickness: 6}}>Furosemide</div>
         <div style={{fontSize: 30, fontWeight: 700, color: K.o2, marginTop: 10}}>không dùng thường quy</div>
@@ -742,7 +742,7 @@ const D8: React.FC<{S: number[]; D: number[]}> = ({S}) => {
       <TdP x={60} y={170} w={1240} h={240} s0={S[0] - 0.3} />
       <Vial x={1380} y={140} a={ap(t, S[0])} label="MgSO₄" c={MG} />
       <Tx x={1600} y={240} w={300} size={44} c={MG} b={900} a={ap(t, S[0] + 0.6)}>2 g TM</Tx>
-      <Tx x={60} y={470} w={1800} al="center" size={42} c={K.amber} b={900} a={ap(t, S[1])}>TĂNG MAGIE: suy thận · điều trị tiền sản giật</Tx>
+      <Tx x={60} y={470} w={1260} al="center" size={42} c={K.amber} b={900} a={ap(t, S[1])}>TĂNG MAGIE: suy thận · điều trị tiền sản giật</Tx>
       <Chain items={['Mất phản xạ gân xương', 'Hạ huyết áp', 'Ức chế hô hấp']} s0={S[2]} step={0.8} y={560} c={K.o2} />
       <Res x={460} y={720} s0={S[3]} c={K.green}>Canxi gluconat · ngưng Mg · lọc máu</Res>
     </>
