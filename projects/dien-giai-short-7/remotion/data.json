@@ -1,0 +1,72 @@
+{
+ "fps": 30,
+ "total": 792,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 1.615,
+     "text": "Kali bù mãi không lên?"
+    }
+   ]
+  },
+  {
+   "from": 132,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 1.396,
+     "text": "Thủ phạm: MAGIE thấp"
+    }
+   ]
+  },
+  {
+   "from": 264,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.544,
+     "text": "Mg²⁺ thấp → thận tiếp tục thải K⁺"
+    }
+   ]
+  },
+  {
+   "from": 396,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 1.861,
+     "text": "Canxi cũng bù không lên!"
+    }
+   ]
+  },
+  {
+   "from": 528,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 1.566,
+     "text": "→ Kiểm tra & bù magie cùng lúc"
+    }
+   ]
+  },
+  {
+   "from": 660,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.605,
+     "text": "Lưu lại để ôn · xem Bài 7 đầy đủ trên kênh!"
+    }
+   ]
+  }
+ ]
+}
