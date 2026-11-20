@@ -1,70 +1,295 @@
 {
  "fps": 30,
- "total": 792,
+ "total": 5797,
  "scenes": [
   {
    "from": 0,
-   "dur": 132,
+   "dur": 701,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 1.615,
-     "text": "Kali bù mãi không lên?"
+     "start": 0.5,
+     "dur": 3.799,
+     "text": "Nam 24 tuổi · ĐTĐ type 1 · bỏ insulin 2 ngày"
+    },
+    {
+     "start": 4.649,
+     "dur": 6.117,
+     "text": "Nôn · thở nhanh sâu · glucose 30 · pH 7,05 · HCO₃⁻ 6"
+    },
+    {
+     "start": 11.116,
+     "dur": 5.292,
+     "text": "Na⁺ 128 · K⁺ 5,6 · Cl⁻ 96 · ceton 5,8"
+    },
+    {
+     "start": 16.758,
+     "dur": 5.111,
+     "text": "DKA: điện giải thay đổi TỪNG GIỜ"
     }
    ]
   },
   {
-   "from": 132,
-   "dur": 132,
+   "from": 701,
+   "dur": 786,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 1.396,
-     "text": "Thủ phạm: MAGIE thấp"
+     "start": 0.5,
+     "dur": 6.767,
+     "text": "D · glucose ≥ 11,1 hoặc đã biết ĐTĐ"
+    },
+    {
+     "start": 7.617,
+     "dur": 2.026,
+     "text": "K · ceton máu ≥ 3,0"
+    },
+    {
+     "start": 9.994,
+     "dur": 3.525,
+     "text": "A · pH < 7,3 hoặc HCO₃⁻ < 18"
+    },
+    {
+     "start": 13.869,
+     "dur": 5.221,
+     "text": "AG = 128 − (96 + 6) = 26 → tăng"
+    },
+    {
+     "start": 19.44,
+     "dur": 5.248,
+     "text": "Ức chế SGLT2 → DKA dù đường máu gần bình thường"
     }
    ]
   },
   {
-   "from": 264,
-   "dur": 132,
+   "from": 1487,
+   "dur": 516,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 2.544,
-     "text": "Mg²⁺ thấp → thận tiếp tục thải K⁺"
+     "start": 0.5,
+     "dur": 2.671,
+     "text": "Na⁺ 128: có thật là hạ natri?"
+    },
+    {
+     "start": 3.521,
+     "dur": 2.889,
+     "text": "Glucose cao kéo nước ra khỏi tế bào → natri bị pha loãng"
+    },
+    {
+     "start": 6.76,
+     "dur": 4.485,
+     "text": "Glucose ↑ 5,5 → Na⁺ ↓ 1,6–2,4"
+    },
+    {
+     "start": 11.595,
+     "dur": 4.113,
+     "text": "Na⁺ hiệu chỉnh ≈ 135–139 · bình thường"
     }
    ]
   },
   {
-   "from": 396,
-   "dur": 132,
+   "from": 2003,
+   "dur": 480,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 1.861,
-     "text": "Canxi cũng bù không lên!"
+     "start": 0.5,
+     "dur": 3.386,
+     "text": "K⁺ 5,6: cao mà vẫn THIẾU"
+    },
+    {
+     "start": 4.236,
+     "dur": 2.701,
+     "text": "Thiếu insulin + toan → kali ra khỏi tế bào"
+    },
+    {
+     "start": 7.287,
+     "dur": 2.27,
+     "text": "Lợi niệu thẩm thấu → mất kali qua thận"
+    },
+    {
+     "start": 9.907,
+     "dur": 4.589,
+     "text": "Tổng thiếu ~3–5 mmol/kg · tảng băng!"
     }
    ]
   },
   {
-   "from": 528,
-   "dur": 132,
+   "from": 2483,
+   "dur": 517,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 1.566,
-     "text": "→ Kiểm tra & bù magie cùng lúc"
+     "start": 0.5,
+     "dur": 4.145,
+     "text": "① Dịch: NaCl 0,9% hoặc dịch cân bằng"
+    },
+    {
+     "start": 4.995,
+     "dur": 3.407,
+     "text": "500–1000 mL/giờ trong 2–4 giờ đầu"
+    },
+    {
+     "start": 8.752,
+     "dur": 2.761,
+     "text": "Ít hơn ở người già · suy tim · suy thận"
+    },
+    {
+     "start": 11.862,
+     "dur": 3.878,
+     "text": "Dịch cân bằng: hết DKA nhanh hơn (SMART)"
     }
    ]
   },
   {
-   "from": 660,
-   "dur": 132,
+   "from": 3000,
+   "dur": 486,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 2.605,
-     "text": "Lưu lại để ôn · xem Bài 7 đầy đủ trên kênh!"
+     "start": 0.5,
+     "dur": 2.53,
+     "text": "② Kiểm tra KALI trước insulin"
+    },
+    {
+     "start": 3.38,
+     "dur": 3.856,
+     "text": "K⁺ < 3,5 → HOÃN insulin · bù 10 mmol/giờ"
+    },
+    {
+     "start": 7.586,
+     "dur": 4.425,
+     "text": "3,5–5,0 → bù kali song song · mục tiêu 4–5"
+    },
+    {
+     "start": 12.361,
+     "dur": 2.357,
+     "text": "> 5,0 → chưa bù · thử lại sau 2 giờ"
+    }
+   ]
+  },
+  {
+   "from": 3486,
+   "dur": 518,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.662,
+     "text": "③ Insulin truyền 0,1 đơn vị/kg/giờ"
+    },
+    {
+     "start": 4.512,
+     "dur": 3.254,
+     "text": "Insulin kéo K⁺ vào tế bào → kali tụt nhanh"
+    },
+    {
+     "start": 8.115,
+     "dur": 3.682,
+     "text": "Glucose < 13,9 → thêm glucose 5–10%"
+    },
+    {
+     "start": 12.147,
+     "dur": 3.617,
+     "text": "Tiếp tục insulin đến khi HẾT CETON"
+    }
+   ]
+  },
+  {
+   "from": 4004,
+   "dur": 588,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.11,
+     "text": "Theo dõi K⁺: lúc đầu · sau 2 giờ · mỗi 4 giờ"
+    },
+    {
+     "start": 3.96,
+     "dur": 5.588,
+     "text": "Glucose ↓ · K⁺ 5,6 → 3,8 · HCO₃⁻ ↑ dần"
+    },
+    {
+     "start": 9.898,
+     "dur": 3.506,
+     "text": "Cuối giai đoạn: toan tăng Clo do NaCl"
+    },
+    {
+     "start": 13.754,
+     "dur": 4.339,
+     "text": "→ Nhìn CETON, đừng chỉ nhìn HCO₃⁻"
+    }
+   ]
+  },
+  {
+   "from": 4592,
+   "dur": 365,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.699,
+     "text": "Bicarbonat: chỉ khi pH < 7,0"
+    },
+    {
+     "start": 3.549,
+     "dur": 1.536,
+     "text": "Phosphate: không bù thường quy"
+    },
+    {
+     "start": 5.435,
+     "dur": 3.589,
+     "text": "Bù khi rất thấp · yếu cơ · suy hô hấp · suy tim"
+    },
+    {
+     "start": 9.374,
+     "dur": 1.281,
+     "text": "Kiểm tra magie"
+    }
+   ]
+  },
+  {
+   "from": 4957,
+   "dur": 467,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.671,
+     "text": "Hết DKA: ceton < 0,6"
+    },
+    {
+     "start": 3.521,
+     "dur": 3.322,
+     "text": "và pH ≥ 7,3 hoặc HCO₃⁻ ≥ 18"
+    },
+    {
+     "start": 7.193,
+     "dur": 3.612,
+     "text": "Insulin dưới da · chồng lấp 1–2 giờ rồi mới ngưng truyền"
+    },
+    {
+     "start": 11.155,
+     "dur": 2.89,
+     "text": "Ca bệnh: hết DKA sau ~16 giờ"
+    }
+   ]
+  },
+  {
+   "from": 5424,
+   "dur": 373,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.314,
+     "text": "Natri: chuyện của NƯỚC"
+    },
+    {
+     "start": 4.164,
+     "dur": 1.025,
+     "text": "Kali: TẢNG BĂNG"
+    },
+    {
+     "start": 5.539,
+     "dur": 2.651,
+     "text": "Canxi · magie · kali: luôn đi cùng nhau"
+    },
+    {
+     "start": 8.54,
+     "dur": 2.39,
+     "text": "Cảm ơn bạn đã theo dõi “Giải mã điện giải”!"
     }
    ]
   }
