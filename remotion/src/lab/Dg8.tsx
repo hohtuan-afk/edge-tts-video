@@ -737,7 +737,7 @@ const D5: React.FC<{S: number[]; D: number[]}> = ({S}) => (
   <>
     <Top idx={4} title="① Bù dịch" />
     <Check x={140} y={190} w={1040} items={['NaCl 0,9% hoặc dịch cân bằng', '500–1000 mL/giờ · 2–4 giờ đầu', 'Ít hơn: người già · suy tim · suy thận']} s0={[S[0], S[1], S[2]]} />
-    <Card x={1240} y={200} w={560} h={360} c={K.green} s0={S[3]} head="SMART (phân tích DKA)" body="Dịch cân bằng → hết DKA nhanh hơn" size={40} />
+    <Card x={1240} y={200} w={560} h={250} c={K.green} s0={S[3]} head="SMART (phân tích DKA)" body="Dịch cân bằng → hết DKA nhanh hơn" size={44} />
   </>
 );
 
@@ -795,7 +795,7 @@ const D8: React.FC<{S: number[]; D: number[]}> = ({S}) => {
 const D9: React.FC<{S: number[]; D: number[]}> = ({S}) => (
   <>
     <Top idx={8} title="Bicarbonat · phosphate · magie" />
-    <Card x={140} y={200} w={520} h={300} c={WATER} s0={S[0]} head="BICARBONAT" body="chỉ khi pH < 7,0" size={46} />
+    <Card x={140} y={200} w={520} h={260} c={WATER} s0={S[0]} head="BICARBONAT" body="chỉ khi pH < 7,0" size={46} />
     <Card x={700} y={200} w={520} h={300} c={PH} s0={S[1]} head="PHOSPHATE" body="không bù thường quy" sub="bù khi rất thấp · yếu cơ · suy hô hấp · suy tim" size={42} />
     <Card x={1260} y={200} w={520} h={300} c={MG} s0={S[3]} head="MAGIE" body="kiểm tra" size={46} />
   </>
@@ -834,9 +834,9 @@ const D11: React.FC<{S: number[]; D: number[]}> = ({S}) => {
         <div style={{fontSize: 38, fontWeight: 800, color: WATER}}>chuyện của NƯỚC</div>
       </div>
       <div style={{position: 'absolute', left: 710, top: 200, width: 500, height: 420, borderRadius: 36, border: `5px solid ${KC}`, background: `${KC}1c`, overflow: 'hidden', textAlign: 'center', fontFamily: FONT, opacity: ap(t, S[1])}}>
-        <Iceberg x={-60} y={10} s={0.55} a={1} />
-        <div style={{position: 'absolute', left: 0, right: 0, top: 300, fontSize: 48, fontWeight: 900, color: K.txt}}>KALI</div>
-        <div style={{position: 'absolute', left: 0, right: 0, top: 356, fontSize: 38, fontWeight: 800, color: KC}}>TẢNG BĂNG</div>
+        <div style={{fontSize: 150, marginTop: 30, transform: `translateY(${Math.sin(f / 12 + 1) * 8}px)`}}>🧊</div>
+        <div style={{fontSize: 48, fontWeight: 900, color: K.txt}}>KALI</div>
+        <div style={{fontSize: 38, fontWeight: 800, color: KC}}>TẢNG BĂNG</div>
       </div>
       <div style={{position: 'absolute', left: 1280, top: 200, width: 500, height: 420, borderRadius: 36, border: `5px solid ${CA}`, background: `${CA}1c`, textAlign: 'center', fontFamily: FONT, opacity: ap(t, S[2])}}>
         <div style={{display: 'flex', justifyContent: 'center', gap: 14, marginTop: 70}}>
