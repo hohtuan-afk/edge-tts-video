@@ -55,6 +55,7 @@ import {DgShort6} from './lab/DgShort6';
 import {Dg7} from './lab/Dg7';
 import {DgShort7} from './lab/DgShort7';
 import {Dg8} from './lab/Dg8';
+import {DgShort8} from './lab/DgShort8';
 import {Abg2} from './lab/Abg2';
 import {Block, BLOCK_N} from './lab/Block';
 import {Bundle, BUNDLE_N} from './lab/Bundle';
@@ -75,6 +76,7 @@ import data from './data.json';
 export const Root: React.FC = () => (
   <>
     <Composition id="Abg2" component={Abg2} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />
+    <Composition id="DgShort8" component={DgShort8} durationInFrames={data.total} fps={data.fps} width={1080} height={1920} />
     <Composition id="Dg8" component={Dg8} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />
     <Composition id="DgShort7" component={DgShort7} durationInFrames={data.total} fps={data.fps} width={1080} height={1920} />
     <Composition id="Dg7" component={Dg7} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />
