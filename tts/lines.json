@@ -1,31 +1,187 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+12%",
+ "rate": "+8%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Bù ka li mãi mà ka li không lên?"
+   "text": "Nam hai mươi bốn tuổi, đái tháo đường típ một, bỏ in su lin hai ngày."
+  },
+  {
+   "id": "00-1",
+   "text": "Nôn ói, thở nhanh sâu. Glu cô ba mươi, pê hát bảy phẩy không năm, bi các bô nát sáu."
+  },
+  {
+   "id": "00-2",
+   "text": "Na tri một trăm hai mươi tám, ka li năm phẩy sáu, clo chín mươi sáu, xê tôn máu năm phẩy tám."
+  },
+  {
+   "id": "00-3",
+   "text": "Trong nhiễm toan xê tôn, điện giải thay đổi từng giờ. Bài cuối này sẽ gom lại cả chuỗi."
   },
   {
    "id": "01-0",
-   "text": "Thủ phạm thường là ma giê thấp."
+   "text": "Chẩn đoán theo đồng thuận năm hai nghìn không trăm hai mươi tư. Đê: glu cô từ mười một phẩy một, hoặc đã biết đái tháo đường."
+  },
+  {
+   "id": "01-1",
+   "text": "Ka: xê tôn máu từ ba trở lên."
+  },
+  {
+   "id": "01-2",
+   "text": "A: pê hát dưới bảy phẩy ba, hoặc bi các bô nát dưới mười tám."
+  },
+  {
+   "id": "01-3",
+   "text": "Khoảng trống a ni on bằng một trăm hai mươi tám trừ, chín mươi sáu cộng sáu, bằng hai mươi sáu, tăng."
+  },
+  {
+   "id": "01-4",
+   "text": "Lưu ý: người dùng thuốc ức chế ét giê lờ tê hai có thể bị nhiễm toan xê tôn dù đường máu gần bình thường."
   },
   {
    "id": "02-0",
-   "text": "Thiếu ma giê, thận tiếp tục thải ka li ra nước tiểu."
+   "text": "Na tri một trăm hai mươi tám, có thật là hạ na tri?"
+  },
+  {
+   "id": "02-1",
+   "text": "Glu cô cao kéo nước ra khỏi tế bào, pha loãng na tri."
+  },
+  {
+   "id": "02-2",
+   "text": "Như bài hai: cứ glu cô tăng năm phẩy năm, na tri giảm một phẩy sáu đến hai phẩy bốn."
+  },
+  {
+   "id": "02-3",
+   "text": "Na tri hiệu chỉnh khoảng một trăm ba mươi lăm đến một trăm ba mươi chín, thực ra bình thường."
   },
   {
    "id": "03-0",
-   "text": "Can xi cũng vậy, bù mãi không lên."
+   "text": "Ka li năm phẩy sáu, cao, nhưng cơ thể lại đang thiếu ka li."
+  },
+  {
+   "id": "03-1",
+   "text": "Thiếu in su lin và toan máu đẩy ka li ra khỏi tế bào."
+  },
+  {
+   "id": "03-2",
+   "text": "Rồi lợi niệu thẩm thấu làm ka li mất qua thận."
+  },
+  {
+   "id": "03-3",
+   "text": "Tổng lượng thiếu khoảng ba đến năm mi li mol mỗi ký. Đúng là tảng băng ka li."
   },
   {
    "id": "04-0",
-   "text": "Hãy kiểm tra và bù ma giê cùng lúc."
+   "text": "Bước một: bù dịch bằng na tri clo rua không phẩy chín phần trăm, hoặc dịch cân bằng."
+  },
+  {
+   "id": "04-1",
+   "text": "Năm trăm đến một nghìn mi li lít mỗi giờ, trong hai đến bốn giờ đầu."
+  },
+  {
+   "id": "04-2",
+   "text": "Truyền ít hơn ở người già, suy tim, suy thận."
+  },
+  {
+   "id": "04-3",
+   "text": "Phân tích từ thử nghiệm smát cho thấy dịch cân bằng giúp hết nhiễm toan xê tôn nhanh hơn."
   },
   {
    "id": "05-0",
-   "text": "Lưu lại để ôn, và xem bài bảy đầy đủ trên kênh nhé!"
+   "text": "Bước hai: kiểm tra ka li trước khi cho in su lin."
+  },
+  {
+   "id": "05-1",
+   "text": "Dưới ba phẩy năm: hoãn in su lin, bù ka li mười mi li mol mỗi giờ."
+  },
+  {
+   "id": "05-2",
+   "text": "Từ ba phẩy năm đến năm: bù ka li song song với in su lin, mục tiêu bốn đến năm."
+  },
+  {
+   "id": "05-3",
+   "text": "Trên năm: chưa bù, thử lại sau hai giờ."
+  },
+  {
+   "id": "06-0",
+   "text": "Bước ba: in su lin truyền tĩnh mạch không phẩy một đơn vị mỗi ký mỗi giờ."
+  },
+  {
+   "id": "06-1",
+   "text": "In su lin kéo ka li vào tế bào, nên ka li tụt rất nhanh."
+  },
+  {
+   "id": "06-2",
+   "text": "Khi glu cô dưới mười ba phẩy chín, truyền thêm glu cô năm đến mười phần trăm."
+  },
+  {
+   "id": "06-3",
+   "text": "Và tiếp tục in su lin cho đến khi hết xê tôn, không phải đến khi hết đường."
+  },
+  {
+   "id": "07-0",
+   "text": "Theo dõi ka li lúc đầu, sau hai giờ, rồi mỗi bốn giờ."
+  },
+  {
+   "id": "07-1",
+   "text": "Biểu đồ của ca bệnh: glu cô giảm, ka li từ năm phẩy sáu xuống ba phẩy tám, bi các bô nát tăng dần."
+  },
+  {
+   "id": "07-2",
+   "text": "Cuối giai đoạn có thể còn toan tăng clo, do truyền nhiều na tri clo rua."
+  },
+  {
+   "id": "07-3",
+   "text": "Đừng nhầm là còn nhiễm toan xê tôn: hãy nhìn xê tôn, đừng chỉ nhìn bi các bô nát."
+  },
+  {
+   "id": "08-0",
+   "text": "Bi các bô nát: chỉ cân nhắc khi pê hát dưới bảy."
+  },
+  {
+   "id": "08-1",
+   "text": "Phốt phát: không bù thường quy."
+  },
+  {
+   "id": "08-2",
+   "text": "Chỉ bù khi rất thấp, hoặc có yếu cơ, suy hô hấp, suy tim."
+  },
+  {
+   "id": "08-3",
+   "text": "Và nhớ kiểm tra ma giê."
+  },
+  {
+   "id": "09-0",
+   "text": "Hết nhiễm toan xê tôn khi xê tôn máu dưới không phẩy sáu,"
+  },
+  {
+   "id": "09-1",
+   "text": "và pê hát từ bảy phẩy ba, hoặc bi các bô nát từ mười tám."
+  },
+  {
+   "id": "09-2",
+   "text": "Chuyển in su lin dưới da, chồng lấp một đến hai giờ rồi mới ngưng truyền."
+  },
+  {
+   "id": "09-3",
+   "text": "Ca bệnh của chúng ta hết nhiễm toan xê tôn sau khoảng mười sáu giờ."
+  },
+  {
+   "id": "10-0",
+   "text": "Tổng kết chuỗi tám bài. Na tri là chuyện của nước."
+  },
+  {
+   "id": "10-1",
+   "text": "Ka li là tảng băng."
+  },
+  {
+   "id": "10-2",
+   "text": "Can xi, ma giê, ka li luôn đi cùng nhau."
+  },
+  {
+   "id": "10-3",
+   "text": "Cảm ơn bạn đã theo dõi trọn chuỗi Giải mã điện giải!"
   }
  ]
 }
