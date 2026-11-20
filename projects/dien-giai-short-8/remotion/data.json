@@ -1,0 +1,72 @@
+{
+ "fps": 30,
+ "total": 800,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.681,
+     "text": "DKA: K⁺ 5,6 mà vẫn THIẾU kali?"
+    }
+   ]
+  },
+  {
+   "from": 132,
+   "dur": 140,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.991,
+     "text": "Thiếu insulin + toan → kali ra khỏi tế bào"
+    }
+   ]
+  },
+  {
+   "from": 272,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 1.903,
+     "text": "Lợi niệu thẩm thấu → mất kali qua thận"
+    }
+   ]
+  },
+  {
+   "from": 404,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.112,
+     "text": "Cho insulin → kali tụt NHANH"
+    }
+   ]
+  },
+  {
+   "from": 536,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.58,
+     "text": "K⁺ < 3,5 → HOÃN insulin, bù kali trước"
+    }
+   ]
+  },
+  {
+   "from": 668,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.658,
+     "text": "Lưu lại để ôn · xem Bài 8 đầy đủ trên kênh!"
+    }
+   ]
+  }
+ ]
+}
