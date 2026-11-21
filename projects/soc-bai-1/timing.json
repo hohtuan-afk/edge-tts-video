@@ -1,0 +1,243 @@
+[
+ {
+  "orig": 12.0,
+  "dur": 16.36,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.622,
+    "text": "Ông 70 tuổi · viêm phổi · HA 85/50 · mạch 118"
+   },
+   {
+    "start": 5.472,
+    "dur": 4.657,
+    "text": "Lơ mơ · tay chân lạnh · nước tiểu 15 mL/giờ · lactate 4,2"
+   },
+   {
+    "start": 10.478,
+    "dur": 4.363,
+    "text": "Ông có đang sốc? Huyết áp thấp chưa đủ để trả lời"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 12.36,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.908,
+    "text": "Sốc = oxy cung cấp KHÔNG ĐỦ cho nhu cầu tế bào"
+   },
+   {
+    "start": 4.758,
+    "dur": 2.703,
+    "text": "Vấn đề ở TẾ BÀO, không chỉ ở con số huyết áp"
+   },
+   {
+    "start": 7.811,
+    "dur": 3.054,
+    "text": "Có thể sốc dù huyết áp còn bình thường"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 14.24,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.939,
+    "text": "Cung oxy: DO₂ = cung lượng tim × O₂ trong máu"
+   },
+   {
+    "start": 5.789,
+    "dur": 3.703,
+    "text": "O₂ trong máu phụ thuộc Hb và SaO₂"
+   },
+   {
+    "start": 9.843,
+    "dur": 2.913,
+    "text": "Cung lượng tim = tần số × thể tích nhát bóp"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 10.24,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.305,
+    "text": "MAP ≈ cung lượng tim × sức cản mạch"
+   },
+   {
+    "start": 4.155,
+    "dur": 2.405,
+    "text": "Mạch co mạnh → huyết áp vẫn 'đẹp'…"
+   },
+   {
+    "start": 6.909,
+    "dur": 1.83,
+    "text": "…nhưng lưu lượng tới mô đã GIẢM"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 17.64,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.849,
+    "text": "Cơ thể bù: tim nhanh · co mạch (da lạnh)"
+   },
+   {
+    "start": 4.699,
+    "dur": 3.191,
+    "text": "→ Tụt huyết áp là dấu hiệu MUỘN"
+   },
+   {
+    "start": 8.24,
+    "dur": 4.287,
+    "text": "Chỉ số sốc = mạch ÷ HA tâm thu · > 1 đáng lo"
+   },
+   {
+    "start": 12.877,
+    "dur": 3.251,
+    "text": "Ca này: 118 ÷ 85 ≈ 1,4"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 14.24,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.51,
+    "text": "Thiếu oxy → chuyển hoá yếm khí → LACTATE"
+   },
+   {
+    "start": 4.36,
+    "dur": 2.35,
+    "text": "Lactate > 2 mmol/L: bất thường"
+   },
+   {
+    "start": 7.06,
+    "dur": 5.665,
+    "text": "Lactate cao còn do: suy gan · adrenaline · co giật…"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 13.48,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 1.582,
+    "text": "3 cửa sổ tưới máu"
+   },
+   {
+    "start": 2.432,
+    "dur": 3.416,
+    "text": "DA: lạnh · nổi bông · CRT kéo dài"
+   },
+   {
+    "start": 6.198,
+    "dur": 2.971,
+    "text": "THẬN: nước tiểu < 0,5 mL/kg/giờ"
+   },
+   {
+    "start": 9.519,
+    "dur": 2.474,
+    "text": "NÃO: lơ mơ · kích thích"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 19.56,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.378,
+    "text": "CRT: ấn đầu ngón 10 giây rồi thả"
+   },
+   {
+    "start": 4.228,
+    "dur": 3.514,
+    "text": "Đếm thời gian hồng trở lại · > 3 giây là chậm"
+   },
+   {
+    "start": 8.091,
+    "dur": 4.305,
+    "text": "ANDROMEDA-SHOCK: CRT là mục tiêu hồi sức đáng tin"
+   },
+   {
+    "start": 12.746,
+    "dur": 5.294,
+    "text": "SSC 2026: dùng CRT hỗ trợ cùng lactate"
+   }
+  ]
+ },
+ {
+  "orig": 9.0,
+  "dur": 9.52,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.778,
+    "text": "Sốc nhiễm khuẩn (Sepsis-3): cần vận mạch giữ MAP ≥ 65"
+   },
+   {
+    "start": 5.628,
+    "dur": 2.41,
+    "text": "+ lactate > 2 · dù đã bù dịch đủ"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 13.76,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 5.364,
+    "text": "Da lạnh · nước tiểu ít · lơ mơ: cả 3 cửa sổ đều xấu"
+   },
+   {
+    "start": 6.214,
+    "dur": 4.036,
+    "text": "Lactate 4,2 · chỉ số sốc 1,4 → SỐC"
+   },
+   {
+    "start": 10.6,
+    "dur": 1.643,
+    "text": "Câu hỏi tiếp: sốc KIỂU GÌ?"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 12.84,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.634,
+    "text": "Sốc = tế bào thiếu oxy, không chỉ là huyết áp"
+   },
+   {
+    "start": 4.484,
+    "dur": 3.113,
+    "text": "Nhìn 3 cửa sổ · lactate · CRT"
+   },
+   {
+    "start": 7.946,
+    "dur": 3.378,
+    "text": "Bài 2: 4 kiểu sốc · bơm – ống – thể tích"
+   }
+  ]
+ }
+]
