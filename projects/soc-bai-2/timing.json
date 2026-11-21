@@ -1,0 +1,233 @@
+[
+ {
+  "orig": 12.0,
+  "dur": 14.28,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.767,
+    "text": "Ông 70 tuổi đang sốc. Nhưng sốc KIỂU GÌ?"
+   },
+   {
+    "start": 4.617,
+    "dur": 5.596,
+    "text": "Tuần hoàn = BƠM · ỐNG · NƯỚC"
+   },
+   {
+    "start": 10.563,
+    "dur": 2.234,
+    "text": "Hỏng chỗ nào → kiểu sốc đó"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 18.96,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.804,
+    "text": "4 kiểu sốc (Weil – Shubin)"
+   },
+   {
+    "start": 4.654,
+    "dur": 3.051,
+    "text": "Giảm thể tích · Tim · Tắc nghẽn · Phân bố"
+   },
+   {
+    "start": 8.055,
+    "dur": 9.405,
+    "text": "SOAP II: phân bố 66% (nhiễm khuẩn 62%) · tim 16% · giảm thể tích 16% · tắc nghẽn 2%"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 11.96,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.844,
+    "text": "① GIẢM THỂ TÍCH: thiếu nước"
+   },
+   {
+    "start": 4.694,
+    "dur": 3.298,
+    "text": "Mất máu · nôn, tiêu chảy · bỏng"
+   },
+   {
+    "start": 8.342,
+    "dur": 2.134,
+    "text": "Da lạnh · tĩnh mạch cổ XẸP"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 12.68,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.264,
+    "text": "② SỐC TIM: bơm hỏng"
+   },
+   {
+    "start": 3.114,
+    "dur": 3.135,
+    "text": "Nhồi máu cơ tim · suy tim cấp · loạn nhịp"
+   },
+   {
+    "start": 6.599,
+    "dur": 4.581,
+    "text": "Da lạnh · tĩnh mạch cổ NỔI · ran phổi"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 14.84,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.255,
+    "text": "③ TẮC NGHẼN: ống bị chặn"
+   },
+   {
+    "start": 5.105,
+    "dur": 4.265,
+    "text": "Thuyên tắc phổi · chèn ép tim · tràn khí màng phổi áp lực"
+   },
+   {
+    "start": 9.72,
+    "dur": 3.621,
+    "text": "Phải GỠ chỗ tắc"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 12.32,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.527,
+    "text": "④ PHÂN BỐ: ống giãn"
+   },
+   {
+    "start": 4.377,
+    "dur": 3.253,
+    "text": "Nhiễm khuẩn · phản vệ · tổn thương tủy"
+   },
+   {
+    "start": 7.98,
+    "dur": 2.825,
+    "text": "Giai đoạn đầu: da có thể ẤM"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 17.6,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.372,
+    "text": "Phân biệt: da · tĩnh mạch cổ · phổi"
+   },
+   {
+    "start": 4.222,
+    "dur": 4.984,
+    "text": "Cung lượng tim · sức cản mạch · áp lực đổ đầy"
+   },
+   {
+    "start": 9.556,
+    "dur": 6.561,
+    "text": "Phân bố: cung lượng tim thường TĂNG, sức cản GIẢM"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 17.28,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.891,
+    "text": "POCUS: siêu âm tại giường (RUSH)"
+   },
+   {
+    "start": 3.741,
+    "dur": 4.291,
+    "text": "BƠM: co bóp · dịch màng ngoài tim · thất phải"
+   },
+   {
+    "start": 8.382,
+    "dur": 3.676,
+    "text": "BÌNH: tĩnh mạch chủ dưới · dịch ổ bụng · phổi"
+   },
+   {
+    "start": 12.408,
+    "dur": 3.359,
+    "text": "ỐNG: động mạch chủ · huyết khối tĩnh mạch sâu"
+   }
+  ]
+ },
+ {
+  "orig": 9.0,
+  "dur": 9.08,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.137,
+    "text": "Thực tế: thường là sốc HỖN HỢP"
+   },
+   {
+    "start": 2.987,
+    "dur": 4.583,
+    "text": "Nhiễm khuẩn = ống giãn + thiếu nước + bơm yếu"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 13.92,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 5.503,
+    "text": "Siêu âm: tim co bóp mạnh · TM chủ dưới nhỏ, xẹp · phổi sạch"
+   },
+   {
+    "start": 6.353,
+    "dur": 2.678,
+    "text": "→ Sốc PHÂN BỐ (nhiễm khuẩn) + thiếu thể tích"
+   },
+   {
+    "start": 9.381,
+    "dur": 3.049,
+    "text": "Cần dịch + vận mạch (Bài 4, 5)"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 12.64,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.675,
+    "text": "Bơm hỏng · Ống giãn · Thiếu nước · Bị chặn"
+   },
+   {
+    "start": 4.525,
+    "dur": 2.489,
+    "text": "Khám + siêu âm tại giường để phân loại"
+   },
+   {
+    "start": 7.364,
+    "dur": 3.777,
+    "text": "Bài 3: đánh giá tưới máu"
+   }
+  ]
+ }
+]
