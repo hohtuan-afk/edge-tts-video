@@ -239,10 +239,10 @@ const S2: React.FC = () => {
   return (
     <>
       <Title c={K.amber} sub="huyết áp vẫn còn giữ">BÙ TRỪ</Title>
-      <img src={staticFile('dg_tim.png')} style={{position: 'absolute', left: 330, top: 470, width: 420, opacity: ap(t, 0.2), transform: `scale(${beat})`, filter: 'drop-shadow(0 0 30px rgba(229,72,77,.5))'}} />
-      <div style={{position: 'absolute', left: 120, top: 1000, width: 360, textAlign: 'center', fontFamily: FONT, fontSize: 48, fontWeight: 900, color: RED, opacity: ap(t, 0.5)}}>tim đập nhanh</div>
-      <div style={{position: 'absolute', left: 600, top: 1000, width: 360, textAlign: 'center', fontFamily: FONT, fontSize: 48, fontWeight: 900, color: K.amber, opacity: ap(t, 1.2)}}>mạch co lại</div>
-      <div style={{position: 'absolute', left: 140, right: 140, top: 1180 - th / 2, height: th, borderRadius: th / 2, background: 'linear-gradient(180deg,#7A1E2B,#B8343F 50%,#7A1E2B)', opacity: ap(t, 0.8)}} />
+      <img src={staticFile('dg_tim.png')} style={{position: 'absolute', left: 350, top: 460, width: 380, opacity: ap(t, 0.2), transform: `scale(${beat})`, filter: 'drop-shadow(0 0 30px rgba(229,72,77,.5))'}} />
+      <div style={{position: 'absolute', left: 100, top: 1050, width: 400, textAlign: 'center', fontFamily: FONT, fontSize: 48, fontWeight: 900, color: RED, opacity: ap(t, 0.5)}}>tim đập nhanh</div>
+      <div style={{position: 'absolute', left: 580, top: 1050, width: 400, textAlign: 'center', fontFamily: FONT, fontSize: 48, fontWeight: 900, color: K.amber, opacity: ap(t, 1.2)}}>mạch co lại</div>
+      <div style={{position: 'absolute', left: 140, right: 140, top: 1215 - th / 2, height: th, borderRadius: th / 2, background: 'linear-gradient(180deg,#7A1E2B,#B8343F 50%,#7A1E2B)', opacity: ap(t, 0.8)}} />
     </>
   );
 };
