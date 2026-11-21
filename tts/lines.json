@@ -1,31 +1,139 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+12%",
+ "rate": "+8%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Huyết áp bình thường, mà vẫn có thể đang sốc?"
+   "text": "Ông bảy mươi tuổi ở bài trước đang sốc. Nhưng là sốc kiểu gì?"
+  },
+  {
+   "id": "00-1",
+   "text": "Hãy hình dung tuần hoàn như một hệ thống nước: cái bơm là tim, đường ống là mạch máu, và nước là thể tích máu."
+  },
+  {
+   "id": "00-2",
+   "text": "Hỏng ở chỗ nào, ta có kiểu sốc tương ứng."
   },
   {
    "id": "01-0",
-   "text": "Sốc là khi tế bào không nhận đủ ô xy, chứ không chỉ là tụt huyết áp."
+   "text": "Từ năm một nghìn chín trăm bảy mươi mốt, Uây và Su bin chia sốc thành bốn kiểu."
+  },
+  {
+   "id": "01-1",
+   "text": "Giảm thể tích, do tim, tắc nghẽn, và phân bố."
+  },
+  {
+   "id": "01-2",
+   "text": "Trong nghiên cứu Sốp hai, sốc phân bố chiếm khoảng sáu mươi sáu phần trăm, phần lớn là nhiễm khuẩn. Sốc tim và giảm thể tích mỗi loại mười sáu phần trăm, tắc nghẽn chỉ hai phần trăm."
   },
   {
    "id": "02-0",
-   "text": "Lúc đầu, tim đập nhanh và mạch máu co lại, nên huyết áp vẫn còn giữ được."
+   "text": "Kiểu thứ nhất, giảm thể tích: bơm tốt, ống tốt, nhưng thiếu nước."
+  },
+  {
+   "id": "02-1",
+   "text": "Nguyên nhân là mất máu, nôn, tiêu chảy, hay bỏng rộng."
+  },
+  {
+   "id": "02-2",
+   "text": "Bệnh nhân da lạnh, và tĩnh mạch cổ xẹp."
   },
   {
    "id": "03-0",
-   "text": "Hãy nhìn ba cửa sổ: da lạnh nổi bông, nước tiểu ít, và lơ mơ."
+   "text": "Kiểu thứ hai, sốc tim: cái bơm hỏng."
+  },
+  {
+   "id": "03-1",
+   "text": "Thường do nhồi máu cơ tim, suy tim cấp, hoặc rối loạn nhịp."
+  },
+  {
+   "id": "03-2",
+   "text": "Máu ứ lại phía sau bơm, nên tĩnh mạch cổ nổi, phổi có ran, và da cũng lạnh."
   },
   {
    "id": "04-0",
-   "text": "Kèm lắc tát trên hai, và thời gian đổ đầy mao mạch trên ba giây."
+   "text": "Kiểu thứ ba, tắc nghẽn: bơm tốt, nước đủ, nhưng dòng chảy bị chặn."
+  },
+  {
+   "id": "04-1",
+   "text": "Ba thủ phạm chính là thuyên tắc phổi, chèn ép tim, và tràn khí màng phổi áp lực."
+  },
+  {
+   "id": "04-2",
+   "text": "Dịch và thuốc vận mạch chỉ câu giờ. Phải gỡ được chỗ tắc."
   },
   {
    "id": "05-0",
-   "text": "Lưu lại để ôn, và xem bài một đầy đủ trên kênh nhé!"
+   "text": "Kiểu thứ tư, phân bố: đường ống giãn rộng, và rò rỉ."
+  },
+  {
+   "id": "05-1",
+   "text": "Nguyên nhân là nhiễm khuẩn, phản vệ, hoặc tổn thương tủy sống."
+  },
+  {
+   "id": "05-2",
+   "text": "Ở giai đoạn đầu, da có thể còn ấm, dễ đánh lừa."
+  },
+  {
+   "id": "06-0",
+   "text": "Để phân biệt, hãy nhìn da, tĩnh mạch cổ, và nghe phổi."
+  },
+  {
+   "id": "06-1",
+   "text": "Về huyết động, so sánh ba thông số: cung lượng tim, sức cản mạch, và áp lực đổ đầy."
+  },
+  {
+   "id": "06-2",
+   "text": "Ba kiểu kia đều làm cung lượng tim giảm. Riêng sốc phân bố, cung lượng tim thường tăng, còn sức cản mạch giảm."
+  },
+  {
+   "id": "07-0",
+   "text": "Công cụ nhanh nhất là siêu âm tại giường, theo quy trình Rát."
+  },
+  {
+   "id": "07-1",
+   "text": "Kiểm tra bơm: tim co bóp ra sao, có dịch màng ngoài tim, thất phải có giãn không."
+  },
+  {
+   "id": "07-2",
+   "text": "Kiểm tra bình chứa: tĩnh mạch chủ dưới, dịch ổ bụng, và phổi."
+  },
+  {
+   "id": "07-3",
+   "text": "Kiểm tra đường ống: động mạch chủ, và huyết khối tĩnh mạch sâu."
+  },
+  {
+   "id": "08-0",
+   "text": "Thực tế, nhiều bệnh nhân bị sốc hỗn hợp."
+  },
+  {
+   "id": "08-1",
+   "text": "Sốc nhiễm khuẩn vừa giãn mạch, vừa thiếu thể tích, và có thể kèm bệnh cơ tim do nhiễm khuẩn."
+  },
+  {
+   "id": "09-0",
+   "text": "Quay lại ca bệnh. Siêu âm thấy tim co bóp mạnh, tĩnh mạch chủ dưới nhỏ và xẹp, phổi sạch."
+  },
+  {
+   "id": "09-1",
+   "text": "Đây là sốc phân bố do nhiễm khuẩn, kèm thiếu thể tích."
+  },
+  {
+   "id": "09-2",
+   "text": "Ông cần dịch và thuốc vận mạch, sẽ học ở bài bốn và bài năm."
+  },
+  {
+   "id": "10-0",
+   "text": "Ôn tập: bơm hỏng, ống giãn, thiếu nước, và bị chặn."
+  },
+  {
+   "id": "10-1",
+   "text": "Khám lâm sàng và siêu âm tại giường giúp phân loại nhanh."
+  },
+  {
+   "id": "10-2",
+   "text": "Bài sau: đánh giá tưới máu, đọc lắc tát và thời gian đổ đầy mao mạch."
   }
  ]
 }
