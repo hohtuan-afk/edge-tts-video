@@ -1,0 +1,72 @@
+{
+ "fps": 30,
+ "total": 798,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.006,
+     "text": "Huyết áp bình thường vẫn có thể ĐANG SỐC?"
+    }
+   ]
+  },
+  {
+   "from": 132,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.408,
+     "text": "Sốc = tế bào thiếu oxy, không chỉ là tụt huyết áp"
+    }
+   ]
+  },
+  {
+   "from": 264,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.702,
+     "text": "Tim đập nhanh + co mạch → huyết áp vẫn giữ"
+    }
+   ]
+  },
+  {
+   "from": 396,
+   "dur": 138,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.897,
+     "text": "Nhìn 3 cửa sổ: da · thận · não"
+    }
+   ]
+  },
+  {
+   "from": 534,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.167,
+     "text": "Lactate > 2 · CRT > 3 giây"
+    }
+   ]
+  },
+  {
+   "from": 666,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.604,
+     "text": "Lưu lại để ôn · xem Bài 1 đầy đủ trên kênh!"
+    }
+   ]
+  }
+ ]
+}
