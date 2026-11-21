@@ -165,7 +165,7 @@ const Slip: React.FC<{s0: number; rows: Row[]; hl?: string[]; x?: number; y?: nu
         return (
           <div key={k} style={{display: 'flex', alignItems: 'baseline', padding: '6px 12px', borderRadius: 12, background: on ? `rgba(245,184,61,${0.35 + 0.1 * Math.sin(f / 6)})` : 'transparent', border: on ? '3px solid #E09A10' : '3px solid transparent'}}>
             <span style={{width: nw, whiteSpace: 'nowrap', fontSize: 34, fontWeight: 700, color: K.ink}}>{chem(n)}</span>
-            <span style={{fontSize: 46, fontWeight: 900, color: K.ink, width: 130}}>{v}</span>
+            <span style={{fontSize: 46, fontWeight: 900, color: K.ink, width: 165}}>{v}</span>
             <span style={{fontSize: 22, color: '#6B5A3A'}}>{u}</span>
           </div>
         );
@@ -721,10 +721,10 @@ const D1: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   return (
     <>
       <Top idx={0} title="Sốc là gì?" />
-      <Slip s0={S[0]} x={120} y={190} sw={760} nw={360} title="ÔNG 70 TUỔI · VIÊM PHỔI" rows={[['ha', 'Huyết áp', '85/50', 'mmHg'], ['m', 'Mạch', '118', 'l/ph'], ['nt', 'Nước tiểu', '15', 'mL/giờ'], ['lac', 'Lactate', '4,2', 'mmol/L']]} hl={t > S[1] ? ['nt', 'lac'] : ['ha', 'm']} />
+      <Slip s0={S[0]} x={120} y={210} sw={700} nw={260} title="ÔNG 70 TUỔI · VIÊM PHỔI" rows={[['ha', 'Huyết áp', '85/50', 'mmHg'], ['m', 'Mạch', '118', 'l/ph'], ['nt', 'Nước tiểu', '15', 'mL/giờ'], ['lac', 'Lactate', '4,2', 'mmol/L']]} hl={t > S[1] ? ['nt', 'lac'] : ['ha', 'm']} />
       <Tx x={960} y={230} w={860} al="center" size={44} c={K.dim} b={800} a={ap(t, S[1])}>lơ mơ · tay chân lạnh</Tx>
       <div style={{position: 'absolute', left: 960, top: 300, width: 860, textAlign: 'center', fontFamily: FONT, fontSize: 260, fontWeight: 900, color: K.amber, opacity: ap(t, S[2]), transform: `scale(${1 + 0.03 * Math.sin(f / 7)})`}}>?</div>
-      <GoldC y={800} a={ap(t, S[2] + 0.5)} size={46}>Có đang sốc? Huyết áp thấp chưa đủ để trả lời</GoldC>
+      <GoldC y={760} a={ap(t, S[2] + 0.5)} size={46}>Có đang sốc? Huyết áp thấp chưa đủ để trả lời</GoldC>
     </>
   );
 };
@@ -743,8 +743,8 @@ const D2: React.FC<{S: number[]; D: number[]}> = ({S}) => {
         {[['CUNG O₂', WATER], ['CẦU O₂', K.amber]].map(([l, c], i) => <div key={l} style={{position: 'absolute', left: 30 + i * 280, bottom: 0, width: 260, textAlign: 'center', fontSize: 40, fontWeight: 900, color: c}}>{chem(l)}</div>)}
       </div>
       <Card x={900} y={210} w={900} h={220} c={RED} s0={S[0]} head="SỐC" body="Oxy cung cấp KHÔNG ĐỦ cho nhu cầu tế bào" size={44} />
-      <GoldC y={490} a={ap(t, S[1])} size={42}>Vấn đề ở TẾ BÀO, không chỉ ở con số huyết áp</GoldC>
-      <Panel x={900} y={590} w={900} h={150} c={K.amber} s0={S[2]}>
+      <GoldC y={800} a={ap(t, S[1])} size={44}>Vấn đề ở TẾ BÀO, không chỉ ở con số huyết áp</GoldC>
+      <Panel x={900} y={480} w={900} h={150} c={K.amber} s0={S[2]}>
         <Tx x={0} y={46} w={900} al="center" size={40} b={900}>Huyết áp bình thường vẫn có thể SỐC</Tx>
       </Panel>
     </>
@@ -757,7 +757,7 @@ const D3: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   return (
     <>
       <Top idx={2} title="Cung oxy (DO₂)" />
-      <Heart x={60} y={170} w={380} a={ap(t, S[0])} />
+      <Heart x={70} y={200} w={320} a={ap(t, S[0])} />
       <Flow x={400} y={420} w={1080} a={ap(t, S[0])} />
       <Pic src="dg_tebao.png" x={1460} y={260} w={380} a={ap(t, S[0])} />
       <div style={{position: 'absolute', left: 160, top: 640, width: 1600, textAlign: 'center', fontFamily: FONT, fontSize: 56, fontWeight: 900, color: K.txt, opacity: ap(t, S[0] + 0.5)}}>
@@ -875,10 +875,10 @@ const D9: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   return (
     <>
       <Top idx={8} title="Sốc nhiễm khuẩn (Sepsis-3)" />
-      <Card x={140} y={240} w={720} h={300} c={RED} s0={S[0]} head="CẦN VẬN MẠCH" body="để giữ MAP ≥ 65" size={48} />
-      <div style={{position: 'absolute', left: 860, top: 330, width: 200, textAlign: 'center', fontFamily: FONT, fontSize: 120, fontWeight: 900, color: K.dim, opacity: ap(t, S[1])}}>+</div>
-      <Card x={1060} y={240} w={720} h={300} c={K.amber} s0={S[1]} head="LACTATE" body="> 2 mmol/L" size={48} />
-      <GoldC y={620} a={ap(t, S[1] + 1)} size={44}>…dù đã bù dịch đủ</GoldC>
+      <Card x={140} y={260} w={720} h={210} c={RED} s0={S[0]} head="CẦN VẬN MẠCH" body="để giữ MAP ≥ 65" size={48} />
+      <div style={{position: 'absolute', left: 860, top: 280, width: 200, textAlign: 'center', fontFamily: FONT, fontSize: 120, fontWeight: 900, color: K.dim, opacity: ap(t, S[1])}}>+</div>
+      <Card x={1060} y={260} w={720} h={210} c={K.amber} s0={S[1]} head="LACTATE" body="> 2 mmol/L" size={48} />
+      <GoldC y={560} a={ap(t, S[1] + 1)} size={46}>…dù đã bù dịch đủ</GoldC>
     </>
   );
 };
@@ -891,8 +891,8 @@ const D10: React.FC<{S: number[]; D: number[]}> = ({S}) => {
       <Top idx={9} title="Giải ca" />
       <Leg x={100} y={200} s={0.95} a={ap(t, S[0])} m={1} />
       <Check x={620} y={190} w={1200} items={['Da lạnh · nổi bông', 'Nước tiểu 15 mL/giờ', 'Lơ mơ']} s0={[S[0], S[0] + 0.8, S[0] + 1.6]} />
-      <Res x={620} y={600} s0={S[1]} c={RED}>Lactate 4,2 · chỉ số sốc 1,4 → SỐC</Res>
-      <GoldC y={760} a={ap(t, S[2])} size={50}>Sốc KIỂU GÌ?</GoldC>
+      <Res x={620} y={640} s0={S[1]} c={RED}>Lactate 4,2 · chỉ số sốc 1,4 → SỐC</Res>
+      <GoldC y={800} a={ap(t, S[2])} size={50}>Sốc KIỂU GÌ?</GoldC>
     </>
   );
 };
