@@ -41,7 +41,7 @@ NARR = [
     ("CRT: ấn đầu ngón 10 giây rồi thả", "Đo thời gian đổ đầy mao mạch: ấn đầu ngón tay mười giây rồi thả ra."),
     ("Đếm thời gian hồng trở lại · > 3 giây là chậm", "Đếm thời gian để hồng trở lại. Trên ba giây là chậm."),
     ("ANDROMEDA-SHOCK: CRT là mục tiêu hồi sức đáng tin", "Thử nghiệm an đờ rô mê đa sốc cho thấy thời gian đổ đầy mao mạch là mục tiêu hồi sức đáng tin."),
-    ("SSC 2026: dùng CRT hỗ trợ cùng lactate", "Hướng dẫn sống còn trong nhiễm khuẩn huyết năm hai nghìn không trăm hai mươi sáu khuyến cáo dùng nó để hỗ trợ, cùng với lắc tát."),
+    ("SSC 2026: dùng CRT hỗ trợ cùng lactate", "Hướng dẫn Xơ vai vinh Xép xít năm hai nghìn không trăm hai mươi sáu khuyến cáo dùng nó để hỗ trợ, cùng với lắc tát."),
   ],
   [  # 9 Sepsis-3
     ("Sốc nhiễm khuẩn (Sepsis-3): cần vận mạch giữ MAP ≥ 65", "Theo định nghĩa sép xít ba, sốc nhiễm khuẩn là khi cần vận mạch để giữ huyết áp trung bình từ sáu mươi lăm,"),

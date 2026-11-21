@@ -1,31 +1,147 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+12%",
+ "rate": "+8%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Nhiễm toan xê tôn: ka li năm phẩy sáu, mà cơ thể vẫn thiếu ka li?"
+   "text": "Ông bảy mươi tuổi, viêm phổi, huyết áp tám mươi lăm trên năm mươi, mạch một trăm mười tám."
+  },
+  {
+   "id": "00-1",
+   "text": "Lơ mơ, tay chân lạnh, nước tiểu mười lăm mi li lít mỗi giờ, lắc tát bốn phẩy hai."
+  },
+  {
+   "id": "00-2",
+   "text": "Ông có đang sốc không? Và vì sao chỉ nhìn huyết áp thì chưa đủ để trả lời?"
   },
   {
    "id": "01-0",
-   "text": "Thiếu in su lin và toan máu đẩy ka li ra khỏi tế bào, nên ka li máu trông cao."
+   "text": "Sốc là suy tuần hoàn cấp, khiến oxy cung cấp không đủ cho nhu cầu của tế bào."
+  },
+  {
+   "id": "01-1",
+   "text": "Vấn đề nằm ở tế bào, không chỉ ở con số huyết áp."
+  },
+  {
+   "id": "01-2",
+   "text": "Vì vậy, bệnh nhân có thể đang sốc dù huyết áp vẫn còn bình thường."
   },
   {
    "id": "02-0",
-   "text": "Nhưng ka li lại mất dần qua nước tiểu."
+   "text": "Lượng oxy đưa tới mô, gọi là đê ô hai, bằng cung lượng tim nhân với lượng oxy trong máu."
+  },
+  {
+   "id": "02-1",
+   "text": "Lượng oxy trong máu phụ thuộc chủ yếu vào huyết sắc tố và độ bão hòa oxy."
+  },
+  {
+   "id": "02-2",
+   "text": "Còn cung lượng tim bằng tần số tim nhân với thể tích mỗi nhát bóp."
   },
   {
    "id": "03-0",
-   "text": "Khi cho in su lin, ka li chui vào tế bào và tụt rất nhanh."
+   "text": "Huyết áp trung bình xấp xỉ bằng cung lượng tim nhân với sức cản mạch máu."
+  },
+  {
+   "id": "03-1",
+   "text": "Nếu mạch máu co mạnh, huyết áp vẫn có thể đẹp,"
+  },
+  {
+   "id": "03-2",
+   "text": "trong khi lưu lượng máu tới mô đã giảm."
   },
   {
    "id": "04-0",
-   "text": "Nên nếu ka li dưới ba phẩy năm, hoãn in su lin, bù ka li trước."
+   "text": "Khi thiếu tưới máu, cơ thể bù bằng tim đập nhanh và co mạch, làm da lạnh."
+  },
+  {
+   "id": "04-1",
+   "text": "Nên tụt huyết áp thường là dấu hiệu muộn, khi bù trừ đã cạn."
+  },
+  {
+   "id": "04-2",
+   "text": "Một công cụ nhanh: chỉ số sốc bằng mạch chia huyết áp tâm thu, trên một là đáng lo."
+  },
+  {
+   "id": "04-3",
+   "text": "Ca này: một trăm mười tám chia tám mươi lăm, khoảng một phẩy bốn."
   },
   {
    "id": "05-0",
-   "text": "Lưu lại để ôn, và xem bài tám đầy đủ trên kênh nhé!"
+   "text": "Tế bào thiếu oxy chuyển sang chuyển hóa yếm khí, sinh ra lắc tát."
+  },
+  {
+   "id": "05-1",
+   "text": "Lắc tát trên hai mi li mol trên lít là bất thường."
+  },
+  {
+   "id": "05-2",
+   "text": "Nhưng lắc tát cao còn có nguyên nhân khác như suy gan, dùng a đrê na lin, co giật, nên luôn đọc cùng lâm sàng."
+  },
+  {
+   "id": "06-0",
+   "text": "Nhìn tưới máu qua ba cửa sổ."
+  },
+  {
+   "id": "06-1",
+   "text": "Da: lạnh, nổi bông, thời gian đổ đầy mao mạch kéo dài."
+  },
+  {
+   "id": "06-2",
+   "text": "Thận: nước tiểu dưới không phẩy năm mi li lít mỗi ký mỗi giờ."
+  },
+  {
+   "id": "06-3",
+   "text": "Não: lơ mơ, hoặc kích thích vật vã."
+  },
+  {
+   "id": "07-0",
+   "text": "Đo thời gian đổ đầy mao mạch: ấn đầu ngón tay mười giây rồi thả ra."
+  },
+  {
+   "id": "07-1",
+   "text": "Đếm thời gian để hồng trở lại. Trên ba giây là chậm."
+  },
+  {
+   "id": "07-2",
+   "text": "Thử nghiệm an đờ rô mê đa sốc cho thấy thời gian đổ đầy mao mạch là mục tiêu hồi sức đáng tin."
+  },
+  {
+   "id": "07-3",
+   "text": "Hướng dẫn Xơ vai vinh Xép xít năm hai nghìn không trăm hai mươi sáu khuyến cáo dùng nó để hỗ trợ, cùng với lắc tát."
+  },
+  {
+   "id": "08-0",
+   "text": "Theo định nghĩa sép xít ba, sốc nhiễm khuẩn là khi cần vận mạch để giữ huyết áp trung bình từ sáu mươi lăm,"
+  },
+  {
+   "id": "08-1",
+   "text": "và lắc tát trên hai, dù đã bù dịch đủ."
+  },
+  {
+   "id": "09-0",
+   "text": "Quay lại ca bệnh: da lạnh, nước tiểu ít, lơ mơ. Cả ba cửa sổ đều xấu."
+  },
+  {
+   "id": "09-1",
+   "text": "Lắc tát bốn phẩy hai, chỉ số sốc một phẩy bốn. Ông đang sốc."
+  },
+  {
+   "id": "09-2",
+   "text": "Câu hỏi tiếp theo: sốc kiểu gì?"
+  },
+  {
+   "id": "10-0",
+   "text": "Ôn tập: sốc là tế bào thiếu oxy, không chỉ là con số huyết áp."
+  },
+  {
+   "id": "10-1",
+   "text": "Hãy nhìn ba cửa sổ, lắc tát và thời gian đổ đầy mao mạch."
+  },
+  {
+   "id": "10-2",
+   "text": "Bài sau: bốn kiểu sốc, qua bộ ba bơm, ống và thể tích."
   }
  ]
 }
