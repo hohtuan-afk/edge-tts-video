@@ -752,7 +752,7 @@ const Loop: React.FC<{x: number; y: number; s?: number; a: number; kind: number;
         {lab > 0 ? (
           <g fontFamily={FONT} fontWeight={900} fontSize={38} textAnchor="middle" opacity={lab}>
             <text x={95} y={70} fill={WATER}>NƯỚC</text>
-            <text x={430} y={110} fill={RED}>BƠM</text>
+            <text x={560} y={80} fill={RED}>BƠM</text>
             <text x={880} y={300} fill={K.amber}>ỐNG</text>
           </g>
         ) : null}
@@ -835,7 +835,7 @@ const Echo: React.FC<{x: number; y: number; s?: number; a: number; kind: string;
     </svg>
   );
 };
-const Arw: React.FC<{up: boolean; c: string}> = ({up, c}) => <span style={{color: c, fontSize: 64, fontWeight: 900}}>{up ? '↑' : '↓'}</span>;
+const Arw: React.FC<{up: boolean; c: string}> = ({up, c}) => <span style={{color: c, fontSize: 84, fontWeight: 900}}>{up ? '↑' : '↓'}</span>;
 
 // ---------- 1 Mở đầu ----------
 const D1: React.FC<{S: number[]; D: number[]}> = ({S}) => {
@@ -853,7 +853,7 @@ const D1: React.FC<{S: number[]; D: number[]}> = ({S}) => {
 const TYPES: [string, string, string][] = [['GIẢM THỂ TÍCH', 'thiếu nước', WATER], ['SỐC TIM', 'bơm hỏng', RED], ['TẮC NGHẼN', 'bị chặn', K.amber], ['PHÂN BỐ', 'ống giãn', KC]];
 const D2: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   const t = useSec();
-  const segs: [number, string, string][] = [[66, KC, 'Phân bố 66%'], [16, RED, 'Tim 16%'], [16, WATER, 'Giảm TT 16%'], [2, K.amber, '2%']];
+  const segs: [number, string, string][] = [[66, KC, 'Phân bố 66%'], [16, RED, 'Tim 16%'], [16, WATER, 'Giảm TT 16%'], [2, K.amber, 'Tắc nghẽn 2%']];
   let acc = 0;
   return (
     <>
@@ -867,7 +867,7 @@ const D2: React.FC<{S: number[]; D: number[]}> = ({S}) => {
       {segs.map(([v, c, l], i) => {
         const x = 160 + (acc / 100) * 1600;
         acc += v;
-        return <div key={l} style={{position: 'absolute', left: i === 3 ? 1640 : x + 20, top: 720, fontFamily: FONT, fontSize: 38, fontWeight: 900, color: c, opacity: ap(t, S[2] + 1.2 + i * 0.3)}}>{l}</div>;
+        return <div key={l} style={{position: 'absolute', left: i === 3 ? 1560 : x + 20, top: i === 3 ? 790 : 720, fontFamily: FONT, fontSize: 38, fontWeight: 900, color: c, opacity: ap(t, S[2] + 1.2 + i * 0.3)}}>{l}</div>;
       })}
       <Tx x={160} y={790} w={1000} size={34} c={KC} b={800} a={ap(t, S[2] + 2.2)}>(trong đó nhiễm khuẩn 62%)</Tx>
     </>
@@ -881,7 +881,7 @@ const TypeScene: React.FC<{S: number[]; idx: number; title: string; kind: number
     <>
       <Top idx={idx} title={title} />
       <Loop x={40} y={200} s={0.95} a={ap(t, S[0])} kind={kind} />
-      <Panel x={1000} y={190} w={860} h={330} c={K.dim} s0={S[1]}>
+      <Panel x={1000} y={190} w={860} h={250} c={K.dim} s0={S[1]}>
         <Bullets x={40} y={36} w={790} items={causes} s0={causes.map((_, i) => S[1] + 0.3 + i * 0.6)} c={ec} size={40} />
       </Panel>
       {neck !== undefined ? <Neck x={1020} y={560} s={0.55} a={ap(t, S[2])} full={neck} /> : null}
