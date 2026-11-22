@@ -1,139 +1,31 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+8%",
+ "rate": "+12%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Ông bảy mươi tuổi sau hai giờ hồi sức, huyết áp trung bình đã lên sáu mươi tám."
-  },
-  {
-   "id": "00-1",
-   "text": "Vậy đã hồi sức đủ chưa?"
-  },
-  {
-   "id": "00-2",
-   "text": "Đích của hồi sức là tưới máu mô, không chỉ là con số huyết áp."
+   "text": "Lắc tát hay thời gian đổ đầy mao mạch, cái nào báo hồi sức đủ nhanh hơn?"
   },
   {
    "id": "01-0",
-   "text": "Hãy đánh giá theo ba tầng. Tầng một, vĩ mô: huyết áp trung bình và nhịp tim."
-  },
-  {
-   "id": "01-1",
-   "text": "Tầng hai, mô: da, thời gian đổ đầy mao mạch, nước tiểu và tri giác."
-  },
-  {
-   "id": "01-2",
-   "text": "Tầng ba, chuyển hóa: lắc tát, độ bão hòa oxy tĩnh mạch trung tâm, và chênh lệch khí các bô níc."
+   "text": "Lắc tát giảm chậm, vì gan cần thời gian thanh thải, nên phải đo lại mỗi hai giờ."
   },
   {
    "id": "02-0",
-   "text": "Huyết áp trung bình từ sáu mươi lăm trở lên là cần, nhưng chưa đủ."
-  },
-  {
-   "id": "02-1",
-   "text": "Người tăng huyết áp mạn tính có thể cần mức cao hơn để tưới máu cơ quan."
+   "text": "Thời gian đổ đầy mao mạch thay đổi chỉ sau vài chục phút truyền dịch."
   },
   {
    "id": "03-0",
-   "text": "Lắc tát cần đo lặp lại, khoảng mỗi hai giờ."
-  },
-  {
-   "id": "03-1",
-   "text": "Quan trọng là xu hướng. Nghiên cứu của Gian xen năm hai nghìn không trăm mười nhắm giảm ít nhất hai mươi phần trăm mỗi hai giờ."
-  },
-  {
-   "id": "03-2",
-   "text": "Hướng dẫn Xơ vai vinh Xép xít năm hai nghìn không trăm hai mươi sáu khuyến cáo dùng lắc tát đo lặp lại để hướng dẫn hồi sức."
+   "text": "Ấn đầu ngón tay mười giây, thả ra. Trên ba giây là bất thường."
   },
   {
    "id": "04-0",
-   "text": "Nhưng lắc tát giảm chậm, vì gan cần thời gian để thanh thải."
-  },
-  {
-   "id": "04-1",
-   "text": "Lắc tát cũng không phải lúc nào cũng do thiếu oxy, mà còn do a đờ rê na lin hay suy gan."
-  },
-  {
-   "id": "04-2",
-   "text": "Vì vậy, đừng truyền dịch mãi chỉ để đuổi theo lắc tát."
+   "text": "Hãy dùng cả hai: thời gian đổ đầy mao mạch báo nhanh, lắc tát xác nhận xu hướng."
   },
   {
    "id": "05-0",
-   "text": "Thời gian đổ đầy mao mạch đo chuẩn: ấn lam kính lên đầu ngón trỏ mười giây, đủ để da trắng."
-  },
-  {
-   "id": "05-1",
-   "text": "Thả ra và bấm giờ. Trên ba giây là bất thường."
-  },
-  {
-   "id": "05-2",
-   "text": "Ưu điểm lớn: nó thay đổi nhanh, chỉ vài chục phút sau khi truyền dịch."
-  },
-  {
-   "id": "06-0",
-   "text": "Nghiên cứu An đờ rô mê đa Sốc năm hai nghìn không trăm mười chín so sánh hồi sức theo thời gian đổ đầy mao mạch với theo lắc tát."
-  },
-  {
-   "id": "06-1",
-   "text": "Tử vong ba mươi tư phẩy chín so với bốn mươi ba phẩy bốn phần trăm, chưa có ý nghĩa thống kê,"
-  },
-  {
-   "id": "06-2",
-   "text": "nhưng nhóm theo dõi thời gian đổ đầy mao mạch ít suy tạng hơn."
-  },
-  {
-   "id": "07-0",
-   "text": "Năm hai nghìn không trăm hai mươi lăm, An đờ rô mê đa Sốc hai trên một nghìn bốn trăm sáu mươi bảy bệnh nhân."
-  },
-  {
-   "id": "07-1",
-   "text": "Nhóm can thiệp hồi sức cá thể hóa theo thời gian đổ đầy mao mạch: chỉ cho dịch khi có đáp ứng, siêu âm tim, và cân nhắc đô bu ta min."
-  },
-  {
-   "id": "07-2",
-   "text": "Kết cục tổng hợp tốt hơn, chủ yếu nhờ ít ngày phải hỗ trợ sống, và dùng ít dịch hơn."
-  },
-  {
-   "id": "07-3",
-   "text": "Còn tử vong hai mươi tám ngày thì tương đương."
-  },
-  {
-   "id": "08-0",
-   "text": "Ở bệnh nhân có đường truyền tĩnh mạch trung tâm, độ bão hòa oxy tĩnh mạch dưới bảy mươi phần trăm gợi ý cung oxy không đủ."
-  },
-  {
-   "id": "08-1",
-   "text": "Chênh lệch khí các bô níc giữa tĩnh mạch và động mạch trên sáu mi li mét thủy ngân gợi ý lưu lượng tim thấp,"
-  },
-  {
-   "id": "08-2",
-   "text": "kể cả khi độ bão hòa oxy tĩnh mạch bình thường."
-  },
-  {
-   "id": "09-0",
-   "text": "Quay lại ca bệnh. Thời gian đổ đầy mao mạch giảm từ bốn phẩy năm xuống hai phẩy năm giây. Lắc tát từ bốn phẩy hai xuống ba phẩy một, giảm hai mươi sáu phần trăm."
-  },
-  {
-   "id": "09-1",
-   "text": "Nước tiểu bốn mươi mi li lít mỗi giờ, và ông tỉnh hơn."
-  },
-  {
-   "id": "09-2",
-   "text": "Ông đang đáp ứng. Ngừng bolus dịch, và tiếp tục theo dõi."
-  },
-  {
-   "id": "10-0",
-   "text": "Ôn tập: đánh giá nhiều tầng, và đo lặp lại."
-  },
-  {
-   "id": "10-1",
-   "text": "Thời gian đổ đầy mao mạch thay đổi nhanh, lắc tát thay đổi chậm."
-  },
-  {
-   "id": "10-2",
-   "text": "Bài sau: truyền dịch đúng, bao nhiêu là đủ."
+   "text": "Lưu lại để ôn, và xem bài ba đầy đủ trên kênh nhé!"
   }
  ]
 }
