@@ -679,7 +679,7 @@ const Finger: React.FC<{x: number; y: number; a: number; press: number; pink: nu
     </svg>
   );
 };
-const Timer: React.FC<{x: number; y: number; a: number; v: number; max?: number}> = ({x, y, a, v, max = 6}) => {
+export const Timer: React.FC<{x: number; y: number; a: number; v: number; max?: number}> = ({x, y, a, v, max = 6}) => {
   const fr = Math.min(1, v / max);
   const ang = fr * Math.PI * 2 - Math.PI / 2;
   const big = fr > 0.5 ? 1 : 0;
@@ -716,7 +716,7 @@ const Win: React.FC<{x: number; c: string; head: string; body: string; a: number
 
 const GREEN = K.green;
 // ngón tay + lam kính
-const FingerG: React.FC<{x: number; y: number; a: number; press: number; pink: number}> = ({x, y, a, press, pink}) => {
+export const FingerG: React.FC<{x: number; y: number; a: number; press: number; pink: number}> = ({x, y, a, press, pink}) => {
   const c = `rgb(${Math.round(240 - 8 * pink)},${Math.round(236 - 90 * pink)},${Math.round(234 - 84 * pink)})`;
   const dy = 40 * press;
   return (
@@ -737,7 +737,7 @@ const FingerG: React.FC<{x: number; y: number; a: number; press: number; pink: n
 };
 // biểu đồ lactate
 const LPTS: [number, number][] = [[0, 4.2], [2, 3.1], [4, 2.3], [6, 1.6]];
-const LacChart: React.FC<{x: number; y: number; w: number; h: number; t: number; s0: number; step: number; a: number; n?: number}> = ({x, y, w, h, t, s0, step, a, n = 4}) => {
+export const LacChart: React.FC<{x: number; y: number; w: number; h: number; t: number; s0: number; step: number; a: number; n?: number}> = ({x, y, w, h, t, s0, step, a, n = 4}) => {
   const px = (hr: number) => (hr / 6) * w, py = (v: number) => h - (v / 4.5) * h;
   const pts = LPTS.slice(0, n);
   const vis = pts.map((_, i) => ap(t, s0 + i * step, 0.5));
