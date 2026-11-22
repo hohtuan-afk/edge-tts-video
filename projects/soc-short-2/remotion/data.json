@@ -1,0 +1,83 @@
+{
+ "fps": 30,
+ "total": 941,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 1.91,
+     "text": "4 kiểu sốc trong 30 giây"
+    }
+   ]
+  },
+  {
+   "from": 132,
+   "dur": 149,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.262,
+     "text": "Tuần hoàn = BƠM · ỐNG · NƯỚC"
+    }
+   ]
+  },
+  {
+   "from": 281,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.147,
+     "text": "① Thiếu nước → GIẢM THỂ TÍCH"
+    }
+   ]
+  },
+  {
+   "from": 413,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.513,
+     "text": "② Bơm hỏng → SỐC TIM"
+    }
+   ]
+  },
+  {
+   "from": 545,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.434,
+     "text": "③ Bị chặn → TẮC NGHẼN"
+    }
+   ]
+  },
+  {
+   "from": 677,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.957,
+     "text": "④ Ống giãn → PHÂN BỐ"
+    }
+   ]
+  },
+  {
+   "from": 809,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.579,
+     "text": "Lưu lại để ôn · xem Bài 2 đầy đủ trên kênh!"
+    }
+   ]
+  }
+ ]
+}

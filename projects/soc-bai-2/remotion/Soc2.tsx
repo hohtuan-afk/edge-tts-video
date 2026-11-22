@@ -815,7 +815,7 @@ const Win: React.FC<{x: number; c: string; head: string; body: string; a: number
 );
 
 // hệ bơm – ống – nước. kind: 0 bình thường, 1 thiếu nước, 2 bơm hỏng, 3 bị chặn, 4 ống giãn, 5 hỗn hợp
-const Loop: React.FC<{x: number; y: number; s?: number; a: number; kind: number; lab?: number}> = ({x, y, s = 1, a, kind, lab = 0}) => {
+export const Loop: React.FC<{x: number; y: number; s?: number; a: number; kind: number; lab?: number}> = ({x, y, s = 1, a, kind, lab = 0}) => {
   const f = useCurrentFrame();
   const ph = (f % 18) / 18;
   const weak = kind === 2;
