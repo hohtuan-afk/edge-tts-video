@@ -726,7 +726,7 @@ const FingerG: React.FC<{x: number; y: number; a: number; press: number; pink: n
       <path d="M640,452 L900,446 C980,446 1020,480 1030,520 L640,532 Z" fill={c} stroke="#D9C7B6" strokeWidth={4} />
       <ellipse cx={930} cy={440} rx={120} ry={40} fill="#fff" opacity={0.85 * press} />
       <rect x={760} y={340 + dy} width={340} height={36} rx={6} fill="#BFE6F5" opacity={0.8} stroke="#E8F7FD" strokeWidth={3} />
-      <text x={1010} y={328 + dy} fill="#BFE6F5" fontSize={28} fontWeight={800} fontFamily={FONT}>lam kính</text>
+      <text x={640} y={366 + dy} fill="#BFE6F5" fontSize={28} fontWeight={800} fontFamily={FONT}>lam kính</text>
       <g opacity={press}>
         <path d="M930,200 L930,300" stroke={K.amber} strokeWidth={12} strokeLinecap="round" />
         <path d="M900,270 L930,300 L960,270" stroke={K.amber} strokeWidth={12} fill="none" strokeLinecap="round" />
@@ -747,7 +747,7 @@ const LacChart: React.FC<{x: number; y: number; w: number; h: number; t: number;
       <path d={`M0,${h} L${w},${h} M0,${h} L0,0`} stroke="#2d4652" strokeWidth={3} />
       {[1, 2, 3, 4].map((v) => <g key={v}><path d={`M0,${py(v)} L${w},${py(v)}`} stroke="#2d4652" strokeWidth={2} strokeDasharray="6 8" /><text x={-20} y={py(v) + 10} fill={K.dim} fontSize={28} fontWeight={800} textAnchor="end" fontFamily={FONT}>{v}</text></g>)}
       {[0, 2, 4, 6].map((hr) => <text key={hr} x={px(hr)} y={h + 40} fill={K.dim} fontSize={28} fontWeight={800} textAnchor="middle" fontFamily={FONT}>{hr} giờ</text>)}
-      <text x={w - 10} y={py(2) + 40} fill={GREEN} fontSize={28} fontWeight={800} textAnchor="end" fontFamily={FONT}>bình thường &lt; 2</text>
+      <text x={w * 0.62} y={py(2) + 44} fill={GREEN} fontSize={28} fontWeight={800} textAnchor="end" fontFamily={FONT}>bình thường &lt; 2</text>
       {pts.slice(1).map(([hr, v], i) => {
         const [h0, v0] = pts[i];
         const k = vis[i + 1];
@@ -853,7 +853,7 @@ const D4: React.FC<{S: number[]; D: number[]}> = ({S}) => {
       <LacChart x={200} y={250} w={1100} h={560} t={t} s0={S[0]} step={0.9} a={ap(t, S[0])} />
       <Panel x={1440} y={250} w={420} h={200} c={K.amber} s0={S[1]}>
         <Tx x={0} y={30} w={420} al="center" size={36} c={K.amber} b={900}>MỤC TIÊU</Tx>
-        <Tx x={0} y={90} w={420} al="center" size={44} b={900}>giảm ≥ 20% / 2 giờ</Tx>
+        <Tx x={0} y={95} w={420} al="center" size={36} b={900}>giảm ≥ 20% / 2 giờ</Tx>
       </Panel>
       <Tx x={1440} y={470} w={420} al="center" size={28} c={K.dim} b={700} a={ap(t, S[1])}>Jansen 2010</Tx>
       <Card x={1440} y={580} w={420} h={240} c={WATER} s0={S[2]} head="SSC 2026" body="lactate lặp lại hướng dẫn hồi sức" size={34} />
@@ -926,7 +926,7 @@ const D8: React.FC<{S: number[]; D: number[]}> = ({S}) => {
         <div style={{fontSize: 30, fontWeight: 800}}>(KTC 95% 1,02 – 1,33)</div>
       </div>
       <Check x={820} y={480} w={1000} items={['Ít ngày hỗ trợ sống', 'Ít dịch hơn (600 so với 850 mL)']} s0={[S[2] + 0.6, S[2] + 1.3]} />
-      <Panel x={820} y={720} w={1000} h={110} c={K.dim} s0={S[3]}>
+      <Panel x={820} y={800} w={1000} h={110} c={K.dim} s0={S[3]}>
         <Tx x={0} y={30} w={1000} al="center" size={40} b={900}>Tử vong 28 ngày: 26,5% · 26,6%</Tx>
       </Panel>
     </>
