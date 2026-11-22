@@ -1,81 +1,235 @@
 {
  "fps": 30,
- "total": 941,
+ "total": 4874,
  "scenes": [
   {
    "from": 0,
-   "dur": 132,
+   "dur": 320,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 1.91,
-     "text": "4 kiểu sốc trong 30 giây"
+     "start": 0.5,
+     "dur": 3.693,
+     "text": "Sau 2 giờ hồi sức: MAP 68"
+    },
+    {
+     "start": 4.543,
+     "dur": 1.199,
+     "text": "Đã đủ chưa?"
+    },
+    {
+     "start": 6.091,
+     "dur": 3.107,
+     "text": "Đích hồi sức = TƯỚI MÁU MÔ, không chỉ huyết áp"
     }
    ]
   },
   {
-   "from": 132,
-   "dur": 149,
+   "from": 320,
+   "dur": 522,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 4.262,
-     "text": "Tuần hoàn = BƠM · ỐNG · NƯỚC"
+     "start": 0.5,
+     "dur": 4.857,
+     "text": "Tầng 1 · VĨ MÔ: MAP, nhịp tim"
+    },
+    {
+     "start": 5.707,
+     "dur": 4.349,
+     "text": "Tầng 2 · MÔ: da, CRT, nước tiểu, tri giác"
+    },
+    {
+     "start": 10.406,
+     "dur": 5.502,
+     "text": "Tầng 3 · CHUYỂN HÓA: lactate, ScvO₂, chênh lệch CO₂"
     }
    ]
   },
   {
-   "from": 281,
-   "dur": 132,
+   "from": 842,
+   "dur": 269,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 3.147,
-     "text": "① Thiếu nước → GIẢM THỂ TÍCH"
+     "start": 0.5,
+     "dur": 3.317,
+     "text": "MAP ≥ 65: CẦN nhưng chưa ĐỦ"
+    },
+    {
+     "start": 4.167,
+     "dur": 3.301,
+     "text": "Tăng huyết áp mạn: có thể cần MAP cao hơn"
     }
    ]
   },
   {
-   "from": 413,
-   "dur": 132,
+   "from": 1111,
+   "dur": 502,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 2.513,
-     "text": "② Bơm hỏng → SỐC TIM"
+     "start": 0.5,
+     "dur": 2.337,
+     "text": "Lactate: đo LẶP LẠI mỗi 2 giờ"
+    },
+    {
+     "start": 3.187,
+     "dur": 6.406,
+     "text": "Nhìn XU HƯỚNG: giảm ≥ 20% mỗi 2 giờ (Jansen 2010)"
+    },
+    {
+     "start": 9.943,
+     "dur": 5.283,
+     "text": "SSC 2026: dùng lactate lặp lại để hướng dẫn hồi sức"
     }
    ]
   },
   {
-   "from": 545,
-   "dur": 132,
+   "from": 1613,
+   "dur": 387,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 3.434,
-     "text": "③ Bị chặn → TẮC NGHẼN"
+     "start": 0.5,
+     "dur": 2.983,
+     "text": "Lactate giảm CHẬM: gan thanh thải chậm"
+    },
+    {
+     "start": 3.833,
+     "dur": 4.63,
+     "text": "Không phải lúc nào cũng do thiếu oxy: adrenaline, suy gan"
+    },
+    {
+     "start": 8.813,
+     "dur": 2.59,
+     "text": "Đừng truyền dịch mãi để 'đuổi' lactate"
     }
    ]
   },
   {
-   "from": 677,
-   "dur": 132,
+   "from": 2000,
+   "dur": 420,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 2.957,
-     "text": "④ Ống giãn → PHÂN BỐ"
+     "start": 0.5,
+     "dur": 4.731,
+     "text": "CRT: ấn lam kính lên đầu ngón trỏ 10 giây"
+    },
+    {
+     "start": 5.581,
+     "dur": 3.262,
+     "text": "Thả ra, bấm giờ: > 3 giây là BẤT THƯỜNG"
+    },
+    {
+     "start": 9.194,
+     "dur": 3.316,
+     "text": "CRT đổi NHANH: vài chục phút sau truyền dịch"
     }
    ]
   },
   {
-   "from": 809,
-   "dur": 132,
+   "from": 2420,
+   "dur": 464,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 2.579,
-     "text": "Lưu lại để ôn · xem Bài 2 đầy đủ trên kênh!"
+     "start": 0.5,
+     "dur": 5.594,
+     "text": "ANDROMEDA-SHOCK (2019): CRT so với lactate"
+    },
+    {
+     "start": 6.444,
+     "dur": 4.309,
+     "text": "Tử vong 34,9% so với 43,4% · chưa có ý nghĩa thống kê"
+    },
+    {
+     "start": 11.103,
+     "dur": 2.842,
+     "text": "Nhóm CRT: ít suy tạng hơn"
+    }
+   ]
+  },
+  {
+   "from": 2884,
+   "dur": 640,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.829,
+     "text": "ANDROMEDA-SHOCK-2 (JAMA 2025): 1467 bệnh nhân · 86 ICU"
+    },
+    {
+     "start": 5.679,
+     "dur": 6.848,
+     "text": "Hồi sức cá thể hóa theo CRT: dịch nếu đáp ứng · siêu âm tim · dobutamine"
+    },
+    {
+     "start": 12.877,
+     "dur": 4.589,
+     "text": "Kết cục tổng hợp TỐT hơn · ít ngày hỗ trợ sống · ít dịch hơn"
+    },
+    {
+     "start": 17.816,
+     "dur": 2.039,
+     "text": "Tử vong 28 ngày tương đương: 26,5% so với 26,6%"
+    }
+   ]
+  },
+  {
+   "from": 3524,
+   "dur": 458,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 5.706,
+     "text": "ScvO₂ < 70%: cung oxy không đủ"
+    },
+    {
+     "start": 6.556,
+     "dur": 4.53,
+     "text": "Chênh lệch CO₂ tĩnh – động mạch > 6 mmHg: lưu lượng THẤP"
+    },
+    {
+     "start": 11.436,
+     "dur": 2.311,
+     "text": "…kể cả khi ScvO₂ bình thường"
+    }
+   ]
+  },
+  {
+   "from": 3982,
+   "dur": 565,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 9.413,
+     "text": "CRT 4,5 → 2,5 giây · lactate 4,2 → 3,1 (giảm 26%)"
+    },
+    {
+     "start": 10.263,
+     "dur": 2.849,
+     "text": "Nước tiểu 40 mL/giờ · tỉnh hơn"
+    },
+    {
+     "start": 13.461,
+     "dur": 3.877,
+     "text": "→ ĐANG ĐÁP ỨNG: ngừng bolus, tiếp tục theo dõi"
+    }
+   ]
+  },
+  {
+   "from": 4547,
+   "dur": 327,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.735,
+     "text": "Đánh giá NHIỀU TẦNG · đo LẶP LẠI"
+    },
+    {
+     "start": 3.585,
+     "dur": 2.985,
+     "text": "CRT đổi nhanh · lactate đổi chậm"
+    },
+    {
+     "start": 6.92,
+     "dur": 2.491,
+     "text": "Bài 4: truyền dịch đúng"
     }
    ]
   }
