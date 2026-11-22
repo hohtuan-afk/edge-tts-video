@@ -317,6 +317,106 @@ const Bullets: React.FC<{x: number; y: number; w: number; items: string[]; s0: n
   );
 };
 
+
+// ---- siêu âm kiểu thật ----
+const FAN2 = 'M300,10 L2,436 A520,520 0 0,0 598,436 Z';
+const Echo2: React.FC<{x: number; y: number; s?: number; a: number; kind: string; id: string}> = ({x, y, s = 1, a, kind, id}) => {
+  const f = useCurrentFrame();
+  const ph = (f % 22) / 22;
+  const sys = Math.exp(-Math.pow((ph - 0.3) / 0.15, 2));
+  const resp = 0.5 + 0.5 * Math.sin(f / 24);
+  const press = Math.max(0, Math.sin(f / 18));
+  const hk = kind === 'hyper' ? 1 - 0.16 * sys : 1 - 0.06 * sys;
+  const b = `b${id}`, bb = `bb${id}`;
+  return (
+    <svg width={600 * s} height={560 * s} viewBox="0 0 600 560" style={{position: 'absolute', left: x, top: y, opacity: a}}>
+      <defs>
+        <clipPath id={`c${id}`}><path d={FAN2} /></clipPath>
+        <filter id={b} x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="5" /></filter>
+        <filter id={bb} x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="9" /></filter>
+      </defs>
+      <path d={FAN2} fill="#060606" />
+      <g clipPath={`url(#c${id})`}>
+        <image href={staticFile('soc_speckle.png')} width={600} height={560} opacity={0.55} />
+        {kind === 'heartEff' || kind === 'hyper' ? (
+          <g transform={`translate(300,290) scale(${hk}) translate(-300,-290)`}>
+            {kind === 'heartEff' ? (
+              <>
+                <g filter={`url(#${bb})`}><path d="M300,40 C150,60 60,200 70,320 C80,430 170,500 300,505 C430,500 520,430 530,320 C540,200 450,60 300,40Z" fill="#000" /></g>
+                <path d="M300,30 C140,50 50,200 60,320 C70,440 165,512 300,517 C435,512 530,440 540,320 C550,200 460,50 300,30Z" fill="none" stroke="#f5f5f5" strokeWidth={14} filter={`url(#${b})`} />
+              </>
+            ) : <g filter={`url(#${bb})`}><path d="M300,78 C200,92 120,200 118,300 C116,380 150,470 300,478 C450,470 484,380 482,300 C480,200 400,92 300,78Z" fill="#000" /></g>}
+            <g filter={`url(#${b})`}>
+              <path d="M300,78 C200,92 120,200 118,300 C116,380 150,470 300,478 C450,470 484,380 482,300 C480,200 400,92 300,78Z" fill="none" stroke={kind === 'heartEff' ? '#a8a8a8' : '#dcdcdc'} strokeWidth={kind === 'hyper' ? 30 + 18 * sys : 30} />
+              <path d="M318,92 C330,170 325,250 312,318" stroke="#b5b5b5" strokeWidth={26} fill="none" />
+              <path d="M140,318 C220,312 380,312 462,318" stroke="#9a9a9a" strokeWidth={16} fill="none" />
+              <path d="M300,330 L300,470" stroke="#a0a0a0" strokeWidth={18} />
+              <path d={`M180,318 L215,${300 + 14 * sys} M250,318 L275,${302 + 14 * sys} M350,318 L372,${300 + 14 * sys} M420,318 L445,${302 + 14 * sys}`} stroke="#e8e8e8" strokeWidth={7} />
+            </g>
+          </g>
+        ) : null}
+        {kind === 'ivc' ? (() => {
+          const h = 6 + 16 * resp;
+          return (
+            <g filter={`url(#${b})`}>
+              <path d="M0,0 L600,0 L600,200 C500,230 300,236 0,240 Z" fill="#8a8a8a" opacity={0.45} />
+              <path d={`M-10,${260 - h / 2 - 9} C150,${256 - h / 2 - 9} 330,${254 - h / 2 - 9} 470,${254 - h / 2 - 9} C520,${250 - h / 2 - 9} 560,200 610,170 L610,340 C560,310 520,${258 + h / 2 + 9} 470,${258 + h / 2 + 9} C330,${258 + h / 2 + 9} 150,${262 + h / 2 + 9} -10,${264 + h / 2 + 9} Z`} fill="#ededed" opacity={0.85} />
+              <path d={`M-10,${260 - h / 2} C150,${256 - h / 2} 330,${254 - h / 2} 470,${254 - h / 2} C520,${252 - h / 2} 560,215 610,190 L610,320 C560,300 520,${258 + h / 2} 470,${258 + h / 2} C330,${258 + h / 2} 150,${262 + h / 2} -10,${264 + h / 2} Z`} fill="#030303" />
+            </g>
+          );
+        })() : null}
+        {kind === 'lung' ? (
+          <g filter={`url(#${b})`}>
+            <rect x={0} y={0} width={600} height={120} fill="#777" opacity={0.35} />
+            <path d="M0,140 L600,140" stroke="#f2f2f2" strokeWidth={14} strokeDasharray="34 10" strokeDashoffset={f * 2.5} />
+            {[250, 360, 470].map((yy, i) => <path key={i} d={`M0,${yy} L600,${yy}`} stroke="#d0d0d0" strokeWidth={10} opacity={0.75 - i * 0.18} />)}
+            <rect x={150} y={60} width={46} height={110} fill="#050505" /><rect x={400} y={60} width={46} height={110} fill="#050505" />
+          </g>
+        ) : null}
+        {kind === 'vessel' ? (
+          <g filter={`url(#${b})`}>
+            <rect x={0} y={0} width={600} height={560} fill="#555" opacity={0.3} />
+            <circle cx={200} cy={260 - 10 * press} r={62 + 4 * sys} fill="#030303" stroke="#eee" strokeWidth={12} />
+            <ellipse cx={390} cy={270 - 10 * press} rx={78} ry={60} fill="#3a3a3a" stroke="#ddd" strokeWidth={10} />
+            <ellipse cx={380} cy={265 - 10 * press} rx={45} ry={32} fill="#6a6a6a" />
+          </g>
+        ) : null}
+      </g>
+      {kind === 'vessel' ? <rect x={230} y={-60 + 40 * press} width={140} height={60} rx={14} fill={K.amber} opacity={0.9} /> : null}
+      <path d={FAN2} fill="none" stroke="#2d3c44" strokeWidth={3} />
+      <g fill="#7f8f96" fontSize={16} fontFamily="Arial">{[0, 1, 2, 3, 4].map((i) => <g key={i}><rect x={586} y={40 + i * 95} width={10} height={3} /><text x={566} y={48 + i * 95} textAnchor="end">{i * 3}</text></g>)}</g>
+      <circle cx={250} cy={22} r={7} fill={K.amber} />
+    </svg>
+  );
+};
+const SPOTS: [number, number, string][] = [[270, 340, '1'], [255, 430, '2'], [170, 270, '3'], [355, 270, '3'], [215, 470, '4'], [300, 480, '5'], [200, 690, '6']];
+const Body: React.FC<{x: number; y: number; s: number; a: number; act: string[]; c: string}> = ({x, y, s, a, act, c}) => {
+  const f = useCurrentFrame();
+  const pul = 1 + 0.08 * Math.sin(f / 6);
+  return (
+    <div style={{position: 'absolute', left: x, top: y, width: 520 * s, height: 900 * s, opacity: a}}>
+      <svg width={520 * s} height={900 * s} viewBox="0 0 520 900">
+        <defs><linearGradient id="tgB" x1="0" x2="1"><stop offset="0" stopColor="#2a4a5a" /><stop offset=".5" stopColor="#3b6476" /><stop offset="1" stopColor="#2a4a5a" /></linearGradient></defs>
+        <circle cx={260} cy={80} r={62} fill="url(#tgB)" />
+        <path d="M120,170 C160,150 360,150 400,170 L430,250 L410,470 L400,560 L120,560 L110,470 L90,250 Z" fill="url(#tgB)" />
+        <path d="M130,560 L250,560 L240,880 L170,880 Z M270,560 L390,560 L350,880 L280,880 Z" fill="url(#tgB)" />
+        <path d="M90,250 L40,520 L70,530 L120,330 M430,250 L480,520 L450,530 L400,330" fill="url(#tgB)" />
+        <path d="M160,210 C140,260 140,330 170,380 L240,380 L240,220 Z" fill="#7fb7d1" opacity={0.25} />
+        <path d="M360,210 C380,260 380,330 350,380 L280,380 L280,220 Z" fill="#7fb7d1" opacity={0.25} />
+        <path d="M245,300 C220,300 210,340 240,370 L270,395 L300,360 C320,330 300,300 280,305 Z" fill={RED} opacity={0.85} />
+        <path d="M200,400 C230,390 300,390 330,400 L330,470 L200,470 Z" fill="#8a5a3a" opacity={0.45} />
+      </svg>
+      {SPOTS.map(([sx, sy, n], i) => {
+        const on = act.includes(n);
+        return <div key={i} style={{position: 'absolute', left: sx * s - 30, top: sy * s - 30, width: 60, height: 60, borderRadius: '50%', background: on ? c : '#2b3a42', border: `4px solid ${on ? '#fff' : '#55707c'}`, color: '#0b1a22', fontFamily: FONT, fontSize: 30, fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: on ? `0 0 30px ${c}` : 'none', opacity: on ? 1 : 0.6, transform: `scale(${on ? pul : 1})`}}>{n}</div>;
+      })}
+    </div>
+  );
+};
+const Ann: React.FC<{x: number; y: number; c?: string; a: number; children: string}> = ({x, y, c = K.txt, a, children}) => (
+  <div style={{position: 'absolute', left: x, top: y, fontFamily: FONT, fontSize: 30, fontWeight: 900, color: c, textShadow: '0 2px 6px #000', whiteSpace: 'nowrap', opacity: a}}>{children}</div>
+);
+
 // ---------- 1 Mở đầu ----------
 
 // ảnh tế bào: tỉ lệ gốc
@@ -945,21 +1045,38 @@ const D7: React.FC<{S: number[]; D: number[]}> = ({S}) => {
 };
 
 // ---------- 8 Siêu âm ----------
+const RUSH: {head: string; c: string; act: string[]; kind: string; lines: [string, string, string][]; ann: [number, number, string, string][]}[] = [
+  {head: 'BƠM', c: RED, act: ['1'], kind: 'heartEff', lines: [['1', 'Tim co bóp ra sao?', 'mạnh · yếu'], ['1', 'Dịch màng ngoài tim?', 'viền đen quanh tim → chèn ép'], ['1', 'Thất phải giãn?', 'gợi ý thuyên tắc phổi']], ann: [[0.24, 0.27, 'Thất phải', K.txt], [0.66, 0.27, 'Thất trái', K.txt], [0.25, 0.68, 'Nhĩ phải', K.dim], [0.62, 0.68, 'Nhĩ trái', K.dim], [0.86, 0.47, '← DỊCH', K.amber]]},
+  {head: 'BÌNH', c: WATER, act: ['2', '3', '4'], kind: 'ivc', lines: [['2', 'TM chủ dưới', 'nhỏ, xẹp khi hít vào → thiếu nước'], ['3', 'Phổi', 'đường B → phù phổi · không trượt → tràn khí'], ['4', 'Bụng (FAST)', 'dịch ổ bụng → chảy máu']], ann: [[0.2, 0.33, 'Gan', K.dim], [0.18, 0.55, 'TM chủ dưới', K.txt], [0.74, 0.3, 'Nhĩ phải →', K.dim]]},
+  {head: 'ỐNG', c: K.amber, act: ['5', '6'], kind: 'vessel', lines: [['5', 'Động mạch chủ', '> 3 cm → phình, nguy cơ vỡ'], ['6', 'TM đùi, TM khoeo', 'ấn không xẹp → huyết khối']], ann: [[0.2, 0.68, 'Động mạch', K.txt], [0.5, 0.68, 'Tĩnh mạch: ấn không xẹp', K.amber]]},
+];
 const D8: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   const t = useSec();
-  const col = (i: number, kind: string, head: string, c: string, body: string, s0: number) => (
-    <>
-      <Echo x={90 + i * 600} y={210} s={0.82} a={ap(t, s0)} kind={kind} id={`e8${i}`} />
-      <Tx x={90 + i * 600} y={680} w={426} al="center" size={50} c={c} b={900} a={ap(t, s0)}>{head}</Tx>
-      <Tx x={50 + i * 600} y={750} w={506} al="center" size={32} c={K.txt} b={700} a={ap(t, s0 + 0.4)}>{body}</Tx>
-    </>
-  );
+  const k = t < S[2] ? 0 : t < S[3] ? 1 : 2;
+  const st = k === 0 ? S[0] : S[k + 1];
+  const R = RUSH[k];
+  const ea = ap(t, st, 0.5);
+  const EX = 600, EY = 170, ES = 1.2;
   return (
     <>
       <Top idx={7} title="Siêu âm tại giường (RUSH)" />
-      {col(0, 'heartEff', 'BƠM', RED, 'co bóp · dịch màng ngoài tim · thất phải', S[1])}
-      {col(1, 'ivc', 'BÌNH', WATER, 'TM chủ dưới · dịch ổ bụng · phổi', S[2])}
-      {col(2, 'aorta', 'ỐNG', K.amber, 'động mạch chủ · huyết khối TM sâu', S[3])}
+      <div style={{position: 'absolute', left: 820, top: 105, display: 'flex', gap: 18, fontFamily: FONT}}>
+        {RUSH.map((r, i) => <div key={r.head} style={{padding: '8px 34px', borderRadius: 999, fontSize: 36, fontWeight: 900, background: i === k ? r.c : 'transparent', color: i === k ? '#0b1a22' : '#7f97a1', border: i === k ? `3px solid ${r.c}` : '3px solid #4a6470'}}>{r.head}</div>)}
+      </div>
+      <Body x={70} y={150} s={0.86} a={ap(t, S[0])} act={t < S[1] ? [] : R.act} c={R.c} />
+      <Echo2 x={EX} y={EY} s={ES} a={ap(t, S[0]) * (k === 0 ? 1 : ea)} kind={R.kind} id={`r${k}`} />
+      {R.ann.map(([ax, ay, l, c], i) => <Ann key={`${k}${i}`} x={EX + ax * 600 * ES} y={EY + ay * 560 * ES} c={c} a={ap(t, Math.max(st, S[1]) + 0.3 + i * 0.25)}>{l}</Ann>)}
+      <div style={{position: 'absolute', left: 1350, top: 210, width: 540, fontFamily: FONT}}>
+        {R.lines.map(([n, h, d], i) => {
+          const a = ap(t, Math.max(st, S[1]) + 0.4 + i * 0.7);
+          return (
+            <div key={`${k}${i}`} style={{display: 'flex', gap: 16, marginBottom: 30, opacity: a, transform: `translateX(${(1 - a) * 30}px)`}}>
+              <div style={{minWidth: 50, height: 50, borderRadius: '50%', background: R.c, color: '#0b1a22', fontSize: 28, fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{n}</div>
+              <div><div style={{fontSize: 38, fontWeight: 900, color: K.txt}}>{h}</div><div style={{fontSize: 30, fontWeight: 700, color: K.dim, marginTop: 4}}>{chem(d)}</div></div>
+            </div>
+          );
+        })}
+      </div>
     </>
   );
 };
@@ -982,8 +1099,8 @@ const D10: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   const t = useSec();
   const e = (i: number, kind: string, l: string, c: string, s0: number) => (
     <>
-      <Echo x={150 + i * 560} y={170} s={0.62} a={ap(t, s0)} kind={kind} id={`e10${i}`} />
-      <Tx x={110 + i * 560} y={520} w={400} al="center" size={34} c={c} b={900} a={ap(t, s0)}>{l}</Tx>
+      <Echo2 x={130 + i * 580} y={160} s={0.72} a={ap(t, s0)} kind={kind} id={`e10${i}`} />
+      <Tx x={110 + i * 580} y={570} w={470} al="center" size={34} c={c} b={900} a={ap(t, s0)}>{l}</Tx>
     </>
   );
   return (
@@ -992,8 +1109,8 @@ const D10: React.FC<{S: number[]; D: number[]}> = ({S}) => {
       {e(0, 'hyper', 'tim co bóp MẠNH', RED, S[0])}
       {e(1, 'ivc', 'TM chủ dưới nhỏ, xẹp', WATER, S[0] + 0.8)}
       {e(2, 'lung', 'phổi sạch (đường A)', K.green, S[0] + 1.6)}
-      <Res x={260} y={610} s0={S[1]} c={KC}>Sốc PHÂN BỐ (nhiễm khuẩn) + thiếu thể tích</Res>
-      <GoldC y={790} a={ap(t, S[2])} size={46}>Cần dịch + vận mạch → Bài 4 · Bài 5</GoldC>
+      <Res x={260} y={650} s0={S[1]} c={KC}>Sốc PHÂN BỐ (nhiễm khuẩn) + thiếu thể tích</Res>
+      <GoldC y={810} a={ap(t, S[2])} size={46}>Cần dịch + vận mạch → Bài 4 · Bài 5</GoldC>
     </>
   );
 };
