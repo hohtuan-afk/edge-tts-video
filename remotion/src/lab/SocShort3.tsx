@@ -242,8 +242,8 @@ const S3: React.FC = () => {
   return (
     <>
       <Title c={RED} sub="> 3 giây là BẤT THƯỜNG">ẤN 10 GIÂY</Title>
-      <div style={{position: 'absolute', left: -60, top: 470, transform: 'scale(1.0)', transformOrigin: '0 0'}}><FingerG x={0} y={0} a={ap(t, 0.1)} press={press} pink={pink} /></div>
-      <Timer x={310} y={880} a={ap(t, 0.1)} v={tv} />
+      <div style={{position: 'absolute', left: -150, top: 330}}><FingerG x={0} y={0} a={ap(t, 0.1)} press={press} pink={pink} /></div>
+      <div style={{position: 'absolute', left: 356, top: 930, width: 368, height: 368}}><div style={{transform: 'scale(.8)', transformOrigin: '0 0'}}><Timer x={0} y={0} a={ap(t, 0.1)} v={tv} /></div></div>
     </>
   );
 };
