@@ -1,0 +1,72 @@
+{
+ "fps": 30,
+ "total": 821,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.249,
+     "text": "Lactate hay CRT: cái nào báo hồi sức đủ NHANH hơn?"
+    }
+   ]
+  },
+  {
+   "from": 132,
+   "dur": 144,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.102,
+     "text": "Lactate: giảm CHẬM · đo lại mỗi 2 giờ"
+    }
+   ]
+  },
+  {
+   "from": 276,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.704,
+     "text": "CRT: đổi NHANH · vài chục phút"
+    }
+   ]
+  },
+  {
+   "from": 408,
+   "dur": 142,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.037,
+     "text": "Ấn đầu ngón 10 giây · > 3 giây là bất thường"
+    }
+   ]
+  },
+  {
+   "from": 550,
+   "dur": 139,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.947,
+     "text": "Dùng CẢ HAI: CRT báo nhanh · lactate xác nhận"
+    }
+   ]
+  },
+  {
+   "from": 689,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.596,
+     "text": "Lưu lại để ôn · xem Bài 3 đầy đủ trên kênh!"
+    }
+   ]
+  }
+ ]
+}
