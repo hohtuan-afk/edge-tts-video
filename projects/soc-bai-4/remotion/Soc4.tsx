@@ -768,7 +768,7 @@ export const Patient: React.FC<{x: number; y: number; s: number; a: number; b: n
     </svg>
   );
 };
-const VtiBox: React.FC<{x: number; y: number; h: number; lab: string; c: string; a: number; fs?: number}> = ({x, y, h, lab, c, a, fs = 30}) => {
+export const VtiBox: React.FC<{x: number; y: number; h: number; lab: string; c: string; a: number; fs?: number}> = ({x, y, h, lab, c, a, fs = 30}) => {
   const f = useCurrentFrame();
   const sweep = (f * 6) % 440;
   return (

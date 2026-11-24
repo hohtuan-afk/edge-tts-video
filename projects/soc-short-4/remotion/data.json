@@ -1,0 +1,72 @@
+{
+ "fps": 30,
+ "total": 823,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.498,
+     "text": "Nâng chân 1 phút: còn nên truyền dịch?"
+    }
+   ]
+  },
+  {
+   "from": 132,
+   "dur": 143,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.069,
+     "text": "Chỉ ~50% bệnh nhân sốc còn đáp ứng dịch"
+    }
+   ]
+  },
+  {
+   "from": 275,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.971,
+     "text": "Nửa ngồi → nằm ngửa, nâng chân 45°"
+    }
+   ]
+  },
+  {
+   "from": 407,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.092,
+     "text": "~300 mL máu dồn về tim"
+    }
+   ]
+  },
+  {
+   "from": 539,
+   "dur": 152,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.374,
+     "text": "Cung lượng tim tăng ≥ 10% → CÒN ĐÁP ỨNG"
+    }
+   ]
+  },
+  {
+   "from": 691,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.636,
+     "text": "Lưu lại để ôn · xem Bài 4 đầy đủ trên kênh!"
+    }
+   ]
+  }
+ ]
+}
