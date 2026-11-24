@@ -1,31 +1,139 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+12%",
+ "rate": "+8%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Lắc tát hay thời gian đổ đầy mao mạch, cái nào báo hồi sức đủ nhanh hơn?"
+   "text": "Ông bảy mươi tuổi, nặng bảy mươi ký, đã truyền một phẩy năm lít, nhưng huyết áp trung bình vẫn sáu mươi."
+  },
+  {
+   "id": "00-1",
+   "text": "Có nên truyền thêm dịch không?"
+  },
+  {
+   "id": "00-2",
+   "text": "Hãy nhớ: dịch là thuốc, có liều dùng, và có tác dụng phụ."
   },
   {
    "id": "01-0",
-   "text": "Lắc tát giảm chậm, vì gan cần thời gian thanh thải, nên phải đo lại mỗi hai giờ."
+   "text": "Truyền dịch trong sốc đi qua bốn giai đoạn: hồi sức, tối ưu, ổn định, và rút dịch."
+  },
+  {
+   "id": "01-1",
+   "text": "Giai đoạn đầu để cứu sống. Giai đoạn cuối là lấy bớt dịch thừa ra."
   },
   {
    "id": "02-0",
-   "text": "Thời gian đổ đầy mao mạch thay đổi chỉ sau vài chục phút truyền dịch."
+   "text": "Hướng dẫn Xơ vai vinh Xép xít năm hai nghìn không trăm hai mươi sáu gợi ý ít nhất ba mươi mi li lít mỗi ký trong ba giờ đầu, nhưng là khuyến cáo có điều kiện, cần cá thể hóa."
+  },
+  {
+   "id": "02-1",
+   "text": "Người béo phì có chỉ số khối cơ thể trên ba mươi thì tính theo cân nặng lý tưởng hoặc cân nặng điều chỉnh."
+  },
+  {
+   "id": "02-2",
+   "text": "Truyền từng liều hai trăm năm mươi đến năm trăm mi li lít, và đánh giá lại sau mỗi liều."
   },
   {
    "id": "03-0",
-   "text": "Ấn đầu ngón tay mười giây, thả ra. Trên ba giây là bất thường."
+   "text": "Lựa chọn đầu tay là dịch tinh thể."
+  },
+  {
+   "id": "03-1",
+   "text": "Ưu tiên dịch cân bằng như Ringer lắc tát hay Plasma Lai, hơn là nước muối không phẩy chín phần trăm, vì nước muối nhiều clo gây toan và có thể hại thận."
+  },
+  {
+   "id": "03-2",
+   "text": "Không dùng dung dịch tinh bột, và không thêm albumin một cách thường quy."
   },
   {
    "id": "04-0",
-   "text": "Hãy dùng cả hai: thời gian đổ đầy mao mạch báo nhanh, lắc tát xác nhận xu hướng."
+   "text": "Nghiên cứu Smart năm hai nghìn không trăm mười tám trên hơn mười lăm nghìn bệnh nhân: dịch cân bằng giảm biến cố thận, mười bốn phẩy ba so với mười lăm phẩy bốn phần trăm."
+  },
+  {
+   "id": "04-1",
+   "text": "Hai nghiên cứu lớn sau đó là Ba xích và Plắt chưa thấy khác biệt có ý nghĩa."
+  },
+  {
+   "id": "04-2",
+   "text": "Lợi ích nhỏ, nhưng dịch cân bằng gần như không gây hại."
   },
   {
    "id": "05-0",
-   "text": "Lưu lại để ôn, và xem bài ba đầy đủ trên kênh nhé!"
+   "text": "Theo đường cong Phrăng Sta linh, ở đoạn dốc, thêm dịch thì tim bơm được nhiều hơn."
+  },
+  {
+   "id": "05-1",
+   "text": "Ở đoạn phẳng, thêm dịch không tăng cung lượng tim, chỉ gây phù."
+  },
+  {
+   "id": "05-2",
+   "text": "Chỉ khoảng một nửa bệnh nhân sốc còn đáp ứng với dịch."
+  },
+  {
+   "id": "06-0",
+   "text": "Cách kiểm tra đơn giản là nâng chân thụ động: từ tư thế nửa ngồi, hạ thân và nâng hai chân bốn mươi lăm độ."
+  },
+  {
+   "id": "06-1",
+   "text": "Khoảng ba trăm mi li lít máu từ chân dồn về tim, như một liều dịch có thể đảo ngược."
+  },
+  {
+   "id": "06-2",
+   "text": "Đo cung lượng tim hoặc tích phân vận tốc dòng chảy trong một phút. Tăng từ mười phần trăm trở lên là còn đáp ứng."
+  },
+  {
+   "id": "06-3",
+   "text": "Phải đo lưu lượng, không dựa vào huyết áp."
+  },
+  {
+   "id": "07-0",
+   "text": "Nghiên cứu Cờ lát xích năm hai nghìn không trăm hai mươi hai so sánh hạn chế dịch với thông thường: tử vong bốn mươi hai phẩy ba so với bốn mươi hai phẩy một phần trăm."
+  },
+  {
+   "id": "07-1",
+   "text": "Nghiên cứu Clô vơ năm hai nghìn không trăm hai mươi ba, ưu tiên vận mạch sớm: mười bốn so với mười bốn phẩy chín phần trăm."
+  },
+  {
+   "id": "07-2",
+   "text": "Cả hai chiến lược đều an toàn. Không có một con số đúng cho mọi bệnh nhân."
+  },
+  {
+   "id": "08-0",
+   "text": "Dịch thừa gây phù phổi, phù thận, và phù ruột."
+  },
+  {
+   "id": "08-1",
+   "text": "Cân bằng dịch dương kéo dài liên quan đến tử vong cao hơn."
+  },
+  {
+   "id": "08-2",
+   "text": "Khuyến cáo mới của Xơ vai vinh Xép xít: khi đã ổn định, chủ động rút dịch bằng lợi tiểu hoặc lọc máu."
+  },
+  {
+   "id": "09-0",
+   "text": "Quay lại ca bệnh. Nâng chân lần một, tích phân vận tốc tăng mười lăm phần trăm, nên truyền thêm năm trăm mi li lít."
+  },
+  {
+   "id": "09-1",
+   "text": "Nâng chân lần hai, chỉ tăng bốn phần trăm. Đã hết đáp ứng, ngừng dịch."
+  },
+  {
+   "id": "09-2",
+   "text": "Huyết áp vẫn thấp, nên bắt đầu nô ơ e pi nê phrin, sẽ học ở bài năm."
+  },
+  {
+   "id": "10-0",
+   "text": "Ôn tập: truyền liều nhỏ, đánh giá lại, ưu tiên dịch cân bằng."
+  },
+  {
+   "id": "10-1",
+   "text": "Nâng chân trước khi thêm dịch, và rút dịch khi đã ổn định."
+  },
+  {
+   "id": "10-2",
+   "text": "Bài sau: thuốc vận mạch, chọn thuốc nào và theo thứ tự nào."
   }
  ]
 }
