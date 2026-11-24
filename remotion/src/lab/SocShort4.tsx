@@ -204,9 +204,9 @@ const S0: React.FC = () => {
   const f = useCurrentFrame();
   return (
     <>
-      <Title c={K.amber} sub="còn nên truyền dịch?">NÂNG CHÂN 1 PHÚT</Title>
+      <Title c={K.amber} sub="còn nên truyền dịch?">NÂNG CHÂN</Title>
       <Patient x={40} y={600} s={0.9} a={0} b={45 * (0.5 + 0.5 * Math.sin(f / 20))} blood={0} id="s0" />
-      <div style={{position: 'absolute', left: 0, right: 0, top: 1150, textAlign: 'center', fontFamily: FONT, fontSize: 90, fontWeight: 900, color: K.amber, opacity: ap(t, 1)}}>⏱ 60 giây</div>
+      <div style={{position: 'absolute', left: 0, right: 0, top: 470, textAlign: 'center', fontFamily: FONT, fontSize: 90, fontWeight: 900, color: K.amber, opacity: ap(t, 1)}}>⏱ 60 giây</div>
     </>
   );
 };
@@ -216,10 +216,10 @@ const S1: React.FC = () => {
   return (
     <>
       <Title c={RED} sub="truyền thừa → PHÙ">CHỈ ~50%</Title>
-      <div style={{position: 'absolute', left: 140, top: 560, width: 800, height: 800, display: 'flex', flexWrap: 'wrap', gap: 20}}>
-        {Array.from({length: 20}, (_, i) => <div key={i} style={{width: 140, height: 140, borderRadius: '50%', background: i < 10 ? K.green : '#2b3a42', border: '5px solid #55707c', opacity: ap(t, 0.2 + i * 0.05), transform: `scale(${i < 10 ? 0.8 + 0.2 * k : 0.8})`}} />)}
+      <div style={{position: 'absolute', left: 215, top: 560, width: 650, display: 'flex', flexWrap: 'wrap', gap: 20}}>
+        {Array.from({length: 20}, (_, i) => <div key={i} style={{width: 110, height: 110, borderRadius: '50%', background: i < 10 ? K.green : '#2b3a42', border: '5px solid #55707c', opacity: ap(t, 0.2 + i * 0.05), transform: `scale(${i < 10 ? 0.8 + 0.2 * k : 0.8})`}} />)}
       </div>
-      <div style={{position: 'absolute', left: 0, right: 0, top: 1140, textAlign: 'center', fontFamily: FONT, fontSize: 52, fontWeight: 900, color: K.green, opacity: ap(t, 1.2)}}>còn đáp ứng dịch</div>
+      <div style={{position: 'absolute', left: 0, right: 0, top: 1110, textAlign: 'center', fontFamily: FONT, fontSize: 52, fontWeight: 900, color: K.green, opacity: ap(t, 1.2)}}>còn đáp ứng dịch</div>
     </>
   );
 };
