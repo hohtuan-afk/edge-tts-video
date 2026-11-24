@@ -768,7 +768,7 @@ export const Patient: React.FC<{x: number; y: number; s: number; a: number; b: n
     </svg>
   );
 };
-const VtiBox: React.FC<{x: number; y: number; h: number; lab: string; c: string; a: number}> = ({x, y, h, lab, c, a}) => {
+const VtiBox: React.FC<{x: number; y: number; h: number; lab: string; c: string; a: number; fs?: number}> = ({x, y, h, lab, c, a, fs = 30}) => {
   const f = useCurrentFrame();
   const sweep = (f * 6) % 440;
   return (
@@ -777,7 +777,7 @@ const VtiBox: React.FC<{x: number; y: number; h: number; lab: string; c: string;
       <path d="M15,45 L445,45" stroke="#666" strokeWidth={2} />
       <g fill="#d6d6d6">{[0, 1, 2, 3].map((i) => <path key={i} d={`M${30 + i * 105},45 C${45 + i * 105},${45 + h} ${85 + i * 105},${49 + h} ${105 + i * 105},45Z`} opacity={30 + i * 105 < sweep + 15 ? 1 : 0.25} />)}</g>
       <path d={`M${15 + sweep},20 L${15 + sweep},150`} stroke={GREEN} strokeWidth={3} opacity={0.7} />
-      <text x={230} y={175} fill={c} fontSize={30} fontWeight={900} textAnchor="middle" fontFamily={FONT}>{lab}</text>
+      <text x={230} y={175} fill={c} fontSize={fs} fontWeight={900} textAnchor="middle" fontFamily={FONT}>{lab}</text>
     </svg>
   );
 };
@@ -800,7 +800,7 @@ const IVBag: React.FC<{x: number; y: number; label: string; c: string; a: number
 const VBar: React.FC<{x: number; base: number; w: number; v: number; scale: number; k: number; c: string; lab: string}> = ({x, base, w, v, scale, k, c, lab}) => (
   <>
     <div style={{position: 'absolute', left: x, top: base - v * scale * k, width: w, height: v * scale * k, borderRadius: 14, background: c}} />
-    <div style={{position: 'absolute', left: x - 40, top: base - v * scale * k - 64, width: w + 80, textAlign: 'center', fontFamily: FONT, fontSize: 46, fontWeight: 900, color: K.txt, opacity: k}}>{String(v).replace('.', ',')}%</div>
+    <div style={{position: 'absolute', left: x - 40, top: base - v * scale * k - 64, width: w + 80, textAlign: 'center', fontFamily: FONT, fontSize: 46, fontWeight: 900, color: K.txt, opacity: k}}>{v.toFixed(1).replace('.', ',')}%</div>
     <div style={{position: 'absolute', left: x - 60, top: base + 14, width: w + 120, textAlign: 'center', fontFamily: FONT, fontSize: 32, fontWeight: 900, color: c}}>{lab}</div>
   </>
 );
@@ -833,7 +833,7 @@ const D2: React.FC<{S: number[]; D: number[]}> = ({S}) => {
         <path d="M160,800 L1760,800" stroke="#2d4652" strokeWidth={4} />
         <path d={ROSE_P} stroke={WATER} strokeWidth={12} fill="none" pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - k} />
         <text x={110} y={540} fill={K.dim} fontSize={30} fontWeight={800} textAnchor="middle" transform="rotate(-90 110 540)" fontFamily={FONT}>cân bằng dịch tích lũy</text>
-        <text x={330} y={420} fill={RED} fontSize={38} fontWeight={900} fontFamily={FONT} opacity={ap(t, S[1])}>cứu sống ↑</text>
+        <text x={760} y={230} fill={RED} fontSize={38} fontWeight={900} fontFamily={FONT} opacity={ap(t, S[1])}>cứu sống ↑</text>
         <text x={1450} y={560} fill={PURP} fontSize={38} fontWeight={900} fontFamily={FONT} opacity={ap(t, S[1] + 0.8)}>↓ rút dịch thừa</text>
       </svg>
       {ph.map(([l, c, tc], i) => <div key={l} style={{position: 'absolute', left: 180 + i * 400, top: 840, width: 360, height: 90, borderRadius: 20, background: c, color: tc, fontFamily: FONT, fontSize: 40, fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center', opacity: ap(t, S[0] + i * 0.7)}}>{l}</div>)}
@@ -926,9 +926,9 @@ const D6: React.FC<{S: number[]; D: number[]}> = ({S}) => {
           })}
           <text x={1180} y={190} fill={RED} fontSize={40} fontWeight={900} fontFamily={FONT}>ĐOẠN PHẲNG: chỉ gây PHÙ</text>
         </g>
-        <text x={640} y={720} fill={GREEN} fontSize={40} fontWeight={900} fontFamily={FONT} opacity={ap(t, S[0])}>ĐOẠN DỐC: còn đáp ứng</text>
+        <text x={290} y={300} fill={GREEN} fontSize={40} fontWeight={900} fontFamily={FONT} opacity={ap(t, S[0])}>ĐOẠN DỐC: còn đáp ứng</text>
       </svg>
-      <Panel x={1080} y={620} w={640} h={150} c={K.amber} s0={S[2]}>
+      <Panel x={1100} y={700} w={640} h={150} c={K.amber} s0={S[2]}>
         <Tx x={0} y={22} w={640} al="center" size={40} b={900}>Chỉ ~50% bệnh nhân sốc</Tx>
         <Tx x={0} y={80} w={640} al="center" size={36} c={K.amber} b={800}>còn đáp ứng dịch</Tx>
       </Panel>
@@ -950,7 +950,7 @@ const D7: React.FC<{S: number[]; D: number[]}> = ({S}) => {
       <VtiBox x={1300} y={200} h={70} lab="trước: VTI 16 cm" c={K.dim} a={ap(t, S[2])} />
       <VtiBox x={1300} y={430} h={95} lab="sau: VTI 18,4 cm · +15% ✓" c={GREEN} a={ap(t, S[2] + 1)} />
       <Tx x={1260} y={660} w={560} al="center" size={36} c={GREEN} b={900} a={ap(t, S[2] + 1.5)}>tăng ≥ 10% → CÒN ĐÁP ỨNG</Tx>
-      <div style={{position: 'absolute', left: 1260, top: 740, width: 560, padding: '16px 0', borderRadius: 22, background: K.amber, color: '#22303A', textAlign: 'center', fontFamily: FONT, fontSize: 34, fontWeight: 900, opacity: ap(t, S[3])}}>đo LƯU LƯỢNG, không đo huyết áp</div>
+      <div style={{position: 'absolute', left: 1260, top: 740, width: 560, padding: '16px 0', borderRadius: 22, background: K.amber, color: '#22303A', textAlign: 'center', fontFamily: FONT, fontSize: 30, fontWeight: 900, opacity: ap(t, S[3])}}>đo LƯU LƯỢNG, không đo huyết áp</div>
     </>
   );
 };
@@ -1008,8 +1008,8 @@ const D10: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   return (
     <>
       <Top idx={9} title="Giải ca" />
-      <VtiBox x={140} y={200} h={95} lab="Lần 1: VTI +15% → thêm 500 mL" c={GREEN} a={ap(t, S[0])} />
-      <VtiBox x={720} y={200} h={60} lab="Lần 2: VTI +4% → NGỪNG dịch" c={RED} a={ap(t, S[1])} />
+      <VtiBox x={140} y={200} h={95} lab="Lần 1: VTI +15% → thêm 500 mL" c={GREEN} a={ap(t, S[0])} fs={24} />
+      <VtiBox x={720} y={200} h={60} lab="Lần 2: VTI +4% → NGỪNG dịch" c={RED} a={ap(t, S[1])} fs={24} />
       <svg width={1920} height={1080} style={{position: 'absolute', left: 0, top: 0}}>
         {(() => {
           const pts = Array.from({length: 50}, (_, i) => 200 + i * (1000 / 49));
