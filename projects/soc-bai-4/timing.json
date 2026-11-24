@@ -1,0 +1,233 @@
+[
+ {
+  "orig": 12.0,
+  "dur": 12.36,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 5.051,
+    "text": "Ông 70 kg · đã truyền 1,5 lít · MAP vẫn 60"
+   },
+   {
+    "start": 5.901,
+    "dur": 1.169,
+    "text": "Thêm dịch hay KHÔNG?"
+   },
+   {
+    "start": 7.42,
+    "dur": 3.442,
+    "text": "Dịch là THUỐC: có liều, có tác dụng phụ"
+   }
+  ]
+ },
+ {
+  "orig": 9.0,
+  "dur": 11.12,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.698,
+    "text": "4 giai đoạn: Hồi sức · Tối ưu · Ổn định · Rút dịch"
+   },
+   {
+    "start": 5.548,
+    "dur": 4.078,
+    "text": "Đầu: cứu sống · Cuối: rút dịch thừa"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 19.44,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 8.221,
+    "text": "SSC 2026: ≥ 30 mL/kg trong 3 giờ · có điều kiện · cá thể hóa"
+   },
+   {
+    "start": 9.071,
+    "dur": 4.612,
+    "text": "BMI > 30: dùng cân nặng lý tưởng / điều chỉnh"
+   },
+   {
+    "start": 14.033,
+    "dur": 3.9,
+    "text": "Bolus 250–500 mL · đánh giá lại sau mỗi liều"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 14.96,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 1.729,
+    "text": "Đầu tay: dịch TINH THỂ"
+   },
+   {
+    "start": 2.579,
+    "dur": 7.176,
+    "text": "Ưu tiên dịch CÂN BẰNG hơn NaCl 0,9%"
+   },
+   {
+    "start": 10.106,
+    "dur": 3.36,
+    "text": "Không starch · không thêm albumin thường quy"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 16.96,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 7.678,
+    "text": "SMART 2018: 15.802 bệnh nhân · biến cố thận 14,3% so với 15,4%"
+   },
+   {
+    "start": 8.528,
+    "dur": 3.658,
+    "text": "BaSICS · PLUS: chưa khác biệt có ý nghĩa"
+   },
+   {
+    "start": 12.536,
+    "dur": 2.929,
+    "text": "Lợi ích NHỎ · nhưng gần như không hại"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 12.32,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.034,
+    "text": "Frank–Starling: đoạn DỐC → thêm dịch, tim bơm nhiều hơn"
+   },
+   {
+    "start": 4.884,
+    "dur": 3.31,
+    "text": "Đoạn PHẲNG → thêm dịch chỉ gây PHÙ"
+   },
+   {
+    "start": 8.544,
+    "dur": 2.279,
+    "text": "Chỉ ~50% bệnh nhân sốc còn đáp ứng dịch"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 20.08,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 5.158,
+    "text": "Nâng chân thụ động: nửa ngồi → nâng chân 45°"
+   },
+   {
+    "start": 6.008,
+    "dur": 3.963,
+    "text": "~300 mL máu dồn về tim · tự đảo ngược"
+   },
+   {
+    "start": 10.321,
+    "dur": 5.891,
+    "text": "Đo cung lượng tim / VTI trong 1 phút: tăng ≥ 10% → CÒN ĐÁP ỨNG"
+   },
+   {
+    "start": 16.562,
+    "dur": 2.012,
+    "text": "Phải đo LƯU LƯỢNG, không dựa vào huyết áp"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 19.76,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 6.943,
+    "text": "CLASSIC 2022: hạn chế dịch · tử vong 42,3% so với 42,1%"
+   },
+   {
+    "start": 7.793,
+    "dur": 5.872,
+    "text": "CLOVERS 2023: vận mạch sớm · 14,0% so với 14,9%"
+   },
+   {
+    "start": 14.014,
+    "dur": 4.244,
+    "text": "Không có MỘT con số cho tất cả"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 13.24,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.724,
+    "text": "Quá tải dịch: phù phổi · phù thận · phù ruột"
+   },
+   {
+    "start": 3.574,
+    "dur": 2.768,
+    "text": "Cân bằng dịch dương kéo dài → tử vong cao hơn"
+   },
+   {
+    "start": 6.692,
+    "dur": 5.056,
+    "text": "SSC 2026 (mới): chủ động RÚT DỊCH khi ổn định"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 17.92,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 6.381,
+    "text": "Nâng chân lần 1: VTI tăng 15% → thêm 500 mL"
+   },
+   {
+    "start": 7.231,
+    "dur": 4.743,
+    "text": "Nâng chân lần 2: VTI tăng 4% → NGỪNG dịch"
+   },
+   {
+    "start": 12.324,
+    "dur": 4.112,
+    "text": "MAP vẫn thấp → norepinephrine (Bài 5)"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 12.24,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.667,
+    "text": "Liều nhỏ · đánh giá lại · ưu tiên dịch cân bằng"
+   },
+   {
+    "start": 4.517,
+    "dur": 2.795,
+    "text": "Nâng chân trước khi thêm · rút dịch khi ổn định"
+   },
+   {
+    "start": 7.662,
+    "dur": 3.086,
+    "text": "Bài 5: vận mạch"
+   }
+  ]
+ }
+]
