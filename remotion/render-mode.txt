@@ -1,1 +1,1 @@
-soc5
+socshort5
