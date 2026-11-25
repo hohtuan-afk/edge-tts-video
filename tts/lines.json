@@ -1,131 +1,31 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+8%",
+ "rate": "+12%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Ông bảy mươi tuổi đã hết đáp ứng dịch, nhưng huyết áp trung bình vẫn năm mươi tám."
-  },
-  {
-   "id": "00-1",
-   "text": "Đã đến lúc dùng thuốc vận mạch."
-  },
-  {
-   "id": "00-2",
-   "text": "Nhưng chọn thuốc nào, và theo thứ tự nào?"
+   "text": "Sốc nhiễm khuẩn: bậc thang vận mạch chỉ có ba bước."
   },
   {
    "id": "01-0",
-   "text": "Trước hết, nhớ ba thụ thể. An pha một trên mạch máu: gây co mạch."
-  },
-  {
-   "id": "01-1",
-   "text": "Bê ta một trên tim: làm tim đập mạnh và nhanh hơn."
-  },
-  {
-   "id": "01-2",
-   "text": "Vê một: thụ thể của va sô prét xin, cũng gây co mạch, theo một đường riêng."
+   "text": "Bước một: nô ơ e pi nê phrin, thuốc đầu tay, bắt đầu sớm, qua tĩnh mạch ngoại vi cũng được."
   },
   {
    "id": "02-0",
-   "text": "Nô ơ e pi nê phrin là thuốc đầu tay, khuyến cáo mạnh của Xơ vai vinh Xép xít năm hai nghìn không trăm hai mươi sáu."
-  },
-  {
-   "id": "02-1",
-   "text": "Thuốc tác động mạnh lên an pha một, và nhẹ lên bê ta một."
-  },
-  {
-   "id": "02-2",
-   "text": "Liều tính bằng mi crô gam mỗi ký mỗi phút."
+   "text": "Bước hai: khi nô ơ e pi nê phrin tăng lên khoảng không phẩy hai lăm, thêm va sô prét xin không phẩy không ba đơn vị mỗi phút."
   },
   {
    "id": "03-0",
-   "text": "Không nên chờ quá lâu. Nghiên cứu Xen xơ năm hai nghìn không trăm mười chín dùng nô ơ e pi nê phrin liều thấp sớm."
-  },
-  {
-   "id": "03-1",
-   "text": "Tỷ lệ kiểm soát được sốc ở giờ thứ sáu là bảy mươi sáu so với bốn mươi tám phần trăm."
+   "text": "Bước ba: vẫn chưa đủ thì thêm e pi nê phrin."
   },
   {
    "id": "04-0",
-   "text": "Chưa có đường truyền trung tâm? Hướng dẫn mới gợi ý bắt đầu qua tĩnh mạch ngoại vi, thay vì chờ đợi."
-  },
-  {
-   "id": "04-1",
-   "text": "Chọn tĩnh mạch lớn, gần gốc chi, và kiểm tra thoát mạch thường xuyên."
-  },
-  {
-   "id": "04-2",
-   "text": "Thoát mạch hiếm gặp, khoảng ba phần trăm."
+   "text": "Đích huyết áp trung bình sáu mươi lăm. Và tránh đô pa min."
   },
   {
    "id": "05-0",
-   "text": "Đích huyết áp trung bình là sáu mươi lăm, khuyến cáo mạnh."
-  },
-  {
-   "id": "05-1",
-   "text": "Ở người từ sáu mươi lăm tuổi, mức sáu mươi đến sáu mươi lăm có thể chấp nhận, theo nghiên cứu Sáu mươi lăm."
-  },
-  {
-   "id": "05-2",
-   "text": "Nghiên cứu Xép xít pam cho thấy nhắm huyết áp cao hơn không giảm tử vong."
-  },
-  {
-   "id": "06-0",
-   "text": "Khi liều nô ơ e pi nê phrin tăng lên khoảng không phẩy hai lăm đến không phẩy năm, hãy thêm va sô prét xin."
-  },
-  {
-   "id": "06-1",
-   "text": "Va sô prét xin dùng liều cố định, không phẩy không ba đơn vị mỗi phút."
-  },
-  {
-   "id": "06-2",
-   "text": "Thuốc giúp giảm liều nô ơ e pi nê phrin. Nghiên cứu nền tảng là Vát năm hai nghìn không trăm lẻ tám."
-  },
-  {
-   "id": "07-0",
-   "text": "Nếu vẫn chưa đủ, thêm e pi nê phrin, là lựa chọn thứ ba."
-  },
-  {
-   "id": "07-1",
-   "text": "Lưu ý: e pi nê phrin làm tăng lắc tát và gây nhịp nhanh, nên đừng nhầm là tưới máu xấu đi."
-  },
-  {
-   "id": "08-0",
-   "text": "Tránh đô pa min. Nghiên cứu Sốp hai cho thấy loạn nhịp hai mươi tư phẩy một so với mười hai phẩy bốn phần trăm."
-  },
-  {
-   "id": "08-1",
-   "text": "Hướng dẫn mới khuyến cáo không dùng téc li prét xin."
-  },
-  {
-   "id": "08-2",
-   "text": "Xanh mê ti len chưa đủ bằng chứng để khuyến cáo."
-  },
-  {
-   "id": "09-0",
-   "text": "Quay lại ca bệnh. Bắt đầu nô ơ e pi nê phrin qua tĩnh mạch ngoại vi, tăng từ không phẩy một lên không phẩy ba."
-  },
-  {
-   "id": "09-1",
-   "text": "Thêm va sô prét xin không phẩy không ba đơn vị mỗi phút."
-  },
-  {
-   "id": "09-2",
-   "text": "Huyết áp trung bình đạt sáu mươi sáu. Sau đó đặt đường truyền trung tâm."
-  },
-  {
-   "id": "10-0",
-   "text": "Ôn tập bậc thang: nô ơ e pi nê phrin, thêm va sô prét xin, rồi thêm e pi nê phrin."
-  },
-  {
-   "id": "10-1",
-   "text": "Bắt đầu sớm, ngoại vi được, và đích huyết áp trung bình sáu mươi lăm."
-  },
-  {
-   "id": "10-2",
-   "text": "Bài sau: sốc tim, khi cái bơm hỏng."
+   "text": "Lưu lại để ôn, và xem bài năm đầy đủ trên kênh nhé!"
   }
  ]
 }
