@@ -749,7 +749,6 @@ const Vessel: React.FC<{x: number; y: number; w: number; sq: number; a: number; 
       <rect x={0} y={260 + gap / 2} width={w} height={90} rx={20} fill="url(#vw5)" />
       {xs.map((xx, i) => (i % 2 === 0 ? <g key={i} opacity={ya}><Ya x={xx} y={260 - gap / 2 - 90} on={dockA} /></g> : <g key={i} opacity={v1}><V1 x={xx} y={260 - gap / 2 - 90} on={dockV} /></g>))}
       {xs.filter((_, i) => i % 2 === 1).map((xx, i) => (i % 2 === 0 ? <g key={`b${i}`} opacity={ya}><Ya x={xx} y={260 + gap / 2 + 90} flip on={dockA} /></g> : <g key={`b${i}`} opacity={v1}><V1 x={xx} y={260 + gap / 2 + 90} flip on={dockV} /></g>))}
-      {sq > 0.05 ? [0, 1].map((i) => <path key={i} d={`M${w / 2 - 60 + i * 120},${i ? 260 + gap / 2 + 120 : 260 - gap / 2 - 120} l0,${i ? -26 : 26}`} stroke="#fff" strokeWidth={8} opacity={sq} markerEnd="" />) : null}
     </svg>
   );
 };
@@ -774,7 +773,7 @@ const Pump: React.FC<{x: number; y: number; s?: number; drug: string; val: strin
   const f = useCurrentFrame();
   return (
     <div style={{position: 'absolute', left: x, top: y, width: 560 * s, height: 200 * s, borderRadius: 24 * s, background: '#E8EEF1', opacity: a, fontFamily: FONT}}>
-      <div style={{position: 'absolute', left: 30 * s, top: 30 * s, width: 270 * s, height: 110 * s, borderRadius: 12 * s, background: '#0b1a22', color: GREEN, fontSize: 40 * s, fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{val}</div>
+      <div style={{position: 'absolute', left: 30 * s, top: 30 * s, width: 270 * s, height: 110 * s, borderRadius: 12 * s, background: '#0b1a22', color: GREEN, fontSize: 30 * s, fontWeight: 900, whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{val}</div>
       <div style={{position: 'absolute', left: 320 * s, top: 45 * s, width: 210 * s, height: 50 * s, borderRadius: 10 * s, border: `${4 * s}px solid #9fb1ba`, background: '#fff', overflow: 'hidden'}}>
         <div style={{width: `${fill * 100}%`, height: '100%', background: c, opacity: 0.75}} />
       </div>
@@ -864,13 +863,13 @@ const D2: React.FC<{S: number[]; D: number[]}> = ({S}) => {
     <>
       <Top idx={1} title="3 thụ thể cần nhớ" />
       <Vessel x={100} y={200} w={1050} sq={sq} a={ap(t, S[0])} ya={ap(t, S[0])} v1={ap(t, S[2])} dockA={ap(t, S[0] + 0.5)} dockV={ap(t, S[2] + 0.5)} />
-      <img src={staticFile('dg_tim.png')} style={{position: 'absolute', left: 1300, top: 220, width: 460, opacity: ap(t, S[1]), transform: `scale(${beat})`}} />
-      <svg width={460} height={120} style={{position: 'absolute', left: 1300, top: 480, opacity: ap(t, S[1])}}>
+      <img src={staticFile('dg_tim.png')} style={{position: 'absolute', left: 1330, top: 170, width: 400, opacity: ap(t, S[1]), transform: `scale(${beat})`}} />
+      <svg width={460} height={120} style={{position: 'absolute', left: 1300, top: 400, opacity: ap(t, S[1])}}>
         {[110, 230, 350].map((xx) => <B1 key={xx} x={xx} y={100} on={ap(t, S[1] + 0.5)} />)}
       </svg>
-      <Tx x={100} y={800} w={350} al="center" size={42} c={AMB} b={900} a={ap(t, S[0])}>Y = α1 · co mạch</Tx>
-      <Tx x={460} y={800} w={460} al="center" size={42} c={PURP} b={900} a={ap(t, S[2])}>∩ = V1 · vasopressin</Tx>
-      <Tx x={1240} y={800} w={580} al="center" size={42} c={GREEN} b={900} a={ap(t, S[1])}>β1 · tim mạnh + nhanh</Tx>
+      <Tx x={100} y={830} w={350} al="center" size={42} c={AMB} b={900} a={ap(t, S[0])}>Y = α1 · co mạch</Tx>
+      <Tx x={460} y={830} w={460} al="center" size={42} c={PURP} b={900} a={ap(t, S[2])}>∩ = V1 · vasopressin</Tx>
+      <Tx x={1240} y={830} w={580} al="center" size={42} c={GREEN} b={900} a={ap(t, S[1])}>β1 · tim mạnh + nhanh</Tx>
     </>
   );
 };
@@ -968,8 +967,8 @@ const D8: React.FC<{S: number[]; D: number[]}> = ({S}) => {
     <>
       <Top idx={7} title="Epinephrine: lựa chọn thứ ba" />
       <Ladder x={150} y={170} s={1} vis={[1, 1, ap(t, S[0], 0.8)]} hl={2} />
-      <Tile x={150} y={810} w={780} h={170} n="!" c={AMB} head="↑ Lactate" body="không phải tưới máu xấu đi" a={ap(t, S[1])} />
-      <Tile x={990} y={810} w={780} h={170} n="!" c={RED} head="Nhịp nhanh" body="theo dõi loạn nhịp" a={ap(t, S[1] + 0.6)} />
+      <Card x={150} y={800} w={780} h={170} c={AMB} s0={S[1]} head="↑ LACTATE" body="không phải tưới máu xấu đi" size={38} />
+      <Card x={990} y={800} w={780} h={170} c={RED} s0={S[1] + 0.6} head="NHỊP NHANH" body="theo dõi loạn nhịp" size={38} />
     </>
   );
 };
@@ -1000,8 +999,8 @@ const D10: React.FC<{S: number[]; D: number[]}> = ({S}) => {
       <Top idx={9} title="Giải ca" />
       <Pump x={120} y={220} drug="NOREPINEPHRINE · ngoại vi" val={`${ne.toFixed(2).replace('.', ',')} µg/kg/ph`} c={AMB} a={ap(t, S[0])} />
       <Pump x={120} y={480} drug="VASOPRESSIN" val="0,03 đv/phút" c={PURP} a={ap(t, S[1])} fill={0.5} />
-      <div style={{position: 'absolute', left: 820, top: 200, width: 0, height: 0}}><Gauge x={0} y={0} v={map} a={ap(t, S[0])} /></div>
-      <Res x={820} y={780} s0={S[2]} c={GREEN}>MAP 66 ✓ → đặt đường truyền trung tâm</Res>
+      <div style={{position: 'absolute', left: 820, top: 170, transform: 'scale(.85)', transformOrigin: '0 0'}}><Gauge x={0} y={0} v={map} a={ap(t, S[0])} /></div>
+      <Res x={120} y={790} s0={S[2]} c={GREEN}>MAP 66 ✓ → đặt đường truyền trung tâm</Res>
     </>
   );
 };
