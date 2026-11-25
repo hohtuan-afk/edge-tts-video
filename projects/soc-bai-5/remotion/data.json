@@ -1,0 +1,227 @@
+{
+ "fps": 30,
+ "total": 4422,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 295,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.731,
+     "text": "Hết đáp ứng dịch · MAP vẫn 58"
+    },
+    {
+     "start": 4.581,
+     "dur": 1.38,
+     "text": "→ Đến lúc dùng VẬN MẠCH"
+    },
+    {
+     "start": 6.31,
+     "dur": 2.049,
+     "text": "Chọn thuốc nào? Theo thứ tự nào?"
+    }
+   ]
+  },
+  {
+   "from": 295,
+   "dur": 424,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.673,
+     "text": "α1: CO MẠCH"
+    },
+    {
+     "start": 5.523,
+     "dur": 2.78,
+     "text": "β1: tim đập MẠNH và NHANH"
+    },
+    {
+     "start": 8.653,
+     "dur": 3.968,
+     "text": "V1: thụ thể của VASOPRESSIN"
+    }
+   ]
+  },
+  {
+   "from": 719,
+   "dur": 396,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 5.541,
+     "text": "NOREPINEPHRINE: thuốc ĐẦU TAY"
+    },
+    {
+     "start": 6.391,
+     "dur": 2.97,
+     "text": "α1 mạnh · β1 nhẹ"
+    },
+    {
+     "start": 9.711,
+     "dur": 1.974,
+     "text": "Liều tính theo µg/kg/phút"
+    }
+   ]
+  },
+  {
+   "from": 1115,
+   "dur": 369,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 6.135,
+     "text": "CENSER 2019: norepinephrine liều thấp SỚM"
+    },
+    {
+     "start": 6.985,
+     "dur": 3.821,
+     "text": "Kiểm soát sốc ở giờ 6: 76% so với 48%"
+    }
+   ]
+  },
+  {
+   "from": 1484,
+   "dur": 417,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 5.644,
+     "text": "SSC 2026: có thể bắt đầu qua tĩnh mạch NGOẠI VI"
+    },
+    {
+     "start": 6.494,
+     "dur": 3.545,
+     "text": "Tĩnh mạch LỚN · gần gốc chi · kiểm tra thoát mạch"
+    },
+    {
+     "start": 10.389,
+     "dur": 1.974,
+     "text": "Thoát mạch hiếm: khoảng 3%"
+    }
+   ]
+  },
+  {
+   "from": 1901,
+   "dur": 419,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.801,
+     "text": "Đích MAP 65 (khuyến cáo mạnh)"
+    },
+    {
+     "start": 3.651,
+     "dur": 5.103,
+     "text": "≥ 65 tuổi: 60–65 có thể chấp nhận (65 trial)"
+    },
+    {
+     "start": 9.104,
+     "dur": 3.35,
+     "text": "SEPSISPAM: MAP cao hơn KHÔNG giảm tử vong"
+    }
+   ]
+  },
+  {
+   "from": 2320,
+   "dur": 507,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 5.015,
+     "text": "VASOPRESSIN: thêm khi norepinephrine 0,25–0,5 µg/kg/phút"
+    },
+    {
+     "start": 5.865,
+     "dur": 3.408,
+     "text": "Liều CỐ ĐỊNH 0,03 đơn vị/phút"
+    },
+    {
+     "start": 9.622,
+     "dur": 5.793,
+     "text": "Giúp GIẢM liều norepinephrine (VASST 2008)"
+    }
+   ]
+  },
+  {
+   "from": 2827,
+   "dur": 322,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 3.415,
+     "text": "EPINEPHRINE: lựa chọn THỨ BA"
+    },
+    {
+     "start": 4.265,
+     "dur": 4.971,
+     "text": "Lưu ý: tăng lactate · nhịp nhanh"
+    }
+   ]
+  },
+  {
+   "from": 3149,
+   "dur": 390,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 5.739,
+     "text": "Dopamine: loạn nhịp 24,1% so với 12,4% (SOAP II)"
+    },
+    {
+     "start": 6.589,
+     "dur": 2.298,
+     "text": "SSC 2026: KHÔNG dùng terlipressin"
+    },
+    {
+     "start": 9.237,
+     "dur": 2.256,
+     "text": "Xanh methylen: chưa đủ bằng chứng"
+    }
+   ]
+  },
+  {
+   "from": 3539,
+   "dur": 469,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 6.362,
+     "text": "Norepinephrine ngoại vi: 0,1 → 0,3 µg/kg/phút"
+    },
+    {
+     "start": 7.212,
+     "dur": 2.507,
+     "text": "+ Vasopressin 0,03 đơn vị/phút"
+    },
+    {
+     "start": 10.07,
+     "dur": 4.09,
+     "text": "MAP 66 ✓ · đặt đường truyền trung tâm"
+    }
+   ]
+  },
+  {
+   "from": 4008,
+   "dur": 414,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 5.149,
+     "text": "Norepinephrine → + Vasopressin → + Epinephrine"
+    },
+    {
+     "start": 5.999,
+     "dur": 3.57,
+     "text": "Bắt đầu sớm · ngoại vi được · đích MAP 65"
+    },
+    {
+     "start": 9.92,
+     "dur": 2.374,
+     "text": "Bài 6: sốc tim"
+    }
+   ]
+  }
+ ]
+}
