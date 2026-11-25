@@ -769,7 +769,7 @@ export const Ladder: React.FC<{x: number; y: number; s: number; vis: number[]; h
   </div>
 );
 // ---- bơm tiêm điện ----
-const Pump: React.FC<{x: number; y: number; s?: number; drug: string; val: string; c: string; a: number; fill?: number}> = ({x, y, s = 1, drug, val, c, a, fill = 0.65}) => {
+export const Pump: React.FC<{x: number; y: number; s?: number; drug: string; val: string; c: string; a: number; fill?: number}> = ({x, y, s = 1, drug, val, c, a, fill = 0.65}) => {
   const f = useCurrentFrame();
   return (
     <div style={{position: 'absolute', left: x, top: y, width: 560 * s, height: 200 * s, borderRadius: 24 * s, background: '#E8EEF1', opacity: a, fontFamily: FONT}}>
@@ -811,7 +811,7 @@ const Arm: React.FC<{x: number; y: number; s: number; a: number; ring: number}> 
   );
 };
 // ---- đồng hồ MAP ----
-const Gauge: React.FC<{x: number; y: number; v: number; a: number; zone?: number}> = ({x, y, v, a, zone = 0}) => {
+export const Gauge: React.FC<{x: number; y: number; v: number; a: number; zone?: number}> = ({x, y, v, a, zone = 0}) => {
   const ang = (q: number) => Math.PI * (1 - (q - 40) / 70);
   const pt = (q: number, r: number) => [r * Math.cos(ang(q)), -r * Math.sin(ang(q))];
   const arc = (p: number, q: number, c: string, w = 70, op = 1) => {

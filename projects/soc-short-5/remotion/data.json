@@ -1,0 +1,72 @@
+{
+ "fps": 30,
+ "total": 901,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.382,
+     "text": "Bậc thang vận mạch: 3 bước"
+    }
+   ]
+  },
+  {
+   "from": 132,
+   "dur": 178,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 5.216,
+     "text": "① Norepinephrine: đầu tay · sớm · ngoại vi được"
+    }
+   ]
+  },
+  {
+   "from": 310,
+   "dur": 195,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 5.813,
+     "text": "② + Vasopressin 0,03 đơn vị/phút"
+    }
+   ]
+  },
+  {
+   "from": 505,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.46,
+     "text": "③ + Epinephrine"
+    }
+   ]
+  },
+  {
+   "from": 637,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.463,
+     "text": "Đích MAP 65 · tránh dopamine"
+    }
+   ]
+  },
+  {
+   "from": 769,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.669,
+     "text": "Lưu lại để ôn · xem Bài 5 đầy đủ trên kênh!"
+    }
+   ]
+  }
+ ]
+}
