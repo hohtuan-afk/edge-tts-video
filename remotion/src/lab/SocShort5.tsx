@@ -3,7 +3,7 @@ import React from 'react';
 import {AbsoluteFill, Audio, Sequence, interpolate, Easing, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import data from '../data.json';
 import {FONT} from '../lib';
-import {Ladder, Pump, Gauge} from './Soc5';
+import {Pump, Gauge} from './Soc5';
 
 const K = {txt: '#F2F7F9', dim: '#A7BAC4', ink: '#22303A', amber: '#F5B83D', co2: '#38A7DD', hco3: '#F2813D', o2: '#E5484D', green: '#3FB27F', line: 'rgba(190,220,235,.22)'};
 const ap = (t: number, s: number, d = 0.45) => interpolate(t, [s, s + d], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.bezier(0.33, 1, 0.68, 1)});
@@ -198,23 +198,25 @@ const CellK: React.FC<{dir: 1 | -1; s0: number}> = ({dir, s0}) => {
 };
 
 const RED = K.o2;
-const LAD = (vis: number[], hl: number) => <Ladder x={60} y={560} s={0.59} vis={vis} hl={hl} />;
-const S0: React.FC = () => {
-  const t = useSec();
-  return (
-    <>
-      <Title c={K.amber} sub="sốc nhiễm khuẩn">3 BƯỚC VẬN MẠCH</Title>
-      {LAD([ap(t, 0.3, 0.6), ap(t, 0.8, 0.6), ap(t, 1.3, 0.6)], -1)}
-    </>
-  );
-};
+const ROWS: [string, string][] = [['Norepinephrine', K.amber], ['+ Vasopressin', KC], ['+ Epinephrine', K.o2]];
+const LAD = (on: number, s0 = 0.2) => (
+  <div style={{position: 'absolute', left: 90, right: 90, top: 520, display: 'flex', flexDirection: 'column', gap: 36}}>
+    {ROWS.map(([w, c], i) => <div key={w} style={{opacity: on < 0 || on === i ? 1 : on > i ? 0.7 : 0.25}}><Chip w={w} c={c} s0={on < 0 ? s0 + i * 0.5 : 0} n={i + 1} /></div>)}
+  </div>
+);
+const S0: React.FC = () => (
+  <>
+    <Title c={K.amber} sub="sốc nhiễm khuẩn">3 BƯỚC VẬN MẠCH</Title>
+    {LAD(-1)}
+  </>
+);
 const S1: React.FC = () => {
   const t = useSec();
   return (
     <>
-      <Title c={K.amber} sub="đầu tay · sớm · ngoại vi được">① NOREPINEPHRINE</Title>
-      {LAD([1, 0.15, 0.15], 0)}
-      <Pump x={140} y={1000} s={1.4} drug="NOREPINEPHRINE" val="0,1 µg/kg/ph" c={K.amber} a={ap(t, 0.8)} />
+      <Title c={K.amber} sub="đầu tay · sớm · ngoại vi được">BƯỚC 1</Title>
+      {LAD(0)}
+      <Pump x={130} y={1080} s={1.45} drug="NOREPINEPHRINE" val="0,1 µg/kg/ph" c={K.amber} a={ap(t, 0.8)} />
     </>
   );
 };
@@ -222,21 +224,18 @@ const S2: React.FC = () => {
   const t = useSec();
   return (
     <>
-      <Title c={KC} sub="khi NE ~0,25 µg/kg/phút">② + VASOPRESSIN</Title>
-      {LAD([1, ap(t, 0.2, 0.6), 0.15], 1)}
-      <Pump x={140} y={1000} s={1.4} drug="VASOPRESSIN" val="0,03 đv/phút" c={KC} a={ap(t, 0.8)} fill={0.5} />
+      <Title c={KC} sub="khi NE ~0,25 µg/kg/phút">BƯỚC 2</Title>
+      {LAD(1)}
+      <Pump x={130} y={1080} s={1.45} drug="VASOPRESSIN" val="0,03 đv/phút" c={KC} a={ap(t, 0.8)} fill={0.5} />
     </>
   );
 };
-const S3: React.FC = () => {
-  const t = useSec();
-  return (
-    <>
-      <Title c={RED} sub="nếu vẫn chưa đủ">③ + EPINEPHRINE</Title>
-      {LAD([1, 1, ap(t, 0.2, 0.6)], 2)}
-    </>
-  );
-};
+const S3: React.FC = () => (
+  <>
+    <Title c={K.o2} sub="nếu vẫn chưa đủ">BƯỚC 3</Title>
+    {LAD(2)}
+  </>
+);
 const S4: React.FC = () => {
   const t = useSec();
   return (
