@@ -216,7 +216,7 @@ const S1: React.FC = () => {
     <>
       <Title c={K.amber} sub="đầu tay · sớm · ngoại vi được">BƯỚC 1</Title>
       {LAD(0)}
-      <Pump x={130} y={1080} s={1.45} drug="NOREPINEPHRINE" val="0,1 µg/kg/ph" c={K.amber} a={ap(t, 0.8)} />
+      <Pump x={274} y={1120} s={0.95} drug="NOREPINEPHRINE" val="0,1 µg/kg/ph" c={K.amber} a={ap(t, 0.8)} />
     </>
   );
 };
@@ -226,7 +226,7 @@ const S2: React.FC = () => {
     <>
       <Title c={KC} sub="khi NE ~0,25 µg/kg/phút">BƯỚC 2</Title>
       {LAD(1)}
-      <Pump x={130} y={1080} s={1.45} drug="VASOPRESSIN" val="0,03 đv/phút" c={KC} a={ap(t, 0.8)} fill={0.5} />
+      <Pump x={274} y={1120} s={0.95} drug="VASOPRESSIN" val="0,03 đv/phút" c={KC} a={ap(t, 0.8)} fill={0.5} />
     </>
   );
 };
