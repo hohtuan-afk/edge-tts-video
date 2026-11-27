@@ -1,31 +1,131 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+12%",
+ "rate": "+8%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Sốc nhiễm khuẩn: bậc thang vận mạch chỉ có ba bước."
+   "text": "Ông sáu mươi hai tuổi, nhồi máu cơ tim thành trước rộng."
+  },
+  {
+   "id": "00-1",
+   "text": "Huyết áp tám mươi hai trên sáu mươi, da lạnh, phổi có ran, lắc tát năm."
+  },
+  {
+   "id": "00-2",
+   "text": "Lần này, cái bơm đã hỏng."
   },
   {
    "id": "01-0",
-   "text": "Bước một: nô ơ e pi nê phrin, thuốc đầu tay, bắt đầu sớm, qua tĩnh mạch ngoại vi cũng được."
+   "text": "Bơm yếu làm cung lượng tim giảm, huyết áp tụt."
+  },
+  {
+   "id": "01-1",
+   "text": "Mạch vành thiếu máu, và bơm càng yếu thêm. Đó là vòng xoắn bệnh lý."
+  },
+  {
+   "id": "01-2",
+   "text": "Đồng thời máu ứ lại phía sau, gây phù phổi."
   },
   {
    "id": "02-0",
-   "text": "Bước hai: khi nô ơ e pi nê phrin tăng lên khoảng không phẩy hai lăm, thêm va sô prét xin không phẩy không ba đơn vị mỗi phút."
+   "text": "Nguyên nhân hàng đầu là nhồi máu cơ tim cấp."
+  },
+  {
+   "id": "02-1",
+   "text": "Ngoài ra còn suy tim mạn mất bù, viêm cơ tim, bệnh van tim, và suy thất phải."
   },
   {
    "id": "03-0",
-   "text": "Bước ba: vẫn chưa đủ thì thêm e pi nê phrin."
+   "text": "Hiệp hội Ét xê a i chia sốc tim thành năm giai đoạn: A có nguy cơ, B bắt đầu, C điển hình, D xấu đi, và E nguy kịch."
+  },
+  {
+   "id": "03-1",
+   "text": "Bản cập nhật năm hai nghìn không trăm hai mươi sáu nhấn mạnh: dấu hiệu giảm tưới máu quan trọng hơn con số huyết áp."
+  },
+  {
+   "id": "03-2",
+   "text": "Cần đánh giá lại liên tục, vì diễn tiến cho biết tiên lượng, và phải xác định kiểu hình sốc."
   },
   {
    "id": "04-0",
-   "text": "Đích huyết áp trung bình sáu mươi lăm. Và tránh đô pa min."
+   "text": "Siêu âm tim ngay: phân suất tống máu, thất phải, và tìm biến chứng cơ học như thủng vách hay hở van cấp."
+  },
+  {
+   "id": "04-1",
+   "text": "Theo dõi lắc tát, nước tiểu và tri giác."
+  },
+  {
+   "id": "04-2",
+   "text": "Ca nặng, đặt ống thông động mạch phổi để đo cung lượng tim và áp lực đổ đầy."
   },
   {
    "id": "05-0",
-   "text": "Lưu lại để ôn, và xem bài năm đầy đủ trên kênh nhé!"
+   "text": "Thuốc vận mạch đầu tay vẫn là nô ơ e pi nê phrin."
+  },
+  {
+   "id": "05-1",
+   "text": "Nếu tưới máu vẫn kém, thêm thuốc tăng co bóp đô bu ta min."
+  },
+  {
+   "id": "05-2",
+   "text": "Mi rinh nôn cho kết quả tương đương, theo nghiên cứu Ca pi tồ Đô rê mi."
+  },
+  {
+   "id": "05-3",
+   "text": "Thận trọng với dịch, vì bệnh nhân sốc tim thường đã ứ dịch."
+  },
+  {
+   "id": "06-0",
+   "text": "Quan trọng nhất là sửa nguyên nhân: tái thông mạch vành cấp cứu. Nghiên cứu Sốc năm một nghìn chín trăm chín mươi chín giảm tử vong sáu tháng, năm mươi phẩy ba so với sáu mươi ba phẩy một phần trăm."
+  },
+  {
+   "id": "06-1",
+   "text": "Và chỉ can thiệp tổn thương thủ phạm trước, theo nghiên cứu Côn prít Sốc."
+  },
+  {
+   "id": "07-0",
+   "text": "Còn hỗ trợ cơ học? Bóng đối xung động mạch chủ không giảm tử vong, nên không dùng thường quy."
+  },
+  {
+   "id": "07-1",
+   "text": "Máy tim phổi nhân tạo Ếch mô đặt sớm thường quy cũng không giảm tử vong: bốn mươi bảy phẩy tám so với bốn mươi chín phần trăm."
+  },
+  {
+   "id": "08-0",
+   "text": "Nghiên cứu Đen gơ Sốc năm hai nghìn không trăm hai mươi tư dùng bơm Im pe la ở bệnh nhân nhồi máu cơ tim chọn lọc."
+  },
+  {
+   "id": "08-1",
+   "text": "Tử vong một trăm tám mươi ngày giảm, bốn mươi lăm phẩy tám so với năm mươi tám phẩy năm phần trăm."
+  },
+  {
+   "id": "08-2",
+   "text": "Đổi lại nhiều biến chứng hơn: chảy máu, thiếu máu chi, và phải lọc máu."
+  },
+  {
+   "id": "09-0",
+   "text": "Quay lại ca bệnh. Sốc tim giai đoạn C. Dùng nô ơ e pi nê phrin và đô bu ta min."
+  },
+  {
+   "id": "09-1",
+   "text": "Đưa ngay đi can thiệp tổn thương thủ phạm ở động mạch liên thất trước, và cân nhắc bơm Im pe la."
+  },
+  {
+   "id": "09-2",
+   "text": "Gọi đội sốc, và chuyển về trung tâm có hỗ trợ cơ học nếu cần."
+  },
+  {
+   "id": "10-0",
+   "text": "Ôn tập: sửa nguyên nhân, và hỗ trợ bơm."
+  },
+  {
+   "id": "10-1",
+   "text": "Hỗ trợ cơ học chỉ có lợi khi chọn đúng bệnh nhân."
+  },
+  {
+   "id": "10-2",
+   "text": "Bài sau: sốc nhiễm khuẩn theo hướng dẫn Xơ vai vinh Xép xít năm hai nghìn không trăm hai mươi sáu."
   }
  ]
 }
