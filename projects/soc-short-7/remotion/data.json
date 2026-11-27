@@ -1,0 +1,83 @@
+{
+ "fps": 30,
+ "total": 967,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.745,
+     "text": "Sốc nhiễm khuẩn: 60 PHÚT ĐẦU"
+    }
+   ]
+  },
+  {
+   "from": 132,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.653,
+     "text": "0' · Sàng lọc NEWS (không dùng riêng qSOFA)"
+    }
+   ]
+  },
+  {
+   "from": 264,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.681,
+     "text": "15' · Cấy máu 2 bộ + lactate"
+    }
+   ]
+  },
+  {
+   "from": 396,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.923,
+     "text": "30' · Kháng sinh phổ rộng (≤ 1 giờ)"
+    }
+   ]
+  },
+  {
+   "from": 528,
+   "dur": 175,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 5.146,
+     "text": "45' · Dịch · 60' · Norepinephrine"
+    }
+   ]
+  },
+  {
+   "from": 703,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.648,
+     "text": "Kiểm soát ổ · đánh giá LẠI"
+    }
+   ]
+  },
+  {
+   "from": 835,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.605,
+     "text": "Lưu lại để ôn · xem Bài 7 đầy đủ trên kênh!"
+    }
+   ]
+  }
+ ]
+}
