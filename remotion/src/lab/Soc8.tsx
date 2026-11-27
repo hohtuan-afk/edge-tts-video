@@ -906,9 +906,9 @@ const D8: React.FC<{S: number[]; D: number[]}> = ({S}) => {
     <>
       <Top idx={7} title="Nguyên nhân đã sửa?" />
       <QPill n={5} text="NGUYÊN NHÂN · dẫn lưu đường mật (ERCP)" a={ap(t, S[0])} />
-      <Ercp x={0} y={210} s={0.98} a={ap(t, S[0])} scope={ap(t, S[0] + 0.5, 2)} stent={ap(t, S[0] + 2.6)} flow={ap(t, S[1])} />
-      <div style={{position: 'absolute', left: 1240, top: 260, width: 600, padding: '20px 0', borderRadius: 24, border: `4px solid ${WATER}`, background: `${WATER}1c`, textAlign: 'center', fontFamily: FONT, fontSize: 32, fontWeight: 900, color: K.txt, opacity: ap(t, S[1])}}>càng SỚM càng tốt<br />khi huyết động cho phép<br /><span style={{color: WATER, fontSize: 28}}>Tokyo 2018</span></div>
-      <div style={{position: 'absolute', left: 1240, top: 860, width: 600, padding: '18px 0', borderRadius: 999, background: PURP, color: '#fff', textAlign: 'center', fontFamily: FONT, fontSize: 34, fontWeight: 900, opacity: ap(t, S[2])}}>+ Hydrocortisone</div>
+      <Ercp x={0} y={210} s={0.85} a={ap(t, S[0])} scope={ap(t, S[0] + 0.5, 2)} stent={ap(t, S[0] + 2.6)} flow={ap(t, S[1])} />
+      <div style={{position: 'absolute', left: 1300, top: 560, width: 560, padding: '20px 0', borderRadius: 24, border: `4px solid ${WATER}`, background: `${WATER}1c`, textAlign: 'center', fontFamily: FONT, fontSize: 32, fontWeight: 900, color: K.txt, opacity: ap(t, S[1])}}>càng SỚM càng tốt<br />khi huyết động cho phép<br /><span style={{color: WATER, fontSize: 28}}>Tokyo 2018</span></div>
+      <div style={{position: 'absolute', left: 1300, top: 860, width: 560, padding: '18px 0', borderRadius: 999, background: PURP, color: '#fff', textAlign: 'center', fontFamily: FONT, fontSize: 34, fontWeight: 900, opacity: ap(t, S[2])}}>+ Hydrocortisone</div>
     </>
   );
 };
@@ -919,7 +919,7 @@ const D9: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   return (
     <>
       <Top idx={8} title="Ngày 2–3" />
-      <Balance x={20} y={160} k={ap(t, S[0], 3) * 0.55 + 0.45 * ap(t, S[1] + 1, 2.5)} a={ap(t, S[0])} peak={ap(t, S[1])} />
+      <Balance x={90} y={160} k={ap(t, S[0], 3) * 0.55 + 0.45 * ap(t, S[1] + 1, 2.5)} a={ap(t, S[0])} peak={ap(t, S[1])} />
       <div style={{position: 'absolute', left: 1180, top: 190, width: 600, padding: '20px 0', borderRadius: 24, background: AMB, color: '#22303A', textAlign: 'center', fontFamily: FONT, fontSize: 36, fontWeight: 900, opacity: ap(t, S[0])}}>giảm dần vận mạch</div>
       <div style={{position: 'absolute', left: 1180, top: 300, width: 600, padding: '20px 0', borderRadius: 24, background: PURP, color: '#fff', textAlign: 'center', fontFamily: FONT, fontSize: 36, fontWeight: 900, opacity: ap(t, S[1] + 0.8)}}>RÚT DỊCH: lợi tiểu</div>
       <div style={{position: 'absolute', left: 1180, top: 410, width: 600, padding: '20px 0', borderRadius: 24, background: GREEN, color: '#0b1a22', textAlign: 'center', fontFamily: FONT, fontSize: 34, fontWeight: 900, opacity: ap(t, S[2])}}>E. coli → XUỐNG THANG</div>
@@ -964,7 +964,7 @@ const D11: React.FC<{S: number[]; D: number[]}> = ({S}) => {
       <div style={{position: 'absolute', left: 120, top: 170, width: 1680, display: 'flex', flexWrap: 'wrap', gap: 24, fontFamily: FONT}}>
         {LESSONS.map((l, i) => <div key={l} style={{width: 402, height: 130, borderRadius: 24, border: `4px solid ${i === 7 ? AMB : '#4a6470'}`, background: i === 7 ? `${AMB}22` : 'rgba(255,255,255,.04)', display: 'flex', alignItems: 'center', gap: 16, padding: '0 20px', boxSizing: 'border-box', opacity: ap(t, S[0] + i * 0.2)}}>
           <div style={{width: 64, height: 64, borderRadius: '50%', background: AMB, color: '#22303A', fontSize: 34, fontWeight: 900, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{i + 1}</div>
-          <div style={{fontSize: 34, fontWeight: 900, color: K.txt}}>{l}</div>
+          <div style={{fontSize: 30, fontWeight: 900, color: K.txt, whiteSpace: 'nowrap'}}>{l}</div>
         </div>)}
       </div>
       <GoldC y={520} a={ap(t, S[1])} size={46}>Sốc = tế bào thiếu oxy · luôn sửa NGUYÊN NHÂN</GoldC>
