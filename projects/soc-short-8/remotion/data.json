@@ -1,0 +1,83 @@
+{
+ "fps": 30,
+ "total": 986,
+ "scenes": [
+  {
+   "from": 0,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 1.332,
+     "text": "5 CÂU HỎI trước MỌI ca sốc"
+    }
+   ]
+  },
+  {
+   "from": 132,
+   "dur": 139,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.922,
+     "text": "① Có sốc? · nhìn TƯỚI MÁU, không chỉ huyết áp"
+    }
+   ]
+  },
+  {
+   "from": 271,
+   "dur": 165,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.762,
+     "text": "② Kiểu gì? · bơm · ống · nước · chặn"
+    }
+   ]
+  },
+  {
+   "from": 436,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 3.668,
+     "text": "③ Dịch hay vận mạch? · nâng chân trước"
+    }
+   ]
+  },
+  {
+   "from": 568,
+   "dur": 154,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 4.465,
+     "text": "④ Tưới máu cải thiện? · CRT · lactate"
+    }
+   ]
+  },
+  {
+   "from": 722,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 1.597,
+     "text": "⑤ Nguyên nhân đã SỬA?"
+    }
+   ]
+  },
+  {
+   "from": 854,
+   "dur": 132,
+   "sents": [
+    {
+     "start": 0.25,
+     "dur": 2.861,
+     "text": "Lưu lại để ôn · xem trọn chuỗi Giải mã sốc!"
+    }
+   ]
+  }
+ ]
+}
