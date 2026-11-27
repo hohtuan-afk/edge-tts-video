@@ -799,7 +799,7 @@ const D1: React.FC<{S: number[]; D: number[]}> = ({S}) => {
     <>
       <Top idx={0} title="Sốc tim: khi cái bơm hỏng" />
       <Slip s0={S[0]} x={120} y={210} sw={720} nw={300} title="ÔNG 62 TUỔI · STEMI TRƯỚC RỘNG" rows={[['ha', 'Huyết áp', '82/60', 'mmHg'], ['da', 'Da', 'lạnh', ''], ['p', 'Phổi', 'ran', ''], ['lac', 'Lactate', '5', 'mmol/L']]} hl={t > S[1] ? ['ha', 'lac'] : []} />
-      <WeakHeart x={1080} y={180} w={520} a={ap(t, S[0])} weak={ap(t, S[2], 1.5)} />
+      <WeakHeart x={1240} y={170} w={480} a={ap(t, S[0])} weak={ap(t, S[2], 1.5)} />
       <GoldC y={820} a={ap(t, S[2])} size={50}>Cái BƠM đã hỏng</GoldC>
     </>
   );
@@ -872,7 +872,7 @@ const D4: React.FC<{S: number[]; D: number[]}> = ({S}) => {
       <Scai x={110} y={140} s={1} t={t} s0={S[0] + 0.5} step={0.9} />
       <div style={{position: 'absolute', left: 110, top: 850, width: 1700, display: 'flex', gap: 24, fontFamily: FONT}}>
         {[['SCAI 2026', K.txt, S[1]], ['giảm TƯỚI MÁU > tụt huyết áp', WATER, S[1] + 0.3], ['đánh giá LẠI liên tục', AMB, S[2]], ['KIỂU HÌNH', PURP, S[2] + 0.8]].map(([w, c, s0]) => (
-          <div key={w as string} style={{flex: w === 'SCAI 2026' ? '0 0 220px' : 1, padding: '18px 0', borderRadius: 22, border: `4px solid ${c}`, textAlign: 'center', fontSize: 32, fontWeight: 900, color: K.txt, opacity: ap(t, s0 as number)}}>{w}</div>
+          <div key={w as string} style={{flex: w === 'SCAI 2026' ? '0 0 220px' : 1, padding: '18px 0', borderRadius: 22, border: `4px solid ${c}`, textAlign: 'center', fontSize: 27, fontWeight: 900, color: K.txt, whiteSpace: 'nowrap', opacity: ap(t, s0 as number)}}>{w}</div>
         ))}
       </div>
     </>
@@ -930,12 +930,12 @@ const D8: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   return (
     <>
       <Top idx={7} title="Không dùng thường quy" />
-      <Iabp x={120} y={150} a={ap(t, S[0])} />
-      <Tx x={60} y={130} w={420} al="center" size={40} b={900} a={ap(t, S[0])}>Bóng đối xung</Tx>
-      <Pl6 x={60} y={900} w={420} c={RED} tc="#fff" a={ap(t, S[0] + 0.8)} size={32}>IABP-SHOCK II: không lợi ích</Pl6>
+      <Iabp x={120} y={200} a={ap(t, S[0])} />
+      <Tx x={460} y={420} w={360} size={40} b={900} a={ap(t, S[0])}>Bóng đối xung</Tx>
+      <Pl6 x={40} y={960} w={560} c={RED} tc="#fff" a={ap(t, S[0] + 0.8)} size={28}>IABP-SHOCK II: không lợi ích</Pl6>
       <Patient x={560} y={430} s={0.75} a={0} b={0} blood={0} op={ap(t, S[1])} id="e8" />
       <Ecmo x={820} y={150} a={ap(t, S[1])} />
-      <Pl6 x={760} y={900} w={1040} c={RED} tc="#fff" a={ap(t, S[1] + 0.8)} size={32}>ECLS-SHOCK 2023: tử vong 47,8% so với 49,0%</Pl6>
+      <Pl6 x={760} y={960} w={1040} c={RED} tc="#fff" a={ap(t, S[1] + 0.8)} size={32}>ECLS-SHOCK 2023: tử vong 47,8% so với 49,0%</Pl6>
     </>
   );
 };
