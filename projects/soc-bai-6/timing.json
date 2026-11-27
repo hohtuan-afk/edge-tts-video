@@ -1,0 +1,223 @@
+[
+ {
+  "orig": 12.0,
+  "dur": 11.12,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.776,
+    "text": "Ông 62 tuổi · nhồi máu cơ tim thành trước rộng"
+   },
+   {
+    "start": 3.626,
+    "dur": 4.059,
+    "text": "HA 82/60 · da lạnh · ran phổi · lactate 5"
+   },
+   {
+    "start": 8.035,
+    "dur": 1.599,
+    "text": "Cái BƠM đã hỏng"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 12.32,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.524,
+    "text": "Bơm yếu → cung lượng tim GIẢM → tụt huyết áp"
+   },
+   {
+    "start": 3.374,
+    "dur": 4.589,
+    "text": "Mạch vành thiếu máu → bơm càng YẾU"
+   },
+   {
+    "start": 8.314,
+    "dur": 2.51,
+    "text": "Máu ứ phía sau → PHÙ PHỔI"
+   }
+  ]
+ },
+ {
+  "orig": 9.0,
+  "dur": 8.84,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 1.865,
+    "text": "Hàng đầu: NHỒI MÁU CƠ TIM CẤP"
+   },
+   {
+    "start": 2.715,
+    "dur": 4.62,
+    "text": "Suy tim mạn mất bù · viêm cơ tim · van tim · thất phải"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 19.56,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 7.421,
+    "text": "SCAI: A nguy cơ · B bắt đầu · C điển hình · D xấu đi · E nguy kịch"
+   },
+   {
+    "start": 8.271,
+    "dur": 5.038,
+    "text": "SCAI 2026: GIẢM TƯỚI MÁU quan trọng hơn tụt huyết áp"
+   },
+   {
+    "start": 13.659,
+    "dur": 4.419,
+    "text": "Đánh giá LẠI liên tục · xác định KIỂU HÌNH"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 13.84,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 5.341,
+    "text": "Siêu âm tim: EF · thất phải · biến chứng cơ học"
+   },
+   {
+    "start": 6.191,
+    "dur": 2.098,
+    "text": "Lactate · nước tiểu · tri giác"
+   },
+   {
+    "start": 8.639,
+    "dur": 3.707,
+    "text": "Ca nặng: catheter động mạch phổi"
+   }
+  ]
+ },
+ {
+  "orig": 15.0,
+  "dur": 15.08,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.583,
+    "text": "Norepinephrine: ĐẦU TAY (ACC 2025)"
+   },
+   {
+    "start": 3.433,
+    "dur": 3.21,
+    "text": "Tưới máu vẫn kém → thêm DOBUTAMINE"
+   },
+   {
+    "start": 6.993,
+    "dur": 3.492,
+    "text": "Milrinone tương đương (CAPITAL DOREMI 2021)"
+   },
+   {
+    "start": 10.834,
+    "dur": 2.741,
+    "text": "Thận trọng với DỊCH: thường đã ứ dịch"
+   }
+  ]
+ },
+ {
+  "orig": 9.0,
+  "dur": 15.24,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 9.678,
+    "text": "TÁI THÔNG mạch vành cấp cứu (SHOCK 1999)"
+   },
+   {
+    "start": 10.528,
+    "dur": 3.209,
+    "text": "Chỉ can thiệp tổn thương THỦ PHẠM (CULPRIT-SHOCK)"
+   }
+  ]
+ },
+ {
+  "orig": 9.0,
+  "dur": 13.28,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 5.416,
+    "text": "Bóng đối xung (IABP-SHOCK II): KHÔNG giảm tử vong"
+   },
+   {
+    "start": 6.266,
+    "dur": 5.521,
+    "text": "ECMO sớm thường quy (ECLS-SHOCK 2023): 47,8% so với 49,0%"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 16.44,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 5.304,
+    "text": "DanGer Shock 2024: Impella CP · STEMI chọn lọc"
+   },
+   {
+    "start": 6.154,
+    "dur": 4.355,
+    "text": "Tử vong 180 ngày: 45,8% so với 58,5%"
+   },
+   {
+    "start": 10.859,
+    "dur": 4.09,
+    "text": "Đổi lại: chảy máu · thiếu máu chi · lọc máu"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 15.56,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 5.323,
+    "text": "SCAI C · norepinephrine + dobutamine"
+   },
+   {
+    "start": 6.173,
+    "dur": 4.477,
+    "text": "Can thiệp thủ phạm LAD · cân nhắc Impella"
+   },
+   {
+    "start": 11.0,
+    "dur": 3.062,
+    "text": "Gọi ĐỘI SỐC · chuyển trung tâm"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 12.0,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.507,
+    "text": "Sửa NGUYÊN NHÂN · hỗ trợ BƠM"
+   },
+   {
+    "start": 3.357,
+    "dur": 2.273,
+    "text": "Hỗ trợ cơ học: chọn ĐÚNG bệnh nhân"
+   },
+   {
+    "start": 5.98,
+    "dur": 4.504,
+    "text": "Bài 7: sốc nhiễm khuẩn theo SSC 2026"
+   }
+  ]
+ }
+]

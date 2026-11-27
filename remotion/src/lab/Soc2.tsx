@@ -320,13 +320,13 @@ const Bullets: React.FC<{x: number; y: number; w: number; items: string[]; s0: n
 
 // ---- siêu âm kiểu thật ----
 const FAN2 = 'M300,10 L2,436 A520,520 0 0,0 598,436 Z';
-const Echo2: React.FC<{x: number; y: number; s?: number; a: number; kind: string; id: string}> = ({x, y, s = 1, a, kind, id}) => {
+export const Echo2: React.FC<{x: number; y: number; s?: number; a: number; kind: string; id: string}> = ({x, y, s = 1, a, kind, id}) => {
   const f = useCurrentFrame();
   const ph = (f % 22) / 22;
   const sys = Math.exp(-Math.pow((ph - 0.3) / 0.15, 2));
   const resp = 0.5 + 0.5 * Math.sin(f / 24);
   const press = Math.max(0, Math.sin(f / 18));
-  const hk = kind === 'hyper' ? 1 - 0.16 * sys : 1 - 0.06 * sys;
+  const hk = kind === 'hyper' ? 1 - 0.16 * sys : kind === 'weak' ? 1.06 - 0.015 * sys : 1 - 0.06 * sys;
   const b = `b${id}`, bb = `bb${id}`;
   return (
     <svg width={600 * s} height={560 * s} viewBox="0 0 600 560" style={{position: 'absolute', left: x, top: y, opacity: a}}>
@@ -338,7 +338,7 @@ const Echo2: React.FC<{x: number; y: number; s?: number; a: number; kind: string
       <path d={FAN2} fill="#060606" />
       <g clipPath={`url(#c${id})`}>
         <image href={staticFile('soc_speckle.png')} width={600} height={560} opacity={0.55} />
-        {kind === 'heartEff' || kind === 'hyper' ? (
+        {kind === 'heartEff' || kind === 'hyper' || kind === 'weak' ? (
           <g transform={`translate(300,290) scale(${hk}) translate(-300,-290)`}>
             {kind === 'heartEff' ? (
               <>
