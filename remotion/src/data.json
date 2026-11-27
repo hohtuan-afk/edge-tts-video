@@ -1,81 +1,230 @@
 {
  "fps": 30,
- "total": 967,
+ "total": 4469,
  "scenes": [
   {
    "from": 0,
-   "dur": 132,
+   "dur": 545,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 2.745,
-     "text": "Sốc nhiễm khuẩn: 60 PHÚT ĐẦU"
+     "start": 0.5,
+     "dur": 6.088,
+     "text": "Bà 68 tuổi · sốt · vàng da · đau hạ sườn phải"
+    },
+    {
+     "start": 6.938,
+     "dur": 5.319,
+     "text": "HA 84/48 · mạch 122 · thở 26 · lú lẫn"
+    },
+    {
+     "start": 12.607,
+     "dur": 4.042,
+     "text": "NEWS 11 → báo động"
     }
    ]
   },
   {
-   "from": 132,
-   "dur": 132,
+   "from": 545,
+   "dur": 390,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 3.653,
-     "text": "0' · Sàng lọc NEWS (không dùng riêng qSOFA)"
+     "start": 0.5,
+     "dur": 1.368,
+     "text": "① CÓ SỐC KHÔNG? (Bài 1)"
+    },
+    {
+     "start": 2.218,
+     "dur": 3.09,
+     "text": "MAP 60 · chỉ số sốc ≈ 1,45"
+    },
+    {
+     "start": 5.658,
+     "dur": 5.861,
+     "text": "Da nổi bông · CRT 4 giây · lactate 4,8 · nước tiểu ít"
     }
    ]
   },
   {
-   "from": 264,
-   "dur": 132,
+   "from": 935,
+   "dur": 385,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 2.681,
-     "text": "15' · Cấy máu 2 bộ + lactate"
+     "start": 0.5,
+     "dur": 3.259,
+     "text": "② KIỂU GÌ? (Bài 2) · siêu âm tại giường"
+    },
+    {
+     "start": 4.109,
+     "dur": 3.932,
+     "text": "Tim tăng động · TM chủ dưới xẹp · phổi sạch · đường mật GIÃN"
+    },
+    {
+     "start": 8.391,
+     "dur": 2.945,
+     "text": "→ PHÂN BỐ + thiếu thể tích · ổ: ĐƯỜNG MẬT"
     }
    ]
   },
   {
-   "from": 396,
-   "dur": 132,
+   "from": 1320,
+   "dur": 238,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 2.923,
-     "text": "30' · Kháng sinh phổ rộng (≤ 1 giờ)"
+     "start": 0.5,
+     "dur": 3.872,
+     "text": "Cấy máu 2 bộ → kháng sinh TRONG 1 GIỜ (Bài 7)"
+    },
+    {
+     "start": 4.722,
+     "dur": 1.706,
+     "text": "Beta-lactam truyền KÉO DÀI"
     }
    ]
   },
   {
-   "from": 528,
-   "dur": 175,
+   "from": 1558,
+   "dur": 504,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 5.146,
-     "text": "45' · Dịch · 60' · Norepinephrine"
+     "start": 0.5,
+     "dur": 6.281,
+     "text": "③ DỊCH HAY VẬN MẠCH? · Ringer lactate 500 mL/lần (Bài 4)"
+    },
+    {
+     "start": 7.131,
+     "dur": 4.938,
+     "text": "Sau 1,5 lít · nâng chân: VTI +12% → thêm"
+    },
+    {
+     "start": 12.418,
+     "dur": 2.874,
+     "text": "Lần sau: +3% → NGỪNG dịch"
     }
    ]
   },
   {
-   "from": 703,
-   "dur": 132,
+   "from": 2062,
+   "dur": 429,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 2.648,
-     "text": "Kiểm soát ổ · đánh giá LẠI"
+     "start": 0.5,
+     "dur": 2.944,
+     "text": "Norepinephrine NGOẠI VI · sớm (Bài 5)"
+    },
+    {
+     "start": 3.794,
+     "dur": 2.576,
+     "text": "0,3 µg/kg/phút → + vasopressin"
+    },
+    {
+     "start": 6.719,
+     "dur": 6.11,
+     "text": "Đích MAP 65 · ≥ 65 tuổi: 60–65 chấp nhận"
     }
    ]
   },
   {
-   "from": 835,
-   "dur": 132,
+   "from": 2491,
+   "dur": 486,
    "sents": [
     {
-     "start": 0.25,
-     "dur": 2.605,
-     "text": "Lưu lại để ôn · xem Bài 7 đầy đủ trên kênh!"
+     "start": 0.5,
+     "dur": 3.614,
+     "text": "④ TƯỚI MÁU CẢI THIỆN? (Bài 3) · sau 2 giờ"
+    },
+    {
+     "start": 4.464,
+     "dur": 5.416,
+     "text": "CRT 4 → 2,5 giây · lactate 4,8 → 3,6 (giảm 25%)"
+    },
+    {
+     "start": 10.23,
+     "dur": 4.465,
+     "text": "Sau 6 giờ: lactate 2,1 · nước tiểu tốt"
+    }
+   ]
+  },
+  {
+   "from": 2977,
+   "dur": 433,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 4.959,
+     "text": "⑤ NGUYÊN NHÂN: dẫn lưu đường mật (ERCP)"
+    },
+    {
+     "start": 5.809,
+     "dur": 4.538,
+     "text": "Càng SỚM càng tốt khi huyết động cho phép (Tokyo 2018)"
+    },
+    {
+     "start": 10.698,
+     "dur": 2.224,
+     "text": "+ Hydrocortisone vì vẫn cần vận mạch"
+    }
+   ]
+  },
+  {
+   "from": 3410,
+   "dur": 375,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.12,
+     "text": "Ngày 2–3: GIẢM DẦN vận mạch"
+    },
+    {
+     "start": 2.97,
+     "dur": 4.503,
+     "text": "Cân bằng dịch +4 lít · phổi đường B → RÚT DỊCH"
+    },
+    {
+     "start": 7.822,
+     "dur": 3.147,
+     "text": "Cấy: E. coli → XUỐNG THANG kháng sinh"
+    }
+   ]
+  },
+  {
+   "from": 3785,
+   "dur": 378,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 2.526,
+     "text": "5 CÂU HỎI cho mọi ca sốc"
+    },
+    {
+     "start": 3.376,
+     "dur": 3.927,
+     "text": "Có sốc? · Kiểu gì? · Dịch hay vận mạch?"
+    },
+    {
+     "start": 7.653,
+     "dur": 3.458,
+     "text": "Tưới máu cải thiện? · Nguyên nhân đã sửa?"
+    }
+   ]
+  },
+  {
+   "from": 4163,
+   "dur": 306,
+   "sents": [
+    {
+     "start": 0.5,
+     "dur": 1.761,
+     "text": "Giải mã sốc · 8 bài"
+    },
+    {
+     "start": 2.611,
+     "dur": 3.749,
+     "text": "Sốc = tế bào thiếu oxy · sửa NGUYÊN NHÂN"
+    },
+    {
+     "start": 6.71,
+     "dur": 1.97,
+     "text": "Cảm ơn bạn đã theo dõi!"
     }
    ]
   }
