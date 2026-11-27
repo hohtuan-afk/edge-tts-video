@@ -1,0 +1,218 @@
+[
+ {
+  "orig": 12.0,
+  "dur": 14.0,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.511,
+    "text": "SSC 2026 · công bố 23/3/2026"
+   },
+   {
+    "start": 5.361,
+    "dur": 5.176,
+    "text": "129 khuyến cáo · 46 mới hoặc sửa đổi · 17 khuyến cáo mạnh"
+   },
+   {
+    "start": 10.887,
+    "dur": 1.617,
+    "text": "Trọng tâm: GIỜ ĐẦU"
+   }
+  ]
+ },
+ {
+  "orig": 9.0,
+  "dur": 11.92,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.383,
+    "text": "Sàng lọc: NEWS · MEWS · SIRS"
+   },
+   {
+    "start": 5.233,
+    "dur": 5.194,
+    "text": "KHÔNG dùng riêng qSOFA (khuyến cáo mạnh)"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 7.88,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 2.144,
+    "text": "Cấy máu ≥ 2 bộ TRƯỚC kháng sinh"
+   },
+   {
+    "start": 2.994,
+    "dur": 2.066,
+    "text": "…nếu KHÔNG làm chậm kháng sinh"
+   },
+   {
+    "start": 5.41,
+    "dur": 0.989,
+    "text": "Đo lactate cùng lúc"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 13.32,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.641,
+    "text": "Sốc / nhiều khả năng nhiễm khuẩn huyết: trong 1 GIỜ"
+   },
+   {
+    "start": 4.491,
+    "dur": 4.97,
+    "text": "Có thể nhiễm khuẩn huyết, chưa sốc: đánh giá nhanh · trong 3 GIỜ"
+   },
+   {
+    "start": 9.811,
+    "dur": 1.999,
+    "text": "Mỗi giờ chậm trễ → tử vong TĂNG (NEJM 2017)"
+   }
+  ]
+ },
+ {
+  "orig": 9.0,
+  "dur": 9.72,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 3.589,
+    "text": "Phổ rộng · theo Ổ NHIỄM và NGUY CƠ"
+   },
+   {
+    "start": 4.439,
+    "dur": 3.771,
+    "text": "MRSA · đa kháng: chỉ khi nguy cơ CAO"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 16.48,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.19,
+    "text": "Beta-lactam TRUYỀN KÉO DÀI (khuyến cáo mạnh)"
+   },
+   {
+    "start": 5.04,
+    "dur": 2.883,
+    "text": "Giữ nồng độ thuốc TRÊN MIC lâu hơn"
+   },
+   {
+    "start": 8.273,
+    "dur": 6.703,
+    "text": "BLING III 2024 · phân tích gộp: giảm tử vong ~14%"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 9.64,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 1.735,
+    "text": "KIỂM SOÁT Ổ NHIỄM càng sớm càng tốt"
+   },
+   {
+    "start": 2.585,
+    "dur": 3.117,
+    "text": "Dẫn lưu · rút catheter nhiễm · phẫu thuật"
+   },
+   {
+    "start": 6.052,
+    "dur": 2.073,
+    "text": "Kháng sinh KHÔNG thay được kiểm soát ổ"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 13.08,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.342,
+    "text": "Hydrocortisone ~200 mg/ngày (có điều kiện)"
+   },
+   {
+    "start": 5.192,
+    "dur": 3.097,
+    "text": "ADRENAL · APROCCHSS 2018: hết sốc NHANH hơn"
+   },
+   {
+    "start": 8.639,
+    "dur": 2.937,
+    "text": "Fludrocortisone: KHÔNG có khuyến cáo"
+   }
+  ]
+ },
+ {
+  "orig": 9.0,
+  "dur": 9.08,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.318,
+    "text": "XUỐNG THANG khi có kết quả cấy (khuyến cáo mạnh)"
+   },
+   {
+    "start": 5.168,
+    "dur": 2.42,
+    "text": "Thời gian NGẮN khi đã kiểm soát ổ"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 21.24,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 9.395,
+    "text": "0' NEWS 9 · 15' cấy máu + lactate · 30' kháng sinh"
+   },
+   {
+    "start": 10.245,
+    "dur": 4.766,
+    "text": "45' dịch · 60' norepinephrine"
+   },
+   {
+    "start": 15.361,
+    "dur": 4.398,
+    "text": "Sau đó: hydrocortisone · xuống thang khi có cấy"
+   }
+  ]
+ },
+ {
+  "orig": 12.0,
+  "dur": 11.08,
+  "sents": [
+   {
+    "start": 0.5,
+    "dur": 4.188,
+    "text": "Sàng lọc → Cấy → Kháng sinh → Kiểm soát ổ"
+   },
+   {
+    "start": 5.038,
+    "dur": 1.634,
+    "text": "ĐÁNH GIÁ LẠI · xuống thang"
+   },
+   {
+    "start": 7.021,
+    "dur": 2.575,
+    "text": "Bài 8: ca tổng hợp"
+   }
+  ]
+ }
+]
