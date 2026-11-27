@@ -20,7 +20,7 @@ NARR = [
     ("Beta-lactam truyền KÉO DÀI", "Bê ta lắc tam được truyền kéo dài."),
   ],
   [  # 5 Dịch
-    ("④ DỊCH HAY VẬN MẠCH? · Ringer lactate 500 mL/lần (Bài 4)", "Câu hỏi bốn: dịch hay vận mạch? Truyền Ringer lắc tát từng liều năm trăm mi li lít, đánh giá lại sau mỗi liều."),
+    ("③ DỊCH HAY VẬN MẠCH? · Ringer lactate 500 mL/lần (Bài 4)", "Câu hỏi ba: dịch hay vận mạch? Truyền Ringer lắc tát từng liều năm trăm mi li lít, đánh giá lại sau mỗi liều."),
     ("Sau 1,5 lít · nâng chân: VTI +12% → thêm", "Sau một phẩy năm lít, nâng chân thụ động, tích phân vận tốc tăng mười hai phần trăm, nên truyền thêm."),
     ("Lần sau: +3% → NGỪNG dịch", "Lần sau chỉ tăng ba phần trăm. Ngừng dịch."),
   ],
@@ -30,7 +30,7 @@ NARR = [
     ("Đích MAP 65 · ≥ 65 tuổi: 60–65 chấp nhận", "Đích huyết áp trung bình sáu mươi lăm. Bà trên sáu mươi lăm tuổi, nên sáu mươi đến sáu mươi lăm cũng chấp nhận được."),
   ],
   [  # 7 Theo dõi tưới máu
-    ("③ TƯỚI MÁU (Bài 3) · sau 2 giờ", "Câu hỏi ba: tưới máu ra sao? Sau hai giờ:"),
+    ("④ TƯỚI MÁU CẢI THIỆN? (Bài 3) · sau 2 giờ", "Câu hỏi bốn: tưới máu có cải thiện không? Sau hai giờ:"),
     ("CRT 4 → 2,5 giây · lactate 4,8 → 3,6 (giảm 25%)", "Thời gian đổ đầy mao mạch giảm từ bốn xuống hai phẩy năm giây. Lắc tát giảm hai mươi lăm phần trăm."),
     ("Sau 6 giờ: lactate 2,1 · nước tiểu tốt", "Sau sáu giờ, lắc tát hai phẩy một, nước tiểu tốt. Đang đáp ứng."),
   ],
@@ -46,8 +46,8 @@ NARR = [
   ],
   [  # 10 Khung 5 câu hỏi
     ("5 CÂU HỎI cho mọi ca sốc", "Tóm lại, trước mọi ca sốc, hãy hỏi năm câu."),
-    ("Có sốc? · Kiểu gì? · Tưới máu?", "Có sốc không? Sốc kiểu gì? Tưới máu ra sao?"),
-    ("Dịch hay vận mạch? · Nguyên nhân đã sửa?", "Cần dịch hay vận mạch? Và nguyên nhân đã được sửa chưa?"),
+    ("Có sốc? · Kiểu gì? · Dịch hay vận mạch?", "Có sốc không? Sốc kiểu gì? Cần dịch hay vận mạch?"),
+    ("Tưới máu cải thiện? · Nguyên nhân đã sửa?", "Tưới máu có cải thiện không? Và nguyên nhân đã được sửa chưa?"),
   ],
   [  # 11 Kết chuỗi
     ("Giải mã sốc · 8 bài", "Chuỗi Giải mã sốc đến đây là kết thúc."),
