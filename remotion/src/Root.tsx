@@ -71,6 +71,7 @@ import {SocShort6} from './lab/SocShort6';
 import {Soc7} from './lab/Soc7';
 import {SocShort7} from './lab/SocShort7';
 import {Soc8} from './lab/Soc8';
+import {SocShort8} from './lab/SocShort8';
 import {Abg2} from './lab/Abg2';
 import {Block, BLOCK_N} from './lab/Block';
 import {Bundle, BUNDLE_N} from './lab/Bundle';
@@ -91,6 +92,7 @@ import data from './data.json';
 export const Root: React.FC = () => (
   <>
     <Composition id="Abg2" component={Abg2} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />
+    <Composition id="SocShort8" component={SocShort8} durationInFrames={data.total} fps={data.fps} width={1080} height={1920} />
     <Composition id="Soc8" component={Soc8} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />
     <Composition id="SocShort7" component={SocShort7} durationInFrames={data.total} fps={data.fps} width={1080} height={1920} />
     <Composition id="Soc7" component={Soc7} durationInFrames={data.total} fps={data.fps} width={1920} height={1080} />
