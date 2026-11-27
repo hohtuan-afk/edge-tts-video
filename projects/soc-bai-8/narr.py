@@ -42,7 +42,7 @@ NARR = [
   [  # 9 Ngày 2–3
     ("Ngày 2–3: GIẢM DẦN vận mạch", "Ngày hai đến ngày ba, giảm dần vận mạch."),
     ("Cân bằng dịch +4 lít · phổi đường B → RÚT DỊCH", "Cân bằng dịch dương bốn lít, siêu âm phổi có đường B. Đến lúc chủ động rút dịch bằng lợi tiểu."),
-    ("Cấy: E. coli → XUỐNG THANG kháng sinh", "Cấy máu mọc E co lai. Xuống thang kháng sinh."),
+    ("Cấy: E. coli → XUỐNG THANG kháng sinh", "Cấy máu mọc ê co li. Xuống thang kháng sinh."),
   ],
   [  # 10 Khung 5 câu hỏi
     ("5 CÂU HỎI cho mọi ca sốc", "Tóm lại, trước mọi ca sốc, hãy hỏi năm câu."),
