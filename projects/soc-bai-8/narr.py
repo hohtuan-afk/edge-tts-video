@@ -20,7 +20,7 @@ NARR = [
     ("Beta-lactam truyền KÉO DÀI", "Bê ta lắc tam được truyền kéo dài."),
   ],
   [  # 5 Dịch
-    ("Ringer lactate 500 mL/lần · đánh giá lại (Bài 4)", "Truyền Ringer lắc tát từng liều năm trăm mi li lít, đánh giá lại sau mỗi liều."),
+    ("④ DỊCH HAY VẬN MẠCH? · Ringer lactate 500 mL/lần (Bài 4)", "Câu hỏi bốn: dịch hay vận mạch? Truyền Ringer lắc tát từng liều năm trăm mi li lít, đánh giá lại sau mỗi liều."),
     ("Sau 1,5 lít · nâng chân: VTI +12% → thêm", "Sau một phẩy năm lít, nâng chân thụ động, tích phân vận tốc tăng mười hai phần trăm, nên truyền thêm."),
     ("Lần sau: +3% → NGỪNG dịch", "Lần sau chỉ tăng ba phần trăm. Ngừng dịch."),
   ],
@@ -29,15 +29,15 @@ NARR = [
     ("0,3 µg/kg/phút → + vasopressin", "Khi liều lên không phẩy ba, thêm va sô prét xin."),
     ("Đích MAP 65 · ≥ 65 tuổi: 60–65 chấp nhận", "Đích huyết áp trung bình sáu mươi lăm. Bà trên sáu mươi lăm tuổi, nên sáu mươi đến sáu mươi lăm cũng chấp nhận được."),
   ],
-  [  # 7 Kiểm soát ổ
-    ("⑤ NGUYÊN NHÂN: dẫn lưu đường mật (ERCP)", "Câu hỏi năm: nguyên nhân đã sửa chưa? Dẫn lưu đường mật qua nội soi mật tụy ngược dòng."),
-    ("Càng SỚM càng tốt khi huyết động cho phép (Tokyo 2018)", "Làm càng sớm càng tốt khi huyết động cho phép, theo hướng dẫn Tô ki ô hai nghìn không trăm mười tám."),
-    ("+ Hydrocortisone vì vẫn cần vận mạch", "Thêm hy đrô cóc ti xôn vì vẫn cần vận mạch."),
-  ],
-  [  # 8 Theo dõi tưới máu
+  [  # 7 Theo dõi tưới máu
     ("③ TƯỚI MÁU (Bài 3) · sau 2 giờ", "Câu hỏi ba: tưới máu ra sao? Sau hai giờ:"),
     ("CRT 4 → 2,5 giây · lactate 4,8 → 3,6 (giảm 25%)", "Thời gian đổ đầy mao mạch giảm từ bốn xuống hai phẩy năm giây. Lắc tát giảm hai mươi lăm phần trăm."),
     ("Sau 6 giờ: lactate 2,1 · nước tiểu tốt", "Sau sáu giờ, lắc tát hai phẩy một, nước tiểu tốt. Đang đáp ứng."),
+  ],
+  [  # 8 Kiểm soát ổ
+    ("⑤ NGUYÊN NHÂN: dẫn lưu đường mật (ERCP)", "Câu hỏi năm: nguyên nhân đã sửa chưa? Dẫn lưu đường mật qua nội soi mật tụy ngược dòng."),
+    ("Càng SỚM càng tốt khi huyết động cho phép (Tokyo 2018)", "Làm càng sớm càng tốt khi huyết động cho phép, theo hướng dẫn Tô ki ô hai nghìn không trăm mười tám."),
+    ("+ Hydrocortisone vì vẫn cần vận mạch", "Thêm hy đrô cóc ti xôn vì vẫn cần vận mạch."),
   ],
   [  # 9 Ngày 2–3
     ("Ngày 2–3: GIẢM DẦN vận mạch", "Ngày hai đến ngày ba, giảm dần vận mạch."),
