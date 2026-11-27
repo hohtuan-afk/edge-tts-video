@@ -1,1 +1,1 @@
-soc7
+socshort7
