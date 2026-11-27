@@ -764,7 +764,7 @@ const PK: React.FC<{x: number; y: number; t: number; s0: number; s1: number; a: 
     <svg width={1700} height={760} viewBox="100 180 1700 760" style={{position: 'absolute', left: x, top: y, opacity: a}}>
       <path d="M200,880 L1760,880 M200,880 L200,200" stroke="#A7BAC4" strokeWidth={5} />
       <path d="M200,560 L1760,560" stroke={AMB} strokeWidth={6} strokeDasharray="20 12" />
-      <text x={1770} y={570} fill={AMB} fontSize={38} fontWeight={900} fontFamily={FONT}>MIC</text>
+      <text x={1750} y={540} fill={AMB} fontSize={38} fontWeight={900} textAnchor="end" fontFamily={FONT}>MIC</text>
       <g opacity={0.3 * k2} fill={RED}><rect x={560} y={560} width={200} height={320} /><rect x={1080} y={560} width={200} height={320} /><rect x={1600} y={560} width={160} height={320} /></g>
       <path d="M200,860 L260,260 C400,600 560,780 720,850 L780,260 C920,600 1080,780 1240,850 L1300,260 C1440,600 1600,780 1760,850" stroke={RED} strokeWidth={8} fill="none" pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - k1} />
       <path d="M200,860 C260,500 300,450 400,450 L1760,450" stroke={GREEN} strokeWidth={10} fill="none" pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - k2} />
@@ -812,7 +812,7 @@ const VB: React.FC<{x: number; base: number; w: number; v: number; scale: number
 const TL: [string, string, string][] = [["0'", 'NEWS 9', RED], ["15'", 'cấy máu + lactate', WATER], ["30'", 'kháng sinh', AMB], ["45'", 'dịch', WATER], ["60'", 'norepinephrine', PURP]];
 export const Timeline: React.FC<{x: number; y: number; w: number; vis: number[]}> = ({x, y, w, vis}) => (
   <div style={{position: 'absolute', left: x, top: y, width: w, height: 400, fontFamily: FONT}}>
-    <div style={{position: 'absolute', left: 0, top: 194, width: w * Math.max(...vis.map((v, i) => (v > 0 ? (i + v * 0.999) / (TL.length - 1) : 0)), 0.001), height: 12, borderRadius: 6, background: '#4a6470'}} />
+    <div style={{position: 'absolute', left: 0, top: 194, width: w * Math.min(1, Math.max(...vis.map((v, i) => (v > 0 ? i / (TL.length - 1) : 0)), 0.001)), height: 12, borderRadius: 6, background: '#4a6470'}} />
     {TL.map(([m, l, c], i) => {
       const a = vis[i] ?? 0;
       const cx = (i / (TL.length - 1)) * w;
@@ -961,13 +961,11 @@ const D8: React.FC<{S: number[]; D: number[]}> = ({S}) => {
 // ---------- 9 Xuống thang ----------
 const D9: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   const t = useSec();
-  const k = ap(t, S[0] + 0.3, 1.5);
   return (
     <>
       <Top idx={8} title="Xuống thang kháng sinh" />
       <svg width={1920} height={1080} style={{position: 'absolute', left: 0, top: 0}}>
         {[0, 1, 2].map((i) => <rect key={i} x={300 + i * 420} y={260 + i * 150} width={400} height={140} rx={20} fill={[RED, AMB, GREEN][i]} opacity={ap(t, S[0] + i * 0.4)} />)}
-        <path d="M400,330 C700,330 800,480 960,500 C1150,520 1250,640 1400,660" stroke="#fff" strokeWidth={10} fill="none" strokeDasharray="20 14" opacity={k} />
       </svg>
       <Tx x={300} y={300} w={400} al="center" size={36} c="#fff" b={900} a={ap(t, S[0])}>phổ rộng</Tx>
       <Tx x={720} y={450} w={400} al="center" size={36} c="#22303A" b={900} a={ap(t, S[0] + 0.4)}>có kết quả cấy</Tx>
@@ -985,7 +983,7 @@ const D10: React.FC<{S: number[]; D: number[]}> = ({S}) => {
   return (
     <>
       <Top idx={9} title="Giải ca: giờ đầu" />
-      <Timeline x={220} y={200} w={1480} vis={vis} />
+      <Timeline x={220} y={240} w={1480} vis={vis} />
       <div style={{position: 'absolute', left: 220, top: 700, width: 1480, display: 'flex', gap: 30, fontFamily: FONT}}>
         {[['+ hydrocortisone', PURP], ['xuống thang khi có cấy', GREEN]].map(([w, c], i) => <div key={w} style={{flex: 1, padding: '24px 0', borderRadius: 26, border: `5px solid ${c}`, background: `${c}1c`, textAlign: 'center', fontSize: 42, fontWeight: 900, color: K.txt, opacity: ap(t, S[2] + i * 0.8)}}>{w}</div>)}
       </div>
