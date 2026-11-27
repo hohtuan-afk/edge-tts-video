@@ -1,35 +1,127 @@
 {
  "voice": "vi-VN-NamMinhNeural",
- "rate": "+12%",
+ "rate": "+8%",
  "pitch": "+2Hz",
  "lines": [
   {
    "id": "00-0",
-   "text": "Sốc tim có năm giai đoạn, từ A đến E."
+   "text": "Hướng dẫn Xơ vai vinh Xép xít năm hai nghìn không trăm hai mươi sáu được công bố ngày hai mươi ba tháng ba."
+  },
+  {
+   "id": "00-1",
+   "text": "Gồm một trăm hai mươi chín khuyến cáo, bốn mươi sáu khuyến cáo mới hoặc sửa đổi, và mười bảy khuyến cáo mạnh."
+  },
+  {
+   "id": "00-2",
+   "text": "Bài này tập trung vào giờ đầu tiên."
   },
   {
    "id": "01-0",
-   "text": "A, có nguy cơ: ví dụ nhồi máu rộng, nhưng chưa có dấu hiệu sốc."
+   "text": "Bước đầu là sàng lọc, bằng thang điểm cảnh báo sớm Niu, Miu, hoặc tiêu chuẩn Xơ."
+  },
+  {
+   "id": "01-1",
+   "text": "Không dùng riêng quích Sô pha để sàng lọc, vì bỏ sót nhiều ca. Đây là khuyến cáo mạnh."
   },
   {
    "id": "02-0",
-   "text": "B, bắt đầu: huyết áp thấp hoặc mạch nhanh, nhưng tưới máu còn ổn."
+   "text": "Cấy máu ít nhất hai bộ trước khi cho kháng sinh,"
+  },
+  {
+   "id": "02-1",
+   "text": "nhưng chỉ khi việc đó không làm chậm kháng sinh."
+  },
+  {
+   "id": "02-2",
+   "text": "Đo lắc tát cùng lúc."
   },
   {
    "id": "03-0",
-   "text": "C, điển hình: đã giảm tưới máu, cần thuốc hoặc hỗ trợ cơ học."
+   "text": "Có sốc, hoặc nhiều khả năng nhiễm khuẩn huyết: cho kháng sinh trong vòng một giờ."
+  },
+  {
+   "id": "03-1",
+   "text": "Chỉ có thể nhiễm khuẩn huyết và chưa sốc: đánh giá nhanh, cho kháng sinh trong vòng ba giờ nếu vẫn nghi ngờ."
+  },
+  {
+   "id": "03-2",
+   "text": "Mỗi giờ chậm trễ đều làm tăng tử vong."
   },
   {
    "id": "04-0",
-   "text": "D, xấu đi dù đã điều trị. E, nguy kịch: trụy mạch, ngừng tim."
+   "text": "Chọn kháng sinh phổ rộng, theo ổ nhiễm và yếu tố nguy cơ của bệnh nhân."
+  },
+  {
+   "id": "04-1",
+   "text": "Chỉ phủ tụ cầu vàng kháng mê thi xi lin hay vi khuẩn đa kháng khi nguy cơ cao."
   },
   {
    "id": "05-0",
-   "text": "Bản cập nhật năm hai nghìn không trăm hai mươi sáu nhấn mạnh: nhìn tưới máu, và đánh giá lại liên tục."
+   "text": "Với nhóm bê ta lắc tam, hướng dẫn khuyến cáo mạnh truyền kéo dài thay vì tiêm ngắt quãng."
+  },
+  {
+   "id": "05-1",
+   "text": "Cách này giữ nồng độ thuốc trên nồng độ ức chế tối thiểu lâu hơn."
+  },
+  {
+   "id": "05-2",
+   "text": "Nghiên cứu Bờ linh ba năm hai nghìn không trăm hai mươi tư chưa có ý nghĩa thống kê, nhưng phân tích gộp cho thấy giảm tử vong khoảng mười bốn phần trăm."
   },
   {
    "id": "06-0",
-   "text": "Lưu lại để ôn, và xem bài sáu đầy đủ trên kênh nhé!"
+   "text": "Kiểm soát ổ nhiễm càng sớm càng tốt."
+  },
+  {
+   "id": "06-1",
+   "text": "Dẫn lưu ổ mủ, rút ống thông bị nhiễm, hoặc phẫu thuật."
+  },
+  {
+   "id": "06-2",
+   "text": "Kháng sinh không thay được việc loại bỏ ổ nhiễm."
+  },
+  {
+   "id": "07-0",
+   "text": "Khi cần vận mạch kéo dài, gợi ý dùng hy đrô cóc ti xôn khoảng hai trăm mi li gam mỗi ngày."
+  },
+  {
+   "id": "07-1",
+   "text": "Hai nghiên cứu năm hai nghìn không trăm mười tám cho thấy hết sốc nhanh hơn."
+  },
+  {
+   "id": "07-2",
+   "text": "Hướng dẫn mới không đưa ra khuyến cáo về phờ lu đrô cóc ti xôn."
+  },
+  {
+   "id": "08-0",
+   "text": "Khi có kết quả cấy, xuống thang kháng sinh. Đây là khuyến cáo mạnh."
+  },
+  {
+   "id": "08-1",
+   "text": "Và dùng thời gian ngắn khi đã kiểm soát được ổ nhiễm."
+  },
+  {
+   "id": "09-0",
+   "text": "Quay lại ông bảy mươi tuổi viêm phổi. Phút không: Niu chín điểm. Phút mười lăm: cấy máu và lắc tát. Phút ba mươi: kháng sinh."
+  },
+  {
+   "id": "09-1",
+   "text": "Phút bốn mươi lăm: truyền dịch. Phút sáu mươi: nô ơ e pi nê phrin."
+  },
+  {
+   "id": "09-2",
+   "text": "Sau đó thêm hy đrô cóc ti xôn vì vẫn cần vận mạch, và xuống thang khi có kết quả cấy."
+  },
+  {
+   "id": "10-0",
+   "text": "Ôn tập: sàng lọc, cấy máu, kháng sinh đúng giờ, kiểm soát ổ nhiễm."
+  },
+  {
+   "id": "10-1",
+   "text": "Rồi đánh giá lại và xuống thang."
+  },
+  {
+   "id": "10-2",
+   "text": "Bài cuối: một ca tổng hợp, ghép tất cả lại."
   }
  ]
 }
